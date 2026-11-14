@@ -9,7 +9,7 @@
 ## 启动与第一局
 
 - 源工程本机启动：双击 `开始游戏.cmd`。脚本调用 `D:/Godot/Godot_v4.7.2-stable_win64.exe`，需要该引擎实际存在；它不是免安装独立游戏包。
-- PC 下载：[GitHub Releases](https://github.com/LzTears/rhythm-card-opening/releases)。包名 `节拍开卡-v15-20261114.8-Windows-x64.zip`；完整解压后运行 `节拍开卡.exe`，保持 PCK 及三个 DLL 同目录，无需安装 Godot。ZIP 约 164.25 MiB，完整包约 239.43 MiB，含游玩说明、许可及校验表；现有验收范围见 PRD 第58节。
+- PC 下载：[GitHub Releases](https://github.com/LzTears/rhythm-card-opening/releases)。包名 `节拍开卡1.0.zip`；完整解压后运行 `节拍开卡.exe`，保持 PCK 及三个 DLL 同目录，无需安装 Godot。ZIP 约 155.47 MiB，完整包约 239.43 MiB，含游玩说明、许可及校验表；现有验收范围见 PRD 第58节。
 - EXE默认沿用本机已有v15进度，包内没有预解锁存档。包内`独立新档启动.cmd`用于首次从0金币／空册／未购天赋体验，并在独立目录持续保存，不清除原v15进度。
 - 进入收藏卡册后，可切换天赋、皮肤并开始战斗。首次战斗有教程，用 Enter／Space 或 Xbox A 确认开始。
 - `构筑试玩.cmd`／`节拍器试玩.cmd` 是开发检查入口，均启动同一试玩场景，并显式指定 `user://rhythm-workshop-v14-manual-review` 隔离目录；不作为正常新档体验或独立包入口。
