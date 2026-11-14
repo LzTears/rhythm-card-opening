@@ -1051,6 +1051,7 @@ func _build_talent_panel() -> void:
 	var tree_view := TalentTreeView.new()
 	tree_view.name = "TalentTree"
 	tree_view.set_display_font(pixel_font)
+	tree_view.set_input_source(input_source)
 	panel.add_child(tree_view)
 	tree_view.node_selected.connect(func(node_id: String) -> void: talent_selected_id=node_id)
 	tree_view.purchase_requested.connect(_buy_talent)
@@ -1436,6 +1437,8 @@ func _observe_input_device(event: InputEvent) -> void:
 	if not source.is_empty():
 		var changed := input_source!=source
 		input_source=source
+		var tree := _talent_tree()
+		if tree!=null: tree.set_input_source(source)
 		if source=="joypad": _active_joypad_device=event.device
 		if source!="mouse":
 			_mouse_switch_distance=0.0
@@ -1448,8 +1451,7 @@ func _observe_input_device(event: InputEvent) -> void:
 			for button in ui.find_children("*","Button",true,false)+overlay.find_children("*","Button",true,false):
 				if button.has_meta("pointer_hover_modulate"): button.modulate=Color.WHITE
 		if source=="mouse": _queue_mouse_focus()
-		elif source=="joypad":
-			var tree := _talent_tree()
+		elif source=="joypad" or (changed and source=="keyboard" and tree!=null):
 			var focused := get_viewport().gui_get_focus_owner()
 			if changed and screen=="hub" and overlay.get_child_count()==0 and tree!=null and (focused==null or (tree.is_ancestor_of(focused) and str(focused.name)!="TalentResetView")):
 				tree.ensure_controller_focus()
@@ -2744,9 +2746,9 @@ func _route_controller_navigation(event: InputEvent) -> bool:
 	if album!=null: return album.handle_controller_event(event)
 	var owner := get_viewport().gui_get_focus_owner()
 	var tree := _talent_tree()
-	if tree!=null and event is InputEventJoypadButton and event.button_index==JOY_BUTTON_A:
+	if tree!=null and ((event is InputEventJoypadButton and event.button_index==JOY_BUTTON_A) or (event is InputEventKey and event.is_action("ui_accept"))):
 		if owner!=null and tree.is_ancestor_of(owner) and (owner.has_meta("talent_id") or str(owner.name).begins_with("BuyTalent_")):
-			if event.pressed: tree.activate_selected()
+			if event.is_pressed() and not event.is_echo(): tree.activate_selected()
 			return true
 	var shop := _skin_shop()
 	if shop!=null:

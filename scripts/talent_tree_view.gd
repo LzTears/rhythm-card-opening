@@ -150,9 +150,13 @@ var _display_font: Font
 var _purchase_feedback: Label
 var _feedback_tween: Tween
 var _feedback_error := ""
+var _input_source := "keyboard"
 
 func set_display_font(value: Font) -> void:
 	_display_font=value
+
+func set_input_source(value: String) -> void:
+	_input_source=value
 
 func configure(definitions: Array, states: Array, balance: int, selected_id: String, button_factory: Callable, style_factory: Callable, view_state: Dictionary = {}) -> void:
 	_button_factory=button_factory
@@ -581,6 +585,8 @@ func _ensure_node_visible(node_id: String) -> void:
 		_apply_view()
 
 func _focus_node(node_id: String) -> void:
+	# Pointer focus is only hover feedback; a completed click selects explicitly.
+	if _input_source=="mouse": return
 	_ensure_node_visible(node_id)
 	_select(node_id)
 

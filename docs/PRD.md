@@ -1844,3 +1844,24 @@ EXE经GDA headless运行180帧，exit0、stderr／diagnostics为空；另真实�
 最新PC.8与Web.7各目录／ZIP／SHA保留且哈希不变，Web验证用目录保留。当前Web正式服务继续指向localhost:18765的.7，不因PC出包更换浏览器进度。回收站未清空，可从系统回收站恢复旧包；上述逻辑大小不等于已经释放的磁盘空间。源工程、玩家存档、QA与验证资料均未作为历史版本删除。
 
 最终`post-cleanup-check.json`确认全部旧目标原路径均不存在，PC交付仅.8目录／ZIP／SHA三项，Web交付仅.7三项及验证用目录；Web HTTP200且仍引用.7的129,477,692字节PCK，最终源检查unchanged。实际查看`integration/02-collection.png`，隔离QA空册／0金币、1440×810界面底部“90秒”正确。
+
+## 59. 天赋鼠标经过不切换选择（2026-11-14）
+
+用户反馈：移鼠标到右侧升级的途中经过其他天赋，当前所选和详情被切换，无法稳定升级原目标。根因是Main通用鼠标焦点交接grab_focus触发天赋focus_entered，而树将所有focus都解释为select。
+
+天赋树显式接收当前mouse／keyboard／joypad来源，mouse造成的focus_entered只保留悬停焦点表现，不切换已选天赋、详情、升级目标，也不自动滚动；鼠标完成点击节点才选中。键盘／手柄进入导航从实际selected恢复，之后正常原生导航改变选择。天赋内容区域Enter／Space和A统一激活实际selected的升级请求，保持expected_level保护，忽略echo与释放重复购买。通用按钮hover、滑条、其他页面导航以及天赋价格／等级／前置不改。
+
+生产修改仅scripts/talent_tree_view.gd和scripts/main.gd。玩家正常存档不访问／不改写；本轮源工程修复，不自动替换现有PC.8或Web.7交付包。
+### 59.1 本轮验证
+
+Godot4.7.2／GDA对Main、TalentTree和新增talent_pointer_selection_20261114编译通过。真实Main图形Dummy专项116／116：原生鼠标点击选择，连续跨过四个其他节点后移到右侧升级，重复升级正确目标与费用；hover后Enter／A均只升原selected一次，其他等级不变；Dpad和键盘切换仍有效。独立mixed_input回归257／257、10张截图，覆盖菜单／模态、卡册、皮肤、混合设备交接及暂停。两项最终stderr均为空；实际查看金币收益保持所选且右侧升级一致的1440截图。测试只有内存QA资金，slot字节未变，无正常玩家档访问。
+
+证据verification/current/talent-pointer-20261114/，含专项结果、mixed-input-report、两张实际截图和最终stdout／stderr。首次尝试因源工程三字体import缓存缺失而未能加载Main，未算通过；GDA仅重建资源导入缓存后三字体均imported，再执行上述完整验证。不把导入工具自身的编辑器退出警告或首次无效启动当成游戏专项通过。
+
+## 60. 天赋修复版PC／Web重新发布（2026-11-14）
+
+用户明确要求在第59节修复后重新出PC和Web包并更新GitHub。发布名1.0.1，PC内部构建15.20261114.9，Web版本标识15.20261114.9-web；两端均由当前修复源码重新导出，天赋费用／等级／前置与正常存档目录不改。1.0及旧Web历史交付保留，不覆盖玩家进度。
+
+本地交付为父目录PC交付/节拍开卡1.0.1与Web交付/节拍开卡1.0.1-Web，同名ZIP旁附SHA-256。PC ZIP163,021,926字节，Web ZIP135,096,108字节；完整哈希、下载和启动方式见docs/RELEASE.md。Web需要Python3.9+启动本地HTTP服务，既有浏览器进度沿用localhost:18765同源地址；本轮验证使用独立浏览器及18801临时端口，未操作既有18765服务。
+
+本次重跑源工程天赋专项116项、新PC PCK内同专项116项全部通过，stderr均为空；独立EXE headless180帧exit0、stderr为空。PC与Web的106份脚本资源逐项哈希相同，导出前后两份修复源码哈希不变。PC37项／Web43项清单与ZIP内文件一致、ZIP CRC／SHA-256通过，包内无QA／docs／制作源。Web正式页面实际启动、音频上下文running、站点存储就绪且无QA桥，浏览器控制台0错误。证据在verification/current/release-1.0.1及output/playwright/release-1.0.1-web-start.png；不扩展为实体扬声器、异机、全浏览器或长时真人验收。

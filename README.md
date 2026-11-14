@@ -4,21 +4,25 @@
 
 一款将节奏指令、卡包合成与开卡收藏结合的单机小游戏。用四个鼓键指挥卡包聚拢、扩圈与开卡，在 **90秒** 内积累金币和收藏，再用天赋与外观打造下一局。
 
-**[下载节拍开卡1.0 · Windows x64](https://github.com/LzTears/rhythm-card-opening/releases/download/v1.0/1.0.zip)** · [版本说明与校验文件](https://github.com/LzTears/rhythm-card-opening/releases/tag/v1.0) · [玩法与操作](#怎么玩)
+**[下载节拍开卡1.0.1 · Windows x64](https://github.com/LzTears/rhythm-card-opening/releases/download/v1.0.1/1.0.1.zip)** · **[下载 Web 包](https://github.com/LzTears/rhythm-card-opening/releases/download/v1.0.1/1.0.1-Web.zip)** · [版本说明与校验文件](https://github.com/LzTears/rhythm-card-opening/releases/tag/v1.0.1) · [玩法与操作](#怎么玩)
 
 ![节拍开卡实机战斗：连击、Fever爆发与卡包开卡](docs/screenshots/battle.png)
 
 ## 下载与开始
 
-当前提供 **节拍开卡1.0 · Windows 64位非商业内测版**，支持键鼠及 Xbox 布局手柄。无需安装 Godot 或 Python；需要支持 OpenGL 3.3 的显卡。
+当前版本为 **节拍开卡1.0.1**，提供 Windows 64位 PC 包和电脑浏览器 Web 包，支持键鼠及 Xbox 布局手柄。
 
-1. [下载 PC 压缩包](https://github.com/LzTears/rhythm-card-opening/releases/download/v1.0/1.0.zip)（约155.47 MiB）。
-2. 完整解压，打开 `节拍开卡1.0` 文件夹，运行 **`节拍开卡.exe`**。EXE、PCK 和三个 DLL 须保持同目录。
+1. [下载 PC 压缩包](https://github.com/LzTears/rhythm-card-opening/releases/download/v1.0.1/1.0.1.zip)（约155.47 MiB）。
+2. 完整解压，打开 `节拍开卡1.0.1` 文件夹，运行 **`节拍开卡.exe`**。EXE、PCK 和三个 DLL 须保持同目录；无需安装 Godot 或 Python，需要支持 OpenGL 3.3 的显卡。
 3. 选择“开始游戏”，按首次教程敲出第一句四拍指令。
 
-GitHub 下载文件名为 `1.0.zip`，下载页显示名为“节拍开卡1.0.zip”，可自行重命名。请下载上述游戏包；Release 自动提供的 **Source code** 是开发源码。
+GitHub 下载文件名为 `1.0.1.zip`，下载页显示名为“节拍开卡1.0.1.zip”，可自行重命名。请下载上述游戏包；Release 自动提供的 **Source code** 是开发源码。
 
 普通入口会沿用本机已有进度。想从0金币、空卡册开始，可运行包内的 `独立新档启动.cmd`，进度单独保存。
+
+**Web 本地运行：** [下载 Web 压缩包](https://github.com/LzTears/rhythm-card-opening/releases/download/v1.0.1/1.0.1-Web.zip)（约128.84 MiB），安装 Python 3.9或更新版本，完整解压后运行 `启动Web内测.cmd`，在浏览器打开 `http://localhost:18765/`，点击开始游戏启用声音。需要支持 WebGL 2 的电脑浏览器，建议 Chrome／Edge。浏览器版进度与PC版独立；沿用同一浏览器及上述地址可保留已有Web进度。详细步骤见包内“游玩说明.txt”。
+
+**1.0.1 修复：** 鼠标经过其他天赋时不再切换当前选择与升级目标；鼠标点击升级、键盘 Enter／Space、手柄 A 均作用于当前所选天赋。
 
 ## 怎么玩
 
@@ -62,7 +66,7 @@ GitHub 下载文件名为 `1.0.zip`，下载页显示名为“节拍开卡1.0.zi
 | --- | --- |
 | ![天赋树：五条独立成长路线](docs/screenshots/talents.png) | ![皮肤页：节拍、卡包和战斗主题可独立搭配](docs/screenshots/skins.png) |
 
-截图来自1.0 PC构建的实机界面。卡册与揭卡画面使用隔离展示数据，含全收藏及指定揭卡样例；下载包不附带预解锁存档。
+截图来自PC实机界面。卡册与揭卡画面使用隔离展示数据，含全收藏及指定揭卡样例；下载包不附带预解锁存档。
 
 ## 操作速查
 

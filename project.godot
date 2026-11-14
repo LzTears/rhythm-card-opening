@@ -2,8 +2,8 @@ config_version=5
 
 [application]
 config/name="节拍开卡"
-config/version="15.20261114.8"
-config/version.web="15.20261114.7-web"
+config/version="15.20261114.9"
+config/version.web="15.20261114.9-web"
 config/icon="res://assets/app_icon/icon.png"
 config/windows_native_icon="res://assets/app_icon/icon.ico"
 run/main_scene="res://scenes/main.tscn"
