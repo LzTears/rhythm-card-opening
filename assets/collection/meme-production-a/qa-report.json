@@ -1,0 +1,17 @@
+{
+  "count": 12,
+  "unique_hashes": 12,
+  "size_set": [
+    [
+      1254,
+      1254
+    ]
+  ],
+  "id_range": [
+    "MEM-001",
+    "MEM-012"
+  ],
+  "generated_calls": 11,
+  "reused_samples": 1,
+  "qa_notes": "QA.md"
+}

@@ -1,0 +1,11 @@
+{
+  "source_library": "pixelfx 0.3.0 local snapshot",
+  "source_url": "https://github.com/patch-gg/pixelfx",
+  "license": "MIT; original attributions retained in source files",
+  "recipe_script": "export-feedback10.mjs",
+  "original_sources": "original/fx; original/core",
+  "adapted_sources": "adapted; shared core",
+  "round4_changes": "Fire removes top smoke; vortex reduces orbit particles and increases compact translucent wind body; paper larger and centered, popper props removed; stars larger; palette/outline/nearwhite clamp applied in renderer",
+  "paid_media_api_calls": 0,
+  "godot_runs": 0
+}

@@ -1,0 +1,48 @@
+{
+  "key": "path_E02",
+  "role_hint": "path",
+  "element": "E02",
+  "source_id": "lightning/zap-hit",
+  "source_file": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\lightning\\zap-hit.js",
+  "source_sha256": "ad93c93f57babccc82ac1a20c7027b1f950e417b5e5a6969b35445ed23fff83a",
+  "derived_file": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\fx\\quality17\\E02\\source\\path-topdown.mjs",
+  "derived_sha256": "50788f342f2c67ff6bc479b686e3d724d5ab41ce6150136dc969571bce7f7861",
+  "size": [
+    144,
+    112
+  ],
+  "floor_pivot": [
+    76,
+    56
+  ],
+  "pivot": [
+    10,
+    56
+  ],
+  "columns": 7,
+  "rows": 4,
+  "frames": 28,
+  "fps": 30,
+  "source_duration": 0.9,
+  "sample_end": 0.9,
+  "duration": 0.9333333333333333,
+  "body_radius_px": 66,
+  "options": {},
+  "reason": "Original single zap, fern/knot/branch inking and full timeline; source incoming Y aligned0 while consuming original RNG. Real source start10,56 to76,56.",
+  "color": "path-color.png",
+  "light": "path-light.png",
+  "color_sha256": "6baf95470a3f4b556d4fd2faff61054a2c24c30effee70071dee0d50d4278317",
+  "light_sha256": "09cb86b2b1186e488258b24966e38a0020ba0cd207858e05faf39951e870408b",
+  "path_source_span_px": 66,
+  "path_endpoints_px": [
+    [
+      10,
+      56
+    ],
+    [
+      76,
+      56
+    ]
+  ],
+  "path_y_pixel_size_m": 0.012
+}

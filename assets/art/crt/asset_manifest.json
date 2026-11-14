@@ -1,0 +1,2548 @@
+{
+  "date": "2026-11-11",
+  "generator": "OpenAI built-in image_gen, no API CLI",
+  "usage": "Project-requested AI-generated original artwork; no third-party downloaded image or trademark used. Not legal certification.",
+  "scope": "80 new production PNGs: 10 prior UI/pack/back/dispenser assets plus70 newly redrawn independent card fronts; no A2 front fallback remains for the70 card mappings.",
+  "assets": {
+    "ui/menu-background.png": {
+      "canvas": [
+        1600,
+        900
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        1600,
+        900
+      ],
+      "source": "source/menu-background-original.png",
+      "source_native_size": [
+        1672,
+        941
+      ],
+      "source_alpha_bbox": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "source_core_bbox": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "source_core_aspect": 1.7768331562167907,
+      "source_core_3x4_relative_error": null,
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "sha256": "db3df9036a91f031dee32af266a72aae5e40b5d8757e65ac7da6bbef40fb581a",
+      "normalization": "Sprites use aspect-preserving fit; packs have transparent side padding in 3:4 registered canvas. Generated alpha retained inside visible-core crop. No filter pixelation or scanlines."
+    },
+    "ui/battle-table.png": {
+      "canvas": [
+        1600,
+        960
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        1600,
+        960
+      ],
+      "source": "source/battle-table-original.png",
+      "source_native_size": [
+        1619,
+        971
+      ],
+      "source_alpha_bbox": [
+        0,
+        0,
+        1619,
+        971
+      ],
+      "source_core_bbox": [
+        0,
+        0,
+        1619,
+        971
+      ],
+      "source_core_aspect": 1.66735324407827,
+      "source_core_3x4_relative_error": null,
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "sha256": "c7a91227a69612e269e595c19cad49c00e5d27f7751615386fc2c5fbd16c2c1f",
+      "normalization": "Sprites use aspect-preserving fit; packs have transparent side padding in 3:4 registered canvas. Generated alpha retained inside visible-core crop. No filter pixelation or scanlines."
+    },
+    "ui/menu-logo.png": {
+      "canvas": [
+        2172,
+        724
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        2159,
+        724
+      ],
+      "source": "source/menu-logo-original.png",
+      "source_native_size": [
+        2172,
+        724
+      ],
+      "source_alpha_bbox": [
+        0,
+        0,
+        2159,
+        724
+      ],
+      "source_core_bbox": [
+        16,
+        97,
+        2156,
+        615
+      ],
+      "source_core_aspect": 4.1312741312741315,
+      "source_core_3x4_relative_error": null,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "6b07af5a2d3a6070cb42ca9b57c5ef69b90ef2d9879f2afd1a33cb23ef591e9f",
+      "normalization": "Sprites use aspect-preserving fit; packs have transparent side padding in 3:4 registered canvas. Generated alpha retained inside visible-core crop. No filter pixelation or scanlines."
+    },
+    "packs/pack-0.png": {
+      "canvas": [
+        300,
+        400
+      ],
+      "alpha_bbox": [
+        4,
+        1,
+        296,
+        399
+      ],
+      "source": "source/pack-0-final-original.png",
+      "source_native_size": [
+        1086,
+        1448
+      ],
+      "source_alpha_bbox": [
+        0,
+        0,
+        1058,
+        1394
+      ],
+      "source_core_bbox": [
+        91,
+        121,
+        995,
+        1354
+      ],
+      "source_core_aspect": 0.7331711273317113,
+      "source_core_3x4_relative_error": -0.022438496891051596,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "0f944b5b7ee72572ebc01893a3bc380eac537caa573ee5de9026760b27724fe4",
+      "normalization": "Sprites use aspect-preserving fit; packs have transparent side padding in 3:4 registered canvas. Generated alpha retained inside visible-core crop. No filter pixelation or scanlines."
+    },
+    "packs/pack-1.png": {
+      "canvas": [
+        300,
+        400
+      ],
+      "alpha_bbox": [
+        1,
+        3,
+        299,
+        397
+      ],
+      "source": "source/pack-1-final-original.png",
+      "source_native_size": [
+        1086,
+        1448
+      ],
+      "source_alpha_bbox": [
+        0,
+        0,
+        1072,
+        1448
+      ],
+      "source_core_bbox": [
+        87,
+        123,
+        1000,
+        1329
+      ],
+      "source_core_aspect": 0.7570480928689884,
+      "source_core_3x4_relative_error": 0.009397457158651257,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "9b3782d83356c5b209bcbc40d564c89c563ad43e2150fd855eb03c857d8451df",
+      "normalization": "Sprites use aspect-preserving fit; packs have transparent side padding in 3:4 registered canvas. Generated alpha retained inside visible-core crop. No filter pixelation or scanlines."
+    },
+    "packs/pack-2.png": {
+      "canvas": [
+        300,
+        400
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        298,
+        399
+      ],
+      "source": "source/pack-2-final-original.png",
+      "source_native_size": [
+        1086,
+        1448
+      ],
+      "source_alpha_bbox": [
+        0,
+        3,
+        1044,
+        1448
+      ],
+      "source_core_bbox": [
+        85,
+        121,
+        1001,
+        1350
+      ],
+      "source_core_aspect": 0.7453213995117982,
+      "source_core_3x4_relative_error": -0.00623813398426909,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "sha256": "ed13710327ae6ab319638b8ae7b05fe40b6d1fad8c4b967b5b06acdfd5ad0e3c",
+      "normalization": "Sprites use aspect-preserving fit; packs have transparent side padding in 3:4 registered canvas. Generated alpha retained inside visible-core crop. No filter pixelation or scanlines."
+    },
+    "packs/pack-3.png": {
+      "canvas": [
+        300,
+        400
+      ],
+      "alpha_bbox": [
+        4,
+        1,
+        296,
+        399
+      ],
+      "source": "source/pack-3-final-original.png",
+      "source_native_size": [
+        1086,
+        1448
+      ],
+      "source_alpha_bbox": [
+        0,
+        0,
+        1070,
+        1448
+      ],
+      "source_core_bbox": [
+        88,
+        119,
+        998,
+        1358
+      ],
+      "source_core_aspect": 0.7344632768361582,
+      "source_core_3x4_relative_error": -0.020715630885122405,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "ea5dbf5d08ffacf7aa79bbccc6c243e847061c0213bcb6b66461ef9f5b8dc2ce",
+      "normalization": "Sprites use aspect-preserving fit; packs have transparent side padding in 3:4 registered canvas. Generated alpha retained inside visible-core crop. No filter pixelation or scanlines."
+    },
+    "packs/pack-4.png": {
+      "canvas": [
+        300,
+        400
+      ],
+      "alpha_bbox": [
+        3,
+        1,
+        296,
+        399
+      ],
+      "source": "source/pack-4-final-original.png",
+      "source_native_size": [
+        1086,
+        1448
+      ],
+      "source_alpha_bbox": [
+        0,
+        0,
+        1085,
+        1448
+      ],
+      "source_core_bbox": [
+        88,
+        120,
+        998,
+        1356
+      ],
+      "source_core_aspect": 0.7362459546925566,
+      "source_core_3x4_relative_error": -0.018338727076591232,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "2d6a8a1063ce861bf26cb34f2954ab88878f7503d024c9c48f217dc595126766",
+      "normalization": "Sprites use aspect-preserving fit; packs have transparent side padding in 3:4 registered canvas. Generated alpha retained inside visible-core crop. No filter pixelation or scanlines."
+    },
+    "dispensers/down.png": {
+      "canvas": [
+        384,
+        320
+      ],
+      "alpha_bbox": [
+        0,
+        93,
+        384,
+        280
+      ],
+      "source": "source/down-original.png",
+      "source_native_size": [
+        1656,
+        950
+      ],
+      "source_alpha_bbox": [
+        70,
+        19,
+        1620,
+        950
+      ],
+      "source_core_bbox": [
+        74,
+        113,
+        1581,
+        846
+      ],
+      "source_core_aspect": 2.0559345156889495,
+      "source_core_3x4_relative_error": null,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "aeced5e096e786b82375422b984a8171faaaf9f76f7af24250c96055c8e16738",
+      "normalization": "Sprites use aspect-preserving fit; packs have transparent side padding in 3:4 registered canvas. Generated alpha retained inside visible-core crop. No filter pixelation or scanlines."
+    },
+    "cards/card_back.png": {
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        6,
+        11,
+        504,
+        505
+      ],
+      "source": "source/card_back-original.png",
+      "source_native_size": [
+        1254,
+        1254
+      ],
+      "source_alpha_bbox": [
+        0,
+        2,
+        1238,
+        1254
+      ],
+      "source_core_bbox": [
+        22,
+        31,
+        1229,
+        1226
+      ],
+      "source_core_aspect": 1.010041841004184,
+      "source_core_3x4_relative_error": null,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "488580754a036d9e0d27b268421e46846359d2efa891c5c5a4b811a60c9eb2fb",
+      "normalization": "Sprites use aspect-preserving fit; packs have transparent side padding in 3:4 registered canvas. Generated alpha retained inside visible-core crop. No filter pixelation or scanlines."
+    },
+    "cards/C01-0.png": {
+      "card_id": "C01-0",
+      "name": "涟圈",
+      "concept": "直接扩展攻击几何",
+      "grade": 0,
+      "art_variant": "C01-0",
+      "path": "cards/C01-0.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        496,
+        497
+      ],
+      "core_bbox": [
+        17,
+        16,
+        495,
+        496
+      ],
+      "visible_aspect": 0.9958333333333333,
+      "sha256": "58f5a25ea269489cb91432ffb513b744086dccfbd65aae8fd3648e315a980d60",
+      "source": "source/card-fronts/C01-0-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1b01f-eed4-71a2-ba75-80f3044ee410\\exec-2a1ebdbe-8ca2-43d5-94e6-8e1ebd7bf6d9.png",
+      "prompt": "Create a production-ready original ROUND game card FRONT icon, reillustrating reference 1's DOLPHIN identity into the fine 16-bit arcade enamel aesthetic of reference 2. Reference1 is identity/composition only; discard its cream paper and soft pastel illustration. Reference2 is style/material only, do NOT copy its cyclone back face or golden rarity rim. This is COMMON white/silver rarity card C01-0 'rippling circle', effect increases attack radius: a bold recognizable cyan dolphin jumping over stepped concentric water ripples, with a dark petrol-blue enamel interior, bright but controlled cyan light accents, fine crisp pixel clusters, limited stepped shading, charcoal ink outlines, white/silver metal circular rim and four small cyan socket jewels. No gold/red/purple frame. Subject must read at 64x64 thumbnail. True flat straight-on top-down perfect circular token, centered with even 3% transparent safety margins. Precise pixel art, original arcade collectable, not cute pastel/paper, not painterly, not realistic 3D, not western comic. No words, digits, UI, square border, checkerboard, background shadow or external glow. Transparent background outside the circle. All detail inside circle; true round proportions, no tilted/oval perspective. One single standalone sprite asset.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C02-0.png": {
+      "card_id": "C02-0",
+      "name": "跃弧",
+      "concept": "命中后跳向未访问的目标",
+      "grade": 0,
+      "art_variant": "C02-0",
+      "path": "cards/C02-0.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        496,
+        497
+      ],
+      "core_bbox": [
+        17,
+        16,
+        495,
+        496
+      ],
+      "visible_aspect": 0.9958333333333333,
+      "sha256": "c28f3bf22298a51a7ddde930d7d2e9c0b2d13d24dea07912cb08e0d1a07fd92e",
+      "source": "source/card-fronts/C02-0-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-41cf33a8-0f12-46ac-b1ed-db472a36cee6.png",
+      "prompt": "Generate ONE brand-new game circular token front C02-0, no text. Reference 1 is EXACT STYLE MASTER: fine 16bit arcade pixel clusters, limited stepped shading charcoal outlines, dark teal navy enamel circular face with silver concentric geometric metal rim and four teal diamond insets. Reference 2 confirms style, do NOT copy gold rarity. Reference 3 subject identity ONLY: friendly striped honeybee with two wings and antennae. Completely redraw bee in saturated yellow charcoal/cyan sprite palette, centered on dark teal field. Mechanic: electric cyan segmented jumping arc linking small chain nodes below bee, showing hopping to unvisited targets; subtle engraved arc motifs. Common rarity SILVER white rim. Match master size/composition, one true circle front-on, transparent outside, no shadow or glow outside, no cream paper background, no pastel, no text numbers UI, no square card. Crisp hand placed pixel art.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C03-0.png": {
+      "card_id": "C03-0",
+      "name": "余音",
+      "concept": "在原鼠标落点复现一次攻击",
+      "grade": 0,
+      "art_variant": "C03-0",
+      "path": "cards/C03-0.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        494,
+        497
+      ],
+      "core_bbox": [
+        17,
+        16,
+        494,
+        496
+      ],
+      "visible_aspect": 0.99375,
+      "sha256": "1d5e120f476a80f5c7bb577bec4479188aaa7c1f0f2938aed3f19d21066541ef",
+      "source": "source/card-fronts/C03-0-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-c3e0b52c-165d-4658-a231-79cd7a962f4d.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Common rarity SILVER WHITE rim. Subject: friendly purple bat front-facing huge pink inner ears spread wings, small smile. Mechanic replay one attack at original point: engraved cyan echo sound rings above and beneath, a subtly repeated ring impression behind. Bat deep violet bright magenta accents, no pastel. Preserve recognizable bat identity.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C04-0.png": {
+      "card_id": "C04-0",
+      "name": "双星",
+      "concept": "同次出手打出两支扇形攻击",
+      "grade": 0,
+      "art_variant": "C04-0",
+      "path": "cards/C04-0.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        496,
+        497
+      ],
+      "core_bbox": [
+        17,
+        16,
+        495,
+        496
+      ],
+      "visible_aspect": 0.9958333333333333,
+      "sha256": "8a21edebd098d4ec2bb1d7e4f41279bd4dfe47ff24174dc628c48061f9602b53",
+      "source": "source/card-fronts/C04-0-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-be464267-60db-4eb0-bb85-206b6a0a22a3.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Common rarity SILVER WHITE rim.  Leave about 3 percent even transparent padding all around full circle. Subject: happy orange five-armed starfish with light yellow spot clusters and black eyes, centered. Mechanic two simultaneous fan attacks: two clear cyan fans sweep outward symmetrically behind starfish. Orange saturated stepped pixel shading.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C05-0.png": {
+      "card_id": "C05-0",
+      "name": "破纸",
+      "concept": "沿出手方向贯穿几何外目标",
+      "grade": 0,
+      "art_variant": "C05-0",
+      "path": "cards/C05-0.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        15,
+        496,
+        497
+      ],
+      "core_bbox": [
+        17,
+        16,
+        495,
+        496
+      ],
+      "visible_aspect": 0.9958333333333333,
+      "sha256": "052737d7856f5ad22183ffa592f55bf51137643175aad34509843dbda0cc196c",
+      "source": "source/card-fronts/C05-0-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-9c81e72b-023f-4cae-811f-d220e1315df3.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Common rarity SILVER WHITE rim.  Leave about 3 percent even transparent padding all around full circle. Brown bald eagle white head and tail yellow beak flying right with swept wings. A straight sharp cyan piercing beam continues through two dark targets below; engraved directional marks.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C06-0.png": {
+      "card_id": "C06-0",
+      "name": "针芒",
+      "concept": "手动点中的小核心附加伤害",
+      "grade": 0,
+      "art_variant": "C06-0",
+      "path": "cards/C06-0.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        496,
+        497
+      ],
+      "core_bbox": [
+        17,
+        16,
+        495,
+        496
+      ],
+      "visible_aspect": 0.9958333333333333,
+      "sha256": "52b14ddbda551976cb7105dc03ce8de98a827eccd8dac0cd759385d7582a945d",
+      "source": "source/card-fronts/C06-0-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-192dda90-eb02-4fb0-a16e-3a9ef9d7ac91.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Common rarity SILVER WHITE rim.  Leave about 3 percent even transparent padding all around full circle. Brown owl large white eye disks yellow beak, perched on small dark branch, friendly face. Fine cyan concentric crosshair around small central core target below, precise extra core damage.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C07-0.png": {
+      "card_id": "C07-0",
+      "name": "积势",
+      "concept": "有效充能储存一格能量",
+      "grade": 0,
+      "art_variant": "C07-0",
+      "path": "cards/C07-0.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        15,
+        494,
+        497
+      ],
+      "core_bbox": [
+        18,
+        16,
+        493,
+        496
+      ],
+      "visible_aspect": 0.9895833333333334,
+      "sha256": "013f0cc43a235b514a5d3ad8b8a0d1c141051812d8c948057bb990ce27a11117",
+      "source": "source/card-fronts/C07-0-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-15cf7cc5-4a1f-4eeb-9ad2-4f02f2171a9d.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Common rarity SILVER WHITE rim.  Leave about 3 percent even transparent padding all around full circle. Friendly brown bear holding ONE bright amber energy orb between paws. A single cyan energy chamber around orb, etched charging arcs behind, storing one energy cell.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C08-0.png": {
+      "card_id": "C08-0",
+      "name": "快拍",
+      "concept": "毁包积印缩短后续充能周期",
+      "grade": 0,
+      "art_variant": "C08-0",
+      "path": "cards/C08-0.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        496,
+        497
+      ],
+      "core_bbox": [
+        17,
+        16,
+        495,
+        496
+      ],
+      "visible_aspect": 0.9958333333333333,
+      "sha256": "2ac5f1ebfe1b154155c67f519f25e41c4522e218636326025b958b78ae3172a2",
+      "source": "source/card-fronts/C08-0-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-710522d5-4eb0-45b1-9698-29d6e73655d6.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Common rarity SILVER WHITE rim.  Leave about 3 percent even transparent padding all around full circle. Golden spotted leopard running right with long curling tail, cheerful expression. Cyan shutter ticks and fast speed streaks behind, three small charge seals below illustrating shorter charge cycle.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C09-0.png": {
+      "card_id": "C09-0",
+      "name": "拨片",
+      "concept": "主攻击后拉近周围存活包",
+      "grade": 0,
+      "art_variant": "C09-0",
+      "path": "cards/C09-0.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        496,
+        497
+      ],
+      "core_bbox": [
+        17,
+        16,
+        495,
+        496
+      ],
+      "visible_aspect": 0.9958333333333333,
+      "sha256": "1f23a242c8928146029d0abb4844d83bfc3ab25371cf3c25c394b57671f57f58",
+      "source": "source/card-fronts/C09-0-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-5b1e60e0-b6d3-4e9d-9c7e-436323d43c2d.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Common rarity SILVER WHITE rim.  Leave about 3 percent even transparent padding all around full circle. Happy coral red octopus with round head and curved tentacles. Four cyan inward arrows around it and curved suction streams toward center, pull surviving objects together.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C10-0.png": {
+      "card_id": "C10-0",
+      "name": "轻颤",
+      "concept": "命中施加后续易伤",
+      "grade": 0,
+      "art_variant": "C10-0",
+      "path": "cards/C10-0.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        496,
+        497
+      ],
+      "core_bbox": [
+        17,
+        16,
+        495,
+        496
+      ],
+      "visible_aspect": 0.9958333333333333,
+      "sha256": "81d8c20cf765f7ac887dcb1d3abf534db31ec38e91fbd21d95cb76fa6b1dda63",
+      "source": "source/card-fronts/C10-0-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-90d57099-b728-447d-baac-d5fdaa8856a8.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Common rarity SILVER WHITE rim.  Leave about 3 percent even transparent padding all around full circle. Stocky friendly slate gray rhinoceros in right profile with two ivory horns. Concentric cyan trembling ripples under feet and small cracked shield behind, vulnerability from impact.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C11-0.png": {
+      "card_id": "C11-0",
+      "name": "点睛",
+      "concept": "下一攻击根消费标记额外伤害",
+      "grade": 0,
+      "art_variant": "C11-0",
+      "path": "cards/C11-0.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        15,
+        495,
+        497
+      ],
+      "core_bbox": [
+        18,
+        16,
+        494,
+        496
+      ],
+      "visible_aspect": 0.9916666666666667,
+      "sha256": "59ce26f45fc813e74ccbdbf19f6b1d1454b401ba92634addf42500d469a499fd",
+      "source": "source/card-fronts/C11-0-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-03345e25-5e8d-4b40-a572-fe97ecb65910.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Common rarity SILVER WHITE rim.  Leave about 3 percent even transparent padding all around full circle. Seated gray white wolf with bushy tail facing right, alert ears. Red pinpoint target mark at shoulder and cyan crosshair above, single amber attack streak approaches mark, consuming mark for damage.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C12-0.png": {
+      "card_id": "C12-0",
+      "name": "微澜",
+      "concept": "出手后留下延迟圆波",
+      "grade": 0,
+      "art_variant": "C12-0",
+      "path": "cards/C12-0.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        496,
+        497
+      ],
+      "core_bbox": [
+        17,
+        16,
+        495,
+        496
+      ],
+      "visible_aspect": 0.9958333333333333,
+      "sha256": "9897bdc790084189448609212a02ca3e22ffb9d3b389e5be1f3b8226a77f7264",
+      "source": "source/card-fronts/C12-0-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-ea33baea-527e-49aa-a97e-bb929e99edb3.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Common rarity SILVER WHITE rim.  Leave about 3 percent even transparent padding all around full circle. Friendly green sea turtle swimming right, olive hexagon patterned shell. Two staggered cyan water rings below and delayed echo wave behind, aftermath circular wave.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C13-0.png": {
+      "card_id": "C13-0",
+      "name": "觅影",
+      "concept": "增加真实产卡成功率",
+      "grade": 0,
+      "art_variant": "C13-0",
+      "path": "cards/C13-0.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        15,
+        497,
+        496
+      ],
+      "core_bbox": [
+        16,
+        16,
+        496,
+        496
+      ],
+      "visible_aspect": 1.0,
+      "sha256": "e50caf129d4e229dda298ab4d63476cee7ccd9e82893686d87256c0e78afc89a",
+      "source": "source/card-fronts/C13-0-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-eb8b6acf-ad56-4ee8-8c3b-2d735e5f1272.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Common rarity SILVER WHITE rim.  Leave about 3 percent even transparent padding all around full circle. Raccoon explorer with dark eye mask, striped tail, amber safari hat backpack, holding magnifying glass examining small cyan diamond token. Engraved cyan search wave and card silhouette below, finding more cards. No lettering.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C14-0.png": {
+      "card_id": "C14-0",
+      "name": "零钱",
+      "concept": "摧毁卡包获得更多金币",
+      "grade": 0,
+      "art_variant": "C14-0",
+      "path": "cards/C14-0.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        495,
+        497
+      ],
+      "core_bbox": [
+        17,
+        16,
+        494,
+        496
+      ],
+      "visible_aspect": 0.99375,
+      "sha256": "bead3e16fd790ad2a310b37f7d0f25d1bbfea942b1d01bd7992581eaf52a8ddb",
+      "source": "source/card-fronts/C14-0-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-2e07af16-f516-4428-836d-f903c8e670d7.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Common rarity SILVER WHITE rim.  Leave about 3 percent even transparent padding all around full circle. Black white teal swallow flying right carrying a small gold square-holed coin in beak; three gold coins below, cyan collecting curves. More gold earned. Rim SILVER despite gold coins.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C01-1.png": {
+      "card_id": "C01-1",
+      "name": "纸缘震环",
+      "concept": "依包边相交扩大覆盖",
+      "grade": 1,
+      "art_variant": "C01-1",
+      "path": "cards/C01-1.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        15,
+        495,
+        497
+      ],
+      "core_bbox": [
+        18,
+        16,
+        494,
+        496
+      ],
+      "visible_aspect": 0.9916666666666667,
+      "sha256": "c5d8112913a84728f1a5b0a1ab64e0dbbee4cdf2348f38d782798dfe4aa6578c",
+      "source": "source/card-fronts/C01-1-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-bd21ed00-4f6b-438d-abe2-e21cba1d7608.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Use grade-specific rim described below.  Leave about 3 percent even transparent padding all around full circle. Friendly teal dolphin leaping right white belly pink smiling mouth. Broad overlapping cyan circular waves touch small boundary arc tiles, showing enlargement through intersecting edges. Rare emerald green rim and green metallic insets instead of master silver.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C02-1.png": {
+      "card_id": "C02-1",
+      "name": "追影接电",
+      "concept": "首代链击单独增幅",
+      "grade": 1,
+      "art_variant": "C02-1",
+      "path": "cards/C02-1.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        495,
+        497
+      ],
+      "core_bbox": [
+        17,
+        16,
+        494,
+        496
+      ],
+      "visible_aspect": 0.99375,
+      "sha256": "3dc8dc369f1e1bdd08732ba504d38c9c1f7ac043fd05e27f018807d2a5b9a8ae",
+      "source": "source/card-fronts/C02-1-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-5ebe8d90-1ac3-40f8-a87f-e03a43471920.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Use grade-specific rim described below.  Leave about 3 percent even transparent padding all around full circle. Friendly yellow charcoal striped bee two bright cyan wings. A powerful first cyan lightning jump between two chain nodes, first node brighter larger than second; pursuing shadow. Rare emerald green rim.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C03-1.png": {
+      "card_id": "C03-1",
+      "name": "迟来开封",
+      "concept": "较慢回响专攻完好包",
+      "grade": 1,
+      "art_variant": "C03-1",
+      "path": "cards/C03-1.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        18,
+        15,
+        493,
+        497
+      ],
+      "core_bbox": [
+        19,
+        16,
+        492,
+        496
+      ],
+      "visible_aspect": 0.9854166666666667,
+      "sha256": "da2300f3e6580f21ebad1f834fa0e18664bf3b844545673e70d6763af7a4bedf",
+      "source": "source/card-fronts/C03-1-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-b465d228-9d35-40bb-9e84-261149389978.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Use grade-specific rim described below.  Leave about 3 percent even transparent padding all around full circle. Friendly purple bat huge pink inner ears spread wings. A slow large cyan echo ring approaching one intact sealed dark packet at bottom, engraved delay ring. Rare emerald green rim.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C04-1.png": {
+      "card_id": "C04-1",
+      "name": "并耀共振",
+      "concept": "双支在核心附近会聚增伤",
+      "grade": 1,
+      "art_variant": "C04-1",
+      "path": "cards/C04-1.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        20,
+        15,
+        492,
+        497
+      ],
+      "core_bbox": [
+        21,
+        16,
+        491,
+        496
+      ],
+      "visible_aspect": 0.9791666666666666,
+      "sha256": "1a0ea31fb1e8c83719faaa2f075e3ef1ed7caf6b6cba368dd2b625387ccb50ac",
+      "source": "source/card-fronts/C04-1-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-e8298a11-dbf4-4dc9-a4cd-98402f95c18c.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Use grade-specific rim described below.  Leave about 3 percent even transparent padding all around full circle. Happy orange spotted starfish. TWO cyan fan arcs converge into ONE bright core beneath it with a small violet resonance star, combined twin strike damage. Rare emerald green rim.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C05-1.png": {
+      "card_id": "C05-1",
+      "name": "倒钩穿刺",
+      "concept": "可向出手方向前后双向贯穿",
+      "grade": 1,
+      "art_variant": "C05-1",
+      "path": "cards/C05-1.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        15,
+        495,
+        497
+      ],
+      "core_bbox": [
+        18,
+        16,
+        494,
+        496
+      ],
+      "visible_aspect": 0.9916666666666667,
+      "sha256": "b1789f273cef74ad77c61a327ce6bf64361c65201ba5c03bae33815fcdc8cfc0",
+      "source": "source/card-fronts/C05-1-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-5dcb9c8a-6974-408f-8f1f-b05775775b8f.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Use grade-specific rim described below.  Leave about 3 percent even transparent padding all around full circle. Brown bald eagle white head yellow beak flying right. Two piercing cyan beams extending forward and backward under eagle, double-ended hooked spear ornament. Rare emerald green rim.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C06-1.png": {
+      "card_id": "C06-1",
+      "name": "猎速锐眼",
+      "concept": "精确核心专攻疾速包",
+      "grade": 1,
+      "art_variant": "C06-1",
+      "path": "cards/C06-1.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        15,
+        497,
+        497
+      ],
+      "core_bbox": [
+        16,
+        16,
+        496,
+        496
+      ],
+      "visible_aspect": 1.0,
+      "sha256": "0662c5704bf53b8bcdee8fe2fb26c2f8318be4698b4183bb3423773e47e31867",
+      "source": "source/card-fronts/C06-1-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-289b1cc6-0214-4385-bf47-775c2d4751ef.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Use grade-specific rim described below.  Leave about 3 percent even transparent padding all around full circle. Brown owl big white eye disks yellow beak perched branch. Cyan precise core crosshair surrounded by diagonal fast streaks and tiny lightning motif, tracking fast target. Rare emerald green rim.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C07-1.png": {
+      "card_id": "C07-1",
+      "name": "余蓄电池",
+      "concept": "两格电池出手后保留一格",
+      "grade": 1,
+      "art_variant": "C07-1",
+      "path": "cards/C07-1.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        496,
+        497
+      ],
+      "core_bbox": [
+        17,
+        16,
+        495,
+        496
+      ],
+      "visible_aspect": 0.9958333333333333,
+      "sha256": "a8def7acaa88f6efe3931d0f27c44fc85a89a60e3dad815c32bb44c55e84c22d",
+      "source": "source/card-fronts/C07-1-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-14e8604b-0f19-4511-9817-0c7188a31c36.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Use grade-specific rim described below.  Leave about 3 percent even transparent padding all around full circle. Friendly brown bear holding amber energy orb. TWO cylindrical energy cells beneath, one brightly filled amber, other dark cyan empty; a curved retaining arrow keeps one cell after firing. Rare emerald green rim.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C01-2.png": {
+      "card_id": "C01-2",
+      "name": "边幕广域",
+      "concept": "边缘扩散并强化原范围外目标",
+      "grade": 2,
+      "art_variant": "C01-2",
+      "path": "cards/C01-2.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        495,
+        497
+      ],
+      "core_bbox": [
+        17,
+        16,
+        494,
+        496
+      ],
+      "visible_aspect": 0.99375,
+      "sha256": "dabf5b992532f2cc4612e4a66157e3ea50da5f09c901a17b086ef9334cee3746",
+      "source": "source/card-fronts/C01-2-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-b9a3ec90-91f3-4a9d-a71d-52aeb3e3904e.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Use grade-specific rim described below.  Leave about 3 percent even transparent padding all around full circle. Friendly teal dolphin leaping right white belly. Wide cyan outer waves beyond narrow inner attack ring and purple boundary tiles struck brightly at outer edge. Epic metallic VIOLET purple concentric rim, keep dark teal field.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C02-2.png": {
+      "card_id": "C02-2",
+      "name": "雷网中继",
+      "concept": "链击中心可同时溅射附近目标",
+      "grade": 2,
+      "art_variant": "C02-2",
+      "path": "cards/C02-2.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        15,
+        494,
+        497
+      ],
+      "core_bbox": [
+        18,
+        16,
+        493,
+        496
+      ],
+      "visible_aspect": 0.9895833333333334,
+      "sha256": "6679349829bbc5fab9e64bee5d858c192fcd4eb1e3c9130a52668ae1c7990fd6",
+      "source": "source/card-fronts/C02-2-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-e30516b8-4d3e-4a85-8835-4f1266e3f6cf.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Use grade-specific rim described below.  Leave about 3 percent even transparent padding all around full circle. Friendly yellow charcoal striped bee two cyan wings. Three connected cyan electric relay nodes and a tight splash circle around central node hitting tiny nearby sparks, network mechanic. Epic metallic VIOLET purple concentric rim.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C03-2.png": {
+      "card_id": "C03-2",
+      "name": "双拍复奏",
+      "concept": "两次回响优先补伤原生未命中的包",
+      "grade": 2,
+      "art_variant": "C03-2",
+      "path": "cards/C03-2.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        16,
+        497,
+        496
+      ],
+      "core_bbox": [
+        16,
+        17,
+        496,
+        495
+      ],
+      "visible_aspect": 1.00418410041841,
+      "sha256": "55f2d50189dd6274a8a34997d6216f588f6fa2a86cb29e59d16504cf1404e0ff",
+      "source": "source/card-fronts/C03-2-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-461ffa13-a55a-40fc-b9b7-328fbc949ff6.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Use grade-specific rim described below.  Leave about 3 percent even transparent padding all around full circle. Friendly purple bat huge pink ears spread wings. TWO distinct bright cyan echo rings stacked beneath, two surrounding unstruck tiny dark packet silhouettes receive echoes. Epic metallic VIOLET purple concentric rim.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C04-2.png": {
+      "card_id": "C04-2",
+      "name": "三星齐射",
+      "concept": "三支独立攻击共享连锁池",
+      "grade": 2,
+      "art_variant": "C04-2",
+      "path": "cards/C04-2.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        495,
+        497
+      ],
+      "core_bbox": [
+        17,
+        16,
+        494,
+        496
+      ],
+      "visible_aspect": 0.99375,
+      "sha256": "1bb70f76b0d73260eaefc99c4fdfb22b9e30a13d0423df372ff131742f3211a8",
+      "source": "source/card-fronts/C04-2-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-ae3f-7b30-a917-2cedc8ba7d6c\\exec-1ad261b0-a077-4f33-bb75-b2587cde5f8b.png",
+      "prompt": "Use case: stylized-concept. Independently paint a NEW game card front, one perfectly circular front-facing metal token isolated on true transparent canvas. References 1 dolphin token and 2 card back are STYLE MASTER only: match their fine 16-bit arcade pixel art, discrete vivid highlights, hard pixel clusters, charcoal outlines, deep dark teal blue enamel ground, concentric stepped metal rim and four cardinal jewel motifs. Reference 3 is IDENTITY ONLY: retain its smiling orange starfish, redesign everything in master style; discard pastel paper illustration. Mechanic: three independent strikes sharing a chain pool, depict three small aligned star flashes and connecting cyan arcs behind starfish. TRUE RARITY EPIC grade 2: rich violet/purple metallic rim with pale violet highlights, turquoise jewels, not gold. Central starfish orange/amber with clean face. No letters numbers UI watermark, no outer glow, no tilted ellipse, no soft gradients. Circle fills 96% square with transparent corners.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C05-2.png": {
+      "card_id": "C05-2",
+      "name": "裂纹贯通",
+      "concept": "贯穿两个包并追击破损",
+      "grade": 2,
+      "art_variant": "C05-2",
+      "path": "cards/C05-2.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        15,
+        496,
+        497
+      ],
+      "core_bbox": [
+        16,
+        16,
+        495,
+        496
+      ],
+      "visible_aspect": 0.9979166666666667,
+      "sha256": "dd0505c2ae41fd010a573efbf3329856e62b51d0b4290e8c8a7a30d8fcde8553",
+      "source": "source/card-fronts/C05-2-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-ae3f-7b30-a917-2cedc8ba7d6c\\exec-287650e2-95e7-4fc7-9513-ce9987dc2cb9.png",
+      "prompt": "Use case: stylized-concept. Independently paint a NEW 16-bit arcade game card front: perfectly circular front-facing metal token on true transparent canvas. First two references are STYLE MASTER only: match fine 16-bit arcade pixel art, discrete vivid highlights, hard clear pixel clusters, charcoal outlines, deep dark teal-blue enamel ground, concentric stepped metal rim, four cardinal turquoise diamond jewels. Third reference is IDENTITY ONLY; preserve its central animal/object but discard all pastel paper illustration and old background. No text letters numbers UI watermark, no outer glow, no tilted ellipse, no soft painted gradients. Circle fills 96% square with transparent corners. TRUE RARITY EPIC grade 2: metallic violet/purple rim, bright lavender stepped highlights. Subject: soaring bald eagle with white head, amber hooked beak, brown swept wings; strong silhouette. Mechanic: a straight cyan-gold piercing flight path through two cracked geometric seal fragments, pursuing the damaged fragment. Keep subject dominant and ornament readable. Leave 3% transparent margin.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C06-2.png": {
+      "card_id": "C06-2",
+      "name": "凝星斩线",
+      "concept": "核心命中半血包额外增伤",
+      "grade": 2,
+      "art_variant": "C06-2",
+      "path": "cards/C06-2.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        496,
+        497
+      ],
+      "core_bbox": [
+        17,
+        16,
+        495,
+        496
+      ],
+      "visible_aspect": 0.9958333333333333,
+      "sha256": "c12768bad22947feb43e381cb6c474cf2da7d8b02bd6c5b4b7443ae2168b7b30",
+      "source": "source/card-fronts/C06-2-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-ae3f-7b30-a917-2cedc8ba7d6c\\exec-cfe7d154-1dda-4174-bb59-2688869fb9bb.png",
+      "prompt": "Use case: stylized-concept. Independently paint a NEW 16-bit arcade game card front: perfectly circular front-facing metal token on true transparent canvas. First two references are STYLE MASTER only: match fine 16-bit arcade pixel art, discrete vivid highlights, hard clear pixel clusters, charcoal outlines, deep dark teal-blue enamel ground, concentric stepped metal rim, four cardinal turquoise diamond jewels. Third reference is IDENTITY ONLY; preserve its central animal/object but discard all pastel paper illustration and old background. No text letters numbers UI watermark, no outer glow, no tilted ellipse, no soft painted gradients. Circle fills 96% square with transparent corners. TRUE RARITY EPIC grade 2: metallic violet/purple rim and lavender highlights. Subject: large front-facing warm brown owl with cream face discs and belly, yellow beak and talons perched on small branch; crisp luminous eyes. Mechanic: a precise cyan star core behind owl with a sharp diagonal gold slash across a half-cracked circular seal; focused finisher, restrained ornament. 3% transparent safe margin.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C07-2.png": {
+      "card_id": "C07-2",
+      "name": "满弦爆发",
+      "concept": "三格满蓄时整根能量爆发",
+      "grade": 2,
+      "art_variant": "C07-2",
+      "path": "cards/C07-2.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        15,
+        496,
+        497
+      ],
+      "core_bbox": [
+        16,
+        16,
+        495,
+        496
+      ],
+      "visible_aspect": 0.9979166666666667,
+      "sha256": "039638bd991244d7197e416270ab0e93c0c761606e6dd7abfe3d427cb5875741",
+      "source": "source/card-fronts/C07-2-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-ae3f-7b30-a917-2cedc8ba7d6c\\exec-af307d7f-1c6d-4fda-9ec8-ecc0819e4ee7.png",
+      "prompt": "Use case: stylized-concept. Independently paint a NEW 16-bit arcade game card front: perfectly circular front-facing metal token on true transparent canvas. First two references are STYLE MASTER only: match fine 16-bit arcade pixel art, discrete vivid highlights, hard clear pixel clusters, charcoal outlines, deep dark teal-blue enamel ground, concentric stepped metal rim, four cardinal turquoise diamond jewels. Third reference is IDENTITY ONLY; preserve its central animal/object but discard all pastel paper illustration and old background. No text letters numbers UI watermark, no outer glow, no tilted ellipse, no soft painted gradients. Circle fills 96% square with transparent corners. TRUE RARITY EPIC grade 2: metallic violet/purple rim and lavender highlights. Subject: friendly strong warm brown bear clasping a brilliant golden energy orb in both paws, cream muzzle and belly. Mechanic: three charged small gold cells circle behind it and converge into the one orb, with contained cyan burst arcs inside medallion. Clear strong central silhouette. 3% transparent margin.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C01-3.png": {
+      "card_id": "C01-3",
+      "name": "落日天幕",
+      "concept": "扩散与回响结合，回响几何进一步扩大",
+      "grade": 3,
+      "art_variant": "C01-3",
+      "path": "cards/C01-3.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        15,
+        494,
+        497
+      ],
+      "core_bbox": [
+        18,
+        16,
+        493,
+        496
+      ],
+      "visible_aspect": 0.9895833333333334,
+      "sha256": "1043b315cac42c46e3df0fcd57186403d501d0fb35b81616142dc0163ffbd97a",
+      "source": "source/card-fronts/C01-3-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-ae3f-7b30-a917-2cedc8ba7d6c\\exec-4bd929c2-94b1-4343-911d-e01a0e999c87.png",
+      "prompt": "Use case: stylized-concept. Independently paint a NEW 16-bit arcade game card front: perfectly circular front-facing metal token on true transparent canvas. First two references are STYLE MASTER only: match fine 16-bit arcade pixel art, discrete vivid highlights, hard clear pixel clusters, charcoal outlines, deep dark teal-blue enamel ground, concentric stepped metal rim, four cardinal turquoise diamond jewels. Third reference is IDENTITY ONLY; preserve its central animal/object but discard all pastel paper illustration and old background. No text letters numbers UI watermark, no outer glow, no tilted ellipse, no soft painted gradients. Circle fills 96% square with transparent corners. TRUE RARITY LEGENDARY grade 3: brilliant gold metallic rim, amber shadows, pale gold stepped highlights and elegant tiny wing engravings, cyan cardinal gems. Subject: leaping turquoise dolphin with cream belly, pink smiling mouth, black eye, dominant central silhouette. Mechanic: broad concentric cyan spreading waves and a second faint segmented echo ring, amber sunset star behind head. Dark ground with lots of contrast, 3% transparent safe border.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C02-3.png": {
+      "card_id": "C02-3",
+      "name": "分叉雷冠",
+      "concept": "每个来源最多分叉两次并产生溅射",
+      "grade": 3,
+      "art_variant": "C02-3",
+      "path": "cards/C02-3.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        15,
+        497,
+        497
+      ],
+      "core_bbox": [
+        16,
+        16,
+        496,
+        496
+      ],
+      "visible_aspect": 1.0,
+      "sha256": "7863766365a86ba46e0278fde42c407b139ccb09abb98fd4529a4d7821a8d283",
+      "source": "source/card-fronts/C02-3-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-ae3f-7b30-a917-2cedc8ba7d6c\\exec-3910b005-34a4-4a05-92cd-27861901038c.png",
+      "prompt": "Use case: stylized-concept. Independently paint a NEW 16-bit arcade game card front: perfectly circular front-facing metal token on true transparent canvas. First two references are STYLE MASTER only: match fine 16-bit arcade pixel art, discrete vivid highlights, hard clear pixel clusters, charcoal outlines, deep dark teal-blue enamel ground, concentric stepped metal rim, four cardinal turquoise diamond jewels. Third reference is IDENTITY ONLY; preserve its central animal/object but discard all pastel paper illustration and old background. No text letters numbers UI watermark, no outer glow, no tilted ellipse, no soft painted gradients. Circle fills 96% square with transparent corners. TRUE RARITY LEGENDARY grade 3: brilliant gold metallic rim amber shadows pale highlights, small elegant wing engravings. Subject: cute yellow and black striped bee with two white cyan-shaded wings, black antennae. Mechanic: a crown of cyan lightning branches that split exactly twice, two small contained splash starbursts below, two chain links. Bee dominant. 3% transparent safe border.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C03-3.png": {
+      "card_id": "C03-3",
+      "name": "未竟之奏",
+      "concept": "双回响同时追补漏包、开封并留下追猎标记",
+      "grade": 3,
+      "art_variant": "C03-3",
+      "path": "cards/C03-3.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        15,
+        497,
+        497
+      ],
+      "core_bbox": [
+        16,
+        16,
+        496,
+        496
+      ],
+      "visible_aspect": 1.0,
+      "sha256": "e2cfe05c4620da63b2ff8b4eced9fb0008091c390389cb2c34686a240973431a",
+      "source": "source/card-fronts/C03-3-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-ae3f-7b30-a917-2cedc8ba7d6c\\exec-41deff5e-15a2-47ef-ad17-f904ac7de114.png",
+      "prompt": "Use case: stylized-concept. Independently paint a NEW 16-bit arcade game card front: perfectly circular front-facing metal token on true transparent canvas. First two references are STYLE MASTER only: match fine 16-bit arcade pixel art, discrete vivid highlights, hard clear pixel clusters, charcoal outlines, deep dark teal-blue enamel ground, concentric stepped metal rim, four cardinal turquoise diamond jewels. Third reference is IDENTITY ONLY; preserve its central animal/object but discard all pastel paper illustration and old background. No text letters numbers UI watermark, no outer glow, no tilted ellipse, no soft painted gradients. Circle fills 96% square with transparent corners. TRUE RARITY LEGENDARY grade 3: brilliant gold metallic rim amber shadows pale highlights, small elegant wing engravings. Subject: cute violet bat flying directly toward viewer, huge pointed ears with pink insides, broad outstretched wings, dark eyes and little smile. Mechanic: twin cyan sonar echo arcs above and below and two gold hunting spark marks; geometric opening seal behind. Bat dominant. 3% transparent safe border.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C04-3.png": {
+      "card_id": "C04-3",
+      "name": "齐辉阵列",
+      "concept": "三支重叠命中时按重叠支数增幅",
+      "grade": 3,
+      "art_variant": "C04-3",
+      "path": "cards/C04-3.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        18,
+        15,
+        493,
+        497
+      ],
+      "core_bbox": [
+        19,
+        16,
+        492,
+        496
+      ],
+      "visible_aspect": 0.9854166666666667,
+      "sha256": "d778dc057e1e9b9026a20d646926236f87a2fd080af0164bde2e8b8468d2a099",
+      "source": "source/card-fronts/C04-3-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-ae3f-7b30-a917-2cedc8ba7d6c\\exec-34547aa7-e4ba-4c7f-af05-b77bb9b841e2.png",
+      "prompt": "Use case: stylized-concept. Independently paint a NEW 16-bit arcade game card front: perfectly circular front-facing metal token on true transparent canvas. First two references are STYLE MASTER only: match fine 16-bit arcade pixel art, discrete vivid highlights, hard clear pixel clusters, charcoal outlines, deep dark teal-blue enamel ground, concentric stepped metal rim, four cardinal turquoise diamond jewels. Third reference is IDENTITY ONLY; preserve its central animal/object but discard all pastel paper illustration and old background. No text letters numbers UI watermark, no outer glow, no tilted ellipse, no soft painted gradients. Circle fills 96% square with transparent corners. TRUE RARITY LEGENDARY grade 3: brilliant gold metallic rim amber shadows pale highlights, small elegant wing engravings. Subject: large smiling orange starfish with pale yellow spots, black eyes and friendly mouth. Mechanic: three cyan shafts arranged as a triangular array converging on three overlapping golden star flares behind starfish, showing increased overlap power. Clear silhouette. 3% transparent safe border.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C05-3.png": {
+      "card_id": "C05-3",
+      "name": "贯日双棱",
+      "concept": "双向长贯穿并追击破损目标",
+      "grade": 3,
+      "art_variant": "C05-3",
+      "path": "cards/C05-3.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        17,
+        497,
+        494
+      ],
+      "core_bbox": [
+        16,
+        18,
+        496,
+        493
+      ],
+      "visible_aspect": 1.0105263157894737,
+      "sha256": "7022189e66a1742fe1ebfa966f2dfa94d85304d0f0096aee7ba8ff67def46cdc",
+      "source": "source/card-fronts/C05-3-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-ae3f-7b30-a917-2cedc8ba7d6c\\exec-10620792-6fba-44f0-b15e-6ca0564f3450.png",
+      "prompt": "Use case: stylized-concept. Independently paint a NEW 16-bit arcade game card front: perfectly circular front-facing metal token on true transparent canvas. First two references are STYLE MASTER only: match fine 16-bit arcade pixel art, discrete vivid highlights, hard clear pixel clusters, charcoal outlines, deep dark teal-blue enamel ground, concentric stepped metal rim, four cardinal turquoise diamond jewels. Third reference is IDENTITY ONLY; preserve its central animal/object but discard all pastel paper illustration and old background. No text letters numbers UI watermark, no outer glow, no tilted ellipse, no soft painted gradients. Circle fills 96% square with transparent corners. TRUE RARITY LEGENDARY grade 3: brilliant gold metallic rim amber shadows pale highlights, small elegant wing engravings. Subject: strong soaring bald eagle, amber-brown spread wing, white head and tail, yellow hooked beak. Mechanic: a pair of opposite-facing long cyan and gold piercing spear-lines spanning behind eagle and splitting cracked dark teal seals, pursuing damaged fragments. Large clean silhouette. 3% transparent safe border.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C06-3.png": {
+      "card_id": "C06-3",
+      "name": "极点开封",
+      "concept": "手动核心开封后留下后续易伤",
+      "grade": 3,
+      "art_variant": "C06-3",
+      "path": "cards/C06-3.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        19,
+        15,
+        492,
+        497
+      ],
+      "core_bbox": [
+        20,
+        16,
+        491,
+        496
+      ],
+      "visible_aspect": 0.98125,
+      "sha256": "394bed9612caa5f661c1e95f0cd8c2b863d030e02a8d74007f5a218f03c1a7da",
+      "source": "source/card-fronts/C06-3-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-ae3f-7b30-a917-2cedc8ba7d6c\\exec-6a40a699-139e-464d-bbd2-0d557be35b0d.png",
+      "prompt": "Use case: stylized-concept. Independently paint a NEW 16-bit arcade game card front: perfectly circular front-facing metal token on true transparent canvas. First two references are STYLE MASTER only: match fine 16-bit arcade pixel art, discrete vivid highlights, hard clear pixel clusters, charcoal outlines, deep dark teal-blue enamel ground, concentric stepped metal rim, four cardinal turquoise diamond jewels. Third reference is IDENTITY ONLY; preserve its central animal/object but discard all pastel paper illustration and old background. No text letters numbers UI watermark, no outer glow, no tilted ellipse, no soft painted gradients. Circle fills 96% square with transparent corners. TRUE RARITY LEGENDARY grade 3: brilliant gold metallic rim amber shadows pale highlights, small elegant wing engravings. Subject: front-facing warm brown owl, large cream face circles, yellow beak/talons, perched on small leafy branch. Mechanic: a precise cyan crosshair star core and opened split seal behind owl, thin amber crack rays indicating lasting vulnerability after precision opening. Owl dominant. 3% transparent safe border.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C07-3.png": {
+      "card_id": "C07-3",
+      "name": "蓄潮复利",
+      "concept": "保留两格并按储格平方获得能量复利",
+      "grade": 3,
+      "art_variant": "C07-3",
+      "path": "cards/C07-3.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        18,
+        15,
+        493,
+        497
+      ],
+      "core_bbox": [
+        19,
+        16,
+        492,
+        496
+      ],
+      "visible_aspect": 0.9854166666666667,
+      "sha256": "090fc6268cc375f0ec74cf4296f797785b195ccff8b46bd44ba564147531a111",
+      "source": "source/card-fronts/C07-3-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-ae3f-7b30-a917-2cedc8ba7d6c\\exec-fb3552d6-426f-41c2-8bc4-cf3bf1054a73.png",
+      "prompt": "Use case: stylized-concept. Independently paint a NEW 16-bit arcade game card front: perfectly circular front-facing metal token on true transparent canvas. First two references are STYLE MASTER only: match fine 16-bit arcade pixel art, discrete vivid highlights, hard clear pixel clusters, charcoal outlines, deep dark teal-blue enamel ground, concentric stepped metal rim, four cardinal turquoise diamond jewels. Third reference is IDENTITY ONLY; preserve its central animal/object but discard all pastel paper illustration and old background. No text letters numbers UI watermark, no outer glow, no tilted ellipse, no soft painted gradients. Circle fills 96% square with transparent corners. TRUE RARITY LEGENDARY grade 3: brilliant gold metallic rim amber shadows pale highlights, small elegant wing engravings. Subject: friendly strong brown bear holding golden energy orb in both paws, cream muzzle/belly. Mechanic: two persistent square energy jewels below the orb, looping cyan tide spirals feeding increasingly bright little golden sparks into orb, compounding stored energy. Bear dominant. 3% transparent safe border.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C08-3.png": {
+      "card_id": "C08-3",
+      "name": "迅雷回收",
+      "concept": "任意阶段击破触发快充，疾速包给双印",
+      "grade": 3,
+      "art_variant": "C08-3",
+      "path": "cards/C08-3.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        18,
+        15,
+        494,
+        497
+      ],
+      "core_bbox": [
+        19,
+        16,
+        493,
+        496
+      ],
+      "visible_aspect": 0.9875,
+      "sha256": "9c740d2892dae5782b88afe12b9d97adb004e3ca3252f9fcea526e227dbbc4c1",
+      "source": "source/card-fronts/C08-3-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-ae3f-7b30-a917-2cedc8ba7d6c\\exec-c2921a00-83b8-4c24-bd3b-120f46ad8940.png",
+      "prompt": "Use case: stylized-concept. Independently paint a NEW 16-bit arcade game card front: perfectly circular front-facing metal token on true transparent canvas. First two references are STYLE MASTER only: match fine 16-bit arcade pixel art, discrete vivid highlights, hard clear pixel clusters, charcoal outlines, deep dark teal-blue enamel ground, concentric stepped metal rim, four cardinal turquoise diamond jewels. Third reference is IDENTITY ONLY; preserve its central animal/object but discard all pastel paper illustration and old background. No text letters numbers UI watermark, no outer glow, no tilted ellipse, no soft painted gradients. Circle fills 96% square with transparent corners. TRUE RARITY LEGENDARY grade 3: brilliant gold metallic rim amber shadows pale highlights, small elegant wing engravings. Subject: sprinting yellow-gold leopard with black rosettes, cream muzzle/paws, long curved tail, friendly determined face. Mechanic: sharp cyan speed lightning strokes stream behind it, two small golden charge seal sparks below, capturing swift reclaim energy. Leopard dominant, clear pose. 3% transparent safe border.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C09-3.png": {
+      "card_id": "C09-3",
+      "name": "归心牵潮",
+      "concept": "原生与回响各牵引一次，并留下引力易伤",
+      "grade": 3,
+      "art_variant": "C09-3",
+      "path": "cards/C09-3.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        496,
+        497
+      ],
+      "core_bbox": [
+        17,
+        16,
+        495,
+        496
+      ],
+      "visible_aspect": 0.9958333333333333,
+      "sha256": "4025ee550f67cfca6bca78ed6af4b1af5014d1b5192c92ab6ed0f2a6e61d3646",
+      "source": "source/card-fronts/C09-3-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-ae3f-7b30-a917-2cedc8ba7d6c\\exec-35d47d03-8730-4d72-b134-2b6d1834f3a7.png",
+      "prompt": "Use case: stylized-concept. Independently paint a NEW 16-bit arcade game card front: perfectly circular front-facing metal token on true transparent canvas. First two references are STYLE MASTER only: match fine 16-bit arcade pixel art, discrete vivid highlights, hard clear pixel clusters, charcoal outlines, deep dark teal-blue enamel ground, concentric stepped metal rim, four cardinal turquoise diamond jewels. Third reference is IDENTITY ONLY; preserve its central animal/object but discard all pastel paper illustration and old background. No text letters numbers UI watermark, no outer glow, no tilted ellipse, no soft painted gradients. Circle fills 96% square with transparent corners. TRUE RARITY LEGENDARY grade 3: brilliant gold metallic rim amber shadows pale highlights, small elegant wing engravings. Subject: cheerful coral red octopus with round head and clearly separated curling arms, black eyes and small smile. Mechanic: two staggered rings of cyan inward-flowing tides and four inward arrow-like streamlines pulling toward a tiny central gold gravity star under octopus; restrained amber vulnerability cracks. Strong red silhouette. 3% transparent safe border.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C10-3.png": {
+      "card_id": "C10-3",
+      "name": "碎壁契印",
+      "concept": "链击施加裂纹，已易伤包受到追击增幅",
+      "grade": 3,
+      "art_variant": "C10-3",
+      "path": "cards/C10-3.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        19,
+        15,
+        492,
+        497
+      ],
+      "core_bbox": [
+        20,
+        16,
+        491,
+        496
+      ],
+      "visible_aspect": 0.98125,
+      "sha256": "d09a533acd31be4958b982b0506183a81b010098a50841c466cba5a2ac5e774e",
+      "source": "source/card-fronts/C10-3-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-ae3f-7b30-a917-2cedc8ba7d6c\\exec-bed9bc91-371a-4f83-8927-0ff122b19a0e.png",
+      "prompt": "Use case: stylized-concept. Independently paint a NEW 16-bit arcade game card front: perfectly circular front-facing metal token on true transparent canvas. First two references are STYLE MASTER only: match fine 16-bit arcade pixel art, discrete vivid highlights, hard clear pixel clusters, charcoal outlines, deep dark teal-blue enamel ground, concentric stepped metal rim, four cardinal turquoise diamond jewels. Third reference is IDENTITY ONLY; preserve its central animal/object but discard all pastel paper illustration and old background. No text letters numbers UI watermark, no outer glow, no tilted ellipse, no soft painted gradients. Circle fills 96% square with transparent corners. TRUE RARITY LEGENDARY grade 3: brilliant gold metallic rim amber shadows pale highlights, small elegant wing engravings. Subject: sturdy gray rhinoceros in side profile facing right, large cream horn and smaller rear horn, round black eye, pink ear detail, four short legs. Mechanic: cyan linked chain arcs behind rhino, gold jagged cracks spreading through two seal fragments beneath its feet; impact follow-up on weakened armor. Rhino dominant. 3% transparent safe border.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C11-3.png": {
+      "card_id": "C11-3",
+      "name": "敕令追猎",
+      "concept": "回响可消费同根标记并触发追猎爆发",
+      "grade": 3,
+      "art_variant": "C11-3",
+      "path": "cards/C11-3.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        16,
+        497,
+        496
+      ],
+      "core_bbox": [
+        16,
+        17,
+        496,
+        495
+      ],
+      "visible_aspect": 1.00418410041841,
+      "sha256": "e9f87ec12b4caed8ca654a44ef236114d972f71f5d91f459c02931f15bc85a9b",
+      "source": "source/card-fronts/C11-3-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-ae3f-7b30-a917-2cedc8ba7d6c\\exec-f80f0888-ca5c-4d92-9d97-f8f217b48ea8.png",
+      "prompt": "Use case: stylized-concept. Independently paint a NEW 16-bit arcade game card front: perfectly circular front-facing metal token on true transparent canvas. First two references are STYLE MASTER only: match fine 16-bit arcade pixel art, discrete vivid highlights, hard clear pixel clusters, charcoal outlines, deep dark teal-blue enamel ground, concentric stepped metal rim, four cardinal turquoise diamond jewels. Third reference is IDENTITY ONLY; preserve its central animal/object but discard all pastel paper illustration and old background. No text letters numbers UI watermark, no outer glow, no tilted ellipse, no soft painted gradients. Circle fills 96% square with transparent corners. TRUE RARITY LEGENDARY grade 3: brilliant gold metallic rim amber shadows pale highlights, small elegant wing engravings. Subject: seated gray wolf in right-facing profile, cream muzzle/chest/tail tip, pointed ears and amber eye, proud friendly hunting posture. Mechanic: gold target seal behind wolf, a small scarlet hunting sigil on shoulder and two cyan echo curves consuming the sigil into one gold starburst beside paw. Wolf dominant. 3% transparent safe border.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C12-3.png": {
+      "card_id": "C12-3",
+      "name": "海啸破心",
+      "concept": "大波按包边命中，中心区域额外增伤",
+      "grade": 3,
+      "art_variant": "C12-3",
+      "path": "cards/C12-3.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        496,
+        497
+      ],
+      "core_bbox": [
+        17,
+        16,
+        495,
+        496
+      ],
+      "visible_aspect": 0.9958333333333333,
+      "sha256": "545ced56e515daf0cd60d509e8d713be97e2d704edc651622edb73649dd26ac2",
+      "source": "source/card-fronts/C12-3-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-ae3f-7b30-a917-2cedc8ba7d6c\\exec-a53ca64e-2700-449f-bd7a-463885abae2c.png",
+      "prompt": "Use case: stylized-concept. Independently paint a NEW 16-bit arcade game card front: perfectly circular front-facing metal token on true transparent canvas. First two references are STYLE MASTER only: match fine 16-bit arcade pixel art, discrete vivid highlights, hard clear pixel clusters, charcoal outlines, deep dark teal-blue enamel ground, concentric stepped metal rim, four cardinal turquoise diamond jewels. Third reference is IDENTITY ONLY; preserve its central animal/object but discard all pastel paper illustration and old background. No text letters numbers UI watermark, no outer glow, no tilted ellipse, no soft painted gradients. Circle fills 96% square with transparent corners. TRUE RARITY LEGENDARY grade 3: brilliant gold metallic rim amber shadows pale highlights, small elegant wing engravings. Subject: swimming green sea turtle with olive hexagonal shell, pale yellow shell edge and cream-green face, outspread green flippers, friendly black eye. Mechanic: enormous contained concentric cyan tsunami rings, breaking crest behind shell and a bright gold concentrated central star below turtle indicating stronger wave heart. Turtle dominant. 3% transparent safe border.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C13-3.png": {
+      "card_id": "C13-3",
+      "name": "藏页罗盘",
+      "concept": "提高产卡、成功后加张，并给每张额外升阶机会",
+      "grade": 3,
+      "art_variant": "C13-3",
+      "path": "cards/C13-3.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        15,
+        496,
+        497
+      ],
+      "core_bbox": [
+        16,
+        16,
+        495,
+        496
+      ],
+      "visible_aspect": 0.9979166666666667,
+      "sha256": "f232f2a43fc5532f1d3b1e936943b4151c602d19501f1aa7903002ef0af16202",
+      "source": "source/card-fronts/C13-3-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-ae3f-7b30-a917-2cedc8ba7d6c\\exec-3691ae62-02db-4d9c-b1fb-945b56573e44.png",
+      "prompt": "Use case: stylized-concept. Independently paint a NEW 16-bit arcade game card front: perfectly circular front-facing metal token on true transparent canvas. First two references are STYLE MASTER only: match fine 16-bit arcade pixel art, discrete vivid highlights, hard clear pixel clusters, charcoal outlines, deep dark teal-blue enamel ground, concentric stepped metal rim, four cardinal turquoise diamond jewels. Third reference is IDENTITY ONLY; preserve its central animal/object but discard all pastel paper illustration and old background. No text letters numbers UI watermark, no outer glow, no tilted ellipse, no soft painted gradients. Circle fills 96% square with transparent corners. TRUE RARITY LEGENDARY grade 3: brilliant gold metallic rim amber shadows pale highlights, small elegant wing engravings. Subject: adventurous raccoon explorer with brown broad-brim hat, cyan goggles on hat, little feather, teal scarf and backpack; black raccoon mask, striped tail; holding magnifying glass examining one tiny blank card with a golden star. Mechanic: a cyan compass rose and two small blank collectible cards fanning behind, suggesting extra card discovery and upgrade. Keep dark teal empty ground, no scenery, NO lettering on cards. 3% transparent safe border.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C14-3.png": {
+      "card_id": "C14-3",
+      "name": "聚宝铃",
+      "concept": "固定加赏，同根第三包起额外金币倍率",
+      "grade": 3,
+      "art_variant": "C14-3",
+      "path": "cards/C14-3.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        15,
+        494,
+        497
+      ],
+      "core_bbox": [
+        18,
+        16,
+        493,
+        496
+      ],
+      "visible_aspect": 0.9895833333333334,
+      "sha256": "ea0b545233be11e115bf35116ebb47439b2380142c4fdc6dfb58bfdde0334e59",
+      "source": "source/card-fronts/C14-3-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-ae3f-7b30-a917-2cedc8ba7d6c\\exec-ab04fad1-3cf0-443c-8453-77febc590494.png",
+      "prompt": "Use case: stylized-concept. Independently paint a NEW 16-bit arcade game card front: perfectly circular front-facing metal token on true transparent canvas. First two references are STYLE MASTER only: match fine 16-bit arcade pixel art, discrete vivid highlights, hard clear pixel clusters, charcoal outlines, deep dark teal-blue enamel ground, concentric stepped metal rim, four cardinal turquoise diamond jewels. Third reference is IDENTITY ONLY; preserve its central animal/object but discard all pastel paper illustration and old background. No text letters numbers UI watermark, no outer glow, no tilted ellipse, no soft painted gradients. Circle fills 96% square with transparent corners. TRUE RARITY LEGENDARY grade 3: brilliant gold metallic rim amber shadows pale highlights, small elegant wing engravings. Subject: happy flying magpie with glossy charcoal black head, cyan-black spread wings and long tail, white cheek and belly, carrying golden square-hole coin in beak. Mechanic: three more gleaming square-hole coins follow a curved cyan reward arc below bird, last coin largest, increasing reward after third hit. No cream backdrop, dark enamel only. 3% transparent safe border.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C08-1.png": {
+      "card_id": "C15-3",
+      "name": "火花接力",
+      "concept": "回响补漏与首代连锁相互接力",
+      "grade": 3,
+      "art_variant": "C08-1",
+      "path": "cards/C08-1.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        15,
+        497,
+        496
+      ],
+      "core_bbox": [
+        16,
+        16,
+        496,
+        495
+      ],
+      "visible_aspect": 1.0020876826722338,
+      "sha256": "7979e92cc63450667aefdbe73d97f29cf8ba46ca08aba3e6d9218b228609a080",
+      "source": "source/card-fronts/C08-1-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-ae3f-7b30-a917-2cedc8ba7d6c\\exec-0b84933c-cacd-47fb-9889-b3d1afb6a77f.png",
+      "prompt": "Use case: stylized-concept. Independently paint a NEW 16-bit arcade game card front: perfectly circular front-facing metal token on true transparent canvas. First two references are STYLE MASTER only: match fine 16-bit arcade pixel art, discrete vivid highlights, hard clear pixel clusters, charcoal outlines, deep dark teal-blue enamel ground, concentric stepped metal rim, four cardinal turquoise diamond jewels. Third reference is IDENTITY ONLY; preserve its central animal/object but discard all pastel paper illustration and old background. No text letters numbers UI watermark, no outer glow, no tilted ellipse, no soft painted gradients. Circle fills 96% square with transparent corners. IMPORTANT actual rarity LEGENDARY grade3 despite identity reference green rim; use brilliant GOLD metallic rim amber shadows pale highlights small wing engravings. Subject: sprinting yellow-gold leopard with black rosettes, cream paws/muzzle, long curling tail, happy alert face. Mechanic FIRE SPARK RELAY: two small amber sparks pass a cyan echo arc baton into a branching chain lightning arc behind the running leopard. Distinct from speed card: show relay arcs and linked spark nodes, no text. 3% transparent border.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C09-1.png": {
+      "card_id": "C16-3",
+      "name": "曙光星门",
+      "concept": "三支会聚与扩散核心开封，是破晓星门的临时替代",
+      "grade": 3,
+      "art_variant": "C09-1",
+      "path": "cards/C09-1.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        15,
+        497,
+        496
+      ],
+      "core_bbox": [
+        16,
+        16,
+        496,
+        495
+      ],
+      "visible_aspect": 1.0020876826722338,
+      "sha256": "f43385451f59ea3f6380f136bb22834575264d437124af9b89a402befd678b52",
+      "source": "source/card-fronts/C09-1-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-ae3f-7b30-a917-2cedc8ba7d6c\\exec-f85de631-9e55-4ef7-be62-29023ed878bb.png",
+      "prompt": "Use case: stylized-concept. Independently paint a NEW 16-bit arcade game card front: perfectly circular front-facing metal token on true transparent canvas. First two references are STYLE MASTER only: match fine 16-bit arcade pixel art, discrete vivid highlights, hard clear pixel clusters, charcoal outlines, deep dark teal-blue enamel ground, concentric stepped metal rim, four cardinal turquoise diamond jewels. Third reference is IDENTITY ONLY; preserve its central animal/object but discard all pastel paper illustration and old background. No text letters numbers UI watermark, no outer glow, no tilted ellipse, no soft painted gradients. Circle fills 96% square with transparent corners. IMPORTANT actual rarity LEGENDARY grade3 despite identity reference green rim; brilliant GOLD metallic rim amber shadows pale highlights small wing engravings. Subject: cheerful bright coral octopus, round head, black eyes, small smile, clearly curling arms, dominant silhouette. Mechanic DAWN STAR GATE: three cyan light rays converge behind octopus into radiant gold-cyan star portal, broken central seal and spreading semicircular cyan arcs. Rich dark teal ground, strong readable design. 3% transparent safe border.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C10-1.png": {
+      "card_id": "C17-3",
+      "name": "七重潮汐",
+      "concept": "双回响与圆波配合分阶段牵引，为九重潮汐铺路",
+      "grade": 3,
+      "art_variant": "C10-1",
+      "path": "cards/C10-1.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        18,
+        497,
+        495
+      ],
+      "core_bbox": [
+        16,
+        18,
+        496,
+        494
+      ],
+      "visible_aspect": 1.0084033613445378,
+      "sha256": "b0fe1ed4870b445983ae9ba41c0d822acf8984991f7e0e1daa9c2f9fa5d4de68",
+      "source": "source/card-fronts/C10-1-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-ae3f-7b30-a917-2cedc8ba7d6c\\exec-22fd423d-b5af-475f-a3f9-7f00c5b31997.png",
+      "prompt": "Use case: stylized-concept. Independently paint a NEW 16-bit arcade game card front: perfectly circular front-facing metal token on true transparent canvas. First two references are STYLE MASTER only: match fine 16-bit arcade pixel art, discrete vivid highlights, hard clear pixel clusters, charcoal outlines, deep dark teal-blue enamel ground, concentric stepped metal rim, four cardinal turquoise diamond jewels. Third reference is IDENTITY ONLY; preserve its central animal/object but discard all pastel paper illustration and old background. No text letters numbers UI watermark, no outer glow, no tilted ellipse, no soft painted gradients. Circle fills 96% square with transparent corners. IMPORTANT actual rarity LEGENDARY grade3 despite identity reference green rim; brilliant GOLD metallic rim amber shadows pale highlights small wing engravings. Subject: sturdy cute gray rhinoceros side profile facing right, large cream horn and smaller horn, short sturdy legs, black eye pink ear. Mechanic SEVENFOLD TIDES: layered segmented cyan circular tide bands, two echo crescents interlocking with larger circular wave under rhino and inward streamlines. Distinct from crack-rhino; focus waves and phased pull, no masonry. 3% transparent border.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C11-1.png": {
+      "card_id": "C18-3",
+      "name": "追猎序章",
+      "concept": "标记、双向穿透与手动核心追击组成过渡收割",
+      "grade": 3,
+      "art_variant": "C11-1",
+      "path": "cards/C11-1.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        15,
+        497,
+        496
+      ],
+      "core_bbox": [
+        16,
+        16,
+        496,
+        495
+      ],
+      "visible_aspect": 1.0020876826722338,
+      "sha256": "6d962f94a60440c3d9d70d07bf7728f9be84a164adb1943da3cee3999affad52",
+      "source": "source/card-fronts/C11-1-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-ae3f-7b30-a917-2cedc8ba7d6c\\exec-b1b4b543-6a2c-4a33-94f4-2a58086d8079.png",
+      "prompt": "Use case: stylized-concept. Independently paint a NEW 16-bit arcade game card front: perfectly circular front-facing metal token on true transparent canvas. First two references are STYLE MASTER only: match fine 16-bit arcade pixel art, discrete vivid highlights, hard clear pixel clusters, charcoal outlines, deep dark teal-blue enamel ground, concentric stepped metal rim, four cardinal turquoise diamond jewels. Third reference is IDENTITY ONLY; preserve its central animal/object but discard all pastel paper illustration and old background. No text letters numbers UI watermark, no outer glow, no tilted ellipse, no soft painted gradients. Circle fills 96% square with transparent corners. IMPORTANT actual rarity LEGENDARY grade3 despite identity reference green rim; brilliant GOLD metallic rim amber shadows pale highlights small wing engravings. Subject: seated gray wolf right-facing, cream muzzle chest and bushy tail tip, amber eye, pointed ears. Mechanic HUNTING PROLOGUE: crimson diamond target mark on shoulder, long cyan piercing ray with arrow tips pointing both left and right behind wolf, gold precision star core above muzzle and two spare gold tracking sparks. Wolf dominant, no text. 3% transparent border.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C12-1.png": {
+      "card_id": "C19-3",
+      "name": "裂界反应",
+      "concept": "链网裂纹与储格释放构成聚变核心的下位替代",
+      "grade": 3,
+      "art_variant": "C12-1",
+      "path": "cards/C12-1.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        15,
+        497,
+        497
+      ],
+      "core_bbox": [
+        16,
+        16,
+        496,
+        496
+      ],
+      "visible_aspect": 1.0,
+      "sha256": "45e010960024e53de3d00361eec7ab72b4b2f8f2912e0d03a0dfc3766da33525",
+      "source": "source/card-fronts/C12-1-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-ae3f-7b30-a917-2cedc8ba7d6c\\exec-6c815b52-4230-469e-a1d7-1f4080e7021d.png",
+      "prompt": "Use case: stylized-concept. Independently paint a NEW 16-bit arcade game card front: perfectly circular front-facing metal token on true transparent canvas. First two references are STYLE MASTER only: match fine 16-bit arcade pixel art, discrete vivid highlights, hard clear pixel clusters, charcoal outlines, deep dark teal-blue enamel ground, concentric stepped metal rim, four cardinal turquoise diamond jewels. Third reference is IDENTITY ONLY; preserve its central animal/object but discard all pastel paper illustration and old background. No text letters numbers UI watermark, no outer glow, no tilted ellipse, no soft painted gradients. Circle fills 96% square with transparent corners. IMPORTANT actual rarity LEGENDARY grade3 despite identity reference green rim; brilliant GOLD metallic rim amber shadows pale highlights small wing engravings. Subject: swimming green sea turtle olive hexagonal shell, cream-green face, broad green flippers, friendly eye. Mechanic RIFT REACTION: a cyan linked network with sharp amber branching cracks behind turtle, two square charge jewels beneath shell feeding a contained bright cyan-gold reaction core. Different from tsunami turtle: emphasize chain lattice and energy cells, only tiny water ripple. 3% transparent border.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C13-1.png": {
+      "card_id": "C20-3",
+      "name": "遗迹寻宝",
+      "concept": "寻卡、金币与中心波结合，等待天命寻宝替换",
+      "grade": 3,
+      "art_variant": "C13-1",
+      "path": "cards/C13-1.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        15,
+        496,
+        497
+      ],
+      "core_bbox": [
+        16,
+        16,
+        495,
+        496
+      ],
+      "visible_aspect": 0.9979166666666667,
+      "sha256": "7d19c7b2337d9744a62b98d5508890addc96634614137a145aee8c72061f3e3b",
+      "source": "source/card-fronts/C13-1-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-e190-7302-a46a-dcb0bf30cd66\\exec-8b2eb024-2dfd-487c-b286-0088a2a37804.png",
+      "prompt": "Use case stylized-concept. Create ONE new game card face, a strictly circular front-on metal token with transparent outside. References 1 dolphin and 2 card back are authoritative style and geometry: refined 16-bit arcade pixel art, hard pixel clusters, charcoal outlines, dark deep teal blue enamel, stepped limited highlights, angular engraved double ring and four cardinal gemstones. Reference 3 ONLY supplies subject identity: cute raccoon explorer wearing golden safari hat with leaf, backpack and magnifying glass. Redraw from scratch in the authoritative arcade style, replace cream paper and pastel completely. Card 遗迹寻宝 concept: treasure search, gold coins and a central expanding pulse. Show raccoon examining an ancient coin with magnifier, concentric cyan engraved pulse behind, small gold coin symbols integrated without text. Grade GOLD: bright gold metal outer frame like ref2. Strong readable central character. No words letters numbers UI, no external glow, no photographic texture, no smooth painting. Perfect circle orthographic, balanced full token within square, 3 percent transparent margin.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C14-1.png": {
+      "card_id": "C21-3",
+      "name": "繁星金潮",
+      "concept": "轻量疾速寻卡、连破加赏和牵引，为星海金潮铺路",
+      "grade": 3,
+      "art_variant": "C14-1",
+      "path": "cards/C14-1.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        497,
+        497
+      ],
+      "core_bbox": [
+        16,
+        16,
+        496,
+        496
+      ],
+      "visible_aspect": 1.0,
+      "sha256": "0d4d966c3b511f7fce4febe7bbf3258cd3fb37c7c64239a840fa4ed5417e3b26",
+      "source": "source/card-fronts/C14-1-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-e190-7302-a46a-dcb0bf30cd66\\exec-c9c88e38-bb4f-4df3-b710-f2aa2eb8f678.png",
+      "prompt": "Use case stylized-concept. Create ONE independently redrawn game card face, strict perfect circular front-on metal token on genuine transparent outside. Reference 1 dolphin and reference 2 card back ONLY define authoritative style/geometry: refined 16-bit arcade pixel art, deliberate crisp pixel clusters, charcoal outlines, deep dark teal blue enamel field, limited stepped highlights, angular engraved double ring and four cardinal gems; do NOT include dolphin. Reference 3 ONLY defines subject identity, fully repaint it, remove cream paper and pastel style. Readable large central subject at 64px. No text, letters, numbers, UI, watermark, outer glow, smooth painting or photoreal texture. Orthographic circle not ellipse, square canvas, slight transparent margin. Subject: cute black and teal magpie in flight with cream belly, spread wings holding ancient gold coin in beak. Concept 繁星金潮: swift treasure search, sequential rewards and attraction; cyan star trails and three orbiting gold coins pulled along arcs. Grade GOLD: outer metal ring dominant bright gold, cyan cardinal gems matching cardback. Large clear magpie silhouette.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C01-4.png": {
+      "card_id": "C01-4",
+      "name": "无界日轮",
+      "concept": "原范围外首脉冲爆发并留下广域圆波",
+      "grade": 4,
+      "art_variant": "C01-4",
+      "path": "cards/C01-4.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        15,
+        497,
+        496
+      ],
+      "core_bbox": [
+        16,
+        16,
+        496,
+        495
+      ],
+      "visible_aspect": 1.0020876826722338,
+      "sha256": "59921a28b1a880fcfebee385aa4b127f027aa4454e0b014206edd6754156ea3b",
+      "source": "source/card-fronts/C01-4-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-e190-7302-a46a-dcb0bf30cd66\\exec-5e9d31aa-b42b-45d6-af7e-1a6d43ae5037.png",
+      "prompt": "Use case stylized-concept. Create ONE independently redrawn game card face, strict perfect circular front-on metal token on genuine transparent outside. Reference 1 dolphin and reference 2 card back ONLY define authoritative style/geometry: refined 16-bit arcade pixel art, deliberate crisp pixel clusters, charcoal outlines, deep dark teal blue enamel field, limited stepped highlights, angular engraved double ring and four cardinal gems; do NOT include dolphin. Reference 3 ONLY defines subject identity, fully repaint it, remove cream paper and pastel style. Readable large central subject at 64px. No text, letters, numbers, UI, watermark, outer glow, smooth painting or photoreal texture. Orthographic circle not ellipse, square canvas, slight transparent margin.  Grade ANCIENT RED: dominant RUBY RED/CRIMSON metallic outer frame, dark crimson shadows and scarlet stepped highlights, a few fine gold inlays allowed; four ruby gems with restrained iridescent facets, NOT a gold frame. Red must read clearly at thumbnail. Keep dark teal inside and colored recognizable subject. Subject: joyful cyan dolphin with ivory belly and red mouth leaping right, exactly recognizable same animal as old reference. Concept 无界日轮: first pulse beyond boundary, wide circular wave; large solar ring and broad concentric cyan pixel wave arcs behind dolphin, few controlled ruby/cyan rainbow crystal facets on border. Preserve substantial dark space.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C02-4.png": {
+      "card_id": "C02-4",
+      "name": "万象雷庭",
+      "concept": "四代分叉链网追猎破损包，并留下可转移标记",
+      "grade": 4,
+      "art_variant": "C02-4",
+      "path": "cards/C02-4.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        18,
+        15,
+        493,
+        497
+      ],
+      "core_bbox": [
+        19,
+        16,
+        492,
+        496
+      ],
+      "visible_aspect": 0.9854166666666667,
+      "sha256": "2ea55aed591806bf12eb58d18e3dae79f8411d1b22a93f20770d083ee89cb4bd",
+      "source": "source/card-fronts/C02-4-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-e190-7302-a46a-dcb0bf30cd66\\exec-f6951f5d-31b8-46fb-b63b-b7b40d176dae.png",
+      "prompt": "Use case stylized-concept. Create ONE independently redrawn game card face, strict perfect circular front-on metal token on genuine transparent outside. Reference 1 dolphin and reference 2 card back ONLY define authoritative style/geometry: refined 16-bit arcade pixel art, deliberate crisp pixel clusters, charcoal outlines, deep dark teal blue enamel field, limited stepped highlights, angular engraved double ring and four cardinal gems; do NOT include dolphin. Reference 3 ONLY defines subject identity, fully repaint it, remove cream paper and pastel style. Readable large central subject at 64px. No text, letters, numbers, UI, watermark, outer glow, smooth painting or photoreal texture. Orthographic circle not ellipse, square canvas, slight transparent margin.  Grade ANCIENT RED: dominant RUBY RED/CRIMSON metallic outer frame, dark crimson shadows and scarlet stepped highlights, a few fine gold inlays allowed; four ruby gems with restrained iridescent facets, NOT a gold frame. Red must read clearly at thumbnail. Keep dark teal inside and colored recognizable subject. Subject: cute bright golden honeybee with charcoal black stripes, two pale cyan ivory wings and antennae flying diagonally, identity from reference3. Concept 万象雷庭: branching lightning chain network, prey mark transfer. Around bee engrave a cyan branching lightning chain joining small hexagonal marks, two interlocking cyan chain links below; keep bee dominant. Controlled thin iridescent crystal panels in ring.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C03-4.png": {
+      "card_id": "C03-4",
+      "name": "太初四拍",
+      "concept": "原生加三次快回响，补漏开封并驱动快充",
+      "grade": 4,
+      "art_variant": "C03-4",
+      "path": "cards/C03-4.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        495,
+        497
+      ],
+      "core_bbox": [
+        17,
+        16,
+        494,
+        496
+      ],
+      "visible_aspect": 0.99375,
+      "sha256": "b0b34967a03d5370e1b95d62fff130f8bd6bf8ec8308f7baa3ec8a05f8e674d4",
+      "source": "source/card-fronts/C03-4-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-e190-7302-a46a-dcb0bf30cd66\\exec-bfe87272-d5fd-4a93-9698-f8c3e4fb8c18.png",
+      "prompt": "Use case stylized-concept. Create ONE independently redrawn game card face, strict perfect circular front-on metal token on genuine transparent outside. Reference 1 dolphin and reference 2 card back ONLY define authoritative style/geometry: refined 16-bit arcade pixel art, deliberate crisp pixel clusters, charcoal outlines, deep dark teal blue enamel field, limited stepped highlights, angular engraved double ring and four cardinal gems; do NOT include dolphin. Reference 3 ONLY defines subject identity, fully repaint it, remove cream paper and pastel style. Readable large central subject at 64px. No text, letters, numbers, UI, watermark, outer glow, smooth painting or photoreal texture. Orthographic circle not ellipse, square canvas, slight transparent margin.  Grade ANCIENT RED: dominant RUBY RED/CRIMSON metallic outer frame, dark crimson shadows and scarlet stepped highlights, a few fine gold inlays allowed; four ruby gems with restrained iridescent facets, NOT a gold frame. Red must read clearly at thumbnail. Keep dark teal inside and colored recognizable subject. Subject: cute purple bat seen front-on with enormous upright pink inner ears, spread lilac wings, happy tiny cream muzzle and black eyes. Concept 太初四拍: four rapid sonic echo beats; place FOUR clear nested cyan arc pulses around bat without numbers, balanced above and below, tiny gold charge sparks. Large bat fills central field; restrained iridescent ring facets.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C04-4.png": {
+      "card_id": "C04-4",
+      "name": "四极星阵",
+      "concept": "四支会聚与重叠叠击，核心再追加伤害",
+      "grade": 4,
+      "art_variant": "C04-4",
+      "path": "cards/C04-4.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        16,
+        497,
+        496
+      ],
+      "core_bbox": [
+        16,
+        17,
+        496,
+        495
+      ],
+      "visible_aspect": 1.00418410041841,
+      "sha256": "6d093ec06dac01ef6c0848894a1d10d1608b4cb59d54d558dda67b6b37062f9f",
+      "source": "source/card-fronts/C04-4-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-e190-7302-a46a-dcb0bf30cd66\\exec-44ca67e3-325e-4124-9d9e-3fba81a9fcbb.png",
+      "prompt": "Use case stylized-concept. Create ONE independently redrawn game card face, strict perfect circular front-on metal token on genuine transparent outside. Reference 1 dolphin and reference 2 card back ONLY define authoritative style/geometry: refined 16-bit arcade pixel art, deliberate crisp pixel clusters, charcoal outlines, deep dark teal blue enamel field, limited stepped highlights, angular engraved double ring and four cardinal gems; do NOT include dolphin. Reference 3 ONLY defines subject identity, fully repaint it, remove cream paper and pastel style. Readable large central subject at 64px. No text, letters, numbers, UI, watermark, outer glow, smooth painting or photoreal texture. Orthographic circle not ellipse, square canvas, slight transparent margin.  Grade ANCIENT RED: dominant RUBY RED/CRIMSON metallic outer frame, dark crimson shadows and scarlet stepped highlights, a few fine gold inlays allowed; four ruby gems with restrained iridescent facets, NOT a gold frame. Red must read clearly at thumbnail. Keep dark teal inside and colored recognizable subject.  Approx 3 percent transparent safe margin all round. Never glow outside silhouette. Subject: cute smiling orange five-armed starfish with pale yellow spots, dark shiny eyes, facing viewer. Concept 四极星阵: four converging branches strike core. Show four cyan angular energy paths from diagonal quadrants converging behind starfish center and a small diamond core motif, quiet dark teal space. Keep five distinct arms and cheerful recognizable starfish.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C05-4.png": {
+      "card_id": "C05-4",
+      "name": "破界长锋",
+      "concept": "双向贯穿三包，所有阶段留下裂纹并追击",
+      "grade": 4,
+      "art_variant": "C05-4",
+      "path": "cards/C05-4.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        15,
+        494,
+        497
+      ],
+      "core_bbox": [
+        18,
+        16,
+        494,
+        496
+      ],
+      "visible_aspect": 0.9916666666666667,
+      "sha256": "4793f57654c6b52f359904fec4a0405ebc9252f77b6db92aa2a61f0f552168c5",
+      "source": "source/card-fronts/C05-4-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-e190-7302-a46a-dcb0bf30cd66\\exec-729e2be0-be62-45f2-9b6f-6a3e05d34a3a.png",
+      "prompt": "Use case stylized-concept. Create ONE independently redrawn game card face, strict perfect circular front-on metal token on genuine transparent outside. Reference 1 dolphin and reference 2 card back ONLY define authoritative style/geometry: refined 16-bit arcade pixel art, deliberate crisp pixel clusters, charcoal outlines, deep dark teal blue enamel field, limited stepped highlights, angular engraved double ring and four cardinal gems; do NOT include dolphin. Reference 3 ONLY defines subject identity, fully repaint it, remove cream paper and pastel style. Readable large central subject at 64px. No text, letters, numbers, UI, watermark, outer glow, smooth painting or photoreal texture. Orthographic circle not ellipse, square canvas, slight transparent margin.  Grade ANCIENT RED: dominant RUBY RED/CRIMSON metallic outer frame, dark crimson shadows and scarlet stepped highlights, a few fine gold inlays allowed; four ruby gems with restrained iridescent facets, NOT a gold frame. Red must read clearly at thumbnail. Keep dark teal inside and colored recognizable subject.  Approx 3 percent transparent safe margin all round. Never glow outside silhouette. Subject: majestic cute bald eagle flying right, ivory head and tail, gold hooked beak, brown amber spread wing, sharp focused eye, gold talons. Concept 破界长锋: double-direction piercing three targets, fracture and follow-up. Cyan long straight arrow/spear path goes horizontally behind eagle, three small fractured diamond sigils along it, opposing arrow tip. Keep eagle bold dominant. Small iridescent border facets.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C06-4.png": {
+      "card_id": "C06-4",
+      "name": "原核裁决",
+      "concept": "手动核心兼具开封、追损、猎速与低血终结，满蓄增幅",
+      "grade": 4,
+      "art_variant": "C06-4",
+      "path": "cards/C06-4.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        15,
+        494,
+        497
+      ],
+      "core_bbox": [
+        18,
+        16,
+        493,
+        496
+      ],
+      "visible_aspect": 0.9895833333333334,
+      "sha256": "69866f0f031aea905860479e6f8cb47431a0ca6aebf48bfb3062c865e8178036",
+      "source": "source/card-fronts/C06-4-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-e190-7302-a46a-dcb0bf30cd66\\exec-a3f11628-1d9a-4b54-a8bb-ccd7b4bb7ec3.png",
+      "prompt": "Use case stylized-concept. Create ONE independently redrawn game card face, strict perfect circular front-on metal token on genuine transparent outside. Reference 1 dolphin and reference 2 card back ONLY define authoritative style/geometry: refined 16-bit arcade pixel art, deliberate crisp pixel clusters, charcoal outlines, deep dark teal blue enamel field, limited stepped highlights, angular engraved double ring and four cardinal gems; do NOT include dolphin. Reference 3 ONLY defines subject identity, fully repaint it, remove cream paper and pastel style. Readable large central subject at 64px. No text, letters, numbers, UI, watermark, outer glow, smooth painting or photoreal texture. Orthographic circle not ellipse, square canvas, slight transparent margin.  Grade ANCIENT RED: dominant RUBY RED/CRIMSON metallic outer frame, dark crimson shadows and scarlet stepped highlights, a few fine gold inlays allowed; four ruby gems with restrained iridescent facets, NOT a gold frame. Red must read clearly at thumbnail. Keep dark teal inside and colored recognizable subject.  Approx 3 percent transparent safe margin all round. Never glow outside silhouette. Subject: cute wise brown owl front-on perched on a small dark branch with two teal leaves, large cream eye disks, shiny dark eyes, golden beak/talons and ivory breast with small feather chevrons. Concept 原核裁决: centered precision core and finisher. Cyan crosshair ring behind owl with four clean inward aiming ticks; a small golden core diamond below. Readable owl silhouette, not weapon. Restrained iridescent frame facets.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C07-4.png": {
+      "card_id": "C07-4",
+      "name": "天蓄永动",
+      "concept": "五格复利保留三格并强化后续事件，快充额外储备",
+      "grade": 4,
+      "art_variant": "C07-4",
+      "path": "cards/C07-4.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        18,
+        15,
+        494,
+        497
+      ],
+      "core_bbox": [
+        19,
+        16,
+        493,
+        496
+      ],
+      "visible_aspect": 0.9875,
+      "sha256": "c437d185a77fd81ca7e2db198a56bc5b25b39c175e111ff7c3672b44ceb7ed54",
+      "source": "source/card-fronts/C07-4-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-e190-7302-a46a-dcb0bf30cd66\\exec-5428914a-f0ca-4bb9-b5a7-e854aa414fa0.png",
+      "prompt": "Use case stylized-concept. Create ONE independently redrawn game card face, strict perfect circular front-on metal token on genuine transparent outside. Reference 1 dolphin and reference 2 card back ONLY define authoritative style/geometry: refined 16-bit arcade pixel art, deliberate crisp pixel clusters, charcoal outlines, deep dark teal blue enamel field, limited stepped highlights, angular engraved double ring and four cardinal gems; do NOT include dolphin. Reference 3 ONLY defines subject identity, fully repaint it, remove cream paper and pastel style. Readable large central subject at 64px. No text, letters, numbers, UI, watermark, outer glow, smooth painting or photoreal texture. Orthographic circle not ellipse, square canvas, slight transparent margin.  Grade ANCIENT RED: dominant RUBY RED/CRIMSON metallic outer frame, dark crimson shadows and scarlet stepped highlights, a few fine gold inlays allowed; four ruby gems with restrained iridescent facets, NOT a gold frame. Red must read clearly at thumbnail. Keep dark teal inside and colored recognizable subject.  Approx 3 percent transparent safe margin all round. Never glow outside silhouette. Subject: cute round brown bear front-on, rounded ears, cream muzzle and chest, smiling dark nose, holding a radiant GOLD energy orb between both paws. Concept 天蓄永动: stored compounding charge, five cells with three retained. Integrate five small cyan crystal charge cells in lower semicircle around bear, three bright and two dim, plus looping cyan orbit arrows behind. No numeric gauge or UI. Restrained iridescent facets in rim.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C08-4.png": {
+      "card_id": "C08-4",
+      "name": "瞬息连环",
+      "concept": "双支群击或任意阶段击破均可积印，多储备下一周期",
+      "grade": 4,
+      "art_variant": "C08-4",
+      "path": "cards/C08-4.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        15,
+        494,
+        497
+      ],
+      "core_bbox": [
+        18,
+        16,
+        493,
+        496
+      ],
+      "visible_aspect": 0.9895833333333334,
+      "sha256": "1b85cdfa40ced0a70acf57947edda483a4634d8eab401a12715cbf11617b2e86",
+      "source": "source/card-fronts/C08-4-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-e190-7302-a46a-dcb0bf30cd66\\exec-5ba89a51-f4d5-4d8b-882f-1834952f6c20.png",
+      "prompt": "Use case stylized-concept. Create ONE independently redrawn game card face, strict perfect circular front-on metal token on genuine transparent outside. Reference 1 dolphin and reference 2 card back ONLY define authoritative style/geometry: refined 16-bit arcade pixel art, deliberate crisp pixel clusters, charcoal outlines, deep dark teal blue enamel field, limited stepped highlights, angular engraved double ring and four cardinal gems; do NOT include dolphin. Reference 3 ONLY defines subject identity, fully repaint it, remove cream paper and pastel style. Readable large central subject at 64px. No text, letters, numbers, UI, watermark, outer glow, smooth painting or photoreal texture. Orthographic circle not ellipse, square canvas, slight transparent margin.  Grade ANCIENT RED: dominant RUBY RED/CRIMSON metallic outer frame, dark crimson shadows and scarlet stepped highlights, a few fine gold inlays allowed; four ruby gems with restrained iridescent facets, NOT a gold frame. Red must read clearly at thumbnail. Keep dark teal inside and colored recognizable subject.  Approx 3 percent transparent safe margin all round. Never glow outside silhouette. Subject: cute golden yellow spotted leopard running and leaping right, long curled tail, dark rosette spots, cream muzzle and paws, smiling open mouth. Concept 瞬息连环: fast consecutive strikes accumulate reserve. Cyan angular speed trails and two overlapping luminous strike loops behind leopard, small cyan diamond marks accumulating along lower arc. Dominant clear dynamic leopard silhouette. Restrained iridescent rim segments.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C09-4.png": {
+      "card_id": "C09-4",
+      "name": "星井重潮",
+      "concept": "原生、回响、余波分阶段牵引，近心压缩并施引力印",
+      "grade": 4,
+      "art_variant": "C09-4",
+      "path": "cards/C09-4.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        15,
+        494,
+        497
+      ],
+      "core_bbox": [
+        18,
+        16,
+        493,
+        496
+      ],
+      "visible_aspect": 0.9895833333333334,
+      "sha256": "55e2d047c20133fc2660a605f38209b17ed61233aed81c1e517d0e1508a3a4eb",
+      "source": "source/card-fronts/C09-4-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-e190-7302-a46a-dcb0bf30cd66\\exec-c2d489a6-c1c2-4e78-8e8c-e49d0859b711.png",
+      "prompt": "Use case stylized-concept. Create ONE independently redrawn game card face, strict perfect circular front-on metal token on genuine transparent outside. Reference 1 dolphin and reference 2 card back ONLY define authoritative style/geometry: refined 16-bit arcade pixel art, deliberate crisp pixel clusters, charcoal outlines, deep dark teal blue enamel field, limited stepped highlights, angular engraved double ring and four cardinal gems; do NOT include dolphin. Reference 3 ONLY defines subject identity, fully repaint it, remove cream paper and pastel style. Readable large central subject at 64px. No text, letters, numbers, UI, watermark, outer glow, smooth painting or photoreal texture. Orthographic circle not ellipse, square canvas, slight transparent margin.  Grade ANCIENT RED: dominant RUBY RED/CRIMSON metallic outer frame, dark crimson shadows and scarlet stepped highlights, a few fine gold inlays allowed; four ruby gems with restrained iridescent facets, NOT a gold frame. Red must read clearly at thumbnail. Keep dark teal inside and colored recognizable subject.  Approx 3 percent transparent safe margin all round. Never glow outside silhouette. Subject: cute coral salmon red octopus, round head, glossy black eyes and tiny smile, eight curling tentacles with light coral suckers. Concept 星井重潮: phased gravity attraction and near-center compression; four cyan arrows pointing inward toward octopus, three nested cyan orbit rings narrowing into small dark star well beneath it. Bold warm octopus separated from teal field. Restrained iridescent rim facets.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C10-4.png": {
+      "card_id": "C10-4",
+      "name": "终裂法则",
+      "concept": "所有阶段施加强易伤，追击裂纹与疾速目标",
+      "grade": 4,
+      "art_variant": "C10-4",
+      "path": "cards/C10-4.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        15,
+        495,
+        497
+      ],
+      "core_bbox": [
+        18,
+        16,
+        494,
+        496
+      ],
+      "visible_aspect": 0.9916666666666667,
+      "sha256": "facd905959bda4a2adedde53b87e58caf56ed7c50da419d0a16ae2983bf24cbc",
+      "source": "source/card-fronts/C10-4-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-e190-7302-a46a-dcb0bf30cd66\\exec-9254e202-b4a4-4fdb-b6cf-c95e4ae71448.png",
+      "prompt": "Use case stylized-concept. Create ONE independently redrawn game card face, strict perfect circular front-on metal token on genuine transparent outside. Reference 1 dolphin and reference 2 card back ONLY define authoritative style/geometry: refined 16-bit arcade pixel art, deliberate crisp pixel clusters, charcoal outlines, deep dark teal blue enamel field, limited stepped highlights, angular engraved double ring and four cardinal gems; do NOT include dolphin. Reference 3 ONLY defines subject identity, fully repaint it, remove cream paper and pastel style. Readable large central subject at 64px. No text, letters, numbers, UI, watermark, outer glow, smooth painting or photoreal texture. Orthographic circle not ellipse, square canvas, slight transparent margin.  Grade ANCIENT RED: dominant RUBY RED/CRIMSON metallic outer frame, dark crimson shadows and scarlet stepped highlights, a few fine gold inlays allowed; four ruby gems with restrained iridescent facets, NOT a gold frame. Red must read clearly at thumbnail. Keep dark teal inside and colored recognizable subject.  Approx 3 percent transparent safe margin all round. Never glow outside silhouette. Subject: cute sturdy gray rhinoceros standing facing right, two ivory horns with larger forward horn, small pointed ears pink inside, black eye, stocky legs and tiny ivory nails. Concept 终裂法则: weakness fracture, chasing cracked targets; angular cyan cracks radiate through stone-like dark teal disc beneath rhino, three jagged fissure sigils behind, short speed trail. No realistic skin texture. Bold rhino silhouette and large horn. Controlled rim rainbow facets.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C11-4.png": {
+      "card_id": "C11-4",
+      "name": "终焉敕命",
+      "concept": "标记可同根消费并爆发、死亡转移，链网扩散烙印",
+      "grade": 4,
+      "art_variant": "C11-4",
+      "path": "cards/C11-4.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        15,
+        495,
+        497
+      ],
+      "core_bbox": [
+        18,
+        16,
+        494,
+        496
+      ],
+      "visible_aspect": 0.9916666666666667,
+      "sha256": "efdec280ffe695888886dcdd9f862694a855482b52895db16ebf9ddc4cd16e99",
+      "source": "source/card-fronts/C11-4-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-e190-7302-a46a-dcb0bf30cd66\\exec-43a4d9bb-0eeb-4d08-958b-f1d58a567353.png",
+      "prompt": "Use case stylized-concept. Create ONE independently redrawn game card face, strict perfect circular front-on metal token on genuine transparent outside. Reference 1 dolphin and reference 2 card back ONLY define authoritative style/geometry: refined 16-bit arcade pixel art, deliberate crisp pixel clusters, charcoal outlines, deep dark teal blue enamel field, limited stepped highlights, angular engraved double ring and four cardinal gems; do NOT include dolphin. Reference 3 ONLY defines subject identity, fully repaint it, remove cream paper and pastel style. Readable large central subject at 64px. No text, letters, numbers, UI, watermark, outer glow, smooth painting or photoreal texture. Orthographic circle not ellipse, square canvas, slight transparent margin.  Grade ANCIENT RED: dominant RUBY RED/CRIMSON metallic outer frame, dark crimson shadows and scarlet stepped highlights, a few fine gold inlays allowed; four ruby gems with restrained iridescent facets, NOT a gold frame. Red must read clearly at thumbnail. Keep dark teal inside and colored recognizable subject.  Approx 3 percent transparent safe margin all round. Never glow outside silhouette. Subject: seated cute noble gray wolf facing right, tall pointed ears, white muzzle/chest and tail tip, thick upright curled bushy tail on left, alert amber eye. Concept 终焉敕命: transferable prey mark detonates then passes through chain; small red target mark on wolf shoulder, large cyan aiming halo behind head, cyan connected diamond trail traveling right. Keep central wolf unmistakable; not a fox. Restrained iridescent rim panels.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C12-4.png": {
+      "card_id": "C12-4",
+      "name": "寂灭回潮",
+      "concept": "巨波追损破心，中三包追加一次半能量波，回响继续补漏",
+      "grade": 4,
+      "art_variant": "C12-4",
+      "path": "cards/C12-4.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        15,
+        495,
+        497
+      ],
+      "core_bbox": [
+        18,
+        16,
+        494,
+        496
+      ],
+      "visible_aspect": 0.9916666666666667,
+      "sha256": "e06ed3370e67365479d8e03f741e21b74f9447e0e198967865592ee26a680cc1",
+      "source": "source/card-fronts/C12-4-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-e190-7302-a46a-dcb0bf30cd66\\exec-4699cab0-56f4-4d98-902d-7a11bde2c1dc.png",
+      "prompt": "Use case stylized-concept. Create ONE independently redrawn game card face, strict perfect circular front-on metal token on genuine transparent outside. Reference 1 dolphin and reference 2 card back ONLY define authoritative style/geometry: refined 16-bit arcade pixel art, deliberate crisp pixel clusters, charcoal outlines, deep dark teal blue enamel field, limited stepped highlights, angular engraved double ring and four cardinal gems; do NOT include dolphin. Reference 3 ONLY defines subject identity, fully repaint it, remove cream paper and pastel style. Readable large central subject at 64px. No text, letters, numbers, UI, watermark, outer glow, smooth painting or photoreal texture. Orthographic circle not ellipse, square canvas, slight transparent margin.  Grade ANCIENT RED: dominant RUBY RED/CRIMSON metallic outer frame, dark crimson shadows and scarlet stepped highlights, a few fine gold inlays allowed; four ruby gems with restrained iridescent facets, NOT a gold frame. Red must read clearly at thumbnail. Keep dark teal inside and colored recognizable subject.  Approx 3 percent transparent safe margin all round. Never glow outside silhouette. Subject: friendly green sea turtle swimming right with olive hexagon-patterned shell, pale yellow shell rim and belly, green wide flippers with light spots, cheerful shiny black eye. Concept 寂灭回潮: giant return wave, second smaller wave and echo; broad cyan crest curling behind turtle, two concentric ripple bands below and three tiny cracked diamond markers. Keep turtle prominent and ocean mechanic clean. Controlled iridescent rim facets.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C13-4.png": {
+      "card_id": "C13-4",
+      "name": "天赐藏书",
+      "concept": "高成功率与加张，保底稀有，另有直接远古机会",
+      "grade": 4,
+      "art_variant": "C13-4",
+      "path": "cards/C13-4.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        15,
+        497,
+        497
+      ],
+      "core_bbox": [
+        16,
+        16,
+        496,
+        496
+      ],
+      "visible_aspect": 1.0,
+      "sha256": "ffe60a1be25e4166d4ebadea7f2e8ad807a9d236e75df55107e8881752573887",
+      "source": "source/card-fronts/C13-4-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-e190-7302-a46a-dcb0bf30cd66\\exec-63e1cacd-2038-488c-8cab-fb43072f5c64.png",
+      "prompt": "Use case stylized-concept. Create ONE independently redrawn game card face, strict perfect circular front-on metal token on genuine transparent outside. Reference 1 dolphin and reference 2 card back ONLY define authoritative style/geometry: refined 16-bit arcade pixel art, deliberate crisp pixel clusters, charcoal outlines, deep dark teal blue enamel field, limited stepped highlights, angular engraved double ring and four cardinal gems; do NOT include dolphin. Reference 3 ONLY defines subject identity, fully repaint it, remove cream paper and pastel style. Readable large central subject at 64px. No text, letters, numbers, UI, watermark, outer glow, smooth painting or photoreal texture. Orthographic circle not ellipse, square canvas, slight transparent margin.  Grade ANCIENT RED: dominant RUBY RED/CRIMSON metallic outer frame, dark crimson shadows and scarlet stepped highlights, a few fine gold inlays allowed; four ruby gems with restrained iridescent facets, NOT a gold frame. Red must read clearly at thumbnail. Keep dark teal inside and colored recognizable subject.  Approx 3 percent transparent safe margin all round. Never glow outside silhouette. Subject: cute raccoon scholar explorer with striped bushy tail, golden safari hat carrying teal goggles, teal scarf, backpack, magnifying glass and a small rare illustrated blank card in other paw. Concept 天赐藏书: rare card collection and ancient archive, additional cards. Behind raccoon show open dark teal book with golden corners and three fanned tiny jewel cards marked only with diamonds, no lettering. Keep raccoon facial mask and hat recognizable. Controlled rainbow crystal ring panels.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C14-4.png": {
+      "card_id": "C14-4",
+      "name": "万贯丰收",
+      "concept": "固定、疾速与连破三类加赏，并可翻倍最终金币",
+      "grade": 4,
+      "art_variant": "C14-4",
+      "path": "cards/C14-4.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        15,
+        494,
+        497
+      ],
+      "core_bbox": [
+        18,
+        16,
+        494,
+        496
+      ],
+      "visible_aspect": 0.9916666666666667,
+      "sha256": "a975e44b2a81b4cd1e668b6a0e862f512bbb7f16a94c4ec7ae1dd9b8c0ca55c0",
+      "source": "source/card-fronts/C14-4-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-e190-7302-a46a-dcb0bf30cd66\\exec-969ae87b-2866-4134-8d9f-762b8b72a48e.png",
+      "prompt": "Use case stylized-concept. Create ONE independently redrawn game card face, strict perfect circular front-on metal token on genuine transparent outside. Reference 1 dolphin and reference 2 card back ONLY define authoritative style/geometry: refined 16-bit arcade pixel art, deliberate crisp pixel clusters, charcoal outlines, deep dark teal blue enamel field, limited stepped highlights, angular engraved double ring and four cardinal gems; do NOT include dolphin. Reference 3 ONLY defines subject identity, fully repaint it, remove cream paper and pastel style. Readable large central subject at 64px. No text, letters, numbers, UI, watermark, outer glow, smooth painting or photoreal texture. Orthographic circle not ellipse, square canvas, slight transparent margin.  Grade ANCIENT RED: dominant RUBY RED/CRIMSON metallic outer frame, dark crimson shadows and scarlet stepped highlights, a few fine gold inlays allowed; four ruby gems with restrained iridescent facets, NOT a gold frame. Red must read clearly at thumbnail. Keep dark teal inside and colored recognizable subject.  Approx 3 percent transparent safe margin all round. Never glow outside silhouette. Subject: cheerful black teal magpie with ivory belly and white wing tips flying right, gold square-holed coin in beak, spread wings and teal tail. Concept 万贯丰收: three kinds of bonus and doubled gold; three piles of bright square-holed ancient coins on lower arc, small paired gold spark at center, flowing cyan fortune trails. Keep magpie dominant and dark teal enamel background. Controlled iridescent metal ring facets.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C08-2.png": {
+      "card_id": "C15-4",
+      "name": "雷火轮回",
+      "concept": "双回响、分叉首代链击、追损圆波三种事件形成轮回",
+      "grade": 4,
+      "art_variant": "C08-2",
+      "path": "cards/C08-2.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        15,
+        495,
+        497
+      ],
+      "core_bbox": [
+        18,
+        16,
+        494,
+        496
+      ],
+      "visible_aspect": 0.9916666666666667,
+      "sha256": "3bb2f68f7976179e277d1a6da2d5b53bc10a75112fae71ef115cabbdaa1a4f53",
+      "source": "source/card-fronts/C08-2-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-e190-7302-a46a-dcb0bf30cd66\\exec-7e5c609e-04a7-4941-9a16-3dc5fcd9e1b7.png",
+      "prompt": "Use case stylized-concept. Create ONE independently redrawn game card face, strict perfect circular front-on metal token on genuine transparent outside. Reference 1 dolphin and reference 2 card back ONLY define authoritative style/geometry: refined 16-bit arcade pixel art, deliberate crisp pixel clusters, charcoal outlines, deep dark teal blue enamel field, limited stepped highlights, angular engraved double ring and four cardinal gems; do NOT include dolphin. Reference 3 ONLY defines subject identity, fully repaint it, remove cream paper and pastel style. Readable large central subject at 64px. No text, letters, numbers, UI, watermark, outer glow, smooth painting or photoreal texture. Orthographic circle not ellipse, square canvas, slight transparent margin.  Grade ANCIENT RED: dominant RUBY RED/CRIMSON metallic outer frame, dark crimson shadows and scarlet stepped highlights, a few fine gold inlays allowed; four ruby gems with restrained iridescent facets, NOT a gold frame. Red must read clearly at thumbnail. Keep dark teal inside and colored recognizable subject.  Approx 3 percent transparent safe margin all round. Never glow outside silhouette. Subject: cute spotted golden leopard leaping right with black rosettes, cream muzzle and paws, long curled tail and smiling mouth. Concept 雷火轮回: double echoes, branching lightning first strike and damaged-target wave form a cycle. Build THREE segmented arcs circling leopard: orange fire arc, cyan forked lightning arc and blue ripple arc, subtle paired echo marks, no diagram labels. Central leopard dominates. Even though ref3 frame is purple, actual grade is ANCIENT RED, use ruby crimson frame.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C09-2.png": {
+      "card_id": "C16-4",
+      "name": "破晓星门",
+      "concept": "四支外环首击爆发，会聚核心处可低血终结",
+      "grade": 4,
+      "art_variant": "C09-2",
+      "path": "cards/C09-2.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        15,
+        497,
+        497
+      ],
+      "core_bbox": [
+        16,
+        16,
+        496,
+        496
+      ],
+      "visible_aspect": 1.0,
+      "sha256": "56c4976b23cf034d4902b1965570c68157cbb4ee050add0dc7db525a57f0d5c7",
+      "source": "source/card-fronts/C09-2-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-e190-7302-a46a-dcb0bf30cd66\\exec-1085cb83-8d57-4637-8c91-1c9df809ed13.png",
+      "prompt": "Use case stylized-concept. Create ONE independently redrawn game card face, strict perfect circular front-on metal token on genuine transparent outside. Reference 1 dolphin and reference 2 card back ONLY define authoritative style/geometry: refined 16-bit arcade pixel art, deliberate crisp pixel clusters, charcoal outlines, deep dark teal blue enamel field, limited stepped highlights, angular engraved double ring and four cardinal gems; do NOT include dolphin. Reference 3 ONLY defines subject identity, fully repaint it, remove cream paper and pastel style. Readable large central subject at 64px. No text, letters, numbers, UI, watermark, outer glow, smooth painting or photoreal texture. Orthographic circle not ellipse, square canvas, slight transparent margin.  Grade ANCIENT RED: dominant RUBY RED/CRIMSON metallic outer frame, dark crimson shadows and scarlet stepped highlights, a few fine gold inlays allowed; four ruby gems with restrained iridescent facets, NOT a gold frame. Red must read clearly at thumbnail. Keep dark teal inside and colored recognizable subject.  Approx 3 percent transparent safe margin all round. Never glow outside silhouette. Subject: cute coral octopus front-on, round head, glossy black eyes, tiny happy mouth, eight curled arms with pale suckers. Concept 破晓星门: four outer-ring opening blasts converge on core to finish. Behind octopus a cyan circular stargate with FOUR strong diagonal beams converging and a small golden dawn core under it, cyan rings. Different from gravity card: radiant four-direction gate motif. Ref3 purple is irrelevant, actual grade ANCIENT RED.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C10-2.png": {
+      "card_id": "C17-4",
+      "name": "九重潮汐",
+      "concept": "三回响配合重潮再临，各阶段牵引把包聚回原手动落点",
+      "grade": 4,
+      "art_variant": "C10-2",
+      "path": "cards/C10-2.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        15,
+        497,
+        497
+      ],
+      "core_bbox": [
+        16,
+        16,
+        496,
+        496
+      ],
+      "visible_aspect": 1.0,
+      "sha256": "f8da999dacbd5692a65109063b1834542d24743b96aeedf945815f808814af93",
+      "source": "source/card-fronts/C10-2-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-e190-7302-a46a-dcb0bf30cd66\\exec-ca8108b6-2003-465a-be3a-cd20b8198943.png",
+      "prompt": "Use case stylized-concept. Create ONE independently redrawn game card face, strict perfect circular front-on metal token on genuine transparent outside. Reference 1 dolphin and reference 2 card back ONLY define authoritative style/geometry: refined 16-bit arcade pixel art, deliberate crisp pixel clusters, charcoal outlines, deep dark teal blue enamel field, limited stepped highlights, angular engraved double ring and four cardinal gems; do NOT include dolphin. Reference 3 ONLY defines subject identity, fully repaint it, remove cream paper and pastel style. Readable large central subject at 64px. No text, letters, numbers, UI, watermark, outer glow, smooth painting or photoreal texture. Orthographic circle not ellipse, square canvas, slight transparent margin.  Grade ANCIENT RED: dominant RUBY RED/CRIMSON metallic outer frame, dark crimson shadows and scarlet stepped highlights, a few fine gold inlays allowed; four ruby gems with restrained iridescent facets, NOT a gold frame. Red must read clearly at thumbnail. Keep dark teal inside and colored recognizable subject.  Approx 3 percent transparent safe margin all round. Never glow outside silhouette. Subject: cute sturdy gray rhinoceros facing right with two ivory horns, pink-inner ears, stocky legs, ivory nails, glossy black eye. Concept 九重潮汐: triple echo and returning deep tide with attraction to center; three cyan nested sonic wave bands above rhino, turquoise ocean wave curling below, four small arrows pull water inward to a dark center underneath rhino. Distinct from fracture rhino, focus on layered tide; no cracks. Actual grade ANCIENT RED despite purple identity ref.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C11-2.png": {
+      "card_id": "C18-4",
+      "name": "追猎终章",
+      "concept": "可转移追猎印、双向贯穿、核心斩杀合为收割构筑",
+      "grade": 4,
+      "art_variant": "C11-2",
+      "path": "cards/C11-2.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        15,
+        494,
+        497
+      ],
+      "core_bbox": [
+        18,
+        16,
+        493,
+        496
+      ],
+      "visible_aspect": 0.9895833333333334,
+      "sha256": "739415989cfd7aa6a3783f2b47095230ed72388b25482afb72405f5ece1264c4",
+      "source": "source/card-fronts/C11-2-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-e190-7302-a46a-dcb0bf30cd66\\exec-1766197c-58b7-483a-b1ad-fb40b8e8a6a1.png",
+      "prompt": "Use case stylized-concept. Create ONE independently redrawn game card face, strict perfect circular front-on metal token on genuine transparent outside. Reference 1 dolphin and reference 2 card back ONLY define authoritative style/geometry: refined 16-bit arcade pixel art, deliberate crisp pixel clusters, charcoal outlines, deep dark teal blue enamel field, limited stepped highlights, angular engraved double ring and four cardinal gems; do NOT include dolphin. Reference 3 ONLY defines subject identity, fully repaint it, remove cream paper and pastel style. Readable large central subject at 64px. No text, letters, numbers, UI, watermark, outer glow, smooth painting or photoreal texture. Orthographic circle not ellipse, square canvas, slight transparent margin.  Grade ANCIENT RED: dominant RUBY RED/CRIMSON metallic outer frame, dark crimson shadows and scarlet stepped highlights, a few fine gold inlays allowed; four ruby gems with restrained iridescent facets, NOT a gold frame. Red must read clearly at thumbnail. Keep dark teal inside and colored recognizable subject.  Approx 3 percent transparent safe margin all round. Never glow outside silhouette. Subject: cute gray noble wolf seated facing right, ivory chest/muzzle and tail tip, very bushy upright tail on left, tall pointed ears and alert amber eye. Concept 追猎终章: transferable hunter mark, double direction piercing and core finisher; red target insignia on shoulder, cyan horizontal double-ended spear behind torso, sharp golden diamond core below paws and three small connected hunter diamonds. Distinct from chain-only wolf, spear dominant. Actual grade ANCIENT RED regardless of purple ref3.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C12-2.png": {
+      "card_id": "C19-4",
+      "name": "裂界聚变",
+      "concept": "全阶段裂纹、四代分叉链网与满格后续爆发联动",
+      "grade": 4,
+      "art_variant": "C12-2",
+      "path": "cards/C12-2.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        15,
+        494,
+        497
+      ],
+      "core_bbox": [
+        18,
+        16,
+        493,
+        496
+      ],
+      "visible_aspect": 0.9895833333333334,
+      "sha256": "d6f262b18875b8cc4c08024ad131937fd510495f098436d58b8c4805e8a08059",
+      "source": "source/card-fronts/C12-2-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-e190-7302-a46a-dcb0bf30cd66\\exec-96caeb79-f4b5-4acc-a280-3b00e028b807.png",
+      "prompt": "Use case stylized-concept. Create ONE independently redrawn game card face, strict perfect circular front-on metal token on genuine transparent outside. Reference 1 dolphin and reference 2 card back ONLY define authoritative style/geometry: refined 16-bit arcade pixel art, deliberate crisp pixel clusters, charcoal outlines, deep dark teal blue enamel field, limited stepped highlights, angular engraved double ring and four cardinal gems; do NOT include dolphin. Reference 3 ONLY defines subject identity, fully repaint it, remove cream paper and pastel style. Readable large central subject at 64px. No text, letters, numbers, UI, watermark, outer glow, smooth painting or photoreal texture. Orthographic circle not ellipse, square canvas, slight transparent margin.  Grade ANCIENT RED: dominant RUBY RED/CRIMSON metallic outer frame, dark crimson shadows and scarlet stepped highlights, a few fine gold inlays allowed; four ruby gems with restrained iridescent facets, NOT a gold frame. Red must read clearly at thumbnail. Keep dark teal inside and colored recognizable subject.  Approx 3 percent transparent safe margin all round. Never glow outside silhouette. Subject: cute green sea turtle swimming right, olive hexagon shell with pale gold rim, green spotted broad flippers, cream belly, happy black eye. Concept 裂界聚变: fractures, four-generation branching chain net and stored full charge explosion; shell hexagons carry fine cyan fissure highlights, cyan branching lightning lattice behind turtle converges into bright gold energy core beneath, small cyan crystal reserve points. Different from wave turtle: angular fusion energy rather than waves. Actual ANCIENT RED even though reference3 purple.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C13-2.png": {
+      "card_id": "C20-4",
+      "name": "天命寻宝",
+      "concept": "寻卡升阶与金币翻倍同时生效，中心波提供战斗能力",
+      "grade": 4,
+      "art_variant": "C13-2",
+      "path": "cards/C13-2.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        18,
+        15,
+        494,
+        496
+      ],
+      "core_bbox": [
+        19,
+        16,
+        493,
+        496
+      ],
+      "visible_aspect": 0.9875,
+      "sha256": "2db9df372a742feee22e1ec4c922f9ffb3fa871b93ceaf7fe1c770c812dc0720",
+      "source": "source/card-fronts/C13-2-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-e190-7302-a46a-dcb0bf30cd66\\exec-194492bb-b7ed-44d8-ba8c-180a882c4dc0.png",
+      "prompt": "Use case stylized-concept. Create ONE independently redrawn game card face, strict perfect circular front-on metal token on genuine transparent outside. Reference 1 dolphin and reference 2 card back ONLY define authoritative style/geometry: refined 16-bit arcade pixel art, deliberate crisp pixel clusters, charcoal outlines, deep dark teal blue enamel field, limited stepped highlights, angular engraved double ring and four cardinal gems; do NOT include dolphin. Reference 3 ONLY defines subject identity, fully repaint it, remove cream paper and pastel style. Readable large central subject at 64px. No text, letters, numbers, UI, watermark, outer glow, smooth painting or photoreal texture. Orthographic circle not ellipse, square canvas, slight transparent margin.  Grade ANCIENT RED: dominant RUBY RED/CRIMSON metallic outer frame, dark crimson shadows and scarlet stepped highlights, a few fine gold inlays allowed; four ruby gems with restrained iridescent facets, NOT a gold frame. Red must read clearly at thumbnail. Keep dark teal inside and colored recognizable subject.  Approx 3 percent transparent safe margin all round. Never glow outside silhouette. Subject: cute raccoon treasure explorer with black face mask and striped bushy tail, gold safari hat with feather and round teal goggles, teal scarf, backpack, magnifier in one paw and rare round treasure token in other. Concept 天命寻宝: upgraded card find plus doubled gold and central wave; treasure consists of two big gold coins and one ruby-gem blank card at lower center, cyan concentric pulse rings behind raccoon, tiny constellation above. Distinct from book raccoon: no book, treasure and wave. Actual ANCIENT RED not purple.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    },
+    "cards/C14-2.png": {
+      "card_id": "C21-4",
+      "name": "星海金潮",
+      "concept": "疾速产卡与连破翻倍金币结合，多阶段引潮提高覆盖",
+      "grade": 4,
+      "art_variant": "C14-2",
+      "path": "cards/C14-2.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        495,
+        497
+      ],
+      "core_bbox": [
+        17,
+        16,
+        494,
+        496
+      ],
+      "visible_aspect": 0.99375,
+      "sha256": "deeb166ed836fec36c9a4cbf106b9eb061aace8ad1d8d2e6faec93a9349bac70",
+      "source": "source/card-fronts/C14-2-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-e190-7302-a46a-dcb0bf30cd66\\exec-68debcb4-656d-4f63-bd69-815e577225f8.png",
+      "prompt": "Use case stylized-concept. Create ONE independently redrawn game card face, strict perfect circular front-on metal token on genuine transparent outside. Reference 1 dolphin and reference 2 card back ONLY define authoritative style/geometry: refined 16-bit arcade pixel art, deliberate crisp pixel clusters, charcoal outlines, deep dark teal blue enamel field, limited stepped highlights, angular engraved double ring and four cardinal gems; do NOT include dolphin. Reference 3 ONLY defines subject identity, fully repaint it, remove cream paper and pastel style. Readable large central subject at 64px. No text, letters, numbers, UI, watermark, outer glow, smooth painting or photoreal texture. Orthographic circle not ellipse, square canvas, slight transparent margin.  Grade ANCIENT RED: dominant RUBY RED/CRIMSON metallic outer frame, dark crimson shadows and scarlet stepped highlights, a few fine gold inlays allowed; four ruby gems with restrained iridescent facets, NOT a gold frame. Red must read clearly at thumbnail. Keep dark teal inside and colored recognizable subject.  Approx 3 percent transparent safe margin all round. Never glow outside silhouette. Subject: cheerful black teal magpie flying right carrying square-holed gold coin, ivory belly and white wing tips, spread wings, long teal tail. Concept 星海金潮: swift card creation, consecutive doubled coins, multi-phase attraction tide; a spiral galaxy of cyan stars above magpie, paired gold coins and two tiny cyan-gem blank cards caught in three inward flowing blue wave arcs below. Different from harvest piles: star-sea swirling attraction, no coin piles. Actual ANCIENT RED not purple.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter"
+    }
+  }
+}

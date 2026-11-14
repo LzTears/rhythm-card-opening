@@ -1,0 +1,32 @@
+{
+  "key": "heavy",
+  "source_id": "impacts/crit-hit",
+  "source_file": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\impacts\\crit-hit.js",
+  "source_sha256": "c6af9303f0e463051696796a5886236d91182594e1d4fadee2067b9cf82ba857",
+  "size": [
+    216,
+    136
+  ],
+  "floor_pivot": [
+    84,
+    106
+  ],
+  "pivot": [
+    84,
+    80
+  ],
+  "columns": 7,
+  "rows": 4,
+  "frames": 28,
+  "fps": 30,
+  "source_duration": 0.9,
+  "sample_end": 0.9,
+  "duration": 0.9333333333333333,
+  "body_radius_px": 32,
+  "options": {},
+  "reason": "Confirmed heavy-build complete default crit; only image anchor uses actual star core instead of foot.",
+  "color": "heavy-color.png",
+  "light": "heavy-light.png",
+  "color_sha256": "c04434c64a60f286d7b8e19605d585c67f285e69fd62138eb5d95db6a0169b7d",
+  "light_sha256": "d009024cd99171ee9f9e933d957cb6e09dfdd00ae404224e929014cbf6f61a72"
+}

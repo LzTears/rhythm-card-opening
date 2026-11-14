@@ -1,0 +1,113 @@
+{
+  "card_count": 98,
+  "unique_card_hashes": 98,
+  "frames": [
+    {
+      "file": "grade_0.png",
+      "size": [
+        768,
+        1024
+      ],
+      "alpha_center": 0,
+      "top_alpha": 253,
+      "bottom_alpha": 253
+    },
+    {
+      "file": "grade_1.png",
+      "size": [
+        768,
+        1024
+      ],
+      "alpha_center": 0,
+      "top_alpha": 253,
+      "bottom_alpha": 253
+    },
+    {
+      "file": "grade_2.png",
+      "size": [
+        768,
+        1024
+      ],
+      "alpha_center": 0,
+      "top_alpha": 253,
+      "bottom_alpha": 254
+    },
+    {
+      "file": "grade_3.png",
+      "size": [
+        768,
+        1024
+      ],
+      "alpha_center": 0,
+      "top_alpha": 253,
+      "bottom_alpha": 253
+    },
+    {
+      "file": "grade_4.png",
+      "size": [
+        768,
+        1024
+      ],
+      "alpha_center": 0,
+      "top_alpha": 253,
+      "bottom_alpha": 253
+    }
+  ],
+  "backs": [
+    {
+      "file": "back_0.png",
+      "size": [
+        288,
+        384
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "back_1.png",
+      "size": [
+        288,
+        384
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "back_2.png",
+      "size": [
+        288,
+        384
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "back_3.png",
+      "size": [
+        288,
+        384
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "back_4.png",
+      "size": [
+        288,
+        384
+      ],
+      "alpha": [
+        0,
+        255
+      ]
+    }
+  ]
+}

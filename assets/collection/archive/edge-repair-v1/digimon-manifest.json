@@ -1,0 +1,1374 @@
+[
+  {
+    "id": "DIG-001",
+    "name": "滚球兽",
+    "english": "Koromon",
+    "form": "幼年期Ⅱ",
+    "directory_name": "koromon",
+    "art_path": "res://assets/collection/cards/DIG-001.png",
+    "source": "sources/digimon-001-008.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "crop_xyxy": [
+      3,
+      3,
+      441,
+      441
+    ],
+    "size": [
+      438,
+      438
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=koromon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-002",
+    "name": "独角兽",
+    "english": "Tsunomon",
+    "form": "幼年期Ⅱ",
+    "directory_name": "tunomon",
+    "art_path": "res://assets/collection/cards/DIG-002.png",
+    "source": "sources/digimon-001-008.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "crop_xyxy": [
+      447,
+      3,
+      884,
+      441
+    ],
+    "size": [
+      437,
+      438
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=tunomon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-003",
+    "name": "比高兽",
+    "english": "Yokomon",
+    "form": "幼年期Ⅱ",
+    "directory_name": "pyocomon",
+    "art_path": "res://assets/collection/cards/DIG-003.png",
+    "source": "sources/digimon-001-008.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "crop_xyxy": [
+      890,
+      3,
+      1327,
+      441
+    ],
+    "size": [
+      437,
+      438
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=pyocomon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-004",
+    "name": "年糕兽",
+    "english": "Motimon",
+    "form": "幼年期Ⅱ",
+    "directory_name": "mochimon",
+    "art_path": "res://assets/collection/cards/DIG-004.png",
+    "source": "sources/digimon-001-008.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "crop_xyxy": [
+      1333,
+      3,
+      1771,
+      441
+    ],
+    "size": [
+      438,
+      438
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=mochimon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-005",
+    "name": "种子兽",
+    "english": "Tanemon",
+    "form": "幼年期Ⅱ",
+    "directory_name": "tanemon",
+    "art_path": "res://assets/collection/cards/DIG-005.png",
+    "source": "sources/digimon-001-008.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "crop_xyxy": [
+      3,
+      447,
+      441,
+      884
+    ],
+    "size": [
+      438,
+      437
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=tanemon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-006",
+    "name": "布加兽",
+    "english": "Bukamon",
+    "form": "幼年期Ⅱ",
+    "directory_name": "pukamon",
+    "art_path": "res://assets/collection/cards/DIG-006.png",
+    "source": "sources/digimon-001-008.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "crop_xyxy": [
+      447,
+      447,
+      884,
+      884
+    ],
+    "size": [
+      437,
+      437
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=pukamon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-007",
+    "name": "迪哥兽",
+    "english": "Tokomon",
+    "form": "幼年期Ⅱ",
+    "directory_name": "tokomon",
+    "art_path": "res://assets/collection/cards/DIG-007.png",
+    "source": "sources/digimon-001-008.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "crop_xyxy": [
+      890,
+      447,
+      1327,
+      884
+    ],
+    "size": [
+      437,
+      437
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=tokomon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-008",
+    "name": "喵喵兽",
+    "english": "Nyaromon",
+    "form": "幼年期Ⅱ",
+    "directory_name": "nyaromon",
+    "art_path": "res://assets/collection/cards/DIG-008.png",
+    "source": "sources/digimon-001-008.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "crop_xyxy": [
+      1333,
+      447,
+      1771,
+      884
+    ],
+    "size": [
+      438,
+      437
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=nyaromon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-009",
+    "name": "豆丁兽",
+    "english": "DemiVeemon",
+    "form": "幼年期Ⅱ",
+    "directory_name": "chibimon",
+    "art_path": "res://assets/collection/cards/DIG-009.png",
+    "source": "sources/digimon-009-016.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "crop_xyxy": [
+      3,
+      3,
+      441,
+      441
+    ],
+    "size": [
+      438,
+      438
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=chibimon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-010",
+    "name": "蓑虫兽",
+    "english": "Minomon",
+    "form": "幼年期Ⅱ",
+    "directory_name": "minomon",
+    "art_path": "res://assets/collection/cards/DIG-010.png",
+    "source": "sources/digimon-009-016.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "crop_xyxy": [
+      447,
+      3,
+      884,
+      441
+    ],
+    "size": [
+      437,
+      438
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=minomon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-011",
+    "name": "基基兽",
+    "english": "Gigimon",
+    "form": "幼年期Ⅱ",
+    "directory_name": "gigimon",
+    "art_path": "res://assets/collection/cards/DIG-011.png",
+    "source": "sources/digimon-009-016.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "crop_xyxy": [
+      890,
+      3,
+      1327,
+      441
+    ],
+    "size": [
+      437,
+      438
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=gigimon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-012",
+    "name": "软糖兽",
+    "english": "Gummymon",
+    "form": "幼年期Ⅱ",
+    "directory_name": "gummymon",
+    "art_path": "res://assets/collection/cards/DIG-012.png",
+    "source": "sources/digimon-009-016.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "crop_xyxy": [
+      1333,
+      3,
+      1771,
+      441
+    ],
+    "size": [
+      438,
+      438
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=gummymon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-013",
+    "name": "巧克力兽",
+    "english": "Kokomon",
+    "form": "幼年期Ⅱ",
+    "directory_name": "chocomon",
+    "art_path": "res://assets/collection/cards/DIG-013.png",
+    "source": "sources/digimon-009-016.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "crop_xyxy": [
+      3,
+      447,
+      441,
+      884
+    ],
+    "size": [
+      438,
+      437
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=chocomon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-014",
+    "name": "多利兽",
+    "english": "Dorimon",
+    "form": "幼年期Ⅱ",
+    "directory_name": "dorimon",
+    "art_path": "res://assets/collection/cards/DIG-014.png",
+    "source": "sources/digimon-009-016.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "crop_xyxy": [
+      447,
+      447,
+      884,
+      884
+    ],
+    "size": [
+      437,
+      437
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=dorimon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-015",
+    "name": "汪喵兽",
+    "english": "Wanyamon",
+    "form": "幼年期Ⅱ",
+    "directory_name": "wanyamon",
+    "art_path": "res://assets/collection/cards/DIG-015.png",
+    "source": "sources/digimon-009-016.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "crop_xyxy": [
+      890,
+      447,
+      1327,
+      884
+    ],
+    "size": [
+      437,
+      437
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=wanyamon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-016",
+    "name": "丘比兽",
+    "english": "Cupimon",
+    "form": "幼年期Ⅱ",
+    "directory_name": "cupimon",
+    "art_path": "res://assets/collection/cards/DIG-016.png",
+    "source": "sources/digimon-009-016.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "crop_xyxy": [
+      1333,
+      447,
+      1771,
+      884
+    ],
+    "size": [
+      438,
+      437
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=cupimon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-017",
+    "name": "亚古兽",
+    "english": "Agumon",
+    "form": "成长期",
+    "directory_name": "agumon",
+    "art_path": "res://assets/collection/cards/DIG-017.png",
+    "source": "sources/digimon-017-022.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      3,
+      3,
+      415,
+      624
+    ],
+    "size": [
+      412,
+      621
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=agumon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-018",
+    "name": "加布兽",
+    "english": "Gabumon",
+    "form": "成长期",
+    "directory_name": "gabumon",
+    "art_path": "res://assets/collection/cards/DIG-018.png",
+    "source": "sources/digimon-017-022.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      421,
+      3,
+      833,
+      624
+    ],
+    "size": [
+      412,
+      621
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=gabumon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-019",
+    "name": "比丘兽",
+    "english": "Biyomon",
+    "form": "成长期",
+    "directory_name": "piyomon",
+    "art_path": "res://assets/collection/cards/DIG-019.png",
+    "source": "sources/digimon-017-022.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      839,
+      3,
+      1251,
+      624
+    ],
+    "size": [
+      412,
+      621
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=piyomon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-020",
+    "name": "甲虫兽",
+    "english": "Tentomon",
+    "form": "成长期",
+    "directory_name": "tentomon",
+    "art_path": "res://assets/collection/cards/DIG-020.png",
+    "source": "sources/digimon-017-022.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      3,
+      630,
+      415,
+      1251
+    ],
+    "size": [
+      412,
+      621
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=tentomon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-021",
+    "name": "巴鲁兽",
+    "english": "Palmon",
+    "form": "成长期",
+    "directory_name": "palmon",
+    "art_path": "res://assets/collection/cards/DIG-021.png",
+    "source": "sources/digimon-017-022.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      421,
+      630,
+      833,
+      1251
+    ],
+    "size": [
+      412,
+      621
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=palmon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-022",
+    "name": "哥玛兽",
+    "english": "Gomamon",
+    "form": "成长期",
+    "directory_name": "gomamon",
+    "art_path": "res://assets/collection/cards/DIG-022.png",
+    "source": "sources/digimon-017-022.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      839,
+      630,
+      1251,
+      1251
+    ],
+    "size": [
+      412,
+      621
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=gomamon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-023",
+    "name": "巴达兽",
+    "english": "Patamon",
+    "form": "成长期",
+    "directory_name": "patamon",
+    "art_path": "res://assets/collection/cards/DIG-023.png",
+    "source": "sources/digimon-023-029.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "crop_xyxy": [
+      3,
+      3,
+      441,
+      441
+    ],
+    "size": [
+      438,
+      438
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=patamon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-024",
+    "name": "迪路兽",
+    "english": "Gatomon",
+    "form": "成熟期／常规形态",
+    "directory_name": "tailmon",
+    "art_path": "res://assets/collection/cards/DIG-024.png",
+    "source": "sources/digimon-023-029.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "crop_xyxy": [
+      447,
+      3,
+      884,
+      441
+    ],
+    "size": [
+      437,
+      438
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=tailmon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-025",
+    "name": "V仔兽",
+    "english": "Veemon",
+    "form": "成长期",
+    "directory_name": "v-mon",
+    "art_path": "res://assets/collection/cards/DIG-025.png",
+    "source": "sources/digimon-023-029.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "crop_xyxy": [
+      890,
+      3,
+      1327,
+      441
+    ],
+    "size": [
+      437,
+      438
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=v-mon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-026",
+    "name": "虫虫兽",
+    "english": "Wormmon",
+    "form": "成长期",
+    "directory_name": "wormmon",
+    "art_path": "res://assets/collection/cards/DIG-026.png",
+    "source": "sources/digimon-023-029.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "crop_xyxy": [
+      1333,
+      3,
+      1771,
+      441
+    ],
+    "size": [
+      438,
+      438
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=wormmon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-027",
+    "name": "基尔兽",
+    "english": "Guilmon",
+    "form": "成长期",
+    "directory_name": "guilmon",
+    "art_path": "res://assets/collection/cards/DIG-027.png",
+    "source": "sources/digimon-023-029.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "crop_xyxy": [
+      3,
+      447,
+      441,
+      884
+    ],
+    "size": [
+      438,
+      437
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=guilmon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-028",
+    "name": "大耳兽",
+    "english": "Terriermon",
+    "form": "成长期",
+    "directory_name": "terriermon",
+    "art_path": "res://assets/collection/cards/DIG-028.png",
+    "source": "sources/digimon-023-029.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "crop_xyxy": [
+      447,
+      447,
+      884,
+      884
+    ],
+    "size": [
+      437,
+      437
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=terriermon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-029",
+    "name": "妖狐兽",
+    "english": "Renamon",
+    "form": "成长期",
+    "directory_name": "renamon",
+    "art_path": "res://assets/collection/cards/DIG-029.png",
+    "source": "sources/digimon-023-029.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "crop_xyxy": [
+      890,
+      447,
+      1327,
+      884
+    ],
+    "size": [
+      437,
+      437
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=renamon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-030",
+    "name": "暴龙兽",
+    "english": "Greymon",
+    "form": "成熟期／经典橙色形态",
+    "directory_name": "greymon-first",
+    "art_path": "res://assets/collection/cards/DIG-030.png",
+    "source": "sources/digimon-030-035.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      3,
+      3,
+      415,
+      624
+    ],
+    "size": [
+      412,
+      621
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=greymon-first",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-031",
+    "name": "加鲁鲁兽",
+    "english": "Garurumon",
+    "form": "成熟期／常规形态",
+    "directory_name": "garurumon",
+    "art_path": "res://assets/collection/cards/DIG-031.png",
+    "source": "sources/digimon-030-035.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      421,
+      3,
+      833,
+      624
+    ],
+    "size": [
+      412,
+      621
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=garurumon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-032",
+    "name": "巴多拉兽",
+    "english": "Birdramon",
+    "form": "成熟期",
+    "directory_name": "birdramon",
+    "art_path": "res://assets/collection/cards/DIG-032.png",
+    "source": "sources/digimon-030-035.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      839,
+      3,
+      1251,
+      624
+    ],
+    "size": [
+      412,
+      621
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=birdramon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-033",
+    "name": "比多兽",
+    "english": "Kabuterimon",
+    "form": "成熟期",
+    "directory_name": "kabuterimon",
+    "art_path": "res://assets/collection/cards/DIG-033.png",
+    "source": "sources/digimon-030-035.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      3,
+      630,
+      415,
+      1251
+    ],
+    "size": [
+      412,
+      621
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=kabuterimon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-034",
+    "name": "仙人掌兽",
+    "english": "Togemon",
+    "form": "成熟期",
+    "directory_name": "togemon",
+    "art_path": "res://assets/collection/cards/DIG-034.png",
+    "source": "sources/digimon-030-035.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      421,
+      630,
+      833,
+      1251
+    ],
+    "size": [
+      412,
+      621
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=togemon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-035",
+    "name": "海狮兽",
+    "english": "Ikkakumon",
+    "form": "成熟期",
+    "directory_name": "ikkakumon",
+    "art_path": "res://assets/collection/cards/DIG-035.png",
+    "source": "sources/digimon-030-035.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      839,
+      630,
+      1251,
+      1251
+    ],
+    "size": [
+      412,
+      621
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=ikkakumon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-036",
+    "name": "天使兽",
+    "english": "Angemon",
+    "form": "成熟期",
+    "directory_name": "angemon",
+    "art_path": "res://assets/collection/cards/DIG-036.png",
+    "source": "sources/digimon-036-039.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      3,
+      3,
+      624,
+      602
+    ],
+    "size": [
+      621,
+      599
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=angemon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-037",
+    "name": "天女兽",
+    "english": "Angewomon",
+    "form": "完全体",
+    "directory_name": "angewomon",
+    "art_path": "res://assets/collection/cards/DIG-037.png",
+    "source": "sources/digimon-036-039.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      630,
+      3,
+      1251,
+      602
+    ],
+    "size": [
+      621,
+      599
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=angewomon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-038",
+    "name": "机械暴龙兽（疫苗种）",
+    "english": "MetalGreymon (Vaccine)",
+    "form": "完全体／疫苗种橙色形态",
+    "directory_name": "metalgreymon-v",
+    "art_path": "res://assets/collection/cards/DIG-038.png",
+    "source": "sources/digimon-036-039.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      3,
+      608,
+      624,
+      1251
+    ],
+    "size": [
+      621,
+      643
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=metalgreymon-v",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-039",
+    "name": "九尾狐兽",
+    "english": "Kyubimon",
+    "form": "成熟期／常规形态",
+    "directory_name": "kyubimon",
+    "art_path": "res://assets/collection/cards/DIG-039.png",
+    "source": "sources/digimon-036-039.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      630,
+      608,
+      1251,
+      1251
+    ],
+    "size": [
+      621,
+      643
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=kyubimon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-040",
+    "name": "战斗暴龙兽",
+    "english": "WarGreymon",
+    "form": "究极体／常规形态",
+    "directory_name": "wargreymon",
+    "art_path": "res://assets/collection/cards/DIG-040.png",
+    "source": "sources/digimon-040-045.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      3,
+      3,
+      415,
+      582
+    ],
+    "size": [
+      412,
+      579
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=wargreymon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-041",
+    "name": "钢铁加鲁鲁兽",
+    "english": "MetalGarurumon",
+    "form": "究极体／常规形态",
+    "directory_name": "metalgarurumon",
+    "art_path": "res://assets/collection/cards/DIG-041.png",
+    "source": "sources/digimon-040-045.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      421,
+      3,
+      833,
+      582
+    ],
+    "size": [
+      412,
+      579
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=metalgarurumon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-042",
+    "name": "究极天使兽",
+    "english": "Seraphimon",
+    "form": "究极体",
+    "directory_name": "seraphimon",
+    "art_path": "res://assets/collection/cards/DIG-042.png",
+    "source": "sources/digimon-040-045.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      839,
+      3,
+      1251,
+      582
+    ],
+    "size": [
+      412,
+      579
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=seraphimon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-043",
+    "name": "圣龙兽",
+    "english": "Magnadramon",
+    "form": "究极体",
+    "directory_name": "holydramon",
+    "art_path": "res://assets/collection/cards/DIG-043.png",
+    "source": "sources/digimon-040-045.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      3,
+      588,
+      415,
+      1251
+    ],
+    "size": [
+      412,
+      663
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=holydramon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-044",
+    "name": "红莲骑士兽",
+    "english": "Gallantmon",
+    "form": "究极体／常规形态",
+    "directory_name": "dukemon",
+    "art_path": "res://assets/collection/cards/DIG-044.png",
+    "source": "sources/digimon-040-045.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      421,
+      588,
+      833,
+      1251
+    ],
+    "size": [
+      412,
+      663
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=dukemon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-045",
+    "name": "别西卜兽",
+    "english": "Beelzemon",
+    "form": "究极体／常规形态",
+    "directory_name": "beelzebumon",
+    "art_path": "res://assets/collection/cards/DIG-045.png",
+    "source": "sources/digimon-040-045.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      839,
+      588,
+      1251,
+      1251
+    ],
+    "size": [
+      412,
+      663
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=beelzebumon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-046",
+    "name": "奥米加兽",
+    "english": "Omnimon",
+    "form": "究极体／常规形态",
+    "directory_name": "omegamon",
+    "art_path": "res://assets/collection/cards/DIG-046.png",
+    "source": "sources/digimon-046-049.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      3,
+      3,
+      624,
+      595
+    ],
+    "size": [
+      621,
+      592
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=omegamon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-047",
+    "name": "阿尔法兽",
+    "english": "Alphamon",
+    "form": "究极体／常规形态",
+    "directory_name": "alphamon",
+    "art_path": "res://assets/collection/cards/DIG-047.png",
+    "source": "sources/digimon-046-049.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      630,
+      3,
+      1251,
+      595
+    ],
+    "size": [
+      621,
+      592
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=alphamon",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-048",
+    "name": "帝皇龙甲兽·圣骑士形态",
+    "english": "Imperialdramon: Paladin Mode",
+    "form": "究极体／圣骑士形态",
+    "directory_name": "imperialdramonpaladinmode",
+    "art_path": "res://assets/collection/cards/DIG-048.png",
+    "source": "sources/digimon-046-049.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      3,
+      601,
+      624,
+      1251
+    ],
+    "size": [
+      621,
+      650
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=imperialdramonpaladinmode",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  },
+  {
+    "id": "DIG-049",
+    "name": "奥米加兽X抗体",
+    "english": "Omnimon (X Antibody)",
+    "form": "究极体／X抗体形态",
+    "directory_name": "omegamon-x",
+    "art_path": "res://assets/collection/cards/DIG-049.png",
+    "source": "sources/digimon-046-049.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      630,
+      601,
+      1251,
+      1251
+    ],
+    "size": [
+      621,
+      650
+    ],
+    "alpha": false,
+    "method": "image_gen character illustration, NOT downloaded official artwork",
+    "reference_url": "https://digimon.net/reference_en/detail.php?directory_name=omegamon-x",
+    "rights": "Digimon characters © Akiyoshi Hongo / Toei Animation / BANDAI. AI-generated fan illustration; no commercial license asserted.",
+    "layers": "flattened character and digital background; no separate subject alpha"
+  }
+]

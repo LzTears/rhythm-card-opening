@@ -1,0 +1,38 @@
+[
+  {
+    "id": "grade_2",
+    "method": "one independent built-in image_gen edit",
+    "reference": "assets/collection/red-reference-alignment/frame_galaxy.png",
+    "original_tool_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0e8-5e16-75c2-b377-5bde12dd4cf3\\exec-3bc54cee-daa0-4a7a-9e3e-2dd680f21d16.png",
+    "source": "production-b/sources/grade_2-native.png",
+    "prompt": "production-b/prompts/grade_2.txt",
+    "final": "assets/collection/unified_frames/grade_2.png",
+    "mechanical_export": "sprite_gen.util.resample.resize_cell to 768x1024",
+    "view_native": true,
+    "view_final": true
+  },
+  {
+    "id": "grade_3",
+    "method": "one independent built-in image_gen edit",
+    "reference": "assets/collection/red-reference-alignment/frame_galaxy.png",
+    "original_tool_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0e8-5e16-75c2-b377-5bde12dd4cf3\\exec-c12fe2cc-99c5-4169-b7a1-a27209854c03.png",
+    "source": "production-b/sources/grade_3-native.png",
+    "prompt": "production-b/prompts/grade_3.txt",
+    "final": "assets/collection/unified_frames/grade_3.png",
+    "mechanical_export": "sprite_gen.util.resample.resize_cell to 768x1024",
+    "view_native": true,
+    "view_final": true
+  },
+  {
+    "id": "red_digimon",
+    "method": "one independent built-in image_gen edit",
+    "reference": "assets/collection/red-reference-alignment/frame_galaxy.png",
+    "original_tool_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0e8-5e16-75c2-b377-5bde12dd4cf3\\exec-5be97c25-731a-4c6b-b195-833bddba3c5b.png",
+    "source": "production-b/sources/red_digimon-native.png",
+    "prompt": "production-b/prompts/red_digimon.txt",
+    "final": "assets/collection/unified_frames/red_digimon.png",
+    "mechanical_export": "sprite_gen.util.resample.resize_cell to 768x1024",
+    "view_native": true,
+    "view_final": true
+  }
+]

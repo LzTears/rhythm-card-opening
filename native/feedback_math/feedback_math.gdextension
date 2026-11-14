@@ -1,0 +1,7 @@
+[configuration]
+entry_symbol = "roundcard_feedback_init"
+compatibility_minimum = "4.4"
+reloadable = false
+
+[libraries]
+windows.x86_64 = "res://native/feedback_math/bin/roundcard_feedback.windows.x86_64.dll"

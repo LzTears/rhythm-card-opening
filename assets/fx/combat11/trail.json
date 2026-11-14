@@ -1,0 +1,292 @@
+{
+  "frames": [
+    {
+      "filename": "trail 0",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 40
+      },
+      "duration": 33
+    },
+    {
+      "filename": "trail 1",
+      "frame": {
+        "x": 80,
+        "y": 0,
+        "w": 80,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 40
+      },
+      "duration": 33
+    },
+    {
+      "filename": "trail 2",
+      "frame": {
+        "x": 160,
+        "y": 0,
+        "w": 80,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 40
+      },
+      "duration": 33
+    },
+    {
+      "filename": "trail 3",
+      "frame": {
+        "x": 240,
+        "y": 0,
+        "w": 80,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 40
+      },
+      "duration": 33
+    },
+    {
+      "filename": "trail 4",
+      "frame": {
+        "x": 0,
+        "y": 40,
+        "w": 80,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 40
+      },
+      "duration": 33
+    },
+    {
+      "filename": "trail 5",
+      "frame": {
+        "x": 80,
+        "y": 40,
+        "w": 80,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 40
+      },
+      "duration": 33
+    },
+    {
+      "filename": "trail 6",
+      "frame": {
+        "x": 160,
+        "y": 40,
+        "w": 80,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 40
+      },
+      "duration": 33
+    },
+    {
+      "filename": "trail 7",
+      "frame": {
+        "x": 240,
+        "y": 40,
+        "w": 80,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 40
+      },
+      "duration": 33
+    },
+    {
+      "filename": "trail 8",
+      "frame": {
+        "x": 0,
+        "y": 80,
+        "w": 80,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 40
+      },
+      "duration": 33
+    },
+    {
+      "filename": "trail 9",
+      "frame": {
+        "x": 80,
+        "y": 80,
+        "w": 80,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 40
+      },
+      "duration": 33
+    },
+    {
+      "filename": "trail 10",
+      "frame": {
+        "x": 160,
+        "y": 80,
+        "w": 80,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 40
+      },
+      "duration": 33
+    },
+    {
+      "filename": "trail 11",
+      "frame": {
+        "x": 240,
+        "y": 80,
+        "w": 80,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 40
+      },
+      "duration": 33
+    }
+  ],
+  "meta": {
+    "app": "https://github.com/patch-gg/pixelfx",
+    "image": "trail.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 320,
+      "h": 120
+    },
+    "pixelfx": {
+      "id": "arcane/arcane-beam",
+      "fps": 30,
+      "loop": true,
+      "frames": 12,
+      "frameSize": [
+        80,
+        40
+      ],
+      "pivot": [
+        72,
+        20
+      ],
+      "columns": 4
+    }
+  }
+}

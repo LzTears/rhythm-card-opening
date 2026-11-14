@@ -1,0 +1,162 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "generated-atlas.png",
+  "grid": [
+    5,
+    1
+  ],
+  "canvas": {
+    "w": 256,
+    "h": 384
+  },
+  "baseline_y": 352.0,
+  "target_height": 320.0,
+  "scale": "cell",
+  "fit": "contain",
+  "factor": null,
+  "factor_from": null,
+  "alpha_cleanup": "alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "grade0",
+      "file": "grade0.png",
+      "factor": 0.6299212598425197,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 372,
+          "h": 508
+        },
+        "canvas": {
+          "w": 234,
+          "h": 320
+        }
+      },
+      "box": {
+        "x": 11,
+        "y": 32,
+        "w": 234,
+        "h": 320
+      },
+      "anchor": [
+        128.0,
+        352.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "grade1",
+      "file": "grade1.png",
+      "factor": 0.6299212598425197,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 366,
+          "h": 508
+        },
+        "canvas": {
+          "w": 231,
+          "h": 320
+        }
+      },
+      "box": {
+        "x": 13,
+        "y": 32,
+        "w": 231,
+        "h": 320
+      },
+      "anchor": [
+        128.5,
+        352.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "grade2",
+      "file": "grade2.png",
+      "factor": 0.6299212598425197,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 382,
+          "h": 508
+        },
+        "canvas": {
+          "w": 241,
+          "h": 320
+        }
+      },
+      "box": {
+        "x": 8,
+        "y": 32,
+        "w": 241,
+        "h": 320
+      },
+      "anchor": [
+        128.5,
+        352.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "grade3",
+      "file": "grade3.png",
+      "factor": 0.6299212598425197,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 372,
+          "h": 508
+        },
+        "canvas": {
+          "w": 234,
+          "h": 320
+        }
+      },
+      "box": {
+        "x": 11,
+        "y": 32,
+        "w": 234,
+        "h": 320
+      },
+      "anchor": [
+        128.0,
+        352.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "grade4",
+      "file": "grade4.png",
+      "factor": 0.6299212598425197,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 367,
+          "h": 508
+        },
+        "canvas": {
+          "w": 231,
+          "h": 320
+        }
+      },
+      "box": {
+        "x": 13,
+        "y": 32,
+        "w": 231,
+        "h": 320
+      },
+      "anchor": [
+        128.5,
+        352.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

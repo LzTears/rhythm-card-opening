@@ -1,0 +1,165 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "digimon-backs-atlas.png",
+  "grid": [
+    5,
+    1
+  ],
+  "canvas": {
+    "w": 288,
+    "h": 384
+  },
+  "baseline_y": 379.0,
+  "target_height": 374.0,
+  "scale": "sheet",
+  "fit": "contain",
+  "factor": 0.700374531835206,
+  "factor_from": {
+    "rule": "target_height",
+    "cell": "0"
+  },
+  "alpha_cleanup": "digimon_back_alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "0",
+      "file": "digimon_back_0.png",
+      "factor": 0.700374531835206,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 376,
+          "h": 534
+        },
+        "canvas": {
+          "w": 263,
+          "h": 374
+        }
+      },
+      "box": {
+        "x": 13,
+        "y": 5,
+        "w": 263,
+        "h": 374
+      },
+      "anchor": [
+        144.5,
+        379.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "1",
+      "file": "digimon_back_1.png",
+      "factor": 0.700374531835206,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 375,
+          "h": 534
+        },
+        "canvas": {
+          "w": 263,
+          "h": 374
+        }
+      },
+      "box": {
+        "x": 13,
+        "y": 5,
+        "w": 263,
+        "h": 374
+      },
+      "anchor": [
+        144.5,
+        379.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "2",
+      "file": "digimon_back_2.png",
+      "factor": 0.700374531835206,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 374,
+          "h": 534
+        },
+        "canvas": {
+          "w": 262,
+          "h": 374
+        }
+      },
+      "box": {
+        "x": 13,
+        "y": 5,
+        "w": 262,
+        "h": 374
+      },
+      "anchor": [
+        144.0,
+        379.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "3",
+      "file": "digimon_back_3.png",
+      "factor": 0.700374531835206,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 376,
+          "h": 534
+        },
+        "canvas": {
+          "w": 263,
+          "h": 374
+        }
+      },
+      "box": {
+        "x": 13,
+        "y": 5,
+        "w": 263,
+        "h": 374
+      },
+      "anchor": [
+        144.5,
+        379.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "4",
+      "file": "digimon_back_4.png",
+      "factor": 0.700374531835206,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 378,
+          "h": 534
+        },
+        "canvas": {
+          "w": 265,
+          "h": 374
+        }
+      },
+      "box": {
+        "x": 12,
+        "y": 5,
+        "w": 265,
+        "h": 374
+      },
+      "anchor": [
+        144.5,
+        379.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

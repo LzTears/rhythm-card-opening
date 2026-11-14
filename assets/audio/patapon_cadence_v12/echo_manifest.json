@@ -1,0 +1,346 @@
+{
+  "version": "patapon_cadence_v12",
+  "date": "2026-11-12",
+  "kind": "derived preset troop-chorus samples; CPU ffmpeg/numpy, no AI generation this round",
+  "source_author": "TheSandKid community game-audio extraction archive",
+  "source_discussion": "https://www.reddit.com/r/Patapon/comments/lqdzkt/looking_for_the_extracted_audio_files_of_all_3/",
+  "music_layers": 0,
+  "actual_BGM_content_auditory_verification": "Not independently auditioned by agent; source is archive Voices command-response category, no background track added",
+  "provenance_limit": "No official hash comparison or commercial license. Patapon3 generation inferred from parent folder label. No claim of original newly-created voice source. Subjective syllable and chorus listening approval remains user-facing.",
+  "words": [
+    {
+      "filename": "echo_pata.wav",
+      "source": {
+        "filename": "00March-01.wav",
+        "relative_path": "Patapon3/命令复述-通用/00March-01.wav",
+        "category": "Patapon3/命令复述-通用",
+        "source_folder": "https://drive.google.com/drive/folders/15dSPLMD2xqTB4Qnp5s285qZ5FIy0ACJb",
+        "source_page": "https://drive.google.com/file/d/1rr9lUX--S8oUpYLsN5rf5KapgxAnAwqX/view",
+        "download_url": "https://drive.google.com/uc?export=download&id=1rr9lUX--S8oUpYLsN5rf5KapgxAnAwqX",
+        "http_result": "200|audio/wav|42578",
+        "bytes": 42578,
+        "sha256": "647a99ae584e56e66b3155be934911559a255e64758f793494db24eb331f1478",
+        "format_tag": 1,
+        "channels": 1,
+        "sample_rate": 11025,
+        "byte_rate": 22050,
+        "bits": 16,
+        "data_bytes": 42504,
+        "duration_seconds": 1.927619,
+        "generation": "as labelled by archive folder; not independently matched to official resources"
+      },
+      "source_slice_seconds": [
+        0,
+        0.465
+      ],
+      "interpretation": "first complete PATA of troop response; phrase-role mapping inferred from archive command label",
+      "filters": "atrim=start=0:end=0.465,asetpts=PTS-STARTPTS,highpass=f=140,atempo=1.028761061947,aresample=44100",
+      "stereo_layers": [
+        {
+          "delay_samples": 0,
+          "gain": 0.8,
+          "pan": "center"
+        },
+        {
+          "delay_samples": 353,
+          "gain": 0.2,
+          "pan": "left"
+        },
+        {
+          "delay_samples": 573,
+          "gain": 0.2,
+          "pan": "right"
+        }
+      ],
+      "normalization_dbfs": -2.3,
+      "fade_in_ms": 3,
+      "fade_out_ms": 9,
+      "source_tail_fade_before_layers_ms": 8,
+      "bytes": 83836,
+      "sha256": "4500ec47db5982e2e90593c78d7caeb6426973cb71f838399a3a6ed935217290",
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "duration_seconds": 0.4750113378684807,
+      "peak_dbfs": -2.300311339003887,
+      "sample_count": 20948
+    },
+    {
+      "filename": "echo_pon.wav",
+      "source": {
+        "filename": "00Attack-01.wav",
+        "relative_path": "Patapon3/命令复述-通用/00Attack-01.wav",
+        "category": "Patapon3/命令复述-通用",
+        "source_folder": "https://drive.google.com/drive/folders/15dSPLMD2xqTB4Qnp5s285qZ5FIy0ACJb",
+        "source_page": "https://drive.google.com/file/d/1EvuKdnhztGVrasHXriHEH3QXRVVNJWhk/view",
+        "download_url": "https://drive.google.com/uc?export=download&id=1EvuKdnhztGVrasHXriHEH3QXRVVNJWhk",
+        "http_result": "200|audio/wav|45770",
+        "bytes": 45770,
+        "sha256": "3c730e0d1581b85b5df42666948b281f84231759aa9bb612173760766867db41",
+        "format_tag": 1,
+        "channels": 1,
+        "sample_rate": 11025,
+        "byte_rate": 22050,
+        "bits": 16,
+        "data_bytes": 45696,
+        "duration_seconds": 2.072381,
+        "generation": "as labelled by archive folder; not independently matched to official resources"
+      },
+      "source_slice_seconds": [
+        0,
+        0.465
+      ],
+      "interpretation": "first complete PON of troop response; phrase-role mapping inferred from archive command label",
+      "filters": "atrim=start=0:end=0.465,asetpts=PTS-STARTPTS,highpass=f=140,atempo=1.028761061947,aresample=44100",
+      "stereo_layers": [
+        {
+          "delay_samples": 0,
+          "gain": 0.8,
+          "pan": "center"
+        },
+        {
+          "delay_samples": 353,
+          "gain": 0.2,
+          "pan": "left"
+        },
+        {
+          "delay_samples": 573,
+          "gain": 0.2,
+          "pan": "right"
+        }
+      ],
+      "normalization_dbfs": -2.3,
+      "fade_in_ms": 3,
+      "fade_out_ms": 9,
+      "source_tail_fade_before_layers_ms": 8,
+      "bytes": 83836,
+      "sha256": "e5f75c409d7f535607cee3c667dec8da9ff84e6cd03b948ab8629b8a9fbdad7f",
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "duration_seconds": 0.4750113378684807,
+      "peak_dbfs": -2.29996590005544,
+      "sample_count": 20948
+    },
+    {
+      "filename": "echo_chaka.wav",
+      "source": {
+        "filename": "00Defend-01.wav",
+        "relative_path": "Patapon3/命令复述-通用/00Defend-01.wav",
+        "category": "Patapon3/命令复述-通用",
+        "source_folder": "https://drive.google.com/drive/folders/15dSPLMD2xqTB4Qnp5s285qZ5FIy0ACJb",
+        "source_page": "https://drive.google.com/file/d/1lZIKild2YXIwwbkC2H0bNgxs__tbeMcg/view",
+        "download_url": "https://drive.google.com/uc?export=download&id=1lZIKild2YXIwwbkC2H0bNgxs__tbeMcg",
+        "http_result": "200|audio/wav|45490",
+        "bytes": 45490,
+        "sha256": "e1d5fd9564b76f44a01377f5b1de5bc60d1190603fdb0a255ad8807dbcd46f59",
+        "format_tag": 1,
+        "channels": 1,
+        "sample_rate": 11025,
+        "byte_rate": 22050,
+        "bits": 16,
+        "data_bytes": 45416,
+        "duration_seconds": 2.059683,
+        "generation": "as labelled by archive folder; not independently matched to official resources"
+      },
+      "source_slice_seconds": [
+        0,
+        0.535
+      ],
+      "interpretation": "first complete CHAKA of troop response; phrase-role mapping inferred from archive command label",
+      "filters": "atrim=start=0:end=0.535,asetpts=PTS-STARTPTS,highpass=f=140,atempo=1.183628318584,aresample=44100",
+      "stereo_layers": [
+        {
+          "delay_samples": 0,
+          "gain": 0.8,
+          "pan": "center"
+        },
+        {
+          "delay_samples": 353,
+          "gain": 0.2,
+          "pan": "left"
+        },
+        {
+          "delay_samples": 573,
+          "gain": 0.2,
+          "pan": "right"
+        }
+      ],
+      "normalization_dbfs": -2.3,
+      "fade_in_ms": 3,
+      "fade_out_ms": 9,
+      "source_tail_fade_before_layers_ms": 8,
+      "bytes": 83836,
+      "sha256": "8a18f1dbd0810538695953869744b056c36a86a3be8978ff0c9f35ba66d97dcf",
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "duration_seconds": 0.4750113378684807,
+      "peak_dbfs": -2.300311339003887,
+      "sample_count": 20948
+    },
+    {
+      "filename": "echo_don.wav",
+      "source": {
+        "filename": "00Jump-01.wav",
+        "relative_path": "Patapon3/命令复述-通用/00Jump-01.wav",
+        "category": "Patapon3/命令复述-通用",
+        "source_folder": "https://drive.google.com/drive/folders/15dSPLMD2xqTB4Qnp5s285qZ5FIy0ACJb",
+        "source_page": "https://drive.google.com/file/d/1I1ZYQKPS982R9lDUAeky7UNg1nEOdOxe/view",
+        "download_url": "https://drive.google.com/uc?export=download&id=1I1ZYQKPS982R9lDUAeky7UNg1nEOdOxe",
+        "http_result": "200|audio/wav|44706",
+        "bytes": 44706,
+        "sha256": "9304670fe7e66c7394a97063eaadabbe466adc101fd96768c37bfa4e5b19b154",
+        "format_tag": 1,
+        "channels": 1,
+        "sample_rate": 11025,
+        "byte_rate": 22050,
+        "bits": 16,
+        "data_bytes": 44632,
+        "duration_seconds": 2.024127,
+        "generation": "as labelled by archive folder; not independently matched to official resources"
+      },
+      "source_slice_seconds": [
+        0,
+        0.485
+      ],
+      "interpretation": "first complete DON of troop response; phrase-role mapping inferred from archive command label",
+      "filters": "atrim=start=0:end=0.485,asetpts=PTS-STARTPTS,highpass=f=140,atempo=1.073008849558,aresample=44100",
+      "stereo_layers": [
+        {
+          "delay_samples": 0,
+          "gain": 0.8,
+          "pan": "center"
+        },
+        {
+          "delay_samples": 353,
+          "gain": 0.2,
+          "pan": "left"
+        },
+        {
+          "delay_samples": 573,
+          "gain": 0.2,
+          "pan": "right"
+        }
+      ],
+      "normalization_dbfs": -2.3,
+      "fade_in_ms": 3,
+      "fade_out_ms": 9,
+      "source_tail_fade_before_layers_ms": 8,
+      "bytes": 83836,
+      "sha256": "4f8b10c22b4651d2fd2b2cc2f6c8244afcec925f2e011a27f7aab2dfaf37271e",
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "duration_seconds": 0.4750113378684807,
+      "peak_dbfs": -2.300311339003887,
+      "sample_count": 20948
+    }
+  ],
+  "demos": [
+    {
+      "filename": "demo_gather.wav",
+      "sequence": [
+        "pata",
+        "pata",
+        "pata",
+        "pon"
+      ],
+      "onset_samples": [
+        0,
+        22050,
+        44100,
+        66150
+      ],
+      "sample_count": 88200,
+      "duration_seconds": 2,
+      "sha256": "823d87c981d9c37f2c63d1d83cd6665f801051dc56995222640fcc66e525bd77",
+      "exact_pcm_placement_verified": true
+    },
+    {
+      "filename": "demo_expand.wav",
+      "sequence": [
+        "pon",
+        "pon",
+        "pata",
+        "pon"
+      ],
+      "onset_samples": [
+        0,
+        22050,
+        44100,
+        66150
+      ],
+      "sample_count": 88200,
+      "duration_seconds": 2,
+      "sha256": "e6566f3b1ea9b1bb1fb18f1bb4c92617d12050748d901c216f7562c8f3bd2fd5",
+      "exact_pcm_placement_verified": true
+    },
+    {
+      "filename": "demo_multi.wav",
+      "sequence": [
+        "chaka",
+        "chaka",
+        "pata",
+        "pon"
+      ],
+      "onset_samples": [
+        0,
+        22050,
+        44100,
+        66150
+      ],
+      "sample_count": 88200,
+      "duration_seconds": 2,
+      "sha256": "85ebbb32cb03d5c7845fcad147101c401e8105eff53622bb858ab7bfb09cfba3",
+      "exact_pcm_placement_verified": true
+    },
+    {
+      "filename": "demo_fever.wav",
+      "sequence": [
+        "don",
+        "don",
+        "pata",
+        "pon"
+      ],
+      "onset_samples": [
+        0,
+        22050,
+        44100,
+        66150
+      ],
+      "sample_count": 88200,
+      "duration_seconds": 2,
+      "sha256": "21e13d554f32ec23719a3dad76ad2a1c9153fbf1ded6801fb66dbc7a2714a1a5",
+      "exact_pcm_placement_verified": true
+    },
+    {
+      "filename": "echo_single_demo.wav",
+      "sequence": [
+        "pata",
+        "pon",
+        "don",
+        "chaka"
+      ],
+      "onset_samples": [
+        0,
+        22050,
+        44100,
+        66150
+      ],
+      "sample_count": 88200,
+      "duration_seconds": 2,
+      "sha256": "d26da62022f801f263ee9eec4ec256faa9dc771312f37f7167ab720b40b29eeb",
+      "exact_pcm_placement_verified": true
+    }
+  ],
+  "qa": {
+    "pcm_sequence_exact": true,
+    "peak_lte_minus_2_dbfs": true,
+    "duration_lte_480_ms": true,
+    "sample_rate": 44100,
+    "channels": 2,
+    "bits": 16,
+    "no_added_music": true
+  }
+}

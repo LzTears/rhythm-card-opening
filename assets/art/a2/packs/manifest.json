@@ -1,0 +1,163 @@
+{
+  "version": "a2-production-1",
+  "generator": "built-in image_gen",
+  "style_reference": "REF-005A2-battle.png only, not A3",
+  "prompt": "source/prompt.txt",
+  "extraction": "sprite-gen3.15 slice-sheet --chroma-key none --alpha-floor 200 --alpha-edge0; same-alpha native preservation, no drawing or nonuniform stretch",
+  "assets": [
+    {
+      "file": "pack-0.png",
+      "size": [
+        256,
+        384
+      ],
+      "alpha_bbox": [
+        11,
+        32,
+        245,
+        352
+      ],
+      "visible_size": [
+        234,
+        320
+      ],
+      "sha256": "b6887972141233b659142a4b69896ef9b45efdad47b7e01c70b533c7cc38ad01",
+      "filter": "nearest",
+      "grade": 0,
+      "name": "普通",
+      "uv_bbox": [
+        0.04296875,
+        0.08333333333333333,
+        0.95703125,
+        0.9166666666666666
+      ],
+      "draw_rule": "Uniform fit visible bbox into 60x80du. Never force source width and height independently; source varies <4% from 3:4. Full top/bottom crimp seals included."
+    },
+    {
+      "file": "pack-1.png",
+      "size": [
+        256,
+        384
+      ],
+      "alpha_bbox": [
+        13,
+        32,
+        244,
+        352
+      ],
+      "visible_size": [
+        231,
+        320
+      ],
+      "sha256": "e703e6a7a420aa987acda2495c0c3b3cb1636c58071c8cc5db36fcde4987f900",
+      "filter": "nearest",
+      "grade": 1,
+      "name": "稀有",
+      "uv_bbox": [
+        0.05078125,
+        0.08333333333333333,
+        0.953125,
+        0.9166666666666666
+      ],
+      "draw_rule": "Uniform fit visible bbox into 60x80du. Never force source width and height independently; source varies <4% from 3:4. Full top/bottom crimp seals included."
+    },
+    {
+      "file": "pack-2.png",
+      "size": [
+        256,
+        384
+      ],
+      "alpha_bbox": [
+        8,
+        32,
+        249,
+        352
+      ],
+      "visible_size": [
+        241,
+        320
+      ],
+      "sha256": "8a4ac945658ab5011d4cc846913f5b62d0982e8593dcd2731f2556d14c5d8de4",
+      "filter": "nearest",
+      "grade": 2,
+      "name": "史诗",
+      "uv_bbox": [
+        0.03125,
+        0.08333333333333333,
+        0.97265625,
+        0.9166666666666666
+      ],
+      "draw_rule": "Uniform fit visible bbox into 60x80du. Never force source width and height independently; source varies <4% from 3:4. Full top/bottom crimp seals included."
+    },
+    {
+      "file": "pack-3.png",
+      "size": [
+        256,
+        384
+      ],
+      "alpha_bbox": [
+        11,
+        32,
+        245,
+        352
+      ],
+      "visible_size": [
+        234,
+        320
+      ],
+      "sha256": "49bba417432f64e8f0d50281c444ddce0352fc2917b1a716595b095e07b7e7ba",
+      "filter": "nearest",
+      "grade": 3,
+      "name": "传说",
+      "uv_bbox": [
+        0.04296875,
+        0.08333333333333333,
+        0.95703125,
+        0.9166666666666666
+      ],
+      "draw_rule": "Uniform fit visible bbox into 60x80du. Never force source width and height independently; source varies <4% from 3:4. Full top/bottom crimp seals included."
+    },
+    {
+      "file": "pack-4.png",
+      "size": [
+        256,
+        384
+      ],
+      "alpha_bbox": [
+        13,
+        32,
+        244,
+        352
+      ],
+      "visible_size": [
+        231,
+        320
+      ],
+      "sha256": "0b116f3bd5b988d17a3b3e8be252faf1833dcc0a16f45f1df54f1edcabd4e2bf",
+      "filter": "nearest",
+      "grade": 4,
+      "name": "远古",
+      "uv_bbox": [
+        0.05078125,
+        0.08333333333333333,
+        0.953125,
+        0.9166666666666666
+      ],
+      "draw_rule": "Uniform fit visible bbox into 60x80du. Never force source width and height independently; source varies <4% from 3:4. Full top/bottom crimp seals included."
+    }
+  ],
+  "qa": {
+    "viewed": true,
+    "limitations": [
+      "Model did not hit exact identical silhouette dimensions. Actual alpha bbox and uniform-fit contract recorded.",
+      "Generated alpha maximum254 preserved.",
+      "Dispenser is wider than80:64 target; fit preserving aspect rather than deform."
+    ]
+  },
+  "source_png_files": [
+    {
+      "file": "source/generated-atlas.png",
+      "sha256": "67b4ec7c9ee2864b09bd4d3ec15339dfbae34056a187fe23fddaa02bb5b2734e"
+    }
+  ]
+}

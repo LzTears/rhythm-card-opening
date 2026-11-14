@@ -1,0 +1,358 @@
+{
+  "frames": [
+    {
+      "filename": "echo_E01 0",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo_E01 1",
+      "frame": {
+        "x": 192,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo_E01 2",
+      "frame": {
+        "x": 384,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo_E01 3",
+      "frame": {
+        "x": 576,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo_E01 4",
+      "frame": {
+        "x": 0,
+        "y": 144,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo_E01 5",
+      "frame": {
+        "x": 192,
+        "y": 144,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo_E01 6",
+      "frame": {
+        "x": 384,
+        "y": 144,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo_E01 7",
+      "frame": {
+        "x": 576,
+        "y": 144,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo_E01 8",
+      "frame": {
+        "x": 0,
+        "y": 288,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo_E01 9",
+      "frame": {
+        "x": 192,
+        "y": 288,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo_E01 10",
+      "frame": {
+        "x": 384,
+        "y": 288,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo_E01 11",
+      "frame": {
+        "x": 576,
+        "y": 288,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo_E01 12",
+      "frame": {
+        "x": 0,
+        "y": 432,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo_E01 13",
+      "frame": {
+        "x": 192,
+        "y": 432,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo_E01 14",
+      "frame": {
+        "x": 384,
+        "y": 432,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    }
+  ],
+  "meta": {
+    "app": "https://github.com/patch-gg/pixelfx",
+    "image": "echo_E01.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 768,
+      "h": 576
+    },
+    "pixelfx": {
+      "id": "impacts/crit-hit",
+      "fps": 30,
+      "loop": false,
+      "frames": 15,
+      "frameSize": [
+        192,
+        144
+      ],
+      "pivot": [
+        96,
+        72
+      ],
+      "columns": 4
+    }
+  }
+}

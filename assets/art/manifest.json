@@ -1,0 +1,1320 @@
+{
+  "version": "pixel-0.3-premium-1",
+  "generated_on": "2026-11-09",
+  "generator": "builtin image_gen",
+  "export": "sprite-gen slice-sheet static-icons, 4x3, alpha-floor128, noise-min128, 512 square, target480, contain",
+  "license_status": "AI-generated evaluation art; no third-party character intended; not a legal clearance statement",
+  "scope": "Retro pixel arcade:60 independent card-face PNG variants plus shared background/wood/card-back; runtime gameplay remains E01 white-card MVP",
+  "card_count": 60,
+  "assets": [
+    {
+      "id": "C01-0",
+      "family": "C01",
+      "grade": 0,
+      "rarity": "普通",
+      "name": "扩散·涟圈",
+      "file": "cards/C01-0.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        18,
+        16,
+        495,
+        496
+      ],
+      "nontransparent_fraction": 0.68671,
+      "sha256": "a58db02e20086595453b7c520adb4d78d4d7625673be76c4be3d7c3ad4eda918",
+      "color": "白"
+    },
+    {
+      "id": "C01-1",
+      "family": "C01",
+      "grade": 1,
+      "rarity": "稀有",
+      "name": "扩散·震环",
+      "file": "cards/C01-1.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        16,
+        497,
+        496
+      ],
+      "nontransparent_fraction": 0.62376,
+      "sha256": "4d148d861c61238a1b844329a76d9c793e3c9db8f40a2fdbbec5abae39bc9d69",
+      "color": "绿"
+    },
+    {
+      "id": "C01-2",
+      "family": "C01",
+      "grade": 2,
+      "rarity": "史诗",
+      "name": "扩散·广域",
+      "file": "cards/C01-2.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        16,
+        499,
+        496
+      ],
+      "nontransparent_fraction": 0.66478,
+      "sha256": "292675d4cbc69c74d9b755b92f682c6a859a9445d5b9605cd17655c17a13faf0",
+      "color": "紫"
+    },
+    {
+      "id": "C01-3",
+      "family": "C01",
+      "grade": 3,
+      "rarity": "传说",
+      "name": "扩散·天幕",
+      "file": "cards/C01-3.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        18,
+        16,
+        495,
+        496
+      ],
+      "nontransparent_fraction": 0.69139,
+      "sha256": "958aef3e4143f5838276ea80452a21b98600f23c3ed2b40ef8f192d481fa3ee3",
+      "color": "金"
+    },
+    {
+      "id": "C01-4",
+      "family": "C01",
+      "grade": 4,
+      "rarity": "远古",
+      "name": "扩散·无界",
+      "file": "cards/C01-4.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        21,
+        16,
+        493,
+        496
+      ],
+      "nontransparent_fraction": 0.66158,
+      "sha256": "3ca3e6a813561045f0e0c5cccc6a3e355d33d309e8ac430b5f2d44f9b8131b21",
+      "color": "红"
+    },
+    {
+      "id": "C02-0",
+      "family": "C02",
+      "grade": 0,
+      "rarity": "普通",
+      "name": "连锁·跃弧",
+      "file": "cards/C02-0.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        16,
+        497,
+        496
+      ],
+      "nontransparent_fraction": 0.68941,
+      "sha256": "70773973f22b6c05fd721abde80747f766a82b38f4c944cd9f85984f1f42fbc5",
+      "color": "白"
+    },
+    {
+      "id": "C02-1",
+      "family": "C02",
+      "grade": 1,
+      "rarity": "稀有",
+      "name": "连锁·接引",
+      "file": "cards/C02-1.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        16,
+        497,
+        496
+      ],
+      "nontransparent_fraction": 0.62379,
+      "sha256": "2019c0d3a8f7a2b05d390c43d3775ead344ee9f73f4d39ac67c06574ec84ddbf",
+      "color": "绿"
+    },
+    {
+      "id": "C02-2",
+      "family": "C02",
+      "grade": 2,
+      "rarity": "史诗",
+      "name": "连锁·奔流",
+      "file": "cards/C02-2.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        16,
+        499,
+        496
+      ],
+      "nontransparent_fraction": 0.66482,
+      "sha256": "bc8222f54c20808fdc4a31acf864a6ed540b013bbfa35c9e387463b5164752ac",
+      "color": "紫"
+    },
+    {
+      "id": "C02-3",
+      "family": "C02",
+      "grade": 3,
+      "rarity": "传说",
+      "name": "连锁·天链",
+      "file": "cards/C02-3.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        19,
+        16,
+        495,
+        496
+      ],
+      "nontransparent_fraction": 0.69109,
+      "sha256": "a9e4d88f0f88826f1062768dfb3d41a8d1b8dbb0e5bef089d97f094cd504a966",
+      "color": "金"
+    },
+    {
+      "id": "C02-4",
+      "family": "C02",
+      "grade": 4,
+      "rarity": "远古",
+      "name": "连锁·万象",
+      "file": "cards/C02-4.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        19,
+        16,
+        493,
+        496
+      ],
+      "nontransparent_fraction": 0.65993,
+      "sha256": "236935149a0361f3128d2a11941a7d87e0a59728d21120da3a8c55ba342902ac",
+      "color": "红"
+    },
+    {
+      "id": "C03-0",
+      "family": "C03",
+      "grade": 0,
+      "rarity": "普通",
+      "name": "回响·余音",
+      "file": "cards/C03-0.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        16,
+        497,
+        496
+      ],
+      "nontransparent_fraction": 0.69029,
+      "sha256": "26678f436c88cf10cb1298634122880f60d47ae8d6c35bebbea884aa88c5e423",
+      "color": "白"
+    },
+    {
+      "id": "C03-1",
+      "family": "C03",
+      "grade": 1,
+      "rarity": "稀有",
+      "name": "回响·复奏",
+      "file": "cards/C03-1.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        16,
+        497,
+        496
+      ],
+      "nontransparent_fraction": 0.62429,
+      "sha256": "232260dbbd4fd98fb8e669e06cc0e370fee827b36ef93fd6d91b44b70db87ef9",
+      "color": "绿"
+    },
+    {
+      "id": "C03-2",
+      "family": "C03",
+      "grade": 2,
+      "rarity": "史诗",
+      "name": "回响·叠鸣",
+      "file": "cards/C03-2.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        16,
+        499,
+        496
+      ],
+      "nontransparent_fraction": 0.66473,
+      "sha256": "09cca4db1c7a4033e5f2bd91060fce6d18d59317ac899a91dca319f8855c956d",
+      "color": "紫"
+    },
+    {
+      "id": "C03-3",
+      "family": "C03",
+      "grade": 3,
+      "rarity": "传说",
+      "name": "回响·永奏",
+      "file": "cards/C03-3.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        19,
+        16,
+        495,
+        496
+      ],
+      "nontransparent_fraction": 0.6919,
+      "sha256": "06b0f72e9d6dc8a351eb1c2425f901069f3ad52857b000bb77d8bc0aa9fe754c",
+      "color": "金"
+    },
+    {
+      "id": "C03-4",
+      "family": "C03",
+      "grade": 4,
+      "rarity": "远古",
+      "name": "回响·太初",
+      "file": "cards/C03-4.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        19,
+        16,
+        493,
+        496
+      ],
+      "nontransparent_fraction": 0.66091,
+      "sha256": "7ee86c2d46d4b2715b2f374b1a228981df056fad3d9dfc4171be46b0e56a2fda",
+      "color": "红"
+    },
+    {
+      "id": "C04-0",
+      "family": "C04",
+      "grade": 0,
+      "rarity": "普通",
+      "name": "多重·双星",
+      "file": "cards/C04-0.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        16,
+        497,
+        496
+      ],
+      "nontransparent_fraction": 0.68855,
+      "sha256": "5b17de9e5fd6c56a4badcaf3180b06c832d014aa6572eeb60389c0b39bf8dd27",
+      "color": "白"
+    },
+    {
+      "id": "C04-1",
+      "family": "C04",
+      "grade": 1,
+      "rarity": "稀有",
+      "name": "多重·并耀",
+      "file": "cards/C04-1.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        16,
+        497,
+        496
+      ],
+      "nontransparent_fraction": 0.62417,
+      "sha256": "8748b424a3c5b9968d2701c658a9fe8b6be7d685727f912b774abe73529d68fc",
+      "color": "绿"
+    },
+    {
+      "id": "C04-2",
+      "family": "C04",
+      "grade": 2,
+      "rarity": "史诗",
+      "name": "多重·三星",
+      "file": "cards/C04-2.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        14,
+        16,
+        500,
+        496
+      ],
+      "nontransparent_fraction": 0.66574,
+      "sha256": "3c7f768757ad7cef713e46624a13442f5420980b077c9513c40dca2a14629c81",
+      "color": "紫"
+    },
+    {
+      "id": "C04-3",
+      "family": "C04",
+      "grade": 3,
+      "rarity": "传说",
+      "name": "多重·齐辉",
+      "file": "cards/C04-3.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        18,
+        16,
+        495,
+        496
+      ],
+      "nontransparent_fraction": 0.69114,
+      "sha256": "43989186dc99673d1151670c95e3b553b8fbc3d8540fd2becc98e076378435c2",
+      "color": "金"
+    },
+    {
+      "id": "C04-4",
+      "family": "C04",
+      "grade": 4,
+      "rarity": "远古",
+      "name": "多重·四极",
+      "file": "cards/C04-4.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        19,
+        16,
+        493,
+        496
+      ],
+      "nontransparent_fraction": 0.66097,
+      "sha256": "ab4fb32b264ff6e3dca605b465171a0da911cb06f8f4e6aa328ffee75936ccb2",
+      "color": "红"
+    },
+    {
+      "id": "C05-0",
+      "family": "C05",
+      "grade": 0,
+      "rarity": "普通",
+      "name": "穿透·破纸",
+      "file": "cards/C05-0.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        16,
+        496,
+        496
+      ],
+      "nontransparent_fraction": 0.68964,
+      "sha256": "673cd4172a7413d954ea35b1464376b649203499691b3b8659c05f1aafb1b196",
+      "color": "白"
+    },
+    {
+      "id": "C05-1",
+      "family": "C05",
+      "grade": 1,
+      "rarity": "稀有",
+      "name": "穿透·贯纹",
+      "file": "cards/C05-1.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        16,
+        497,
+        496
+      ],
+      "nontransparent_fraction": 0.62225,
+      "sha256": "298cb3d08a215f2d88d9183100492fb87dc32f20f1e809059675eb3008aa2334",
+      "color": "绿"
+    },
+    {
+      "id": "C05-2",
+      "family": "C05",
+      "grade": 2,
+      "rarity": "史诗",
+      "name": "穿透·穿山",
+      "file": "cards/C05-2.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        16,
+        498,
+        496
+      ],
+      "nontransparent_fraction": 0.66143,
+      "sha256": "ae54ae8ac80951ce4815bc9d32e4985893fc701830672ddce15dd1b7cfc8c992",
+      "color": "紫"
+    },
+    {
+      "id": "C05-3",
+      "family": "C05",
+      "grade": 3,
+      "rarity": "传说",
+      "name": "穿透·贯日",
+      "file": "cards/C05-3.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        19,
+        16,
+        495,
+        496
+      ],
+      "nontransparent_fraction": 0.69045,
+      "sha256": "ce6f4b9c1b9ad18924e2c41e139de3fbe83573e7e753746ced6758df55b5e962",
+      "color": "金"
+    },
+    {
+      "id": "C05-4",
+      "family": "C05",
+      "grade": 4,
+      "rarity": "远古",
+      "name": "穿透·破界",
+      "file": "cards/C05-4.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        20,
+        16,
+        493,
+        496
+      ],
+      "nontransparent_fraction": 0.66028,
+      "sha256": "4a3ccd2a469195db21e1d20bb79e6c87bcc3961cf7f963682a04636e0c563d8b",
+      "color": "红"
+    },
+    {
+      "id": "C06-0",
+      "family": "C06",
+      "grade": 0,
+      "rarity": "普通",
+      "name": "聚焦·针芒",
+      "file": "cards/C06-0.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        16,
+        497,
+        496
+      ],
+      "nontransparent_fraction": 0.69074,
+      "sha256": "d3a3b742e67570308991a1d8755f2ea19b189e8479c238277a73963e9ac38dbd",
+      "color": "白"
+    },
+    {
+      "id": "C06-1",
+      "family": "C06",
+      "grade": 1,
+      "rarity": "稀有",
+      "name": "聚焦·锐眼",
+      "file": "cards/C06-1.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        16,
+        497,
+        496
+      ],
+      "nontransparent_fraction": 0.62259,
+      "sha256": "7a962296314456bf828d3a1ffeee322d034234d7457e58cbe8498dc42f482cf6",
+      "color": "绿"
+    },
+    {
+      "id": "C06-2",
+      "family": "C06",
+      "grade": 2,
+      "rarity": "史诗",
+      "name": "聚焦·凝星",
+      "file": "cards/C06-2.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        14,
+        16,
+        500,
+        496
+      ],
+      "nontransparent_fraction": 0.66821,
+      "sha256": "fb0f0ca399616c5b10b26956c35554d164bee612c0be0610d03f19f4122a9edd",
+      "color": "紫"
+    },
+    {
+      "id": "C06-3",
+      "family": "C06",
+      "grade": 3,
+      "rarity": "传说",
+      "name": "聚焦·极点",
+      "file": "cards/C06-3.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        20,
+        16,
+        493,
+        496
+      ],
+      "nontransparent_fraction": 0.68596,
+      "sha256": "17587bed4ac04cc565dd8732a2367e1c6e804f74b6a2de1d7432f3d4614d5669",
+      "color": "金"
+    },
+    {
+      "id": "C06-4",
+      "family": "C06",
+      "grade": 4,
+      "rarity": "远古",
+      "name": "聚焦·原核",
+      "file": "cards/C06-4.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        19,
+        16,
+        493,
+        496
+      ],
+      "nontransparent_fraction": 0.65928,
+      "sha256": "5374c5eebe27ca21803c14009062ff57026b489ba74273436c005e02df60c8ab",
+      "color": "红"
+    },
+    {
+      "id": "C07-0",
+      "family": "C07",
+      "grade": 0,
+      "rarity": "普通",
+      "name": "蓄能·积势",
+      "file": "cards/C07-0.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        16,
+        497,
+        496
+      ],
+      "nontransparent_fraction": 0.69082,
+      "sha256": "18c98fbbc4468f84ad86da8e97d1cd14f36ab61d366fa309a8c1527576f839f5",
+      "color": "白"
+    },
+    {
+      "id": "C07-1",
+      "family": "C07",
+      "grade": 1,
+      "rarity": "稀有",
+      "name": "蓄能·蓄潮",
+      "file": "cards/C07-1.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        16,
+        497,
+        496
+      ],
+      "nontransparent_fraction": 0.62251,
+      "sha256": "c944ffeb1799d066e1736817fcdd7c3129d661ff8aedcf43875d775728b579ba",
+      "color": "绿"
+    },
+    {
+      "id": "C07-2",
+      "family": "C07",
+      "grade": 2,
+      "rarity": "史诗",
+      "name": "蓄能·储势",
+      "file": "cards/C07-2.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        16,
+        498,
+        496
+      ],
+      "nontransparent_fraction": 0.66112,
+      "sha256": "0857baf615c2124df01a9bdc29c20845be4aae5312e2b0bb6a23b91125ed3191",
+      "color": "紫"
+    },
+    {
+      "id": "C07-3",
+      "family": "C07",
+      "grade": 3,
+      "rarity": "传说",
+      "name": "蓄能·满弦",
+      "file": "cards/C07-3.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        19,
+        16,
+        494,
+        496
+      ],
+      "nontransparent_fraction": 0.6876,
+      "sha256": "557a9590a076be505633556e23a3fb893782f2ce3dd17ccc02ce92360fca49bf",
+      "color": "金"
+    },
+    {
+      "id": "C07-4",
+      "family": "C07",
+      "grade": 4,
+      "rarity": "远古",
+      "name": "蓄能·天蓄",
+      "file": "cards/C07-4.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        19,
+        16,
+        493,
+        496
+      ],
+      "nontransparent_fraction": 0.66006,
+      "sha256": "1d4f374cefb3556aa2e1dce5db376b03cd538536e56c69eea13aa280c1f43b1d",
+      "color": "红"
+    },
+    {
+      "id": "C08-0",
+      "family": "C08",
+      "grade": 0,
+      "rarity": "普通",
+      "name": "急速·快拍",
+      "file": "cards/C08-0.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        16,
+        497,
+        496
+      ],
+      "nontransparent_fraction": 0.68903,
+      "sha256": "e9dc42e62c5833d4f13056447a63fefd02bdcc48ceab53da397fe3b30811bb81",
+      "color": "白"
+    },
+    {
+      "id": "C08-1",
+      "family": "C08",
+      "grade": 1,
+      "rarity": "稀有",
+      "name": "急速·连拍",
+      "file": "cards/C08-1.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        16,
+        497,
+        496
+      ],
+      "nontransparent_fraction": 0.62233,
+      "sha256": "a4866cc50a79f4674fe9564051cca8cdf3b875ff155fb1a104845e0dab5cfc09",
+      "color": "绿"
+    },
+    {
+      "id": "C08-2",
+      "family": "C08",
+      "grade": 2,
+      "rarity": "史诗",
+      "name": "急速·疾奏",
+      "file": "cards/C08-2.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        16,
+        498,
+        496
+      ],
+      "nontransparent_fraction": 0.66111,
+      "sha256": "df85618e22485d64a138fafc5733488664e7dba6fd4b37381a50ea647ce53400",
+      "color": "紫"
+    },
+    {
+      "id": "C08-3",
+      "family": "C08",
+      "grade": 3,
+      "rarity": "传说",
+      "name": "急速·迅雷",
+      "file": "cards/C08-3.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        19,
+        16,
+        495,
+        496
+      ],
+      "nontransparent_fraction": 0.69065,
+      "sha256": "54e32252c998d1ea58808634fe6b3ea7647c4f3e39110c5a2ec39587fe28c84f",
+      "color": "金"
+    },
+    {
+      "id": "C08-4",
+      "family": "C08",
+      "grade": 4,
+      "rarity": "远古",
+      "name": "急速·瞬息",
+      "file": "cards/C08-4.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        19,
+        16,
+        493,
+        496
+      ],
+      "nontransparent_fraction": 0.65994,
+      "sha256": "72f6e50e278dc0ae5a8d90ee0cc5aa13979dcaffdb4b7b5c4323e1c84614b1d1",
+      "color": "红"
+    },
+    {
+      "id": "C09-0",
+      "family": "C09",
+      "grade": 0,
+      "rarity": "普通",
+      "name": "牵引·拨片",
+      "file": "cards/C09-0.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        16,
+        496,
+        496
+      ],
+      "nontransparent_fraction": 0.68908,
+      "sha256": "7a99c7fba877a096d98d52959804f1633ded0ae0ab425b2448f0bcbb86a75325",
+      "color": "白"
+    },
+    {
+      "id": "C09-1",
+      "family": "C09",
+      "grade": 1,
+      "rarity": "稀有",
+      "name": "牵引·聚拢",
+      "file": "cards/C09-1.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        16,
+        497,
+        496
+      ],
+      "nontransparent_fraction": 0.62128,
+      "sha256": "46bb3571e96782b1500599b8f04090202fc0cda34b82cbbf36e3842389857c59",
+      "color": "绿"
+    },
+    {
+      "id": "C09-2",
+      "family": "C09",
+      "grade": 2,
+      "rarity": "史诗",
+      "name": "牵引·引潮",
+      "file": "cards/C09-2.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        16,
+        498,
+        496
+      ],
+      "nontransparent_fraction": 0.65931,
+      "sha256": "f5f6b1ac857e53bbd470eb2be3e6f4ff61aa98ebf3e48429a5de448a778d90f8",
+      "color": "紫"
+    },
+    {
+      "id": "C09-3",
+      "family": "C09",
+      "grade": 3,
+      "rarity": "传说",
+      "name": "牵引·归心",
+      "file": "cards/C09-3.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        19,
+        16,
+        494,
+        496
+      ],
+      "nontransparent_fraction": 0.68877,
+      "sha256": "880036a4b95ff39d9025571a68d35e317645494660ec993a0fe101088e9ae9f9",
+      "color": "金"
+    },
+    {
+      "id": "C09-4",
+      "family": "C09",
+      "grade": 4,
+      "rarity": "远古",
+      "name": "牵引·星井",
+      "file": "cards/C09-4.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        21,
+        16,
+        493,
+        496
+      ],
+      "nontransparent_fraction": 0.65845,
+      "sha256": "e9950b0e5c6e69e549fb341dbb1025040e0cbd77a937ec49278a49b6d7b23e30",
+      "color": "红"
+    },
+    {
+      "id": "C10-0",
+      "family": "C10",
+      "grade": 0,
+      "rarity": "普通",
+      "name": "震荡·轻颤",
+      "file": "cards/C10-0.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        16,
+        497,
+        496
+      ],
+      "nontransparent_fraction": 0.69082,
+      "sha256": "9cb01772f100687d0e464bfd086b1b6e229322de8c4e4b2908d05efd0a942531",
+      "color": "白"
+    },
+    {
+      "id": "C10-1",
+      "family": "C10",
+      "grade": 1,
+      "rarity": "稀有",
+      "name": "震荡·裂纹",
+      "file": "cards/C10-1.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        16,
+        497,
+        496
+      ],
+      "nontransparent_fraction": 0.62079,
+      "sha256": "d5a6e33150a5ce70254471b84d9135169f3484000b69ea6ff0bdaa8d94d75487",
+      "color": "绿"
+    },
+    {
+      "id": "C10-2",
+      "family": "C10",
+      "grade": 2,
+      "rarity": "史诗",
+      "name": "震荡·震骨",
+      "file": "cards/C10-2.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        16,
+        498,
+        496
+      ],
+      "nontransparent_fraction": 0.65902,
+      "sha256": "6098f7800a876aacd8512b8a9d6de258f0c7349ba469b24bb8f373d8c72292b5",
+      "color": "紫"
+    },
+    {
+      "id": "C10-3",
+      "family": "C10",
+      "grade": 3,
+      "rarity": "传说",
+      "name": "震荡·崩壁",
+      "file": "cards/C10-3.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        19,
+        16,
+        494,
+        496
+      ],
+      "nontransparent_fraction": 0.68769,
+      "sha256": "b67231ab1d23703b68424789c90323276092068d6dc21309467e7d8babeaba00",
+      "color": "金"
+    },
+    {
+      "id": "C10-4",
+      "family": "C10",
+      "grade": 4,
+      "rarity": "远古",
+      "name": "震荡·碎界",
+      "file": "cards/C10-4.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        21,
+        16,
+        493,
+        496
+      ],
+      "nontransparent_fraction": 0.6581,
+      "sha256": "078f10a3ae1683b65047df7208026f76c586abc2b129e7e1d56b7ea8b78ee00b",
+      "color": "红"
+    },
+    {
+      "id": "C11-0",
+      "family": "C11",
+      "grade": 0,
+      "rarity": "普通",
+      "name": "标记·点睛",
+      "file": "cards/C11-0.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        16,
+        497,
+        496
+      ],
+      "nontransparent_fraction": 0.6907,
+      "sha256": "e21e579592571196a5b6a60b9457377fe9e5197ad65e763d7718af9a792b78c0",
+      "color": "白"
+    },
+    {
+      "id": "C11-1",
+      "family": "C11",
+      "grade": 1,
+      "rarity": "稀有",
+      "name": "标记·烙印",
+      "file": "cards/C11-1.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        16,
+        497,
+        496
+      ],
+      "nontransparent_fraction": 0.62191,
+      "sha256": "1aed4becc9600713b8571b287909beb669fbf51051619b34881fb857e386e655",
+      "color": "绿"
+    },
+    {
+      "id": "C11-2",
+      "family": "C11",
+      "grade": 2,
+      "rarity": "史诗",
+      "name": "标记·追猎",
+      "file": "cards/C11-2.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        16,
+        498,
+        496
+      ],
+      "nontransparent_fraction": 0.6596,
+      "sha256": "806659a273a630161ba275cfd6d4aba6425f01e5289664506a5ce307b9a1c61e",
+      "color": "紫"
+    },
+    {
+      "id": "C11-3",
+      "family": "C11",
+      "grade": 3,
+      "rarity": "传说",
+      "name": "标记·敕令",
+      "file": "cards/C11-3.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        19,
+        16,
+        494,
+        496
+      ],
+      "nontransparent_fraction": 0.6885,
+      "sha256": "814845ecdd2671330a25bb5a5b1bc808070957a9c088b84f24348e6e945cd9eb",
+      "color": "金"
+    },
+    {
+      "id": "C11-4",
+      "family": "C11",
+      "grade": 4,
+      "rarity": "远古",
+      "name": "标记·终焉",
+      "file": "cards/C11-4.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        19,
+        16,
+        493,
+        496
+      ],
+      "nontransparent_fraction": 0.65796,
+      "sha256": "dc2f0c193edf388801dde892340ecb680055f0ff90e2979d5316cd2980a37190",
+      "color": "红"
+    },
+    {
+      "id": "C12-0",
+      "family": "C12",
+      "grade": 0,
+      "rarity": "普通",
+      "name": "余波·微澜",
+      "file": "cards/C12-0.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        16,
+        497,
+        496
+      ],
+      "nontransparent_fraction": 0.68925,
+      "sha256": "d8dc740134dd258d71750ee289476dda0a77f1cdf5dc35e48e5298ec33999e84",
+      "color": "白"
+    },
+    {
+      "id": "C12-1",
+      "family": "C12",
+      "grade": 1,
+      "rarity": "稀有",
+      "name": "余波·回潮",
+      "file": "cards/C12-1.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        17,
+        16,
+        497,
+        496
+      ],
+      "nontransparent_fraction": 0.6211,
+      "sha256": "dc85a714fbe5cb5f4348677cff40c0042fd9e888a8c6b255cb9a55ebb29efcfb",
+      "color": "绿"
+    },
+    {
+      "id": "C12-2",
+      "family": "C12",
+      "grade": 2,
+      "rarity": "史诗",
+      "name": "余波·震潮",
+      "file": "cards/C12-2.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        15,
+        16,
+        498,
+        496
+      ],
+      "nontransparent_fraction": 0.65892,
+      "sha256": "419a1693073016fc78106a47bd41ac9482ef03be5dc009a2089787fbf4f246d5",
+      "color": "紫"
+    },
+    {
+      "id": "C12-3",
+      "family": "C12",
+      "grade": 3,
+      "rarity": "传说",
+      "name": "余波·海啸",
+      "file": "cards/C12-3.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        19,
+        16,
+        495,
+        496
+      ],
+      "nontransparent_fraction": 0.68738,
+      "sha256": "71de35d63477de5cec2ce4f3cc6e56f8f2b550e37c77ac68e3376c1c87a4cabf",
+      "color": "金"
+    },
+    {
+      "id": "C12-4",
+      "family": "C12",
+      "grade": 4,
+      "rarity": "远古",
+      "name": "余波·寂灭",
+      "file": "cards/C12-4.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        19,
+        16,
+        493,
+        496
+      ],
+      "nontransparent_fraction": 0.65823,
+      "sha256": "ba8f8654127ddcfd0d58535fbb915e64a890a187561f8a2cd78e006ab01815c0",
+      "color": "红"
+    }
+  ],
+  "shared": [
+    {
+      "file": "menu_scene.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "f5de6b1ab2bef6450aaa84c699c9c36dc6203e318a02b0b791c50ba9b6e27e12"
+    },
+    {
+      "file": "desk_wood.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "sha256": "c3ac704a4da4d8c036a524851bdf64aef9746bf5457808477647bfcf89cf4ec1"
+    },
+    {
+      "file": "card_back.png",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "sha256": "38b8864b13afe56363546b04227a6466175e4af37aef3c00994127227e4fe139"
+    }
+  ],
+  "generation_prompts": "source/pixel-generation-prompts.json",
+  "source_sheets": [
+    "source/pixel-cards-0-atlas.png",
+    "source/pixel-cards-1-atlas.png",
+    "source/pixel-cards-2-atlas.png",
+    "source/pixel-cards-3-atlas.png",
+    "source/pixel-cards-4-atlas.png"
+  ],
+  "inspection": "60 unique PNG SHA256, RGBA/512/corners/margins and all slice reports checked. Gold/red atlases and representative exported PNGs visually inspected. Subjective in-game art acceptance pending.",
+  "premium_generation_prompts": "source/premium-generation-prompts.json",
+  "premium_remake": {
+    "date": "2026-11-09",
+    "count": 24,
+    "archive": "source/history/2026-11-09-premium-before",
+    "gold": "Embossed gold foil, amber gems, richer individual compositions",
+    "red": "Crimson rim, interior holographic rainbow prism bands and foil sparkles",
+    "pipeline": "builtin image_gen edit; sprite-gen slice-sheet static icons",
+    "model": "Exact backend not reported",
+    "license_status": "AI-generated evaluation artwork; no external character or brand intended; no legal clearance or user satisfaction asserted"
+  }
+}

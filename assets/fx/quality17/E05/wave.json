@@ -1,0 +1,58 @@
+{
+  "key": "wave_E05",
+  "source_id": "explosions/plasma-explosion#complete-shock-rings-track",
+  "source_file": "source/plasma-wave.mjs",
+  "source_sha256": "ead16af1dc5cf107792795ba77de0b998d7f8f8635d034a46c0574e8dbbd5187",
+  "adaptation": "Original two shock-ring draw tracks, native widths/time. No tilted ring, shell or source lightning. Element palette adaptation.",
+  "size": [
+    224,
+    200
+  ],
+  "floor_pivot": [
+    112,
+    100
+  ],
+  "pivot": [
+    112,
+    100
+  ],
+  "columns": 7,
+  "rows": 8,
+  "frames": 52,
+  "fps": 30,
+  "source_duration": 1.7,
+  "sample_end": 1.7,
+  "duration": 1.7333333333333334,
+  "body_radius_px": 92,
+  "options": {
+    "palette": [
+      "#102343",
+      "#174571",
+      "#236ea1",
+      "#369dcc",
+      "#58cbea",
+      "#9de9f5",
+      "#dcfbff",
+      "#ffffff"
+    ],
+    "accent": [
+      "#102343",
+      "#174571",
+      "#369dcc",
+      "#9de9f5",
+      "#ffffff"
+    ]
+  },
+  "color": "wave-color.png",
+  "light": "wave-light.png",
+  "color_sha256": "b225cad6bdb794fcef769add8d8db2c4c48eb48754512fb2771636ba8185e388",
+  "light_sha256": "adcc8dace4e1774b8196ed8642fea5b13d45de1f401520871efb028851ca697a",
+  "terminal_pixels": {
+    "color": 0,
+    "light": 0
+  },
+  "outer_edge_pixels_all_frames": {
+    "color": 0,
+    "light": 0
+  }
+}

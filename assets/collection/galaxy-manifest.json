@@ -1,0 +1,1080 @@
+[
+  {
+    "id": "GAL-001",
+    "art_path": "res://assets/collection/cards/GAL-001.png",
+    "source": "sources/galaxy-001-008.png",
+    "source_size": [
+      1448,
+      1086
+    ],
+    "crop_xyxy": [
+      2,
+      2,
+      360,
+      541
+    ],
+    "size": [
+      358,
+      539
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-002",
+    "art_path": "res://assets/collection/cards/GAL-002.png",
+    "source": "sources/galaxy-001-008.png",
+    "source_size": [
+      1448,
+      1086
+    ],
+    "crop_xyxy": [
+      364,
+      2,
+      722,
+      541
+    ],
+    "size": [
+      358,
+      539
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-003",
+    "art_path": "res://assets/collection/cards/GAL-003.png",
+    "source": "sources/galaxy-001-008.png",
+    "source_size": [
+      1448,
+      1086
+    ],
+    "crop_xyxy": [
+      726,
+      2,
+      1084,
+      541
+    ],
+    "size": [
+      358,
+      539
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-004",
+    "art_path": "res://assets/collection/cards/GAL-004.png",
+    "source": "sources/galaxy-001-008.png",
+    "source_size": [
+      1448,
+      1086
+    ],
+    "crop_xyxy": [
+      1088,
+      2,
+      1446,
+      541
+    ],
+    "size": [
+      358,
+      539
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-005",
+    "art_path": "res://assets/collection/cards/GAL-005.png",
+    "source": "sources/galaxy-001-008.png",
+    "source_size": [
+      1448,
+      1086
+    ],
+    "crop_xyxy": [
+      2,
+      545,
+      360,
+      1084
+    ],
+    "size": [
+      358,
+      539
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-006",
+    "art_path": "res://assets/collection/cards/GAL-006.png",
+    "source": "sources/galaxy-001-008.png",
+    "source_size": [
+      1448,
+      1086
+    ],
+    "crop_xyxy": [
+      364,
+      545,
+      722,
+      1084
+    ],
+    "size": [
+      358,
+      539
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-007",
+    "art_path": "res://assets/collection/cards/GAL-007.png",
+    "source": "sources/galaxy-001-008.png",
+    "source_size": [
+      1448,
+      1086
+    ],
+    "crop_xyxy": [
+      726,
+      545,
+      1084,
+      1084
+    ],
+    "size": [
+      358,
+      539
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-008",
+    "art_path": "res://assets/collection/cards/GAL-008.png",
+    "source": "sources/galaxy-001-008.png",
+    "source_size": [
+      1448,
+      1086
+    ],
+    "crop_xyxy": [
+      1088,
+      545,
+      1446,
+      1084
+    ],
+    "size": [
+      358,
+      539
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-009",
+    "art_path": "res://assets/collection/cards/GAL-009.png",
+    "source": "sources/galaxy-009-016.png",
+    "source_size": [
+      1448,
+      1086
+    ],
+    "crop_xyxy": [
+      2,
+      2,
+      360,
+      541
+    ],
+    "size": [
+      358,
+      539
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-010",
+    "art_path": "res://assets/collection/cards/GAL-010.png",
+    "source": "sources/galaxy-009-016.png",
+    "source_size": [
+      1448,
+      1086
+    ],
+    "crop_xyxy": [
+      364,
+      2,
+      722,
+      541
+    ],
+    "size": [
+      358,
+      539
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-011",
+    "art_path": "res://assets/collection/cards/GAL-011.png",
+    "source": "sources/galaxy-009-016.png",
+    "source_size": [
+      1448,
+      1086
+    ],
+    "crop_xyxy": [
+      726,
+      2,
+      1084,
+      541
+    ],
+    "size": [
+      358,
+      539
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-012",
+    "art_path": "res://assets/collection/cards/GAL-012.png",
+    "source": "sources/galaxy-009-016.png",
+    "source_size": [
+      1448,
+      1086
+    ],
+    "crop_xyxy": [
+      1088,
+      2,
+      1446,
+      541
+    ],
+    "size": [
+      358,
+      539
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-013",
+    "art_path": "res://assets/collection/cards/GAL-013.png",
+    "source": "sources/galaxy-009-016.png",
+    "source_size": [
+      1448,
+      1086
+    ],
+    "crop_xyxy": [
+      2,
+      545,
+      360,
+      1084
+    ],
+    "size": [
+      358,
+      539
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-014",
+    "art_path": "res://assets/collection/cards/GAL-014.png",
+    "source": "sources/galaxy-009-016.png",
+    "source_size": [
+      1448,
+      1086
+    ],
+    "crop_xyxy": [
+      364,
+      545,
+      722,
+      1084
+    ],
+    "size": [
+      358,
+      539
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-015",
+    "art_path": "res://assets/collection/cards/GAL-015.png",
+    "source": "sources/galaxy-009-016.png",
+    "source_size": [
+      1448,
+      1086
+    ],
+    "crop_xyxy": [
+      726,
+      545,
+      1084,
+      1084
+    ],
+    "size": [
+      358,
+      539
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-016",
+    "art_path": "res://assets/collection/cards/GAL-016.png",
+    "source": "sources/galaxy-009-016.png",
+    "source_size": [
+      1448,
+      1086
+    ],
+    "crop_xyxy": [
+      1088,
+      545,
+      1446,
+      1084
+    ],
+    "size": [
+      358,
+      539
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-017",
+    "art_path": "res://assets/collection/cards/GAL-017.png",
+    "source": "sources/galaxy-017-022.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      2,
+      2,
+      416,
+      625
+    ],
+    "size": [
+      414,
+      623
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-018",
+    "art_path": "res://assets/collection/cards/GAL-018.png",
+    "source": "sources/galaxy-017-022.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      420,
+      2,
+      834,
+      625
+    ],
+    "size": [
+      414,
+      623
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-019",
+    "art_path": "res://assets/collection/cards/GAL-019.png",
+    "source": "sources/galaxy-017-022.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      838,
+      2,
+      1252,
+      625
+    ],
+    "size": [
+      414,
+      623
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-020",
+    "art_path": "res://assets/collection/cards/GAL-020.png",
+    "source": "sources/galaxy-017-022.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      2,
+      629,
+      416,
+      1252
+    ],
+    "size": [
+      414,
+      623
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-021",
+    "art_path": "res://assets/collection/cards/GAL-021.png",
+    "source": "sources/galaxy-017-022.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      420,
+      629,
+      834,
+      1252
+    ],
+    "size": [
+      414,
+      623
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-022",
+    "art_path": "res://assets/collection/cards/GAL-022.png",
+    "source": "sources/galaxy-017-022.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      838,
+      629,
+      1252,
+      1252
+    ],
+    "size": [
+      414,
+      623
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-023",
+    "art_path": "res://assets/collection/cards/GAL-023.png",
+    "source": "sources/galaxy-023-029.png",
+    "source_size": [
+      1448,
+      1086
+    ],
+    "crop_xyxy": [
+      2,
+      2,
+      360,
+      541
+    ],
+    "size": [
+      358,
+      539
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-024",
+    "art_path": "res://assets/collection/cards/GAL-024.png",
+    "source": "sources/galaxy-023-029.png",
+    "source_size": [
+      1448,
+      1086
+    ],
+    "crop_xyxy": [
+      364,
+      2,
+      722,
+      541
+    ],
+    "size": [
+      358,
+      539
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-025",
+    "art_path": "res://assets/collection/cards/GAL-025.png",
+    "source": "sources/galaxy-023-029.png",
+    "source_size": [
+      1448,
+      1086
+    ],
+    "crop_xyxy": [
+      726,
+      2,
+      1084,
+      541
+    ],
+    "size": [
+      358,
+      539
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-026",
+    "art_path": "res://assets/collection/cards/GAL-026.png",
+    "source": "sources/galaxy-023-029.png",
+    "source_size": [
+      1448,
+      1086
+    ],
+    "crop_xyxy": [
+      1088,
+      2,
+      1446,
+      541
+    ],
+    "size": [
+      358,
+      539
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-027",
+    "art_path": "res://assets/collection/cards/GAL-027.png",
+    "source": "sources/galaxy-023-029.png",
+    "source_size": [
+      1448,
+      1086
+    ],
+    "crop_xyxy": [
+      2,
+      545,
+      360,
+      1084
+    ],
+    "size": [
+      358,
+      539
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-028",
+    "art_path": "res://assets/collection/cards/GAL-028.png",
+    "source": "sources/galaxy-023-029.png",
+    "source_size": [
+      1448,
+      1086
+    ],
+    "crop_xyxy": [
+      364,
+      545,
+      722,
+      1084
+    ],
+    "size": [
+      358,
+      539
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-029",
+    "art_path": "res://assets/collection/cards/GAL-029.png",
+    "source": "sources/galaxy-023-029.png",
+    "source_size": [
+      1448,
+      1086
+    ],
+    "crop_xyxy": [
+      726,
+      545,
+      1084,
+      1084
+    ],
+    "size": [
+      358,
+      539
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-030",
+    "art_path": "res://assets/collection/cards/GAL-030.png",
+    "source": "sources/galaxy-030-035.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      2,
+      2,
+      416,
+      598
+    ],
+    "size": [
+      414,
+      596
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-031",
+    "art_path": "res://assets/collection/cards/GAL-031.png",
+    "source": "sources/galaxy-030-035.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      420,
+      2,
+      834,
+      598
+    ],
+    "size": [
+      414,
+      596
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-032",
+    "art_path": "res://assets/collection/cards/GAL-032.png",
+    "source": "sources/galaxy-030-035.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      838,
+      2,
+      1252,
+      598
+    ],
+    "size": [
+      414,
+      596
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-033",
+    "art_path": "res://assets/collection/cards/GAL-033.png",
+    "source": "sources/galaxy-030-035.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      2,
+      602,
+      416,
+      1252
+    ],
+    "size": [
+      414,
+      650
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-034",
+    "art_path": "res://assets/collection/cards/GAL-034.png",
+    "source": "sources/galaxy-030-035.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      420,
+      602,
+      834,
+      1252
+    ],
+    "size": [
+      414,
+      650
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-035",
+    "art_path": "res://assets/collection/cards/GAL-035.png",
+    "source": "sources/galaxy-030-035.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      838,
+      602,
+      1252,
+      1252
+    ],
+    "size": [
+      414,
+      650
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-036",
+    "art_path": "res://assets/collection/cards/GAL-036.png",
+    "source": "sources/galaxy-036-039.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      2,
+      2,
+      625,
+      625
+    ],
+    "size": [
+      623,
+      623
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-037",
+    "art_path": "res://assets/collection/cards/GAL-037.png",
+    "source": "sources/galaxy-036-039.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      629,
+      2,
+      1252,
+      625
+    ],
+    "size": [
+      623,
+      623
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-038",
+    "art_path": "res://assets/collection/cards/GAL-038.png",
+    "source": "sources/galaxy-036-039.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      2,
+      629,
+      625,
+      1252
+    ],
+    "size": [
+      623,
+      623
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-039",
+    "art_path": "res://assets/collection/cards/GAL-039.png",
+    "source": "sources/galaxy-036-039.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      629,
+      629,
+      1252,
+      1252
+    ],
+    "size": [
+      623,
+      623
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-040",
+    "art_path": "res://assets/collection/cards/GAL-040.png",
+    "source": "sources/galaxy-040-045.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      2,
+      2,
+      416,
+      625
+    ],
+    "size": [
+      414,
+      623
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-041",
+    "art_path": "res://assets/collection/cards/GAL-041.png",
+    "source": "sources/galaxy-040-045.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      420,
+      2,
+      834,
+      625
+    ],
+    "size": [
+      414,
+      623
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-042",
+    "art_path": "res://assets/collection/cards/GAL-042.png",
+    "source": "sources/galaxy-040-045.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      838,
+      2,
+      1252,
+      625
+    ],
+    "size": [
+      414,
+      623
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-043",
+    "art_path": "res://assets/collection/cards/GAL-043.png",
+    "source": "sources/galaxy-040-045.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      2,
+      629,
+      416,
+      1252
+    ],
+    "size": [
+      414,
+      623
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-044",
+    "art_path": "res://assets/collection/cards/GAL-044.png",
+    "source": "sources/galaxy-040-045.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      420,
+      629,
+      834,
+      1252
+    ],
+    "size": [
+      414,
+      623
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-045",
+    "art_path": "res://assets/collection/cards/GAL-045.png",
+    "source": "sources/galaxy-040-045.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      838,
+      629,
+      1252,
+      1252
+    ],
+    "size": [
+      414,
+      623
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-046",
+    "art_path": "res://assets/collection/cards/GAL-046.png",
+    "source": "sources/galaxy-046-049.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      2,
+      2,
+      625,
+      588
+    ],
+    "size": [
+      623,
+      586
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-047",
+    "art_path": "res://assets/collection/cards/GAL-047.png",
+    "source": "sources/galaxy-046-049.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      629,
+      2,
+      1252,
+      588
+    ],
+    "size": [
+      623,
+      586
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-048",
+    "art_path": "res://assets/collection/cards/GAL-048.png",
+    "source": "sources/galaxy-046-049.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      2,
+      592,
+      625,
+      1252
+    ],
+    "size": [
+      623,
+      660
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  },
+  {
+    "id": "GAL-049",
+    "art_path": "res://assets/collection/cards/GAL-049.png",
+    "source": "sources/galaxy-046-049.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "crop_xyxy": [
+      629,
+      592,
+      1252,
+      1252
+    ],
+    "size": [
+      623,
+      660
+    ],
+    "alpha": false,
+    "method": "image_gen independent illustration atlas, deterministic cell crop",
+    "layers": "flattened illustration; frame, typography and holo are runtime layers"
+  }
+]

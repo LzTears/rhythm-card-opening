@@ -1,0 +1,137 @@
+{
+  "kind": "workshop-pixel-card-art",
+  "version": 1,
+  "generation": "built-in image_gen; four current family source sheets and independent metal swirl back",
+  "style_reference": "Pixel workshop circular-card direction; original creation reference checksum retained as provenance.",
+  "style_reference_sha256": "a1c1b8494d7021612772f91e13b487ac527c7cbd3b14bc7e2197495e68e95cc2",
+  "mapping_source": "res://scripts/attack_spec.gd:ACTIVE_CARD_IDS",
+  "processing": "Official sprite-gen slice-sheet, alpha-floor64, noise-min10000, grid5x1, contain, target472 baseline492, 512 square. No custom slicing or painting.",
+  "cards": [
+    {
+      "card_id": "C09-0",
+      "name": "拢包器",
+      "concept": "主攻击后拉近周围存活包",
+      "grade": 0,
+      "art_variant": "C09-0",
+      "path": "res://assets/art/workshop/cards/C09-0.png",
+      "sha256": "73a0e4a22698a1b8b0c12097e4be9868708024635c175b86e0177c8a70e3966c",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        18,
+        20,
+        495,
+        492
+      ],
+      "solid_aspect": 1.0064102564102564,
+      "source_sheet": "assets/art/workshop/source/cards/C09-sheet.png",
+      "source_sha256": "b75dc422a3705f461f956668a9e87c87f9132caab17ba081b09f0672c8c5832d",
+      "prompt": "assets/art/workshop/source/cards/C09-geometry-prompt.json",
+      "prompt_sha256": "3f228e5e375cb0c87ddc99e947777dc413ed0902ae449d03ba101aeaceeb48d8",
+      "slice_report": "assets/art/workshop/source/cards/C09-cut/slice-sheet.json"
+    },
+    {
+      "card_id": "C01-0",
+      "name": "扩圈器",
+      "concept": "直接扩展攻击几何",
+      "grade": 0,
+      "art_variant": "C01-0",
+      "path": "res://assets/art/workshop/cards/C01-0.png",
+      "sha256": "5d91bc06b201490e6b064939a10476d9cefb88f3ce18cac14c1d5b7b44a23f43",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        27,
+        20,
+        487,
+        492
+      ],
+      "solid_aspect": 0.9700854700854701,
+      "source_sheet": "assets/art/workshop/source/cards/C01-sheet.png",
+      "source_sha256": "4cff282f2f50cbdcae07ac424ca21d51cc5b6482af818e731194c9fc1f6e9603",
+      "prompt": "assets/art/workshop/source/cards/C01-prompt.json",
+      "prompt_sha256": "abb586a05fc183f6a60c751c6f657ef12adc3d51b76b64a05a4957ce0e3ee6d2",
+      "slice_report": "assets/art/workshop/source/cards/C01-cut/slice-sheet.json"
+    },
+    {
+      "card_id": "C04-0",
+      "name": "多重锁定",
+      "concept": "同次出手打出两支扇形攻击",
+      "grade": 0,
+      "art_variant": "C04-0",
+      "path": "res://assets/art/workshop/cards/C04-0.png",
+      "sha256": "f2a7233053cc59b910867d51af6dff579391e67d7df6bc44a131dc7d9318e92e",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        24,
+        20,
+        489,
+        492
+      ],
+      "solid_aspect": 0.9892703862660944,
+      "source_sheet": "assets/art/workshop/source/cards/C04-sheet.png",
+      "source_sha256": "05db9da5e79022546e8a6ec0485a6056f7ee423e1875b6b740d2d9478552033e",
+      "prompt": "assets/art/workshop/source/cards/C04-prompt.json",
+      "prompt_sha256": "c8668bfd572570f17ff234c207fe7f7a84ffbf75868a31d47145c76da48e7d70",
+      "slice_report": "assets/art/workshop/source/cards/C04-cut/slice-sheet.json"
+    },
+    {
+      "card_id": "C12-0",
+      "name": "桌面余震",
+      "concept": "出手后留下延迟圆波",
+      "grade": 0,
+      "art_variant": "C12-0",
+      "path": "res://assets/art/workshop/cards/C12-0.png",
+      "sha256": "66983deffa39c1301b28978af61c5730ff73e88972af3fcbd86e78cd9493e194",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        24,
+        20,
+        489,
+        492
+      ],
+      "solid_aspect": 0.987152034261242,
+      "source_sheet": "assets/art/workshop/source/cards/C12-sheet.png",
+      "source_sha256": "57359606cdef96df28d0b363186e04444cf41456c0665d028fa955a3d71daaa9",
+      "prompt": "assets/art/workshop/source/cards/C12-prompt.json",
+      "prompt_sha256": "3be96a919ffa3f223583c5479d140d2859e19eba6628882fffe23fce8c440f20",
+      "slice_report": "assets/art/workshop/source/cards/C12-cut/slice-sheet.json"
+    }
+  ],
+  "back": {
+    "path": "res://assets/art/workshop/cards/card_back.png",
+    "sha256": "fc7fb3e9e2105e776860c4c800232c4f4c8608049be7d7599c4b203020d8ec71",
+    "source": "assets/art/workshop/source/cards/card_back-original.png",
+    "source_sha256": "f4258cbdeda101af8d11719516ffe1c8a6fc30ba607dd039e93f9ebea5a406e6",
+    "prompt": "assets/art/workshop/source/cards/card_back-prompt.json"
+  },
+  "checks": {
+    "fronts": 4,
+    "unique_front_hashes": 4,
+    "grade_counts": [
+      4,
+      0,
+      0,
+      0,
+      0
+    ],
+    "all_512_rgba": true,
+    "all_single_component_no_clipping": true,
+    "transparent_margins": true,
+    "engine_validation": "Root owner; not run by card agent"
+  },
+  "current_card_count": 4,
+  "current_mapping_source": "res://scripts/attack_spec.gd:ACTIVE_CARD_IDS",
+  "generation_record_note": "Current collection contains four common fronts. Retained family sheets and complete cut reports are regeneration inputs, not additional playable cards. Source/prompt/back checksums retain creation provenance.",
+  "generation_mapping_sha256": "ced4a5d699829bfb7d156ca68547463677d7b78e091279cac3d6a989d4cea29f"
+}

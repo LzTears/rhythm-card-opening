@@ -1,0 +1,391 @@
+{
+  "frames": [
+    {
+      "filename": "harvest_card 0",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "harvest_card 1",
+      "frame": {
+        "x": 112,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "harvest_card 2",
+      "frame": {
+        "x": 224,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "harvest_card 3",
+      "frame": {
+        "x": 336,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "harvest_card 4",
+      "frame": {
+        "x": 0,
+        "y": 108,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "harvest_card 5",
+      "frame": {
+        "x": 112,
+        "y": 108,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "harvest_card 6",
+      "frame": {
+        "x": 224,
+        "y": 108,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "harvest_card 7",
+      "frame": {
+        "x": 336,
+        "y": 108,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "harvest_card 8",
+      "frame": {
+        "x": 0,
+        "y": 216,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "harvest_card 9",
+      "frame": {
+        "x": 112,
+        "y": 216,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "harvest_card 10",
+      "frame": {
+        "x": 224,
+        "y": 216,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "harvest_card 11",
+      "frame": {
+        "x": 336,
+        "y": 216,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "harvest_card 12",
+      "frame": {
+        "x": 0,
+        "y": 324,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "harvest_card 13",
+      "frame": {
+        "x": 112,
+        "y": 324,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "harvest_card 14",
+      "frame": {
+        "x": 224,
+        "y": 324,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "harvest_card 15",
+      "frame": {
+        "x": 336,
+        "y": 324,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    }
+  ],
+  "meta": {
+    "app": "https://github.com/patch-gg/pixelfx",
+    "version": "1",
+    "image": "harvest_card.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 448,
+      "h": 432
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "harvest_card",
+        "from": 0,
+        "to": 15,
+        "direction": "forward"
+      }
+    ],
+    "pixelfx": {
+      "id": "pickups/collect-burst",
+      "name": "Collect burst",
+      "fps": 30,
+      "loop": false,
+      "frames": 16,
+      "frameSize": [
+        112,
+        108
+      ],
+      "pivot": [
+        56,
+        94
+      ],
+      "columns": 4
+    }
+  }
+}

@@ -1,0 +1,352 @@
+{
+  "version": "a2-production-1",
+  "date": "2026-11-09",
+  "generator": "built-in image_gen; backend model not separately reported",
+  "style_references": [
+    "REF-005A2-battle.png",
+    "REF-005A2-menu.png"
+  ],
+  "processing": "sprite-gen native alpha cleanup/static extraction, nearest mechanical resizing/registration. No procedural drawing. Old assets preserved; no scripts/PRD/GDA modified by this asset task.",
+  "groups": {
+    "packs": [
+      {
+        "path": "packs/pack-0.png",
+        "size": [
+          256,
+          384
+        ],
+        "alpha_bbox": [
+          11,
+          32,
+          245,
+          352
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "sha256": "b6887972141233b659142a4b69896ef9b45efdad47b7e01c70b533c7cc38ad01"
+      },
+      {
+        "path": "packs/pack-1.png",
+        "size": [
+          256,
+          384
+        ],
+        "alpha_bbox": [
+          13,
+          32,
+          244,
+          352
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "sha256": "e703e6a7a420aa987acda2495c0c3b3cb1636c58071c8cc5db36fcde4987f900"
+      },
+      {
+        "path": "packs/pack-2.png",
+        "size": [
+          256,
+          384
+        ],
+        "alpha_bbox": [
+          8,
+          32,
+          249,
+          352
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "sha256": "8a4ac945658ab5011d4cc846913f5b62d0982e8593dcd2731f2556d14c5d8de4"
+      },
+      {
+        "path": "packs/pack-3.png",
+        "size": [
+          256,
+          384
+        ],
+        "alpha_bbox": [
+          11,
+          32,
+          245,
+          352
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "sha256": "49bba417432f64e8f0d50281c444ddce0352fc2917b1a716595b095e07b7e7ba"
+      },
+      {
+        "path": "packs/pack-4.png",
+        "size": [
+          256,
+          384
+        ],
+        "alpha_bbox": [
+          13,
+          32,
+          244,
+          352
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "sha256": "0b116f3bd5b988d17a3b3e8be252faf1833dcc0a16f45f1df54f1edcabd4e2bf"
+      }
+    ],
+    "dispensers": [
+      {
+        "path": "dispensers/down.png",
+        "size": [
+          384,
+          320
+        ],
+        "alpha_bbox": [
+          0,
+          60,
+          384,
+          280
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "sha256": "e6ea7ccfbe524ddd95d97249f0088268e99f8698d3908a4934bfc91e8036d19b"
+      }
+    ],
+    "pack_damage": [
+      {
+        "path": "pack_damage/damage-1.png",
+        "size": [
+          256,
+          384
+        ],
+        "alpha_bbox": [
+          14,
+          36,
+          229,
+          347
+        ],
+        "alpha_range": [
+          0,
+          253
+        ],
+        "sha256": "74f8476c27cc2c54805df55df4716db10144f1722d3879b69bd7b64970b9d195"
+      },
+      {
+        "path": "pack_damage/damage-2.png",
+        "size": [
+          256,
+          384
+        ],
+        "alpha_bbox": [
+          19,
+          36,
+          236,
+          347
+        ],
+        "alpha_range": [
+          0,
+          254
+        ],
+        "sha256": "c16bfdebf3d33dd2f43c1787b61390263b12e3e94fa6d1d4b40d1fc55a42974b"
+      },
+      {
+        "path": "pack_damage/damage-3.png",
+        "size": [
+          256,
+          384
+        ],
+        "alpha_bbox": [
+          25,
+          36,
+          245,
+          347
+        ],
+        "alpha_range": [
+          0,
+          252
+        ],
+        "sha256": "e3249602f1b35746b8ccdf83adc2dd426299e904ccf7eb134b8dca2000b93a9d"
+      }
+    ],
+    "ui": [
+      {
+        "path": "ui/battle-table.png",
+        "size": [
+          1600,
+          960
+        ],
+        "alpha_bbox": [
+          0,
+          0,
+          1600,
+          960
+        ],
+        "alpha_range": [
+          255,
+          255
+        ],
+        "sha256": "edbdcd77ad8fe1e5c744c8c395913a694c9a84effe53a58f9e0e6eee40adf5bc"
+      },
+      {
+        "path": "ui/button-disabled.png",
+        "size": [
+          228,
+          77
+        ],
+        "alpha_bbox": [
+          0,
+          0,
+          228,
+          77
+        ],
+        "alpha_range": [
+          0,
+          254
+        ],
+        "sha256": "f0db7f584f7eae4afba05455c5c2175c2d4ea3fcf1be0e51db5838d237001228"
+      },
+      {
+        "path": "ui/button-hover.png",
+        "size": [
+          228,
+          77
+        ],
+        "alpha_bbox": [
+          0,
+          0,
+          228,
+          77
+        ],
+        "alpha_range": [
+          0,
+          254
+        ],
+        "sha256": "b58ba27316e1565c6a9503f47ebd13ac99b5679dd43ea67469b73cc400ab3e9f"
+      },
+      {
+        "path": "ui/button-normal.png",
+        "size": [
+          228,
+          77
+        ],
+        "alpha_bbox": [
+          0,
+          0,
+          228,
+          77
+        ],
+        "alpha_range": [
+          0,
+          254
+        ],
+        "sha256": "fcb58e50fb7599a5c8777f5d8f2822b1e579bfc10bbcd1dde1fdd4b9d8f575d8"
+      },
+      {
+        "path": "ui/button-pressed.png",
+        "size": [
+          228,
+          77
+        ],
+        "alpha_bbox": [
+          0,
+          0,
+          228,
+          77
+        ],
+        "alpha_range": [
+          0,
+          254
+        ],
+        "sha256": "496e3b9cc9e99264f74bf640178eb8833253fc082681df1760871716c41c4665"
+      },
+      {
+        "path": "ui/button-primary.png",
+        "size": [
+          229,
+          77
+        ],
+        "alpha_bbox": [
+          0,
+          0,
+          229,
+          77
+        ],
+        "alpha_range": [
+          0,
+          254
+        ],
+        "sha256": "b998c996cacce4d34a4a852d7cfc98dd196fbea560b3fd18a58fc54402bf2de0"
+      },
+      {
+        "path": "ui/menu-background.png",
+        "size": [
+          1600,
+          900
+        ],
+        "alpha_bbox": [
+          0,
+          0,
+          1600,
+          900
+        ],
+        "alpha_range": [
+          255,
+          255
+        ],
+        "sha256": "7a10a435a474f2947c35956992a94dc8900f132397544a2b266544ab5bb90958"
+      },
+      {
+        "path": "ui/panel.png",
+        "size": [
+          220,
+          216
+        ],
+        "alpha_bbox": [
+          0,
+          0,
+          220,
+          216
+        ],
+        "alpha_range": [
+          0,
+          254
+        ],
+        "sha256": "eb25a507147231237fccbf62928545be34480c93978caca4fd82c261054b731b"
+      },
+      {
+        "path": "ui/menu-logo.png",
+        "size": [
+          2172,
+          724
+        ],
+        "alpha_bbox": [
+          0,
+          21,
+          2152,
+          724
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "sha256": "34dd96ddc61c689225e2cba0c495220b5ae749f96118fc178b1e824380887c81",
+        "provenance": "ui/source/menu-logo-provenance.json"
+      }
+    ]
+  },
+  "group_manifests": {
+    "packs": "packs/manifest.json",
+    "dispensers": "dispensers/manifest.json",
+    "pack_damage": "pack_damage/manifest.json",
+    "ui": "ui/manifest.json"
+  },
+  "qa": "18 PNG in base groups, plus 61 card assets in cards manifest. New menu logo original RGBA, complete Chinese title visually checked; provenance in ui/source."
+}

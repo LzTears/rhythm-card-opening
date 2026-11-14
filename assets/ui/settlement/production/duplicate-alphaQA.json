@@ -1,0 +1,73 @@
+{
+  "native": {
+    "size": [
+      1880,
+      837
+    ],
+    "mode": "RGBA",
+    "alpha_minmax": [
+      0,
+      255
+    ],
+    "transparent_pixel_ratio": 0.2464519942042248,
+    "partial_alpha_pixel_count": 1185496,
+    "visible_bbox_alpha_gt_0": [
+      0,
+      4,
+      1864,
+      837
+    ],
+    "visible_bbox_alpha_ge_128": [
+      63,
+      27,
+      1819,
+      830
+    ],
+    "corner_alphas": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "final": {
+    "size": [
+      512,
+      224
+    ],
+    "mode": "RGBA",
+    "alpha_minmax": [
+      0,
+      255
+    ],
+    "transparent_pixel_ratio": 0.2609165736607143,
+    "partial_alpha_pixel_count": 83887,
+    "visible_bbox_alpha_gt_0": [
+      18,
+      5,
+      493,
+      224
+    ],
+    "visible_bbox_alpha_ge_128": [
+      21,
+      7,
+      491,
+      222
+    ],
+    "corner_alphas": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "visual_review": {
+    "exact_text": "重复",
+    "characters_correct": true,
+    "no_other_text": true,
+    "style": "berry purple and coral paper sticker with cream gold Chinese lettering",
+    "alpha": "genuine transparent exterior; generated antialiasing retained",
+    "scope": "asset only; no engine launch or integration validation"
+  },
+  "transform": "mechanical aspect-preserving Lanczos contain to 512x224 transparent canvas; no repaint or generated background removal"
+}

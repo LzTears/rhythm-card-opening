@@ -1,0 +1,998 @@
+{
+  "passed": true,
+  "scope": "138 frozen legacy assets (56 atlas PNG+81 JSON+1 pack-print shader) +7 logic/save sources unchanged;4 library originals +16 new PNG buffers unchanged. World/new effect/AtlasBatch intentionally integrated by other owners and excluded.",
+  "checks": 165,
+  "failures": [],
+  "entries": [
+    {
+      "path": "assets/pack_print.gdshader",
+      "expected": "15293ea61249c83bf8440b846fa6f357b5ecc847a2cc3fbf2e52d9e59dd49b8b",
+      "actual": "15293ea61249c83bf8440b846fa6f357b5ecc847a2cc3fbf2e52d9e59dd49b8b",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/heavy.png",
+      "expected": "26a305b30e2c9bd118553736aebfaaf324e3b9cafb15ab1b4be39a8c38a28505",
+      "actual": "26a305b30e2c9bd118553736aebfaaf324e3b9cafb15ab1b4be39a8c38a28505",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/aftershock_E01.png",
+      "expected": "e7337193885fd9adc8c3f5f274c6b238d8291c44d0d86ccf67b05de9ddfc6d07",
+      "actual": "e7337193885fd9adc8c3f5f274c6b238d8291c44d0d86ccf67b05de9ddfc6d07",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/coverage_E01.png",
+      "expected": "472bad357c841e15639587c10d57adaf95f92bd23a375721f38110f4ce8e3cbe",
+      "actual": "472bad357c841e15639587c10d57adaf95f92bd23a375721f38110f4ce8e3cbe",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/contact_E01.png",
+      "expected": "1d0324e82ca450254936a1061b8f28818f54ec355b38a4982f91358442be03d0",
+      "actual": "1d0324e82ca450254936a1061b8f28818f54ec355b38a4982f91358442be03d0",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/lightning.png",
+      "expected": "f1abd7f0d65a684bcbacb96581922b472499b2d10b5c413fc011f2dd7eeb944f",
+      "actual": "f1abd7f0d65a684bcbacb96581922b472499b2d10b5c413fc011f2dd7eeb944f",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/aftershock_E02.png",
+      "expected": "7f73c67909792f4ceab690258eca566466e9650f015d01eb1c800884391a35dc",
+      "actual": "7f73c67909792f4ceab690258eca566466e9650f015d01eb1c800884391a35dc",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/coverage_E02.png",
+      "expected": "ba2ef06c90ae6f7c1598bbe0a311823037147ddafb0d7ff2ac575e12fccb0fa1",
+      "actual": "ba2ef06c90ae6f7c1598bbe0a311823037147ddafb0d7ff2ac575e12fccb0fa1",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/contact_E02.png",
+      "expected": "7683e266618271fe6fc3a6b45877f219ce7ffa2c4731c7a37d23e1e4d14863af",
+      "actual": "7683e266618271fe6fc3a6b45877f219ce7ffa2c4731c7a37d23e1e4d14863af",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/fire.png",
+      "expected": "23099cf2c0b66ea937b616acb88fbc5fb34585da17e0eca7a2bdfc043b7cef76",
+      "actual": "23099cf2c0b66ea937b616acb88fbc5fb34585da17e0eca7a2bdfc043b7cef76",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/aftershock_E03.png",
+      "expected": "3e990d4e2d2c0b231f8d6ebba2c02b7ecffded22e8a47f4f6a8f8ed75a2c099b",
+      "actual": "3e990d4e2d2c0b231f8d6ebba2c02b7ecffded22e8a47f4f6a8f8ed75a2c099b",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/coverage_E03.png",
+      "expected": "b1f5ff36f017450bcc2b3e6dcb03a13c4ca8dda3621a893a377e885891fe32ad",
+      "actual": "b1f5ff36f017450bcc2b3e6dcb03a13c4ca8dda3621a893a377e885891fe32ad",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/contact_E03.png",
+      "expected": "54fd3eae699b7c16f36f507c8ddcbf475334cd63620a6f67cecf954ff960b6c7",
+      "actual": "54fd3eae699b7c16f36f507c8ddcbf475334cd63620a6f67cecf954ff960b6c7",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/shock.png",
+      "expected": "91c2964b806218cd688cd9f3258a7d4c8a95dd8f1256c4b208cf2a49990bce9f",
+      "actual": "91c2964b806218cd688cd9f3258a7d4c8a95dd8f1256c4b208cf2a49990bce9f",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/aftershock_E04.png",
+      "expected": "33da7b453a143f859562fc9430b4eb12c17c8f269d86b2b1ba1344941d65cb41",
+      "actual": "33da7b453a143f859562fc9430b4eb12c17c8f269d86b2b1ba1344941d65cb41",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/coverage_E04.png",
+      "expected": "7dd92af96cac39e3dc723799a7e6a9d0b9031c36df946603e553fb016e280aa2",
+      "actual": "7dd92af96cac39e3dc723799a7e6a9d0b9031c36df946603e553fb016e280aa2",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/contact_E04.png",
+      "expected": "953aa24ebf09daddc77c62561ccddde2570704f5804dcbe470451de0afeb101f",
+      "actual": "953aa24ebf09daddc77c62561ccddde2570704f5804dcbe470451de0afeb101f",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/frost.png",
+      "expected": "af26afe812a7760954be69ad05017f429be0caf215ffbebd176148a273d71408",
+      "actual": "af26afe812a7760954be69ad05017f429be0caf215ffbebd176148a273d71408",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/aftershock_E05.png",
+      "expected": "6485ad31742ac7c7f72f8a4b3dd0a5bc475707ba9338409ef760a53765801942",
+      "actual": "6485ad31742ac7c7f72f8a4b3dd0a5bc475707ba9338409ef760a53765801942",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/coverage_E05.png",
+      "expected": "cdc4cd82d22f48a4f151e5e800bffdd3eb61d323827d00acc4589e92ce45d55d",
+      "actual": "cdc4cd82d22f48a4f151e5e800bffdd3eb61d323827d00acc4589e92ce45d55d",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/contact_E05.png",
+      "expected": "7340841b0ffff4b9775a7ef974e643e23b8c53aeb33d1c2d207fbf0caedab6af",
+      "actual": "7340841b0ffff4b9775a7ef974e643e23b8c53aeb33d1c2d207fbf0caedab6af",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/poison.png",
+      "expected": "a7b4947ebf01b08a3021e882ba55eb487e8bb7d11a94c7308eaf62177d34639d",
+      "actual": "a7b4947ebf01b08a3021e882ba55eb487e8bb7d11a94c7308eaf62177d34639d",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/aftershock_E06.png",
+      "expected": "37336a5e2db0f96868e7e5ccaedfb02f978074f0b245238df9d5c6cbf9350feb",
+      "actual": "37336a5e2db0f96868e7e5ccaedfb02f978074f0b245238df9d5c6cbf9350feb",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/coverage_E06.png",
+      "expected": "ebbc5271fa8794de3b1703bde1999e3b8af86738fb63bb6b839391c79f8bfdf2",
+      "actual": "ebbc5271fa8794de3b1703bde1999e3b8af86738fb63bb6b839391c79f8bfdf2",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/contact_E06.png",
+      "expected": "0fd1239105496864f91de141bf727efb77e38b8981868a54752b2bcbe6c24ce6",
+      "actual": "0fd1239105496864f91de141bf727efb77e38b8981868a54752b2bcbe6c24ce6",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/vortex.png",
+      "expected": "4ff98aa1291a6b7b1bbc8a389c1a4d8263c279f7c045584e7e2763f3a7eb5fe3",
+      "actual": "4ff98aa1291a6b7b1bbc8a389c1a4d8263c279f7c045584e7e2763f3a7eb5fe3",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/aftershock_E07.png",
+      "expected": "5cb238754ba1492243cc0ed100dcc7c45d85d8fb632b3270df4a16e855796e0a",
+      "actual": "5cb238754ba1492243cc0ed100dcc7c45d85d8fb632b3270df4a16e855796e0a",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/coverage_E07.png",
+      "expected": "c094bfdb8070144b1f75b345041e204d46da45b616e6c5d54868f2e82b4acd27",
+      "actual": "c094bfdb8070144b1f75b345041e204d46da45b616e6c5d54868f2e82b4acd27",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/contact_E07.png",
+      "expected": "d8c951333a8dc6ef955ef0be1a7a3bbdc6246d3598e003b149b1c754a7d94acb",
+      "actual": "d8c951333a8dc6ef955ef0be1a7a3bbdc6246d3598e003b149b1c754a7d94acb",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/beam.png",
+      "expected": "6bd3393dc3b6fecc01ce22b99b317bf4508c22ac4ba7d4cb5af50e898eb5cd6d",
+      "actual": "6bd3393dc3b6fecc01ce22b99b317bf4508c22ac4ba7d4cb5af50e898eb5cd6d",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/aftershock_E08.png",
+      "expected": "0c32676d5bebdfc366a320c9007a8e2fdc6606b9d4c395e17480e81eff554a76",
+      "actual": "0c32676d5bebdfc366a320c9007a8e2fdc6606b9d4c395e17480e81eff554a76",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/coverage_E08.png",
+      "expected": "35a3c2559777537f0a16d8c7214e919b57d9b263ff52274a1d56902bb4e9d468",
+      "actual": "35a3c2559777537f0a16d8c7214e919b57d9b263ff52274a1d56902bb4e9d468",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/contact_E08.png",
+      "expected": "2213c9b8757f2b0b3f0f2d8e07951bc53526903a91baf7faacced0362f74ae3b",
+      "actual": "2213c9b8757f2b0b3f0f2d8e07951bc53526903a91baf7faacced0362f74ae3b",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/chain_E01.png",
+      "expected": "f9ad5684d475605dd7335afe8273531f9f95fd1f94309b6a238ff3769b4f9da6",
+      "actual": "f9ad5684d475605dd7335afe8273531f9f95fd1f94309b6a238ff3769b4f9da6",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/penetration_E01.png",
+      "expected": "5bd38f43ba108ca7fa02c3bb9a47fd55923b9a4abe4dbad65b5c3c536eab040f",
+      "actual": "5bd38f43ba108ca7fa02c3bb9a47fd55923b9a4abe4dbad65b5c3c536eab040f",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/pull_E01.png",
+      "expected": "31a796551725198366f89de924dd3c11fe74cdb047bd063d81eda99a18fc420f",
+      "actual": "31a796551725198366f89de924dd3c11fe74cdb047bd063d81eda99a18fc420f",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/chain_E02.png",
+      "expected": "271359ddffe07b8bcebc1d07ad5a2c585d47f16e2221dd1fc3354a3267c6d694",
+      "actual": "271359ddffe07b8bcebc1d07ad5a2c585d47f16e2221dd1fc3354a3267c6d694",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/penetration_E02.png",
+      "expected": "9a6d8c4f168036e373e9238afcd46c4b393536f4db53c1ce558dcb91871de524",
+      "actual": "9a6d8c4f168036e373e9238afcd46c4b393536f4db53c1ce558dcb91871de524",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/pull_E02.png",
+      "expected": "b34e894ca4f16900dfc092abd7f97531c050799120b50c38f237b753e382d664",
+      "actual": "b34e894ca4f16900dfc092abd7f97531c050799120b50c38f237b753e382d664",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/chain_E03.png",
+      "expected": "2a4904e6c7e897e535ac7efab7fd723f4ccde5c95ebf773a20eb3f3c1b55525c",
+      "actual": "2a4904e6c7e897e535ac7efab7fd723f4ccde5c95ebf773a20eb3f3c1b55525c",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/penetration_E03.png",
+      "expected": "e32a5c5353e0f1b0ccffcc67bf6f1e5e3ffd01018bc9f123d07ad9e745d12568",
+      "actual": "e32a5c5353e0f1b0ccffcc67bf6f1e5e3ffd01018bc9f123d07ad9e745d12568",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/pull_E03.png",
+      "expected": "27d596435d3b45c076ca3c07df7270355d75e47dfdf99f0ff9404841fdf5bee1",
+      "actual": "27d596435d3b45c076ca3c07df7270355d75e47dfdf99f0ff9404841fdf5bee1",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/chain_E04.png",
+      "expected": "8e694340c9362f89ba5d5ad02a244ae103eac370dbdaa39df2c2539a9cb26092",
+      "actual": "8e694340c9362f89ba5d5ad02a244ae103eac370dbdaa39df2c2539a9cb26092",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/penetration_E04.png",
+      "expected": "ff89636e75710e07be2f0afa268920a3797588f11fb634377e017fceb5e7f194",
+      "actual": "ff89636e75710e07be2f0afa268920a3797588f11fb634377e017fceb5e7f194",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/pull_E04.png",
+      "expected": "27f5c5c397478087209990f2eaaf234c788d405e962a97560cfd52b2ffbd8b76",
+      "actual": "27f5c5c397478087209990f2eaaf234c788d405e962a97560cfd52b2ffbd8b76",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/chain_E05.png",
+      "expected": "bf23ba1fc390d09e6193f1b0729f2c0afaa8e93fda7f68406ede7b25a937be50",
+      "actual": "bf23ba1fc390d09e6193f1b0729f2c0afaa8e93fda7f68406ede7b25a937be50",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/penetration_E05.png",
+      "expected": "e36b0b6ecc7d541a4ffa3ab09f1c3e9bc6f78632ffea514b9f0905f3342c3ca6",
+      "actual": "e36b0b6ecc7d541a4ffa3ab09f1c3e9bc6f78632ffea514b9f0905f3342c3ca6",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/pull_E05.png",
+      "expected": "7c590690037bca100e525e31f734f7709acb8ac02e8d19044934b9134c2fc7eb",
+      "actual": "7c590690037bca100e525e31f734f7709acb8ac02e8d19044934b9134c2fc7eb",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/chain_E06.png",
+      "expected": "3cafe7b8f73ebf70724ab86ded357b2884afb5b726e35be628ee19686acaf2d3",
+      "actual": "3cafe7b8f73ebf70724ab86ded357b2884afb5b726e35be628ee19686acaf2d3",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/penetration_E06.png",
+      "expected": "577c9907bc84e13d2388659ff857c1681fdd6c91736ed02b49dff84eecf12a82",
+      "actual": "577c9907bc84e13d2388659ff857c1681fdd6c91736ed02b49dff84eecf12a82",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/pull_E06.png",
+      "expected": "6ad9948d7dc2c152d494e6f504d6522287ededa8e5b5dbde0f4cbaf0689dd4a2",
+      "actual": "6ad9948d7dc2c152d494e6f504d6522287ededa8e5b5dbde0f4cbaf0689dd4a2",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/chain_E07.png",
+      "expected": "c7518fe56f633d3aaa5c2e7b1404c8a8dc68f63b5c30d535237d4dcb018acbaf",
+      "actual": "c7518fe56f633d3aaa5c2e7b1404c8a8dc68f63b5c30d535237d4dcb018acbaf",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/penetration_E07.png",
+      "expected": "95838d98079fa997ad4224414d8dce27e4972cb242e05174dcd8a19f011f6b61",
+      "actual": "95838d98079fa997ad4224414d8dce27e4972cb242e05174dcd8a19f011f6b61",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/pull_E07.png",
+      "expected": "f970704d5d2667ad058c29f4a28b1a2f34b3bfcdf5fb1377bd5cffae4ee3c0ec",
+      "actual": "f970704d5d2667ad058c29f4a28b1a2f34b3bfcdf5fb1377bd5cffae4ee3c0ec",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/chain_E08.png",
+      "expected": "ce06b3ea77b8965203269b82a5708e719e75dea7b75bfecb60ed9f67c4b994eb",
+      "actual": "ce06b3ea77b8965203269b82a5708e719e75dea7b75bfecb60ed9f67c4b994eb",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/penetration_E08.png",
+      "expected": "7f1c1033bd85cb875418e0585b47df360ca1f6e92bfae867df8fb0e461b29c26",
+      "actual": "7f1c1033bd85cb875418e0585b47df360ca1f6e92bfae867df8fb0e461b29c26",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/pull_E08.png",
+      "expected": "4495cfe7b6358cd56a72885ff6e73c79a455a35643405a37569f0b4635231afa",
+      "actual": "4495cfe7b6358cd56a72885ff6e73c79a455a35643405a37569f0b4635231afa",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/heavy.json",
+      "expected": "d794d73e2d4ca4e000326c99220fd6d5106610fbd28f9bec3d908e66b123a56a",
+      "actual": "d794d73e2d4ca4e000326c99220fd6d5106610fbd28f9bec3d908e66b123a56a",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/pulse_E01.json",
+      "expected": "6109bfb43b494eb40235eb8f4864eb7c74e7782e660c79c1fbdfc8e4e13edb0e",
+      "actual": "6109bfb43b494eb40235eb8f4864eb7c74e7782e660c79c1fbdfc8e4e13edb0e",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/echo_E01.json",
+      "expected": "e2e07b52dc996b95ceb7f92ad01d48e3d69b09f8c80c01c4818a3ee9e443af0e",
+      "actual": "e2e07b52dc996b95ceb7f92ad01d48e3d69b09f8c80c01c4818a3ee9e443af0e",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/aftershock_E01.json",
+      "expected": "8ae78af57d6709ac4169294c05d46772794af10e98a0501f9fc71c9d19445b30",
+      "actual": "8ae78af57d6709ac4169294c05d46772794af10e98a0501f9fc71c9d19445b30",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/bond_E01.json",
+      "expected": "b23c549e0cc19417df526147e17bbb5bfce955aed20bb73732154a0e06f4cb67",
+      "actual": "b23c549e0cc19417df526147e17bbb5bfce955aed20bb73732154a0e06f4cb67",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/coverage_E01.json",
+      "expected": "c74a954877df110d4150776e0690c047634cf0cab8435c742258bdf23b0049b7",
+      "actual": "c74a954877df110d4150776e0690c047634cf0cab8435c742258bdf23b0049b7",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/contact_E01.json",
+      "expected": "f5b8ec7bbdff74ff336f3e4b2a11ef5b95f6cee5c8e6b12f966b1c6e3e92b595",
+      "actual": "f5b8ec7bbdff74ff336f3e4b2a11ef5b95f6cee5c8e6b12f966b1c6e3e92b595",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/lightning.json",
+      "expected": "d94d53bb2c1acba78d6d1b324df2f4591e592cdaa2ea7f209e308af2d1d74ea1",
+      "actual": "d94d53bb2c1acba78d6d1b324df2f4591e592cdaa2ea7f209e308af2d1d74ea1",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/pulse_E02.json",
+      "expected": "8e8861b1aa279a1ca6b6b208e8b761cbd958f283961853bd2aea8e63b9c2c048",
+      "actual": "8e8861b1aa279a1ca6b6b208e8b761cbd958f283961853bd2aea8e63b9c2c048",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/echo_E02.json",
+      "expected": "5d340650a6bbc98426d0528cfd3fe502e97365de84ceb3dbf348305cacca604b",
+      "actual": "5d340650a6bbc98426d0528cfd3fe502e97365de84ceb3dbf348305cacca604b",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/aftershock_E02.json",
+      "expected": "8996273c51d62bb58c1c2b06b4c02f79c1199195895bd53879d5c7471e062cbf",
+      "actual": "8996273c51d62bb58c1c2b06b4c02f79c1199195895bd53879d5c7471e062cbf",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/bond_E02.json",
+      "expected": "2fbe776c9e308853a854b08ae24c505956d178f82e2bdb9ac1ff1849f9b6cd9e",
+      "actual": "2fbe776c9e308853a854b08ae24c505956d178f82e2bdb9ac1ff1849f9b6cd9e",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/coverage_E02.json",
+      "expected": "b0ddc756763bb5851116ba66b671a57486a78f302fadfc74ce45ba0030ceb940",
+      "actual": "b0ddc756763bb5851116ba66b671a57486a78f302fadfc74ce45ba0030ceb940",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/contact_E02.json",
+      "expected": "f9fb4f1bba654e2c87bcf453f9e98ded4eaed172f0716c1e92b380c3e4fd4f8e",
+      "actual": "f9fb4f1bba654e2c87bcf453f9e98ded4eaed172f0716c1e92b380c3e4fd4f8e",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/fire.json",
+      "expected": "22057489e75bda3244238db6e323d90c3b8153003d29c8fd9f01c416615d293e",
+      "actual": "22057489e75bda3244238db6e323d90c3b8153003d29c8fd9f01c416615d293e",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/pulse_E03.json",
+      "expected": "6c3dc286fdac2b251839600c87b6d5fdec3345e2e78c5c23c204ee20a85cc345",
+      "actual": "6c3dc286fdac2b251839600c87b6d5fdec3345e2e78c5c23c204ee20a85cc345",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/echo_E03.json",
+      "expected": "e8d73df76aa8960cf228a8001633e6932cbcb8accafc19353d04208e7ab9bf76",
+      "actual": "e8d73df76aa8960cf228a8001633e6932cbcb8accafc19353d04208e7ab9bf76",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/aftershock_E03.json",
+      "expected": "fa745a04f8db87c7e15f1ea9f8b8945cca73d749bd973c79239c70a7d347913b",
+      "actual": "fa745a04f8db87c7e15f1ea9f8b8945cca73d749bd973c79239c70a7d347913b",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/bond_E03.json",
+      "expected": "8684aa229223172dd93407a9da604ed4b55fad7fbb1803e683bfef509bc998af",
+      "actual": "8684aa229223172dd93407a9da604ed4b55fad7fbb1803e683bfef509bc998af",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/coverage_E03.json",
+      "expected": "abd8b2d9bc576e6fda1b3319b60bbcd7d1495d2fac0a87f5ca7f4e44f43c17ba",
+      "actual": "abd8b2d9bc576e6fda1b3319b60bbcd7d1495d2fac0a87f5ca7f4e44f43c17ba",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/contact_E03.json",
+      "expected": "1201a9011b0f51720e307b9023a9b7ef8e9bed2b5f8d91b7cf9a734f6cca7a8d",
+      "actual": "1201a9011b0f51720e307b9023a9b7ef8e9bed2b5f8d91b7cf9a734f6cca7a8d",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/shock.json",
+      "expected": "757e2a4128e2dcc0bb78e0b95ae80838deb7010da6666bd4bb2e4d8ae42e1299",
+      "actual": "757e2a4128e2dcc0bb78e0b95ae80838deb7010da6666bd4bb2e4d8ae42e1299",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/pulse_E04.json",
+      "expected": "fe930e6f9e2b62e8d81477da3b4faf766cbbba488085d10ba7b0bfd07e81ca37",
+      "actual": "fe930e6f9e2b62e8d81477da3b4faf766cbbba488085d10ba7b0bfd07e81ca37",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/echo_E04.json",
+      "expected": "630cf80a786de613c58d16efa581e7f1696540cb92ed5485bcf9cbcafc16fbee",
+      "actual": "630cf80a786de613c58d16efa581e7f1696540cb92ed5485bcf9cbcafc16fbee",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/aftershock_E04.json",
+      "expected": "6be921671c47530249b78b49a5c5c1373ebf3706f225761b1672748381b8d4e0",
+      "actual": "6be921671c47530249b78b49a5c5c1373ebf3706f225761b1672748381b8d4e0",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/bond_E04.json",
+      "expected": "5d0c3654bee370c56ba68ff99c2d856ba9f65fd2144c2724b2ce451f2a3da63f",
+      "actual": "5d0c3654bee370c56ba68ff99c2d856ba9f65fd2144c2724b2ce451f2a3da63f",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/coverage_E04.json",
+      "expected": "4dee0afb8bc2e24fe925d3fa136c3bf84532cf2cc189a685403cac548dcf7ff6",
+      "actual": "4dee0afb8bc2e24fe925d3fa136c3bf84532cf2cc189a685403cac548dcf7ff6",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/contact_E04.json",
+      "expected": "30d964ba1ee2c7c146c898ff4524963d9d915fd79ed355a2c5e95ce8c42a3916",
+      "actual": "30d964ba1ee2c7c146c898ff4524963d9d915fd79ed355a2c5e95ce8c42a3916",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/frost.json",
+      "expected": "80e19f99a755e8684e1c497cecee95d772561b1e3a105e3e68aacd97ff22e36c",
+      "actual": "80e19f99a755e8684e1c497cecee95d772561b1e3a105e3e68aacd97ff22e36c",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/pulse_E05.json",
+      "expected": "27b8753c29d0fd815032c561bf3aba10ce310ebaf960ab456fb9e350f8ed5d84",
+      "actual": "27b8753c29d0fd815032c561bf3aba10ce310ebaf960ab456fb9e350f8ed5d84",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/echo_E05.json",
+      "expected": "955606405a5e91aef20645cca75a17febf1348959819d3e42bf38c35ec11d0c2",
+      "actual": "955606405a5e91aef20645cca75a17febf1348959819d3e42bf38c35ec11d0c2",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/aftershock_E05.json",
+      "expected": "fb6ad542b7f1e34d8592fa57e2a865b683940de3702f5c59704aff899899e26b",
+      "actual": "fb6ad542b7f1e34d8592fa57e2a865b683940de3702f5c59704aff899899e26b",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/bond_E05.json",
+      "expected": "705e102bfba64c8b491f68a4f701ff3e03e645b9c507f6a0c2a2886e88cdfd04",
+      "actual": "705e102bfba64c8b491f68a4f701ff3e03e645b9c507f6a0c2a2886e88cdfd04",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/coverage_E05.json",
+      "expected": "ad8eb2f30d4b2b325e1803ccf64c639a5026ec39d07e1a70b66fb0c98cc12677",
+      "actual": "ad8eb2f30d4b2b325e1803ccf64c639a5026ec39d07e1a70b66fb0c98cc12677",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/contact_E05.json",
+      "expected": "279856bdd883ad03d60879212139ad5c667c569683b016c6a2501a246d733f2f",
+      "actual": "279856bdd883ad03d60879212139ad5c667c569683b016c6a2501a246d733f2f",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/poison.json",
+      "expected": "4a6435ed8eb1782aecbd63a754cf4dccc5aa597f6bee601f61e297c1ff2f738f",
+      "actual": "4a6435ed8eb1782aecbd63a754cf4dccc5aa597f6bee601f61e297c1ff2f738f",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/pulse_E06.json",
+      "expected": "ed9d8cdf2859b203b595859ffaa8298b4ee13e13e754b3af8e0cb4b6a338bb2a",
+      "actual": "ed9d8cdf2859b203b595859ffaa8298b4ee13e13e754b3af8e0cb4b6a338bb2a",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/echo_E06.json",
+      "expected": "6e2123ea18ff8597f9b6739e4f9e926ec995dcea0866f3b2de87f9254cf324ce",
+      "actual": "6e2123ea18ff8597f9b6739e4f9e926ec995dcea0866f3b2de87f9254cf324ce",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/aftershock_E06.json",
+      "expected": "07d2db0f5680ab7b3566d9faca0550e9dd82aa38820282b5ec789a6a72ef1a61",
+      "actual": "07d2db0f5680ab7b3566d9faca0550e9dd82aa38820282b5ec789a6a72ef1a61",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/bond_E06.json",
+      "expected": "8ca623549640e134e98b6e735bd18c66333f0dedc3e1ba1467f77645aaefcf0e",
+      "actual": "8ca623549640e134e98b6e735bd18c66333f0dedc3e1ba1467f77645aaefcf0e",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/coverage_E06.json",
+      "expected": "a7aac1deb848e8f166dd8b70073b7f1f6e12b50e99640aa1d1e374e055016b24",
+      "actual": "a7aac1deb848e8f166dd8b70073b7f1f6e12b50e99640aa1d1e374e055016b24",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/contact_E06.json",
+      "expected": "40efeab7a9e1d65b1eb02777c6de406bbbc29e7b9432804f7037c920ddce2f2d",
+      "actual": "40efeab7a9e1d65b1eb02777c6de406bbbc29e7b9432804f7037c920ddce2f2d",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/vortex.json",
+      "expected": "803d038c3563e8fe13b5f947bdfc4f6ba9c854cc8a6b376d514a3210f888cc55",
+      "actual": "803d038c3563e8fe13b5f947bdfc4f6ba9c854cc8a6b376d514a3210f888cc55",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/pulse_E07.json",
+      "expected": "743802bebf2876f5cd0df0c08fd4b1ec359f71393ade1830d2c198b7f9677930",
+      "actual": "743802bebf2876f5cd0df0c08fd4b1ec359f71393ade1830d2c198b7f9677930",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/echo_E07.json",
+      "expected": "16463b5e551d4dc48256107c993e334b74b4bb708a98346bf1c7552cb78bfd0d",
+      "actual": "16463b5e551d4dc48256107c993e334b74b4bb708a98346bf1c7552cb78bfd0d",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/aftershock_E07.json",
+      "expected": "4be9a375456323aad25fce8b539f4984b0d8210aa26d550df8c1341c05d8cdc3",
+      "actual": "4be9a375456323aad25fce8b539f4984b0d8210aa26d550df8c1341c05d8cdc3",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/bond_E07.json",
+      "expected": "624cdda3bd7ae9b5f7fde81b88180ed38699055daec895cda877e7f654f59bbd",
+      "actual": "624cdda3bd7ae9b5f7fde81b88180ed38699055daec895cda877e7f654f59bbd",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/coverage_E07.json",
+      "expected": "051e3af1cbc3aac30fc381ea15481fe4d7eb536a921bd5bc500732b5b3c3d569",
+      "actual": "051e3af1cbc3aac30fc381ea15481fe4d7eb536a921bd5bc500732b5b3c3d569",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/contact_E07.json",
+      "expected": "5ed022462d884e3a1e3b0f965529e282b19bf970e91c0549be9994ac41f4ba8a",
+      "actual": "5ed022462d884e3a1e3b0f965529e282b19bf970e91c0549be9994ac41f4ba8a",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/beam.json",
+      "expected": "294ff6bbeb59bf3388b7967fc3b81065c5cc1fd83218b1f587cf63ca12af18aa",
+      "actual": "294ff6bbeb59bf3388b7967fc3b81065c5cc1fd83218b1f587cf63ca12af18aa",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/pulse_E08.json",
+      "expected": "2a264a768001675da4ab79e7a4bed129792c14ebcf1439e089525c64c6498137",
+      "actual": "2a264a768001675da4ab79e7a4bed129792c14ebcf1439e089525c64c6498137",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/echo_E08.json",
+      "expected": "dddd57a10dc694105eba537a0065c4a9c2af803bc0faef64da25275f4fbf579b",
+      "actual": "dddd57a10dc694105eba537a0065c4a9c2af803bc0faef64da25275f4fbf579b",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/aftershock_E08.json",
+      "expected": "64922f54ca1bb1241a2f2c6fa8caefdf71e1ca6bf4488687f3b6d06980ebb10c",
+      "actual": "64922f54ca1bb1241a2f2c6fa8caefdf71e1ca6bf4488687f3b6d06980ebb10c",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/bond_E08.json",
+      "expected": "d7decb7e8300963d944fbd8f98a2aedc5f71a8eb6f4beb12010a0b2ead408184",
+      "actual": "d7decb7e8300963d944fbd8f98a2aedc5f71a8eb6f4beb12010a0b2ead408184",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/coverage_E08.json",
+      "expected": "5a2636063cf8c77d33904eec3df93ffb11ea15a7af803dddbfa37880c68ef725",
+      "actual": "5a2636063cf8c77d33904eec3df93ffb11ea15a7af803dddbfa37880c68ef725",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/contact_E08.json",
+      "expected": "6864d22d2e0b4d8e441897188d8fb9e5f890b17fde7ef546ac2c625c7ffc4f51",
+      "actual": "6864d22d2e0b4d8e441897188d8fb9e5f890b17fde7ef546ac2c625c7ffc4f51",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/chain_E01.json",
+      "expected": "4629d8cf4ed4d49b7e0d19bca617d796278e8882a9df5f27a9afb2a6042453eb",
+      "actual": "4629d8cf4ed4d49b7e0d19bca617d796278e8882a9df5f27a9afb2a6042453eb",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/penetration_E01.json",
+      "expected": "0afb4407166d69e66a40269146dfda0e1b03ea80155a6db8f01c111821368c04",
+      "actual": "0afb4407166d69e66a40269146dfda0e1b03ea80155a6db8f01c111821368c04",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/pull_E01.json",
+      "expected": "472a213591baa54dca53f0164714a2cfbbc7946bc5d4ee774a869cfd392a7ecd",
+      "actual": "472a213591baa54dca53f0164714a2cfbbc7946bc5d4ee774a869cfd392a7ecd",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/chain_E02.json",
+      "expected": "a07fd8619ef3e059cfaa81dbac69c2ef04e2baf6ebf8bce0e4f89c799976e11f",
+      "actual": "a07fd8619ef3e059cfaa81dbac69c2ef04e2baf6ebf8bce0e4f89c799976e11f",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/penetration_E02.json",
+      "expected": "358877f4f2ae8a8baddc9db8d7b6ef534b48a55a9edf3b8c26e2f833730a7340",
+      "actual": "358877f4f2ae8a8baddc9db8d7b6ef534b48a55a9edf3b8c26e2f833730a7340",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/pull_E02.json",
+      "expected": "e43d1f901370c2d6477c62e90cd60ac83b7a4ba6213131a7f85161506cabf975",
+      "actual": "e43d1f901370c2d6477c62e90cd60ac83b7a4ba6213131a7f85161506cabf975",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/chain_E03.json",
+      "expected": "952d10adcd1b166d04713ab3de168f8abe68215745266667002d12a7501cc6db",
+      "actual": "952d10adcd1b166d04713ab3de168f8abe68215745266667002d12a7501cc6db",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/penetration_E03.json",
+      "expected": "15ced391cf2bcc003e257feac46bbba81bd5da1bff7daa28580e1797053897bd",
+      "actual": "15ced391cf2bcc003e257feac46bbba81bd5da1bff7daa28580e1797053897bd",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/pull_E03.json",
+      "expected": "71355762d651da9d8fee0d49ea47d640a7ae127d00fe8db399035d77695627df",
+      "actual": "71355762d651da9d8fee0d49ea47d640a7ae127d00fe8db399035d77695627df",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/chain_E04.json",
+      "expected": "8eb105944fc53005ffe9ea76562637a2c8961fb8354064d69c5bdeac2f5aa030",
+      "actual": "8eb105944fc53005ffe9ea76562637a2c8961fb8354064d69c5bdeac2f5aa030",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/penetration_E04.json",
+      "expected": "7c2ca1d7c28c9d786a1b8d5726dc84adddbc7e8af5fd1efca8b8b64c5659cbb5",
+      "actual": "7c2ca1d7c28c9d786a1b8d5726dc84adddbc7e8af5fd1efca8b8b64c5659cbb5",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/pull_E04.json",
+      "expected": "2832cd524dd9739133d9d7325b5b96729d9c4d98e5d8bc27908d834fa85e1f08",
+      "actual": "2832cd524dd9739133d9d7325b5b96729d9c4d98e5d8bc27908d834fa85e1f08",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/chain_E05.json",
+      "expected": "5c5d297cd0616c2b6cae80905e1a9d3038941b522c8eab95e379cb2d6f2d1859",
+      "actual": "5c5d297cd0616c2b6cae80905e1a9d3038941b522c8eab95e379cb2d6f2d1859",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/penetration_E05.json",
+      "expected": "64fa4ea6a6086050de3ed0ddbdb0175c604e5724cf785172b4c36709f1a0385f",
+      "actual": "64fa4ea6a6086050de3ed0ddbdb0175c604e5724cf785172b4c36709f1a0385f",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/pull_E05.json",
+      "expected": "682313f2395d540cd8b20a75ffd85329a033daceeb276330069eb14e77999f4a",
+      "actual": "682313f2395d540cd8b20a75ffd85329a033daceeb276330069eb14e77999f4a",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/chain_E06.json",
+      "expected": "78069f6e3280018a382621b9f6768bec39d77930be109e90e4479c0476c9bf86",
+      "actual": "78069f6e3280018a382621b9f6768bec39d77930be109e90e4479c0476c9bf86",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/penetration_E06.json",
+      "expected": "afe83698f795998d5bf24adc912d5682c3f2d5b902f83123abef3b39b29d2ef3",
+      "actual": "afe83698f795998d5bf24adc912d5682c3f2d5b902f83123abef3b39b29d2ef3",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/pull_E06.json",
+      "expected": "7718c274e75145852be7876abb459d3c435bdf0badec6ae101070df4ca112e96",
+      "actual": "7718c274e75145852be7876abb459d3c435bdf0badec6ae101070df4ca112e96",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/chain_E07.json",
+      "expected": "53cefba0f0813f482fe862349f3607072155ae1a89ee4cd80a21c5123cc3977b",
+      "actual": "53cefba0f0813f482fe862349f3607072155ae1a89ee4cd80a21c5123cc3977b",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/penetration_E07.json",
+      "expected": "0329e938e1625db1bee8b29fa7667f9f2dbe06817e959d9635c7d25f1cfee51c",
+      "actual": "0329e938e1625db1bee8b29fa7667f9f2dbe06817e959d9635c7d25f1cfee51c",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/pull_E07.json",
+      "expected": "1db6643b3380674889f9d848a1f1a2ccd5747bb8167e20ebd81c5f5dd34fea00",
+      "actual": "1db6643b3380674889f9d848a1f1a2ccd5747bb8167e20ebd81c5f5dd34fea00",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/chain_E08.json",
+      "expected": "c92d7cda873488893a6ff059cedf8144c02c6a0a88529125f1421df6a189984c",
+      "actual": "c92d7cda873488893a6ff059cedf8144c02c6a0a88529125f1421df6a189984c",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/penetration_E08.json",
+      "expected": "adb6885e331cd12c2a85ad3ccba935760c76c01cdc3146c196201c62349c93e1",
+      "actual": "adb6885e331cd12c2a85ad3ccba935760c76c01cdc3146c196201c62349c93e1",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/pull_E08.json",
+      "expected": "468eac69147b98e319087d743d25176270cd42acc193b0b6e772dda6b213ff0d",
+      "actual": "468eac69147b98e319087d743d25176270cd42acc193b0b6e772dda6b213ff0d",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/topdown13/break.json",
+      "expected": "03f3e37e33e6330b75acb6cb4a908fc599954b4e040f7887e27e0b0aeed5812b",
+      "actual": "03f3e37e33e6330b75acb6cb4a908fc599954b4e040f7887e27e0b0aeed5812b",
+      "equal": true
+    },
+    {
+      "path": "scripts/pack_rules.gd",
+      "expected": "625b4fe119f2e3fc34ab0967958750c6da4b60659466e607b01ae9426e75033e",
+      "actual": "625b4fe119f2e3fc34ab0967958750c6da4b60659466e607b01ae9426e75033e",
+      "equal": true
+    },
+    {
+      "path": "scripts/simulation.gd",
+      "expected": "539df87d97e6d56964e46aede7b1703ebd0c7764b06f31b45edd447caddf1e92",
+      "actual": "539df87d97e6d56964e46aede7b1703ebd0c7764b06f31b45edd447caddf1e92",
+      "equal": true
+    },
+    {
+      "path": "scripts/attack_spec.gd",
+      "expected": "927bb99e9fde64cbf8b00b5512755c00cf35cdf5048cf15eb9f870c64d420da8",
+      "actual": "927bb99e9fde64cbf8b00b5512755c00cf35cdf5048cf15eb9f870c64d420da8",
+      "equal": true
+    },
+    {
+      "path": "scripts/save_store.gd",
+      "expected": "a9efc5541aaeefe183203ed576b5b37a22033a45a7d6128a0b0a35ca5263c86d",
+      "actual": "a9efc5541aaeefe183203ed576b5b37a22033a45a7d6128a0b0a35ca5263c86d",
+      "equal": true
+    },
+    {
+      "path": "scripts/card_growth.gd",
+      "expected": "6b7c7a76c65bfc5971b2903036b7215583f1acf0d1c2a4f01285bed044df3c6b",
+      "actual": "6b7c7a76c65bfc5971b2903036b7215583f1acf0d1c2a4f01285bed044df3c6b",
+      "equal": true
+    },
+    {
+      "path": "scripts/battle_save_journal.gd",
+      "expected": "03d0d4897255803fc3011aad19199360d016eec783c237ceca5178d9ac35136e",
+      "actual": "03d0d4897255803fc3011aad19199360d016eec783c237ceca5178d9ac35136e",
+      "equal": true
+    },
+    {
+      "path": "scripts/progression.gd",
+      "expected": "b055e39a731dbc72be32e176eb776ab31fcf21c6fd7ba476950e064b3a247c5e",
+      "actual": "b055e39a731dbc72be32e176eb776ab31fcf21c6fd7ba476950e064b3a247c5e",
+      "equal": true
+    },
+    {
+      "path": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\impacts\\crit-hit.js",
+      "expected": "c6af9303f0e463051696796a5886236d91182594e1d4fadee2067b9cf82ba857",
+      "actual": "c6af9303f0e463051696796a5886236d91182594e1d4fadee2067b9cf82ba857",
+      "equal": true
+    },
+    {
+      "path": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\explosions\\plasma-explosion.js",
+      "expected": "28856fa225a4259423721458785ab5305785ae283da6d94f78cc6b2eae3dd771",
+      "actual": "28856fa225a4259423721458785ab5305785ae283da6d94f78cc6b2eae3dd771",
+      "equal": true
+    },
+    {
+      "path": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\melee\\thrust.js",
+      "expected": "ac2f2257fafb9dec3bdcb8e75020db952e14810c700eea6b232be7b348eb261d",
+      "actual": "ac2f2257fafb9dec3bdcb8e75020db952e14810c700eea6b232be7b348eb261d",
+      "equal": true
+    },
+    {
+      "path": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\impacts\\hit-spark.js",
+      "expected": "b0f2d0e5337ab2fff3a6a8995e6404fed72512bdcd1bc92838a60bf879bc732a",
+      "actual": "b0f2d0e5337ab2fff3a6a8995e6404fed72512bdcd1bc92838a60bf879bc732a",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/quality15/heavy-color.png",
+      "expected": "c04434c64a60f286d7b8e19605d585c67f285e69fd62138eb5d95db6a0169b7d",
+      "actual": "c04434c64a60f286d7b8e19605d585c67f285e69fd62138eb5d95db6a0169b7d",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/quality15/heavy-light.png",
+      "expected": "d009024cd99171ee9f9e933d957cb6e09dfdd00ae404224e929014cbf6f61a72",
+      "actual": "d009024cd99171ee9f9e933d957cb6e09dfdd00ae404224e929014cbf6f61a72",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/quality15/fire-color.png",
+      "expected": "a25393dcb61e2c575b9be694f49d26cd7fe42dac246b0df53753b7c2cf303045",
+      "actual": "a25393dcb61e2c575b9be694f49d26cd7fe42dac246b0df53753b7c2cf303045",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/quality15/fire-light.png",
+      "expected": "df97a6d4c438ea40e30c0a2918ecf4a7b9ca856ba1c68de494382a7362e92fdd",
+      "actual": "df97a6d4c438ea40e30c0a2918ecf4a7b9ca856ba1c68de494382a7362e92fdd",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/quality15/thrust_E01-color.png",
+      "expected": "a707b6ba97769a55b3c2554daa8d0c61f3e993fcf46731057b33eb1f891bfcfa",
+      "actual": "a707b6ba97769a55b3c2554daa8d0c61f3e993fcf46731057b33eb1f891bfcfa",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/quality15/thrust_E01-light.png",
+      "expected": "e37f42565e644c926577a64e0adb91f8aa870229dad73d64685c6110d68eecd0",
+      "actual": "e37f42565e644c926577a64e0adb91f8aa870229dad73d64685c6110d68eecd0",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/quality15/thrust_E03-color.png",
+      "expected": "d8ca18e1009e09eaa75d8d88734968ec3fc596803b83853c8720e332dbe3fa64",
+      "actual": "d8ca18e1009e09eaa75d8d88734968ec3fc596803b83853c8720e332dbe3fa64",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/quality15/thrust_E03-light.png",
+      "expected": "997ca1e711e65fba012d897b8354a3d8c5a3059f44ab6ce9d381995d2b2f2402",
+      "actual": "997ca1e711e65fba012d897b8354a3d8c5a3059f44ab6ce9d381995d2b2f2402",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/quality15/wave_E01-color.png",
+      "expected": "d1617fafc00a242bedc763a69fa73c27cdf1998968a194daff44a52e5bbc9384",
+      "actual": "d1617fafc00a242bedc763a69fa73c27cdf1998968a194daff44a52e5bbc9384",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/quality15/wave_E01-light.png",
+      "expected": "a548f6d2819fe6626bb2baba1578023d098c50bfa1cdba7319bfc415277804c2",
+      "actual": "a548f6d2819fe6626bb2baba1578023d098c50bfa1cdba7319bfc415277804c2",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/quality15/wave_E03-color.png",
+      "expected": "d224b629d45c5685e906d24c883a3b2f9fc7097f8a8e61b2f1d56c0607155d77",
+      "actual": "d224b629d45c5685e906d24c883a3b2f9fc7097f8a8e61b2f1d56c0607155d77",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/quality15/wave_E03-light.png",
+      "expected": "d59fe6fef1aa4eef7e7cc3bd69f8b11b0689fe179185ad578f0b20e10f4bedb0",
+      "actual": "d59fe6fef1aa4eef7e7cc3bd69f8b11b0689fe179185ad578f0b20e10f4bedb0",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/quality15/contact_E01-color.png",
+      "expected": "c08cce0413378787818266839ca7f21ee2c99cfbab8611d8583a12713671c674",
+      "actual": "c08cce0413378787818266839ca7f21ee2c99cfbab8611d8583a12713671c674",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/quality15/contact_E01-light.png",
+      "expected": "2570a81c2c7d56799385a37b6c1e25491a1e6cce6fde14a139e2627cb4081849",
+      "actual": "2570a81c2c7d56799385a37b6c1e25491a1e6cce6fde14a139e2627cb4081849",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/quality15/contact_E03-color.png",
+      "expected": "aac38b4419d3c04df84cfd733ace1d920338c77f85a91360bd370a8e91dacd13",
+      "actual": "aac38b4419d3c04df84cfd733ace1d920338c77f85a91360bd370a8e91dacd13",
+      "equal": true
+    },
+    {
+      "path": "assets/fx/quality15/contact_E03-light.png",
+      "expected": "7c3f6e99faae81fcee2e098af41e04e8c9b0080ecf94a6702aefa6c1805e2745",
+      "actual": "7c3f6e99faae81fcee2e098af41e04e8c9b0080ecf94a6702aefa6c1805e2745",
+      "equal": true
+    }
+  ]
+}

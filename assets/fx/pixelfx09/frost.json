@@ -1,0 +1,424 @@
+{
+  "frames": [
+    {
+      "filename": "frost 0",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 140,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 140,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 140,
+        "h": 120
+      },
+      "duration": 33
+    },
+    {
+      "filename": "frost 1",
+      "frame": {
+        "x": 140,
+        "y": 0,
+        "w": 140,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 140,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 140,
+        "h": 120
+      },
+      "duration": 33
+    },
+    {
+      "filename": "frost 2",
+      "frame": {
+        "x": 280,
+        "y": 0,
+        "w": 140,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 140,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 140,
+        "h": 120
+      },
+      "duration": 33
+    },
+    {
+      "filename": "frost 3",
+      "frame": {
+        "x": 420,
+        "y": 0,
+        "w": 140,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 140,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 140,
+        "h": 120
+      },
+      "duration": 33
+    },
+    {
+      "filename": "frost 4",
+      "frame": {
+        "x": 0,
+        "y": 120,
+        "w": 140,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 140,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 140,
+        "h": 120
+      },
+      "duration": 33
+    },
+    {
+      "filename": "frost 5",
+      "frame": {
+        "x": 140,
+        "y": 120,
+        "w": 140,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 140,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 140,
+        "h": 120
+      },
+      "duration": 33
+    },
+    {
+      "filename": "frost 6",
+      "frame": {
+        "x": 280,
+        "y": 120,
+        "w": 140,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 140,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 140,
+        "h": 120
+      },
+      "duration": 33
+    },
+    {
+      "filename": "frost 7",
+      "frame": {
+        "x": 420,
+        "y": 120,
+        "w": 140,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 140,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 140,
+        "h": 120
+      },
+      "duration": 33
+    },
+    {
+      "filename": "frost 8",
+      "frame": {
+        "x": 0,
+        "y": 240,
+        "w": 140,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 140,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 140,
+        "h": 120
+      },
+      "duration": 33
+    },
+    {
+      "filename": "frost 9",
+      "frame": {
+        "x": 140,
+        "y": 240,
+        "w": 140,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 140,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 140,
+        "h": 120
+      },
+      "duration": 33
+    },
+    {
+      "filename": "frost 10",
+      "frame": {
+        "x": 280,
+        "y": 240,
+        "w": 140,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 140,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 140,
+        "h": 120
+      },
+      "duration": 33
+    },
+    {
+      "filename": "frost 11",
+      "frame": {
+        "x": 420,
+        "y": 240,
+        "w": 140,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 140,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 140,
+        "h": 120
+      },
+      "duration": 33
+    },
+    {
+      "filename": "frost 12",
+      "frame": {
+        "x": 0,
+        "y": 360,
+        "w": 140,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 140,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 140,
+        "h": 120
+      },
+      "duration": 33
+    },
+    {
+      "filename": "frost 13",
+      "frame": {
+        "x": 140,
+        "y": 360,
+        "w": 140,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 140,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 140,
+        "h": 120
+      },
+      "duration": 33
+    },
+    {
+      "filename": "frost 14",
+      "frame": {
+        "x": 280,
+        "y": 360,
+        "w": 140,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 140,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 140,
+        "h": 120
+      },
+      "duration": 33
+    },
+    {
+      "filename": "frost 15",
+      "frame": {
+        "x": 420,
+        "y": 360,
+        "w": 140,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 140,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 140,
+        "h": 120
+      },
+      "duration": 33
+    },
+    {
+      "filename": "frost 16",
+      "frame": {
+        "x": 0,
+        "y": 480,
+        "w": 140,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 140,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 140,
+        "h": 120
+      },
+      "duration": 33
+    },
+    {
+      "filename": "frost 17",
+      "frame": {
+        "x": 140,
+        "y": 480,
+        "w": 140,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 140,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 140,
+        "h": 120
+      },
+      "duration": 33
+    }
+  ],
+  "meta": {
+    "app": "https://github.com/patch-gg/pixelfx",
+    "image": "frost.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 560,
+      "h": 600
+    },
+    "pixelfx": {
+      "id": "ice/snowflake-burst",
+      "fps": 30,
+      "loop": false,
+      "frames": 18,
+      "frameSize": [
+        140,
+        120
+      ],
+      "pivot": [
+        70,
+        58
+      ],
+      "columns": 4
+    }
+  }
+}

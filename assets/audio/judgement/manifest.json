@@ -1,0 +1,30 @@
+{
+  "selection": "User chose previous Miss1 for Perfect, Miss2 for Miss. Do not substitute perfect-2.wav.",
+  "runtime_gain": 1.0,
+  "source_repository": "https://github.com/kanelikki/PataponLogic",
+  "source_details": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\verification\\current\\patapon-judgement-search-v2\\SEARCH-RESULTS.md",
+  "files": [
+    {
+      "key": "miss_1",
+      "source": "sources\\kanelikki_PataponLogic\\Assets\\Resources\\Characters\\Patapons\\Sounds\\onmiss1.wav",
+      "sha256": "32ecd2b20a1201bca36dafe0b07f4c7d9306ce9aeb387286a77be7581ed18c41",
+      "seconds": 0.8457142857142858,
+      "gain": 0.26443151842508206,
+      "editing": "resampling and level only; natural tail retained",
+      "relative_peak_db": -10.604915230445094,
+      "relative_active_rms_db": -12.0,
+      "runtime_kind": "perfect"
+    },
+    {
+      "key": "miss_2",
+      "source": "sources\\kanelikki_PataponLogic\\Assets\\Resources\\Characters\\Patapons\\Sounds\\onmiss2.wav",
+      "sha256": "a9be07d81763464ae38c795156b24d555fe618a3e5f852a7638a3f48d67ee7d1",
+      "seconds": 1.2774603174603174,
+      "gain": 0.32128526116460504,
+      "editing": "resampling and level only; natural tail retained",
+      "relative_peak_db": -10.0,
+      "relative_active_rms_db": -14.996985585120994,
+      "runtime_kind": "miss"
+    }
+  ]
+}

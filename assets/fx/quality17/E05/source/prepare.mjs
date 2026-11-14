@@ -1,0 +1,8 @@
+import {readFileSync,writeFileSync,copyFileSync,mkdirSync} from 'node:fs';import {resolve,dirname} from 'node:path';import {pathToFileURL,fileURLToPath} from 'node:url';
+const here=dirname(fileURLToPath(import.meta.url)),vendor='C:/Users/Administrator/.codex/vendor_imports/pixelfx-main';
+const lib=p=>pathToFileURL(resolve(vendor,p)).href;
+let snow=readFileSync(resolve(vendor,'src/fx/ice/snowflake-burst.js'),'utf8');
+for(const [a,b]of [['"../../core/index.js"',JSON.stringify(lib('src/core/index.js'))],['"./_lib.js"',JSON.stringify(lib('src/fx/ice/_lib.js'))],['size: [140, 120]','size: [192, 192]'],['origin: [70, 106]','origin: [96, 96]'],['CY = -48','CY = 0'],['floor = () => 0','floor = () => Infinity'],['Math.sin(a) * sp * 0.85 - 20','Math.sin(a) * sp'],['f.vy -= f.vy * 2.8 * dt - 26 * dt','f.vy -= f.vy * 2.8 * dt'],['if (f.y > -sz(f) * 0.3)','if (false /* No side-view floor in the overhead table plane. */)']]){if(!snow.includes(a))throw Error('Snow source anchor '+a);snow=snow.replace(a,b);}
+writeFileSync(resolve(here,'snowflake-overhead.mjs'),'// Spatial-only adaptation: original flake/flare/particle drawing, native clock preserved.\n'+snow);
+for(const el of ['E05']){const folder=resolve(here,'../../',el,'source');mkdirSync(resolve(folder,'upstream'),{recursive:true});copyFileSync(resolve(here,'../../../quality15/source/plasma-wave.mjs'),resolve(folder,'plasma-wave.mjs'));for(const id of ['melee/thrust','impacts/hit-spark'])copyFileSync(resolve(vendor,'src/fx',id+'.js'),resolve(folder,'upstream',id.replace('/','-')+'.js.txt'));}
+console.log('Derived source preparation complete; upstream remains unchanged.');

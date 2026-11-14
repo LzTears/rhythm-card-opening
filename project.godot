@@ -1,0 +1,34 @@
+config_version=5
+
+[application]
+config/name="节拍开卡"
+config/version="15.20261114.8"
+config/version.web="15.20261114.7-web"
+config/icon="res://assets/app_icon/icon.png"
+config/windows_native_icon="res://assets/app_icon/icon.ico"
+run/main_scene="res://scenes/main.tscn"
+run/main_scene.web_qa="res://web/qa_runtime/web_qa.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/use_custom_user_dir=true
+config/custom_user_dir_name="RoundCardWhirlwind"
+
+[display]
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/window_width_override=1440
+window/size/window_height_override=810
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.055, 0.075, 0.074, 1)
+textures/default_filters/use_nearest_mipmap_filter=false
+
+[physics]
+common/physics_ticks_per_second=60
+
+
+
+

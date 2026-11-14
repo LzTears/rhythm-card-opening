@@ -1,0 +1,67 @@
+[
+  {
+    "file": "contact-color.png",
+    "bytes": 17874,
+    "sha256": "ea6ca47d7fb044e004cabcef75ce2f939c1b60ea6f2edad564fc7db5113c5504"
+  },
+  {
+    "file": "contact-light.png",
+    "bytes": 78782,
+    "sha256": "30d0ab90284da350da9952bdca26322bd027be0a223ae21ce55563672b1e03bf"
+  },
+  {
+    "file": "contact.json",
+    "bytes": 1194,
+    "sha256": "1959dee2ff9c6cfd658ad227006036d2387f56ff5579d81cfd2a0d80f13bf2d6"
+  },
+  {
+    "file": "main-color.png",
+    "bytes": 65578,
+    "sha256": "9f6e390ce482ada202a29c350870784c3e2081c23808da2e014287cf87b7b66f"
+  },
+  {
+    "file": "main-light.png",
+    "bytes": 350577,
+    "sha256": "ac29e267be944b486de00d00356274b9debab0acccaf9b3c3eeb09b28d07b2b7"
+  },
+  {
+    "file": "main.json",
+    "bytes": 1207,
+    "sha256": "e122fcf51cee098a12633b4891541117c4ffc12b91def91405cb5274b4ec978c"
+  },
+  {
+    "file": "manifest.json",
+    "bytes": 8576,
+    "sha256": "4599fc8efb7aecb9998f2de4c910729e968b4f09a2ee3e11bb41edfa7c98244b"
+  },
+  {
+    "file": "path-color.png",
+    "bytes": 17854,
+    "sha256": "6baf95470a3f4b556d4fd2faff61054a2c24c30effee70071dee0d50d4278317"
+  },
+  {
+    "file": "path-light.png",
+    "bytes": 78159,
+    "sha256": "09cb86b2b1186e488258b24966e38a0020ba0cd207858e05faf39951e870408b"
+  },
+  {
+    "file": "path.json",
+    "bytes": 1362,
+    "sha256": "5d1349dc7920b31cbdf75436d50403c30adaf1bdac1c079069322b5441c05bb7"
+  },
+  {
+    "file": "wave-color.png",
+    "bytes": 24709,
+    "sha256": "360721d2217cf26584152feec5b519de7f3ebec78c9a2acef8bf862cefaad226"
+  },
+  {
+    "file": "wave-light.png",
+    "bytes": 75376,
+    "sha256": "6faa1d5bad908c0bfde0c5d9ae76f634745e88495f852e952cbcd3e5409a5fb1"
+  },
+  {
+    "file": "wave.json",
+    "bytes": 1198,
+    "sha256": "dbfa7255e3b243215aca4d5ba74d6323935d286a686bbf10612dfb0308ec28f5"
+  }
+]

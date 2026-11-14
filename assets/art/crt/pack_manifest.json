@@ -1,0 +1,187 @@
+{
+  "packs/pack-0.png": {
+    "canvas": [
+      300,
+      400
+    ],
+    "alpha_bbox": [
+      4,
+      1,
+      296,
+      399
+    ],
+    "source": "source/pack-0-final-original.png",
+    "source_native_size": [
+      1086,
+      1448
+    ],
+    "source_alpha_bbox": [
+      0,
+      0,
+      1058,
+      1394
+    ],
+    "source_core_bbox": [
+      91,
+      121,
+      995,
+      1354
+    ],
+    "source_core_aspect": 0.7331711273317113,
+    "source_core_3x4_relative_error": -0.022438496891051596,
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "sha256": "0f944b5b7ee72572ebc01893a3bc380eac537caa573ee5de9026760b27724fe4",
+    "normalization": "Sprites use aspect-preserving fit; packs have transparent side padding in 3:4 registered canvas. Generated alpha retained inside visible-core crop. No filter pixelation or scanlines."
+  },
+  "packs/pack-1.png": {
+    "canvas": [
+      300,
+      400
+    ],
+    "alpha_bbox": [
+      1,
+      3,
+      299,
+      397
+    ],
+    "source": "source/pack-1-final-original.png",
+    "source_native_size": [
+      1086,
+      1448
+    ],
+    "source_alpha_bbox": [
+      0,
+      0,
+      1072,
+      1448
+    ],
+    "source_core_bbox": [
+      87,
+      123,
+      1000,
+      1329
+    ],
+    "source_core_aspect": 0.7570480928689884,
+    "source_core_3x4_relative_error": 0.009397457158651257,
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "sha256": "9b3782d83356c5b209bcbc40d564c89c563ad43e2150fd855eb03c857d8451df",
+    "normalization": "Sprites use aspect-preserving fit; packs have transparent side padding in 3:4 registered canvas. Generated alpha retained inside visible-core crop. No filter pixelation or scanlines."
+  },
+  "packs/pack-2.png": {
+    "canvas": [
+      300,
+      400
+    ],
+    "alpha_bbox": [
+      1,
+      1,
+      298,
+      399
+    ],
+    "source": "source/pack-2-final-original.png",
+    "source_native_size": [
+      1086,
+      1448
+    ],
+    "source_alpha_bbox": [
+      0,
+      3,
+      1044,
+      1448
+    ],
+    "source_core_bbox": [
+      85,
+      121,
+      1001,
+      1350
+    ],
+    "source_core_aspect": 0.7453213995117982,
+    "source_core_3x4_relative_error": -0.00623813398426909,
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "sha256": "ed13710327ae6ab319638b8ae7b05fe40b6d1fad8c4b967b5b06acdfd5ad0e3c",
+    "normalization": "Sprites use aspect-preserving fit; packs have transparent side padding in 3:4 registered canvas. Generated alpha retained inside visible-core crop. No filter pixelation or scanlines."
+  },
+  "packs/pack-3.png": {
+    "canvas": [
+      300,
+      400
+    ],
+    "alpha_bbox": [
+      4,
+      1,
+      296,
+      399
+    ],
+    "source": "source/pack-3-final-original.png",
+    "source_native_size": [
+      1086,
+      1448
+    ],
+    "source_alpha_bbox": [
+      0,
+      0,
+      1070,
+      1448
+    ],
+    "source_core_bbox": [
+      88,
+      119,
+      998,
+      1358
+    ],
+    "source_core_aspect": 0.7344632768361582,
+    "source_core_3x4_relative_error": -0.020715630885122405,
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "sha256": "ea5dbf5d08ffacf7aa79bbccc6c243e847061c0213bcb6b66461ef9f5b8dc2ce",
+    "normalization": "Sprites use aspect-preserving fit; packs have transparent side padding in 3:4 registered canvas. Generated alpha retained inside visible-core crop. No filter pixelation or scanlines."
+  },
+  "packs/pack-4.png": {
+    "canvas": [
+      300,
+      400
+    ],
+    "alpha_bbox": [
+      3,
+      1,
+      296,
+      399
+    ],
+    "source": "source/pack-4-final-original.png",
+    "source_native_size": [
+      1086,
+      1448
+    ],
+    "source_alpha_bbox": [
+      0,
+      0,
+      1085,
+      1448
+    ],
+    "source_core_bbox": [
+      88,
+      120,
+      998,
+      1356
+    ],
+    "source_core_aspect": 0.7362459546925566,
+    "source_core_3x4_relative_error": -0.018338727076591232,
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "sha256": "2d6a8a1063ce861bf26cb34f2954ab88878f7503d024c9c48f217dc595126766",
+    "normalization": "Sprites use aspect-preserving fit; packs have transparent side padding in 3:4 registered canvas. Generated alpha retained inside visible-core crop. No filter pixelation or scanlines."
+  }
+}

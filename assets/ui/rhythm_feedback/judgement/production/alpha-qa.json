@@ -1,0 +1,26 @@
+{
+  "perfect": {
+    "file": "assets\\ui\\rhythm_feedback\\judgement\\perfect.png",
+    "size": [
+      2172,
+      724
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "sha256": "86de2a02b2694efa7c717b12be6d1b8cf5e35dcbcaa9cc57f4b62d90f7ff02c9"
+  },
+  "miss": {
+    "file": "assets\\ui\\rhythm_feedback\\judgement\\miss.png",
+    "size": [
+      2172,
+      724
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "sha256": "a5dec448bd2b3d511537c8a4a5a71200426836556e52f3730c6b32bb14fce2ad"
+  }
+}

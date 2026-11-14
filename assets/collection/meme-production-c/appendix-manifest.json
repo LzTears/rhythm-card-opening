@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-13",
+  "generator": "built-in image_gen.imagegen",
+  "total_generation_calls": 2,
+  "records": [
+    {
+      "id": "MEM-017",
+      "prompt": "Use case: identity-preserve. Square 1:1 collectible illustration MEM-017, picture only no frame. Use this reference for the SAME round-headed orange Maodie cat identity, realistic orange tabby fur, very round flat broad face, tiny nose, narrowed shiny grumpy eyes, white chin and airplane ears. Change action and camera completely: medium-distance full-body SIDE VIEW cat standing on all four feet with back arched absurdly high, fur slightly puffed, BOTH ears pressed FLAT BACK against round head, mouth still mostly CLOSED with a tiny tense lip, about to hiss but not yet open. Body bent into an elastic warning arch, tail hooked upward. Head turned a little toward camera to show face and flat ears. Do not depict eating, a food bowl, seated cat, paw-to-lens or open-mouth pounce. Ordinary domestic tiled hallway, grainy phone photograph with slight motion blur, crude meme photographic quality, exaggerated tension but no harm. Show ENTIRE cat from ears to tail and all paws with 8 percent empty safe margins all four sides. No words subtitles lettering numerals watermarks logos card borders holographic effect fantasy armor anime or extra cats.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0ed-1514-7fe3-871e-8220c5c6dfcc\\exec-de78f467-f7ee-4406-b718-67bee7eb89c9.png",
+      "reference": [
+        "assets/collection/cards/MEM-001.png"
+      ],
+      "qa": "Viewed built-in output: correct same-family identity and new approved action, complete subject, no text; accepted.",
+      "delegation": "Root reassigned uncalled A-group assets to C",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB"
+    },
+    {
+      "id": "MEM-018",
+      "prompt": "Use case: identity-preserve. Create exact SQUARE 1:1 standalone illustration MEM-018, no trading card frame. Use reference for the same Chinese Internet PANDA HEAD MEME family: black rounded panda ears, huge white circular head, crude grayscale real adult man's face photomontaged inside, tiny solid-black cartoon body and limbs. Keep rough low-resolution black-white photocopy collage quality and thick sketchy outlines, NOT a realistic panda or anime. Completely change pose to an explosive comic TABLE SLAM: body lunging forward, TWO BLACK HANDS smack the tabletop simultaneously palms down, enraged startled yelling human meme face with comically open mouth and furrowed brows. A simple plain rectangular table is visibly tilted and flexed upward at its far edge from the slam; bold motion lines around hands, little wobbling stool behind. Full head ears, both hands, table and little feet inside 8% margin, straightforward white background, monochrome only. No text lettering subtitles sound-effect words numbers logos watermark borders holographic effect or color. Entire full composition fits equal-width equal-height canvas.",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0ed-1514-7fe3-871e-8220c5c6dfcc\\exec-1c5ae499-e76c-468b-91ad-79ebee5dc15a.png",
+      "reference": [
+        "assets/collection/cards/MEM-003.png",
+        "assets/collection/cards/MEM-004.png"
+      ],
+      "qa": "Viewed built-in output: correct same-family identity and new approved action, complete subject, no text; accepted.",
+      "delegation": "Root reassigned uncalled A-group assets to C",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB"
+    }
+  ]
+}

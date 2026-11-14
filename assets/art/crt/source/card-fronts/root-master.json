@@ -1,0 +1,34 @@
+[
+  {
+    "card_id": "C01-0",
+    "art_variant": "C01-0",
+    "grade": 0,
+    "source": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\art\\crt\\source\\card-fronts\\C01-0-original.png",
+    "output": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\art\\crt\\cards\\C01-0.png",
+    "canvas": [
+      512,
+      512
+    ],
+    "alpha_bbox": [
+      16,
+      15,
+      496,
+      497
+    ],
+    "sha256": "58f5a25ea269489cb91432ffb513b744086dccfbd65aae8fd3648e315a980d60",
+    "generator": "built-in image_gen",
+    "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1b01f-eed4-71a2-ba75-80f3044ee410\\exec-2a1ebdbe-8ca2-43d5-94e6-8e1ebd7bf6d9.png",
+    "normalization": "visible alpha>=128 bbox +2 source px; aspect-preserving nearest contain482 centered in512; transparent safety border, no style filters",
+    "prompt": "Create a production-ready original ROUND game card FRONT icon, reillustrating reference 1's DOLPHIN identity into the fine 16-bit arcade enamel aesthetic of reference 2. Reference1 is identity/composition only; discard its cream paper and soft pastel illustration. Reference2 is style/material only, do NOT copy its cyclone back face or golden rarity rim. This is COMMON white/silver rarity card C01-0 'rippling circle', effect increases attack radius: a bold recognizable cyan dolphin jumping over stepped concentric water ripples, with a dark petrol-blue enamel interior, bright but controlled cyan light accents, fine crisp pixel clusters, limited stepped shading, charcoal ink outlines, white/silver metal circular rim and four small cyan socket jewels. No gold/red/purple frame. Subject must read at 64x64 thumbnail. True flat straight-on top-down perfect circular token, centered with even 3% transparent safety margins. Precise pixel art, original arcade collectable, not cute pastel/paper, not painterly, not realistic 3D, not western comic. No words, digits, UI, square border, checkerboard, background shadow or external glow. Transparent background outside the circle. All detail inside circle; true round proportions, no tilted/oval perspective. One single standalone sprite asset.",
+    "source_core_crop": [
+      24,
+      22,
+      1230,
+      1232
+    ],
+    "reference_roles": [
+      "A2 C01-0 identity only",
+      "CRT card_back style/material only"
+    ]
+  }
+]

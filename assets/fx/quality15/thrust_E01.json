@@ -1,0 +1,32 @@
+{
+  "key": "thrust_E01",
+  "source_id": "melee/thrust",
+  "source_file": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\melee\\thrust.js",
+  "source_sha256": "ac2f2257fafb9dec3bdcb8e75020db952e14810c700eea6b232be7b348eb261d",
+  "size": [
+    196,
+    76
+  ],
+  "floor_pivot": [
+    34,
+    62
+  ],
+  "pivot": [
+    43,
+    42
+  ],
+  "columns": 7,
+  "rows": 4,
+  "frames": 24,
+  "fps": 30,
+  "source_duration": 0.75,
+  "sample_end": 0.7666666666666667,
+  "duration": 0.8,
+  "body_radius_px": 66,
+  "options": {},
+  "reason": "Confirmed heavy-build full actor-free beam. Source start43,42 end109,42 to exact committed segment.",
+  "color": "thrust_E01-color.png",
+  "light": "thrust_E01-light.png",
+  "color_sha256": "a707b6ba97769a55b3c2554daa8d0c61f3e993fcf46731057b33eb1f891bfcfa",
+  "light_sha256": "e37f42565e644c926577a64e0adb91f8aa870229dad73d64685c6110d68eecd0"
+}

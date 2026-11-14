@@ -1,0 +1,72 @@
+[
+  {
+    "name": "battle",
+    "kind": "music",
+    "model": "stabilityai/stable-audio-3-small-music",
+    "prompt": "TrackType: Music, instrumental original retro arcade action battle chiptune, urgent intense relentless driving 152 BPM four on the floor electronic kick and sharp short crunchy chip snare, tightly syncopated triangle and distorted pulse bass riff, dangerous dark minor sixteenth note arpeggios, two square pulse channels with short memorable aggressive answering motifs, high energy game action and escalating tension, punchy controlled low end, clean midrange, restrained high frequencies, consistent propulsive drum groove throughout, repeating eight bar structure, seamless looping background with space for impact sound effects, no vocals, no speech, no acoustic instruments, no orchestra, no ambient intro, no breakdown, no fade out, no white noise wash",
+    "duration_requested": 64,
+    "steps": 24,
+    "cfg_scale": 1.0,
+    "seed": 169951,
+    "source": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\audio\\source\\combat05_battle_raw.wav",
+    "elapsed_seconds": 0.96,
+    "generated_at": "2026-11-09T19:59:21+0800",
+    "backend_message": "已保存：D:\\AI\\Stable-Audio-3\\outputs\\20261109-195921-051489_small-music_169951.wav\n种子：169951 · 用时：0.82 秒"
+  },
+  {
+    "name": "charge",
+    "kind": "sfx",
+    "model": "stabilityai/stable-audio-3-small-sfx",
+    "prompt": "TrackType: SFX, single retro arcade heavy hammer power windup, short accelerating dark pulse wave pitch rise over pulsing low triangle bass, tight ratchet clicks increasing tension and one tiny digital fizz, strong focused compact charging sound, clean dry isolated vintage game chip effect, no music, no voice, no long noise",
+    "duration_requested": 2,
+    "steps": 24,
+    "cfg_scale": 1.0,
+    "seed": 169952,
+    "source": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\audio\\source\\combat05_charge_raw.wav",
+    "elapsed_seconds": 8.37,
+    "generated_at": "2026-11-09T19:59:29+0800",
+    "backend_message": "已保存：D:\\AI\\Stable-Audio-3\\outputs\\20261109-195929-460626_small-sfx_169952.wav\n种子：169952 · 用时：8.25 秒"
+  },
+  {
+    "name": "impact",
+    "kind": "sfx",
+    "model": "stabilityai/stable-audio-3-small-sfx",
+    "prompt": "TrackType: SFX, single extremely punchy retro arcade heavy hammer hit, immediate deep low frequency triangle pitch drop thump and hard short crunchy digital crack together, weighty low bass body decays rapidly, tiny plastic clack at attack, satisfying strong impact with clear attack and short tail, rounded controlled treble, dry isolated game effect, no music, no voice, no ringing, no long distortion or noise",
+    "duration_requested": 2,
+    "steps": 24,
+    "cfg_scale": 1.0,
+    "seed": 169953,
+    "source": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\audio\\source\\combat05_impact_raw.wav",
+    "elapsed_seconds": 0.82,
+    "generated_at": "2026-11-09T19:59:30+0800",
+    "backend_message": "已保存：D:\\AI\\Stable-Audio-3\\outputs\\20261109-195930-336291_small-sfx_169953.wav\n种子：169953 · 用时：0.7 秒"
+  },
+  {
+    "name": "flip",
+    "kind": "sfx",
+    "model": "stabilityai/stable-audio-3-small-sfx",
+    "prompt": "TrackType: SFX, single retro arcade toy card foil packet bursting open, brief crisp layered plastic paper tear and digital crunchy crack followed by tiny descending square pulse flick, tight ripping transient with a short clean dry tail, satisfying physical break sound, isolated game effect, no music, no voice, no long noisy wash, no explosion",
+    "duration_requested": 2,
+    "steps": 24,
+    "cfg_scale": 1.0,
+    "seed": 169954,
+    "source": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\audio\\source\\combat05_flip_raw.wav",
+    "elapsed_seconds": 0.77,
+    "generated_at": "2026-11-09T19:59:31+0800",
+    "backend_message": "已保存：D:\\AI\\Stable-Audio-3\\outputs\\20261109-195931-140017_small-sfx_169954.wav\n种子：169954 · 用时：0.71 秒"
+  },
+  {
+    "name": "collect",
+    "kind": "sfx",
+    "model": "stabilityai/stable-audio-3-small-sfx",
+    "prompt": "TrackType: SFX, single retro arcade gold coin reward pickup, three very fast crisp ascending bright square pulse chimes with tiny glassy coin clink and warm triangle harmony, compact sparkling satisfying reward with short clean decay, well separated clear high notes without piercing hiss, dry isolated vintage console game effect, no voice, no background music",
+    "duration_requested": 2,
+    "steps": 24,
+    "cfg_scale": 1.0,
+    "seed": 169955,
+    "source": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\audio\\source\\combat05_collect_raw.wav",
+    "elapsed_seconds": 0.9,
+    "generated_at": "2026-11-09T19:59:32+0800",
+    "backend_message": "已保存：D:\\AI\\Stable-Audio-3\\outputs\\20261109-195931-957075_small-sfx_169955.wav\n种子：169955 · 用时：0.73 秒"
+  }
+]

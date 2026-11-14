@@ -1,0 +1,262 @@
+{
+  "version": "a2-ui-1",
+  "generator": "built-in image_gen",
+  "prompts": {
+    "menu": "Use case: precise-object-edit. Asset type: actual runtime MAIN MENU BACKGROUND bitmap, not screen mockup. Edit supplied A2 menu image: REMOVE ALL title lettering, ALL words, ALL three buttons including their frames/icons/shadows, leaving LEFT 45percent entirely quiet mid-tone lake-green background with no UI. Remove fox round card; replace fox with BEE round card, keeping owl and dolphin so three established animal collectible circles. Everything else preserve A2 cheerful crisp orderly square pixel clusters/hard stair-step edges, 3tone ramps, honey-light maple tabletop on lower/right, ivory/lake-green compact mechanical packet dispenser on right with packet emerging, five packet colors ivory/green/purple/gold/coral red, small tasteful pixel leaves. Runtime UI will draw text/buttons separately. Slight still-life perspective right is fine; left must calm enough for readable dark title/buttons. Match provided A2 palette and brightness precisely, do NOT darken to A3. No letters/numbers/words/title/logo/watermark/button/control/UI anywhere. No hand/hammer/person/casino. 16:9 landscape opaque asset. Production background only.",
+    "menu_shape_fix": "Use case: precise-object-edit. Input1 is MENU BACKGROUND EDIT TARGET; input2 is PACKET SHAPE reference ONLY. Preserve entire menu background scene, no text/button left, owl/bee/dolphin round cards, dispenser, A2 palette and pixel style. Change ONLY the sealed rectangular card packets resting on tabletop and the one emerging from dispenser: each packet's flat face must have width:height3:4 (VERTICAL portrait package) as second image, including full crimped seals at top/bottom. They may rotate on tabletop but must remain a3:4 portrait rectangular object rotated as a whole, NOT the current1.7:1 horizontal candy wrapper. Five color ranks preserved white/green/violet/gold/red; identical teal/gold swirl emblem. Match reference geometry, not giant size. Keep pixel style, perspective subtle enough package proportion readable. No extra objects/UI/words. Actual runtime background, left45percent calm green empty, opaque16:9.",
+    "table": "Use case: stylized-concept. Actual runtime TABLE TEXTURE only, not a game screenshot. Reference provided A2 battle for crisp small square pixel art palette ONLY. A complete flat TOP-DOWN ORTHOGRAPHIC horizontal wooden tabletop, exact5:3 aspect around1600x960, all four straight edges parallel canvas edges. Warm honey-light maple wood as A2, muted cream/tan narrow wooden rim with tiny lake-green corner inset, no thick ornate gold. CENTER90percent low contrast calm wood grain, broad horizontal pixel strokes with3 discreet shades, simplified not busy. All four edge MIDPOINTS are just NORMAL CONTINUOUS WOOD RIM; no plate, plaque, blue slot, inset, machine, outlet, door, port, handle or opening. Four tiny corner square screws only, no leaves on playfield, nothing standing above table. No cards/packages/coins/dispenser/UI/text/letters or objects. Zero perspective or tilt, no visible vertical thickness, no cast shadows outside, texture fills entire image. Hard pixel stair-step details, orderly square clusters, limited A2 honey/ivory/lake green medium-light palette; no A3 dark caramel, no bloom, no white glare. Runtime maps once onto1000x600du table UV0..1. Opaque rectangular bitmap.",
+    "ui": "Use case: stylized-concept. Production reusable GAME UI SPRITE SHEET on ACTUAL TRANSPARENT ALPHA, 3 columns x2 rows, six isolated blank frame sprites, no labels/grid. Provided A2 battle is ONLY pixel/palette reference. Fresh modern small-cluster PIXEL UI, warm IVORY blank flat centers, medium LAKE GREEN outlines and discrete teal/pale honey shade accents; NO navy background, NO black-gold heavy ornament. Hard stair-step corners and square pixels, 3-tone ramps, no smooth vector curves/antialiasing/glow/blur/soft shadow. All background outside six silhouettes 100percent transparent; no exterior shadow, haze or backdrop. Each entire sprite fully opaque inside including blank center. Practical NINE-SLICE sprites, all decor restricted to24px border/corner32px, long straight edges stretchable, centers UNIFORM FLAT COLOR with no pattern, gradient, icon or line. Canvas1536x1024 each equal cell512square with generous transparent gutter. Top-left: large square PANEL440x440 warm ivory center, thin lakegreen double pixel outline, tiny sage stepped corner brackets, no gold. Top-middle: NORMAL BUTTON440x160 warm ivory center, lakegreen thin border, muted green bottom1-step bevel. Top-right: HOVER BUTTON same silhouette440x160 slightly light sage center, brighter teal border, tiny mint corner pixel accents. Bottom-left: PRESSED BUTTON same440x160 deeper sage center, dark lakegreen inset border and top1-step shadow. Bottom-middle: DISABLED BUTTON440x160 muted grey-beige center, subdued greysage border. Bottom-right: PRIMARY BUTTON440x160 honey amber gold center, warmcream top lip, subdued ochre bottom bevel, lakegreen outer thin rim. NO words, characters, digits, symbols, stars, text, labels or buttons-with-text; just six empty9slice cutouts. Keep A2 brightness not A3, minimal pleasant and readable UI asset rather than mockup."
+  },
+  "style": "REF-005A2-battle and menu, not A3",
+  "table_mapping": "1000x600du UV0..1 ONCE; no repeat. No midpoint fake ports.",
+  "extraction": "sprite-gen native alpha230 edge0 then alpha bbox crop and0.5nearest downsample. Backgrounds nearest exact-aspect normalization. No procedural drawing.",
+  "assets": [
+    {
+      "file": "battle-table.png",
+      "size": [
+        1600,
+        960
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        1600,
+        960
+      ],
+      "sha256": "edbdcd77ad8fe1e5c744c8c395913a694c9a84effe53a58f9e0e6eee40adf5bc",
+      "filter": "nearest"
+    },
+    {
+      "file": "button-disabled.png",
+      "size": [
+        228,
+        77
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        228,
+        77
+      ],
+      "sha256": "f0db7f584f7eae4afba05455c5c2175c2d4ea3fcf1be0e51db5838d237001228",
+      "filter": "nearest",
+      "stretch_margin_ltrb": [
+        22,
+        22,
+        22,
+        22
+      ],
+      "content_margin_ltrb": [
+        22,
+        8,
+        22,
+        8
+      ],
+      "nine_slice": "stretch both axes; draw_center true"
+    },
+    {
+      "file": "button-hover.png",
+      "size": [
+        228,
+        77
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        228,
+        77
+      ],
+      "sha256": "b58ba27316e1565c6a9503f47ebd13ac99b5679dd43ea67469b73cc400ab3e9f",
+      "filter": "nearest",
+      "stretch_margin_ltrb": [
+        22,
+        22,
+        22,
+        22
+      ],
+      "content_margin_ltrb": [
+        22,
+        8,
+        22,
+        8
+      ],
+      "nine_slice": "stretch both axes; draw_center true"
+    },
+    {
+      "file": "button-normal.png",
+      "size": [
+        228,
+        77
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        228,
+        77
+      ],
+      "sha256": "fcb58e50fb7599a5c8777f5d8f2822b1e579bfc10bbcd1dde1fdd4b9d8f575d8",
+      "filter": "nearest",
+      "stretch_margin_ltrb": [
+        22,
+        22,
+        22,
+        22
+      ],
+      "content_margin_ltrb": [
+        22,
+        8,
+        22,
+        8
+      ],
+      "nine_slice": "stretch both axes; draw_center true"
+    },
+    {
+      "file": "button-pressed.png",
+      "size": [
+        228,
+        77
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        228,
+        77
+      ],
+      "sha256": "496e3b9cc9e99264f74bf640178eb8833253fc082681df1760871716c41c4665",
+      "filter": "nearest",
+      "stretch_margin_ltrb": [
+        22,
+        22,
+        22,
+        22
+      ],
+      "content_margin_ltrb": [
+        22,
+        8,
+        22,
+        8
+      ],
+      "nine_slice": "stretch both axes; draw_center true"
+    },
+    {
+      "file": "button-primary.png",
+      "size": [
+        229,
+        77
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        229,
+        77
+      ],
+      "sha256": "b998c996cacce4d34a4a852d7cfc98dd196fbea560b3fd18a58fc54402bf2de0",
+      "filter": "nearest",
+      "stretch_margin_ltrb": [
+        22,
+        22,
+        22,
+        22
+      ],
+      "content_margin_ltrb": [
+        22,
+        8,
+        22,
+        8
+      ],
+      "nine_slice": "stretch both axes; draw_center true"
+    },
+    {
+      "file": "menu-background.png",
+      "size": [
+        1600,
+        900
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        1600,
+        900
+      ],
+      "sha256": "7a10a435a474f2947c35956992a94dc8900f132397544a2b266544ab5bb90958",
+      "filter": "nearest"
+    },
+    {
+      "file": "panel.png",
+      "size": [
+        220,
+        216
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        220,
+        216
+      ],
+      "sha256": "eb25a507147231237fccbf62928545be34480c93978caca4fd82c261054b731b",
+      "filter": "nearest",
+      "stretch_margin_ltrb": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "content_margin_ltrb": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "nine_slice": "stretch both axes; draw_center true"
+    },
+    {
+      "file": "menu-logo.png",
+      "size": [
+        2172,
+        724
+      ],
+      "alpha_bbox": [
+        0,
+        21,
+        2152,
+        724
+      ],
+      "sha256": "34dd96ddc61c689225e2cba0c495220b5ae749f96118fc178b1e824380887c81",
+      "filter": "nearest",
+      "provenance": "source/menu-logo-provenance.json"
+    }
+  ],
+  "source_files": [
+    {
+      "file": "source\\menu-generated.png",
+      "sha256": "74ca7f355a7e32ba4605d840a45d0fede17e9d02df943c443ca8ecfb7fa4f01e"
+    },
+    {
+      "file": "source\\table-generated.png",
+      "sha256": "65f0c0010a1d3bb7da85178dca9dc8a82b1d12ad359720441d9030f04ec8bdaa"
+    },
+    {
+      "file": "source\\ui-generated.png",
+      "sha256": "e32f7c16816acf6fb790f07d8605d8bcda401b7f558a0763149c176daa9a8cfd"
+    }
+  ],
+  "qa": "Viewed generator outputs and contact; menu no text/buttons and portrait packets, owl/bee/dolphin nofox. Table no cards/machines/false ports. UI has slight center tonal variation; outside alpha haze removed via sprite-gen.",
+  "source_png_files": [
+    {
+      "file": "source/contact.png",
+      "sha256": "a6da21a0c1e9555090ece23e9b7367cedd87306a2bedca672af20d4f38635072"
+    },
+    {
+      "file": "source/menu-generated.png",
+      "sha256": "74ca7f355a7e32ba4605d840a45d0fede17e9d02df943c443ca8ecfb7fa4f01e"
+    },
+    {
+      "file": "source/table-generated.png",
+      "sha256": "65f0c0010a1d3bb7da85178dca9dc8a82b1d12ad359720441d9030f04ec8bdaa"
+    },
+    {
+      "file": "source/ui-generated.png",
+      "sha256": "e32f7c16816acf6fb790f07d8605d8bcda401b7f558a0763149c176daa9a8cfd"
+    }
+  ]
+}

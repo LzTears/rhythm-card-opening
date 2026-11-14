@@ -1,0 +1,49 @@
+{
+  "key": "wave_E01",
+  "source_id": "explosions/plasma-explosion#shock-rings-track",
+  "source_file": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\explosions\\plasma-explosion.js",
+  "source_sha256": "28856fa225a4259423721458785ab5305785ae283da6d94f78cc6b2eae3dd771",
+  "size": [
+    224,
+    200
+  ],
+  "floor_pivot": [
+    112,
+    100
+  ],
+  "pivot": [
+    112,
+    100
+  ],
+  "columns": 7,
+  "rows": 8,
+  "frames": 52,
+  "fps": 30,
+  "source_duration": 1.7,
+  "sample_end": 1.7,
+  "duration": 1.7333333333333334,
+  "body_radius_px": 92,
+  "options": {
+    "palette": [
+      "#2a1608",
+      "#6b3c10",
+      "#b8701a",
+      "#f0b42e",
+      "#ffe27a",
+      "#fff6cf",
+      "#ffffff"
+    ],
+    "accent": [
+      "#281009",
+      "#6b2a12",
+      "#c46a1a",
+      "#ffb73d",
+      "#fff6cf"
+    ]
+  },
+  "reason": "Confirmed heavy-build original plasma shock-rings extracted track; same widths/FPS/time, no tilted band/body/lightning.",
+  "color": "wave_E01-color.png",
+  "light": "wave_E01-light.png",
+  "color_sha256": "d1617fafc00a242bedc763a69fa73c27cdf1998968a194daff44a52e5bbc9384",
+  "light_sha256": "a548f6d2819fe6626bb2baba1578023d098c50bfa1cdba7319bfc415277804c2"
+}

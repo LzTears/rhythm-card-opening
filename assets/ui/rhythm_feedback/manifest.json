@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "created": "2026-11-12",
+  "generation_method": "Built-in image_gen__imagegen, transparent_background=true; one initial generation and one targeted edit per wordmark. Originals retained under CODEX_HOME/generated_images.",
+  "design": "Original angular rhythm-game lettering; no Patapon characters or copied wordmarks. COMBO digits are drawn dynamically by the game.",
+  "assets": [
+    {
+      "id": "fever",
+      "file": "fever.png",
+      "text": "FEVER!!",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a1cf4e-bcd8-7d50-b058-0ca5ea755f22/exec-554be9bd-f4b0-46af-8894-c8ecc77f775f.png",
+      "initial_prompt": "Use case: logo-brand. Asset type: transparent rhythm game UI wordmark. Create ONE original exuberant hand-lettered wordmark with ONLY the exact text \"FEVER!!\" (F E V E R, then exactly two exclamation marks). Bright orange-red and golden yellow chunky angular letters, uneven lively rhythm, sharp comic cut-ins and tiny flame-like letter tips. Thick dark espresso outline plus thin warm cream outer outline, clean hard edges and flat colors compatible with a crafted pixel game. No glossy 3D, no mascots. Horizontal compact word silhouette approximately 3.5:1 width:height, minimal safe transparent padding on all sides. Must remain very legible at 260x80. No numerals, other lettering, background, scene or decorative objects. TRUE transparent alpha background. Single isolated wordmark only.",
+      "edit_prompt": "Edit this FEVER!! wordmark only. Preserve exact text FEVER!!, colors, letter identities and thick dark/cream outlines. Make the letter shapes a little shorter and wider so the painted wordmark itself is 3.5:1 width:height. IMPORTANT fit the entire wordmark safely inside a transparent 3:1 canvas, leaving at least 50 pixels transparent padding around every outer point, no clipped outlines. Remove disconnected tiny specks outside the lettering; clean crisp flat graphic edges. No additional text, scene, numbers or objects. True transparent alpha background.",
+      "source_size": [
+        2172,
+        724
+      ],
+      "source_sha256": "52811043534944677bcf9a9337fe08323a6c56f904f76eb1a2064f738aef405d",
+      "crop_box": [
+        34,
+        91,
+        2144,
+        628
+      ],
+      "size": [
+        2110,
+        537
+      ],
+      "mode": "RGBA",
+      "sha256": "4b690e0426bc7e3fe47b6379dad76c116171c3dc601b2a7f7f9960d1d469c8ac",
+      "processing": "Lossless rectangular alpha-aware crop only, preserving generated alpha; 18px padding around alpha>127 content.",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "combo",
+      "file": "combo.png",
+      "text": "COMBO!",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a1cf4e-bcd8-7d50-b058-0ca5ea755f22/exec-3531d6a0-60ec-4710-8927-a41d9b1cf954.png",
+      "initial_prompt": "Use case: logo-brand. Asset type: transparent rhythm game UI wordmark. Create ONE original exuberant hand-lettered wordmark with ONLY exact text \"COMBO!\" (C O M B O, then exactly one exclamation mark). Chunky readable playful angular handwritten uppercase letters with lively uneven baseline and pointed corners. Each letter uses a different saturated festival color: orange C, golden yellow O, lime green M, sky blue B, pink-magenta O, golden exclamation. Thick very dark espresso outline plus thin warm cream outer outline. Clean sharp edges, flat illustrative colors compatible with a crafted pixel game, no 3D gloss. Compact horizontal silhouette approximately 4:1 width:height, small safe transparent padding on all sides. Remain very legible at 260x80. No numbers, other words, mascot, scenery or background. TRUE transparent alpha background. Single isolated wordmark only.",
+      "edit_prompt": "Edit this COMBO! wordmark only. Preserve exact text COMBO!, rainbow letter colors and thick dark/cream outlines. Make the letter shapes much shorter and wider so the painted wordmark itself is approximately 4:1 width:height. IMPORTANT fit the entire wordmark safely inside a transparent 3:1 canvas, leaving at least 50 pixels transparent padding around every outer point, no clipped outlines. Remove disconnected tiny specks outside the lettering; clean crisp flat graphic edges. No additional text, numbers, objects or background. True transparent alpha background.",
+      "source_size": [
+        2172,
+        724
+      ],
+      "source_sha256": "b427afeb67ded2140ab488e9fba432712aabe8be4dfc194a40fa3c5a68b31446",
+      "crop_box": [
+        14,
+        166,
+        2158,
+        571
+      ],
+      "size": [
+        2144,
+        405
+      ],
+      "mode": "RGBA",
+      "sha256": "d9722e07ea25512b767ba6055a3759df97105595b91c2784d91679e9bc1bb53f",
+      "processing": "Lossless rectangular alpha-aware crop only, preserving generated alpha; 18px padding around alpha>127 content.",
+      "alpha_range": [
+        0,
+        255
+      ]
+    }
+  ]
+}

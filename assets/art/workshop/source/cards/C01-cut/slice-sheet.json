@@ -1,0 +1,162 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "C01-sheet.png",
+  "grid": [
+    5,
+    1
+  ],
+  "canvas": {
+    "w": 512,
+    "h": 512
+  },
+  "baseline_y": 492.0,
+  "target_height": 472.0,
+  "scale": "cell",
+  "fit": "contain",
+  "factor": null,
+  "factor_from": null,
+  "alpha_cleanup": "alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "C01-0",
+      "file": "C01-0.png",
+      "factor": 1.090069284064665,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 422,
+          "h": 433
+        },
+        "canvas": {
+          "w": 460,
+          "h": 472
+        }
+      },
+      "box": {
+        "x": 27,
+        "y": 20,
+        "w": 460,
+        "h": 472
+      },
+      "anchor": [
+        257.0,
+        492.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "C01-1",
+      "file": "C01-1.png",
+      "factor": 1.087557603686636,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 422,
+          "h": 434
+        },
+        "canvas": {
+          "w": 459,
+          "h": 472
+        }
+      },
+      "box": {
+        "x": 27,
+        "y": 20,
+        "w": 459,
+        "h": 472
+      },
+      "anchor": [
+        256.5,
+        492.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "C01-2",
+      "file": "C01-2.png",
+      "factor": 1.090069284064665,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 420,
+          "h": 433
+        },
+        "canvas": {
+          "w": 458,
+          "h": 472
+        }
+      },
+      "box": {
+        "x": 28,
+        "y": 20,
+        "w": 458,
+        "h": 472
+      },
+      "anchor": [
+        257.0,
+        492.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "C01-3",
+      "file": "C01-3.png",
+      "factor": 1.090069284064665,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 420,
+          "h": 433
+        },
+        "canvas": {
+          "w": 458,
+          "h": 472
+        }
+      },
+      "box": {
+        "x": 28,
+        "y": 20,
+        "w": 458,
+        "h": 472
+      },
+      "anchor": [
+        257.0,
+        492.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "C01-4",
+      "file": "C01-4.png",
+      "factor": 1.090069284064665,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 424,
+          "h": 433
+        },
+        "canvas": {
+          "w": 462,
+          "h": 472
+        }
+      },
+      "box": {
+        "x": 25,
+        "y": 20,
+        "w": 462,
+        "h": 472
+      },
+      "anchor": [
+        256.0,
+        492.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

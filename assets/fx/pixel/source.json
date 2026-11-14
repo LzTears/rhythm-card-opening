@@ -1,0 +1,23 @@
+{
+  "asset": "heavy_hit.png",
+  "library": "pixelfx 0.3.0",
+  "source": "https://github.com/patch-gg/pixelfx",
+  "effect": "src/fx/impacts/hit-spark.js",
+  "originalTechnique": "https://www.spritefusion.com/pixel-art-vfx/impact",
+  "license": "MIT; see LICENSE.pixelfx.txt",
+  "options": {
+    "palette": ["#17182f", "#34405d", "#626e8b", "#ad7045", "#e3ad66", "#ffdc9a", "#fff0c2"],
+    "light": 0,
+    "height": 0,
+    "aim": -0.55,
+    "seed": 7
+  },
+  "export": {"fps": 24, "frameSize": [136, 80], "columns": 3, "rows": 5, "frames": 13, "pivot": [44, 64]},
+  "runtime": {"durationSeconds": 0.4, "textureFilter": "nearest", "billboard": true, "localOnly": true},
+  "visualReview": {
+    "round1": "Compared the default hit-spark, blunt-hit and crit-hit contact sheets. Selected the shortest directional spark; rejected long smoke and large flare.",
+    "round2": "Removed additive light and selected an indigo/warm-gold ramp; reviewed all 13 sampled frames.",
+    "round3": "Lowered contact to the table plane, tilted sparks upward and selected seed 7; reviewed final heavy_hit_contact.png. Empty final frame retained.",
+    "libraryCheck": "node tools/check.mjs impacts/hit-spark: 1 pass, 0 fail, 0 warnings"
+  }
+}

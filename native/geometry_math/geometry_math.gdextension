@@ -1,0 +1,7 @@
+[configuration]
+entry_symbol = "roundcard_geometry_init"
+compatibility_minimum = "4.4"
+reloadable = false
+
+[libraries]
+windows.x86_64 = "res://native/geometry_math/bin/roundcard_geometry.windows.x86_64.dll"

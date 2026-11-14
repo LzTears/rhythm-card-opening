@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-12",
+  "archive_author": "TheSandKid",
+  "source_discussion": "https://www.reddit.com/r/Patapon/comments/lqdzkt/looking_for_the_extracted_audio_files_of_all_3/",
+  "source_root": "https://drive.google.com/drive/folders/1x9Ov7zrXKJNvj7HNdonTiMoqSc6isx5Y",
+  "license": "Community game audio extraction; no official commercial redistribution/use license established; original rights remain with rights holders.",
+  "instrumental_evidence": "Archive author original discussion states Patapon3 mission BGM instrumentals are available separately from command responses. No speaker audition or independent vocal detection performed.",
+  "menu_selection": "Rinririn complete instrumental adapted for out-of-battle UI. Patapolis subfolders contained short effects, not a verified full town theme.",
+  "timing": "Background only; native source speed, independent from simulation 120BPM. No claim of exact tempo synchronization or seamless original loop boundary.",
+  "files": [
+    {
+      "usage": "battle",
+      "file": "battle_gyorocchi.ogg",
+      "original_filename": "01Gyorocchi.ogg",
+      "source_page": "https://drive.google.com/file/d/1OzQi7-f-Fcb1Gii0nAFURrVWZC2gp8hH/view",
+      "source_folder": "https://drive.google.com/drive/folders/1WNhQ4j7B1insacXzmbzF62shxicsIQlO",
+      "download_url": "https://drive.google.com/uc?export=download&id=1OzQi7-f-Fcb1Gii0nAFURrVWZC2gp8hH",
+      "bytes": 4848502,
+      "sha256": "76f15eb3c4e57b9874cf6fb2fbdb46169e1df4f321078bdb8150eaebc66616e6",
+      "container": "Ogg",
+      "codec": "Vorbis",
+      "sample_rate": 44100,
+      "channels": 2,
+      "ogg_pages": 1085,
+      "duration_seconds": 124.04920634920634,
+      "processing": "none; complete original download bytes; runtime loop only; no tempo/pitch processing"
+    },
+    {
+      "usage": "menu",
+      "file": "menu_rinririn.ogg",
+      "original_filename": "04Rinririn.ogg",
+      "source_page": "https://drive.google.com/file/d/1rVr5szPsGXcIRXU1j1uBxYLsHZZMGDiS/view",
+      "source_folder": "https://drive.google.com/drive/folders/1WNhQ4j7B1insacXzmbzF62shxicsIQlO",
+      "download_url": "https://drive.google.com/uc?export=download&id=1rVr5szPsGXcIRXU1j1uBxYLsHZZMGDiS",
+      "bytes": 5017408,
+      "sha256": "8214a52858dfcf2be0cc638a1f44025f142d42437fc16f5ea02a7a3d01a39977",
+      "container": "Ogg",
+      "codec": "Vorbis",
+      "sample_rate": 44100,
+      "channels": 2,
+      "ogg_pages": 1115,
+      "duration_seconds": 124.05342403628119,
+      "processing": "none; complete original download bytes; runtime loop only; no tempo/pitch processing"
+    },
+    {
+      "usage": "battle_fever",
+      "file": "battle_gyorocchi_fever.ogg",
+      "original_filename": "01Fever.ogg",
+      "source_page": "https://drive.google.com/file/d/1mzbzwqC3ITiIPokHWCRtZrnAKyzYchFa/view",
+      "source_folder": "https://drive.google.com/drive/folders/1i57zaxGBTZ8qMS33JpSiDkwP10aH1TLa",
+      "download_url": "https://drive.google.com/uc?export=download&id=1mzbzwqC3ITiIPokHWCRtZrnAKyzYchFa",
+      "bytes": 2511487,
+      "sha256": "2a4c6d5b3ae93096d83b601c897dfdbd961009027faecbb386be3e481ca647a7",
+      "container": "Ogg",
+      "codec": "Vorbis",
+      "sample_rate": 44100,
+      "channels": 2,
+      "ogg_pages": 566,
+      "duration_seconds": 64.02539682539683,
+      "processing": "none; complete original download bytes; runtime loop only; no tempo/pitch processing"
+    }
+  ]
+}

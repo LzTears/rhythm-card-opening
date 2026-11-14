@@ -1,0 +1,41 @@
+[
+  {
+    "file": "art/elegant-penguin.png",
+    "source": "sources/elegant-penguin-generated-original.png",
+    "reference_image": "../non-mainstream-v1/art/elegant-penguin.png",
+    "generator": "built-in image_gen reference edit",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "b3670715d1b94a76fbb539026c803e1d57ff10c9c7be16940c87f34c018a9ab9",
+    "qa": "Observed generated image, full subject visible; see PROVENANCE.md for margin/caption-zone details."
+  },
+  {
+    "file": "art/maodie.png",
+    "source": "sources/maodie-generated-original.png",
+    "reference_image": "../non-mainstream-v1/art/maodie.png",
+    "generator": "built-in image_gen reference edit",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "a0a91ac25b50b3c0419e13b0af2fdc05bc1ee1ba573fbd73489d195418c7430b",
+    "qa": "Observed generated image, full subject visible; see PROVENANCE.md for margin/caption-zone details."
+  },
+  {
+    "file": "art/naiwa.png",
+    "source": "sources/naiwa-generated-original.png",
+    "reference_image": "../non-mainstream-v1/art/naiwa.png",
+    "generator": "built-in image_gen reference edit",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "f234df47e94ae54c25e0ffdfe8f14a49f9d14b879de71872b608c7b846bdf252",
+    "qa": "Observed generated image, full subject visible; see PROVENANCE.md for margin/caption-zone details."
+  }
+]

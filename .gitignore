@@ -1,0 +1,28 @@
+.godot/
+*.tmp
+
+# 本地自动化记录与验收产物；不影响游戏运行。
+.playwright-cli/
+output/
+verification/
+AGENTS.md
+
+# 编译中间文件；保留运行必需的 DLL、源码、ABI 头和许可。
+*.pdb
+*.lib
+*.obj
+*.o
+
+# 凭据、本机设置与编辑器临时文件。
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+__pycache__/
+*.pyc

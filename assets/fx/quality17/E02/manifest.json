@@ -1,0 +1,250 @@
+{
+  "element": "E02",
+  "scope": "QUALITY17 presentation assets only. No engine, runtime, rules, input, target or save edits.",
+  "round": 2,
+  "art_direction": "Blue-white multi-fork electrical overload with a hot plasma body, cold dark contour, radial positive-circle wave and true single electric link.",
+  "source_fps_contract": "All original source FPS/duration retained; frames includes endpoint; runtime duration=frames/fps, no frame squeezing.",
+  "source_changes": "Only explicit options and planar secondary motion/source pivot/padded canvas; main body source code preserved. Wave is declared original source track extraction.",
+  "sheets": {
+    "main": {
+      "key": "main_E02",
+      "role_hint": "main",
+      "element": "E02",
+      "source_id": "explosions/plasma-explosion",
+      "source_file": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\explosions\\plasma-explosion.js",
+      "source_sha256": "28856fa225a4259423721458785ab5305785ae283da6d94f78cc6b2eae3dd771",
+      "derived_file": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\fx\\quality17\\E02\\source\\main-topdown.mjs",
+      "derived_sha256": "fea47021ba5e1fe4802cf57557c328b92af13130c0660c369c94688119793c13",
+      "size": [
+        224,
+        200
+      ],
+      "floor_pivot": [
+        112,
+        100
+      ],
+      "pivot": [
+        112,
+        100
+      ],
+      "columns": 7,
+      "rows": 8,
+      "frames": 52,
+      "fps": 30,
+      "source_duration": 1.7,
+      "sample_end": 1.7,
+      "duration": 1.7333333333333334,
+      "body_radius_px": 35,
+      "options": {},
+      "reason": "Complete original blue-violet plasma body, radial branching arcs and original light. Only secondary flake drift becomes planar.",
+      "color": "main-color.png",
+      "light": "main-light.png",
+      "color_sha256": "9f6e390ce482ada202a29c350870784c3e2081c23808da2e014287cf87b7b66f",
+      "light_sha256": "ac29e267be944b486de00d00356274b9debab0acccaf9b3c3eeb09b28d07b2b7"
+    },
+    "wave": {
+      "key": "wave_E02",
+      "role_hint": "wave",
+      "element": "E02",
+      "source_id": "explosions/plasma-explosion",
+      "source_file": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\explosions\\plasma-explosion.js",
+      "source_sha256": "28856fa225a4259423721458785ab5305785ae283da6d94f78cc6b2eae3dd771",
+      "derived_file": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\fx\\quality17\\E02\\source\\wave-track.mjs",
+      "derived_sha256": "ead16af1dc5cf107792795ba77de0b998d7f8f8635d034a46c0574e8dbbd5187",
+      "size": [
+        224,
+        200
+      ],
+      "floor_pivot": [
+        112,
+        100
+      ],
+      "pivot": [
+        112,
+        100
+      ],
+      "columns": 7,
+      "rows": 8,
+      "frames": 52,
+      "fps": 30,
+      "source_duration": 1.7,
+      "sample_end": 1.7,
+      "duration": 1.7333333333333334,
+      "body_radius_px": 92,
+      "options": {},
+      "reason": "Original plasma fast and delayed positive-circle shock rings only; original widths and 0.42/0.60 timing, no tilted band.",
+      "color": "wave-color.png",
+      "light": "wave-light.png",
+      "color_sha256": "360721d2217cf26584152feec5b519de7f3ebec78c9a2acef8bf862cefaad226",
+      "light_sha256": "6faa1d5bad908c0bfde0c5d9ae76f634745e88495f852e952cbcd3e5409a5fb1"
+    },
+    "path": {
+      "key": "path_E02",
+      "role_hint": "path",
+      "element": "E02",
+      "source_id": "lightning/zap-hit",
+      "source_file": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\lightning\\zap-hit.js",
+      "source_sha256": "ad93c93f57babccc82ac1a20c7027b1f950e417b5e5a6969b35445ed23fff83a",
+      "derived_file": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\fx\\quality17\\E02\\source\\path-topdown.mjs",
+      "derived_sha256": "50788f342f2c67ff6bc479b686e3d724d5ab41ce6150136dc969571bce7f7861",
+      "size": [
+        144,
+        112
+      ],
+      "floor_pivot": [
+        76,
+        56
+      ],
+      "pivot": [
+        10,
+        56
+      ],
+      "columns": 7,
+      "rows": 4,
+      "frames": 28,
+      "fps": 30,
+      "source_duration": 0.9,
+      "sample_end": 0.9,
+      "duration": 0.9333333333333333,
+      "body_radius_px": 66,
+      "options": {},
+      "reason": "Original single zap, fern/knot/branch inking and full timeline; source incoming Y aligned0 while consuming original RNG. Real source start10,56 to76,56.",
+      "color": "path-color.png",
+      "light": "path-light.png",
+      "color_sha256": "6baf95470a3f4b556d4fd2faff61054a2c24c30effee70071dee0d50d4278317",
+      "light_sha256": "09cb86b2b1186e488258b24966e38a0020ba0cd207858e05faf39951e870408b",
+      "path_source_span_px": 66,
+      "path_endpoints_px": [
+        [
+          10,
+          56
+        ],
+        [
+          76,
+          56
+        ]
+      ],
+      "path_y_pixel_size_m": 0.012
+    },
+    "contact": {
+      "key": "contact_E02",
+      "role_hint": "contact",
+      "element": "E02",
+      "source_id": "lightning/zap-hit",
+      "source_file": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\lightning\\zap-hit.js",
+      "source_sha256": "ad93c93f57babccc82ac1a20c7027b1f950e417b5e5a6969b35445ed23fff83a",
+      "derived_file": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\fx\\quality17\\E02\\source\\contact-topdown.mjs",
+      "derived_sha256": "9bbd1a4c366505d46265f07d9d905f7f633deb25e18554a0c1b14baea715caa4",
+      "size": [
+        144,
+        112
+      ],
+      "floor_pivot": [
+        76,
+        56
+      ],
+      "pivot": [
+        76,
+        56
+      ],
+      "columns": 7,
+      "rows": 4,
+      "frames": 28,
+      "fps": 30,
+      "source_duration": 0.9,
+      "sample_end": 0.9,
+      "duration": 0.9333333333333333,
+      "body_radius_px": 8,
+      "options": {},
+      "reason": "Original blue-white contact knot/fern and sparks, full source timeline; planar secondary trajectory, actual hit center76,56.",
+      "color": "contact-color.png",
+      "light": "contact-light.png",
+      "color_sha256": "ea6ca47d7fb044e004cabcef75ce2f939c1b60ea6f2edad564fc7db5113c5504",
+      "light_sha256": "30d0ab90284da350da9952bdca26322bd027be0a223ae21ce55563672b1e03bf"
+    }
+  },
+  "sources": {
+    "explosions/plasma-explosion": {
+      "file": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\explosions\\plasma-explosion.js",
+      "sha256": "28856fa225a4259423721458785ab5305785ae283da6d94f78cc6b2eae3dd771"
+    },
+    "lightning/zap-hit": {
+      "file": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\lightning\\zap-hit.js",
+      "sha256": "ad93c93f57babccc82ac1a20c7027b1f950e417b5e5a6969b35445ed23fff83a"
+    }
+  },
+  "warmdesk": [
+    {
+      "role": "main",
+      "frame": 1,
+      "age": 0.03333333333333333,
+      "source_pixel_scale": 1.1428571428571428,
+      "main_guide_radius_du": 90,
+      "main_guide_radius_px": 40,
+      "software_only": true
+    },
+    {
+      "role": "main",
+      "frame": 8,
+      "age": 0.26666666666666666,
+      "source_pixel_scale": 1.1428571428571428,
+      "main_guide_radius_du": 90,
+      "main_guide_radius_px": 40,
+      "software_only": true
+    },
+    {
+      "role": "wave",
+      "frame": 3,
+      "age": 0.1,
+      "source_pixel_scale": 1.1956521739130435,
+      "main_guide_radius_du": 90,
+      "main_guide_radius_px": 40,
+      "software_only": true
+    },
+    {
+      "role": "wave",
+      "frame": 8,
+      "age": 0.26666666666666666,
+      "source_pixel_scale": 1.1956521739130435,
+      "main_guide_radius_du": 90,
+      "main_guide_radius_px": 40,
+      "software_only": true
+    },
+    {
+      "role": "path",
+      "frame": 2,
+      "age": 0.06666666666666667,
+      "source_pixel_scale": 2,
+      "main_guide_radius_du": 90,
+      "main_guide_radius_px": 40,
+      "software_only": true
+    },
+    {
+      "role": "path",
+      "frame": 5,
+      "age": 0.16666666666666666,
+      "source_pixel_scale": 2,
+      "main_guide_radius_du": 90,
+      "main_guide_radius_px": 40,
+      "software_only": true
+    },
+    {
+      "role": "contact",
+      "frame": 2,
+      "age": 0.06666666666666667,
+      "source_pixel_scale": 0.8,
+      "main_guide_radius_du": 90,
+      "main_guide_radius_px": 40,
+      "software_only": true
+    },
+    {
+      "role": "contact",
+      "frame": 5,
+      "age": 0.16666666666666666,
+      "source_pixel_scale": 0.8,
+      "main_guide_radius_du": 90,
+      "main_guide_radius_px": 40,
+      "software_only": true
+    }
+  ]
+}

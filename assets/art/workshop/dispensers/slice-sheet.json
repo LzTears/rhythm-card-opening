@@ -1,0 +1,50 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "dispenser-original.png",
+  "grid": [
+    1,
+    1
+  ],
+  "canvas": {
+    "w": 384,
+    "h": 320
+  },
+  "baseline_y": 280.0,
+  "target_height": 220.0,
+  "scale": "cell",
+  "fit": "contain",
+  "factor": null,
+  "factor_from": null,
+  "alpha_cleanup": "alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "down",
+      "file": "down.png",
+      "factor": 0.25943396226415094,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 1319,
+          "h": 848
+        },
+        "canvas": {
+          "w": 342,
+          "h": 220
+        }
+      },
+      "box": {
+        "x": 21,
+        "y": 60,
+        "w": 342,
+        "h": 220
+      },
+      "anchor": [
+        192.0,
+        280.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

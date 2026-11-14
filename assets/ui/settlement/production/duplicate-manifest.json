@@ -1,0 +1,17 @@
+{
+  "asset": "../duplicate.png",
+  "tool": "built-in image_gen.imagegen",
+  "native": "duplicate-native.png",
+  "prompt": "duplicate-prompt.txt",
+  "qa": "duplicate-alphaQA.json",
+  "files": {
+    "duplicate-native.png": {
+      "sha256": "647fd8cc05aca2763bf6067fb248091b9a2fe29f4bf78a918441f1ce2b2b2b09",
+      "bytes": 2355639
+    },
+    "duplicate.png": {
+      "sha256": "6340068c335f0d2d241f3156dc3cf0a93d9e68bf003344d0c77dde887db53482",
+      "bytes": 168328
+    }
+  }
+}

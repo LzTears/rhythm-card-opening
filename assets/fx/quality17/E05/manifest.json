@@ -1,0 +1,257 @@
+{
+  "element": "E05",
+  "catalog": "quality17",
+  "scope": "Assets only; no damage, rules, event, runtime, input or save changes.",
+  "original_fps": true,
+  "split_channels": {
+    "color": "raw straight-alpha color, blend_mix",
+    "light": "raw additive RGB, blend_add; black transparent"
+  },
+  "loop": false,
+  "sheets": {
+    "main": {
+      "key": "main_E05",
+      "source_id": "ice/snowflake-burst#overhead-spatial-adaptation",
+      "source_file": "source/snowflake-overhead.mjs",
+      "source_sha256": "355b08e34d5b3f551157c7ff94eed480894125eac131e9aa0fa9352bb5576c2b",
+      "adaptation": "Original create/draw and flake/flare/particle/light drawing retained; coordinate anchor and table-plane particle motion adapted. No frames or source times removed.",
+      "size": [
+        192,
+        192
+      ],
+      "floor_pivot": [
+        96,
+        96
+      ],
+      "pivot": [
+        96,
+        96
+      ],
+      "columns": 7,
+      "rows": 14,
+      "frames": 97,
+      "fps": 30,
+      "source_duration": 3.2,
+      "sample_end": 3.2,
+      "duration": 3.2333333333333334,
+      "body_radius_px": 40,
+      "options": {},
+      "color": "main-color.png",
+      "light": "main-light.png",
+      "color_sha256": "5d4552634e261a16d8fa28a502cbc718636d72158c10cbd4bb4cd1416b622cc4",
+      "light_sha256": "087e4d090f40097a61c701b32befba7150dd486c8889f4a381407dd57499d002",
+      "terminal_pixels": {
+        "color": 0,
+        "light": 0
+      },
+      "outer_edge_pixels_all_frames": {
+        "color": 0,
+        "light": 0
+      }
+    },
+    "wave": {
+      "key": "wave_E05",
+      "source_id": "explosions/plasma-explosion#complete-shock-rings-track",
+      "source_file": "source/plasma-wave.mjs",
+      "source_sha256": "ead16af1dc5cf107792795ba77de0b998d7f8f8635d034a46c0574e8dbbd5187",
+      "adaptation": "Original two shock-ring draw tracks, native widths/time. No tilted ring, shell or source lightning. Element palette adaptation.",
+      "size": [
+        224,
+        200
+      ],
+      "floor_pivot": [
+        112,
+        100
+      ],
+      "pivot": [
+        112,
+        100
+      ],
+      "columns": 7,
+      "rows": 8,
+      "frames": 52,
+      "fps": 30,
+      "source_duration": 1.7,
+      "sample_end": 1.7,
+      "duration": 1.7333333333333334,
+      "body_radius_px": 92,
+      "options": {
+        "palette": [
+          "#102343",
+          "#174571",
+          "#236ea1",
+          "#369dcc",
+          "#58cbea",
+          "#9de9f5",
+          "#dcfbff",
+          "#ffffff"
+        ],
+        "accent": [
+          "#102343",
+          "#174571",
+          "#369dcc",
+          "#9de9f5",
+          "#ffffff"
+        ]
+      },
+      "color": "wave-color.png",
+      "light": "wave-light.png",
+      "color_sha256": "b225cad6bdb794fcef769add8d8db2c4c48eb48754512fb2771636ba8185e388",
+      "light_sha256": "adcc8dace4e1774b8196ed8642fea5b13d45de1f401520871efb028851ca697a",
+      "terminal_pixels": {
+        "color": 0,
+        "light": 0
+      },
+      "outer_edge_pixels_all_frames": {
+        "color": 0,
+        "light": 0
+      }
+    },
+    "path": {
+      "key": "thrust_E05",
+      "source_id": "melee/thrust#actor-free",
+      "source_file": "source/upstream/melee-thrust.js.txt",
+      "source_sha256": "ac2f2257fafb9dec3bdcb8e75020db952e14810c700eea6b232be7b348eb261d",
+      "adaptation": "Complete stock actor-free thrust with element palette. Exact authored from=(43,42), to=(109,42), span66; no geometry/time rewrite.",
+      "size": [
+        196,
+        76
+      ],
+      "floor_pivot": [
+        34,
+        62
+      ],
+      "pivot": [
+        43,
+        42
+      ],
+      "columns": 7,
+      "rows": 4,
+      "frames": 24,
+      "fps": 30,
+      "source_duration": 0.75,
+      "sample_end": 0.7666666666666667,
+      "duration": 0.8,
+      "body_radius_px": 66,
+      "options": {
+        "palette": [
+          "#102343",
+          "#174571",
+          "#236ea1",
+          "#369dcc",
+          "#58cbea",
+          "#9de9f5",
+          "#dcfbff",
+          "#ffffff"
+        ],
+        "sparks": [
+          "#dcfbff",
+          "#9de9f5",
+          "#58cbea",
+          "#369dcc"
+        ]
+      },
+      "color": "path-color.png",
+      "light": "path-light.png",
+      "color_sha256": "974f24edf35376fc56967dd48c06d6e079bfc369c9694a2d77078f334ff7a8d7",
+      "light_sha256": "2cd82fda500f9d2518e9ff647caec98be8fb4de94e449b63c2b0737abe8a469c",
+      "terminal_pixels": {
+        "color": 0,
+        "light": 0
+      },
+      "outer_edge_pixels_all_frames": {
+        "color": 0,
+        "light": 0
+      },
+      "path_source_span_px": 66,
+      "path_from_px": [
+        43,
+        42
+      ],
+      "path_to_px": [
+        109,
+        42
+      ]
+    },
+    "contact": {
+      "key": "contact_E05",
+      "source_id": "impacts/hit-spark#actor-free",
+      "source_file": "source/upstream/impacts-hit-spark.js.txt",
+      "source_sha256": "b0f2d0e5337ab2fff3a6a8995e6404fed72512bdcd1bc92838a60bf879bc732a",
+      "adaptation": "Complete stock impact, bright frame0 cross/diamond, chips and light; element palette. Original .5 second source duration.",
+      "size": [
+        136,
+        80
+      ],
+      "floor_pivot": [
+        44,
+        64
+      ],
+      "pivot": [
+        44,
+        44
+      ],
+      "columns": 7,
+      "rows": 3,
+      "frames": 16,
+      "fps": 30,
+      "source_duration": 0.5,
+      "sample_end": 0.5,
+      "duration": 0.5333333333333333,
+      "body_radius_px": 37,
+      "options": {
+        "palette": [
+          "#102343",
+          "#174571",
+          "#236ea1",
+          "#369dcc",
+          "#58cbea",
+          "#9de9f5",
+          "#dcfbff",
+          "#ffffff"
+        ]
+      },
+      "color": "contact-color.png",
+      "light": "contact-light.png",
+      "color_sha256": "1966bfa3cc39ac5066d849782e7a246815e25b8bb88b5bec209154dc706d3910",
+      "light_sha256": "6f87904c145665e3e8b587a4abc0c4e4dca0b455babc15ae140fae007243fc0d",
+      "terminal_pixels": {
+        "color": 0,
+        "light": 0
+      },
+      "outer_edge_pixels_all_frames": {
+        "color": 0,
+        "light": 0
+      }
+    }
+  },
+  "sources": {
+    "source/export.mjs": "d525ac5e7b2d587dbc2ad0c2d805b118f1ea7cae5a0b62d922529931e3fc4e9e",
+    "source/snowflake-overhead.mjs": "355b08e34d5b3f551157c7ff94eed480894125eac131e9aa0fa9352bb5576c2b",
+    "source/plasma-wave.mjs": "ead16af1dc5cf107792795ba77de0b998d7f8f8635d034a46c0574e8dbbd5187"
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "contact": "source/round1-library-candidates.png",
+      "decision": "Reject direct side-view frost wall/puddle/cloud; inspect actual library candidates."
+    },
+    {
+      "round": 2,
+      "contact": "source/round2-overhead-contact.png",
+      "decision": "Rejected simplified geometric crystal and fixed star-lobed poison composition; no final PNG uses this candidate."
+    },
+    {
+      "round": 3,
+      "contact": "source/round3-overhead-contact.png",
+      "decision": "Retain stock snowflake drawing; source double shock-ring tracks; irregular oil/foam poison composition; local timing native."
+    }
+  ],
+  "limits": [
+    "Overhead adaptations are explicitly disclosed, not claimed as unchanged source pixels.",
+    "This is asset/contact-sheet inspection, not real Main or FPS/performance validation.",
+    "Wave has its original blank trailing time; no duration trimming."
+  ],
+  "sheets_count": 4,
+  "png_count": 8
+}

@@ -1,0 +1,71 @@
+[
+  {
+    "id": "DIG-033",
+    "source": "sources/DIG-033-edge-repair.png",
+    "size": [
+      1086,
+      1448
+    ],
+    "backup": "archive/edge-repair-v1/DIG-033.png",
+    "sha256": "ea2ce3e2e51fc91a22813c4309a99b1c216292a2a4f294d741efb4f309554327",
+    "visual_subject_bounds_estimate_xyxy": [
+      180,
+      287,
+      891,
+      1098
+    ],
+    "visual_margin_fraction_estimate": [
+      0.166,
+      0.198,
+      0.18,
+      0.242
+    ],
+    "qa": "Visual inspection: complete wings, horn/head, hands/claws and feet, minimum visible safety margin at least10%; bounds are manual visual estimates, not alpha segmentation."
+  },
+  {
+    "id": "DIG-036",
+    "source": "sources/DIG-036-edge-repair.png",
+    "size": [
+      1086,
+      1448
+    ],
+    "backup": "archive/edge-repair-v1/DIG-036.png",
+    "sha256": "c50bbee5c2c2c2f9f7de078b4f3e75a2ae5a2fa92bf2faf96a552c885db755ab",
+    "visual_subject_bounds_estimate_xyxy": [
+      126,
+      254,
+      940,
+      1137
+    ],
+    "visual_margin_fraction_estimate": [
+      0.116,
+      0.175,
+      0.134,
+      0.215
+    ],
+    "qa": "Visual inspection: complete wings, horn/head, hands/claws and feet, minimum visible safety margin at least10%; bounds are manual visual estimates, not alpha segmentation."
+  },
+  {
+    "id": "DIG-041",
+    "source": "sources/DIG-041-edge-repair.png",
+    "size": [
+      1086,
+      1448
+    ],
+    "backup": "archive/edge-repair-v1/DIG-041.png",
+    "sha256": "e81cf47e00a978feeadbf952fabb189274a466810a715da88de8e3ce5b9609da",
+    "visual_subject_bounds_estimate_xyxy": [
+      191,
+      284,
+      936,
+      1043
+    ],
+    "visual_margin_fraction_estimate": [
+      0.176,
+      0.196,
+      0.138,
+      0.28
+    ],
+    "qa": "Visual inspection: complete wings, horn/head, hands/claws and feet, minimum visible safety margin at least10%; bounds are manual visual estimates, not alpha segmentation."
+  }
+]

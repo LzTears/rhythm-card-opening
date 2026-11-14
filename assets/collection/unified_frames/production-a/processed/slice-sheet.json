@@ -1,0 +1,53 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "grade_0-native.png",
+  "grid": [
+    1,
+    1
+  ],
+  "canvas": {
+    "w": 768,
+    "h": 1024
+  },
+  "baseline_y": 1024.0,
+  "target_height": 1024.0,
+  "scale": "sheet",
+  "fit": "contain",
+  "factor": 0.7065317387304508,
+  "factor_from": {
+    "rule": "fit",
+    "cell": "grade_0"
+  },
+  "alpha_cleanup": null,
+  "cells": [
+    {
+      "name": "grade_0",
+      "file": "grade_0.png",
+      "factor": 0.7065317387304508,
+      "factor_from": "fit",
+      "subject": {
+        "sheet": {
+          "w": 1086,
+          "h": 1448
+        },
+        "canvas": {
+          "w": 767,
+          "h": 1023
+        }
+      },
+      "box": {
+        "x": 1,
+        "y": 1,
+        "w": 767,
+        "h": 1023
+      },
+      "anchor": [
+        384.5,
+        1024.0
+      ],
+      "clipped_px": 0,
+      "parts": 6
+    }
+  ]
+}

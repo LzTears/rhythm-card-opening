@@ -1,0 +1,36 @@
+{
+  "key": "wave_E02",
+  "role_hint": "wave",
+  "element": "E02",
+  "source_id": "explosions/plasma-explosion",
+  "source_file": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\explosions\\plasma-explosion.js",
+  "source_sha256": "28856fa225a4259423721458785ab5305785ae283da6d94f78cc6b2eae3dd771",
+  "derived_file": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\fx\\quality17\\E02\\source\\wave-track.mjs",
+  "derived_sha256": "ead16af1dc5cf107792795ba77de0b998d7f8f8635d034a46c0574e8dbbd5187",
+  "size": [
+    224,
+    200
+  ],
+  "floor_pivot": [
+    112,
+    100
+  ],
+  "pivot": [
+    112,
+    100
+  ],
+  "columns": 7,
+  "rows": 8,
+  "frames": 52,
+  "fps": 30,
+  "source_duration": 1.7,
+  "sample_end": 1.7,
+  "duration": 1.7333333333333334,
+  "body_radius_px": 92,
+  "options": {},
+  "reason": "Original plasma fast and delayed positive-circle shock rings only; original widths and 0.42/0.60 timing, no tilted band.",
+  "color": "wave-color.png",
+  "light": "wave-light.png",
+  "color_sha256": "360721d2217cf26584152feec5b519de7f3ebec78c9a2acef8bf862cefaad226",
+  "light_sha256": "6faa1d5bad908c0bfde0c5d9ae76f634745e88495f852e952cbcd3e5409a5fb1"
+}

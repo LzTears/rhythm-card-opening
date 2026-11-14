@@ -1,0 +1,21 @@
+{
+  "created": "2026-11-13",
+  "method": "built-in image_gen__imagegen transparent alpha",
+  "assets": [
+    {
+      "file": "perfect.png",
+      "text": "Perfect",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a1ce58-dcd2-7cb2-b810-e906332df61e/exec-c219eff8-ede8-4326-82e8-54c30e58c367.png",
+      "prompt": "Use case: logo-brand. Asset type: transparent PNG wordmark sprite for the rhythm game 节拍开卡, displayed small below an instruction card.\nExact text: \"Perfect\" (capital P, lowercase erfect), spelled P-e-r-f-e-c-t, one single horizontal word. No exclamation mark, no other text.\nCreate an original energetic cut-paper arcade rhythm judgement wordmark. Chunky very legible angular slightly italic lettering, bright warm pale-gold face with a little orange near the lower edges, thick dark plum-black inner contour and clean cream outer sticker edge. Flat graphic 2D, a restrained offset cut-paper shadow, no microtexture. It should harmonize with a playful angular rainbow COMBO and orange/yellow FEVER wordmark, while being simpler and readable at about 110 by 28 screen pixels.\nComposition: tightly contained wide horizontal lettering centered, all seven letters complete, small safe margin, no attached stars or characters. True transparent alpha background, including letter counters. No backdrop, no paper rectangle, no UI mockup, no checkerboard, no glow cloud. High quality clean edges. This is a new standalone sprite."
+    },
+    {
+      "file": "miss.png",
+      "text": "Miss",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a1ce58-dcd2-7cb2-b810-e906332df61e/exec-62793f8b-894f-41d3-becb-07f3cac5a1d1.png",
+      "prompt": "Use case: logo-brand. Asset type: transparent PNG wordmark sprite for the rhythm game 节拍开卡, displayed small below an instruction card.\nExact text: \"Miss\" (capital M, lowercase iss), spelled M-i-s-s, one single horizontal word. No exclamation mark, no other text.\nCreate an original punchy cut-paper arcade rhythm judgement wordmark matching a warm gold angular Perfect judgement and playful angular rainbow COMBO. Chunky very legible angular slightly italic lettering, muted coral pink to light dusty lavender face, thick dark plum-black inner contour and clean cream outer sticker edge. Flat graphic 2D, restrained offset cut-paper shadow, no microtexture, no angry character and no aggressive warning panel. Readable at about 85 by 28 screen pixels.\nComposition: tightly contained wide horizontal lettering centered, all four letters complete, small safe margin, no attached stars or characters. True transparent alpha background, including counters. No backdrop, no paper rectangle, no UI mockup, no checkerboard, no glow cloud. High quality clean edges. This is a new standalone sprite.",
+      "edit_prompt": "Edit this Miss judgement wordmark into a clean production-ready transparent sprite. Preserve the exact word \"Miss\", its chunky angular letter shapes, pink-to-lavender face, dark plum contour, cream sticker outline, and cut-paper offset shadow.\nChange only the cutout edge and framing: remove all detached white flecks, dust, speckles and distressed/noisy alpha outside the solid wordmark silhouette; use smooth clean precise continuous contours and fully transparent empty background. Shrink the whole complete wordmark slightly inside the canvas to leave about 4% transparent safe margin on every side so no letter, outline or shadow touches or clips the canvas. Keep letter counters truly transparent where intended. No new text or ornaments, no glow or background. It must remain highly readable at 85 by 28 screen pixels.",
+      "original_source": "C:/Users/Administrator/.codex/generated_images/01a1ce58-dcd2-7cb2-b810-e906332df61e/exec-524a6b9a-b274-46fc-a165-b3ab80535935.png"
+    }
+  ],
+  "design": "Original angular cut-paper judgement sprites, colour roles gold success and coral/lavender miss. No gameplay changes."
+}

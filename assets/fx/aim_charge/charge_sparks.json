@@ -1,0 +1,37 @@
+{
+  "name": "aim_charge_sparks",
+  "texture": "charge_sparks.png",
+  "texture_size": [
+    192,
+    192
+  ],
+  "frame_size": [
+    48,
+    48
+  ],
+  "columns": 4,
+  "rows": 4,
+  "frames": 16,
+  "fps": 30,
+  "duration": 0.5333333333333333,
+  "source_duration": 0.5,
+  "pivot": [
+    24,
+    24
+  ],
+  "pivot_normalized": [
+    0.5,
+    0.5
+  ],
+  "direction": "right; tail left",
+  "loop": false,
+  "first_frame_empty": true,
+  "last_frame_empty": true,
+  "channel": "RGBA color + restrained source light composite",
+  "tint": "neutral white; host element tint",
+  "sampling": "linear, no mipmaps, no repeat; clamp UV to each tile",
+  "geometry": "local glint only; no ring or attack radius",
+  "runtime_contract": "Host places 2-3 sparse particles at actual charge progress head/tangent. Texture animation clock does not change gameplay progress.",
+  "source_sha256": "281b37c89b17d659c46c8dd4fb75e34dd3786134c5d3ad1173793d752fc073d1",
+  "png_sha256": "0bef9384acf02605225dd211f19659289ba2ca97c7045d79fb5a5138d361ed42"
+}

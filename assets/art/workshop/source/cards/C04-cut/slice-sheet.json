@@ -1,0 +1,162 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "C04-sheet.png",
+  "grid": [
+    5,
+    1
+  ],
+  "canvas": {
+    "w": 512,
+    "h": 512
+  },
+  "baseline_y": 492.0,
+  "target_height": 472.0,
+  "scale": "cell",
+  "fit": "contain",
+  "factor": null,
+  "factor_from": null,
+  "alpha_cleanup": "alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "C04-0",
+      "file": "C04-0.png",
+      "factor": 1.13189448441247,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 411,
+          "h": 417
+        },
+        "canvas": {
+          "w": 465,
+          "h": 472
+        }
+      },
+      "box": {
+        "x": 24,
+        "y": 20,
+        "w": 465,
+        "h": 472
+      },
+      "anchor": [
+        256.5,
+        492.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "C04-1",
+      "file": "C04-1.png",
+      "factor": 1.1346153846153846,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 412,
+          "h": 416
+        },
+        "canvas": {
+          "w": 467,
+          "h": 472
+        }
+      },
+      "box": {
+        "x": 23,
+        "y": 20,
+        "w": 467,
+        "h": 472
+      },
+      "anchor": [
+        256.5,
+        492.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "C04-2",
+      "file": "C04-2.png",
+      "factor": 1.13189448441247,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 413,
+          "h": 417
+        },
+        "canvas": {
+          "w": 467,
+          "h": 472
+        }
+      },
+      "box": {
+        "x": 23,
+        "y": 20,
+        "w": 467,
+        "h": 472
+      },
+      "anchor": [
+        256.5,
+        492.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "C04-3",
+      "file": "C04-3.png",
+      "factor": 1.1346153846153846,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 410,
+          "h": 416
+        },
+        "canvas": {
+          "w": 465,
+          "h": 472
+        }
+      },
+      "box": {
+        "x": 24,
+        "y": 20,
+        "w": 465,
+        "h": 472
+      },
+      "anchor": [
+        256.5,
+        492.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "C04-4",
+      "file": "C04-4.png",
+      "factor": 1.13189448441247,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 411,
+          "h": 417
+        },
+        "canvas": {
+          "w": 465,
+          "h": 472
+        }
+      },
+      "box": {
+        "x": 24,
+        "y": 20,
+        "w": 465,
+        "h": 472
+      },
+      "anchor": [
+        256.5,
+        492.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

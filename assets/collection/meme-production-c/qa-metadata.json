@@ -1,0 +1,222 @@
+[
+  {
+    "id": "MEM-020",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null,
+    "alpha_bbox": null
+  },
+  {
+    "id": "MEM-021",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null,
+    "alpha_bbox": null
+  },
+  {
+    "id": "MEM-022",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null,
+    "alpha_bbox": null
+  },
+  {
+    "id": "MEM-019",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null,
+    "alpha_bbox": null
+  },
+  {
+    "id": "MEM-023",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null,
+    "alpha_bbox": null
+  },
+  {
+    "id": "MEM-024",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null,
+    "alpha_bbox": null
+  },
+  {
+    "id": "MEM-042",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null,
+    "alpha_bbox": null
+  },
+  {
+    "id": "MEM-043",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null,
+    "alpha_bbox": null
+  },
+  {
+    "id": "MEM-044",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null,
+    "alpha_bbox": null
+  },
+  {
+    "id": "MEM-045",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null,
+    "alpha_bbox": null
+  },
+  {
+    "id": "MEM-047",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null,
+    "alpha_bbox": null
+  },
+  {
+    "id": "MEM-048",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null,
+    "alpha_bbox": null
+  },
+  {
+    "id": "MEM-049",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null,
+    "alpha_bbox": null
+  },
+  {
+    "id": "meme_back_0",
+    "size": [
+      1086,
+      1448
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1073,
+      1448
+    ]
+  },
+  {
+    "id": "meme_back_1",
+    "size": [
+      1086,
+      1448
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1083,
+      1422
+    ]
+  },
+  {
+    "id": "meme_back_2",
+    "size": [
+      1086,
+      1448
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1083,
+      1416
+    ]
+  },
+  {
+    "id": "meme_back_3",
+    "size": [
+      1086,
+      1448
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      30,
+      1062,
+      1448
+    ]
+  },
+  {
+    "id": "meme_back_4",
+    "size": [
+      1086,
+      1448
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      12,
+      1066,
+      1448
+    ]
+  }
+]

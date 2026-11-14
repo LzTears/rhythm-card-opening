@@ -1,0 +1,1494 @@
+{
+  "version": "topdown13-task119",
+  "license": "MIT",
+  "source": "https://github.com/patch-gg/pixelfx",
+  "production_playback_contract": "Committed event count, geometry and lifetime are unchanged. Production keeps the existing floor(age/event_duration*frame_count) full-sequence mapping. Source FPS/duration below describe source art, never a new attack clock.",
+  "legacy_native_min_duration": {
+    "E01": 0.46,
+    "E02": 0.46,
+    "E05": 0.6
+  },
+  "selection": "Retained E01 heavy/E02 lightning/E05 frost plus their shared BD/contact/path/wave sources. Removed emitter routes retired; no PNG regeneration or source playback change.",
+  "effects": {
+    "heavy": {
+      "path": "res://assets/fx/topdown13/heavy.png",
+      "metadata": "heavy.json",
+      "frame_count": 40,
+      "fps": 30,
+      "frame_size": [
+        192,
+        192
+      ],
+      "pivot": [
+        96,
+        96
+      ],
+      "source_id": "custom/paper-press",
+      "source_sha256": "f44c4a0b61a7d94a3caefde01175c4912c5808ecadd56da5734ad701579783c2",
+      "source_fps": 30,
+      "source_duration": 1.4,
+      "source_samples": [
+        0.1,
+        1.4
+      ],
+      "options": {
+        "seed": 71,
+        "light": 0.85
+      },
+      "adaptation": "V5 author source from RELEASE; center registration; aftershock may suppress original center core through explicit source option",
+      "png_sha256": "26a305b30e2c9bd118553736aebfaaf324e3b9cafb15ab1b4be39a8c38a28505"
+    },
+    "pulse_E01": {
+      "path": "res://assets/fx/topdown13/heavy.png",
+      "metadata": "pulse_E01.json",
+      "frame_count": 40,
+      "fps": 30,
+      "frame_size": [
+        192,
+        192
+      ],
+      "pivot": [
+        96,
+        96
+      ],
+      "source_id": "custom/paper-press",
+      "source_sha256": "f44c4a0b61a7d94a3caefde01175c4912c5808ecadd56da5734ad701579783c2",
+      "source_fps": 30,
+      "source_duration": 1.4,
+      "source_samples": [
+        0.1,
+        1.4
+      ],
+      "options": {
+        "seed": 71,
+        "light": 0.85
+      },
+      "adaptation": "V5 author source from RELEASE; center registration; aftershock may suppress original center core through explicit source option",
+      "png_sha256": "26a305b30e2c9bd118553736aebfaaf324e3b9cafb15ab1b4be39a8c38a28505",
+      "alias_of": "heavy",
+      "role": "pulse",
+      "visual_gain": 1
+    },
+    "echo_E01": {
+      "path": "res://assets/fx/topdown13/heavy.png",
+      "metadata": "echo_E01.json",
+      "frame_count": 40,
+      "fps": 30,
+      "frame_size": [
+        192,
+        192
+      ],
+      "pivot": [
+        96,
+        96
+      ],
+      "source_id": "custom/paper-press",
+      "source_sha256": "f44c4a0b61a7d94a3caefde01175c4912c5808ecadd56da5734ad701579783c2",
+      "source_fps": 30,
+      "source_duration": 1.4,
+      "source_samples": [
+        0.1,
+        1.4
+      ],
+      "options": {
+        "seed": 71,
+        "light": 0.85
+      },
+      "adaptation": "V5 author source from RELEASE; center registration; aftershock may suppress original center core through explicit source option",
+      "png_sha256": "26a305b30e2c9bd118553736aebfaaf324e3b9cafb15ab1b4be39a8c38a28505",
+      "alias_of": "heavy",
+      "role": "echo",
+      "visual_gain": 1.08
+    },
+    "aftershock_E01": {
+      "path": "res://assets/fx/topdown13/aftershock_E01.png",
+      "metadata": "aftershock_E01.json",
+      "frame_count": 38,
+      "fps": 30,
+      "frame_size": [
+        192,
+        192
+      ],
+      "pivot": [
+        96,
+        96
+      ],
+      "source_id": "custom/paper-press",
+      "source_sha256": "f44c4a0b61a7d94a3caefde01175c4912c5808ecadd56da5734ad701579783c2",
+      "source_fps": 30,
+      "source_duration": 1.4,
+      "source_samples": [
+        0.16666666666666666,
+        1.4
+      ],
+      "options": {
+        "seed": 71,
+        "light": 0.85,
+        "core": false
+      },
+      "adaptation": "V5 author source from RELEASE; center registration; aftershock may suppress original center core through explicit source option",
+      "png_sha256": "e7337193885fd9adc8c3f5f274c6b238d8291c44d0d86ccf67b05de9ddfc6d07"
+    },
+    "bond_E01": {
+      "path": "res://assets/fx/topdown13/aftershock_E01.png",
+      "metadata": "bond_E01.json",
+      "frame_count": 38,
+      "fps": 30,
+      "frame_size": [
+        192,
+        192
+      ],
+      "pivot": [
+        96,
+        96
+      ],
+      "source_id": "custom/paper-press",
+      "source_sha256": "f44c4a0b61a7d94a3caefde01175c4912c5808ecadd56da5734ad701579783c2",
+      "source_fps": 30,
+      "source_duration": 1.4,
+      "source_samples": [
+        0.16666666666666666,
+        1.4
+      ],
+      "options": {
+        "seed": 71,
+        "light": 0.85,
+        "core": false
+      },
+      "adaptation": "V5 author source from RELEASE; center registration; aftershock may suppress original center core through explicit source option",
+      "png_sha256": "e7337193885fd9adc8c3f5f274c6b238d8291c44d0d86ccf67b05de9ddfc6d07",
+      "alias_of": "aftershock_E01",
+      "role": "bond",
+      "visual_gain": 0.24
+    },
+    "coverage_E01": {
+      "path": "res://assets/fx/topdown13/coverage_E01.png",
+      "metadata": "coverage_E01.json",
+      "frame_count": 38,
+      "fps": 30,
+      "frame_size": [
+        192,
+        192
+      ],
+      "pivot": [
+        96,
+        96
+      ],
+      "source_id": "custom/paper-press",
+      "source_sha256": "f44c4a0b61a7d94a3caefde01175c4912c5808ecadd56da5734ad701579783c2",
+      "source_fps": 30,
+      "source_duration": 1.4,
+      "source_samples": [
+        0.16666666666666666,
+        1.4
+      ],
+      "options": {
+        "seed": 71,
+        "light": 0.85,
+        "core": false
+      },
+      "adaptation": "Corresponding original elemental wave pixels, center removed and low-density broken outer coverage retained for actual C01 full radius; no new event or target",
+      "png_sha256": "472bad357c841e15639587c10d57adaf95f92bd23a375721f38110f4ce8e3cbe"
+    },
+    "contact_E01": {
+      "path": "res://assets/fx/topdown13/contact_E01.png",
+      "metadata": "contact_E01.json",
+      "frame_count": 16,
+      "fps": 30,
+      "frame_size": [
+        128,
+        128
+      ],
+      "pivot": [
+        64,
+        64
+      ],
+      "source_id": "impacts/hit-spark",
+      "source_sha256": "b0f2d0e5337ab2fff3a6a8995e6404fed72512bdcd1bc92838a60bf879bc732a",
+      "source_fps": 30,
+      "source_duration": 0.5,
+      "source_samples": [
+        0,
+        0.5
+      ],
+      "options": {
+        "palette": [
+          "#351b12",
+          "#653719",
+          "#a65d25",
+          "#cf8a39",
+          "#efbd72",
+          "#fff0c6",
+          "#fffce8"
+        ],
+        "accent": [
+          "#351b12",
+          "#653719",
+          "#a65d25",
+          "#cf8a39",
+          "#efbd72",
+          "#fff0c6",
+          "#fffce8"
+        ],
+        "seed": 29,
+        "light": 0.28
+      },
+      "adaptation": "Original radial source artwork, center registration/uniform fit, source release crop, finite fade",
+      "png_sha256": "1d0324e82ca450254936a1061b8f28818f54ec355b38a4982f91358442be03d0"
+    },
+    "lightning": {
+      "path": "res://assets/fx/topdown13/lightning.png",
+      "metadata": "lightning.json",
+      "frame_count": 26,
+      "fps": 30,
+      "frame_size": [
+        192,
+        192
+      ],
+      "pivot": [
+        96,
+        96
+      ],
+      "source_id": "lightning/zap-hit",
+      "source_sha256": "ad93c93f57babccc82ac1a20c7027b1f950e417b5e5a6969b35445ed23fff83a",
+      "source_fps": 30,
+      "source_duration": 0.9,
+      "source_samples": [
+        0.06666666666666667,
+        0.9
+      ],
+      "options": {
+        "palette": [
+          "#12374e",
+          "#155573",
+          "#147e9c",
+          "#24a5bf",
+          "#64cfdd",
+          "#b3edf0",
+          "#edffff"
+        ],
+        "accent": [
+          "#12374e",
+          "#155573",
+          "#147e9c",
+          "#24a5bf",
+          "#64cfdd",
+          "#b3edf0",
+          "#edffff"
+        ],
+        "seed": 29,
+        "light": 0.28
+      },
+      "adaptation": "Original radial source artwork, center registration/uniform fit, source release crop, finite fade",
+      "png_sha256": "f1abd7f0d65a684bcbacb96581922b472499b2d10b5c413fc011f2dd7eeb944f"
+    },
+    "pulse_E02": {
+      "path": "res://assets/fx/topdown13/lightning.png",
+      "metadata": "pulse_E02.json",
+      "frame_count": 26,
+      "fps": 30,
+      "frame_size": [
+        192,
+        192
+      ],
+      "pivot": [
+        96,
+        96
+      ],
+      "source_id": "lightning/zap-hit",
+      "source_sha256": "ad93c93f57babccc82ac1a20c7027b1f950e417b5e5a6969b35445ed23fff83a",
+      "source_fps": 30,
+      "source_duration": 0.9,
+      "source_samples": [
+        0.06666666666666667,
+        0.9
+      ],
+      "options": {
+        "palette": [
+          "#12374e",
+          "#155573",
+          "#147e9c",
+          "#24a5bf",
+          "#64cfdd",
+          "#b3edf0",
+          "#edffff"
+        ],
+        "accent": [
+          "#12374e",
+          "#155573",
+          "#147e9c",
+          "#24a5bf",
+          "#64cfdd",
+          "#b3edf0",
+          "#edffff"
+        ],
+        "seed": 29,
+        "light": 0.28
+      },
+      "adaptation": "Original radial source artwork, center registration/uniform fit, source release crop, finite fade",
+      "png_sha256": "f1abd7f0d65a684bcbacb96581922b472499b2d10b5c413fc011f2dd7eeb944f",
+      "alias_of": "lightning",
+      "role": "pulse",
+      "visual_gain": 1
+    },
+    "echo_E02": {
+      "path": "res://assets/fx/topdown13/lightning.png",
+      "metadata": "echo_E02.json",
+      "frame_count": 26,
+      "fps": 30,
+      "frame_size": [
+        192,
+        192
+      ],
+      "pivot": [
+        96,
+        96
+      ],
+      "source_id": "lightning/zap-hit",
+      "source_sha256": "ad93c93f57babccc82ac1a20c7027b1f950e417b5e5a6969b35445ed23fff83a",
+      "source_fps": 30,
+      "source_duration": 0.9,
+      "source_samples": [
+        0.06666666666666667,
+        0.9
+      ],
+      "options": {
+        "palette": [
+          "#12374e",
+          "#155573",
+          "#147e9c",
+          "#24a5bf",
+          "#64cfdd",
+          "#b3edf0",
+          "#edffff"
+        ],
+        "accent": [
+          "#12374e",
+          "#155573",
+          "#147e9c",
+          "#24a5bf",
+          "#64cfdd",
+          "#b3edf0",
+          "#edffff"
+        ],
+        "seed": 29,
+        "light": 0.28
+      },
+      "adaptation": "Original radial source artwork, center registration/uniform fit, source release crop, finite fade",
+      "png_sha256": "f1abd7f0d65a684bcbacb96581922b472499b2d10b5c413fc011f2dd7eeb944f",
+      "alias_of": "lightning",
+      "role": "echo",
+      "visual_gain": 1.08
+    },
+    "aftershock_E02": {
+      "path": "res://assets/fx/topdown13/aftershock_E02.png",
+      "metadata": "aftershock_E02.json",
+      "frame_count": 47,
+      "fps": 30,
+      "frame_size": [
+        192,
+        192
+      ],
+      "pivot": [
+        96,
+        96
+      ],
+      "source_id": "explosions/plasma-explosion",
+      "source_sha256": "28856fa225a4259423721458785ab5305785ae283da6d94f78cc6b2eae3dd771",
+      "source_fps": 30,
+      "source_duration": 1.7,
+      "source_samples": [
+        0.16666666666666666,
+        1.7
+      ],
+      "options": {
+        "palette": [
+          "#12374e",
+          "#155573",
+          "#147e9c",
+          "#24a5bf",
+          "#64cfdd",
+          "#b3edf0",
+          "#edffff"
+        ],
+        "accent": [
+          "#12374e",
+          "#155573",
+          "#147e9c",
+          "#24a5bf",
+          "#64cfdd",
+          "#b3edf0",
+          "#edffff"
+        ],
+        "seed": 29,
+        "light": 0.28
+      },
+      "adaptation": "Original radial source artwork, center registration/uniform fit, source release crop, finite fade",
+      "png_sha256": "7f73c67909792f4ceab690258eca566466e9650f015d01eb1c800884391a35dc"
+    },
+    "bond_E02": {
+      "path": "res://assets/fx/topdown13/aftershock_E02.png",
+      "metadata": "bond_E02.json",
+      "frame_count": 47,
+      "fps": 30,
+      "frame_size": [
+        192,
+        192
+      ],
+      "pivot": [
+        96,
+        96
+      ],
+      "source_id": "explosions/plasma-explosion",
+      "source_sha256": "28856fa225a4259423721458785ab5305785ae283da6d94f78cc6b2eae3dd771",
+      "source_fps": 30,
+      "source_duration": 1.7,
+      "source_samples": [
+        0.16666666666666666,
+        1.7
+      ],
+      "options": {
+        "palette": [
+          "#12374e",
+          "#155573",
+          "#147e9c",
+          "#24a5bf",
+          "#64cfdd",
+          "#b3edf0",
+          "#edffff"
+        ],
+        "accent": [
+          "#12374e",
+          "#155573",
+          "#147e9c",
+          "#24a5bf",
+          "#64cfdd",
+          "#b3edf0",
+          "#edffff"
+        ],
+        "seed": 29,
+        "light": 0.28
+      },
+      "adaptation": "Original radial source artwork, center registration/uniform fit, source release crop, finite fade",
+      "png_sha256": "7f73c67909792f4ceab690258eca566466e9650f015d01eb1c800884391a35dc",
+      "alias_of": "aftershock_E02",
+      "role": "bond",
+      "visual_gain": 0.24
+    },
+    "coverage_E02": {
+      "path": "res://assets/fx/topdown13/coverage_E02.png",
+      "metadata": "coverage_E02.json",
+      "frame_count": 47,
+      "fps": 30,
+      "frame_size": [
+        192,
+        192
+      ],
+      "pivot": [
+        96,
+        96
+      ],
+      "source_id": "explosions/plasma-explosion",
+      "source_sha256": "28856fa225a4259423721458785ab5305785ae283da6d94f78cc6b2eae3dd771",
+      "source_fps": 30,
+      "source_duration": 1.7,
+      "source_samples": [
+        0.16666666666666666,
+        1.7
+      ],
+      "options": {
+        "palette": [
+          "#12374e",
+          "#155573",
+          "#147e9c",
+          "#24a5bf",
+          "#64cfdd",
+          "#b3edf0",
+          "#edffff"
+        ],
+        "accent": [
+          "#12374e",
+          "#155573",
+          "#147e9c",
+          "#24a5bf",
+          "#64cfdd",
+          "#b3edf0",
+          "#edffff"
+        ],
+        "seed": 29,
+        "light": 0.28
+      },
+      "adaptation": "Corresponding original elemental wave pixels, center removed and low-density broken outer coverage retained for actual C01 full radius; no new event or target",
+      "png_sha256": "ba2ef06c90ae6f7c1598bbe0a311823037147ddafb0d7ff2ac575e12fccb0fa1"
+    },
+    "contact_E02": {
+      "path": "res://assets/fx/topdown13/contact_E02.png",
+      "metadata": "contact_E02.json",
+      "frame_count": 16,
+      "fps": 30,
+      "frame_size": [
+        128,
+        128
+      ],
+      "pivot": [
+        64,
+        64
+      ],
+      "source_id": "impacts/hit-spark",
+      "source_sha256": "b0f2d0e5337ab2fff3a6a8995e6404fed72512bdcd1bc92838a60bf879bc732a",
+      "source_fps": 30,
+      "source_duration": 0.5,
+      "source_samples": [
+        0,
+        0.5
+      ],
+      "options": {
+        "palette": [
+          "#12374e",
+          "#155573",
+          "#147e9c",
+          "#24a5bf",
+          "#64cfdd",
+          "#b3edf0",
+          "#edffff"
+        ],
+        "accent": [
+          "#12374e",
+          "#155573",
+          "#147e9c",
+          "#24a5bf",
+          "#64cfdd",
+          "#b3edf0",
+          "#edffff"
+        ],
+        "seed": 29,
+        "light": 0.28
+      },
+      "adaptation": "Original radial source artwork, center registration/uniform fit, source release crop, finite fade",
+      "png_sha256": "7683e266618271fe6fc3a6b45877f219ce7ffa2c4731c7a37d23e1e4d14863af"
+    },
+    "frost": {
+      "path": "res://assets/fx/topdown13/frost.png",
+      "metadata": "frost.json",
+      "frame_count": 92,
+      "fps": 30,
+      "frame_size": [
+        192,
+        192
+      ],
+      "pivot": [
+        96,
+        96
+      ],
+      "source_id": "ice/snowflake-burst",
+      "source_sha256": "7a7820355463f86b0d77e9a60fa52006fb75e994de4d8b0d647c542ce653216c",
+      "source_fps": 30,
+      "source_duration": 3.2,
+      "source_samples": [
+        0.16666666666666666,
+        3.2
+      ],
+      "options": {
+        "palette": [
+          "#143c55",
+          "#206383",
+          "#2f8ca5",
+          "#57b4c8",
+          "#88d6df",
+          "#bceaf0",
+          "#f2ffff"
+        ],
+        "accent": [
+          "#143c55",
+          "#206383",
+          "#2f8ca5",
+          "#57b4c8",
+          "#88d6df",
+          "#bceaf0",
+          "#f2ffff"
+        ],
+        "seed": 29,
+        "light": 0.28
+      },
+      "adaptation": "Original radial source artwork, center registration/uniform fit, source release crop, finite fade",
+      "png_sha256": "af26afe812a7760954be69ad05017f429be0caf215ffbebd176148a273d71408"
+    },
+    "pulse_E05": {
+      "path": "res://assets/fx/topdown13/frost.png",
+      "metadata": "pulse_E05.json",
+      "frame_count": 92,
+      "fps": 30,
+      "frame_size": [
+        192,
+        192
+      ],
+      "pivot": [
+        96,
+        96
+      ],
+      "source_id": "ice/snowflake-burst",
+      "source_sha256": "7a7820355463f86b0d77e9a60fa52006fb75e994de4d8b0d647c542ce653216c",
+      "source_fps": 30,
+      "source_duration": 3.2,
+      "source_samples": [
+        0.16666666666666666,
+        3.2
+      ],
+      "options": {
+        "palette": [
+          "#143c55",
+          "#206383",
+          "#2f8ca5",
+          "#57b4c8",
+          "#88d6df",
+          "#bceaf0",
+          "#f2ffff"
+        ],
+        "accent": [
+          "#143c55",
+          "#206383",
+          "#2f8ca5",
+          "#57b4c8",
+          "#88d6df",
+          "#bceaf0",
+          "#f2ffff"
+        ],
+        "seed": 29,
+        "light": 0.28
+      },
+      "adaptation": "Original radial source artwork, center registration/uniform fit, source release crop, finite fade",
+      "png_sha256": "af26afe812a7760954be69ad05017f429be0caf215ffbebd176148a273d71408",
+      "alias_of": "frost",
+      "role": "pulse",
+      "visual_gain": 1
+    },
+    "echo_E05": {
+      "path": "res://assets/fx/topdown13/frost.png",
+      "metadata": "echo_E05.json",
+      "frame_count": 92,
+      "fps": 30,
+      "frame_size": [
+        192,
+        192
+      ],
+      "pivot": [
+        96,
+        96
+      ],
+      "source_id": "ice/snowflake-burst",
+      "source_sha256": "7a7820355463f86b0d77e9a60fa52006fb75e994de4d8b0d647c542ce653216c",
+      "source_fps": 30,
+      "source_duration": 3.2,
+      "source_samples": [
+        0.16666666666666666,
+        3.2
+      ],
+      "options": {
+        "palette": [
+          "#143c55",
+          "#206383",
+          "#2f8ca5",
+          "#57b4c8",
+          "#88d6df",
+          "#bceaf0",
+          "#f2ffff"
+        ],
+        "accent": [
+          "#143c55",
+          "#206383",
+          "#2f8ca5",
+          "#57b4c8",
+          "#88d6df",
+          "#bceaf0",
+          "#f2ffff"
+        ],
+        "seed": 29,
+        "light": 0.28
+      },
+      "adaptation": "Original radial source artwork, center registration/uniform fit, source release crop, finite fade",
+      "png_sha256": "af26afe812a7760954be69ad05017f429be0caf215ffbebd176148a273d71408",
+      "alias_of": "frost",
+      "role": "echo",
+      "visual_gain": 1.08
+    },
+    "aftershock_E05": {
+      "path": "res://assets/fx/topdown13/aftershock_E05.png",
+      "metadata": "aftershock_E05.json",
+      "frame_count": 87,
+      "fps": 30,
+      "frame_size": [
+        192,
+        192
+      ],
+      "pivot": [
+        96,
+        96
+      ],
+      "source_id": "ice/snowflake-burst",
+      "source_sha256": "7a7820355463f86b0d77e9a60fa52006fb75e994de4d8b0d647c542ce653216c",
+      "source_fps": 30,
+      "source_duration": 3.2,
+      "source_samples": [
+        0.3333333333333333,
+        3.2
+      ],
+      "options": {
+        "palette": [
+          "#143c55",
+          "#206383",
+          "#2f8ca5",
+          "#57b4c8",
+          "#88d6df",
+          "#bceaf0",
+          "#f2ffff"
+        ],
+        "accent": [
+          "#143c55",
+          "#206383",
+          "#2f8ca5",
+          "#57b4c8",
+          "#88d6df",
+          "#bceaf0",
+          "#f2ffff"
+        ],
+        "seed": 29,
+        "light": 0.28
+      },
+      "adaptation": "Original radial source artwork, center registration/uniform fit, source release crop, finite fade",
+      "png_sha256": "6485ad31742ac7c7f72f8a4b3dd0a5bc475707ba9338409ef760a53765801942"
+    },
+    "bond_E05": {
+      "path": "res://assets/fx/topdown13/aftershock_E05.png",
+      "metadata": "bond_E05.json",
+      "frame_count": 87,
+      "fps": 30,
+      "frame_size": [
+        192,
+        192
+      ],
+      "pivot": [
+        96,
+        96
+      ],
+      "source_id": "ice/snowflake-burst",
+      "source_sha256": "7a7820355463f86b0d77e9a60fa52006fb75e994de4d8b0d647c542ce653216c",
+      "source_fps": 30,
+      "source_duration": 3.2,
+      "source_samples": [
+        0.3333333333333333,
+        3.2
+      ],
+      "options": {
+        "palette": [
+          "#143c55",
+          "#206383",
+          "#2f8ca5",
+          "#57b4c8",
+          "#88d6df",
+          "#bceaf0",
+          "#f2ffff"
+        ],
+        "accent": [
+          "#143c55",
+          "#206383",
+          "#2f8ca5",
+          "#57b4c8",
+          "#88d6df",
+          "#bceaf0",
+          "#f2ffff"
+        ],
+        "seed": 29,
+        "light": 0.28
+      },
+      "adaptation": "Original radial source artwork, center registration/uniform fit, source release crop, finite fade",
+      "png_sha256": "6485ad31742ac7c7f72f8a4b3dd0a5bc475707ba9338409ef760a53765801942",
+      "alias_of": "aftershock_E05",
+      "role": "bond",
+      "visual_gain": 0.24
+    },
+    "coverage_E05": {
+      "path": "res://assets/fx/topdown13/coverage_E05.png",
+      "metadata": "coverage_E05.json",
+      "frame_count": 87,
+      "fps": 30,
+      "frame_size": [
+        192,
+        192
+      ],
+      "pivot": [
+        96,
+        96
+      ],
+      "source_id": "ice/snowflake-burst",
+      "source_sha256": "7a7820355463f86b0d77e9a60fa52006fb75e994de4d8b0d647c542ce653216c",
+      "source_fps": 30,
+      "source_duration": 3.2,
+      "source_samples": [
+        0.3333333333333333,
+        3.2
+      ],
+      "options": {
+        "palette": [
+          "#143c55",
+          "#206383",
+          "#2f8ca5",
+          "#57b4c8",
+          "#88d6df",
+          "#bceaf0",
+          "#f2ffff"
+        ],
+        "accent": [
+          "#143c55",
+          "#206383",
+          "#2f8ca5",
+          "#57b4c8",
+          "#88d6df",
+          "#bceaf0",
+          "#f2ffff"
+        ],
+        "seed": 29,
+        "light": 0.28
+      },
+      "adaptation": "Corresponding original elemental wave pixels, center removed and low-density broken outer coverage retained for actual C01 full radius; no new event or target",
+      "png_sha256": "cdc4cd82d22f48a4f151e5e800bffdd3eb61d323827d00acc4589e92ce45d55d"
+    },
+    "contact_E05": {
+      "path": "res://assets/fx/topdown13/contact_E05.png",
+      "metadata": "contact_E05.json",
+      "frame_count": 16,
+      "fps": 30,
+      "frame_size": [
+        128,
+        128
+      ],
+      "pivot": [
+        64,
+        64
+      ],
+      "source_id": "impacts/hit-spark",
+      "source_sha256": "b0f2d0e5337ab2fff3a6a8995e6404fed72512bdcd1bc92838a60bf879bc732a",
+      "source_fps": 30,
+      "source_duration": 0.5,
+      "source_samples": [
+        0,
+        0.5
+      ],
+      "options": {
+        "palette": [
+          "#143c55",
+          "#206383",
+          "#2f8ca5",
+          "#57b4c8",
+          "#88d6df",
+          "#bceaf0",
+          "#f2ffff"
+        ],
+        "accent": [
+          "#143c55",
+          "#206383",
+          "#2f8ca5",
+          "#57b4c8",
+          "#88d6df",
+          "#bceaf0",
+          "#f2ffff"
+        ],
+        "seed": 29,
+        "light": 0.28
+      },
+      "adaptation": "Original radial source artwork, center registration/uniform fit, source release crop, finite fade",
+      "png_sha256": "7340841b0ffff4b9775a7ef974e643e23b8c53aeb33d1c2d207fbf0caedab6af"
+    },
+    "chain_E01": {
+      "path": "res://assets/fx/topdown13/chain_E01.png",
+      "metadata": "chain_E01.json",
+      "source_id": "impacts/crit-hit",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0,
+        0.8
+      ],
+      "options": {
+        "palette": [
+          "#452511",
+          "#713e19",
+          "#a66325",
+          "#d28a32",
+          "#efb749",
+          "#ffda78",
+          "#fff0c2"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "c6af9303f0e463051696796a5886236d91182594e1d4fadee2067b9cf82ba857",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right",
+      "reuse": "Unmodified complete existing elemental directional sheet; only XZ presentation axes change",
+      "png_sha256": "f9ad5684d475605dd7335afe8273531f9f95fd1f94309b6a238ff3769b4f9da6"
+    },
+    "penetration_E01": {
+      "path": "res://assets/fx/topdown13/penetration_E01.png",
+      "metadata": "penetration_E01.json",
+      "source_id": "impacts/hit-spark",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0,
+        0.5
+      ],
+      "options": {
+        "palette": [
+          "#452511",
+          "#713e19",
+          "#a66325",
+          "#d28a32",
+          "#efb749",
+          "#ffda78",
+          "#fff0c2"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "b0f2d0e5337ab2fff3a6a8995e6404fed72512bdcd1bc92838a60bf879bc732a",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right",
+      "reuse": "Unmodified complete existing elemental directional sheet; only XZ presentation axes change",
+      "png_sha256": "5bd38f43ba108ca7fa02c3bb9a47fd55923b9a4abe4dbad65b5c3c536eab040f"
+    },
+    "pull_E01": {
+      "path": "res://assets/fx/topdown13/pull_E01.png",
+      "metadata": "pull_E01.json",
+      "source_id": "impacts/blunt-hit",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0,
+        0.85
+      ],
+      "options": {
+        "palette": [
+          "#452511",
+          "#713e19",
+          "#a66325",
+          "#d28a32",
+          "#efb749",
+          "#ffda78",
+          "#fff0c2"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "7fb2f0ce2990d4ade7f05b3473f03c56673e292f19e0c7c115670e8982a1556c",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right",
+      "reuse": "Unmodified complete existing elemental directional sheet; only XZ presentation axes change",
+      "png_sha256": "31a796551725198366f89de924dd3c11fe74cdb047bd063d81eda99a18fc420f"
+    },
+    "chain_E02": {
+      "path": "res://assets/fx/topdown13/chain_E02.png",
+      "metadata": "chain_E02.json",
+      "source_id": "lightning/chain-lightning",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0.18,
+        1.25
+      ],
+      "options": {
+        "palette": [
+          "#12374e",
+          "#155573",
+          "#147e9c",
+          "#24a5bf",
+          "#64cfdd",
+          "#b3edf0",
+          "#edffff"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "da2b9b377af6339ac2020dee990f4fb8e1b128ac6af05456bea85655bd6c4879",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right",
+      "reuse": "Unmodified complete existing elemental directional sheet; only XZ presentation axes change",
+      "png_sha256": "271359ddffe07b8bcebc1d07ad5a2c585d47f16e2221dd1fc3354a3267c6d694"
+    },
+    "penetration_E02": {
+      "path": "res://assets/fx/topdown13/penetration_E02.png",
+      "metadata": "penetration_E02.json",
+      "source_id": "lightning/zap-hit",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0.06,
+        0.85
+      ],
+      "options": {
+        "palette": [
+          "#12374e",
+          "#155573",
+          "#147e9c",
+          "#24a5bf",
+          "#64cfdd",
+          "#b3edf0",
+          "#edffff"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "ad93c93f57babccc82ac1a20c7027b1f950e417b5e5a6969b35445ed23fff83a",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right",
+      "reuse": "Unmodified complete existing elemental directional sheet; only XZ presentation axes change",
+      "png_sha256": "9a6d8c4f168036e373e9238afcd46c4b393536f4db53c1ce558dcb91871de524"
+    },
+    "pull_E02": {
+      "path": "res://assets/fx/topdown13/pull_E02.png",
+      "metadata": "pull_E02.json",
+      "source_id": "lightning/charge-up",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0.1,
+        1.8
+      ],
+      "options": {
+        "palette": [
+          "#12374e",
+          "#155573",
+          "#147e9c",
+          "#24a5bf",
+          "#64cfdd",
+          "#b3edf0",
+          "#edffff"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "43fd8250bc825185716595bf3be424f56e9db7b3a2fb1a5b0704e5cb782f1aff",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right",
+      "reuse": "Unmodified complete existing elemental directional sheet; only XZ presentation axes change",
+      "png_sha256": "b34e894ca4f16900dfc092abd7f97531c050799120b50c38f237b753e382d664"
+    },
+    "chain_E05": {
+      "path": "res://assets/fx/topdown13/chain_E05.png",
+      "metadata": "chain_E05.json",
+      "source_id": "ice/snowflake-burst",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0.15,
+        2.8
+      ],
+      "options": {
+        "palette": [
+          "#143c55",
+          "#206383",
+          "#2f8ca5",
+          "#57b4c8",
+          "#88d6df",
+          "#bceaf0",
+          "#f2ffff"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "7a7820355463f86b0d77e9a60fa52006fb75e994de4d8b0d647c542ce653216c",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right",
+      "reuse": "Unmodified complete existing elemental directional sheet; only XZ presentation axes change",
+      "png_sha256": "bf23ba1fc390d09e6193f1b0729f2c0afaa8e93fda7f68406ede7b25a937be50"
+    },
+    "penetration_E05": {
+      "path": "res://assets/fx/topdown13/penetration_E05.png",
+      "metadata": "penetration_E05.json",
+      "source_id": "ice/frost-breath",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0,
+        1.2
+      ],
+      "options": {
+        "palette": [
+          "#143c55",
+          "#206383",
+          "#2f8ca5",
+          "#57b4c8",
+          "#88d6df",
+          "#bceaf0",
+          "#f2ffff"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "3d9ef4563c1c8619c9d58231e7b81e25df6ab7e9d74fb926ab57fa6e786fd6cf",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right",
+      "reuse": "Unmodified complete existing elemental directional sheet; only XZ presentation axes change",
+      "png_sha256": "e36b0b6ecc7d541a4ffa3ab09f1c3e9bc6f78632ffea514b9f0905f3342c3ca6"
+    },
+    "pull_E05": {
+      "path": "res://assets/fx/topdown13/pull_E05.png",
+      "metadata": "pull_E05.json",
+      "source_id": "ice/ice-spikes",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0.2,
+        2.8
+      ],
+      "options": {
+        "palette": [
+          "#143c55",
+          "#206383",
+          "#2f8ca5",
+          "#57b4c8",
+          "#88d6df",
+          "#bceaf0",
+          "#f2ffff"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "7bb75052f982b28f2f93c87b0473f2075a49f3c18314ee22f798eafbc7812912",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right",
+      "reuse": "Unmodified complete existing elemental directional sheet; only XZ presentation axes change",
+      "png_sha256": "7c590690037bca100e525e31f734f7709acb8ac02e8d19044934b9134c2fc7eb"
+    },
+    "break": {
+      "path": "res://assets/fx/topdown13/heavy.png",
+      "metadata": "break.json",
+      "frame_count": 40,
+      "fps": 30,
+      "frame_size": [
+        192,
+        192
+      ],
+      "pivot": [
+        96,
+        96
+      ],
+      "source_id": "custom/paper-press",
+      "source_sha256": "f44c4a0b61a7d94a3caefde01175c4912c5808ecadd56da5734ad701579783c2",
+      "source_fps": 30,
+      "source_duration": 1.4,
+      "source_samples": [
+        0.1,
+        1.4
+      ],
+      "options": {
+        "seed": 71,
+        "light": 0.85
+      },
+      "adaptation": "V5 author source from RELEASE; center registration; aftershock may suppress original center core through explicit source option",
+      "png_sha256": "26a305b30e2c9bd118553736aebfaaf324e3b9cafb15ab1b4be39a8c38a28505",
+      "alias_of": "heavy",
+      "role": "wrapper_burst",
+      "visual_gain": 1
+    }
+  },
+  "reuse": [
+    {
+      "key": "break",
+      "reuse": "Existing V5 native top-down paper burst texture; no extra drawing. Original World registration width and 420ms event remain authoritative."
+    },
+    {
+      "key": "trail",
+      "path": "res://assets/fx/combat11/trail.png",
+      "reuse": "Unmodified actual texture already follows 48 true velocity samples on XZ; no new drawing or changed 620ms history."
+    },
+    {
+      "key": "contact",
+      "path": "res://assets/fx/combat11/contact.png",
+      "reuse": "Legacy common contact only; retained native contacts select E01/E02/E05."
+    }
+  ],
+  "source_files": {
+    "custom/paper-press": "f44c4a0b61a7d94a3caefde01175c4912c5808ecadd56da5734ad701579783c2",
+    "impacts/hit-spark": "b0f2d0e5337ab2fff3a6a8995e6404fed72512bdcd1bc92838a60bf879bc732a",
+    "lightning/zap-hit": "ad93c93f57babccc82ac1a20c7027b1f950e417b5e5a6969b35445ed23fff83a",
+    "explosions/plasma-explosion": "28856fa225a4259423721458785ab5305785ae283da6d94f78cc6b2eae3dd771",
+    "arcane/mana-burst": "5e13cd03df803020cdae40c62b9113548d41ca1a1c268c6221616413840b06ee",
+    "water/ripples": "2a4fbf4544d03947b185cd7888b78f15fd89b67fe3f6aa98426e1f577a97a9ed",
+    "ice/snowflake-burst": "7a7820355463f86b0d77e9a60fa52006fb75e994de4d8b0d647c542ce653216c",
+    "nature/poison-cloud": "7f5b7d0bde966321383ef17ba76d4107c9e5a659b62c880f5be081eca51482c4",
+    "water/whirlpool": "1a096054e162acd847d903d1d1a01dcf487a80a6bdd25f6436d374d940db0007",
+    "holy/sunburst": "64c28225db3b858adc4cd2691ad659b2d1437e88843e8d4012fea17ff2f90b30"
+  },
+  "native_and_aux_keys": {
+    "E01": [
+      "heavy",
+      "pulse_E01",
+      "echo_E01",
+      "aftershock_E01",
+      "bond_E01",
+      "chain_E01",
+      "penetration_E01",
+      "pull_E01",
+      "contact_E01",
+      "coverage_E01",
+      "break",
+      "contact",
+      "trail"
+    ],
+    "E02": [
+      "lightning",
+      "pulse_E02",
+      "echo_E02",
+      "aftershock_E02",
+      "bond_E02",
+      "chain_E02",
+      "penetration_E02",
+      "pull_E02",
+      "contact_E02",
+      "coverage_E02",
+      "break",
+      "contact",
+      "trail"
+    ],
+    "E05": [
+      "frost",
+      "pulse_E05",
+      "echo_E05",
+      "aftershock_E05",
+      "bond_E05",
+      "chain_E05",
+      "penetration_E05",
+      "pull_E05",
+      "contact_E05",
+      "coverage_E05",
+      "break",
+      "contact",
+      "trail"
+    ]
+  }
+}

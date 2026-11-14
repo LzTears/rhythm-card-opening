@@ -1,0 +1,162 @@
+[
+  {
+    "file": "pack_neon_0.png",
+    "canvas": [
+      300,
+      400
+    ],
+    "bbox": [
+      6,
+      6,
+      294,
+      394
+    ],
+    "ratio": 0.7423,
+    "width_fill": 0.96,
+    "height_fill": 0.97
+  },
+  {
+    "file": "pack_neon_1.png",
+    "canvas": [
+      300,
+      400
+    ],
+    "bbox": [
+      9,
+      7,
+      291,
+      394
+    ],
+    "ratio": 0.7287,
+    "width_fill": 0.94,
+    "height_fill": 0.9675
+  },
+  {
+    "file": "pack_neon_2.png",
+    "canvas": [
+      300,
+      400
+    ],
+    "bbox": [
+      9,
+      7,
+      292,
+      394
+    ],
+    "ratio": 0.7313,
+    "width_fill": 0.9433,
+    "height_fill": 0.9675
+  },
+  {
+    "file": "pack_neon_3.png",
+    "canvas": [
+      300,
+      400
+    ],
+    "bbox": [
+      11,
+      8,
+      290,
+      394
+    ],
+    "ratio": 0.7228,
+    "width_fill": 0.93,
+    "height_fill": 0.965
+  },
+  {
+    "file": "pack_neon_4.png",
+    "canvas": [
+      300,
+      400
+    ],
+    "bbox": [
+      11,
+      8,
+      291,
+      394
+    ],
+    "ratio": 0.7254,
+    "width_fill": 0.9333,
+    "height_fill": 0.965
+  },
+  {
+    "file": "pack_starlight_0.png",
+    "canvas": [
+      300,
+      400
+    ],
+    "bbox": [
+      5,
+      6,
+      295,
+      395
+    ],
+    "ratio": 0.7455,
+    "width_fill": 0.9667,
+    "height_fill": 0.9725
+  },
+  {
+    "file": "pack_starlight_1.png",
+    "canvas": [
+      300,
+      400
+    ],
+    "bbox": [
+      6,
+      7,
+      295,
+      395
+    ],
+    "ratio": 0.7448,
+    "width_fill": 0.9633,
+    "height_fill": 0.97
+  },
+  {
+    "file": "pack_starlight_2.png",
+    "canvas": [
+      300,
+      400
+    ],
+    "bbox": [
+      6,
+      6,
+      295,
+      395
+    ],
+    "ratio": 0.7429,
+    "width_fill": 0.9633,
+    "height_fill": 0.9725
+  },
+  {
+    "file": "pack_starlight_3.png",
+    "canvas": [
+      300,
+      400
+    ],
+    "bbox": [
+      7,
+      7,
+      295,
+      394
+    ],
+    "ratio": 0.7442,
+    "width_fill": 0.96,
+    "height_fill": 0.9675
+  },
+  {
+    "file": "pack_starlight_4.png",
+    "canvas": [
+      300,
+      400
+    ],
+    "bbox": [
+      5,
+      6,
+      294,
+      395
+    ],
+    "ratio": 0.7429,
+    "width_fill": 0.9633,
+    "height_fill": 0.9725
+  }
+]

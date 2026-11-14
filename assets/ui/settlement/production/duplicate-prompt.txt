@@ -1,0 +1,7 @@
+Use case: stylized-concept.
+Asset type: production transparent PNG game UI sticker marking an already collected duplicate card.
+Create one polished compact horizontal paper-cut stamp sticker with the exact simplified Chinese text "重复" only. 两个汉字必须准确：左字「重」，右字「复」，精确写成「重复」。 Typography is large bold clean Chinese display lettering, cream pale gold, very legible at small size, dark plum outline; two characters occupy almost all available central space.
+Style: tactile cut-paper collectible game interface, crisp dark outlines and thin cream die-cut outer edge. Deep berry purple base with restrained coral red paper accents and small clipped corner details. Very subtle warm paper grain. Flat front-facing sticker, broadly rectangular but clipped/irregular paper-cut silhouette, aspect ratio about 2.3:1, strong compact silhouette.
+Composition: only one isolated badge, centered, mostly horizontal without heavy tilt, tiny transparent safety margin on all sides, entire badge in frame. Calm and precise compared to energetic COMBO/FEVER wordmarks. Premium crafted game asset.
+Background: genuinely transparent RGBA outside die-cut sticker.
+Constraints: Exact text "重复" only. No English, no other Chinese, no punctuation, no eyes, no faces, no characters, no coins, no gems, no rays, no large glow, no shadow extending far outside badge, no baked rectangle background, no checkerboard rendered into artwork, no watermark.

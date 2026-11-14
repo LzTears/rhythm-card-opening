@@ -1,0 +1,2309 @@
+# gda-harness-version: 31
+extends Node
+
+# The gda harness (ADR-0017, ADR-0018). Installed as a project [autoload] by
+# `gda daemon`. It is INERT unless gda-daemon launched this run: at startup it
+# looks for the daemon's launch marker in the user args (after `--`); absent it,
+# it returns early — opening no connection, starting no server — and stays
+# resident. It must NOT free()/queue_free() itself: Godot crashes if an autoload
+# is freed at runtime, so a resident do-nothing node is the safe inert form. Thus
+# it does nothing in a human editor run, a plain `godot --path` run, and a
+# shipped/exported build.
+#
+# When the daemon DID launch this run, the marker is followed by the daemon's
+# harness endpoint and an auth token. The harness connects back over UDS or
+# Windows loopback TCP (Godot 4.6+), presents the token, then serves one
+# live op at a time: it reads a length-prefixed JSON request, runs it on the main
+# thread at a frame boundary (frame-coherent, ADR-0020), and writes back the
+# ADR-0002 sentinel payload as one length-prefixed frame.
+
+# The shared value module (ADR-0043 §7): the Value projection, the --value
+# coercion, the property readers, the reply JSON writer and the Control-position
+# write policy, the same file the headless payload preloads. The installer
+# copies it beside this script, so the path is relative to this file.
+const VALUE := preload("value.gd")
+
+const LAUNCH_MARKER := "gda-daemon"
+const RESULT_BEGIN := "<<<GDA:RESULT>>>"
+const RESULT_END := "<<<GDA:END>>>"
+
+# The active opt-in log marker (#282, ADR-0026 decision 2). `gda_log()` emits one
+# `<<<GDA:LOG>>>{json}` line into the Session log (the daemon's --log-file); the
+# Python parser (gda.daemon.diag.LOG_BEGIN) recognises the prefix and decodes the
+# JSON into a field-carrying LogRecord. A SEPARATE marker family from RESULT_BEGIN
+# above, so a log line is never mistaken for an op result. Mirrored in Python
+# (gda.daemon.diag.LOG_BEGIN); a const test (tests/cli/test_error_registry.py) keeps
+# the two byte-identical.
+const LOG_MARKER := "<<<GDA:LOG>>>"
+
+# The loopback host of a Windows harness endpoint (ADR-0047). The daemon sends the
+# endpoint as "tcp://" + LOOPBACK_HOST + ":<port>". Mirrored in Python
+# (gda.daemon.windows_discovery.LOOPBACK_HOST); if you change one, change the other.
+const LOOPBACK_HOST := "127.0.0.1"
+
+# The live operations this harness serves, keyed by their wire op name (#220, #223).
+const OP_GAME_TREE := "game-tree"
+const OP_GAME_FIND := "game-find"
+const OP_GAME_GET := "game-get"
+const OP_GAME_RECT := "game-rect"
+const OP_GAME_SET := "game-set"
+const OP_GAME_CALL := "game-call"
+const OP_PERF_MONITORS := "perf-monitors"
+const OP_PERF_MONITOR := "perf-monitor"
+const OP_PERF_SAMPLE := "perf-sample"
+const OP_INPUT_KEY := "input-key"
+const OP_INPUT_MOUSE_CLICK := "input-mouse-click"
+const OP_INPUT_MOUSE_MOVE := "input-mouse-move"
+const OP_INPUT_ACTION := "input-action"
+const OP_INPUT_TAP := "input-tap"
+const OP_INPUT_SEQUENCE := "input-sequence"
+const OP_SCREEN_CAPTURE := "screen-capture"
+const OP_SCREEN_FRAMES := "screen-frames"
+
+# The per-op LIVE failure codes the harness reports in-band (#220, #223). Each MUST be a
+# registered LIVE-category code (src/gda/core/failure/error_codes.py) so the daemon's
+# exit-0 relay is mapped by classify_live, not misrouted to contract_violation; a Python
+# mirror test (tests/cli/test_error_registry.py) keeps these in sync with the registry.
+const LIVE_ERROR_NODE_NOT_FOUND := "live_node_not_found"
+const LIVE_ERROR_NOT_CONTROL := "live_not_control"
+const LIVE_ERROR_UNKNOWN_PROPERTY := "live_unknown_property"
+const LIVE_ERROR_UNCOERCIBLE_VALUE := "live_uncoercible_value"
+const LIVE_ERROR_PERF_NODE_NOT_FOUND := "live_perf_node_not_found"
+const LIVE_ERROR_PERF_PROPERTY_NOT_FOUND := "live_perf_property_not_found"
+const LIVE_ERROR_PERF_SIGNAL_NOT_FOUND := "live_perf_signal_not_found"
+const LIVE_ERROR_INVALID_KEY := "live_invalid_key"
+const LIVE_ERROR_UNKNOWN_ACTION := "live_unknown_action"
+const LIVE_ERROR_INVALID_EVENT_SPEC := "live_invalid_event_spec"
+const LIVE_ERROR_DISPLAY_UNAVAILABLE := "live_display_unavailable"
+const LIVE_ERROR_PREDICATE_UNMET := "live_predicate_unmet"
+const LIVE_ERROR_UNKNOWN_METHOD := "live_unknown_method"
+const LIVE_ERROR_METHOD_NOT_ALLOWLISTED := "live_method_not_allowlisted"
+const LIVE_ERROR_INVALID_CALL_ARGS := "live_invalid_call_args"
+
+# The script constant an opted-in inheritance chain declares its gda-callable methods in
+# (#673): `const GDA_CALLABLE := ["method_name"]`. Read STATICALLY from the
+# script's constant map, so learning what may be called never runs project code.
+const GDA_CALLABLE_CONST := "GDA_CALLABLE"
+
+# The frame count a time-windowed op may request (#223). A window collects one
+# sample per frame, so an unbounded N would block the one-shot RPC for an unbounded
+# time; this bounds the collection to a generous ceiling. The bound is ENFORCED
+# model-side (PerfMonitorParams.frames, ADR-0015), so an over-range request is
+# rejected before it reaches the harness — the harness no longer clamps. Mirrored
+# in src/gda/core/contract/values.py (MAX_WINDOW_FRAMES); a test keeps the two in sync.
+const MAX_WINDOW_FRAMES := 600
+const WINDOW_CLOCK_PROCESS := "process"
+const WINDOW_CLOCK_PHYSICS := "physics"
+
+# The bytes ONE stored value occupies in the `perf-sample` window below (#846) —
+# its LOGICAL size, so the array's own over-allocation is outside it. A
+# PackedFloat64Array element and a PackedInt64Array element are both 8 bytes, so
+# one constant covers the value columns and the timestamp column. Reported as
+# `collector_bytes`, and mirrored by a unit test so that number stays checkable
+# without an engine.
+const PERF_PACKED_VALUE_BYTES := 8
+
+var _peer: StreamPeerSocket = null
+var _launch_token := ""
+var _received := PackedByteArray()
+var _authed := false
+# True once this run was launched by gda-daemon (the LAUNCH_MARKER is present in the
+# user args), independent of whether the IPC connection then succeeded. Gates the
+# opt-in `gda_log()` so the harness stays inert — no `<<<GDA:LOG>>>` output — in a
+# human editor run, a plain run, and a shipped build (CONTEXT.md, ADR-0018).
+var _daemon_launched := false
+# The scene selector the daemon requested (`gda daemon start --scene`, #278), or ""
+# for none. The harness verifies the ACTUALLY-loaded scene against it ONCE at launch
+# and sends the result as the second handshake frame; _scene_verified gates serving
+# ops until that frame is sent (so a mismatch is caught before any op runs).
+var _requested_scene := ""
+# The daemon-minted Engine-session identity (#660), or "" when the launcher
+# predates it. Fixed for this run's lifetime; stamped into every capture
+# receipt so the image correlates with `gda daemon status`'s session_id.
+var _session_id := ""
+# The LAUNCHED scene's identity (#660): the path the session verified at the
+# handshake and that scene file's own header uid, read once at verification —
+# the receipt reports the session's launch fact, per issue #660, not the scene
+# a later frame happens to present.
+var _launched_scene_path := ""
+var _launched_scene_uid: Variant = null
+var _scene_verified := false
+var _verify_frames := 0
+var _pending = null
+var _pending_frames := 0
+# The active time-windowed collection, or null when none is running (#223). A
+# multi-frame handler sets this from _run instead of returning a payload; the
+# _process or _physics_process loop then advances it one frame per selected clock
+# tick until it finalizes. See _begin_window / _advance_window.
+var _window_state = null
+
+
+func _ready() -> void:
+	# Defence in depth (ADR-0028): stay fully inert in any EXPORTED build, even if a
+	# build somehow shipped with the harness installed (e.g. exported outside `gda
+	# export run`, which strips it). `template` is true ONLY in an exported template
+	# build and false on the editor (tools) binary every gda-daemon session runs on —
+	# so this never disables a legitimate session, and a shipped build does literally
+	# nothing here regardless of the launch args below.
+	if OS.has_feature("template"):
+		return
+	_perf_monitors = {
+		"fps": Performance.TIME_FPS,
+		"process_time": Performance.TIME_PROCESS,
+		"physics_process_time": Performance.TIME_PHYSICS_PROCESS,
+		"static_memory": Performance.MEMORY_STATIC,
+		"static_memory_max": Performance.MEMORY_STATIC_MAX,
+		"object_count": Performance.OBJECT_COUNT,
+		"node_count": Performance.OBJECT_NODE_COUNT,
+		"orphan_node_count": Performance.OBJECT_ORPHAN_NODE_COUNT,
+		"resource_count": Performance.OBJECT_RESOURCE_COUNT,
+		"draw_calls": Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME,
+		"objects_in_frame": Performance.RENDER_TOTAL_OBJECTS_IN_FRAME,
+		"primitives_in_frame": Performance.RENDER_TOTAL_PRIMITIVES_IN_FRAME,
+		"video_memory": Performance.RENDER_VIDEO_MEM_USED,
+		"physics_2d_active_objects": Performance.PHYSICS_2D_ACTIVE_OBJECTS,
+		"physics_3d_active_objects": Performance.PHYSICS_3D_ACTIVE_OBJECTS,
+		"navigation_active_maps": Performance.NAVIGATION_ACTIVE_MAPS,
+	}
+	var user_args := OS.get_cmdline_user_args()
+	var idx := user_args.find(LAUNCH_MARKER)
+	if idx == -1 or idx + 2 >= user_args.size():
+		# Inert: not launched by gda-daemon. Stay resident and do nothing.
+		return
+	# Launched by the daemon (with a daemon-owned --log-file): the opt-in gda_log()
+	# protocol is now active. Set before the connect attempt — the log file is
+	# daemon-owned regardless of whether the live-op IPC connection then succeeds.
+	_daemon_launched = true
+	# Keep serving live operations while the game's SceneTree is paused (#656).
+	# A real pause menu sets SceneTree.paused = true; the harness's default
+	# process mode (PROCESS_MODE_INHERIT, effectively pausable at the top of the
+	# tree) would then stop THIS node's own _process from ticking too — freezing
+	# the one loop that serves the socket at exactly the state an agent needs to
+	# inspect, and with no way back in: resuming the game needs an input op, and
+	# input injection is itself served from this same loop. PROCESS_MODE_ALWAYS
+	# keeps the harness ticking through a pause, independent of the game's own
+	# process-mode tree — mirroring how a real pause-menu script must set its own
+	# process mode to keep handling "resume" input while paused. Scoped inside
+	# this daemon-launched gate (the same condition gda_log() checks), so a human
+	# editor run, a plain run, and a shipped build never have their process mode
+	# touched — the ADR-0018 inertness guarantee is unaffected.
+	process_mode = Node.PROCESS_MODE_ALWAYS
+	# Mirror the root viewport's mouse-entered state (#647). The engine keeps it
+	# private (Viewport.gui.mouse_in_viewport has no getter), but the root Window
+	# emits mouse_entered/mouse_exited on the SAME notifications that flip it —
+	# for an OS-driven enter in a windowed session and for the harness's own
+	# notify_mouse_entered() alike — so these two connections track it faithfully.
+	# _prepare_mouse_input consults the mirror to notify only on a real edge;
+	# re-notifying an already-entered viewport is an engine warning that pollutes
+	# `gda diag errors` with harness-owned noise. Scoped inside the daemon-launched
+	# gate: a human editor run and a plain run get no connections (ADR-0018).
+	get_tree().root.mouse_entered.connect(func() -> void: _mouse_in_viewport = true)
+	get_tree().root.mouse_exited.connect(func() -> void: _mouse_in_viewport = false)
+	var socket_path: String = user_args[idx + 1]
+	var token: String = user_args[idx + 2]
+	# The requested scene selector (#278) follows the token; "" (or absent) = none.
+	if idx + 3 < user_args.size():
+		_requested_scene = user_args[idx + 3]
+	# The daemon-minted session identity (#660) follows the selector; "" (or
+	# absent, from a launcher that predates it) = none.
+	if idx + 4 < user_args.size():
+		_session_id = user_args[idx + 4]
+
+	if socket_path.begins_with("tcp://" + LOOPBACK_HOST + ":"):
+		var peer := StreamPeerTCP.new()
+		if peer.connect_to_host(LOOPBACK_HOST, socket_path.get_slice(":", 2).to_int()) != OK:
+			return
+		_peer = peer
+	else:
+		var peer := StreamPeerUDS.new()
+		if peer.connect_to_host(socket_path) != OK:
+			return
+		_peer = peer
+	_peer.big_endian = true
+	_launch_token = token
+
+
+func _process(_delta: float) -> void:
+	if _peer == null:
+		return
+	_peer.poll()
+	if _peer.get_status() == StreamPeerSocket.STATUS_CONNECTING:
+		return
+	if _peer.get_status() != StreamPeerSocket.STATUS_CONNECTED:
+		_peer = null
+		_received.clear()
+		_pending = null
+		_window_state = null
+		return
+	if not _authed:
+		# TCP readiness is asynchronous. Send the original token only when ready.
+		_send_frame(_launch_token.to_utf8_buffer())
+		_authed = true
+	# Launch-time scene verification (#278): before serving ANY op, send the second
+	# handshake frame reporting whether the scene the session ACTUALLY loaded matches
+	# the requested `--scene` selector. current_scene is null at autoload _ready (the
+	# main scene loads after autoloads), so wait for it on a frame boundary — the same
+	# wait the op loop uses — with a bounded fallback so a sceneless project never
+	# hangs the handshake. Verified ONCE, never re-checked per op.
+	if not _scene_verified:
+		_verify_frames += 1
+		if get_tree().current_scene != null or _verify_frames > 300:
+			_send_scene_verification()
+			_scene_verified = true
+		return
+	# A time-windowed op owns the connection until it finalizes (#223): process-clock
+	# windows advance here, physics-clock windows advance in _physics_process. Either
+	# way, serve nothing else this tick so the single-writer order is preserved (one
+	# op at a time). _advance_window replies once and clears _window_state when done.
+	if _window_state != null:
+		if _window_clock() == WINDOW_CLOCK_PROCESS:
+			_advance_window()
+		return
+	# A stream can split either prefix or body. Retain partial bytes and return
+	# to the game's main loop until one complete frame is available.
+	if _pending == null:
+		var available := _peer.get_available_bytes()
+		if available > 0:
+			var chunk := _peer.get_partial_data(available)
+			if chunk[0] == OK:
+				_received.append_array(chunk[1])
+		if _received.size() >= 4:
+			var length := 0
+			for index in range(4):
+				length = (length << 8) | _received[index]
+			if _received.size() >= length + 4:
+				_pending = JSON.parse_string(_received.slice(4, length + 4).get_string_from_utf8())
+				_received = _received.slice(length + 4)
+				_pending_frames = 0
+	# Serve only once the runtime scene graph is up — the harness autoload's
+	# _ready runs BEFORE the main scene is instantiated, so a request that arrives
+	# during boot waits for current_scene (frame-coherent, ADR-0020); a bounded
+	# fallback to the SceneTree root means a sceneless project never hangs.
+	if _pending != null:
+		_pending_frames += 1
+		if get_tree().current_scene != null or _pending_frames > 300:
+			# _run returns a finished sentinel payload for a single-frame op (reply
+			# now), or null when the handler instead opened a multi-frame window
+			# (_window_state is set) — then the loop above drives it to completion.
+			var reply: Variant = _run(_pending)
+			_pending = null
+			if reply != null:
+				_send_frame((reply as String).to_utf8_buffer())
+
+
+func _physics_process(_delta: float) -> void:
+	if _window_state == null:
+		return
+	if _window_clock() != WINDOW_CLOCK_PHYSICS:
+		return
+	_advance_window()
+
+
+func _send_frame(payload: PackedByteArray) -> void:
+	_peer.put_u32(payload.size())
+	_peer.put_data(payload)
+
+
+# Send the launch-time scene-verification frame (#278): the JSON
+# {"scene_ok": bool, "current": "res://…"} the daemon reads after the token. With no
+# selector requested (_requested_scene == ""), scene_ok is trivially true (the
+# main_scene default is unchanged). Otherwise scene_ok is whether the ACTUALLY-loaded
+# scene matches the requested selector — the no-silent-fallback guarantee, including
+# a bad uid:// that Godot replaced with main_scene.
+func _send_scene_verification() -> void:
+	var current: Node = get_tree().current_scene
+	var current_path := String(current.scene_file_path) if current != null else ""
+	var ok := true
+	if not _requested_scene.is_empty():
+		ok = _scene_matches(_requested_scene, current_path)
+	# Remember the LAUNCHED scene's identity for capture receipts (#660, PR #746
+	# review): the receipt's scene fields are the session's launch fact per the
+	# issue, not a per-frame claim — so they are read ONCE here, at the same
+	# moment the daemon verifies the scene, never re-derived at capture time.
+	_launched_scene_path = current_path
+	_launched_scene_uid = _scene_header_uid(current_path)
+	var frame := {"scene_ok": ok, "current": current_path}
+	_send_frame(VALUE._json(frame).to_utf8_buffer())
+
+
+# Whether the loaded scene path matches the requested selector (#278). A `res://…`
+# (or filesystem) selector compares directly to the loaded scene_file_path. A
+# `uid://…` selector is resolved to its res:// path via ResourceUID and compared; a
+# uid the project does not know resolves to nothing, so it never matches — which is
+# exactly how a bad uid (that Godot silently replaced with main_scene) is caught.
+func _scene_matches(requested: String, current_path: String) -> bool:
+	if current_path.is_empty():
+		return false
+	if requested.begins_with("uid://"):
+		var id := ResourceUID.text_to_id(requested)
+		if id == -1 or not ResourceUID.has_id(id):
+			return false
+		return ResourceUID.get_id_path(id) == current_path
+	return requested == current_path
+
+
+# --- Time-windowed multi-frame base (#223) ------------------------------------
+# A multi-frame handler does not return a finished payload from _run; instead it
+# calls _begin_window with a per-frame `sample` Callable and a `finalize` Callable,
+# returning null so _process or _physics_process keeps ticking on the selected
+# clock. Each subsequent selected-clock frame, _advance_window calls `sample` once
+# (frame-coherent, ADR-0020) and accumulates its return into a samples Array; once
+# `frames` samples are collected (or an error sample is returned) it calls
+# `finalize(samples)` for the final payload and replies once. A truly stalled
+# engine never runs _advance_window at all, so the window has no timeout of its own
+# — the daemon-level `live_timeout` is the stalled-engine guard. #221's capture op
+# reuses this same base by adding its own sample/finalize Callables — no _process
+# change.
+
+# Open a window: store its frame budget, sampler, finalizer, and selected clock,
+# then let _process or _physics_process drive it. `frames` is the number of
+# per-frame samples to collect; it is already bounded to 1..MAX_WINDOW_FRAMES
+# model-side (PerfMonitorParams / InputSequenceParams, ADR-0015), so the harness
+# does not clamp. Returns null so _run's caller does not reply now.
+func _begin_window(
+		frames: int,
+		sample: Callable,
+		finalize: Callable,
+		clock: String = WINDOW_CLOCK_PROCESS) -> Variant:
+	_window_state = {
+		"budget": frames,
+		"clock": clock,
+		"samples": [],
+		"sample": sample,
+		"finalize": finalize,
+	}
+	return null
+
+
+func _window_clock() -> String:
+	if _window_state == null:
+		return WINDOW_CLOCK_PROCESS
+	var state: Dictionary = _window_state
+	return String(state.get("clock", WINDOW_CLOCK_PROCESS))
+
+
+# Advance the active window one frame. Collects one sample; finalizes once the
+# frame budget is met. A sample handler may end the window early two ways: a
+# Dictionary carrying an "error" key aborts with that envelope verbatim (e.g. a
+# node that vanished mid-window), and a Dictionary carrying a "complete" key
+# finishes successfully with _ok of that payload (e.g. a predicate capture that
+# just held, #661) — the budget is the CEILING, not the required duration.
+func _advance_window() -> void:
+	var state: Dictionary = _window_state
+	var sampler: Callable = state["sample"]
+	var sampled: Variant = sampler.call()
+	# A sampler may abort the window by returning a Dictionary with an "error" key
+	# (e.g. the monitored node was freed mid-window): send that envelope verbatim.
+	if typeof(sampled) == TYPE_DICTIONARY and (sampled as Dictionary).has("error"):
+		_finish_window(RESULT_BEGIN + VALUE._json(sampled) + RESULT_END)
+		return
+	# ...or complete it early with a success payload (#661 predicate capture).
+	if typeof(sampled) == TYPE_DICTIONARY and (sampled as Dictionary).has("complete"):
+		_finish_window(_ok((sampled as Dictionary)["complete"]))
+		return
+	var samples: Array = state["samples"]
+	samples.append(sampled)
+	if samples.size() >= int(state["budget"]):
+		var finalizer: Callable = state["finalize"]
+		_finish_window(finalizer.call(samples))
+
+
+# Reply once with a window's final payload and clear the window so the loop
+# resumes serving the next request.
+func _finish_window(payload: String) -> void:
+	_window_state = null
+	_send_frame(payload.to_utf8_buffer())
+
+
+# Dispatch one live request to its handler by op name (#220, #223). A request is
+# the ADR-0002 {"op", "params"} envelope the daemon relays verbatim. A single-frame
+# handler returns a full sentinel-framed payload (success via _ok, failure via
+# _error). A multi-frame handler instead opens a window via _begin_window and
+# returns null, so _process keeps ticking. Adding an op is one match arm + one
+# handler.
+func _run(request) -> Variant:
+	if typeof(request) != TYPE_DICTIONARY:
+		return _error("operation_failed", "unsupported live operation")
+	var op: Variant = request.get("op")
+	var params: Variant = request.get("params", {})
+	if typeof(params) != TYPE_DICTIONARY:
+		params = {}
+	match op:
+		OP_GAME_TREE:
+			return _handle_game_tree(params)
+		OP_GAME_FIND:
+			return _handle_game_find(params)
+		OP_GAME_GET:
+			return _handle_game_get(params)
+		OP_GAME_RECT:
+			return _handle_game_rect(params)
+		OP_GAME_SET:
+			return _handle_game_set(params)
+		OP_GAME_CALL:
+			return _handle_game_call(params)
+		OP_PERF_MONITORS:
+			return _handle_perf_monitors()
+		OP_PERF_MONITOR:
+			return _handle_perf_monitor(params)
+		OP_PERF_SAMPLE:
+			return _handle_perf_sample(params)
+		OP_INPUT_KEY:
+			return _handle_input_key(params)
+		OP_INPUT_MOUSE_CLICK:
+			return _handle_input_mouse_click(params)
+		OP_INPUT_MOUSE_MOVE:
+			return _handle_input_mouse_move(params)
+		OP_INPUT_ACTION:
+			return _handle_input_action(params)
+		OP_INPUT_TAP:
+			return _handle_input_tap(params)
+		OP_INPUT_SEQUENCE:
+			return _handle_input_sequence(params)
+		OP_SCREEN_CAPTURE:
+			return _handle_screen_capture(params)
+		OP_SCREEN_FRAMES:
+			return _handle_screen_frames(params)
+		_:
+			return _error("operation_failed", "unsupported live operation")
+
+
+# game tree: serialize the running SceneTree, optionally BOUNDED (#849). Without
+# params it reports the whole current scene, as it always has. `root` names the
+# subtree to read by its absolute runtime path — an unknown one is the same
+# live_node_not_found every other live op reports for a path that resolves to
+# nothing, so an empty --root is a refusal here too rather than a silent whole-tree
+# read. `max_depth` bounds the walk (0 = the addressed node alone); absent, it is
+# unbounded, which stays the caller's choice on a large tree. Both counters ride
+# back so a partial read is never mistaken for a complete one.
+func _handle_game_tree(params: Dictionary) -> String:
+	var bounds := _tree_bounds(params)
+	if bounds.has("error"):
+		return bounds["error"]
+	var scene: Node = bounds["root"]
+	var max_depth: int = bounds["max_depth"]
+	var counts := {"omitted_nodes": 0}
+	var tree := _serialize(scene, max_depth, counts)
+	var omitted := int(counts["omitted_nodes"])
+	return _ok({
+		"root": tree,
+		"truncated": omitted > 0,
+		"omitted_nodes": omitted,
+	})
+
+
+# The root and the depth bound a `game tree` read and a `game find` search SHARE
+# (#849, #855), decided in one place so the two cannot drift: the running current
+# scene unless `root` names a node, the tree root when no scene is current, and
+# the shared `live_node_not_found` refusal for a path that resolves to nothing. A
+# missing bound is -1, the "unbounded" sentinel both walks read; the CLI refuses a
+# negative --max-depth, so a caller cannot spell it. Returns
+# {"root": Node, "max_depth": int}, or {"error": <finished reply>} for the handler
+# to return as-is.
+func _tree_bounds(params: Dictionary) -> Dictionary:
+	var root: Node
+	var root_param: Variant = params.get("root")
+	if root_param is String:
+		root = _resolve_runtime_node(root_param)
+		if root == null:
+			return {"error": _error(LIVE_ERROR_NODE_NOT_FOUND,
+					"no node at runtime path: " + String(root_param))}
+	else:
+		root = get_tree().current_scene
+		if root == null:
+			root = get_tree().root
+	return {"root": root, "max_depth": _int_param(params, "max_depth", -1)}
+
+
+# game find: walk from the SAME root game tree reads (the running current scene
+# unless `root` names one) and return the FLAT list of nodes matching every named
+# selector (#855). Not a serialization: it renders no subtree, so it does not call
+# _serialize — what it shares with it is the per-node shape (name/type/path) and
+# the depth-bound + omitted-count contract, plus _subtree_size for the cost of an
+# unsearched branch. Here that count is what the search never REACHED, so a caller
+# can tell an empty result inside a fully searched subtree (absence) from one a
+# bound cut short (unknown).
+#
+# The walk keeps its OWN stack rather than recursing, the same reason the count
+# does (#849): a chain deeper than GDScript's 1024 call frames overflows, and an
+# overflowed walk would publish a partial match list as a successful search.
+# Children are pushed in reverse so the LIFO pops them in document order, which
+# is the order the result promises.
+func _handle_game_find(params: Dictionary) -> String:
+	var bounds := _tree_bounds(params)
+	if bounds.has("error"):
+		return bounds["error"]
+	var root: Node = bounds["root"]
+	var max_depth: int = bounds["max_depth"]
+	var matches: Array = []
+	var omitted := 0
+	var pending: Array = [{"node": root, "depth": 0}]
+	while not pending.is_empty():
+		var entry: Dictionary = pending.pop_back()
+		var node: Node = entry["node"]
+		var depth: int = int(entry["depth"])
+		if _node_matches_selectors(node, params, root):
+			matches.append(_match_payload(node))
+		var children: Array = node.get_children()
+		if max_depth >= 0 and depth == max_depth:
+			for child in children:
+				omitted += _subtree_size(child)
+			continue
+		for index in range(children.size() - 1, -1, -1):
+			pending.append({"node": children[index], "depth": depth + 1})
+	return _ok({
+		"matches": matches,
+		"count": matches.size(),
+		"truncated": omitted > 0,
+		"omitted_nodes": omitted,
+	})
+
+
+# Every selector the request NAMED must hold (they are ANDed); an absent one is
+# null on the wire and constrains nothing. The CLI refuses a request that names
+# none, so reaching here with all five null cannot happen through gda.
+func _node_matches_selectors(node: Node, params: Dictionary, root: Node) -> bool:
+	var wanted_type: Variant = params.get("type")
+	# The ENGINE class, subclass-inclusive: Button also answers for a CheckBox.
+	# A project class_name is invisible here — that is the script selector's job.
+	if wanted_type is String and not node.is_class(String(wanted_type)):
+		return false
+	var wanted_group: Variant = params.get("group")
+	if wanted_group is String and not node.is_in_group(StringName(String(wanted_group))):
+		return false
+	var wanted_name: Variant = params.get("name")
+	if wanted_name is String and String(node.name) != String(wanted_name):
+		return false
+	var wanted_unique: Variant = params.get("unique_name")
+	if wanted_unique is String and not _matches_unique_name(node, String(wanted_unique), root):
+		return false
+	var wanted_script: Variant = params.get("script")
+	if wanted_script is String and not _script_chain_carries(node, String(wanted_script)):
+		return false
+	return true
+
+
+# The unique-name rule (#855): a `%Name` is per OWNER, and a running tree holds
+# many owners — every autoload and every instanced sub-scene. So the match is
+# decided against the node's own owner: the flag is set, the name is the one
+# asked for, and the owner is the search root or lies inside the searched
+# subtree. The engine keeps an owner an ancestor of what it owns
+# (Node::set_owner), so "outside" can only mean ABOVE the search root — the case
+# this excludes, where a node inside the searched subtree carries a `%` name its
+# enclosing scene declared. A node with the flag but no owner addresses nothing.
+func _matches_unique_name(node: Node, wanted: String, root: Node) -> bool:
+	if not node.unique_name_in_owner:
+		return false
+	if String(node.name) != wanted:
+		return false
+	var owner_node: Node = node.owner
+	if owner_node == null:
+		return false
+	return owner_node == root or root.is_ancestor_of(owner_node)
+
+
+# The script selector (#855): the node's attached script, or ANY script in its
+# base chain, is the named resource. Walking the chain is what lets one selector
+# name a base `class_name` and match every node extending it.
+func _script_chain_carries(node: Node, wanted: String) -> bool:
+	var script: Variant = node.get_script()
+	while script is Script:
+		if String(script.resource_path) == wanted:
+			return true
+		script = script.get_base_script()
+	return false
+
+
+# One match: game tree's per-node identity (name/type/path) plus the res:// path
+# of the script this node itself carries — null when it has none, and null too
+# when the script has NO resource_path, which is one created and assigned at run
+# time (GDScript.new()). A script stored inside a scene file is not that case: it
+# has a sub-resource path (res://main.tscn::GDScript_abc12) and reports it. Never
+# the base script the chain matched: the caller asked which nodes match, and this
+# answers what each one is.
+func _match_payload(node: Node) -> Dictionary:
+	var script: Variant = node.get_script()
+	var script_path: Variant = null
+	if script is Script and not String(script.resource_path).is_empty():
+		script_path = String(script.resource_path)
+	return {
+		"name": String(node.name),
+		"type": node.get_class(),
+		"path": String(node.get_path()),
+		"script_path": script_path,
+	}
+
+
+# The reads a caller reaches for when a Control looks wrong on screen (#852,
+# GDA-DF-071), none of which game get can serve: position and size carry editor
+# usage only, global_position carries no usage flags, and global_rect is a
+# method — so none of them is in the storage set this handler reads. They are
+# layout OUTPUT, which game rect reports.
+const CONTROL_LAYOUT_READS := ["position", "size", "global_position", "global_rect"]
+
+
+# game get: resolve a node by its ABSOLUTE runtime path (as game tree reports it,
+# e.g. /root/Main/Player) and report its storage properties as typed JSON — the
+# runtime counterpart of headless node get. An optional `property` param filters
+# to that single property; absent from the storage set, it is live_unknown_property.
+func _handle_game_get(params: Dictionary) -> String:
+	var path := VALUE._string_param(params, "node")
+	var node := _resolve_runtime_node(path)
+	if node == null:
+		return _error(LIVE_ERROR_NODE_NOT_FOUND,
+				"no node at runtime path: " + path)
+
+	# The texture-digest opt-in (#666): threaded into the shared projection so
+	# a path-less Texture2D value carries its content digest on request.
+	var texture_digest := bool(params.get("texture_digest", false))
+	var wanted := VALUE._string_param(params, "property")
+	var has_filter := params.has("property") and not wanted.is_empty()
+	var properties: Array = []
+	for prop in node.get_property_list():
+		if not VALUE._is_storage_property(prop):
+			continue
+		var prop_name := String(prop.get("name", ""))
+		if has_filter and prop_name != wanted:
+			continue
+		properties.append({
+			"name": prop_name,
+			"type": VALUE._type_name(int(prop.get("type", TYPE_NIL))),
+			"value": VALUE._jsonify(node.get(prop_name), 0, texture_digest),
+		})
+	if has_filter and properties.is_empty():
+		var script_property := _explicit_script_variable_property(
+				node, wanted, texture_digest)
+		if not script_property.is_empty():
+			properties.append(script_property)
+	if has_filter and properties.is_empty():
+		if node is Control and CONTROL_LAYOUT_READS.has(wanted):
+			return _error(LIVE_ERROR_UNKNOWN_PROPERTY,
+					_control_layout_read_message(node as Control, path, wanted))
+		return _error(LIVE_ERROR_UNKNOWN_PROPERTY,
+				_unknown_runtime_property_message(path, wanted))
+
+	return _ok({
+		"path": path,
+		"name": String(node.name),
+		"type": node.get_class(),
+		"properties": properties,
+	})
+
+
+func _explicit_script_variable_property(
+		node: Node, prop_name: String, texture_digest: bool = false) -> Dictionary:
+	for prop in node.get_property_list():
+		if String(prop.get("name", "")) != prop_name:
+			continue
+		if not _is_script_variable(prop):
+			continue
+		var value: Variant = node.get(prop_name)
+		var declared_type := int(prop.get("type", TYPE_NIL))
+		if declared_type == TYPE_NIL:
+			declared_type = typeof(value)
+		return {
+			"name": prop_name,
+			"type": VALUE._type_name(declared_type),
+			"value": VALUE._jsonify(value, 0, texture_digest),
+		}
+	return {}
+
+
+# The refusal for a CONTROL_LAYOUT_READS spelling on a Control: the generic
+# message says the read failed but not where the answer is, which left the
+# dogfooding caller stranded on exactly the reads game rect serves. So it names
+# that command and every field it reports, then the layout INPUTS — the storage
+# properties game get and game set do serve. Any other node keeps the generic
+# message: it has no layout output to redirect to.
+#
+# Which inputs those are depends on the PARENT, so the last sentence branches on
+# the same VALUE._has_container_parent predicate game set uses: the engine drops
+# PROPERTY_USAGE_DEFAULT from offset_*, anchor_*, grow_* and anchors_preset on a
+# direct child of a Container (Control::_validate_property, not editor-gated), so
+# naming them there sends the caller into a SECOND live_unknown_property. A
+# container-managed child gets the inputs it does carry.
+func _control_layout_read_message(
+		control: Control, path: String, prop_name: String) -> String:
+	return _unknown_runtime_property_message(path, prop_name) \
+			+ ". On a Control, position, size, global_position and global_rect are" \
+			+ " layout output, not storage properties: read them with `gda game rect " \
+			+ path + "`, which reports position, size, local_position, local_size," \
+			+ " minimum_size and combined_minimum_size." \
+			+ VALUE._control_layout_inputs(control)
+
+
+# game rect: resolve a node by its ABSOLUTE runtime path, require it to be a
+# Control, and report what the layout PRODUCED for it — no storage property
+# carries that. The rendered viewport-space rect comes from
+# Control.get_global_rect() and the parent-space one from Control.get_rect();
+# the two differ by the ancestors' TRANSFORM — an ancestor offset moves the
+# origin, an ancestor scale multiplies the origin and the size. The local rect is
+# built from the local transform too, so its origin is the node's own position
+# moved by pivot_offset where a scale or a rotation is set, and its size is the
+# node's own size multiplied by the node's own scale. The two minimum sizes are
+# the layout's own inputs and are DIFFERENT reads (#852): get_minimum_size() is
+# the class's intrinsic minimum and excludes the authored custom_minimum_size,
+# while get_combined_minimum_size() is the per-axis maximum of the two — what a
+# parent Container honors. The first read RUNS PROJECT CODE where the class
+# leaves the getter to Control: Control::get_minimum_size() is the
+# _get_minimum_size virtual with no cache, so a script override of it runs once
+# per request, and twice where the combined read finds the minimum-size cache
+# stale (CONTEXT.md, Project-code execution surface). The combined read beside it
+# takes that cache first, and recomputes through the same virtual where it is
+# stale.
+func _handle_game_rect(params: Dictionary) -> String:
+	var path := VALUE._string_param(params, "node")
+	var node := _resolve_runtime_node(path)
+	if node == null:
+		return _error(LIVE_ERROR_NODE_NOT_FOUND,
+				"no node at runtime path: " + path)
+	if not (node is Control):
+		return _error(LIVE_ERROR_NOT_CONTROL,
+				"node at runtime path is not a Control: " + path)
+
+	var control: Control = node as Control
+	var rect := control.get_global_rect()
+	var local_rect := control.get_rect()
+	return _ok({
+		"path": path,
+		"name": String(control.name),
+		"type": control.get_class(),
+		"position": VALUE._jsonify(rect.position),
+		"size": VALUE._jsonify(rect.size),
+		"local_position": VALUE._jsonify(local_rect.position),
+		"local_size": VALUE._jsonify(local_rect.size),
+		"minimum_size": VALUE._jsonify(control.get_minimum_size()),
+		"combined_minimum_size": VALUE._jsonify(control.get_combined_minimum_size()),
+	})
+
+
+# game set: resolve a node by its ABSOLUTE runtime path, coerce the CLI string
+# value to the property's declared Godot type, and set it on the live node — the
+# runtime counterpart of headless node set, using the SAME coercion table. The
+# write runs synchronously on the main thread at the _process frame boundary
+# (frame-coherent, ADR-0020); no extra threading. The coerced value is read back
+# and echoed in the same JSON projection game get reports. A completed live set
+# returns whether that observed read-back value matches the coerced requested
+# value; the harness does not guess whether a mismatch is a no-op or an
+# edge-triggered/self-consuming variable.
+# game call: invoke ONE method the addressed node's script chain DECLARED callable,
+# and project its return value (#673, GDA-DF-033). The dogfooding gap: a debug
+# state contract exposed as a method was unreadable — `game get` reads stored
+# properties only — so evidence fell back to index properties plus screenshots.
+#
+# The declaration is resolved from the node's ATTACHED script along its base
+# chain: the script constant `GDA_CALLABLE` (an Array of method names), carried
+# by AT MOST ONE class of the chain — GDScript forbids redeclaring a base's
+# constant — so the read-only assertion lives in the project's own source, under
+# its own code review, though not necessarily in the file of every method it
+# names (ADR-0041). It is read STATICALLY from the script constant map: learning what
+# may be called runs no project code, so the bootstrap itself cannot have side
+# effects. A node with no script, no constant, or a constant that does not name
+# the method declares nothing — default deny.
+#
+# gda cannot verify that a declared method has no side effects; the allowlist
+# records the DECLARER's assertion. What gda guarantees is that no UNDECLARED
+# method is callable. Failures are distinguishable: a method the node does not
+# have is live_unknown_method (checked first — the project is trusted, ADR-0009,
+# so the more precise diagnosis is the useful one), a method it has but never
+# declared is live_method_not_allowlisted (whose message names the declared set),
+# and an argument the method cannot take (count or type) is
+# live_invalid_call_args — refused BEFORE the call, since callv would otherwise
+# push an engine error and return a null gda would report as a successful read.
+func _handle_game_call(params: Dictionary) -> String:
+	var path := VALUE._string_param(params, "node")
+	var node := _resolve_runtime_node(path)
+	if node == null:
+		return _error(LIVE_ERROR_NODE_NOT_FOUND,
+				"no node at runtime path: " + path)
+	var method := VALUE._string_param(params, "method")
+	if not node.has_method(method):
+		return _error(LIVE_ERROR_UNKNOWN_METHOD,
+				"the node at " + path + " has no method named " + method)
+	var declared := _declared_callables(node)
+	if not declared.has(method):
+		var names := ", ".join(declared) if not declared.is_empty() else "(none)"
+		return _error(LIVE_ERROR_METHOD_NOT_ALLOWLISTED,
+				"the method " + method + " is not declared callable by the node at "
+				+ path + "; its script chain declares: " + names
+				+ ". Declare it in the script constant `const "
+				+ GDA_CALLABLE_CONST + " := [\"" + method + "\"]` to allow it")
+	var raw_args: Variant = params.get("args", [])
+	var args: Array = raw_args if typeof(raw_args) == TYPE_ARRAY else []
+	var signature := _method_signature(node, method)
+	var refusal := _call_argument_error(signature, args)
+	if not refusal.is_empty():
+		return _error(LIVE_ERROR_INVALID_CALL_ARGS, refusal)
+	return _ok({
+		"path": path,
+		"name": String(node.name),
+		"type": node.get_class(),
+		"method": method,
+		"value": VALUE._jsonify(node.callv(method, args)),
+	})
+
+
+# The gda-callable method names resolved from the node's attached script along its
+# base chain (#673), so a base declaration covers its subclasses. Read from the
+# constant map — never by calling
+# into the project — and normalized to Strings, so a malformed declaration (a
+# non-Array constant, or entries that are not names) declares nothing rather
+# than failing the call with an unrelated error.
+func _declared_callables(node: Node) -> Array:
+	var names: Array = []
+	var script: Script = node.get_script() as Script
+	while script != null:
+		var constants: Dictionary = script.get_script_constant_map()
+		var declared: Variant = constants.get(GDA_CALLABLE_CONST, null)
+		if typeof(declared) == TYPE_ARRAY or typeof(declared) == TYPE_PACKED_STRING_ARRAY:
+			for entry in declared:
+				if typeof(entry) != TYPE_STRING and typeof(entry) != TYPE_STRING_NAME:
+					continue
+				var entry_name := String(entry)
+				if not names.has(entry_name):
+					names.append(entry_name)
+		script = script.get_base_script()
+	return names
+
+
+# The method's own description from get_method_list(), or an empty Dictionary when the
+# list does not describe it (the has_method gate already established it exists).
+func _method_signature(node: Node, method: String) -> Dictionary:
+	for entry in node.get_method_list():
+		if String(entry.get("name", "")) == method:
+			return entry
+	return {}
+
+
+# Why the supplied arguments cannot reach the method, or "" when they can (#673,
+# PR #749 review). BOTH the count and each argument's TYPE are checked HERE,
+# before the call: `callv` with arguments it cannot convert pushes an engine
+# error, returns null, and pollutes the Session log — a failure gda would
+# otherwise report as a successful read of `null`, indistinguishable from a void
+# return (reproduced on Godot 4.6.3 for a String into `int`, a Dictionary into an
+# Object parameter, null into `int`, and a JSON array into `Array[int]`).
+func _call_argument_error(signature: Dictionary, args: Array) -> String:
+	if signature.is_empty():
+		return ""
+	var declared_args: Array = signature.get("args", [])
+	var defaults: Array = signature.get("default_args", [])
+	var method := String(signature.get("name", ""))
+	var required := declared_args.size() - defaults.size()
+	var vararg := (int(signature.get("flags", 0)) & METHOD_FLAG_VARARG) != 0
+	if args.size() < required:
+		return ("the method " + method + " needs at least " + str(required)
+				+ " argument(s); " + str(args.size()) + " supplied")
+	if not vararg and args.size() > declared_args.size():
+		return ("the method " + method + " accepts at most "
+				+ str(declared_args.size()) + " argument(s); " + str(args.size())
+				+ " supplied")
+	for index in range(mini(args.size(), declared_args.size())):
+		var spec: Dictionary = declared_args[index]
+		var reason := _argument_type_refusal(spec, args[index])
+		if not reason.is_empty():
+			return ("the method " + method + " cannot take argument "
+					+ str(index + 1) + " (" + String(spec.get("name", "")) + "): "
+					+ reason)
+	return ""
+
+
+# The engine's own strict-conversion closure for the SIX Variant types the live
+# JSON parser can produce, keyed by the SOURCE type (#673, PR #749 re-review).
+# Godot's JSON.parse_string materializes every number as TYPE_FLOAT, including a
+# literal without a fractional part; TYPE_INT is therefore a reachable TARGET
+# (from bool/float) but not a live JSON SOURCE. Every row is transcribed
+# mechanically from `Variant::can_convert_strict`
+# (core/variant/variant.cpp), which is NOT exposed to GDScript: its per-target
+# `valid[]` lists are NIL-TERMINATED, so a NIL entry is the terminator rather than
+# a legal source, and `from NIL` is decided by an early return (only OBJECT).
+# Transcribing the closure by hand made a first version REJECT calls Godot
+# accepts (String -> Color, Array -> Packed*Array), so a real-engine conformance
+# matrix now uses a direct `callv` as the ORACLE — the engine decides, this table
+# only has to agree with it.
+const JSON_ARGUMENT_CONVERSIONS := {
+	TYPE_NIL: [TYPE_OBJECT],
+	TYPE_BOOL: [TYPE_INT, TYPE_FLOAT],
+	TYPE_FLOAT: [TYPE_BOOL, TYPE_INT],
+	TYPE_STRING: [TYPE_STRING_NAME, TYPE_NODE_PATH, TYPE_COLOR],
+	TYPE_ARRAY: [
+		TYPE_PACKED_BYTE_ARRAY, TYPE_PACKED_INT32_ARRAY, TYPE_PACKED_INT64_ARRAY,
+		TYPE_PACKED_FLOAT32_ARRAY, TYPE_PACKED_FLOAT64_ARRAY,
+		TYPE_PACKED_STRING_ARRAY, TYPE_PACKED_COLOR_ARRAY,
+		TYPE_PACKED_VECTOR2_ARRAY, TYPE_PACKED_VECTOR3_ARRAY,
+		TYPE_PACKED_VECTOR4_ARRAY,
+	],
+	TYPE_DICTIONARY: [],
+}
+
+
+# Why one JSON-supplied value cannot reach one declared parameter, or "" when it
+# can (#673). Reads the closure above; where the engine converts, gda calls.
+func _argument_type_refusal(spec: Dictionary, value: Variant) -> String:
+	var to_type := int(spec.get("type", TYPE_NIL))
+	var from_type := typeof(value)
+	if to_type == TYPE_NIL:
+		return ""  # an untyped (Variant) parameter takes anything
+	if to_type == from_type:
+		# Identity — except a TYPED container, which an untyped JSON Array or
+		# Dictionary cannot satisfy whatever its contents: the engine refuses
+		# `Array` -> `Array[int]` outright ("Cannot convert argument 1 from
+		# Array to Array."), so no JSON value can reach such a parameter.
+		if (to_type == TYPE_ARRAY or to_type == TYPE_DICTIONARY) \
+				and int(spec.get("hint", PROPERTY_HINT_NONE)) != PROPERTY_HINT_NONE:
+			return ("it is a typed " + VALUE._type_name(to_type) + " ("
+					+ String(spec.get("hint_string", "")) + "), which a JSON "
+					+ "argument cannot satisfy; declare the parameter untyped to "
+					+ "make it callable")
+		return ""
+	var reachable: Array = JSON_ARGUMENT_CONVERSIONS.get(from_type, [])
+	if reachable.has(to_type):
+		return ""
+	return ("a " + VALUE._type_name(from_type) + " value cannot convert to "
+			+ VALUE._type_name(to_type))
+
+
+func _handle_game_set(params: Dictionary) -> String:
+	var path := VALUE._string_param(params, "node")
+	var node := _resolve_runtime_node(path)
+	if node == null:
+		return _error(LIVE_ERROR_NODE_NOT_FOUND,
+				"no node at runtime path: " + path)
+
+	var prop_name := VALUE._string_param(params, "property")
+	if VALUE._is_control_position_write(node, prop_name):
+		var control: Control = node as Control
+		if VALUE._has_container_parent(control):
+			return _error(LIVE_ERROR_UNKNOWN_PROPERTY,
+					VALUE._control_position_unavailable_message("node " + path, control))
+		var raw_position := VALUE._string_param(params, "value")
+		var target_position: Variant = VALUE._write_control_position(control, raw_position)
+		if target_position == null:
+			return _error(LIVE_ERROR_UNCOERCIBLE_VALUE,
+					VALUE._control_position_uncoercible_message(raw_position, "node " + path))
+		return _ok({
+			"path": path,
+			"property": prop_name,
+			"type": VALUE._type_name(TYPE_VECTOR2),
+			"value": VALUE._jsonify(control.position),
+			"verified": control.position == target_position,
+		})
+
+	var prop_info := _runtime_set_property_info(node, prop_name)
+	if prop_info.is_empty():
+		return _error(LIVE_ERROR_UNKNOWN_PROPERTY,
+				_unknown_runtime_property_message(path, prop_name))
+	var declared_type := int(prop_info.get("type", TYPE_NIL))
+	var source := String(prop_info.get("source", "property"))
+
+	var raw_value := VALUE._string_param(params, "value")
+	var before: Variant = node.get(prop_name)
+	var coerced: Variant = VALUE._coerce_value(raw_value, declared_type, before)
+	if coerced == null:
+		var subject := "script variable " + prop_name \
+				if source == "script variable" else "property " + prop_name
+		return _error(LIVE_ERROR_UNCOERCIBLE_VALUE, VALUE._uncoercible_message(
+				raw_value, declared_type, subject + " on node " + path))
+
+	node.set(prop_name, coerced)
+	var current: Variant = node.get(prop_name)
+	return _ok({
+		"path": path,
+		"property": prop_name,
+		"type": VALUE._type_name(declared_type),
+		"value": VALUE._jsonify(current),
+		"verified": current == coerced,
+	})
+
+
+func _runtime_set_property_info(node: Node, prop_name: String) -> Dictionary:
+	var storage_type := VALUE._property_type(node, prop_name)
+	if storage_type != TYPE_NIL:
+		return {"type": storage_type, "source": "property"}
+	for prop in node.get_property_list():
+		if String(prop.get("name", "")) != prop_name:
+			continue
+		var usage := int(prop.get("usage", 0))
+		if (usage & PROPERTY_USAGE_SCRIPT_VARIABLE) == 0:
+			continue
+		var declared_type := int(prop.get("type", TYPE_NIL))
+		if declared_type == TYPE_NIL:
+			declared_type = typeof(node.get(prop_name))
+		return {"type": declared_type, "source": "script variable"}
+	return {}
+
+
+func _unknown_runtime_property_message(path: String, prop_name: String) -> String:
+	return "node " + path + " has no runtime, storage, or script property: " + prop_name
+
+
+# --- perf (runtime performance monitoring, #223) ------------------------------
+
+# The performance monitors snapshotted by `perf monitors`, keyed by their public
+# name. Each entry pairs the human/wire name with the Godot Performance.Monitor
+# enum to sample (#223). Built once at _ready (a plain var, not a const, so the
+# initializer is an ordinary runtime expression and never a const-expression
+# concern). One source of truth so the snapshot and any docs stay in step; the
+# breadth covers timing, memory, object counts, render stats, and the active
+# physics/navigation object counts.
+var _perf_monitors := {}
+
+
+# perf monitors: snapshot the running game's performance monitors in one frame —
+# the instantaneous counters Godot's Performance singleton exposes (fps, frame
+# timing, memory, object/node counts, render stats, active physics/navigation
+# objects). Single-frame and frame-coherent (ADR-0020): every value reads on the
+# same _process tick. The value's type is the Godot type Performance.get_monitor
+# returns (a float), reported so a consumer need not guess.
+func _handle_perf_monitors() -> String:
+	var monitors := {}
+	for name in _perf_monitors:
+		var value: float = Performance.get_monitor(_perf_monitors[name])
+		monitors[name] = {
+			"name": name,
+			"type": VALUE._type_name(typeof(value)),
+			"value": VALUE._jsonify(value),
+		}
+	return _ok({
+		"timestamp": Time.get_ticks_msec(),
+		"monitors": monitors,
+	})
+
+
+# perf sample: collect the ENGINE performance monitors per frame over a bounded
+# window (#662) — the windowed counterpart of the one-frame `perf monitors`
+# snapshot, on the same time-windowed base `perf monitor` uses (#223). Each
+# selected-clock frame the sampler reads every SELECTED monitor (all of them
+# when the selection is empty), frame-coherently (ADR-0020), and the reply
+# carries the collected window plus the bytes the sampler retained for it. The
+# harness stays dumb on purpose: the aggregate statistics and any budget
+# verdicts are computed CLI-side, where the numeric semantics are unit-testable
+# without an engine. The frame count is bounded model-side (ADR-0015); the
+# unknown-monitor arm below is defensive only (the CLI validates names against
+# its mirrored table before dispatch).
+func _handle_perf_sample(params: Dictionary) -> Variant:
+	var frames := _int_param(params, "frames", 60)
+	var raw_names: Variant = params.get("monitors", [])
+	var names: Array = raw_names if typeof(raw_names) == TYPE_ARRAY else []
+	if names.is_empty():
+		names = _perf_monitors.keys()
+	for name in names:
+		if not _perf_monitors.has(String(name)):
+			return _error("operation_failed",
+					"unknown performance monitor: " + String(name))
+	# The observer's own storage (#846). The window is kept COLUMN-wise in packed
+	# arrays — one PackedFloat64Array per monitor, plus one PackedInt64Array of
+	# timestamps — instead of one Dictionary per frame. A stored value then costs
+	# 8 bytes instead of a hash node and two boxed Variants, which is what the
+	# dogfooding report needed: its stable window rose 1.2 MB of `static_memory`
+	# with every object/node/resource count flat, and 600 retained Dictionaries
+	# were the most plausible source. The frame index is positional (entry i IS
+	# frame i), so it is not stored.
+	#
+	# A packed array is passed by REFERENCE in Godot 4 (the engine's own class
+	# reference states it), so the sampler appends to the very arrays the
+	# finalizer reports: a local bound to a column is the same array as the
+	# Dictionary's entry, and a lambda's by-value capture of `timestamps` is the
+	# same array too. No write-back, and no `frame_box` indirection like the one
+	# an accumulated INT needs in the handlers above.
+	var timestamps := PackedInt64Array()
+	var columns := {}
+	for name in names:
+		columns[String(name)] = PackedFloat64Array()
+	var sample := func() -> Variant:
+		timestamps.append(Time.get_ticks_msec())
+		for name in names:
+			var key := String(name)
+			var column: PackedFloat64Array = columns[key]
+			column.append(Performance.get_monitor(_perf_monitors[key]))
+		return null
+	var finalize := func(samples: Array) -> String:
+		# What the COLUMNS hold, which is what grows with the frame count — the
+		# logical size, and so a LOWER bound on what the window costs in the game.
+		# Two parts are outside it: a packed column over-allocates as it grows,
+		# and the shared window base accumulates one Array entry per frame (a nil
+		# here, since this sampler returns none). `samples` is in hand, so counting
+		# that accumulator would be one line right here; it is left out because it
+		# would not close the gap — measured at 600 frames over 16 monitors, on
+		# macOS with Godot 4.6.3: 81,600 + 17,128 against a 113,872-byte
+		# static_memory rise, the remainder being over-allocation on the columns
+		# already counted — and closing the rest would need an engine-internal
+		# sizeof(Variant) estimate. A true total belongs in a separately measured
+		# field, not in this one.
+		var stored := timestamps.size()
+		for name in names:
+			var column: PackedFloat64Array = columns[String(name)]
+			stored += column.size()
+		return _ok({
+			"kind": "sample",
+			"frames": samples.size(),
+			"monitors": names,
+			"timestamps": timestamps,
+			"values": columns,
+			"collector_bytes": stored * PERF_PACKED_VALUE_BYTES,
+		})
+	return _begin_window(frames, sample, finalize)
+
+
+# perf monitor: collect a per-frame timeline over a window (#223) — either a
+# property's value each frame (--property) or a signal's emissions over the window
+# (--signal). The first time-windowed live op, built on the multi-frame base: it
+# resolves and validates up front (a missing node / property / signal fails
+# immediately), then opens a window whose sampler runs once per frame. The reply
+# is one blocking payload carrying the whole timeline (ADR-0017 one-shot RPC).
+func _handle_perf_monitor(params: Dictionary) -> Variant:
+	var path := VALUE._string_param(params, "node")
+	var node := _resolve_runtime_node(path)
+	if node == null:
+		return _error(LIVE_ERROR_PERF_NODE_NOT_FOUND,
+				"no node at runtime path: " + path)
+
+	var frames := _int_param(params, "frames", 1)
+	var prop_name := VALUE._string_param(params, "property")
+	var signal_name := VALUE._string_param(params, "signal")
+
+	if params.has("signal") and not signal_name.is_empty():
+		return _begin_signal_monitor(node, path, signal_name, frames)
+	if params.has("property") and not prop_name.is_empty():
+		return _begin_property_monitor(node, path, prop_name, frames)
+	# Neither selector given: a property monitor with an empty property is an
+	# unknown property, the clearest of the two for a malformed request.
+	return _error(LIVE_ERROR_PERF_PROPERTY_NOT_FOUND,
+			"node " + path + " perf monitor needs a --property or --signal")
+
+
+# Open a property timeline window: validate the property is readable, then sample
+# its jsonified value each frame. The sampler re-resolves nothing — the node is
+# captured — but a node freed mid-window yields a typed error sample that aborts
+# the window cleanly.
+func _begin_property_monitor(node: Node, path: String, prop_name: String, frames: int) -> Variant:
+	if VALUE._property_type(node, prop_name) == TYPE_NIL:
+		return _error(LIVE_ERROR_PERF_PROPERTY_NOT_FOUND,
+				"node " + path + " has no readable property: " + prop_name)
+	var node_ref: WeakRef = weakref(node)
+	var frame_box := {"n": 0}
+	var sample := func() -> Variant:
+		var live: Node = node_ref.get_ref()
+		if live == null:
+			return {"error": {
+				"code": LIVE_ERROR_PERF_NODE_NOT_FOUND,
+				"message": "node " + path + " was freed during monitoring",
+			}}
+		var entry := {
+			"frame": int(frame_box["n"]),
+			"timestamp": Time.get_ticks_msec(),
+			"value": VALUE._jsonify(live.get(prop_name)),
+		}
+		frame_box["n"] = int(frame_box["n"]) + 1
+		return entry
+	var finalize := func(samples: Array) -> String:
+		return _ok({
+			"node": path,
+			"kind": "property",
+			"property": prop_name,
+			"frames": samples.size(),
+			"samples": samples,
+		})
+	return _begin_window(frames, sample, finalize)
+
+
+# Open a signal timeline window: validate the signal exists, connect a recorder
+# that appends each emission ({frame, args, timestamp}), and sample the current
+# frame index each frame. On finalize, disconnect and return the recorded
+# emissions. The per-frame sample drives the window's clock; the recorder runs on
+# the signal's own emission, so an emission is tagged with the frame it landed in.
+func _begin_signal_monitor(node: Node, path: String, signal_name: String, frames: int) -> Variant:
+	var arg_count := _signal_arg_count(node, signal_name)
+	if arg_count < 0:
+		return _error(LIVE_ERROR_PERF_SIGNAL_NOT_FOUND,
+				"node " + path + " has no signal: " + signal_name)
+	var emissions: Array = []
+	var frame_box := {"n": 0}
+	# A signal carries a fixed declared arg count; a recorder Callable connected to
+	# a signal must accept at least that many positional args. A max-arity recorder
+	# (4 defaulted params) accepts any signal up to 4 args, and the declared count
+	# (captured above) tells it exactly how many of its params are real emission
+	# args — so a legitimate null arg within the declared arity is preserved and a
+	# trailing default is never mistaken for one.
+	var recorder := func(arg0 = null, arg1 = null, arg2 = null, arg3 = null) -> void:
+		var all_args := [arg0, arg1, arg2, arg3]
+		var args: Array = []
+		for i in mini(arg_count, all_args.size()):
+			args.append(VALUE._jsonify(all_args[i]))
+		emissions.append({
+			"frame": int(frame_box["n"]),
+			"timestamp": Time.get_ticks_msec(),
+			"args": args,
+		})
+	node.connect(signal_name, recorder)
+	var node_ref: WeakRef = weakref(node)
+	var sample := func() -> Variant:
+		frame_box["n"] = int(frame_box["n"]) + 1
+		return null
+	var finalize := func(samples: Array) -> String:
+		var live: Node = node_ref.get_ref()
+		if live != null and live.is_connected(signal_name, recorder):
+			live.disconnect(signal_name, recorder)
+		# Report the ACTUAL window length (one per-frame sample was accumulated each
+		# tick), consistent with the property finalizer's samples.size() — not the
+		# originally-requested `frames`.
+		return _ok({
+			"node": path,
+			"kind": "signal",
+			"signal": signal_name,
+			"frames": samples.size(),
+			"emissions": emissions,
+		})
+	return _begin_window(frames, sample, finalize)
+
+
+# The declared positional argument count of `node`'s signal by this name, or -1
+# when the node declares no such signal — read from get_signal_list (the runtime
+# signal surface, including script-declared signals). Validating off the signal
+# list, not a try/connect (which only fails at emit time), and the arg count
+# bounds how many emission args the recorder records.
+func _signal_arg_count(node: Node, signal_name: String) -> int:
+	for sig in node.get_signal_list():
+		if String(sig.get("name", "")) == signal_name:
+			var args: Variant = sig.get("args", [])
+			return (args as Array).size() if typeof(args) == TYPE_ARRAY else 0
+	return -1
+
+
+# --- input (runtime input simulation, #221) -----------------------------------
+#
+# Inject input into the RUNNING game on the main thread at a frame boundary
+# (ADR-0020). Key/mouse events ride the game's real input flow via the root
+# viewport's push_input (scene-aware); actions go through Input.action_press/
+# release against the running InputMap — unless the caller opts in with
+# `as_event` (#854), which sends the action through push_input as an
+# InputEventAction instead. The two doors stay disjoint either way: a state
+# change reaches no handler, and a pushed event leaves the polled state
+# untouched. The model bounds every request up front
+# (ADR-0015), so the harness only decides what needs the live engine: a key name
+# the engine cannot resolve (live_invalid_key) and an action the running InputMap
+# does not declare (live_unknown_action). `input sequence` reuses the time-windowed
+# multi-frame base (#223): each selected-clock frame, the sampler applies the events
+# due at that index, and finalize returns the applied-events summary. Existing
+# `frame` offsets use the harness/process clock; #391's `physics_frame` offsets use
+# Godot's fixed physics clock.
+
+
+# The root Viewport push_input targets, the same surface real OS input flows
+# through, so an injected event is dispatched to the game exactly as a genuine one
+# would be (scene-aware). One source of truth for every key/mouse injection.
+func _input_viewport() -> Viewport:
+	return get_tree().root
+
+
+var _last_injected_mouse_position: Variant = null
+var _injected_mouse_button_mask := 0
+# Whether the root viewport currently believes the mouse is in its area, mirrored
+# from the root Window's mouse_entered/mouse_exited signals (connected at _ready,
+# #647). Starts false: a fresh engine session has received no enter notification.
+var _mouse_in_viewport := false
+
+
+func _prepare_mouse_input() -> Viewport:
+	var viewport := _input_viewport()
+	# Notify only on a real edge (#647): notify_mouse_entered() on an
+	# already-entered viewport is an engine warning ("The Viewport was previously
+	# notified...") that lands in the Session log and pollutes `gda diag errors`
+	# on every injected mouse event after the first. The mirror also covers an
+	# OS-driven enter in a windowed session (no notify needed at all) and an
+	# OS-driven exit (the next injection re-notifies).
+	if not _mouse_in_viewport:
+		viewport.notify_mouse_entered()
+	return viewport
+
+
+# Resolve a key name to a Godot keycode via the engine's own name table. Returns
+# KEY_NONE (0) for a name the engine does not recognize — the one runtime failure
+# the model cannot pre-validate (the keycode table is the engine's), surfaced as
+# live_invalid_key.
+func _resolve_keycode(key: String) -> int:
+	return OS.find_keycode_from_string(key)
+
+
+# Build an InputEventKey for a resolved keycode, applying the modifier flags from
+# the request. The modifier set is already bounded model-side, so an unknown
+# modifier never reaches here; the loop maps each known name to its flag.
+func _make_key_event(keycode: int, modifiers: Array, pressed: bool) -> InputEventKey:
+	var event := InputEventKey.new()
+	event.keycode = keycode
+	event.physical_keycode = keycode
+	event.pressed = pressed
+	for modifier in modifiers:
+		match String(modifier):
+			"shift":
+				event.shift_pressed = true
+			"ctrl":
+				event.ctrl_pressed = true
+			"alt":
+				event.alt_pressed = true
+			"meta":
+				event.meta_pressed = true
+	return event
+
+
+# The Godot MOUSE_BUTTON_* index for a CLI button name. The model bounds the name
+# to the known enum, so the fallthrough is only reached by a request that bypassed
+# the model; it degrades to the left button rather than crashing.
+func _mouse_button_index(button: String) -> int:
+	match button:
+		"right":
+			return MOUSE_BUTTON_RIGHT
+		"middle":
+			return MOUSE_BUTTON_MIDDLE
+		_:
+			return MOUSE_BUTTON_LEFT
+
+
+func _mouse_button_mask(button: String) -> int:
+	match button:
+		"right":
+			return MOUSE_BUTTON_MASK_RIGHT
+		"middle":
+			return MOUSE_BUTTON_MASK_MIDDLE
+		_:
+			return MOUSE_BUTTON_MASK_LEFT
+
+
+# Push a WHOLE mouse click — the press, then the release — on one frame. A bare
+# press never completes an activation: a default Button emits `pressed` only on
+# the release, so a "click" that stops at the press leaves the button held down
+# forever (#652, GDA-DF-004). Used by a sequence `mouse_click` event, which puts
+# the whole click at one clock offset (a same-frame pair fully activates a
+# Button, verified against a live engine); the standalone `input mouse-click` op
+# spreads its move/press/release gesture across frames instead (see
+# _handle_input_mouse_click).
+func _push_whole_mouse_click(pos: Vector2, button: String, double: bool) -> void:
+	_push_mouse_button_phase(pos, button, true, double)
+	_push_mouse_button_phase(pos, button, false, false)
+
+
+func _push_mouse_button_phase(pos: Vector2, button: String, pressed: bool, double: bool) -> void:
+	var viewport := _prepare_mouse_input()
+	var mask := _mouse_button_mask(button)
+	if pressed:
+		_injected_mouse_button_mask = _injected_mouse_button_mask | mask
+	else:
+		_injected_mouse_button_mask = _injected_mouse_button_mask & ~mask
+	var event := InputEventMouseButton.new()
+	event.button_index = _mouse_button_index(button)
+	event.button_mask = _injected_mouse_button_mask
+	event.position = pos
+	event.pressed = pressed
+	event.double_click = double
+	viewport.push_input(event, true)
+	_last_injected_mouse_position = pos
+
+
+# Push an action as an EVENT: build an InputEventAction and send it through the
+# same root-viewport door key and mouse events take, so `_input`, `_gui_input` and
+# `_unhandled_input` handlers matching the action receive it (#854). The opt-in is
+# the CALLER's (`as_event`); without it an action stays a state change.
+# Deliberately NOT Input.parse_input_event, which would update the polled state as
+# well: the two routes are disjoint by construction, and a pushed event leaves
+# Input.is_action_pressed untouched exactly as a pushed key event does
+# (GDA-DF-050). Shared by the single-frame action op, an action tap, and a
+# sequence action event.
+func _push_action_event(action: String, pressed: bool, strength: float) -> void:
+	var event := InputEventAction.new()
+	event.action = action
+	event.pressed = pressed
+	event.strength = strength
+	_input_viewport().push_input(event)
+
+
+# Push a mouse-motion event to a viewport position. Shared by the single-frame move
+# op and a sequence mouse-move event.
+func _push_mouse_move(pos: Vector2) -> void:
+	var viewport := _prepare_mouse_input()
+	var previous := viewport.get_mouse_position()
+	if _last_injected_mouse_position is Vector2:
+		previous = _last_injected_mouse_position
+	var event := InputEventMouseMotion.new()
+	event.position = pos
+	event.relative = pos - previous
+	event.button_mask = _injected_mouse_button_mask
+	viewport.push_input(event, true)
+	_last_injected_mouse_position = pos
+
+
+# input key: inject one InputEventKey (press or release) into the running game's
+# root viewport. Resolves the key name to a keycode via the engine table; an
+# unresolvable name is the typed live_invalid_key error.
+func _handle_input_key(params: Dictionary) -> String:
+	var key := VALUE._string_param(params, "key")
+	var keycode := _resolve_keycode(key)
+	if keycode == KEY_NONE:
+		return _error(LIVE_ERROR_INVALID_KEY,
+				"could not resolve key name to a keycode: " + key)
+	var modifiers: Array = params.get("modifiers", [])
+	if typeof(modifiers) != TYPE_ARRAY:
+		modifiers = []
+	var pressed := not bool(params.get("released", false))
+	_input_viewport().push_input(_make_key_event(keycode, modifiers, pressed))
+	return _ok({
+		"kind": "key",
+		"key": key,
+		"keycode": keycode,
+		"modifiers": modifiers,
+		"pressed": pressed,
+	})
+
+
+# The runtime path of the root viewport's current focus owner, or null with no
+# focused Control — the before/after focus evidence the activation ops report
+# (#652). A pure read; the engine exposes no equivalent "was the event handled"
+# evidence, so focus is the observable half.
+func _focus_owner_path() -> Variant:
+	var owner := _input_viewport().gui_get_focus_owner()
+	if owner == null:
+		return null
+	return String(owner.get_path())
+
+
+# input mouse-click: inject the COMPLETE click gesture at (x, y) into the root
+# viewport — the initial move, the press, and the release, one per process frame
+# (frames 0/1/2 of a 3-frame window on the #223 multi-frame base). The gesture is
+# what the op's name implies: a bare press never completes a UI activation (a
+# default Button emits `pressed` only on the release) and leaves the button held
+# down forever (#652, GDA-DF-004); the initial move settles hover state at the
+# click position first. Each phase applies at its own frame boundary (ADR-0020).
+func _handle_input_mouse_click(params: Dictionary) -> Variant:
+	var x := _float_param(params, "x", 0.0)
+	var y := _float_param(params, "y", 0.0)
+	var button := VALUE._string_param(params, "button")
+	if button.is_empty():
+		button = "left"
+	var double := bool(params.get("double", false))
+	var pos := Vector2(x, y)
+	var focus_before: Variant = _focus_owner_path()
+	var frame_box := {"n": 0}
+	var sample := func() -> Variant:
+		var current := int(frame_box["n"])
+		match current:
+			0:
+				_push_mouse_move(pos)
+			1:
+				_push_mouse_button_phase(pos, button, true, double)
+			2:
+				# A release is never a double click; the double flag rides the press.
+				_push_mouse_button_phase(pos, button, false, false)
+		frame_box["n"] = current + 1
+		return current
+	var finalize := func(_samples: Array) -> String:
+		return _ok({
+			"kind": "mouse_click",
+			"position": [x, y],
+			"button": button,
+			"double": double,
+			"phases": [
+				{"frame": 0, "phase": "move"},
+				{"frame": 1, "phase": "press"},
+				{"frame": 2, "phase": "release"},
+			],
+			"focus_before": focus_before,
+			"focus_after": _focus_owner_path(),
+		})
+	return _begin_window(3, sample, finalize)
+
+
+# input mouse-move: inject an InputEventMouseMotion to (x, y) into the root
+# viewport. A single-frame op.
+func _handle_input_mouse_move(params: Dictionary) -> String:
+	var x := _float_param(params, "x", 0.0)
+	var y := _float_param(params, "y", 0.0)
+	_push_mouse_move(Vector2(x, y))
+	return _ok({
+		"kind": "mouse_move",
+		"position": [x, y],
+		"button": null,
+		"double": null,
+	})
+
+
+# input action: press or release a named input action against the running
+# InputMap. The action MUST exist in the running InputMap — an unknown action is
+# the typed live_unknown_action error (validated via InputMap.has_action). With
+# `as_event` the same press/release is delivered as an InputEventAction through
+# the root viewport instead (#854); the reply echoes which door was used, and the
+# CLI derives the reported injection_route from that echo.
+func _handle_input_action(params: Dictionary) -> String:
+	var action := VALUE._string_param(params, "action")
+	if not InputMap.has_action(action):
+		return _error(LIVE_ERROR_UNKNOWN_ACTION,
+				"the running InputMap has no action: " + action)
+	var release := bool(params.get("release", false))
+	var strength := _float_param(params, "strength", 1.0)
+	var as_event := bool(params.get("as_event", false))
+	if as_event:
+		_push_action_event(action, not release, 0.0 if release else strength)
+	elif release:
+		Input.action_release(action)
+	else:
+		Input.action_press(action, strength)
+	return _ok({
+		"kind": "action",
+		"action": action,
+		"pressed": not release,
+		"strength": 0.0 if release else strength,
+		"as_event": as_event,
+	})
+
+
+# input tap: the complete press-hold-release gesture for ONE key or ONE action
+# (#652). Godot needs the press and the release to land on separate process
+# frames for a UI activation — a pair contained in one immediate frame reports
+# success without advancing the focused UI (GDA-DF-034) — so the tap presses at
+# window frame 0, holds for `hold_frames` frames, releases at frame
+# `hold_frames`, then lets `settle_frames` more frames run so the game observes
+# the release before the op returns. Built on the #223 multi-frame base; the
+# frame counts are bounded model-side (ADR-0015). Validation is up front: an
+# unresolvable key is live_invalid_key, an action missing from the running
+# InputMap is live_unknown_action — the same two live-only failures the
+# single-event ops defer to the harness.
+func _handle_input_tap(params: Dictionary) -> Variant:
+	var hold := _int_param(params, "hold_frames", 2)
+	var settle := _int_param(params, "settle_frames", 2)
+	var key := VALUE._string_param(params, "key")
+	var action := VALUE._string_param(params, "action")
+	var press := Callable()
+	var release := Callable()
+	var echo := {}
+	if not action.is_empty():
+		if not InputMap.has_action(action):
+			return _error(LIVE_ERROR_UNKNOWN_ACTION,
+					"the running InputMap has no action: " + action)
+		var strength := _float_param(params, "strength", 1.0)
+		# `as_event` picks the door for BOTH phases of an action tap (#854); a key
+		# tap already pushes events, and the model refuses the flag there.
+		var as_event := bool(params.get("as_event", false))
+		if as_event:
+			press = func() -> void: _push_action_event(action, true, strength)
+			release = func() -> void: _push_action_event(action, false, 0.0)
+		else:
+			press = func() -> void: Input.action_press(action, strength)
+			release = func() -> void: Input.action_release(action)
+		echo = {"action": action, "strength": strength, "as_event": as_event}
+	else:
+		var keycode := _resolve_keycode(key)
+		if keycode == KEY_NONE:
+			return _error(LIVE_ERROR_INVALID_KEY,
+					"could not resolve key name to a keycode: " + key)
+		var modifiers: Array = params.get("modifiers", [])
+		if typeof(modifiers) != TYPE_ARRAY:
+			modifiers = []
+		press = func() -> void:
+			_input_viewport().push_input(_make_key_event(keycode, modifiers, true))
+		release = func() -> void:
+			_input_viewport().push_input(_make_key_event(keycode, modifiers, false))
+		echo = {"key": key, "keycode": keycode, "modifiers": modifiers}
+	var focus_before: Variant = _focus_owner_path()
+	var frame_box := {"n": 0}
+	var sample := func() -> Variant:
+		var current := int(frame_box["n"])
+		if current == 0:
+			press.call()
+		elif current == hold:
+			release.call()
+		frame_box["n"] = current + 1
+		return current
+	var finalize := func(_samples: Array) -> String:
+		var payload := {
+			"kind": "tap",
+			"hold_frames": hold,
+			"settle_frames": settle,
+			"frames": hold + settle + 1,
+			"phases": [
+				{"frame": 0, "phase": "press"},
+				{"frame": hold, "phase": "release"},
+			],
+			"focus_before": focus_before,
+			"focus_after": _focus_owner_path(),
+		}
+		payload.merge(echo)
+		return _ok(payload)
+	return _begin_window(hold + settle + 1, sample, finalize)
+
+
+# input sequence: inject a list of events across either process or physics frames,
+# returned as ONE blocking result via the time-windowed multi-frame base (#223). The
+# window spans one past the largest selected-clock offset; each selected-clock frame
+# the sampler applies the events due at that index. An event whose type the harness
+# does not recognize aborts the window with live_invalid_event_spec (the defensive
+# arm — the model bounds the type).
+func _handle_input_sequence(params: Dictionary) -> Variant:
+	var raw_events: Variant = params.get("events", [])
+	if typeof(raw_events) != TYPE_ARRAY or (raw_events as Array).is_empty():
+		return _error(LIVE_ERROR_INVALID_EVENT_SPEC,
+				"input sequence needs a non-empty events list")
+	var events: Array = raw_events
+	# The window runs for as many selected-clock frames as the largest event offset
+	# requires (at least one), so every event's relative index lands within it.
+	var uses_physics := false
+	var uses_process := false
+	var max_offset := 0
+	for event in events:
+		if typeof(event) == TYPE_DICTIONARY:
+			if _sequence_event_uses_physics(event):
+				uses_physics = true
+			else:
+				uses_process = true
+			max_offset = maxi(max_offset, _sequence_event_offset(event))
+	if uses_physics and uses_process:
+		return _error(LIVE_ERROR_INVALID_EVENT_SPEC,
+				"input sequence cannot mix frame and physics_frame offsets")
+	var clock := WINDOW_CLOCK_PHYSICS if uses_physics else WINDOW_CLOCK_PROCESS
+	var total_frames := max_offset + 1
+	var frame_box := {"n": 0}
+	_injected_mouse_button_mask = 0
+	# The sampler applies every event due at the current selected-clock index, then
+	# advances that clock. A bad event type aborts the window with a typed error sample.
+	var sample := func() -> Variant:
+		var current := int(frame_box["n"])
+		for event in events:
+			if typeof(event) != TYPE_DICTIONARY:
+				continue
+			if _sequence_event_offset(event) != current:
+				continue
+			var err: Variant = _apply_sequence_event(event)
+			if err != null:
+				_injected_mouse_button_mask = 0
+				return {"error": err}
+		frame_box["n"] = current + 1
+		return current
+	var finalize := func(_samples: Array) -> String:
+		_injected_mouse_button_mask = 0
+		return _ok({
+			"kind": "sequence",
+			"clock": clock,
+			"events": events.size(),
+			"frames": total_frames,
+		})
+	return _begin_window(total_frames, sample, finalize, clock)
+
+
+func _sequence_event_uses_physics(event: Dictionary) -> bool:
+	return event.has("physics_frame") and event.get("physics_frame") != null
+
+
+func _sequence_event_offset(event: Dictionary) -> int:
+	if _sequence_event_uses_physics(event):
+		return _int_param(event, "physics_frame", 0)
+	return _int_param(event, "frame", 0)
+
+
+# Apply one sequence event at a frame boundary. Returns null on success, or a typed
+# {code, message} error envelope to abort the window. The event types mirror the
+# single-frame ops; an unrecognized type is live_invalid_event_spec.
+func _apply_sequence_event(event: Dictionary) -> Variant:
+	var type := VALUE._string_param(event, "type")
+	match type:
+		"key":
+			var key := VALUE._string_param(event, "key")
+			var keycode := _resolve_keycode(key)
+			if keycode == KEY_NONE:
+				return {"code": LIVE_ERROR_INVALID_KEY,
+						"message": "could not resolve key name to a keycode: " + key}
+			var modifiers: Array = event.get("modifiers", [])
+			if typeof(modifiers) != TYPE_ARRAY:
+				modifiers = []
+			var pressed := not bool(event.get("released", false))
+			_input_viewport().push_input(_make_key_event(keycode, modifiers, pressed))
+			return null
+		"mouse_click":
+			var button := VALUE._string_param(event, "button")
+			if button.is_empty():
+				button = "left"
+			_push_whole_mouse_click(
+					Vector2(_float_param(event, "x", 0.0), _float_param(event, "y", 0.0)),
+					button, bool(event.get("double", false)))
+			return null
+		"mouse_button":
+			var button := VALUE._string_param(event, "button")
+			if button.is_empty():
+				button = "left"
+			_push_mouse_button_phase(
+					Vector2(_float_param(event, "x", 0.0), _float_param(event, "y", 0.0)),
+					button,
+					bool(event.get("pressed", false)),
+					bool(event.get("double", false)))
+			return null
+		"mouse_move":
+			_push_mouse_move(
+					Vector2(_float_param(event, "x", 0.0), _float_param(event, "y", 0.0)))
+			return null
+		"action":
+			var action := VALUE._string_param(event, "action")
+			if not InputMap.has_action(action):
+				return {"code": LIVE_ERROR_UNKNOWN_ACTION,
+						"message": "the running InputMap has no action: " + action}
+			var releasing := bool(event.get("release", false))
+			var strength := _float_param(event, "strength", 1.0)
+			# Per EVENT, so one sequence can mix a state action, an event-mode
+			# action and a key event; the CLI reports the route of each phase.
+			if bool(event.get("as_event", false)):
+				_push_action_event(action, not releasing,
+						0.0 if releasing else strength)
+			elif releasing:
+				Input.action_release(action)
+			else:
+				Input.action_press(action, strength)
+			return null
+		_:
+			return {"code": LIVE_ERROR_INVALID_EVENT_SPEC,
+					"message": "unsupported input sequence event type: " + type}
+
+
+# --- screen (runtime viewport capture, #222) ----------------------------------
+#
+# Capture the running game's VIEWPORT over the LIVE channel: read the viewport's
+# rendered texture as an Image, PNG-encode it, and base64 the PNG into the ADR-0002
+# sentinel reply (a UTF-8-safe wire). The CLI decodes it and writes the file.
+#
+# Display guard: a viewport capture needs a real DisplayServer to have rendered
+# pixels. Under `--headless` Godot uses the dummy "headless" DisplayServer whose
+# texture is empty, so a capture there is the typed `live_display_unavailable`
+# (start the daemon `--windowed`). Checked up front, before opening any window.
+#
+# GPU-framebuffer timing: `get_viewport().get_texture().get_image()` reads the
+# texture for the LAST rendered frame, which can be empty if read before the first
+# real frame has rendered (the harness's _ready runs before the main scene is even
+# instantiated). Both ops therefore capture INSIDE a window tick — reusing the #223
+# time-windowed base — so the sample runs on a _process frame boundary AFTER the
+# scene is up (the _process loop only dispatches once current_scene != null), by
+# which point a frame has rendered. `screen capture` is a 1-frame window; `screen
+# frames` an N-frame one. No _process change — same sampler/finalizer base as perf.
+#
+# WHICH frame that is, measured on 4.6.3-stable (#847 phase 1): Main::iteration
+# runs _process, then MessageQueue::flush (where a Container's deferred re-sort
+# and a Control's minimum-size update land), then RenderingServer::draw, then
+# _process_frames++. A read taken in _process of iteration i therefore returns
+# the frame DRAWN in iteration i-1, while Engine.get_process_frames() reads i —
+# a lag of exactly one, on 12 of 12 measured captures. The draw step is also
+# CONDITIONAL (a window that is not visible, or low-processor-usage mode with no
+# RenderingServer change, skips it), so the gap can be far wider than one: 4
+# consecutive captures were byte-identical across 694 process frames. So the
+# capture reports TWO counters — `engine_frame`, the process frame the read was
+# taken at, and `render_frame`, Engine.get_frames_drawn(), which identifies the
+# drawn frame the pixels ARE and stands still whenever the engine drew nothing.
+#
+# `settle_frames` (#847) lets a caller run N more process frames before the read,
+# for a game whose visual settles over several frames after a state change. It is
+# the ONLY control that moves the pixels forward; the read itself is NOT moved to
+# RenderingServer.frame_post_draw, because that would pair a tick's observation
+# with the NEXT frame's pixels and break the #661/#743 same-boundary binding.
+
+
+# True when the running session has no real display — the dummy "headless"
+# DisplayServer (`--headless`, i.e. the daemon was NOT started --windowed), whose
+# viewport renders no pixels. The one runtime fact the model cannot pre-check.
+func _display_is_headless() -> bool:
+	return DisplayServer.get_name() == "headless"
+
+
+# Capture the current viewport frame as a base64 PNG + its dims. Returns a frame
+# Dictionary on success, or an {"error": {...}} envelope (window-aborting form) if
+# the image could not be read/encoded. Shared by both screen ops' samplers so the
+# single-frame and multi-frame captures encode identically.
+func _capture_frame() -> Dictionary:
+	var texture := get_viewport().get_texture()
+	if texture == null:
+		return {"error": {
+			"code": LIVE_ERROR_DISPLAY_UNAVAILABLE,
+			"message": "the running viewport has no texture to capture",
+		}}
+	var image: Image = texture.get_image()
+	if image == null or image.is_empty():
+		return {"error": {
+			"code": LIVE_ERROR_DISPLAY_UNAVAILABLE,
+			"message": "the running viewport rendered no image to capture",
+		}}
+	var png := image.save_png_to_buffer()
+	return {
+		"width": image.get_width(),
+		"height": image.get_height(),
+		"format": "png",
+		"bytes": png.size(),
+		"png_base64": Marshalls.raw_to_base64(png),
+	}
+
+
+# The capture receipt (#660, GDA-DF-026/031): the engine-side identity facts that
+# bind ONE captured image to the session, its launched scene, and the frame it
+# came from. `session_id` is the daemon-minted identity from the launch tail (""
+# from a launcher that predates it); `scene_path` / `scene_uid` are the LAUNCHED
+# scene's identity per issue #660 — remembered at the handshake's scene
+# verification, the same value the daemon verified, so they are a launch fact,
+# not a claim about what an individual frame presents (a game that switches
+# scenes mid-session still receipts under its launched scene; the uid is the
+# scene FILE's own header declaration, null for a gda-authored scene, ADR-0036).
+# `engine_frame` is the process frame the read was TAKEN at — for a gated capture
+# the predicate's evaluation frame plus the settle
+# (`predicate.engine_frame + settle_frames`) — and `render_frame` is
+# Engine.get_frames_drawn(), which identifies the drawn frame the pixels are (see
+# the section header: the two counters advance together while the engine draws
+# every frame, and only `render_frame` stands still when it does not). `observed`
+# is the predicate echo for a gated capture (null on a plain one — the CLI refuses
+# an unsolicited echo). The CLI adds the output hash after writing the file.
+func _capture_receipt(observed: Variant) -> Dictionary:
+	return {
+		"session_id": _session_id,
+		"scene_path": _launched_scene_path,
+		"scene_uid": _launched_scene_uid,
+		"engine_frame": Engine.get_process_frames(),
+		"render_frame": Engine.get_frames_drawn(),
+		"observed": observed,
+	}
+
+
+# The scene file's own uid:// identity, as the FILE HEADER declares it (#660;
+# ADR-0036's read side: "the project provides one" means the header carries it).
+# `ResourceLoader.get_resource_uid` cannot serve here: outside the editor it
+# consults only the runtime UID registry (core/io/resource_loader.cpp), which an
+# editor-never-opened project has no `.godot/uid_cache.bin` to fill — so read
+# the same header attribute the engine's TEXT loader reads in editor mode
+# (`ResourceFormatLoaderText::get_resource_uid`). Text scene formats only;
+# anything else — including a header without the attribute — reports null.
+func _scene_header_uid(scene_path: String) -> Variant:
+	if not (scene_path.ends_with(".tscn") or scene_path.ends_with(".tres")):
+		return null
+	var file := FileAccess.open(scene_path, FileAccess.READ)
+	if file == null:
+		return null
+	var header := file.get_line()
+	file.close()
+	var pattern := RegEx.new()
+	# Godot's header parser accepts horizontal whitespace around `=` (PR #746
+	# review: `uid = "uid://…"` is a legal, engine-preserved header), so the
+	# match must too.
+	if pattern.compile("\\buid[ \\t]*=[ \\t]*\"(uid://[a-z0-9]+)\"") != OK:
+		return null
+	var found := pattern.search(header)
+	return found.get_string(1) if found != null else null
+
+
+# screen capture: capture ONE viewport frame, returned as a base64 PNG + dims (the
+# CLI writes the file). A `settle_frames + 1`-frame window so the capture lands on
+# a _process tick after the scene is up and a frame has rendered (the GPU-timing
+# fix), and `settle_frames` frames later than that when the caller asked the game
+# to settle first (#847). A headless session is the typed live_display_unavailable,
+# refused up front.
+func _handle_screen_capture(params: Dictionary) -> Variant:
+	if _display_is_headless():
+		return _error(LIVE_ERROR_DISPLAY_UNAVAILABLE,
+				"the engine session is headless (no DisplayServer to render pixels); "
+				+ "start the daemon with `gda daemon start --windowed`")
+	var settle := _int_param(params, "settle_frames", 0)
+	var await_spec: Variant = params.get("await", null)
+	if typeof(await_spec) == TYPE_DICTIONARY:
+		return _begin_predicate_capture(await_spec, params.get("events", []), settle)
+	var index := {"n": 0, "settled": 0}
+	var sample := func() -> Variant:
+		var current := int(index["n"])
+		index["n"] = current + 1
+		if current < settle:
+			# A settle tick: let the game run one more frame, read nothing, and
+			# COUNT it. The reply reports this counter rather than the request
+			# (#847 review), so a harness that skipped the wait cannot answer
+			# with the number it was asked for.
+			index["settled"] = int(index["settled"]) + 1
+			return current
+		var frame := _capture_frame()
+		if frame.has("error"):
+			return frame  # abort the window with the typed error envelope
+		# The receipt is built INSIDE the sample (#660), at the same frame
+		# boundary the pixels were read at, so its engine_frame names that
+		# boundary and its render_frame the drawn frame the pixels are. A plain
+		# capture echoes no predicate (null).
+		frame["receipt"] = _capture_receipt(null)
+		frame["settle_frames"] = int(index["settled"])
+		return frame
+	var finalize := func(samples: Array) -> String:
+		# The window ends on the capturing sample: it is the last one collected.
+		return _ok(samples[samples.size() - 1])
+	return _begin_window(settle + 1, sample, finalize)
+
+
+# screen frames: capture a WINDOW of N viewport frames, one per frame boundary,
+# returned as the per-frame base64 PNG list (the CLI writes one file per frame).
+# Reuses the #223 time-windowed base with its own capture sampler/finalizer — no
+# _process change. `settle_frames` (#847) runs ONCE, before the FIRST frame is
+# captured, so the whole sequence starts after the game has settled rather than
+# spending its budget on the frames the caller wanted to skip. A headless session
+# is the typed live_display_unavailable.
+func _handle_screen_frames(params: Dictionary) -> Variant:
+	if _display_is_headless():
+		return _error(LIVE_ERROR_DISPLAY_UNAVAILABLE,
+				"the engine session is headless (no DisplayServer to render pixels); "
+				+ "start the daemon with `gda daemon start --windowed`")
+	var frames := _int_param(params, "frames", 1)
+	var settle := _int_param(params, "settle_frames", 0)
+	var index := {"n": 0, "settled": 0}
+	var sample := func() -> Variant:
+		var current := int(index["n"])
+		index["n"] = current + 1
+		if current < settle:
+			# A settle frame: let the game run, capture nothing, COUNT it — the
+			# reply reports the counter, not the request (#847 review).
+			index["settled"] = int(index["settled"]) + 1
+			return current
+		var frame := _capture_frame()
+		if frame.has("error"):
+			return frame  # abort the window with the typed error envelope
+		frame["receipt"] = _capture_receipt(null)
+		return frame
+	var finalize := func(samples: Array) -> String:
+		var ran := int(index["settled"])
+		var captured: Array = samples.slice(ran)
+		return _ok({
+			"count": captured.size(),
+			"settle_frames": ran,
+			"frames": captured,
+		})
+	return _begin_window(frames + settle, sample, finalize)
+
+
+# screen capture --await (#661): the predicate-gated capture, GDA-DF-023. Input
+# and capture as separate round trips routinely miss a 3-8 frame transient, so
+# the window arms at request arrival and does the whole job game-side, on the
+# PROCESS clock (physics-clock event offsets are refused): each frame it first
+# applies the inline input events due at that offset (the atomic
+# input-and-capture form; the events reuse the input-sequence shapes and
+# _apply_sequence_event verbatim), then evaluates the predicate
+# `node.property == value`. Each tick EVALUATES BEFORE it injects (#743
+# re-review, ARC-743-004): the property is read before this tick's events run,
+# so the observed value is always the state of the previously COMPLETED frame —
+# and at the default settle 0 the pixels are read at that same boundary, so the
+# texture presents exactly that frame (a settle moves the read on; see the
+# settle paragraph below). This holds for both trigger paths, verified live: a
+# _process-driven flip is observed with its own presentation, and a state an
+# injected event writes (a synchronous _input callback) is observed one
+# boundary LATER, together with its presentation. Two declared consequences:
+# the predicate sees frame-boundary state only (a value overwritten before its
+# frame completes is never observable — the typed unmet error, not a capture
+# of mismatched pixels), and an event's effect is observable from the NEXT
+# boundary, so the last state-changing event needs at least one frame of
+# window left. The reply waits for every accepted event — an early match must
+# not leave a scheduled release unexecuted — and a DECLARED EVENT FAILURE is
+# the reply even after a capture succeeded (#743 re-review, ARC-743-001): the
+# capture payload is discarded, later events still drain, and the CLI writes
+# no file. A predicate that never holds within `frames` is the typed
+# live_predicate_unmet, carrying the last observed value.
+#
+# `settle` (#847) moves ONLY the pixels: the predicate is still observed at its
+# own first holding frame and the report still names that frame, but the read
+# happens `settle` process frames later, so the image is a frame the game drew
+# after that tick's own work — the tick's deferred layout included. The reply
+# still waits for every declared event, and an event scheduled beyond the settle
+# still fires; it is simply not in the image. `settle` 0 is the unchanged
+# same-boundary capture.
+func _begin_predicate_capture(await_spec: Dictionary, raw_events: Variant,
+		settle: int = 0) -> Variant:
+	var node_path := String(await_spec.get("node", ""))
+	var node := _resolve_runtime_node(node_path)
+	if node == null:
+		return _error(LIVE_ERROR_NODE_NOT_FOUND,
+				"no node at runtime path: " + node_path)
+	var prop := String(await_spec.get("property", ""))
+	if not _runtime_property_declared(node, prop):
+		return _error(LIVE_ERROR_UNKNOWN_PROPERTY,
+				_unknown_runtime_property_message(node_path, prop))
+	var expected: Variant = await_spec.get("value", null)
+	var frames := _int_param(await_spec, "frames", 60)
+	var events: Array = raw_events if typeof(raw_events) == TYPE_ARRAY else []
+	var last_event := -1
+	for event in events:
+		if typeof(event) != TYPE_DICTIONARY:
+			continue
+		if _sequence_event_uses_physics(event):
+			return _error(LIVE_ERROR_INVALID_EVENT_SPEC,
+					"a predicate capture applies its events on the process clock; "
+					+ "'physics_frame' offsets are not accepted")
+		last_event = maxi(last_event, _sequence_event_offset(event))
+	var state := {"n": 0, "observed": null, "outcome": null,
+			"report": null, "capture_at": -1, "settled": 0}
+	_injected_mouse_button_mask = 0
+	var capture := func() -> void:
+		var report: Dictionary = state["report"]
+		var captured := _capture_frame()
+		if captured.has("error"):
+			state["outcome"] = captured
+			return
+		captured["predicate"] = report
+		# The receipt is stamped at the READ boundary (#660): with settle 0 that
+		# is the evaluation tick, so its engine_frame IS the predicate's frame
+		# and its echo IS the predicate's — the CLI refuses a reply where the
+		# two disagree. With settle N the read is N frames later and the CLI
+		# requires exactly that offset instead (#847).
+		captured["receipt"] = _capture_receipt(report["observed"])
+		captured["settle_frames"] = int(state["settled"])
+		state["outcome"] = {"complete": captured}
+	var sample := func() -> Variant:
+		var current := int(state["n"])
+		state["n"] = current + 1
+		# Evaluate BEFORE this tick's events run (#743 re-review): the read
+		# then always sees the previously completed frame — the frame the
+		# texture presents at the default settle 0 — never a mid-tick write
+		# from a synchronous input callback. The value is read HERE only; the up-front resolution is
+		# metadata-only, so a scripted getter runs exactly once per sampled
+		# frame (#743 review, ARC-743-002).
+		if state["outcome"] == null and state["report"] == null:
+			if not is_instance_valid(node):
+				state["outcome"] = {"error": {
+					"code": LIVE_ERROR_NODE_NOT_FOUND,
+					"message": "the awaited node was freed mid-window: " + node_path,
+				}}
+			else:
+				var observed: Variant = node.get(prop)
+				state["observed"] = observed
+				if _predicate_matches(observed, expected):
+					# The report names the frame the predicate was observed at,
+					# whatever the settle does to the read (#847).
+					state["report"] = {
+						"node": node_path,
+						"property": prop,
+						"expected": expected,
+						"observed": _predicate_echo(observed),
+						"engine_frame": Engine.get_process_frames(),
+						"frames_waited": current,
+					}
+					state["capture_at"] = current + settle
+					if settle == 0:
+						# Capture at the SAME boundary the predicate was
+						# observed at — property and presentation both belong
+						# to the frame that just completed (verified live).
+						capture.call()
+				elif current + 1 >= frames:
+					state["outcome"] = {"error": {
+						"code": LIVE_ERROR_PREDICATE_UNMET,
+						"message": "the predicate " + node_path + "." + prop
+								+ " == " + VALUE._json(expected)
+								+ " did not hold within " + str(frames)
+								+ " frames (last observed: "
+								+ str(state["observed"]) + ")",
+					}}
+		elif state["outcome"] == null:
+			# A tick spent settling: COUNT it, and read once the declared count
+			# has passed. The reply reports this counter, not the request
+			# (#847 review).
+			state["settled"] = int(state["settled"]) + 1
+			if current >= int(state["capture_at"]):
+				capture.call()
+		# Then inject: every ACCEPTED event fires at its offset, even after
+		# the outcome is decided, so a press injected early is never left held
+		# (#743 review). A declared event FAILURE becomes the reply — it
+		# replaces a captured success (the CLI then writes no file) but never
+		# an earlier error — while later events still drain, best effort.
+		for event in events:
+			if typeof(event) != TYPE_DICTIONARY:
+				continue
+			if _sequence_event_offset(event) != current:
+				continue
+			var err: Variant = _apply_sequence_event(event)
+			if err != null:
+				var outcome: Variant = state["outcome"]
+				if outcome == null or (outcome as Dictionary).has("complete"):
+					state["outcome"] = {"error": err}
+		if state["outcome"] != null and current >= last_event:
+			_injected_mouse_button_mask = 0
+			var decided: Dictionary = state["outcome"]
+			return decided
+		return current
+	var finalize := func(_samples: Array) -> String:
+		# Defensive only: the sampler decides every path within the budget.
+		_injected_mouse_button_mask = 0
+		return _error(LIVE_ERROR_PREDICATE_UNMET,
+				"the predicate " + node_path + "." + prop + " == "
+				+ VALUE._json(expected) + " did not hold within "
+				+ str(frames) + " frames (last observed: "
+				+ str(state["observed"]) + ")")
+	# The budget covers the latest tick any branch can still need: the predicate
+	# may hold as late as tick `frames - 1`, its settle read `settle` ticks after
+	# that, and every declared event fires at its own offset (#847).
+	return _begin_window(maxi(frames + settle, last_event + 1) + 1, sample, finalize)
+
+
+# The one runtime-property resolution rule, metadata only (#743 review,
+# ARC-743-002): a STORAGE property or an explicit SCRIPT VARIABLE — the same
+# two-step game get resolves with — decided from get_property_list() alone, so
+# resolving NEVER invokes a getter; the owning use case reads the value.
+func _runtime_property_declared(node: Node, prop_name: String) -> bool:
+	for entry in node.get_property_list():
+		if String(entry.get("name", "")) != prop_name:
+			continue
+		if VALUE._is_storage_property(entry) or _is_script_variable(entry):
+			return true
+	return false
+
+
+func _is_script_variable(prop: Dictionary) -> bool:
+	return (int(prop.get("usage", 0)) & PROPERTY_USAGE_SCRIPT_VARIABLE) != 0
+
+
+# JSON-typed predicate equality (#661): bool compares to bool, numbers
+# numerically (int frame counters match JSON integers), strings against the
+# String rendering (covers StringName), anything else never matches — the
+# predicate is a JSON-scalar contract, not a Variant matcher.
+func _predicate_matches(observed: Variant, expected: Variant) -> bool:
+	match typeof(expected):
+		TYPE_BOOL:
+			return typeof(observed) == TYPE_BOOL and observed == expected
+		TYPE_INT, TYPE_FLOAT:
+			if typeof(observed) == TYPE_INT or typeof(observed) == TYPE_FLOAT:
+				return float(observed) == float(expected)
+			return false
+		TYPE_STRING:
+			if typeof(observed) == TYPE_STRING or typeof(observed) == TYPE_STRING_NAME:
+				return String(observed) == String(expected)
+			return false
+		TYPE_NIL:
+			return typeof(observed) == TYPE_NIL
+	return false
+
+
+# The JSON-safe echo of the observed value for the result (#661; #660's receipt
+# echoes it onward): scalars pass through, everything else the diagnostic
+# String form — the predicate compares scalars, so the echo never needs the
+# full Value projection.
+func _predicate_echo(observed: Variant) -> Variant:
+	match typeof(observed):
+		TYPE_BOOL, TYPE_INT, TYPE_FLOAT, TYPE_STRING:
+			return observed
+		TYPE_NIL:
+			return null
+	return str(observed)
+
+
+# Read a float param defensively (the params arrive as arbitrary JSON): a missing
+# or non-numeric value falls back to `fallback` rather than crashing a typed
+# assignment, mirroring _int_param for the float-valued input params (x/y/strength).
+func _float_param(params: Dictionary, key: String, fallback: float) -> float:
+	var value: Variant = params.get(key, fallback)
+	if typeof(value) == TYPE_FLOAT or typeof(value) == TYPE_INT:
+		return float(value)
+	return fallback
+
+
+# Read an int param defensively (the params arrive as arbitrary JSON): a missing or
+# non-numeric value falls back to `fallback` rather than crashing a typed
+# assignment, so a malformed param degrades gracefully.
+func _int_param(params: Dictionary, key: String, fallback: int) -> int:
+	var value: Variant = params.get(key, fallback)
+	if typeof(value) == TYPE_FLOAT or typeof(value) == TYPE_INT:
+		return int(value)
+	return fallback
+
+
+# Resolve a node by its ABSOLUTE runtime path (e.g. /root/Main/Player), the form
+# game tree emits via Node.get_path(). The headless _resolve_node takes a
+# scene-root-relative path and rejects absolute, so the live layer resolves off
+# the SceneTree root instead. null when the path resolves to nothing.
+func _resolve_runtime_node(path: String) -> Node:
+	if path.is_empty():
+		return null
+	return get_tree().root.get_node_or_null(NodePath(path))
+
+
+# The ONE depth-bounded, counting tree serializer (#849): it renders `game tree`'s
+# NESTED subtree, so an op that reports a flat match list is a different walk and
+# does not call it — what such an op shares is the per-node shape (name/type/path)
+# and this depth-bounding + omitted-count contract, not this function. `max_depth`
+# is the number of levels BELOW `node` to serialize: 0 stops at `node` itself, and
+# a NEGATIVE value is unbounded. `counts` is the caller's mutable accumulator
+# (Dictionary, so it is shared by reference): its "omitted_nodes" entry grows by
+# every node this walk did not serialize, at every depth — the total the result
+# reports. A node whose children were left out carries `children_omitted`, the
+# count of its DIRECT children only; the key is ABSENT when nothing was omitted, so
+# an unbounded read carries no per-node weight for a bound it never had.
+func _serialize(node: Node, max_depth: int, counts: Dictionary) -> Dictionary:
+	var children: Array = node.get_children()
+	var serialized: Dictionary = {
+		"name": String(node.name),
+		"type": node.get_class(),
+		"path": String(node.get_path()),
+		"children": [],
+	}
+	if max_depth == 0:
+		if not children.is_empty():
+			serialized["children_omitted"] = children.size()
+			var omitted := 0
+			for child in children:
+				omitted += _subtree_size(child)
+			counts["omitted_nodes"] = int(counts["omitted_nodes"]) + omitted
+		return serialized
+	# Unbounded stays unbounded; a bound spends one level per descent.
+	var next_depth := max_depth if max_depth < 0 else max_depth - 1
+	var rendered: Array = []
+	for child in children:
+		rendered.append(_serialize(child, next_depth, counts))
+	serialized["children"] = rendered
+	return serialized
+
+
+# The number of nodes in `node`'s subtree, `node` included — what one omitted
+# child costs the result's omitted_nodes total. Counts only; it builds nothing,
+# so bounding a huge tree still pays a walk but not a serialization. The walk
+# keeps its OWN stack rather than recursing: a chain deeper than GDScript's call
+# stack (1024 frames by default) overflowed the recursive form, which then
+# returned a partial total that the op published as a successful read. Order
+# does not matter to a count, so the pending list is a plain LIFO.
+func _subtree_size(node: Node) -> int:
+	var total := 0
+	var pending: Array[Node] = [node]
+	while not pending.is_empty():
+		var current: Node = pending.pop_back()
+		total += 1
+		pending.append_array(current.get_children())
+	return total
+
+
+func _ok(payload: Dictionary) -> String:
+	return RESULT_BEGIN + VALUE._json(payload) + RESULT_END
+
+
+func _error(code: String, message: String) -> String:
+	return RESULT_BEGIN + VALUE._json({"error": {"code": code, "message": message}}) + RESULT_END
+
+
+# The PUBLIC, stable predicate reporting whether gda-daemon launched this run (#362)
+# — the SAME condition `gda_log()` gates on (`_daemon_launched`). Game code should
+# branch on THIS, not on harness *presence*: where the harness IS installed it only
+# captures logs when the daemon launched the session, so gating on presence silently
+# drops every record in a plain/editor run. (A supported `gda export run` artifact
+# OMITS the harness entirely per ADR-0028, so this predicate is not even present to
+# call there — game code must resolve the autoload by node path and null-check it, as
+# the `GdaHarness` global does not parse when absent.) A game-side logging helper gates
+# on this predicate and falls back to `print()` when the node is absent or the predicate
+# is false. It is a PURE READ — no connection, no output, no state change — so the
+# ADR-0018 inert-when-dormant guarantee holds: it returns false in a human editor run, a
+# plain run, and an export that BYPASSED `gda export run` (the harness physically present
+# but inert — `_ready` returns at the `template` gate before `_daemon_launched` is ever
+# set), with no side effect in any.
+func is_daemon_launched() -> bool:
+	return _daemon_launched
+
+
+# The active opt-in rich-log protocol (#282, ADR-0026). Project code in a live
+# session calls `GdaHarness.gda_log(level, message, fields)` to emit ONE fully
+# structured, field-carrying log record. It prints a single `<<<GDA:LOG>>>{json}`
+# line into the engine log — which the daemon captures via --log-file (ADR-0022) —
+# so the daemon's parser turns it into a rich LogRecord (`gda logger tail`).
+# `VALUE._json` keeps the payload single-line (newlines in `message`/`fields` are
+# escaped) and its floats exact (#752), so one call is always one log line whose
+# numbers the daemon's parser reads back unchanged. It uses a marker DISTINCT from
+# RESULT_BEGIN, so a log line can never be mistaken for an op result. Unlike the
+# live ops above, this is a plain stdout print, NOT an IPC reply — but it is GATED on a
+# daemon-launched session: outside one (a human editor run, a plain run, a shipped
+# build) the harness is inert (CONTEXT.md, ADR-0018) and gda_log() is a no-op, so the
+# `<<<GDA:LOG>>>` protocol never leaks into ordinary game output. In a daemon-launched
+# session it is OBSERVED through the daemon-owned Session log (--log-file, ADR-0022).
+func gda_log(level: String, message: String, fields: Dictionary = {}) -> void:
+	if not _daemon_launched:
+		return
+	print(LOG_MARKER + VALUE._json({
+		"level": level,
+		"message": message,
+		"fields": fields,
+	}))

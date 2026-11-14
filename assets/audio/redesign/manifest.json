@@ -1,0 +1,217 @@
+{
+  "date": "2026-11-12",
+  "audition": "Not listened through speakers; source descriptions and WAV structure/hash verified only. Subjective mix acceptance pending.",
+  "search": "Checked public Patapon root and Menus/Patapolis listings; no dedicated tear/coin identified. Weapon files not used.",
+  "files": [
+    {
+      "name": "fever_enter",
+      "author": "TheSandKid community extraction; original game rights remain with rights holders",
+      "license": "No official commercial license established",
+      "source_page": "https://www.reddit.com/r/Patapon/comments/lqdzkt/looking_for_the_extracted_audio_files_of_all_3/",
+      "source": {
+        "path": "C:/Users/Administrator/Desktop/代号1/参考音频/Patapon扩展/Patapon3/Fever与庆祝/Celebrate01.wav",
+        "bytes": 48346,
+        "sha256": "31953e4c6f5d6d9f387742945037488d25821698423ca5ade5c545d33e66628a",
+        "format": 1,
+        "channels": 1,
+        "rate": 11025,
+        "byte_rate": 22050,
+        "bits": 16,
+        "seconds": 2.189206349206349
+      },
+      "output": {
+        "path": "C:/Users/Administrator/Desktop/代号1/圆卡旋风/assets/audio/redesign/fever_enter.wav",
+        "bytes": 48346,
+        "sha256": "31953e4c6f5d6d9f387742945037488d25821698423ca5ade5c545d33e66628a",
+        "format": 1,
+        "channels": 1,
+        "rate": 11025,
+        "byte_rate": 22050,
+        "bits": 16,
+        "seconds": 2.189206349206349
+      },
+      "processing": "byte-identical copy"
+    },
+    {
+      "name": "pack_break",
+      "author": "Joseph SARDIN & Axeline T.",
+      "license": "CC0",
+      "source_page": "https://bigsoundbank.com/papier-dechire-9-s3246.html",
+      "download_url": "https://bigsoundbank.com/UPLOAD/bwf-en/3246.wav",
+      "source": {
+        "path": "C:/Users/Administrator/Desktop/代号1/参考音频/现成材质-20261112/paper_3246.wav",
+        "bytes": 128748,
+        "sha256": "fcd4c5f34d2ab62672f430aa4175cb65710775d6364b3d7c5b31c387fa808db1",
+        "format": 1,
+        "channels": 1,
+        "rate": 48000,
+        "byte_rate": 144000,
+        "bits": 24,
+        "seconds": 0.8866458333333334
+      },
+      "output": {
+        "path": "C:/Users/Administrator/Desktop/代号1/圆卡旋风/assets/audio/redesign/pack_break.wav",
+        "bytes": 85376,
+        "sha256": "62ab3029c31ce7638a06da191d2b6b106d7fd1bb951b0dbe81cd8c127a714059",
+        "format": 1,
+        "channels": 1,
+        "rate": 48000,
+        "byte_rate": 96000,
+        "bits": 16,
+        "seconds": 0.8866458333333334
+      },
+      "processing": "PCM24 to PCM16 only; no trim, synthesis, normalization or tempo change"
+    },
+    {
+      "name": "coins",
+      "author": "Little Robot Sound Factory",
+      "license": "CC-BY 3.0",
+      "source_page": "https://opengameart.org/content/coins-sound-effects-library",
+      "download_url": "https://opengameart.org/sites/default/files/Coins%20Sound%20Library.zip",
+      "attribution": "Coins_Few_05 by Little Robot Sound Factory (www.littlerobotsoundfactory.com), CC-BY 3.0; PCM16 format conversion only.",
+      "source": {
+        "path": "C:/Users/Administrator/Desktop/代号1/参考音频/现成材质-20261112/Coins_Few_05.wav",
+        "bytes": 36708,
+        "sha256": "817826e5e568c4f4c6adeae14eb84d9a8edd7b45b531848e54f84dc563a5f608",
+        "format": 1,
+        "channels": 1,
+        "rate": 48000,
+        "byte_rate": 144000,
+        "bits": 24,
+        "seconds": 0.24477083333333333
+      },
+      "output": {
+        "path": "C:/Users/Administrator/Desktop/代号1/圆卡旋风/assets/audio/redesign/coins.wav",
+        "bytes": 23614,
+        "sha256": "dc1ed4e72eea766fc47188afeede6bf30c3b122ad0cd1a6d21575c558f7118b8",
+        "format": 1,
+        "channels": 1,
+        "rate": 48000,
+        "byte_rate": 96000,
+        "bits": 16,
+        "seconds": 0.24477083333333333
+      },
+      "processing": "PCM24 to PCM16 only; no trim, synthesis, normalization or tempo change"
+    },
+    {
+      "name": "gather",
+      "author": "TheSandKid community extraction; original game rights remain with rights holders",
+      "license": "No official commercial license established",
+      "source_page": "https://www.reddit.com/r/Patapon/comments/lqdzkt/looking_for_the_extracted_audio_files_of_all_3/",
+      "use": "existing menu original adapted as lightweight event cue, not a dedicated material recording",
+      "source": {
+        "path": "C:/Users/Administrator/Desktop/代号1/参考音频/Patapon扩展/Patapon2/菜单/Scroll.wav",
+        "bytes": 3154,
+        "sha256": "7a2bc51715514dfaf3152247b594b1addffc8528b4561ef616b6c865000b93af",
+        "format": 1,
+        "channels": 1,
+        "rate": 11025,
+        "byte_rate": 22050,
+        "bits": 16,
+        "seconds": 0.13968253968253969
+      },
+      "output": {
+        "path": "C:/Users/Administrator/Desktop/代号1/圆卡旋风/assets/audio/redesign/gather.wav",
+        "bytes": 3154,
+        "sha256": "7a2bc51715514dfaf3152247b594b1addffc8528b4561ef616b6c865000b93af",
+        "format": 1,
+        "channels": 1,
+        "rate": 11025,
+        "byte_rate": 22050,
+        "bits": 16,
+        "seconds": 0.13968253968253969
+      },
+      "processing": "byte-identical copy"
+    },
+    {
+      "name": "merge",
+      "author": "TheSandKid community extraction; original game rights remain with rights holders",
+      "license": "No official commercial license established",
+      "source_page": "https://www.reddit.com/r/Patapon/comments/lqdzkt/looking_for_the_extracted_audio_files_of_all_3/",
+      "use": "existing menu original adapted as lightweight event cue, not a dedicated material recording",
+      "source": {
+        "path": "C:/Users/Administrator/Desktop/代号1/参考音频/Patapon扩展/Patapon2/菜单/Confirm.wav",
+        "bytes": 18610,
+        "sha256": "914b843f328142417d55584880f1ef6b2c57185cf4033fdfb95d0ec6971b99e3",
+        "format": 1,
+        "channels": 1,
+        "rate": 11025,
+        "byte_rate": 22050,
+        "bits": 16,
+        "seconds": 0.8406349206349206
+      },
+      "output": {
+        "path": "C:/Users/Administrator/Desktop/代号1/圆卡旋风/assets/audio/redesign/merge.wav",
+        "bytes": 2724,
+        "sha256": "6e4c7975b24d29a2a6eba6cb9524a9f9298b1796b8121eb89b8297dcbd83ad1a",
+        "format": 1,
+        "channels": 1,
+        "rate": 11025,
+        "byte_rate": 22050,
+        "bits": 16,
+        "seconds": 0.12
+      },
+      "processing": "first 0.120 seconds of existing Confirm recording, final 15 ms fade-out to prevent discontinuity; runtime stage pitch progression only, no synthesis"
+    },
+    {
+      "name": "expand",
+      "author": "TheSandKid community extraction; original game rights remain with rights holders",
+      "license": "No official commercial license established",
+      "source_page": "https://www.reddit.com/r/Patapon/comments/lqdzkt/looking_for_the_extracted_audio_files_of_all_3/",
+      "use": "existing menu original adapted as lightweight event cue, not a dedicated material recording",
+      "source": {
+        "path": "C:/Users/Administrator/Desktop/代号1/参考音频/Patapon扩展/Patapon2/菜单/MenuOpen.wav",
+        "bytes": 31546,
+        "sha256": "dd0bd0dc7aba9e6d5fdab7058e2176fd77a1f9c5c680f0ad08480ac9798d93ec",
+        "format": 1,
+        "channels": 1,
+        "rate": 16000,
+        "byte_rate": 32000,
+        "bits": 16,
+        "seconds": 0.9835
+      },
+      "output": {
+        "path": "C:/Users/Administrator/Desktop/代号1/圆卡旋风/assets/audio/redesign/expand.wav",
+        "bytes": 31546,
+        "sha256": "dd0bd0dc7aba9e6d5fdab7058e2176fd77a1f9c5c680f0ad08480ac9798d93ec",
+        "format": 1,
+        "channels": 1,
+        "rate": 16000,
+        "byte_rate": 32000,
+        "bits": 16,
+        "seconds": 0.9835
+      },
+      "processing": "byte-identical copy"
+    },
+    {
+      "name": "spawn",
+      "author": "TheSandKid community extraction; original game rights remain with rights holders",
+      "license": "No official commercial license established",
+      "source_page": "https://www.reddit.com/r/Patapon/comments/lqdzkt/looking_for_the_extracted_audio_files_of_all_3/",
+      "use": "existing menu original adapted as lightweight event cue, not a dedicated material recording",
+      "source": {
+        "path": "C:/Users/Administrator/Desktop/代号1/参考音频/Patapon扩展/Patapon2/菜单/MenuOpen.wav",
+        "bytes": 31546,
+        "sha256": "dd0bd0dc7aba9e6d5fdab7058e2176fd77a1f9c5c680f0ad08480ac9798d93ec",
+        "format": 1,
+        "channels": 1,
+        "rate": 16000,
+        "byte_rate": 32000,
+        "bits": 16,
+        "seconds": 0.9835
+      },
+      "output": {
+        "path": "C:/Users/Administrator/Desktop/代号1/圆卡旋风/assets/audio/redesign/spawn.wav",
+        "bytes": 31546,
+        "sha256": "dd0bd0dc7aba9e6d5fdab7058e2176fd77a1f9c5c680f0ad08480ac9798d93ec",
+        "format": 1,
+        "channels": 1,
+        "rate": 16000,
+        "byte_rate": 32000,
+        "bits": 16,
+        "seconds": 0.9835
+      },
+      "processing": "byte-identical copy"
+    }
+  ]
+}

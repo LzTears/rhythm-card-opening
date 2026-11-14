@@ -1,0 +1,369 @@
+{
+  "frames": [
+    {
+      "filename": "echo 0",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo 1",
+      "frame": {
+        "x": 112,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo 2",
+      "frame": {
+        "x": 224,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo 3",
+      "frame": {
+        "x": 336,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo 4",
+      "frame": {
+        "x": 0,
+        "y": 108,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo 5",
+      "frame": {
+        "x": 112,
+        "y": 108,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo 6",
+      "frame": {
+        "x": 224,
+        "y": 108,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo 7",
+      "frame": {
+        "x": 336,
+        "y": 108,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo 8",
+      "frame": {
+        "x": 0,
+        "y": 216,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo 9",
+      "frame": {
+        "x": 112,
+        "y": 216,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo 10",
+      "frame": {
+        "x": 224,
+        "y": 216,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo 11",
+      "frame": {
+        "x": 336,
+        "y": 216,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo 12",
+      "frame": {
+        "x": 0,
+        "y": 324,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo 13",
+      "frame": {
+        "x": 112,
+        "y": 324,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    },
+    {
+      "filename": "echo 14",
+      "frame": {
+        "x": 224,
+        "y": 324,
+        "w": 112,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 108
+      },
+      "duration": 33
+    }
+  ],
+  "meta": {
+    "app": "https://github.com/patch-gg/pixelfx",
+    "version": "1",
+    "image": "echo.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 448,
+      "h": 432
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "echo",
+        "from": 0,
+        "to": 14,
+        "direction": "forward"
+      }
+    ],
+    "pixelfx": {
+      "id": "pickups/collect-burst",
+      "name": "Collect burst",
+      "fps": 30,
+      "loop": false,
+      "frames": 15,
+      "frameSize": [
+        112,
+        108
+      ],
+      "pivot": [
+        56,
+        94
+      ],
+      "columns": 4
+    }
+  }
+}

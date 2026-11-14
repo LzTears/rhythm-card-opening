@@ -1,0 +1,93 @@
+{
+  "name": "aim_charge",
+  "art_direction": "Lightweight white charge-head glint/short tangent tail, 2-3 sparse host particles at true progress. No baked ring/target coverage/gameplay.",
+  "source_type": "Original pure effect using installed pixelfx Painter/renderFrames",
+  "vendor_root": "C:/Users/Administrator/.codex/vendor_imports/pixelfx-main",
+  "license": "MIT",
+  "license_file": "LICENSE.txt",
+  "references": [
+    {
+      "id": "ui/countdown",
+      "source_file": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\ui\\countdown.js",
+      "sha256": "55808a615cfa314c580529b2b308da8e7456d543808b44dd60d4cc2a284bf91b",
+      "license": "MIT",
+      "used": "Technique/reference only; no actor/text/ring copied into formal sprite"
+    },
+    {
+      "id": "pickups/key-glint",
+      "source_file": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\pickups\\key-glint.js",
+      "sha256": "ee029526604e1daa8b0668af8a75e5d0a9ce8525dfb742583d21518dd31ecbac",
+      "license": "MIT",
+      "used": "Technique/reference only; no actor/text/ring copied into formal sprite"
+    },
+    {
+      "id": "arcane/spell-charge",
+      "source_file": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\arcane\\spell-charge.js",
+      "sha256": "cc424b77b0b989a8dfc7fae793848c2be0966bde0248a14699ad2733d1e4bec0",
+      "license": "MIT",
+      "used": "Technique/reference only; no actor/text/ring copied into formal sprite"
+    }
+  ],
+  "source_files": {
+    "source/charge_sparks.mjs": "281b37c89b17d659c46c8dd4fb75e34dd3786134c5d3ad1173793d752fc073d1",
+    "source/export.mjs": "dd5fc84d1b07a95eb0f4aa8e618acd8b179efbb3083df1528a8bd05288eff553"
+  },
+  "output": {
+    "frame_size": [
+      48,
+      48
+    ],
+    "fps": 30,
+    "pivot": [
+      24,
+      24
+    ],
+    "path": "charge_sparks.png",
+    "sha256": "0bef9384acf02605225dd211f19659289ba2ca97c7045d79fb5a5138d361ed42",
+    "source_duration": 0.5,
+    "display_duration": 0.5333333333333333,
+    "grid": [
+      4,
+      4
+    ],
+    "frames": 16
+  },
+  "channels": "Independent source color/light buffers; formal RGBA is standard transparent composite with restrained glow, agreed with World owner. No required additional pass.",
+  "rounds": [
+    {
+      "round": 1,
+      "rendered_and_viewed": true,
+      "source_sha256": "4a941e889b1ca7120dbba3beeb6867231fa8eac308e281fb181a21ba03d7e918",
+      "atlas_sha256": "6eb06086d63171b13eaf414955b6d0fb818a9dd0e8ab4ff5bec1d808092dd8e4",
+      "max_nonempty_pixels": 268.0,
+      "decision": "Look: halo/core read as a white blob on light background; reduce glow/thickness."
+    },
+    {
+      "round": 2,
+      "rendered_and_viewed": true,
+      "source_sha256": "4a941e889b1ca7120dbba3beeb6867231fa8eac308e281fb181a21ba03d7e918",
+      "atlas_sha256": "523269ec7306da07dc5db988426b793d27b5d2b6d70d480392bfd701fceddb64",
+      "max_nonempty_pixels": 120.0,
+      "decision": "Look: smaller but washed; shrink opaque center, neutralize ramp, cut glow again."
+    },
+    {
+      "round": 3,
+      "rendered_and_viewed": true,
+      "source_sha256": "281b37c89b17d659c46c8dd4fb75e34dd3786134c5d3ad1173793d752fc073d1",
+      "atlas_sha256": "0bef9384acf02605225dd211f19659289ba2ca97c7045d79fb5a5138d361ed42",
+      "max_nonempty_pixels": 49.0,
+      "decision": "Look: final small crisp head/short tapered tail, two dim grains and open gutters. Offline asset accepted; in-game approval separate."
+    }
+  ],
+  "checks": {
+    "deterministic": true,
+    "first_frame_empty": true,
+    "max_nonempty_pixels": 49.0,
+    "last_frame_empty": true,
+    "outside_canvas_pixels": 0
+  },
+  "engine_started": false,
+  "production_world_or_shader_modified": false,
+  "in_game_approval": "Root final integration: final shader20/20 status checks and three actual GL views passed; E01base50/E02base50/E05build80. Not FPS certification. See res://verification/aim_charge/summary.json.",
+  "paths_relative_to": "res://assets/fx/aim_charge/"
+}

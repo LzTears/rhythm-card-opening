@@ -1,0 +1,33 @@
+{
+  "id": "grade_2",
+  "native_size": [
+    1086,
+    1448
+  ],
+  "size": [
+    768,
+    1024
+  ],
+  "sha256": "7a6a759940b9d38034b6dbf9cc4bd3630d9791f35bae8bbc48903a656b9976f9",
+  "window": {
+    "min": 0,
+    "max": 1,
+    "alpha_zero_fraction": 0.9887926768926274
+  },
+  "bottom_paper": {
+    "min": 251,
+    "max": 254,
+    "alpha_zero_fraction": 0.0
+  },
+  "top_paper": {
+    "min": 252,
+    "max": 254,
+    "alpha_zero_fraction": 0.0
+  },
+  "corners": [
+    0,
+    0,
+    0,
+    0
+  ]
+}

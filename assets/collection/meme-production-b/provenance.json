@@ -1,0 +1,146 @@
+[
+  {
+    "id": "MEM-025",
+    "method": "built-in-image_gen",
+    "prompt": "prompts/MEM-025.txt",
+    "original_output": "Generated images are saved to C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0e8-5e16-75c2-b377-5bde12dd4cf3 as C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0e8-5e16-75c2-b377-5bde12dd4cf3\\exec-7c15e1d0-212d-4b67-ace4-49b9f20b4e13.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "final": "assets/collection/cards/MEM-025.png",
+    "visually_inspected": true
+  },
+  {
+    "id": "MEM-026",
+    "method": "built-in-image_gen",
+    "prompt": "prompts/MEM-026.txt",
+    "original_output": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0e8-5e16-75c2-b377-5bde12dd4cf3\\exec-a0325e77-222b-46f1-bbff-f3e1ea6af268.png",
+    "final": "assets/collection/cards/MEM-026.png",
+    "visually_inspected": true
+  },
+  {
+    "id": "MEM-027",
+    "method": "built-in-image_gen",
+    "prompt": "prompts/MEM-027.txt",
+    "original_output": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0e8-5e16-75c2-b377-5bde12dd4cf3\\exec-f4a9d219-92a9-48bc-9418-55268f9d708a.png",
+    "final": "assets/collection/cards/MEM-027.png",
+    "visually_inspected": true
+  },
+  {
+    "id": "MEM-028",
+    "method": "built-in-image_gen",
+    "prompt": "prompts/MEM-028.txt",
+    "original_output": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0e8-5e16-75c2-b377-5bde12dd4cf3\\exec-eed680ec-fe2e-477e-afdf-5051c78d565a.png",
+    "final": "assets/collection/cards/MEM-028.png",
+    "visually_inspected": true
+  },
+  {
+    "id": "MEM-029",
+    "method": "built-in-image_gen",
+    "prompt": "prompts/MEM-029.txt",
+    "original_output": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0e8-5e16-75c2-b377-5bde12dd4cf3\\exec-209a2c47-0162-41f2-84d5-8b0cba990a4a.png",
+    "final": "assets/collection/cards/MEM-029.png",
+    "visually_inspected": true
+  },
+  {
+    "id": "MEM-030",
+    "method": "approved-v2-copy",
+    "prompt": "See docs/concepts/non-mainstream-v2/PROVENANCE.md",
+    "original_output": "docs/concepts/non-mainstream-v2/art/naiwa.png",
+    "final": "assets/collection/cards/MEM-030.png",
+    "visually_inspected": true
+  },
+  {
+    "id": "MEM-031",
+    "method": "built-in-image_gen",
+    "prompt": "prompts/MEM-031.txt",
+    "original_output": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0e8-5e16-75c2-b377-5bde12dd4cf3\\exec-a89de672-6f42-4b14-be3f-daee21571dd5.png",
+    "final": "assets/collection/cards/MEM-031.png",
+    "visually_inspected": true
+  },
+  {
+    "id": "MEM-032",
+    "method": "built-in-image_gen",
+    "prompt": "prompts/MEM-032.txt",
+    "original_output": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0e8-5e16-75c2-b377-5bde12dd4cf3\\exec-b318ccd8-cdb5-4a25-a52a-2a900e477e99.png",
+    "final": "assets/collection/cards/MEM-032.png",
+    "visually_inspected": true
+  },
+  {
+    "id": "MEM-033",
+    "method": "built-in-image_gen",
+    "prompt": "prompts/MEM-033.txt",
+    "original_output": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0e8-5e16-75c2-b377-5bde12dd4cf3\\exec-49aaaa68-e68b-4739-88e8-a9ca1b40bf9a.png",
+    "final": "assets/collection/cards/MEM-033.png",
+    "visually_inspected": true
+  },
+  {
+    "id": "MEM-034",
+    "method": "built-in-image_gen",
+    "prompt": "prompts/MEM-034.txt",
+    "original_output": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0e8-5e16-75c2-b377-5bde12dd4cf3\\exec-777e0c55-9184-4a33-8acb-0257b849083b.png",
+    "final": "assets/collection/cards/MEM-034.png",
+    "visually_inspected": true
+  },
+  {
+    "id": "MEM-035",
+    "method": "built-in-image_gen",
+    "prompt": "prompts/MEM-035.txt",
+    "original_output": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0e8-5e16-75c2-b377-5bde12dd4cf3\\exec-0d6612a5-e56f-4a9e-8e48-e905849ff7c3.png",
+    "final": "assets/collection/cards/MEM-035.png",
+    "visually_inspected": true
+  },
+  {
+    "id": "MEM-036",
+    "method": "built-in-image_gen",
+    "prompt": "prompts/MEM-036.txt",
+    "original_output": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0e8-5e16-75c2-b377-5bde12dd4cf3\\exec-84c16033-2e44-4879-9bf4-511c61cfcdba.png",
+    "final": "assets/collection/cards/MEM-036.png",
+    "visually_inspected": true
+  },
+  {
+    "id": "MEM-037",
+    "method": "built-in-image_gen",
+    "prompt": "prompts/MEM-037.txt",
+    "original_output": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0e8-5e16-75c2-b377-5bde12dd4cf3\\exec-6bde8007-3cc7-4f95-bc54-73681915c782.png",
+    "final": "assets/collection/cards/MEM-037.png",
+    "visually_inspected": true
+  },
+  {
+    "id": "MEM-038",
+    "method": "built-in-image_gen",
+    "prompt": "prompts/MEM-038.txt",
+    "original_output": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0e8-5e16-75c2-b377-5bde12dd4cf3\\exec-bd71cf3d-3229-487e-b835-6ff679d46c6b.png",
+    "final": "assets/collection/cards/MEM-038.png",
+    "visually_inspected": true
+  },
+  {
+    "id": "MEM-039",
+    "method": "built-in-image_gen",
+    "prompt": "prompts/MEM-039.txt",
+    "original_output": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0e8-5e16-75c2-b377-5bde12dd4cf3\\exec-1e9e5761-fcfe-4ec2-8322-8e1d11ad29be.png",
+    "final": "assets/collection/cards/MEM-039.png",
+    "visually_inspected": true
+  },
+  {
+    "id": "MEM-040",
+    "method": "built-in-image_gen",
+    "prompt": "prompts/MEM-040.txt",
+    "original_output": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0e8-5e16-75c2-b377-5bde12dd4cf3\\exec-850d5862-bc0b-46f1-94bf-033e3ac690e7.png",
+    "final": "assets/collection/cards/MEM-040.png",
+    "visually_inspected": true
+  },
+  {
+    "id": "MEM-041",
+    "method": "built-in-image_gen",
+    "prompt": "prompts/MEM-041.txt",
+    "original_output": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0e8-5e16-75c2-b377-5bde12dd4cf3\\exec-85a5f7d6-c365-4ea7-88ef-cebfa9b3ac19.png",
+    "final": "assets/collection/cards/MEM-041.png",
+    "visually_inspected": true
+  },
+  {
+    "id": "MEM-046",
+    "method": "approved-v2-copy",
+    "prompt": "See docs/concepts/non-mainstream-v2/PROVENANCE.md",
+    "original_output": "docs/concepts/non-mainstream-v2/art/elegant-penguin.png",
+    "final": "assets/collection/cards/MEM-046.png",
+    "visually_inspected": true
+  }
+]

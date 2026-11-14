@@ -1,0 +1,119 @@
+[
+  {
+    "card_id": "C04-0",
+    "name": "双星",
+    "concept": "同次出手打出两支扇形攻击",
+    "grade": 0,
+    "art_variant": "C04-0",
+    "old_path": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\art\\a2\\cards\\C04-0.png",
+    "new_path": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\art\\crt\\cards\\C04-0.png",
+    "source": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\art\\crt\\source\\card-fronts\\C04-0-original.png",
+    "output": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\art\\crt\\cards\\C04-0.png",
+    "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-be464267-60db-4eb0-bb85-206b6a0a22a3.png",
+    "canvas": [
+      512,
+      512
+    ],
+    "original_size": [
+      1254,
+      1254
+    ],
+    "alpha_bbox": [
+      16,
+      15,
+      496,
+      497
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "transparent_pixels": 83483,
+    "sha256": "8a21edebd098d4ec2bb1d7e4f41279bd4dfe47ff24174dc628c48061f9602b53",
+    "original_sha256": "90aaa0623168f76ef0e906ce2b237ca4513445712f902b559e61448eef6fa03a",
+    "provenance": "built-in image_gen; individually generated fresh illustration; master and card_back style references; old card subject identity reference only",
+    "normalization": "alpha>=128 bbox expanded 2 source pixels; aspect preserving contain into 482x482 NEAREST; centered 512 transparent canvas; no stretching/drawing/filtering",
+    "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Common rarity SILVER WHITE rim.  Leave about 3 percent even transparent padding all around full circle. Subject: happy orange five-armed starfish with light yellow spot clusters and black eyes, centered. Mechanic two simultaneous fan attacks: two clear cyan fans sweep outward symmetrically behind starfish. Orange saturated stepped pixel shading.",
+    "style_reference": "assets/art/crt/cards/C01-0.png",
+    "identity_reference": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\art\\a2\\cards\\C04-0.png",
+    "visual_review": "Viewed source identity and individually inspected generated output; coherent dark teal enamel / grade metal / distinct mechanic motifs, no text or external glow."
+  },
+  {
+    "card_id": "C09-0",
+    "name": "拨片",
+    "concept": "主攻击后拉近周围存活包",
+    "grade": 0,
+    "art_variant": "C09-0",
+    "old_path": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\art\\a2\\cards\\C09-0.png",
+    "new_path": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\art\\crt\\cards\\C09-0.png",
+    "source": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\art\\crt\\source\\card-fronts\\C09-0-original.png",
+    "output": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\art\\crt\\cards\\C09-0.png",
+    "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-5b1e60e0-b6d3-4e9d-9c7e-436323d43c2d.png",
+    "canvas": [
+      512,
+      512
+    ],
+    "original_size": [
+      1254,
+      1254
+    ],
+    "alpha_bbox": [
+      16,
+      15,
+      496,
+      497
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "transparent_pixels": 82231,
+    "sha256": "1f23a242c8928146029d0abb4844d83bfc3ab25371cf3c25c394b57671f57f58",
+    "original_sha256": "d2f9270fc9d779b78fea49c1879dc0851444c0adef33b08c15153937a91ec586",
+    "provenance": "built-in image_gen; individually generated fresh illustration; master and card_back style references; old card subject identity reference only",
+    "normalization": "alpha>=128 bbox expanded 2 source pixels; aspect preserving contain into 482x482 NEAREST; centered 512 transparent canvas; no stretching/drawing/filtering",
+    "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Common rarity SILVER WHITE rim.  Leave about 3 percent even transparent padding all around full circle. Happy coral red octopus with round head and curved tentacles. Four cyan inward arrows around it and curved suction streams toward center, pull surviving objects together.",
+    "style_reference": "assets/art/crt/cards/C01-0.png",
+    "identity_reference": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\art\\a2\\cards\\C09-0.png",
+    "visual_review": "Viewed source identity and individually inspected generated output; coherent dark teal enamel / grade metal / distinct mechanic motifs, no text or external glow."
+  },
+  {
+    "card_id": "C12-0",
+    "name": "微澜",
+    "concept": "出手后留下延迟圆波",
+    "grade": 0,
+    "art_variant": "C12-0",
+    "old_path": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\art\\a2\\cards\\C12-0.png",
+    "new_path": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\art\\crt\\cards\\C12-0.png",
+    "source": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\art\\crt\\source\\card-fronts\\C12-0-original.png",
+    "output": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\art\\crt\\cards\\C12-0.png",
+    "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-ea33baea-527e-49aa-a97e-bb929e99edb3.png",
+    "canvas": [
+      512,
+      512
+    ],
+    "original_size": [
+      1254,
+      1254
+    ],
+    "alpha_bbox": [
+      16,
+      15,
+      496,
+      497
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "transparent_pixels": 85141,
+    "sha256": "9897bdc790084189448609212a02ca3e22ffb9d3b389e5be1f3b8226a77f7264",
+    "original_sha256": "8f01d7de0d655b5f77e3161c0284a78729f82928dcd9b39d90b52c4866f96cb3",
+    "provenance": "built-in image_gen; individually generated fresh illustration; master and card_back style references; old card subject identity reference only",
+    "normalization": "alpha>=128 bbox expanded 2 source pixels; aspect preserving contain into 482x482 NEAREST; centered 512 transparent canvas; no stretching/drawing/filtering",
+    "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Common rarity SILVER WHITE rim.  Leave about 3 percent even transparent padding all around full circle. Friendly green sea turtle swimming right, olive hexagon patterned shell. Two staggered cyan water rings below and delayed echo wave behind, aftermath circular wave.",
+    "style_reference": "assets/art/crt/cards/C01-0.png",
+    "identity_reference": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\art\\a2\\cards\\C12-0.png",
+    "visual_review": "Viewed source identity and individually inspected generated output; coherent dark teal enamel / grade metal / distinct mechanic motifs, no text or external glow."
+  }
+]

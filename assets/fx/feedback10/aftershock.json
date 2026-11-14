@@ -1,0 +1,435 @@
+{
+  "frames": [
+    {
+      "filename": "aftershock 0",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 136,
+        "h": 52
+      },
+      "duration": 33
+    },
+    {
+      "filename": "aftershock 1",
+      "frame": {
+        "x": 136,
+        "y": 0,
+        "w": 136,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 136,
+        "h": 52
+      },
+      "duration": 33
+    },
+    {
+      "filename": "aftershock 2",
+      "frame": {
+        "x": 272,
+        "y": 0,
+        "w": 136,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 136,
+        "h": 52
+      },
+      "duration": 33
+    },
+    {
+      "filename": "aftershock 3",
+      "frame": {
+        "x": 0,
+        "y": 52,
+        "w": 136,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 136,
+        "h": 52
+      },
+      "duration": 33
+    },
+    {
+      "filename": "aftershock 4",
+      "frame": {
+        "x": 136,
+        "y": 52,
+        "w": 136,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 136,
+        "h": 52
+      },
+      "duration": 33
+    },
+    {
+      "filename": "aftershock 5",
+      "frame": {
+        "x": 272,
+        "y": 52,
+        "w": 136,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 136,
+        "h": 52
+      },
+      "duration": 33
+    },
+    {
+      "filename": "aftershock 6",
+      "frame": {
+        "x": 0,
+        "y": 104,
+        "w": 136,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 136,
+        "h": 52
+      },
+      "duration": 33
+    },
+    {
+      "filename": "aftershock 7",
+      "frame": {
+        "x": 136,
+        "y": 104,
+        "w": 136,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 136,
+        "h": 52
+      },
+      "duration": 33
+    },
+    {
+      "filename": "aftershock 8",
+      "frame": {
+        "x": 272,
+        "y": 104,
+        "w": 136,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 136,
+        "h": 52
+      },
+      "duration": 33
+    },
+    {
+      "filename": "aftershock 9",
+      "frame": {
+        "x": 0,
+        "y": 156,
+        "w": 136,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 136,
+        "h": 52
+      },
+      "duration": 33
+    },
+    {
+      "filename": "aftershock 10",
+      "frame": {
+        "x": 136,
+        "y": 156,
+        "w": 136,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 136,
+        "h": 52
+      },
+      "duration": 33
+    },
+    {
+      "filename": "aftershock 11",
+      "frame": {
+        "x": 272,
+        "y": 156,
+        "w": 136,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 136,
+        "h": 52
+      },
+      "duration": 33
+    },
+    {
+      "filename": "aftershock 12",
+      "frame": {
+        "x": 0,
+        "y": 208,
+        "w": 136,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 136,
+        "h": 52
+      },
+      "duration": 33
+    },
+    {
+      "filename": "aftershock 13",
+      "frame": {
+        "x": 136,
+        "y": 208,
+        "w": 136,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 136,
+        "h": 52
+      },
+      "duration": 33
+    },
+    {
+      "filename": "aftershock 14",
+      "frame": {
+        "x": 272,
+        "y": 208,
+        "w": 136,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 136,
+        "h": 52
+      },
+      "duration": 33
+    },
+    {
+      "filename": "aftershock 15",
+      "frame": {
+        "x": 0,
+        "y": 260,
+        "w": 136,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 136,
+        "h": 52
+      },
+      "duration": 33
+    },
+    {
+      "filename": "aftershock 16",
+      "frame": {
+        "x": 136,
+        "y": 260,
+        "w": 136,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 136,
+        "h": 52
+      },
+      "duration": 33
+    },
+    {
+      "filename": "aftershock 17",
+      "frame": {
+        "x": 272,
+        "y": 260,
+        "w": 136,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 136,
+        "h": 52
+      },
+      "duration": 33
+    }
+  ],
+  "meta": {
+    "app": "https://github.com/patch-gg/pixelfx",
+    "version": "1",
+    "image": "aftershock.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 408,
+      "h": 312
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "aftershock",
+        "from": 0,
+        "to": 17,
+        "direction": "forward"
+      }
+    ],
+    "pixelfx": {
+      "id": "water/ripples",
+      "name": "Ripples",
+      "fps": 30,
+      "loop": false,
+      "frames": 18,
+      "frameSize": [
+        136,
+        52
+      ],
+      "pivot": [
+        68,
+        30
+      ],
+      "columns": 3
+    }
+  }
+}

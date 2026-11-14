@@ -1,0 +1,2245 @@
+{
+  "version": "combat11-a2",
+  "license": "MIT",
+  "fps": 30,
+  "engine_filter": "nearest",
+  "effects": {
+    "pulse_E01": {
+      "path": "res://assets/fx/combat11/pulse_E01.png",
+      "metadata": "pulse_E01.json",
+      "source_id": "impacts/blunt-hit",
+      "frame_size": [
+        192,
+        144
+      ],
+      "frame_width": 192,
+      "frame_height": 144,
+      "cols": 4,
+      "frame_count": 10,
+      "fps": 30,
+      "pivot": [
+        96,
+        72
+      ],
+      "pivot_px": [
+        96,
+        72
+      ],
+      "duration": 0.3333333333333333,
+      "display_width": 155,
+      "loop": false,
+      "source_time": [
+        0,
+        0.9
+      ],
+      "options": {
+        "palette": [
+          "#452511",
+          "#713e19",
+          "#a66325",
+          "#d28a32",
+          "#efb749",
+          "#ffda78",
+          "#fff0c2"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "7fb2f0ce2990d4ade7f05b3473f03c56673e292f19e0c7c115670e8982a1556c"
+    },
+    "echo_E01": {
+      "path": "res://assets/fx/combat11/echo_E01.png",
+      "metadata": "echo_E01.json",
+      "source_id": "impacts/crit-hit",
+      "frame_size": [
+        192,
+        144
+      ],
+      "frame_width": 192,
+      "frame_height": 144,
+      "cols": 4,
+      "frame_count": 15,
+      "fps": 30,
+      "pivot": [
+        96,
+        72
+      ],
+      "pivot_px": [
+        96,
+        72
+      ],
+      "duration": 0.5,
+      "display_width": 175,
+      "loop": false,
+      "source_time": [
+        0,
+        0.9
+      ],
+      "options": {
+        "palette": [
+          "#452511",
+          "#713e19",
+          "#a66325",
+          "#d28a32",
+          "#efb749",
+          "#ffda78",
+          "#fff0c2"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "c6af9303f0e463051696796a5886236d91182594e1d4fadee2067b9cf82ba857"
+    },
+    "aftershock_E01": {
+      "path": "res://assets/fx/combat11/aftershock_E01.png",
+      "metadata": "aftershock_E01.json",
+      "source_id": "nature/quake",
+      "frame_size": [
+        192,
+        144
+      ],
+      "frame_width": 192,
+      "frame_height": 144,
+      "cols": 4,
+      "frame_count": 16,
+      "fps": 30,
+      "pivot": [
+        96,
+        72
+      ],
+      "pivot_px": [
+        96,
+        72
+      ],
+      "duration": 0.5333333333333333,
+      "display_width": 180,
+      "loop": false,
+      "source_time": [
+        0.18,
+        2.9
+      ],
+      "options": {
+        "palette": [
+          "#452511",
+          "#713e19",
+          "#a66325",
+          "#d28a32",
+          "#efb749",
+          "#ffda78",
+          "#fff0c2"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "a72bd9585da26156423b6500560c41b4a48df2977eaf852698dc30b3ddb9881e"
+    },
+    "pulse_E02": {
+      "path": "res://assets/fx/combat11/pulse_E02.png",
+      "metadata": "pulse_E02.json",
+      "source_id": "lightning/zap-hit",
+      "frame_size": [
+        192,
+        144
+      ],
+      "frame_width": 192,
+      "frame_height": 144,
+      "cols": 4,
+      "frame_count": 10,
+      "fps": 30,
+      "pivot": [
+        96,
+        72
+      ],
+      "pivot_px": [
+        96,
+        72
+      ],
+      "duration": 0.3333333333333333,
+      "display_width": 155,
+      "loop": false,
+      "source_time": [
+        0.03,
+        0.88
+      ],
+      "options": {
+        "palette": [
+          "#12374e",
+          "#155573",
+          "#147e9c",
+          "#24a5bf",
+          "#64cfdd",
+          "#b3edf0",
+          "#edffff"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "ad93c93f57babccc82ac1a20c7027b1f950e417b5e5a6969b35445ed23fff83a"
+    },
+    "echo_E02": {
+      "path": "res://assets/fx/combat11/echo_E02.png",
+      "metadata": "echo_E02.json",
+      "source_id": "lightning/thunderclap",
+      "frame_size": [
+        192,
+        144
+      ],
+      "frame_width": 192,
+      "frame_height": 144,
+      "cols": 4,
+      "frame_count": 15,
+      "fps": 30,
+      "pivot": [
+        96,
+        72
+      ],
+      "pivot_px": [
+        96,
+        72
+      ],
+      "duration": 0.5,
+      "display_width": 175,
+      "loop": false,
+      "source_time": [
+        0.08,
+        1.8
+      ],
+      "options": {
+        "palette": [
+          "#12374e",
+          "#155573",
+          "#147e9c",
+          "#24a5bf",
+          "#64cfdd",
+          "#b3edf0",
+          "#edffff"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "4127605c987643e214a7a01995b6f929b72e42327d5b1f6d652b164e2449220d"
+    },
+    "aftershock_E02": {
+      "path": "res://assets/fx/combat11/aftershock_E02.png",
+      "metadata": "aftershock_E02.json",
+      "source_id": "explosions/plasma-explosion",
+      "frame_size": [
+        192,
+        144
+      ],
+      "frame_width": 192,
+      "frame_height": 144,
+      "cols": 4,
+      "frame_count": 16,
+      "fps": 30,
+      "pivot": [
+        96,
+        72
+      ],
+      "pivot_px": [
+        96,
+        72
+      ],
+      "duration": 0.5333333333333333,
+      "display_width": 180,
+      "loop": false,
+      "source_time": [
+        0.08,
+        1.65
+      ],
+      "options": {
+        "palette": [
+          "#12374e",
+          "#155573",
+          "#147e9c",
+          "#24a5bf",
+          "#64cfdd",
+          "#b3edf0",
+          "#edffff"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "28856fa225a4259423721458785ab5305785ae283da6d94f78cc6b2eae3dd771"
+    },
+    "pulse_E04": {
+      "path": "res://assets/fx/combat11/pulse_E04.png",
+      "metadata": "pulse_E04.json",
+      "source_id": "impacts/parry",
+      "frame_size": [
+        192,
+        144
+      ],
+      "frame_width": 192,
+      "frame_height": 144,
+      "cols": 4,
+      "frame_count": 10,
+      "fps": 30,
+      "pivot": [
+        96,
+        72
+      ],
+      "pivot_px": [
+        96,
+        72
+      ],
+      "duration": 0.3333333333333333,
+      "display_width": 155,
+      "loop": false,
+      "source_time": [
+        0,
+        0.96
+      ],
+      "options": {
+        "palette": [
+          "#453015",
+          "#765023",
+          "#aa7e31",
+          "#d3a143",
+          "#edc364",
+          "#ffe39c",
+          "#fff3d4"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "ba31c0c5ee19e032ee3de7f1db57846200683529db52d383623ddc4b240941ca"
+    },
+    "echo_E04": {
+      "path": "res://assets/fx/combat11/echo_E04.png",
+      "metadata": "echo_E04.json",
+      "source_id": "arcane/mana-burst",
+      "frame_size": [
+        192,
+        144
+      ],
+      "frame_width": 192,
+      "frame_height": 144,
+      "cols": 4,
+      "frame_count": 15,
+      "fps": 30,
+      "pivot": [
+        96,
+        72
+      ],
+      "pivot_px": [
+        96,
+        72
+      ],
+      "duration": 0.5,
+      "display_width": 175,
+      "loop": false,
+      "source_time": [
+        0.16,
+        1.75
+      ],
+      "options": {
+        "palette": [
+          "#453015",
+          "#765023",
+          "#aa7e31",
+          "#d3a143",
+          "#edc364",
+          "#ffe39c",
+          "#fff3d4"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "5e13cd03df803020cdae40c62b9113548d41ca1a1c268c6221616413840b06ee"
+    },
+    "aftershock_E04": {
+      "path": "res://assets/fx/combat11/aftershock_E04.png",
+      "metadata": "aftershock_E04.json",
+      "source_id": "water/ripples",
+      "frame_size": [
+        192,
+        144
+      ],
+      "frame_width": 192,
+      "frame_height": 144,
+      "cols": 4,
+      "frame_count": 16,
+      "fps": 30,
+      "pivot": [
+        96,
+        72
+      ],
+      "pivot_px": [
+        96,
+        72
+      ],
+      "duration": 0.5333333333333333,
+      "display_width": 180,
+      "loop": false,
+      "source_time": [
+        0.1,
+        1.9
+      ],
+      "options": {
+        "palette": [
+          "#453015",
+          "#765023",
+          "#aa7e31",
+          "#d3a143",
+          "#edc364",
+          "#ffe39c",
+          "#fff3d4"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "2a4fbf4544d03947b185cd7888b78f15fd89b67fe3f6aa98426e1f577a97a9ed"
+    },
+    "pulse_E05": {
+      "path": "res://assets/fx/combat11/pulse_E05.png",
+      "metadata": "pulse_E05.json",
+      "source_id": "ice/snowflake-burst",
+      "frame_size": [
+        192,
+        144
+      ],
+      "frame_width": 192,
+      "frame_height": 144,
+      "cols": 4,
+      "frame_count": 10,
+      "fps": 30,
+      "pivot": [
+        96,
+        72
+      ],
+      "pivot_px": [
+        96,
+        72
+      ],
+      "duration": 0.3333333333333333,
+      "display_width": 155,
+      "loop": false,
+      "source_time": [
+        0.1,
+        3.1
+      ],
+      "options": {
+        "palette": [
+          "#143c55",
+          "#206383",
+          "#2f8ca5",
+          "#57b4c8",
+          "#88d6df",
+          "#bceaf0",
+          "#f2ffff"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "7a7820355463f86b0d77e9a60fa52006fb75e994de4d8b0d647c542ce653216c"
+    },
+    "echo_E05": {
+      "path": "res://assets/fx/combat11/echo_E05.png",
+      "metadata": "echo_E05.json",
+      "source_id": "ice/frost-nova",
+      "frame_size": [
+        192,
+        144
+      ],
+      "frame_width": 192,
+      "frame_height": 144,
+      "cols": 4,
+      "frame_count": 15,
+      "fps": 30,
+      "pivot": [
+        96,
+        72
+      ],
+      "pivot_px": [
+        96,
+        72
+      ],
+      "duration": 0.5,
+      "display_width": 175,
+      "loop": false,
+      "source_time": [
+        0.3,
+        3.3
+      ],
+      "options": {
+        "palette": [
+          "#143c55",
+          "#206383",
+          "#2f8ca5",
+          "#57b4c8",
+          "#88d6df",
+          "#bceaf0",
+          "#f2ffff"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "8aec281488236f64c727c466ac1109deef53fb0db6067b749fbb21669b3747f8"
+    },
+    "aftershock_E05": {
+      "path": "res://assets/fx/combat11/aftershock_E05.png",
+      "metadata": "aftershock_E05.json",
+      "source_id": "ice/ice-shatter",
+      "frame_size": [
+        192,
+        144
+      ],
+      "frame_width": 192,
+      "frame_height": 144,
+      "cols": 4,
+      "frame_count": 16,
+      "fps": 30,
+      "pivot": [
+        96,
+        72
+      ],
+      "pivot_px": [
+        96,
+        72
+      ],
+      "duration": 0.5333333333333333,
+      "display_width": 180,
+      "loop": false,
+      "source_time": [
+        0.16,
+        2.7
+      ],
+      "options": {
+        "palette": [
+          "#143c55",
+          "#206383",
+          "#2f8ca5",
+          "#57b4c8",
+          "#88d6df",
+          "#bceaf0",
+          "#f2ffff"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "3019c63190db31416371ee1ba51d3611996d4f2312536d37bc376d4b51b0b12e"
+    },
+    "pulse_E06": {
+      "path": "res://assets/fx/combat11/pulse_E06.png",
+      "metadata": "pulse_E06.json",
+      "source_id": "nature/poison-cloud",
+      "frame_size": [
+        192,
+        144
+      ],
+      "frame_width": 192,
+      "frame_height": 144,
+      "cols": 4,
+      "frame_count": 10,
+      "fps": 30,
+      "pivot": [
+        96,
+        72
+      ],
+      "pivot_px": [
+        96,
+        72
+      ],
+      "duration": 0.3333333333333333,
+      "display_width": 155,
+      "loop": false,
+      "source_time": [
+        0.2,
+        3.8
+      ],
+      "options": {
+        "palette": [
+          "#263322",
+          "#425635",
+          "#638037",
+          "#89a743",
+          "#adc65b",
+          "#d3e187",
+          "#ecf1b5"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "7f5b7d0bde966321383ef17ba76d4107c9e5a659b62c880f5be081eca51482c4"
+    },
+    "echo_E06": {
+      "path": "res://assets/fx/combat11/echo_E06.png",
+      "metadata": "echo_E06.json",
+      "source_id": "nature/acid-splash",
+      "frame_size": [
+        192,
+        144
+      ],
+      "frame_width": 192,
+      "frame_height": 144,
+      "cols": 4,
+      "frame_count": 15,
+      "fps": 30,
+      "pivot": [
+        96,
+        72
+      ],
+      "pivot_px": [
+        96,
+        72
+      ],
+      "duration": 0.5,
+      "display_width": 175,
+      "loop": false,
+      "source_time": [
+        0.05,
+        2.75
+      ],
+      "options": {
+        "palette": [
+          "#263322",
+          "#425635",
+          "#638037",
+          "#89a743",
+          "#adc65b",
+          "#d3e187",
+          "#ecf1b5"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "ae7344c19cd680881818c4dd17886605ccbeb27285e817ab3863ee4337f29bd6"
+    },
+    "aftershock_E06": {
+      "path": "res://assets/fx/combat11/aftershock_E06.png",
+      "metadata": "aftershock_E06.json",
+      "source_id": "nature/toxic-puddle",
+      "frame_size": [
+        192,
+        144
+      ],
+      "frame_width": 192,
+      "frame_height": 144,
+      "cols": 4,
+      "frame_count": 16,
+      "fps": 30,
+      "pivot": [
+        96,
+        72
+      ],
+      "pivot_px": [
+        96,
+        72
+      ],
+      "duration": 0.5333333333333333,
+      "display_width": 180,
+      "loop": false,
+      "source_time": [
+        0.2,
+        3.8
+      ],
+      "options": {
+        "palette": [
+          "#263322",
+          "#425635",
+          "#638037",
+          "#89a743",
+          "#adc65b",
+          "#d3e187",
+          "#ecf1b5"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "99eccc21b17c6015a9e946da38260c39f4421303dd570b517ffb93295e638d6a"
+    },
+    "pulse_E07": {
+      "path": "res://assets/fx/combat11/pulse_E07.png",
+      "metadata": "pulse_E07.json",
+      "source_id": "nature/tornado",
+      "frame_size": [
+        192,
+        144
+      ],
+      "frame_width": 192,
+      "frame_height": 144,
+      "cols": 4,
+      "frame_count": 10,
+      "fps": 30,
+      "pivot": [
+        96,
+        72
+      ],
+      "pivot_px": [
+        96,
+        72
+      ],
+      "duration": 0.3333333333333333,
+      "display_width": 155,
+      "loop": false,
+      "source_time": [
+        0.12,
+        1.9
+      ],
+      "options": {
+        "palette": [
+          "#173d39",
+          "#216859",
+          "#2d8c70",
+          "#43ac85",
+          "#7bcea4",
+          "#b4e5c8",
+          "#eaffea"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "3c001cf25bc81fa512189f77df0e61fd8b8e61216c0af15c1dde39ed176d5074"
+    },
+    "echo_E07": {
+      "path": "res://assets/fx/combat11/echo_E07.png",
+      "metadata": "echo_E07.json",
+      "source_id": "nature/leaf-storm",
+      "frame_size": [
+        192,
+        144
+      ],
+      "frame_width": 192,
+      "frame_height": 144,
+      "cols": 4,
+      "frame_count": 15,
+      "fps": 30,
+      "pivot": [
+        96,
+        72
+      ],
+      "pivot_px": [
+        96,
+        72
+      ],
+      "duration": 0.5,
+      "display_width": 175,
+      "loop": false,
+      "source_time": [
+        0.1,
+        2.3
+      ],
+      "options": {
+        "palette": [
+          "#173d39",
+          "#216859",
+          "#2d8c70",
+          "#43ac85",
+          "#7bcea4",
+          "#b4e5c8",
+          "#eaffea"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "ba1d249655e24aedd1afce43b8e1024b7f189578c119c3b6fac3057a390737a9"
+    },
+    "aftershock_E07": {
+      "path": "res://assets/fx/combat11/aftershock_E07.png",
+      "metadata": "aftershock_E07.json",
+      "source_id": "water/whirlpool",
+      "frame_size": [
+        192,
+        144
+      ],
+      "frame_width": 192,
+      "frame_height": 144,
+      "cols": 4,
+      "frame_count": 16,
+      "fps": 30,
+      "pivot": [
+        96,
+        72
+      ],
+      "pivot_px": [
+        96,
+        72
+      ],
+      "duration": 0.5333333333333333,
+      "display_width": 180,
+      "loop": false,
+      "source_time": [
+        0.1,
+        2.9
+      ],
+      "options": {
+        "palette": [
+          "#173d39",
+          "#216859",
+          "#2d8c70",
+          "#43ac85",
+          "#7bcea4",
+          "#b4e5c8",
+          "#eaffea"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "1a096054e162acd847d903d1d1a01dcf487a80a6bdd25f6436d374d940db0007"
+    },
+    "pulse_E08": {
+      "path": "res://assets/fx/combat11/pulse_E08.png",
+      "metadata": "pulse_E08.json",
+      "source_id": "holy/sunburst",
+      "frame_size": [
+        192,
+        144
+      ],
+      "frame_width": 192,
+      "frame_height": 144,
+      "cols": 4,
+      "frame_count": 10,
+      "fps": 30,
+      "pivot": [
+        96,
+        72
+      ],
+      "pivot_px": [
+        96,
+        72
+      ],
+      "duration": 0.3333333333333333,
+      "display_width": 155,
+      "loop": false,
+      "source_time": [
+        0.1,
+        3.8
+      ],
+      "options": {
+        "palette": [
+          "#493516",
+          "#7e5f24",
+          "#b18b38",
+          "#d5af4c",
+          "#eed079",
+          "#ffe7ac",
+          "#fff6dc"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "64c28225db3b858adc4cd2691ad659b2d1437e88843e8d4012fea17ff2f90b30"
+    },
+    "echo_E08": {
+      "path": "res://assets/fx/combat11/echo_E08.png",
+      "metadata": "echo_E08.json",
+      "source_id": "holy/smite",
+      "frame_size": [
+        192,
+        144
+      ],
+      "frame_width": 192,
+      "frame_height": 144,
+      "cols": 4,
+      "frame_count": 15,
+      "fps": 30,
+      "pivot": [
+        96,
+        72
+      ],
+      "pivot_px": [
+        96,
+        72
+      ],
+      "duration": 0.5,
+      "display_width": 175,
+      "loop": false,
+      "source_time": [
+        0.3,
+        2.7
+      ],
+      "options": {
+        "palette": [
+          "#493516",
+          "#7e5f24",
+          "#b18b38",
+          "#d5af4c",
+          "#eed079",
+          "#ffe7ac",
+          "#fff6dc"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "f0958ff226cb9114de31722b917c50867f715b9029f210c251186565895ea69b"
+    },
+    "aftershock_E08": {
+      "path": "res://assets/fx/combat11/aftershock_E08.png",
+      "metadata": "aftershock_E08.json",
+      "source_id": "arcane/rune-circle",
+      "frame_size": [
+        192,
+        144
+      ],
+      "frame_width": 192,
+      "frame_height": 144,
+      "cols": 4,
+      "frame_count": 16,
+      "fps": 30,
+      "pivot": [
+        96,
+        72
+      ],
+      "pivot_px": [
+        96,
+        72
+      ],
+      "duration": 0.5333333333333333,
+      "display_width": 180,
+      "loop": false,
+      "source_time": [
+        0.1,
+        2
+      ],
+      "options": {
+        "palette": [
+          "#493516",
+          "#7e5f24",
+          "#b18b38",
+          "#d5af4c",
+          "#eed079",
+          "#ffe7ac",
+          "#fff6dc"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "30ba86abbcc1e2bb2a35b94acb0e4f2830a1fe0b22b663ec9961a1e8bfceb062"
+    },
+    "contact": {
+      "path": "res://assets/fx/combat11/contact.png",
+      "metadata": "contact.json",
+      "source_id": "impacts/hit-spark",
+      "frame_size": [
+        192,
+        144
+      ],
+      "frame_width": 192,
+      "frame_height": 144,
+      "cols": 4,
+      "frame_count": 10,
+      "fps": 30,
+      "pivot": [
+        96,
+        72
+      ],
+      "pivot_px": [
+        96,
+        72
+      ],
+      "duration": 0.3333333333333333,
+      "display_width": 64,
+      "loop": false,
+      "source_time": [
+        0,
+        0.5
+      ],
+      "options": {
+        "palette": [
+          "#452511",
+          "#713e19",
+          "#a66325",
+          "#d28a32",
+          "#efb749",
+          "#ffda78",
+          "#fff0c2"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "b0f2d0e5337ab2fff3a6a8995e6404fed72512bdcd1bc92838a60bf879bc732a"
+    },
+    "chain": {
+      "path": "res://assets/fx/combat11/chain.png",
+      "metadata": "chain.json",
+      "source_id": "lightning/chain-lightning",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0.18,
+        1.25
+      ],
+      "options": {
+        "palette": [
+          "#12374e",
+          "#155573",
+          "#147e9c",
+          "#24a5bf",
+          "#64cfdd",
+          "#b3edf0",
+          "#edffff"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "da2b9b377af6339ac2020dee990f4fb8e1b128ac6af05456bea85655bd6c4879",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right"
+    },
+    "penetration": {
+      "path": "res://assets/fx/combat11/penetration.png",
+      "metadata": "penetration.json",
+      "source_id": "arcane/arcane-beam",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0,
+        1.16
+      ],
+      "options": {
+        "palette": [
+          "#493516",
+          "#7e5f24",
+          "#b18b38",
+          "#d5af4c",
+          "#eed079",
+          "#ffe7ac",
+          "#fff6dc"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "ddddbe158c663cf19abea746ac875299b720bfc0c1139e1808bd382e6291acb1",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right"
+    },
+    "pull": {
+      "path": "res://assets/fx/combat11/pull.png",
+      "metadata": "pull.json",
+      "source_id": "explosions/implosion",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0.05,
+        0.79
+      ],
+      "options": {
+        "palette": [
+          "#173d39",
+          "#216859",
+          "#2d8c70",
+          "#43ac85",
+          "#7bcea4",
+          "#b4e5c8",
+          "#eaffea"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "131f8898e7238d0b5d7dde08cb0b856d1cbe787ad1d36b058993e96086b2be79",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right"
+    },
+    "trail": {
+      "path": "res://assets/fx/combat11/trail.png",
+      "metadata": "trail.json",
+      "source_id": "arcane/arcane-beam",
+      "frame_size": [
+        80,
+        40
+      ],
+      "frame_width": 80,
+      "frame_height": 40,
+      "cols": 4,
+      "frame_count": 12,
+      "fps": 30,
+      "pivot": [
+        72,
+        20
+      ],
+      "pivot_px": [
+        72,
+        20
+      ],
+      "duration": 0.4,
+      "display_width": 55,
+      "loop": true,
+      "source_time": [
+        0,
+        1.2
+      ],
+      "options": {
+        "palette": [
+          "#173d39",
+          "#216859",
+          "#2d8c70",
+          "#43ac85",
+          "#7bcea4",
+          "#b4e5c8",
+          "#eaffea"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "ddddbe158c663cf19abea746ac875299b720bfc0c1139e1808bd382e6291acb1"
+    },
+    "chain_E01": {
+      "path": "res://assets/fx/combat11/chain_E01.png",
+      "metadata": "chain_E01.json",
+      "source_id": "impacts/crit-hit",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0,
+        0.8
+      ],
+      "options": {
+        "palette": [
+          "#452511",
+          "#713e19",
+          "#a66325",
+          "#d28a32",
+          "#efb749",
+          "#ffda78",
+          "#fff0c2"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "c6af9303f0e463051696796a5886236d91182594e1d4fadee2067b9cf82ba857",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right"
+    },
+    "penetration_E01": {
+      "path": "res://assets/fx/combat11/penetration_E01.png",
+      "metadata": "penetration_E01.json",
+      "source_id": "impacts/hit-spark",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0,
+        0.5
+      ],
+      "options": {
+        "palette": [
+          "#452511",
+          "#713e19",
+          "#a66325",
+          "#d28a32",
+          "#efb749",
+          "#ffda78",
+          "#fff0c2"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "b0f2d0e5337ab2fff3a6a8995e6404fed72512bdcd1bc92838a60bf879bc732a",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right"
+    },
+    "pull_E01": {
+      "path": "res://assets/fx/combat11/pull_E01.png",
+      "metadata": "pull_E01.json",
+      "source_id": "impacts/blunt-hit",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0,
+        0.85
+      ],
+      "options": {
+        "palette": [
+          "#452511",
+          "#713e19",
+          "#a66325",
+          "#d28a32",
+          "#efb749",
+          "#ffda78",
+          "#fff0c2"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "7fb2f0ce2990d4ade7f05b3473f03c56673e292f19e0c7c115670e8982a1556c",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right"
+    },
+    "chain_E02": {
+      "path": "res://assets/fx/combat11/chain_E02.png",
+      "metadata": "chain_E02.json",
+      "source_id": "lightning/chain-lightning",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0.18,
+        1.25
+      ],
+      "options": {
+        "palette": [
+          "#12374e",
+          "#155573",
+          "#147e9c",
+          "#24a5bf",
+          "#64cfdd",
+          "#b3edf0",
+          "#edffff"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "da2b9b377af6339ac2020dee990f4fb8e1b128ac6af05456bea85655bd6c4879",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right"
+    },
+    "penetration_E02": {
+      "path": "res://assets/fx/combat11/penetration_E02.png",
+      "metadata": "penetration_E02.json",
+      "source_id": "lightning/zap-hit",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0.06,
+        0.85
+      ],
+      "options": {
+        "palette": [
+          "#12374e",
+          "#155573",
+          "#147e9c",
+          "#24a5bf",
+          "#64cfdd",
+          "#b3edf0",
+          "#edffff"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "ad93c93f57babccc82ac1a20c7027b1f950e417b5e5a6969b35445ed23fff83a",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right"
+    },
+    "pull_E02": {
+      "path": "res://assets/fx/combat11/pull_E02.png",
+      "metadata": "pull_E02.json",
+      "source_id": "lightning/charge-up",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0.1,
+        1.8
+      ],
+      "options": {
+        "palette": [
+          "#12374e",
+          "#155573",
+          "#147e9c",
+          "#24a5bf",
+          "#64cfdd",
+          "#b3edf0",
+          "#edffff"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "43fd8250bc825185716595bf3be424f56e9db7b3a2fb1a5b0704e5cb782f1aff",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right"
+    },
+    "chain_E04": {
+      "path": "res://assets/fx/combat11/chain_E04.png",
+      "metadata": "chain_E04.json",
+      "source_id": "impacts/parry",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0,
+        0.95
+      ],
+      "options": {
+        "palette": [
+          "#453015",
+          "#765023",
+          "#aa7e31",
+          "#d3a143",
+          "#edc364",
+          "#ffe39c",
+          "#fff3d4"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "ba31c0c5ee19e032ee3de7f1db57846200683529db52d383623ddc4b240941ca",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right"
+    },
+    "penetration_E04": {
+      "path": "res://assets/fx/combat11/penetration_E04.png",
+      "metadata": "penetration_E04.json",
+      "source_id": "water/wave-crash",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0.35,
+        2.5
+      ],
+      "options": {
+        "palette": [
+          "#453015",
+          "#765023",
+          "#aa7e31",
+          "#d3a143",
+          "#edc364",
+          "#ffe39c",
+          "#fff3d4"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "c787fa13943c2ce5b5fd5f7b8f24d22a364c8c2358e76443b9cb7f68fe0cc5bc",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right"
+    },
+    "pull_E04": {
+      "path": "res://assets/fx/combat11/pull_E04.png",
+      "metadata": "pull_E04.json",
+      "source_id": "water/ripples",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0.08,
+        1.9
+      ],
+      "options": {
+        "palette": [
+          "#453015",
+          "#765023",
+          "#aa7e31",
+          "#d3a143",
+          "#edc364",
+          "#ffe39c",
+          "#fff3d4"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "2a4fbf4544d03947b185cd7888b78f15fd89b67fe3f6aa98426e1f577a97a9ed",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right"
+    },
+    "chain_E05": {
+      "path": "res://assets/fx/combat11/chain_E05.png",
+      "metadata": "chain_E05.json",
+      "source_id": "ice/snowflake-burst",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0.15,
+        2.8
+      ],
+      "options": {
+        "palette": [
+          "#143c55",
+          "#206383",
+          "#2f8ca5",
+          "#57b4c8",
+          "#88d6df",
+          "#bceaf0",
+          "#f2ffff"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "7a7820355463f86b0d77e9a60fa52006fb75e994de4d8b0d647c542ce653216c",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right"
+    },
+    "penetration_E05": {
+      "path": "res://assets/fx/combat11/penetration_E05.png",
+      "metadata": "penetration_E05.json",
+      "source_id": "ice/frost-breath",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0,
+        1.2
+      ],
+      "options": {
+        "palette": [
+          "#143c55",
+          "#206383",
+          "#2f8ca5",
+          "#57b4c8",
+          "#88d6df",
+          "#bceaf0",
+          "#f2ffff"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "3d9ef4563c1c8619c9d58231e7b81e25df6ab7e9d74fb926ab57fa6e786fd6cf",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right"
+    },
+    "pull_E05": {
+      "path": "res://assets/fx/combat11/pull_E05.png",
+      "metadata": "pull_E05.json",
+      "source_id": "ice/ice-spikes",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0.2,
+        2.8
+      ],
+      "options": {
+        "palette": [
+          "#143c55",
+          "#206383",
+          "#2f8ca5",
+          "#57b4c8",
+          "#88d6df",
+          "#bceaf0",
+          "#f2ffff"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "7bb75052f982b28f2f93c87b0473f2075a49f3c18314ee22f798eafbc7812912",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right"
+    },
+    "chain_E06": {
+      "path": "res://assets/fx/combat11/chain_E06.png",
+      "metadata": "chain_E06.json",
+      "source_id": "nature/acid-splash",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0.1,
+        2.5
+      ],
+      "options": {
+        "palette": [
+          "#263322",
+          "#425635",
+          "#638037",
+          "#89a743",
+          "#adc65b",
+          "#d3e187",
+          "#ecf1b5"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "ae7344c19cd680881818c4dd17886605ccbeb27285e817ab3863ee4337f29bd6",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right"
+    },
+    "penetration_E06": {
+      "path": "res://assets/fx/combat11/penetration_E06.png",
+      "metadata": "penetration_E06.json",
+      "source_id": "nature/poison-cloud",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0.15,
+        3.5
+      ],
+      "options": {
+        "palette": [
+          "#263322",
+          "#425635",
+          "#638037",
+          "#89a743",
+          "#adc65b",
+          "#d3e187",
+          "#ecf1b5"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "7f5b7d0bde966321383ef17ba76d4107c9e5a659b62c880f5be081eca51482c4",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right"
+    },
+    "pull_E06": {
+      "path": "res://assets/fx/combat11/pull_E06.png",
+      "metadata": "pull_E06.json",
+      "source_id": "nature/toxic-puddle",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0.1,
+        3.6
+      ],
+      "options": {
+        "palette": [
+          "#263322",
+          "#425635",
+          "#638037",
+          "#89a743",
+          "#adc65b",
+          "#d3e187",
+          "#ecf1b5"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "99eccc21b17c6015a9e946da38260c39f4421303dd570b517ffb93295e638d6a",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right"
+    },
+    "chain_E07": {
+      "path": "res://assets/fx/combat11/chain_E07.png",
+      "metadata": "chain_E07.json",
+      "source_id": "nature/leaf-storm",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0.1,
+        2.3
+      ],
+      "options": {
+        "palette": [
+          "#173d39",
+          "#216859",
+          "#2d8c70",
+          "#43ac85",
+          "#7bcea4",
+          "#b4e5c8",
+          "#eaffea"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "ba1d249655e24aedd1afce43b8e1024b7f189578c119c3b6fac3057a390737a9",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right"
+    },
+    "penetration_E07": {
+      "path": "res://assets/fx/combat11/penetration_E07.png",
+      "metadata": "penetration_E07.json",
+      "source_id": "nature/tornado",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0.1,
+        1.9
+      ],
+      "options": {
+        "palette": [
+          "#173d39",
+          "#216859",
+          "#2d8c70",
+          "#43ac85",
+          "#7bcea4",
+          "#b4e5c8",
+          "#eaffea"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "3c001cf25bc81fa512189f77df0e61fd8b8e61216c0af15c1dde39ed176d5074",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right"
+    },
+    "pull_E07": {
+      "path": "res://assets/fx/combat11/pull_E07.png",
+      "metadata": "pull_E07.json",
+      "source_id": "water/whirlpool",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0.1,
+        2.8
+      ],
+      "options": {
+        "palette": [
+          "#173d39",
+          "#216859",
+          "#2d8c70",
+          "#43ac85",
+          "#7bcea4",
+          "#b4e5c8",
+          "#eaffea"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "1a096054e162acd847d903d1d1a01dcf487a80a6bdd25f6436d374d940db0007",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right"
+    },
+    "chain_E08": {
+      "path": "res://assets/fx/combat11/chain_E08.png",
+      "metadata": "chain_E08.json",
+      "source_id": "holy/sunburst",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0.1,
+        3.8
+      ],
+      "options": {
+        "palette": [
+          "#493516",
+          "#7e5f24",
+          "#b18b38",
+          "#d5af4c",
+          "#eed079",
+          "#ffe7ac",
+          "#fff6dc"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "64c28225db3b858adc4cd2691ad659b2d1437e88843e8d4012fea17ff2f90b30",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right"
+    },
+    "penetration_E08": {
+      "path": "res://assets/fx/combat11/penetration_E08.png",
+      "metadata": "penetration_E08.json",
+      "source_id": "arcane/arcane-beam",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0,
+        1.16
+      ],
+      "options": {
+        "palette": [
+          "#493516",
+          "#7e5f24",
+          "#b18b38",
+          "#d5af4c",
+          "#eed079",
+          "#ffe7ac",
+          "#fff6dc"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "ddddbe158c663cf19abea746ac875299b720bfc0c1139e1808bd382e6291acb1",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right"
+    },
+    "pull_E08": {
+      "path": "res://assets/fx/combat11/pull_E08.png",
+      "metadata": "pull_E08.json",
+      "source_id": "arcane/rune-circle",
+      "frame_size": [
+        224,
+        88
+      ],
+      "frame_width": 224,
+      "frame_height": 88,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot": [
+        12,
+        44
+      ],
+      "pivot_px": [
+        12,
+        44
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 210,
+      "loop": false,
+      "source_time": [
+        0.1,
+        3.8
+      ],
+      "options": {
+        "palette": [
+          "#493516",
+          "#7e5f24",
+          "#b18b38",
+          "#d5af4c",
+          "#eed079",
+          "#ffe7ac",
+          "#fff6dc"
+        ],
+        "seed": 29,
+        "light": 0.18
+      },
+      "source_sha256": "30ba86abbcc1e2bb2a35b94acb0e4f2830a1fe0b22b663ec9961a1e8bfceb062",
+      "path_start": [
+        12,
+        44
+      ],
+      "path_end": [
+        212,
+        44
+      ],
+      "direction": "right"
+    }
+  }
+}

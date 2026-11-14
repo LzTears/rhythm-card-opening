@@ -1,0 +1,190 @@
+{
+  "version": 2,
+  "date": "2026-11-13",
+  "generator": "built-in image_gen",
+  "previous": "archive/pack-v1",
+  "processing": "sprite-gen slice-sheet --grid 5x1 --chroma-key none --alpha-floor 64 --cell-width 300 --cell-height 400 --baseline-y 396 --target-height 392 --scale sheet --fit contain",
+  "sources": [
+    {
+      "style": "starlight",
+      "path": "sources/pack_starlight_atlas_v2.png",
+      "native_size": [
+        2172,
+        724
+      ],
+      "old_source": "sources/pack_starlight_atlas.png"
+    },
+    {
+      "style": "neon",
+      "path": "sources/pack_neon_atlas_v2.png",
+      "native_size": [
+        1402,
+        1122
+      ],
+      "old_source": "sources/pack_neon_atlas.png"
+    }
+  ],
+  "files": [
+    {
+      "file": "pack_neon_0.png",
+      "canvas": [
+        300,
+        400
+      ],
+      "bbox": [
+        6,
+        6,
+        294,
+        394
+      ],
+      "ratio": 0.7423,
+      "width_fill": 0.96,
+      "height_fill": 0.97
+    },
+    {
+      "file": "pack_neon_1.png",
+      "canvas": [
+        300,
+        400
+      ],
+      "bbox": [
+        9,
+        7,
+        291,
+        394
+      ],
+      "ratio": 0.7287,
+      "width_fill": 0.94,
+      "height_fill": 0.9675
+    },
+    {
+      "file": "pack_neon_2.png",
+      "canvas": [
+        300,
+        400
+      ],
+      "bbox": [
+        9,
+        7,
+        292,
+        394
+      ],
+      "ratio": 0.7313,
+      "width_fill": 0.9433,
+      "height_fill": 0.9675
+    },
+    {
+      "file": "pack_neon_3.png",
+      "canvas": [
+        300,
+        400
+      ],
+      "bbox": [
+        11,
+        8,
+        290,
+        394
+      ],
+      "ratio": 0.7228,
+      "width_fill": 0.93,
+      "height_fill": 0.965
+    },
+    {
+      "file": "pack_neon_4.png",
+      "canvas": [
+        300,
+        400
+      ],
+      "bbox": [
+        11,
+        8,
+        291,
+        394
+      ],
+      "ratio": 0.7254,
+      "width_fill": 0.9333,
+      "height_fill": 0.965
+    },
+    {
+      "file": "pack_starlight_0.png",
+      "canvas": [
+        300,
+        400
+      ],
+      "bbox": [
+        5,
+        6,
+        295,
+        395
+      ],
+      "ratio": 0.7455,
+      "width_fill": 0.9667,
+      "height_fill": 0.9725
+    },
+    {
+      "file": "pack_starlight_1.png",
+      "canvas": [
+        300,
+        400
+      ],
+      "bbox": [
+        6,
+        7,
+        295,
+        395
+      ],
+      "ratio": 0.7448,
+      "width_fill": 0.9633,
+      "height_fill": 0.97
+    },
+    {
+      "file": "pack_starlight_2.png",
+      "canvas": [
+        300,
+        400
+      ],
+      "bbox": [
+        6,
+        6,
+        295,
+        395
+      ],
+      "ratio": 0.7429,
+      "width_fill": 0.9633,
+      "height_fill": 0.9725
+    },
+    {
+      "file": "pack_starlight_3.png",
+      "canvas": [
+        300,
+        400
+      ],
+      "bbox": [
+        7,
+        7,
+        295,
+        394
+      ],
+      "ratio": 0.7442,
+      "width_fill": 0.96,
+      "height_fill": 0.9675
+    },
+    {
+      "file": "pack_starlight_4.png",
+      "canvas": [
+        300,
+        400
+      ],
+      "bbox": [
+        5,
+        6,
+        294,
+        395
+      ],
+      "ratio": 0.7429,
+      "width_fill": 0.9633,
+      "height_fill": 0.9725
+    }
+  ],
+  "qa": "View inspected both atlases and exported white packets; all clip reports zero; visible body target width >=90%, height >=92% met in all 10."
+}

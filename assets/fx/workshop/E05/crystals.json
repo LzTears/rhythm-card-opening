@@ -1,0 +1,49 @@
+{
+  "key": "crystals_E05",
+  "source_id": "workshop/frost-crystals#six-chunks-two-stars",
+  "source_file": "source/pixelfx/src/fx/workshop/frost-crystals.js",
+  "source_sha256": "dd44772b3fa73e662f6b42c2e50a6bea491c527c629adce4c1af158cf873dd59",
+  "adaptation": "Original workshop topdown composition using pixelfx painter/facet/glint techniques; 6 baked crystals and 2 stars, no actor or runtime particle nodes.",
+  "size": [
+    128,
+    128
+  ],
+  "pivot": [
+    64,
+    64
+  ],
+  "floor_pivot": [
+    64,
+    64
+  ],
+  "columns": 6,
+  "rows": 4,
+  "frames": 24,
+  "fps": 30,
+  "source_duration": 0.7666666666666667,
+  "sample_end": 0.7666666666666667,
+  "duration": 0.8,
+  "body_radius_px": 64,
+  "color": "crystals-color.png",
+  "light": "crystals-light.png",
+  "color_sha256": "8cf44d88ea6edf05a2cb54f2891c2be8fb11c87f5044697d394d29c056b41474",
+  "light_sha256": "126fa6bad5acc7a5393bca85c783f2aae876cf5e1be56a2f19527668c41bc15d",
+  "terminal_pixels": {
+    "color": 0,
+    "light": 0
+  },
+  "outer_edge_pixels_all_frames": {
+    "color": 0,
+    "light": 0
+  },
+  "palette": [
+    "#123e61",
+    "#176796",
+    "#198bc0",
+    "#31b5df",
+    "#73dbf0",
+    "#b7f2f8",
+    "#e9feff",
+    "#ffffff"
+  ]
+}

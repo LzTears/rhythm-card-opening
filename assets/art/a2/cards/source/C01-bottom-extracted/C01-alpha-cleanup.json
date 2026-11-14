@@ -1,0 +1,12 @@
+{
+  "floor": 64,
+  "edge_px": 0,
+  "pixels": 524288,
+  "faint_fraction_before": 0.026941299438476562,
+  "faint_fraction_after": 0.0,
+  "haze_fraction_before": 0.026941299438476562,
+  "haze_fraction_after": 0.0,
+  "cleared_pixels": 14125,
+  "changed_solid_pixels": 0,
+  "changed_edge_pixels": 0
+}

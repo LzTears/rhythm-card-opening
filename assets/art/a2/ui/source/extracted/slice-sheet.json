@@ -1,0 +1,193 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "ui-generated.png",
+  "grid": [
+    3,
+    2
+  ],
+  "canvas": {
+    "w": 512,
+    "h": 512
+  },
+  "baseline_y": 500.0,
+  "target_height": 432.0,
+  "scale": "sheet",
+  "fit": "contain",
+  "factor": 1.0023201856148491,
+  "factor_from": {
+    "rule": "target_height",
+    "cell": "panel"
+  },
+  "alpha_cleanup": "alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "panel",
+      "file": "panel.png",
+      "factor": 1.0023201856148491,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 438,
+          "h": 431
+        },
+        "canvas": {
+          "w": 439,
+          "h": 432
+        }
+      },
+      "box": {
+        "x": 37,
+        "y": 68,
+        "w": 439,
+        "h": 432
+      },
+      "anchor": [
+        256.5,
+        500.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "button-normal",
+      "file": "button-normal.png",
+      "factor": 1.0023201856148491,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 456,
+          "h": 154
+        },
+        "canvas": {
+          "w": 457,
+          "h": 154
+        }
+      },
+      "box": {
+        "x": 28,
+        "y": 346,
+        "w": 457,
+        "h": 154
+      },
+      "anchor": [
+        256.5,
+        500.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "button-hover",
+      "file": "button-hover.png",
+      "factor": 1.0023201856148491,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 456,
+          "h": 154
+        },
+        "canvas": {
+          "w": 457,
+          "h": 154
+        }
+      },
+      "box": {
+        "x": 28,
+        "y": 346,
+        "w": 457,
+        "h": 154
+      },
+      "anchor": [
+        256.5,
+        500.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "button-pressed",
+      "file": "button-pressed.png",
+      "factor": 1.0023201856148491,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 455,
+          "h": 154
+        },
+        "canvas": {
+          "w": 456,
+          "h": 154
+        }
+      },
+      "box": {
+        "x": 28,
+        "y": 346,
+        "w": 456,
+        "h": 154
+      },
+      "anchor": [
+        256.0,
+        500.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "button-disabled",
+      "file": "button-disabled.png",
+      "factor": 1.0023201856148491,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 456,
+          "h": 154
+        },
+        "canvas": {
+          "w": 457,
+          "h": 154
+        }
+      },
+      "box": {
+        "x": 28,
+        "y": 346,
+        "w": 457,
+        "h": 154
+      },
+      "anchor": [
+        256.5,
+        500.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "button-primary",
+      "file": "button-primary.png",
+      "factor": 1.0023201856148491,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 457,
+          "h": 154
+        },
+        "canvas": {
+          "w": 458,
+          "h": 154
+        }
+      },
+      "box": {
+        "x": 27,
+        "y": 346,
+        "w": 458,
+        "h": 154
+      },
+      "anchor": [
+        256.0,
+        500.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

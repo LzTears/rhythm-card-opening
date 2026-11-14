@@ -1,0 +1,22 @@
+[
+  {
+    "id": "MEM-015",
+    "method": "built-in image_gen separate request",
+    "reference": "assets/collection/meme-production-a/references/nailong-reference.jpg",
+    "tool_original": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0e8-5e16-75c2-b377-5bde12dd4cf3\\exec-394332b1-e146-42f3-b219-7b391f7606c2.png",
+    "prompt": "prompts/MEM-015.txt",
+    "final": "assets/collection/cards/MEM-015.png",
+    "source": "sources/MEM-015.png",
+    "view_checked": true
+  },
+  {
+    "id": "MEM-016",
+    "method": "built-in image_gen separate request",
+    "reference": "assets/collection/meme-production-a/references/nailong-reference.jpg",
+    "tool_original": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0e8-5e16-75c2-b377-5bde12dd4cf3\\exec-a0bc4ddb-7f59-44c8-8505-f9d0ab4bf335.png",
+    "prompt": "prompts/MEM-016.txt",
+    "final": "assets/collection/cards/MEM-016.png",
+    "source": "sources/MEM-016.png",
+    "view_checked": true
+  }
+]

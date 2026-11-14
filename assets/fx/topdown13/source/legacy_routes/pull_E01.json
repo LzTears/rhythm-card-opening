@@ -1,0 +1,314 @@
+{
+  "frames": [
+    {
+      "filename": "pull_E01 0",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    },
+    {
+      "filename": "pull_E01 1",
+      "frame": {
+        "x": 224,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    },
+    {
+      "filename": "pull_E01 2",
+      "frame": {
+        "x": 448,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    },
+    {
+      "filename": "pull_E01 3",
+      "frame": {
+        "x": 672,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    },
+    {
+      "filename": "pull_E01 4",
+      "frame": {
+        "x": 0,
+        "y": 88,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    },
+    {
+      "filename": "pull_E01 5",
+      "frame": {
+        "x": 224,
+        "y": 88,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    },
+    {
+      "filename": "pull_E01 6",
+      "frame": {
+        "x": 448,
+        "y": 88,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    },
+    {
+      "filename": "pull_E01 7",
+      "frame": {
+        "x": 672,
+        "y": 88,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    },
+    {
+      "filename": "pull_E01 8",
+      "frame": {
+        "x": 0,
+        "y": 176,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    },
+    {
+      "filename": "pull_E01 9",
+      "frame": {
+        "x": 224,
+        "y": 176,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    },
+    {
+      "filename": "pull_E01 10",
+      "frame": {
+        "x": 448,
+        "y": 176,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    },
+    {
+      "filename": "pull_E01 11",
+      "frame": {
+        "x": 672,
+        "y": 176,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    },
+    {
+      "filename": "pull_E01 12",
+      "frame": {
+        "x": 0,
+        "y": 264,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    }
+  ],
+  "meta": {
+    "app": "https://github.com/patch-gg/pixelfx",
+    "image": "pull_E01.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 896,
+      "h": 352
+    },
+    "pixelfx": {
+      "id": "impacts/blunt-hit",
+      "fps": 30,
+      "loop": false,
+      "frames": 13,
+      "frameSize": [
+        224,
+        88
+      ],
+      "pivot": [
+        12,
+        44
+      ],
+      "columns": 4
+    }
+  }
+}

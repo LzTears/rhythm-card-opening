@@ -1,0 +1,22 @@
+{
+  "master": {
+    "center_column_clear_minmax": [
+      86,
+      705
+    ],
+    "row300_clear_minmax": [
+      29,
+      740
+    ]
+  },
+  "generated": {
+    "center_column_clear_minmax": [
+      89,
+      704
+    ],
+    "row300_clear_minmax": [
+      34,
+      738
+    ]
+  }
+}

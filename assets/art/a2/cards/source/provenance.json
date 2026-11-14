@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-09",
+  "tool": "built-in image_gen.imagegen",
+  "style_reference": "A2 circular-card pixel art direction; no external comparison image is a current regeneration dependency.",
+  "reference_role": "Creation-time style direction only; four current source atlases are independently generated.",
+  "generated_sources": {
+    "C09": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1c079-9c99-7b02-878b-12be4c2fc239\\exec-164b558c-5509-4616-b572-fe8e391eb9c8.png",
+    "C01": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1c079-9c99-7b02-878b-12be4c2fc239\\exec-d96b0da5-59dd-4881-b068-96c925d3d0c5.png",
+    "C04": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1c079-9c99-7b02-878b-12be4c2fc239\\exec-a4f305ad-d0cd-49c2-9b52-b20babc9fcb4.png",
+    "C12": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1c079-9c99-7b02-878b-12be4c2fc239\\exec-6fe214b5-ea2a-4223-b369-63ca5791d423.png"
+  },
+  "extraction": "sprite-gen slice-sheet; native alpha cleanup floor64 edge0; contain460px on512RGBA. Python only cropped nonempty atlas subgrids, copied and made contact sheets. No Python drawing/recolor.",
+  "regeneration_sources": {
+    "C09": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1c079-9c99-7b02-878b-12be4c2fc239\\exec-164b558c-5509-4616-b572-fe8e391eb9c8.png",
+    "C01": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1c079-9c99-7b02-878b-12be4c2fc239\\exec-d96b0da5-59dd-4881-b068-96c925d3d0c5.png",
+    "C04": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1c079-9c99-7b02-878b-12be4c2fc239\\exec-a4f305ad-d0cd-49c2-9b52-b20babc9fcb4.png",
+    "C12": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1c079-9c99-7b02-878b-12be4c2fc239\\exec-6fe214b5-ea2a-4223-b369-63ca5791d423.png"
+  },
+  "current_card_ids": [
+    "C09-0",
+    "C01-0",
+    "C04-0",
+    "C12-0"
+  ],
+  "current_card_count": 4,
+  "rarity_counts": [
+    4,
+    0,
+    0,
+    0,
+    0
+  ],
+  "collection_note": "Only the four current families are listed. Their original sheets and complete slice reports remain regeneration data; raw-sha256.json records these four sheets and the shared card back."
+}

@@ -1,0 +1,539 @@
+{
+  "version": "feedback10-a2",
+  "license": "MIT",
+  "source": "https://github.com/patch-gg/pixelfx",
+  "round": 5,
+  "engine_filter": "nearest",
+  "effects": {
+    "heavy": {
+      "path": "res://assets/fx/feedback10/heavy.png",
+      "metadata": "heavy.json",
+      "source_id": "impacts/crit-hit",
+      "frame_size": [
+        216,
+        136
+      ],
+      "frame_width": 216,
+      "frame_height": 136,
+      "frame_count": 13,
+      "cols": 3,
+      "fps": 30,
+      "pivot_px": [
+        84,
+        106
+      ],
+      "pivot": [
+        84,
+        106
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 220,
+      "source_time": [
+        0,
+        0.9
+      ],
+      "options": {
+        "seed": 27,
+        "light": 0.065,
+        "palette": [
+          "#532a22",
+          "#8b4529",
+          "#bc632d",
+          "#df8b36",
+          "#f3b650",
+          "#ffe095",
+          "#fff0c6"
+        ]
+      },
+      "ending_empty": true,
+      "recipe": "palette + low glow + selective 1px contour + finite burst envelope",
+      "license": "MIT",
+      "source_sha256": "c6af9303f0e463051696796a5886236d91182594e1d4fadee2067b9cf82ba857",
+      "png_sha256": "2fb278e62b69a8c87da74801d1dfa7462661780063c633c987c633095a071b2d",
+      "previews": [
+        "res://verification/feedback10/art/round1/heavy/contact.png",
+        "res://verification/feedback10/art/round2/heavy/contact.png",
+        "res://verification/feedback10/art/round3/heavy/contact.png",
+        "res://verification/feedback10/art/round4/heavy/contact.png",
+        "res://verification/feedback10/art/round5/heavy/contact.png"
+      ]
+    },
+    "lightning": {
+      "path": "res://assets/fx/feedback10/lightning.png",
+      "metadata": "lightning.json",
+      "source_id": "lightning/zap-hit",
+      "frame_size": [
+        144,
+        112
+      ],
+      "frame_width": 144,
+      "frame_height": 112,
+      "frame_count": 13,
+      "cols": 4,
+      "fps": 30,
+      "pivot_px": [
+        76,
+        56
+      ],
+      "pivot": [
+        76,
+        56
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 190,
+      "source_time": [
+        0,
+        0.9
+      ],
+      "options": {
+        "seed": 27,
+        "light": 0.065,
+        "palette": [
+          "#173f50",
+          "#205b71",
+          "#287d91",
+          "#3a9da7",
+          "#64bac0",
+          "#9ed7ce",
+          "#def0dc"
+        ]
+      },
+      "ending_empty": true,
+      "recipe": "palette + low glow + selective 1px contour + finite burst envelope",
+      "license": "MIT",
+      "source_sha256": "ad93c93f57babccc82ac1a20c7027b1f950e417b5e5a6969b35445ed23fff83a",
+      "png_sha256": "dbb3d8e97365f7ffeda8ae2fa1d5e9233a04ec7cf23e6a355886932552513207",
+      "previews": [
+        "res://verification/feedback10/art/round1/lightning/contact.png",
+        "res://verification/feedback10/art/round2/lightning/contact.png",
+        "res://verification/feedback10/art/round3/lightning/contact.png",
+        "res://verification/feedback10/art/round4/lightning/contact.png",
+        "res://verification/feedback10/art/round5/lightning/contact.png"
+      ]
+    },
+    "frost": {
+      "path": "res://assets/fx/feedback10/frost.png",
+      "metadata": "frost.json",
+      "source_id": "ice/ice-spikes",
+      "frame_size": [
+        264,
+        112
+      ],
+      "frame_width": 264,
+      "frame_height": 112,
+      "frame_count": 18,
+      "cols": 3,
+      "fps": 30,
+      "pivot_px": [
+        24,
+        96
+      ],
+      "pivot": [
+        24,
+        96
+      ],
+      "duration": 0.6,
+      "display_width": 205,
+      "source_time": [
+        0.1,
+        3
+      ],
+      "options": {
+        "seed": 27,
+        "light": 0.065,
+        "palette": [
+          "#173f50",
+          "#205b71",
+          "#287d91",
+          "#3a9da7",
+          "#64bac0",
+          "#9ed7ce",
+          "#def0dc"
+        ]
+      },
+      "ending_empty": true,
+      "recipe": "palette + low glow + selective 1px contour + finite burst envelope",
+      "license": "MIT",
+      "source_sha256": "7bb75052f982b28f2f93c87b0473f2075a49f3c18314ee22f798eafbc7812912",
+      "png_sha256": "7bfc769283bfc9261f481595542c7ce6f3b723e3fee8df4d0236622556c25d3f",
+      "previews": [
+        "res://verification/feedback10/art/round1/frost/contact.png",
+        "res://verification/feedback10/art/round2/frost/contact.png",
+        "res://verification/feedback10/art/round3/frost/contact.png",
+        "res://verification/feedback10/art/round4/frost/contact.png",
+        "res://verification/feedback10/art/round5/frost/contact.png"
+      ]
+    },
+    "echo": {
+      "path": "res://assets/fx/feedback10/echo.png",
+      "metadata": "echo.json",
+      "source_id": "pickups/collect-burst",
+      "frame_size": [
+        112,
+        108
+      ],
+      "frame_width": 112,
+      "frame_height": 108,
+      "frame_count": 15,
+      "cols": 4,
+      "fps": 30,
+      "pivot_px": [
+        56,
+        94
+      ],
+      "pivot": [
+        56,
+        94
+      ],
+      "duration": 0.5,
+      "display_width": 130,
+      "source_time": [
+        0,
+        1.35
+      ],
+      "options": {
+        "seed": 27,
+        "light": 0.065,
+        "palette": [
+          "#3f315b",
+          "#634378",
+          "#855aa2",
+          "#a17bbe",
+          "#bf9ed0",
+          "#d6bfdf",
+          "#ece0e6"
+        ]
+      },
+      "ending_empty": true,
+      "recipe": "palette + low glow + selective 1px contour + finite burst envelope",
+      "license": "MIT",
+      "source_sha256": "4658eb7056b8d34b8f4f73a6045e71e4cda7d31253d683b25fadf28e52ada55e",
+      "png_sha256": "143e20611f716fc25763cc0db10b15c8ec6eb06cdce6bf2fd6e0ee4c8176eada",
+      "previews": [
+        "res://verification/feedback10/art/round1/echo/contact.png",
+        "res://verification/feedback10/art/round2/echo/contact.png",
+        "res://verification/feedback10/art/round3/echo/contact.png",
+        "res://verification/feedback10/art/round4/echo/contact.png",
+        "res://verification/feedback10/art/round5/echo/contact.png"
+      ]
+    },
+    "aftershock": {
+      "path": "res://assets/fx/feedback10/aftershock.png",
+      "metadata": "aftershock.json",
+      "source_id": "water/ripples",
+      "frame_size": [
+        136,
+        52
+      ],
+      "frame_width": 136,
+      "frame_height": 52,
+      "frame_count": 18,
+      "cols": 3,
+      "fps": 30,
+      "pivot_px": [
+        68,
+        30
+      ],
+      "pivot": [
+        68,
+        30
+      ],
+      "duration": 0.6,
+      "display_width": 190,
+      "source_time": [
+        0,
+        1.9
+      ],
+      "options": {
+        "seed": 27,
+        "light": 0.065,
+        "palette": [
+          "#173f50",
+          "#205b71",
+          "#287d91",
+          "#3a9da7",
+          "#64bac0",
+          "#9ed7ce",
+          "#def0dc"
+        ]
+      },
+      "ending_empty": true,
+      "recipe": "palette + low glow + selective 1px contour + finite burst envelope",
+      "license": "MIT",
+      "source_sha256": "2a4fbf4544d03947b185cd7888b78f15fd89b67fe3f6aa98426e1f577a97a9ed",
+      "png_sha256": "4cb78a8ca80d526ece0c2d31b63905dc27a9dbb71cf937ed58c669bf578602db",
+      "previews": [
+        "res://verification/feedback10/art/round1/aftershock/contact.png",
+        "res://verification/feedback10/art/round2/aftershock/contact.png",
+        "res://verification/feedback10/art/round3/aftershock/contact.png",
+        "res://verification/feedback10/art/round4/aftershock/contact.png",
+        "res://verification/feedback10/art/round5/aftershock/contact.png"
+      ]
+    },
+    "harvest_coin": {
+      "path": "res://assets/fx/feedback10/harvest_coin.png",
+      "metadata": "harvest_coin.json",
+      "source_id": "pickups/coin-spin",
+      "frame_size": [
+        56,
+        56
+      ],
+      "frame_width": 56,
+      "frame_height": 56,
+      "frame_count": 19,
+      "cols": 5,
+      "fps": 30,
+      "pivot_px": [
+        28,
+        48
+      ],
+      "pivot": [
+        28,
+        48
+      ],
+      "duration": 0.6333333333333333,
+      "display_width": 38,
+      "source_time": [
+        0,
+        1.5
+      ],
+      "options": {
+        "seed": 27,
+        "light": 0.065,
+        "palette": [
+          "#532a22",
+          "#8b4529",
+          "#bc632d",
+          "#df8b36",
+          "#f3b650",
+          "#ffe095",
+          "#fff0c6"
+        ]
+      },
+      "ending_empty": true,
+      "recipe": "palette + low glow + selective 1px contour + finite burst envelope",
+      "license": "MIT",
+      "source_sha256": "37a7426ff7ddf3ccc770b47d5044e2550a24e247fe0ff6890cc315343e4abcd9",
+      "png_sha256": "8c48cd114ed13936d15e0908df78701ef7d60aaf76550fcdd305400d70a487c2",
+      "previews": [
+        "res://verification/feedback10/art/round1/harvest_coin/contact.png",
+        "res://verification/feedback10/art/round2/harvest_coin/contact.png",
+        "res://verification/feedback10/art/round3/harvest_coin/contact.png",
+        "res://verification/feedback10/art/round4/harvest_coin/contact.png",
+        "res://verification/feedback10/art/round5/harvest_coin/contact.png"
+      ]
+    },
+    "harvest_card": {
+      "path": "res://assets/fx/feedback10/harvest_card.png",
+      "metadata": "harvest_card.json",
+      "source_id": "pickups/collect-burst",
+      "frame_size": [
+        112,
+        108
+      ],
+      "frame_width": 112,
+      "frame_height": 108,
+      "frame_count": 16,
+      "cols": 4,
+      "fps": 30,
+      "pivot_px": [
+        56,
+        94
+      ],
+      "pivot": [
+        56,
+        94
+      ],
+      "duration": 0.5333333333333333,
+      "display_width": 72,
+      "source_time": [
+        0,
+        1.35
+      ],
+      "options": {
+        "seed": 27,
+        "light": 0.065,
+        "palette": [
+          "#532a22",
+          "#8b4529",
+          "#bc632d",
+          "#df8b36",
+          "#f3b650",
+          "#ffe095",
+          "#fff0c6"
+        ]
+      },
+      "ending_empty": true,
+      "recipe": "palette + low glow + selective 1px contour + finite burst envelope",
+      "license": "MIT",
+      "source_sha256": "4658eb7056b8d34b8f4f73a6045e71e4cda7d31253d683b25fadf28e52ada55e",
+      "png_sha256": "507eb9d4586bb6a1a53048cff502461f21a9a5cfdb9a2c78e834d0f19e8cc40d",
+      "previews": [
+        "res://verification/feedback10/art/round1/harvest_card/contact.png",
+        "res://verification/feedback10/art/round2/harvest_card/contact.png",
+        "res://verification/feedback10/art/round3/harvest_card/contact.png",
+        "res://verification/feedback10/art/round4/harvest_card/contact.png",
+        "res://verification/feedback10/art/round5/harvest_card/contact.png"
+      ]
+    },
+    "contact": {
+      "path": "res://assets/fx/feedback10/contact.png",
+      "metadata": "contact.json",
+      "source_id": "impacts/hit-spark",
+      "frame_size": [
+        136,
+        80
+      ],
+      "frame_width": 136,
+      "frame_height": 80,
+      "frame_count": 13,
+      "cols": 3,
+      "fps": 30,
+      "pivot_px": [
+        44,
+        64
+      ],
+      "pivot": [
+        44,
+        64
+      ],
+      "duration": 0.43333333333333335,
+      "display_width": 95,
+      "source_time": [
+        0,
+        0.5
+      ],
+      "options": {
+        "seed": 27,
+        "light": 0.065,
+        "palette": [
+          "#532a22",
+          "#8b4529",
+          "#bc632d",
+          "#df8b36",
+          "#f3b650",
+          "#ffe095",
+          "#fff0c6"
+        ]
+      },
+      "ending_empty": true,
+      "recipe": "palette + low glow + selective 1px contour + finite burst envelope",
+      "license": "MIT",
+      "source_sha256": "b0f2d0e5337ab2fff3a6a8995e6404fed72512bdcd1bc92838a60bf879bc732a",
+      "png_sha256": "cd1a1e087818e6039bedcf8613359afe1b38be29ebe66ad8637f5a61e317662a",
+      "previews": [
+        "res://verification/feedback10/art/round1/contact/contact.png",
+        "res://verification/feedback10/art/round2/contact/contact.png",
+        "res://verification/feedback10/art/round3/contact/contact.png",
+        "res://verification/feedback10/art/round4/contact/contact.png",
+        "res://verification/feedback10/art/round5/contact/contact.png"
+      ]
+    },
+    "break": {
+      "path": "res://assets/fx/feedback10/break.png",
+      "metadata": "break.json",
+      "source_id": "ui/confetti",
+      "frame_size": [
+        200,
+        140
+      ],
+      "frame_width": 200,
+      "frame_height": 140,
+      "frame_count": 18,
+      "cols": 4,
+      "fps": 30,
+      "pivot_px": [
+        100,
+        126
+      ],
+      "pivot": [
+        100,
+        126
+      ],
+      "duration": 0.6,
+      "display_width": 112,
+      "source_time": [
+        0.1,
+        3.4
+      ],
+      "options": {
+        "seed": 27,
+        "light": 0.065,
+        "palette": [
+          "#532a22",
+          "#8b4529",
+          "#bc632d",
+          "#df8b36",
+          "#f3b650",
+          "#ffe095",
+          "#fff0c6"
+        ]
+      },
+      "ending_empty": true,
+      "recipe": "palette + low glow + selective 1px contour + finite burst envelope",
+      "license": "MIT",
+      "source_sha256": "f69763e9154fb7b274869edeef890b2a87513975d577aa1c54806a92ea1a4200",
+      "png_sha256": "8cb5fbfb79ffea150daf4db8b3f2e6a4d049e9992f7735b9083fef1440d11e0a",
+      "previews": [
+        "res://verification/feedback10/art/round1/break/contact.png",
+        "res://verification/feedback10/art/round2/break/contact.png",
+        "res://verification/feedback10/art/round3/break/contact.png",
+        "res://verification/feedback10/art/round4/break/contact.png",
+        "res://verification/feedback10/art/round5/break/contact.png"
+      ]
+    },
+    "harvest": {
+      "path": "res://assets/fx/feedback10/harvest.png",
+      "metadata": "harvest.json",
+      "source_id": "pickups/collect-burst",
+      "frame_size": [
+        112,
+        108
+      ],
+      "frame_width": 112,
+      "frame_height": 108,
+      "frame_count": 16,
+      "cols": 4,
+      "fps": 30,
+      "pivot_px": [
+        56,
+        94
+      ],
+      "pivot": [
+        56,
+        94
+      ],
+      "duration": 0.5333333333333333,
+      "display_width": 64,
+      "source_time": [
+        0,
+        1.35
+      ],
+      "options": {
+        "seed": 27,
+        "light": 0.065,
+        "palette": [
+          "#532a22",
+          "#8b4529",
+          "#bc632d",
+          "#df8b36",
+          "#f3b650",
+          "#ffe095",
+          "#fff0c6"
+        ]
+      },
+      "ending_empty": true,
+      "recipe": "palette + low glow + selective 1px contour + finite burst envelope",
+      "license": "MIT",
+      "source_sha256": "4658eb7056b8d34b8f4f73a6045e71e4cda7d31253d683b25fadf28e52ada55e",
+      "png_sha256": "507eb9d4586bb6a1a53048cff502461f21a9a5cfdb9a2c78e834d0f19e8cc40d",
+      "previews": [
+        "res://verification/feedback10/art/round1/harvest/contact.png",
+        "res://verification/feedback10/art/round2/harvest/contact.png",
+        "res://verification/feedback10/art/round3/harvest/contact.png",
+        "res://verification/feedback10/art/round4/harvest/contact.png",
+        "res://verification/feedback10/art/round5/harvest/contact.png"
+      ]
+    }
+  }
+}

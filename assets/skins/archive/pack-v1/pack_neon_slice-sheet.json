@@ -1,0 +1,165 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "pack_neon_atlas.png",
+  "grid": [
+    5,
+    1
+  ],
+  "canvas": {
+    "w": 288,
+    "h": 384
+  },
+  "baseline_y": 375.0,
+  "target_height": 366.0,
+  "scale": "sheet",
+  "fit": "contain",
+  "factor": 0.6130653266331658,
+  "factor_from": {
+    "rule": "target_height",
+    "cell": "0"
+  },
+  "alpha_cleanup": "pack_neon_alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "0",
+      "file": "pack_neon_0.png",
+      "factor": 0.6130653266331658,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 324,
+          "h": 597
+        },
+        "canvas": {
+          "w": 199,
+          "h": 366
+        }
+      },
+      "box": {
+        "x": 45,
+        "y": 9,
+        "w": 199,
+        "h": 366
+      },
+      "anchor": [
+        144.5,
+        375.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "1",
+      "file": "pack_neon_1.png",
+      "factor": 0.6130653266331658,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 323,
+          "h": 596
+        },
+        "canvas": {
+          "w": 198,
+          "h": 365
+        }
+      },
+      "box": {
+        "x": 45,
+        "y": 10,
+        "w": 198,
+        "h": 365
+      },
+      "anchor": [
+        144.0,
+        375.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "2",
+      "file": "pack_neon_2.png",
+      "factor": 0.6130653266331658,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 324,
+          "h": 597
+        },
+        "canvas": {
+          "w": 199,
+          "h": 366
+        }
+      },
+      "box": {
+        "x": 45,
+        "y": 9,
+        "w": 199,
+        "h": 366
+      },
+      "anchor": [
+        144.5,
+        375.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "3",
+      "file": "pack_neon_3.png",
+      "factor": 0.6130653266331658,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 324,
+          "h": 597
+        },
+        "canvas": {
+          "w": 199,
+          "h": 366
+        }
+      },
+      "box": {
+        "x": 45,
+        "y": 9,
+        "w": 199,
+        "h": 366
+      },
+      "anchor": [
+        144.5,
+        375.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "4",
+      "file": "pack_neon_4.png",
+      "factor": 0.6130653266331658,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 325,
+          "h": 597
+        },
+        "canvas": {
+          "w": 199,
+          "h": 366
+        }
+      },
+      "box": {
+        "x": 45,
+        "y": 9,
+        "w": 199,
+        "h": 366
+      },
+      "anchor": [
+        144.5,
+        375.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "generator": "built-in image_gen",
+  "source": "sources/digimon-backs-atlas.png",
+  "source_size": [
+    1983,
+    793
+  ],
+  "transparent_background": true,
+  "subject": "digital circuits and pixel-marked Digi-Egg medallion",
+  "grade_order": [
+    "white",
+    "green",
+    "purple",
+    "gold",
+    "red"
+  ],
+  "pipeline_report": "backs/digimon_back_slice-sheet.json",
+  "alpha_report": "backs/digimon_back_alpha-cleanup.json",
+  "prompt": "prompts.md#\u6570\u7801\u5b9d\u8d1d\u72ec\u7acb\u4e94\u8272\u5361\u80cc",
+  "files": [
+    {
+      "grade": 0,
+      "art_path": "res://assets/collection/backs/digimon_back_0.png",
+      "size": [
+        288,
+        384
+      ],
+      "mode": "RGBA",
+      "bbox_alpha64": [
+        14,
+        6,
+        275,
+        379
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "center_alpha": 253,
+      "sha256": "299a79ef8ae8808f6083bd96e29562df8954931f5880a93811bae86eb7b73374",
+      "clipped_px": 0
+    },
+    {
+      "grade": 1,
+      "art_path": "res://assets/collection/backs/digimon_back_1.png",
+      "size": [
+        288,
+        384
+      ],
+      "mode": "RGBA",
+      "bbox_alpha64": [
+        14,
+        6,
+        275,
+        379
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "center_alpha": 253,
+      "sha256": "8580284dfc8e26deddc0f932ce4053f41d64e3cba375ae8d73014386a588084d",
+      "clipped_px": 0
+    },
+    {
+      "grade": 2,
+      "art_path": "res://assets/collection/backs/digimon_back_2.png",
+      "size": [
+        288,
+        384
+      ],
+      "mode": "RGBA",
+      "bbox_alpha64": [
+        14,
+        6,
+        274,
+        379
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "center_alpha": 252,
+      "sha256": "9edffccfbd9ac5dc8febd8d65d16237e8495c90b99ba959da6d7aac204e47241",
+      "clipped_px": 0
+    },
+    {
+      "grade": 3,
+      "art_path": "res://assets/collection/backs/digimon_back_3.png",
+      "size": [
+        288,
+        384
+      ],
+      "mode": "RGBA",
+      "bbox_alpha64": [
+        14,
+        6,
+        274,
+        379
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "center_alpha": 253,
+      "sha256": "c0fd9c3a13a8e95aa44ba40beeb31c15568448508c220445d8397c90479eef6b",
+      "clipped_px": 0
+    },
+    {
+      "grade": 4,
+      "art_path": "res://assets/collection/backs/digimon_back_4.png",
+      "size": [
+        288,
+        384
+      ],
+      "mode": "RGBA",
+      "bbox_alpha64": [
+        14,
+        6,
+        275,
+        379
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "center_alpha": 253,
+      "sha256": "8923caa6c8355a0adaee7d8d2ea35adfc51e8dd6ea739ebf7b9e8b379af5f388",
+      "clipped_px": 0
+    }
+  ]
+}

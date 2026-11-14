@@ -1,0 +1,100 @@
+[
+  {
+    "key": "panda",
+    "page": "https://gengtu.net/memes/panda-head-covering-mouth-sneer-meme/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "sweat",
+    "page": "https://news.mydrivers.com/1/766/766760.htm",
+    "images": [
+      "https://img1.mydrivers.com/img/20210701/9a81be00436e4717ac1695d4c432eac3.png",
+      "https://icons.mydrivers.com/news/play.png",
+      "https://NikeforTD.pvxt.net/c/5789598/2813290/27302?param1=_APP_IWD¶m2=_InfluenceAxis¶m3=_022825¶m4=_XCAT_PROMO",
+      "https://icons.mydrivers.com/news2022/right.png",
+      "https://icons.mydrivers.com/news/guanbi.png",
+      "https://icons.mydrivers.com/news/taobao_tab.jpg",
+      "https://icons.mydrivers.com/2026/02-650-367.png?v=3",
+      "https://icons.mydrivers.com/2025/pc11jd.png",
+      "https://icons.mydrivers.com/2025/pc11tm.png"
+    ],
+    "reference_file": "sweat-reference.jpg"
+  },
+  {
+    "key": "broken",
+    "page": "https://www.ithome.com/0/520/321.htm",
+    "images": []
+  },
+  {
+    "key": "doge",
+    "page": "https://knowyourmeme.com/memes/doge",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "cheems",
+    "page": "https://knowyourmeme.com/memes/cheems",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "happy",
+    "page": "https://knowyourmeme.com/memes/happy-happy-happy-cat",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "pop",
+    "page": "https://knowyourmeme.com/memes/pop-cat",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "huh",
+    "page": "https://knowyourmeme.com/memes/huh-cat",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "banana",
+    "page": "https://knowyourmeme.com/memes/sad-banana-cat",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "apple",
+    "page": "https://knowyourmeme.com/memes/apple-cat",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "vibe",
+    "page": "https://knowyourmeme.com/memes/catjam-vibing-cat",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "nailong",
+    "page": "https://pdan.com.cn/12761.html",
+    "images": [
+      "https://pinoss.com/pdan123/i/pdan1/2026/1/O2_1.gif",
+      "https://pdan.com.cn/wp-content/themes/Lovephoto/assets/images/logo.png",
+      "https://pinoss.com/pdan123/i/pdan1/pdan-gzh-ewm.jpg",
+      "https://pdan.com.cn/wp-content/themes/Lovephoto/assets/images/grey.jpg",
+      "https://pinoss.com/pdan123/i/pdan1/pdan-dy-ewm.jpg"
+    ],
+    "reference_file": "nailong-reference.jpg"
+  },
+  {
+    "key": "swole",
+    "page": "https://knowyourmeme.com/memes/swole-doge-vs-cheems",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "bonk",
+    "page": "https://knowyourmeme.com/memes/bonk-cheems",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "drog",
+    "page": "https://knowyourmeme.com/memes/drog-wo-de-dao-dun-cheems-frog",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "oiia",
+    "page": "https://knowyourmeme.com/memes/oo-ee-a-e-a-cat-remixes",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

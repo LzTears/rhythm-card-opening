@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>节拍开卡 · Web内测</title><link rel="icon" href="app-icon.png">$GODOT_HEAD_INCLUDE
+<style>html,body{margin:0;width:100%;height:100%;background:#101719;color:#f8e8c6;font-family:system-ui}canvas{display:block;width:100%;height:100%;outline:none}#gate{position:fixed;inset:0;display:grid;place-content:center;text-align:center;background:#101719;z-index:2;padding:24px}button{font:inherit;font-size:24px;padding:16px 48px;background:#902b39;color:#fff0c9;border:2px solid #e1b65d;border-radius:8px;cursor:pointer}p{max-width:680px;line-height:1.7}#warning{position:fixed;bottom:0;background:#802526;padding:12px;z-index:4;display:none}progress{width:100%}</style></head>
+<body><canvas id="canvas" tabindex="0">需要支持WebGL 2的电脑浏览器。</canvas><div id="gate"><h1>节拍开卡</h1><p>电脑浏览器内测版 · 建议使用 Chrome / Edge<br>点击后启用声音。进度保存在当前浏览器和本站地址中；请勿使用无痕模式或清除站点数据。<br>首次加载较大，请耐心等待。</p><button id="start">开始游戏</button><p id="status">请保持此标签页在前台，建议佩戴耳机。</p><progress hidden id="progress"></progress></div><div id="warning"></div>
+<script>
+'use strict';
+// Sample and Stream output both pass through the same Web-only output guard.
+const NativeContext=window.AudioContext||window.webkitAudioContext;
+const originalConnect=AudioNode.prototype.connect;
+const audio={contexts:[],starts:[],routes:0,peak:0,rms:0};window.__RHYTHM_WEB_AUDIO=audio;
+let warmed=null,claimed=false;
+function attach(ctx){
+ if(ctx.__rhythmGuard)return ctx;
+ const compressor=ctx.createDynamicsCompressor();compressor.threshold.value=-6;compressor.knee.value=0;compressor.ratio.value=20;compressor.attack.value=0;compressor.release.value=.1;
+ const gain=ctx.createGain();gain.gain.value=Math.pow(10,-1/20);const analyser=ctx.createAnalyser();analyser.fftSize=2048;
+ originalConnect.call(compressor,gain);originalConnect.call(gain,analyser);originalConnect.call(analyser,ctx.destination);
+ ctx.__rhythmGuard={input:compressor,analyser};audio.contexts.push(ctx);
+ const values=new Float32Array(analyser.fftSize);setInterval(()=>{analyser.getFloatTimeDomainData(values);let sum=0,peak=0;for(const x of values){peak=Math.max(peak,Math.abs(x));sum+=x*x}audio.peak=Math.max(audio.peak,peak);audio.rms=Math.sqrt(sum/values.length);audio.state=ctx.state;audio.sampleRate=ctx.sampleRate;audio.baseLatency=ctx.baseLatency;audio.outputLatency=ctx.outputLatency;},20);
+ return ctx;
+}
+AudioNode.prototype.connect=function(destination,...rest){if(destination===this.context.destination&&this.context.__rhythmGuard){audio.routes++;return originalConnect.call(this,this.context.__rhythmGuard.input,...rest)}return originalConnect.call(this,destination,...rest)};
+const originalStart=AudioBufferSourceNode.prototype.start;
+AudioBufferSourceNode.prototype.start=function(...args){audio.starts.push({at:performance.now(),time:this.context.currentTime,when:args[0]||0,duration:this.buffer?.duration,rate:this.playbackRate.value});if(audio.starts.length>512)audio.starts.shift();return originalStart.apply(this,args)};
+window.AudioContext=new Proxy(NativeContext,{construct(target,args){if(warmed&&!claimed){claimed=true;return warmed}return attach(new target(...args))}});if(window.webkitAudioContext)window.webkitAudioContext=window.AudioContext;
+audio.startRecording=()=>{const ctx=audio.contexts[0],out=ctx.createMediaStreamDestination();originalConnect.call(ctx.__rhythmGuard.analyser,out);const chunks=[],rec=new MediaRecorder(out.stream);rec.ondataavailable=e=>chunks.push(e.data);rec.start();audio.recorder=rec;audio.recording=new Promise(resolve=>{rec.onstop=async()=>{const blob=new Blob(chunks,{type:rec.mimeType});const bytes=new Uint8Array(await blob.arrayBuffer());let binary='';for(const n of bytes)binary+=String.fromCharCode(n);audio.recordingBase64=btoa(binary);resolve({bytes:bytes.length,type:blob.type})}});};
+audio.stopRecording=()=>{audio.recorder.stop();return audio.recording};
+</script>
+<script src="$GODOT_URL"></script><script>
+const config=$GODOT_CONFIG,engine=new Engine(config),gate=document.querySelector('#gate'),status=document.querySelector('#status'),button=document.querySelector('#start');
+function fail(error){status.textContent=String(error.message||error);button.disabled=true;console.error(error)}
+function warn(message){const el=document.querySelector('#warning');el.textContent=message;el.style.display='block';if(window.__RHYTHM_WEB_SESSION)window.__RHYTHM_WEB_SESSION.error=message}
+async function storageProbe(){await new Promise((resolve,reject)=>{const req=indexedDB.open('rhythm-storage-probe',1);req.onupgradeneeded=()=>req.result.createObjectStore('probe');req.onerror=()=>reject(Error('无法打开浏览器存档，请允许站点存储并退出无痕模式。'));req.onsuccess=()=>{const db=req.result,tx=db.transaction('probe','readwrite');tx.objectStore('probe').put(Date.now(),'test');tx.oncomplete=()=>{db.close();resolve()};tx.onerror=()=>reject(tx.error)}})}
+button.onclick=()=>{
+ button.disabled=true;warmed=attach(new NativeContext({latencyHint:'interactive'}));warmed.resume();
+ if(!navigator.locks||!isSecureContext){fail('请通过启动Web内测.cmd打开本地网址，不能直接双击HTML文件。');return}
+ navigator.locks.request('rhythm-workshop-v15-web-running',{mode:'exclusive',ifAvailable:true},async lock=>{
+  if(!lock){fail('另一个标签页正在运行游戏，请关闭它后刷新此页。');return}
+  try{await storageProbe();window.__RHYTHM_WEB_SESSION={lockHeld:true,storageReady:true,token:crypto.randomUUID(),error:''};
+   const missing=Engine.getMissingFeatures({threads:false});if(missing.length)throw Error('浏览器缺少：'+missing.join(', '));
+   const qa=!!document.querySelector('meta[name="rhythm-web-qa"]');let save='user://rhythm-workshop-v15-web-beta';if(qa){const slug=new URLSearchParams(location.search).get('save')||'default';if(!/^[a-zA-Z0-9_-]{1,96}$/.test(slug))throw Error('QA save参数无效');save='user://qa-current/web-release-'+slug}
+   await engine.startGame({canvas:document.querySelector('#canvas'),args:['--','--save-dir='+save],onProgress:(current,total)=>{status.textContent='正在加载游戏资源… '+(total?Math.round(current/total*100)+'%':'');const p=document.querySelector('#progress');p.hidden=false;if(total){p.max=total;p.value=current}},onPrint:console.log,onPrintError:(...args)=>{console.error(...args);if(args.join(' ').includes('Failed to save IDB'))warn('浏览器写入存档失败，请检查可用空间和站点存储权限。')},onExit:code=>{gate.style.display='grid';status.textContent='游戏已结束（'+code+'），刷新页面可重新开始。'}});
+   const deadline=performance.now()+90000;while(!window.__RHYTHM_WEB_BOOT?.ready){if(performance.now()>deadline)throw Error('游戏初始化超时，请刷新后重试。');await new Promise(resolve=>setTimeout(resolve,50));}
+   gate.style.display='none';document.querySelector('#canvas').focus();
+   await new Promise(()=>{});
+  }catch(error){fail(error)}
+ }).catch(fail);
+};
+</script></body></html>

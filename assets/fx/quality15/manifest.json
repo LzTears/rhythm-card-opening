@@ -1,0 +1,239 @@
+{
+  "catalog": "quality15",
+  "scope": "Presentation-only approved E01 visual pipeline; no logic/damage/target/input/save modification.",
+  "library_root": "C:/Users/Administrator/.codex/vendor_imports/pixelfx-main",
+  "sheets": {
+    "heavy": {
+      "key": "heavy",
+      "source_id": "impacts/crit-hit",
+      "source_file": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\impacts\\crit-hit.js",
+      "source_sha256": "c6af9303f0e463051696796a5886236d91182594e1d4fadee2067b9cf82ba857",
+      "size": [
+        216,
+        136
+      ],
+      "floor_pivot": [
+        84,
+        106
+      ],
+      "pivot": [
+        84,
+        80
+      ],
+      "columns": 7,
+      "rows": 4,
+      "frames": 28,
+      "fps": 30,
+      "source_duration": 0.9,
+      "sample_end": 0.9,
+      "duration": 0.9333333333333333,
+      "body_radius_px": 32,
+      "options": {},
+      "reason": "Confirmed heavy-build complete default crit; only image anchor uses actual star core instead of foot.",
+      "color": "heavy-color.png",
+      "light": "heavy-light.png",
+      "color_sha256": "c04434c64a60f286d7b8e19605d585c67f285e69fd62138eb5d95db6a0169b7d",
+      "light_sha256": "d009024cd99171ee9f9e933d957cb6e09dfdd00ae404224e929014cbf6f61a72"
+    },
+    "thrust_E01": {
+      "key": "thrust_E01",
+      "source_id": "melee/thrust",
+      "source_file": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\melee\\thrust.js",
+      "source_sha256": "ac2f2257fafb9dec3bdcb8e75020db952e14810c700eea6b232be7b348eb261d",
+      "size": [
+        196,
+        76
+      ],
+      "floor_pivot": [
+        34,
+        62
+      ],
+      "pivot": [
+        43,
+        42
+      ],
+      "columns": 7,
+      "rows": 4,
+      "frames": 24,
+      "fps": 30,
+      "source_duration": 0.75,
+      "sample_end": 0.7666666666666667,
+      "duration": 0.8,
+      "body_radius_px": 66,
+      "options": {},
+      "reason": "Confirmed heavy-build full actor-free beam. Source start43,42 end109,42 to exact committed segment.",
+      "color": "thrust_E01-color.png",
+      "light": "thrust_E01-light.png",
+      "color_sha256": "a707b6ba97769a55b3c2554daa8d0c61f3e993fcf46731057b33eb1f891bfcfa",
+      "light_sha256": "e37f42565e644c926577a64e0adb91f8aa870229dad73d64685c6110d68eecd0"
+    },
+    "wave_E01": {
+      "key": "wave_E01",
+      "source_id": "explosions/plasma-explosion#shock-rings-track",
+      "source_file": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\explosions\\plasma-explosion.js",
+      "source_sha256": "28856fa225a4259423721458785ab5305785ae283da6d94f78cc6b2eae3dd771",
+      "size": [
+        224,
+        200
+      ],
+      "floor_pivot": [
+        112,
+        100
+      ],
+      "pivot": [
+        112,
+        100
+      ],
+      "columns": 7,
+      "rows": 8,
+      "frames": 52,
+      "fps": 30,
+      "source_duration": 1.7,
+      "sample_end": 1.7,
+      "duration": 1.7333333333333334,
+      "body_radius_px": 92,
+      "options": {
+        "palette": [
+          "#2a1608",
+          "#6b3c10",
+          "#b8701a",
+          "#f0b42e",
+          "#ffe27a",
+          "#fff6cf",
+          "#ffffff"
+        ],
+        "accent": [
+          "#281009",
+          "#6b2a12",
+          "#c46a1a",
+          "#ffb73d",
+          "#fff6cf"
+        ]
+      },
+      "reason": "Confirmed heavy-build original plasma shock-rings extracted track; same widths/FPS/time, no tilted band/body/lightning.",
+      "color": "wave_E01-color.png",
+      "light": "wave_E01-light.png",
+      "color_sha256": "d1617fafc00a242bedc763a69fa73c27cdf1998968a194daff44a52e5bbc9384",
+      "light_sha256": "a548f6d2819fe6626bb2baba1578023d098c50bfa1cdba7319bfc415277804c2"
+    },
+    "contact_E01": {
+      "key": "contact_E01",
+      "source_id": "impacts/hit-spark",
+      "source_file": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\impacts\\hit-spark.js",
+      "source_sha256": "b0f2d0e5337ab2fff3a6a8995e6404fed72512bdcd1bc92838a60bf879bc732a",
+      "size": [
+        136,
+        80
+      ],
+      "floor_pivot": [
+        44,
+        64
+      ],
+      "pivot": [
+        44,
+        44
+      ],
+      "columns": 7,
+      "rows": 3,
+      "frames": 16,
+      "fps": 30,
+      "source_duration": 0.5,
+      "sample_end": 0.5,
+      "duration": 0.5333333333333333,
+      "body_radius_px": 37,
+      "options": {
+        "palette": [
+          "#2a1608",
+          "#6b3c10",
+          "#b8701a",
+          "#f0b42e",
+          "#ffe27a",
+          "#fff6cf",
+          "#ffffff"
+        ]
+      },
+      "reason": "Complete library everyday hit spark, no paper-press. Shared small contact/break/fragment visual at distinct scope/priority.",
+      "color": "contact_E01-color.png",
+      "light": "contact_E01-light.png",
+      "color_sha256": "c08cce0413378787818266839ca7f21ee2c99cfbab8611d8583a12713671c674",
+      "light_sha256": "2570a81c2c7d56799385a37b6c1e25491a1e6cce6fde14a139e2627cb4081849"
+    }
+  },
+  "playback": {
+    "fps": "original source FPS",
+    "visual_lifetime": "frames/fps including terminal sample hold",
+    "source_duration": "recorded separately from visual lifetime",
+    "frame": "floor(local_age*fps)",
+    "release": "native frame0 at committed event time; no new .1s windup",
+    "logic_clock": "unchanged and independent"
+  },
+  "sources": {
+    "impacts/crit-hit": {
+      "file": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\impacts\\crit-hit.js",
+      "sha256": "c6af9303f0e463051696796a5886236d91182594e1d4fadee2067b9cf82ba857"
+    },
+    "explosions/plasma-explosion": {
+      "file": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\explosions\\plasma-explosion.js",
+      "sha256": "28856fa225a4259423721458785ab5305785ae283da6d94f78cc6b2eae3dd771"
+    },
+    "melee/thrust": {
+      "file": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\melee\\thrust.js",
+      "sha256": "ac2f2257fafb9dec3bdcb8e75020db952e14810c700eea6b232be7b348eb261d"
+    },
+    "impacts/hit-spark": {
+      "file": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\impacts\\hit-spark.js",
+      "sha256": "b0f2d0e5337ab2fff3a6a8995e6404fed72512bdcd1bc92838a60bf879bc732a"
+    }
+  },
+  "confirmed_preview_identity": [
+    {
+      "key": "heavy",
+      "channel": "color",
+      "preview": "heavy-build/crit/color.png",
+      "expected": "c04434c64a60f286d7b8e19605d585c67f285e69fd62138eb5d95db6a0169b7d",
+      "actual": "c04434c64a60f286d7b8e19605d585c67f285e69fd62138eb5d95db6a0169b7d",
+      "equal": true
+    },
+    {
+      "key": "heavy",
+      "channel": "light",
+      "preview": "heavy-build/crit/light.png",
+      "expected": "d009024cd99171ee9f9e933d957cb6e09dfdd00ae404224e929014cbf6f61a72",
+      "actual": "d009024cd99171ee9f9e933d957cb6e09dfdd00ae404224e929014cbf6f61a72",
+      "equal": true
+    },
+    {
+      "key": "thrust_E01",
+      "channel": "color",
+      "preview": "heavy-build/thrust/color.png",
+      "expected": "a707b6ba97769a55b3c2554daa8d0c61f3e993fcf46731057b33eb1f891bfcfa",
+      "actual": "a707b6ba97769a55b3c2554daa8d0c61f3e993fcf46731057b33eb1f891bfcfa",
+      "equal": true
+    },
+    {
+      "key": "thrust_E01",
+      "channel": "light",
+      "preview": "heavy-build/thrust/light.png",
+      "expected": "e37f42565e644c926577a64e0adb91f8aa870229dad73d64685c6110d68eecd0",
+      "actual": "e37f42565e644c926577a64e0adb91f8aa870229dad73d64685c6110d68eecd0",
+      "equal": true
+    },
+    {
+      "key": "wave_E01",
+      "channel": "color",
+      "preview": "heavy-build/wave/color.png",
+      "expected": "d1617fafc00a242bedc763a69fa73c27cdf1998968a194daff44a52e5bbc9384",
+      "actual": "d1617fafc00a242bedc763a69fa73c27cdf1998968a194daff44a52e5bbc9384",
+      "equal": true
+    },
+    {
+      "key": "wave_E01",
+      "channel": "light",
+      "preview": "heavy-build/wave/light.png",
+      "expected": "a548f6d2819fe6626bb2baba1578023d098c50bfa1cdba7319bfc415277804c2",
+      "actual": "a548f6d2819fe6626bb2baba1578023d098c50bfa1cdba7319bfc415277804c2",
+      "equal": true
+    }
+  ],
+  "derived_source_sha256": "ead16af1dc5cf107792795ba77de0b998d7f8f8635d034a46c0574e8dbbd5187"
+}

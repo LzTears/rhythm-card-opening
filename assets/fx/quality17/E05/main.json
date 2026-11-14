@@ -1,0 +1,40 @@
+{
+  "key": "main_E05",
+  "source_id": "ice/snowflake-burst#overhead-spatial-adaptation",
+  "source_file": "source/snowflake-overhead.mjs",
+  "source_sha256": "355b08e34d5b3f551157c7ff94eed480894125eac131e9aa0fa9352bb5576c2b",
+  "adaptation": "Original create/draw and flake/flare/particle/light drawing retained; coordinate anchor and table-plane particle motion adapted. No frames or source times removed.",
+  "size": [
+    192,
+    192
+  ],
+  "floor_pivot": [
+    96,
+    96
+  ],
+  "pivot": [
+    96,
+    96
+  ],
+  "columns": 7,
+  "rows": 14,
+  "frames": 97,
+  "fps": 30,
+  "source_duration": 3.2,
+  "sample_end": 3.2,
+  "duration": 3.2333333333333334,
+  "body_radius_px": 40,
+  "options": {},
+  "color": "main-color.png",
+  "light": "main-light.png",
+  "color_sha256": "5d4552634e261a16d8fa28a502cbc718636d72158c10cbd4bb4cd1416b622cc4",
+  "light_sha256": "087e4d090f40097a61c701b32befba7150dd486c8889f4a381407dd57499d002",
+  "terminal_pixels": {
+    "color": 0,
+    "light": 0
+  },
+  "outer_edge_pixels_all_frames": {
+    "color": 0,
+    "light": 0
+  }
+}

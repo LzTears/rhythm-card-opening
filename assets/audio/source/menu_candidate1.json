@@ -1,0 +1,15 @@
+[
+  {
+    "name": "menu",
+    "kind": "music",
+    "model": "stabilityai/stable-audio-3-small-music",
+    "prompt": "TrackType: Music, original retro 8-bit chiptune arcade game menu music, cheerful warm nostalgic pixel toy world, melodic two square wave pulse channels trading a memorable tune and soft countermelody, flowing fast arpeggios, rounded triangle wave bass, tiny crunchy noise channel drum groove, 96 BPM, repeating four bar chord progression with playful variations, clear balanced mellow high frequencies, authentic vintage game console sound chip, instrumental, no vocals, no acoustic instruments, no piano, no guitar, no lo-fi recording noise, no cinematic orchestra, seamless looping underscore",
+    "duration_requested": 64,
+    "steps": 16,
+    "cfg_scale": 1.0,
+    "seed": 169101,
+    "source": "C:\\Users\\Administrator\\Desktop\\\u4ee3\u53f71\\\u5706\u5361\u65cb\u98ce\\assets\\audio\\source\\menu_raw.wav",
+    "elapsed_seconds": 4.85,
+    "generated_at": "2026-11-09T14:38:40+0800"
+  }
+]

@@ -1,0 +1,165 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "pack_starlight_atlas_v2.png",
+  "grid": [
+    5,
+    1
+  ],
+  "canvas": {
+    "w": 300,
+    "h": 400
+  },
+  "baseline_y": 396.0,
+  "target_height": 392.0,
+  "scale": "sheet",
+  "fit": "contain",
+  "factor": 0.7245841035120147,
+  "factor_from": {
+    "rule": "target_height",
+    "cell": "0"
+  },
+  "alpha_cleanup": "pack_starlight_alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "0",
+      "file": "pack_starlight_0.png",
+      "factor": 0.7245841035120147,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 403,
+          "h": 541
+        },
+        "canvas": {
+          "w": 292,
+          "h": 392
+        }
+      },
+      "box": {
+        "x": 4,
+        "y": 4,
+        "w": 292,
+        "h": 392
+      },
+      "anchor": [
+        150.0,
+        396.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "1",
+      "file": "pack_starlight_1.png",
+      "factor": 0.7245841035120147,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 402,
+          "h": 540
+        },
+        "canvas": {
+          "w": 291,
+          "h": 391
+        }
+      },
+      "box": {
+        "x": 5,
+        "y": 5,
+        "w": 291,
+        "h": 391
+      },
+      "anchor": [
+        150.5,
+        396.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "2",
+      "file": "pack_starlight_2.png",
+      "factor": 0.7245841035120147,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 402,
+          "h": 539
+        },
+        "canvas": {
+          "w": 291,
+          "h": 391
+        }
+      },
+      "box": {
+        "x": 5,
+        "y": 5,
+        "w": 291,
+        "h": 391
+      },
+      "anchor": [
+        150.5,
+        396.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "3",
+      "file": "pack_starlight_3.png",
+      "factor": 0.7245841035120147,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 402,
+          "h": 540
+        },
+        "canvas": {
+          "w": 291,
+          "h": 391
+        }
+      },
+      "box": {
+        "x": 5,
+        "y": 5,
+        "w": 291,
+        "h": 391
+      },
+      "anchor": [
+        150.5,
+        396.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "4",
+      "file": "pack_starlight_4.png",
+      "factor": 0.7245841035120147,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 403,
+          "h": 539
+        },
+        "canvas": {
+          "w": 292,
+          "h": 391
+        }
+      },
+      "box": {
+        "x": 4,
+        "y": 5,
+        "w": 292,
+        "h": 391
+      },
+      "anchor": [
+        150.0,
+        396.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

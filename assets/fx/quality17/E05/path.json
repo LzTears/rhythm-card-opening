@@ -1,0 +1,66 @@
+{
+  "key": "thrust_E05",
+  "source_id": "melee/thrust#actor-free",
+  "source_file": "source/upstream/melee-thrust.js.txt",
+  "source_sha256": "ac2f2257fafb9dec3bdcb8e75020db952e14810c700eea6b232be7b348eb261d",
+  "adaptation": "Complete stock actor-free thrust with element palette. Exact authored from=(43,42), to=(109,42), span66; no geometry/time rewrite.",
+  "size": [
+    196,
+    76
+  ],
+  "floor_pivot": [
+    34,
+    62
+  ],
+  "pivot": [
+    43,
+    42
+  ],
+  "columns": 7,
+  "rows": 4,
+  "frames": 24,
+  "fps": 30,
+  "source_duration": 0.75,
+  "sample_end": 0.7666666666666667,
+  "duration": 0.8,
+  "body_radius_px": 66,
+  "options": {
+    "palette": [
+      "#102343",
+      "#174571",
+      "#236ea1",
+      "#369dcc",
+      "#58cbea",
+      "#9de9f5",
+      "#dcfbff",
+      "#ffffff"
+    ],
+    "sparks": [
+      "#dcfbff",
+      "#9de9f5",
+      "#58cbea",
+      "#369dcc"
+    ]
+  },
+  "color": "path-color.png",
+  "light": "path-light.png",
+  "color_sha256": "974f24edf35376fc56967dd48c06d6e079bfc369c9694a2d77078f334ff7a8d7",
+  "light_sha256": "2cd82fda500f9d2518e9ff647caec98be8fb4de94e449b63c2b0737abe8a469c",
+  "terminal_pixels": {
+    "color": 0,
+    "light": 0
+  },
+  "outer_edge_pixels_all_frames": {
+    "color": 0,
+    "light": 0
+  },
+  "path_source_span_px": 66,
+  "path_from_px": [
+    43,
+    42
+  ],
+  "path_to_px": [
+    109,
+    42
+  ]
+}

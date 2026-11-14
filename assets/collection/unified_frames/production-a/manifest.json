@@ -1,0 +1,36 @@
+[
+  {
+    "id": "grade_0",
+    "art_path": "res://assets/collection/unified_frames/grade_0.png",
+    "source": "production-a/sources/grade_0-native.png",
+    "source_size": [
+      1086,
+      1448
+    ],
+    "output_size": [
+      768,
+      1024
+    ],
+    "sha256": "21ce23269b90faa640ff3a09ea6aafab156c5f111b47417b2a8224c9b307cfea",
+    "reference": "res://assets/collection/red-reference-alignment/frame_galaxy.png",
+    "pipeline": "sprite-gen 1x1 slice-sheet contain mechanical scale, native alpha retained",
+    "qa": "qa-report.json"
+  },
+  {
+    "id": "grade_1",
+    "art_path": "res://assets/collection/unified_frames/grade_1.png",
+    "source": "production-a/sources/grade_1-native.png",
+    "source_size": [
+      1086,
+      1448
+    ],
+    "output_size": [
+      768,
+      1024
+    ],
+    "sha256": "139945545486356662397c5a0cf9a0495a6263804cb57cec6644138f41315008",
+    "reference": "res://assets/collection/red-reference-alignment/frame_galaxy.png",
+    "pipeline": "sprite-gen 1x1 slice-sheet contain mechanical scale, native alpha retained",
+    "qa": "qa-report.json"
+  }
+]

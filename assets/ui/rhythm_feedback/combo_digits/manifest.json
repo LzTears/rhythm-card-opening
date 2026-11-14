@@ -1,0 +1,192 @@
+{
+  "asset": "节拍开卡 Combo bitmap glyphs",
+  "date": "2026-11-12",
+  "generator": "built-in image_gen.imagegen",
+  "source": {
+    "file": "source-atlas.png",
+    "size": [
+      1448,
+      1086
+    ],
+    "sha256": "5555f8daf440c4a6bc9014ef73b4efa600c228e6a572483190acb4a257089fb0"
+  },
+  "prompt": {
+    "file": "prompt.txt",
+    "sha256": "7299823293680ca39747c3ad7eb7a39ae616666b3511c8d50e396c2eeefba0de"
+  },
+  "processing": "Only rectangular RGBA crop and 2px transparent padding; no font rendering, repainting, resizing, recoloring or alpha threshold modification. Crop extent uses alpha >=16 to ignore near-transparent generator fringe; original alpha inside crop preserved.",
+  "glyphs": [
+    {
+      "character": "×",
+      "file": "x.png",
+      "size": [
+        278,
+        278
+      ],
+      "source_crop": [
+        39,
+        89,
+        313,
+        363
+      ],
+      "sha256": "4e8d051471cbcb5a1d42f342b91a2c043b4e8ba47d286c44b2ca385fa3b5f501"
+    },
+    {
+      "character": "0",
+      "file": "0.png",
+      "size": [
+        271,
+        306
+      ],
+      "source_crop": [
+        401,
+        74,
+        668,
+        376
+      ],
+      "sha256": "f5d958a83cba3d877d778d590b9fca3dc82c763261927de90f007a541d1c6a43"
+    },
+    {
+      "character": "1",
+      "file": "1.png",
+      "size": [
+        216,
+        305
+      ],
+      "source_crop": [
+        787,
+        75,
+        999,
+        376
+      ],
+      "sha256": "6d5f1cf8c59630e0a05c0327993256d440a678a00ace6bded475a9cbf0d2d3af"
+    },
+    {
+      "character": "2",
+      "file": "2.png",
+      "size": [
+        265,
+        302
+      ],
+      "source_crop": [
+        1131,
+        71,
+        1392,
+        369
+      ],
+      "sha256": "ad047a9eb432c8fdf5e6aa7f2c3e8905b7f74e2ec0ace31bf02551e56c3e6298"
+    },
+    {
+      "character": "3",
+      "file": "3.png",
+      "size": [
+        266,
+        314
+      ],
+      "source_crop": [
+        51,
+        419,
+        313,
+        729
+      ],
+      "sha256": "036184907fb1d5562559d006c8fe26b93b90f6302c551f49382882e01154fad7"
+    },
+    {
+      "character": "4",
+      "file": "4.png",
+      "size": [
+        272,
+        305
+      ],
+      "source_crop": [
+        399,
+        423,
+        667,
+        724
+      ],
+      "sha256": "19444df66c4ad9fb450efc71b563c1c9051c66fb6a686e887ac7dac61aeec610"
+    },
+    {
+      "character": "5",
+      "file": "5.png",
+      "size": [
+        262,
+        320
+      ],
+      "source_crop": [
+        770,
+        414,
+        1028,
+        730
+      ],
+      "sha256": "3eecee2bb6a3c6e2552d02e8d01706769a6c4d744a3010f1db31f7cf6a25fb6d"
+    },
+    {
+      "character": "6",
+      "file": "6.png",
+      "size": [
+        278,
+        317
+      ],
+      "source_crop": [
+        1128,
+        415,
+        1402,
+        728
+      ],
+      "sha256": "e353b306b253982f8269eb646fe47f3a8e061e028e23adfd609fc5fcfa49fa5a"
+    },
+    {
+      "character": "7",
+      "file": "7.png",
+      "size": [
+        266,
+        306
+      ],
+      "source_crop": [
+        50,
+        763,
+        312,
+        1065
+      ],
+      "sha256": "3ba500bd8cf4dbb23bde1f8df23c1ec14280a231fb55a63f20bc7e393bf4a30c"
+    },
+    {
+      "character": "8",
+      "file": "8.png",
+      "size": [
+        270,
+        312
+      ],
+      "source_crop": [
+        397,
+        761,
+        663,
+        1069
+      ],
+      "sha256": "9033ffd034e3498eb0e961d270bb36f2735e3b8e062ad295bde037be22d8bc09"
+    },
+    {
+      "character": "9",
+      "file": "9.png",
+      "size": [
+        267,
+        315
+      ],
+      "source_crop": [
+        766,
+        764,
+        1029,
+        1075
+      ],
+      "sha256": "66345f0b1b504e7fb5b30a82a8c228751834c8a410dd967b4a89dc48496cb9e4"
+    }
+  ],
+  "recommended_layout": {
+    "digit_height_design_px": 64,
+    "multiplication_height_ratio": 0.78,
+    "gap_to_digit_height": 0.035,
+    "alignment": "vertical center; preserve aspect ratio",
+    "display_range": "×1 through ×99; use ×99 as presentation cap if actual combo exceeds99"
+  }
+}

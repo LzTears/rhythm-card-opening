@@ -1,0 +1,217 @@
+[
+  {
+    "id": "MEM-001",
+    "art_path": "res://assets/collection/cards/MEM-001.png",
+    "source": "meme-production-a/sources/MEM-001.png",
+    "original_confirmed_source": "docs/concepts/non-mainstream-v2/art/maodie.png",
+    "native_size": [
+      1254,
+      1254
+    ],
+    "output_size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "a0a91ac25b50b3c0419e13b0af2fdc05bc1ee1ba573fbd73489d195418c7430b",
+    "method": "reuse user-confirmed v2 sample, no new generation"
+  },
+  {
+    "id": "MEM-002",
+    "art_path": "res://assets/collection/cards/MEM-002.png",
+    "source": "meme-production-a/sources/MEM-002.png",
+    "original_generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d076-8038-7562-b19d-16badf5a618c\\exec-e50a0135-3bb9-4535-a4a9-d21175061495.png",
+    "native_size": [
+      1254,
+      1254
+    ],
+    "output_size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "41bef31a4bf86f6784d57357a64a8fec8f10122fc55a084e2440180e473bff99",
+    "method": "one built-in image_gen call per independent illustration; unmodified output copy",
+    "qa": "Viewed generated image; no readable text/frame/watermark; full principal silhouette. Safety margin judged visually, not alpha segmentation."
+  },
+  {
+    "id": "MEM-003",
+    "art_path": "res://assets/collection/cards/MEM-003.png",
+    "source": "meme-production-a/sources/MEM-003.png",
+    "original_generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d076-8038-7562-b19d-16badf5a618c\\exec-b6443988-e2cd-4c5f-ab1e-3e8ee370f3c2.png",
+    "native_size": [
+      1254,
+      1254
+    ],
+    "output_size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "0a84d1799a4d67f9d29c895cec75b8de9c32a8ec6f10655625c25a685be14e02",
+    "method": "one built-in image_gen call per independent illustration; unmodified output copy",
+    "qa": "Viewed generated image; no readable text/frame/watermark; full principal silhouette. Safety margin judged visually, not alpha segmentation."
+  },
+  {
+    "id": "MEM-004",
+    "art_path": "res://assets/collection/cards/MEM-004.png",
+    "source": "meme-production-a/sources/MEM-004.png",
+    "original_generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d076-8038-7562-b19d-16badf5a618c\\exec-beb6b425-6751-40f4-aa12-436aefb17ce4.png",
+    "native_size": [
+      1254,
+      1254
+    ],
+    "output_size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "34b42661c2368b66b488f3b794f3605e12d4d177da2f3ae6e3e6b68856bcb230",
+    "method": "one built-in image_gen call per independent illustration; unmodified output copy",
+    "qa": "Viewed generated image; no readable text/frame/watermark; full principal silhouette. Safety margin judged visually, not alpha segmentation."
+  },
+  {
+    "id": "MEM-005",
+    "art_path": "res://assets/collection/cards/MEM-005.png",
+    "source": "meme-production-a/sources/MEM-005.png",
+    "original_generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d076-8038-7562-b19d-16badf5a618c\\exec-f7ec546a-b5fa-462f-9571-3a8271d1b450.png",
+    "native_size": [
+      1254,
+      1254
+    ],
+    "output_size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "984450cc3ca04e262c986601dd84acd2627476332d38ea7f7531da2e1dd4b21a",
+    "method": "one built-in image_gen call per independent illustration; unmodified output copy",
+    "qa": "Viewed generated image; no readable text/frame/watermark; full principal silhouette. Safety margin judged visually, not alpha segmentation."
+  },
+  {
+    "id": "MEM-006",
+    "art_path": "res://assets/collection/cards/MEM-006.png",
+    "source": "meme-production-a/sources/MEM-006.png",
+    "original_generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d076-8038-7562-b19d-16badf5a618c\\exec-5525adfb-f73f-4d0d-bcd8-113364c29dfb.png",
+    "native_size": [
+      1254,
+      1254
+    ],
+    "output_size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "0e4c48beabc02c8e3a4d4df727a92cf45767ec8d0ee7c0dc32b8b906bac2c859",
+    "method": "one built-in image_gen call per independent illustration; unmodified output copy",
+    "qa": "Viewed generated image; no readable text/frame/watermark; full principal silhouette. Safety margin judged visually, not alpha segmentation."
+  },
+  {
+    "id": "MEM-007",
+    "art_path": "res://assets/collection/cards/MEM-007.png",
+    "source": "meme-production-a/sources/MEM-007.png",
+    "original_generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d076-8038-7562-b19d-16badf5a618c\\exec-73706e1c-cf95-426b-bff6-7ccf91075021.png",
+    "native_size": [
+      1254,
+      1254
+    ],
+    "output_size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "145eb223bc60877325536ce1a9234dc0e22d896a0c45e576dc600e44d81dd3b5",
+    "method": "one built-in image_gen call per independent illustration; unmodified output copy",
+    "qa": "Viewed generated image; no readable text/frame/watermark; full principal silhouette. Safety margin judged visually, not alpha segmentation."
+  },
+  {
+    "id": "MEM-008",
+    "art_path": "res://assets/collection/cards/MEM-008.png",
+    "source": "meme-production-a/sources/MEM-008.png",
+    "original_generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d076-8038-7562-b19d-16badf5a618c\\exec-b5eeca76-6402-4263-9923-b22eb24ce017.png",
+    "native_size": [
+      1254,
+      1254
+    ],
+    "output_size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "cf10c37396d160db52b9b32042a96f969267d9d3735f37ef9a9e3b97264ba35d",
+    "method": "one built-in image_gen call per independent illustration; unmodified output copy",
+    "qa": "Viewed generated image; no readable text/frame/watermark; full principal silhouette. Safety margin judged visually, not alpha segmentation."
+  },
+  {
+    "id": "MEM-009",
+    "art_path": "res://assets/collection/cards/MEM-009.png",
+    "source": "meme-production-a/sources/MEM-009.png",
+    "original_generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d076-8038-7562-b19d-16badf5a618c\\exec-7e2a0344-2f23-455d-9a24-6c4b865ff5ba.png",
+    "native_size": [
+      1254,
+      1254
+    ],
+    "output_size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "1cd22979e26d0901fbcfc948a3b9b2a1a477eba44d1e0ddcbdc46cf0d0ca7f8f",
+    "method": "one built-in image_gen call per independent illustration; unmodified output copy",
+    "qa": "Viewed generated image; no readable text/frame/watermark; full principal silhouette. Safety margin judged visually, not alpha segmentation."
+  },
+  {
+    "id": "MEM-010",
+    "art_path": "res://assets/collection/cards/MEM-010.png",
+    "source": "meme-production-a/sources/MEM-010.png",
+    "original_generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d076-8038-7562-b19d-16badf5a618c\\exec-0e25fa32-48b0-4652-92f2-bf23663923bb.png",
+    "native_size": [
+      1254,
+      1254
+    ],
+    "output_size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "234d9e6b6d7847c4e8c6cceb752320de7ffaee46296f2fdffdc58c6ac1134114",
+    "method": "one built-in image_gen call per independent illustration; unmodified output copy",
+    "qa": "Viewed generated image; no readable text/frame/watermark; full principal silhouette. Safety margin judged visually, not alpha segmentation."
+  },
+  {
+    "id": "MEM-011",
+    "art_path": "res://assets/collection/cards/MEM-011.png",
+    "source": "meme-production-a/sources/MEM-011.png",
+    "original_generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d076-8038-7562-b19d-16badf5a618c\\exec-daa3a38d-931c-4709-b833-d49c975e646a.png",
+    "native_size": [
+      1254,
+      1254
+    ],
+    "output_size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "61018fe798193c3fb002454a3f504d36d38286b266028f6162477bba889f246c",
+    "method": "one built-in image_gen call per independent illustration; unmodified output copy",
+    "qa": "Viewed generated image; no readable text/frame/watermark; full principal silhouette. Safety margin judged visually, not alpha segmentation."
+  },
+  {
+    "id": "MEM-012",
+    "art_path": "res://assets/collection/cards/MEM-012.png",
+    "source": "meme-production-a/sources/MEM-012.png",
+    "original_generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d076-8038-7562-b19d-16badf5a618c\\exec-79dde016-bd4b-4c23-840f-213e3efa280d.png",
+    "native_size": [
+      1254,
+      1254
+    ],
+    "output_size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "7ed1ff3364cf07933077c1539d09b48a2ace7a613334e0c63da2d27004c72e07",
+    "method": "one built-in image_gen call per independent illustration; unmodified output copy",
+    "qa": "Viewed generated image; no readable text/frame/watermark; full principal silhouette. Safety margin judged visually, not alpha segmentation."
+  }
+]

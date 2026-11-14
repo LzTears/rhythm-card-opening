@@ -1,0 +1,52 @@
+{
+  "version": "a2-production-1",
+  "generator": "built-in image_gen",
+  "style_reference": "REF-005A2-battle.png only, not A3",
+  "prompt": "source/prompt.txt",
+  "extraction": "sprite-gen3.15 slice-sheet --chroma-key none --alpha-floor 220 --alpha-edge0; same-alpha native preservation, no drawing or nonuniform stretch",
+  "assets": [
+    {
+      "file": "down.png",
+      "size": [
+        384,
+        320
+      ],
+      "alpha_bbox": [
+        0,
+        60,
+        384,
+        280
+      ],
+      "visible_size": [
+        384,
+        220
+      ],
+      "sha256": "e6ea7ccfbe524ddd95d97249f0088268e99f8698d3908a4934bfc91e8036d19b",
+      "filter": "nearest",
+      "facing": "down",
+      "mouth_dark_aperture_center_px": [
+        192,
+        244
+      ],
+      "mouth_emission_lip_px": [
+        192,
+        272
+      ],
+      "draw_rule": "Uniform fit visible bbox into80x64du; visible body80x45.833du, do not stretch into80x64. Rotate sprite for sides, rotate anchor with it. Mouth lip center is emission anchor."
+    }
+  ],
+  "qa": {
+    "viewed": true,
+    "limitations": [
+      "Model did not hit exact identical silhouette dimensions. Actual alpha bbox and uniform-fit contract recorded.",
+      "Generated alpha maximum254 preserved.",
+      "Dispenser is wider than80:64 target; fit preserving aspect rather than deform."
+    ]
+  },
+  "source_png_files": [
+    {
+      "file": "source/generated.png",
+      "sha256": "4a5c4618f391f063991dc480bad5be20ae42b9c9477ae19c9a9a5ba280f43eaf"
+    }
+  ]
+}

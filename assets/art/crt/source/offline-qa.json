@@ -1,0 +1,146 @@
+{
+  "checks": [
+    {
+      "path": "ui/menu-background.png",
+      "size": [
+        1600,
+        900
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "registered_3x4": null,
+      "source_core_aspect": 1.7768331562167907
+    },
+    {
+      "path": "ui/battle-table.png",
+      "size": [
+        1600,
+        960
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "registered_3x4": null,
+      "source_core_aspect": 1.66735324407827
+    },
+    {
+      "path": "ui/menu-logo.png",
+      "size": [
+        2172,
+        724
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "registered_3x4": null,
+      "source_core_aspect": 4.1312741312741315
+    },
+    {
+      "path": "packs/pack-0.png",
+      "size": [
+        300,
+        400
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "registered_3x4": true,
+      "source_core_aspect": 0.7331711273317113,
+      "source_3x4_relative_error": -0.022438496891051596,
+      "source_body_within_3pct": true
+    },
+    {
+      "path": "packs/pack-1.png",
+      "size": [
+        300,
+        400
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "registered_3x4": true,
+      "source_core_aspect": 0.7570480928689884,
+      "source_3x4_relative_error": 0.009397457158651257,
+      "source_body_within_3pct": true
+    },
+    {
+      "path": "packs/pack-2.png",
+      "size": [
+        300,
+        400
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "registered_3x4": true,
+      "source_core_aspect": 0.7453213995117982,
+      "source_3x4_relative_error": -0.00623813398426909,
+      "source_body_within_3pct": true
+    },
+    {
+      "path": "packs/pack-3.png",
+      "size": [
+        300,
+        400
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "registered_3x4": true,
+      "source_core_aspect": 0.7344632768361582,
+      "source_3x4_relative_error": -0.020715630885122405,
+      "source_body_within_3pct": true
+    },
+    {
+      "path": "packs/pack-4.png",
+      "size": [
+        300,
+        400
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "registered_3x4": true,
+      "source_core_aspect": 0.7362459546925566,
+      "source_3x4_relative_error": -0.018338727076591232,
+      "source_body_within_3pct": true
+    },
+    {
+      "path": "dispensers/down.png",
+      "size": [
+        384,
+        320
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "registered_3x4": null,
+      "source_core_aspect": 2.0559345156889495
+    },
+    {
+      "path": "cards/card_back.png",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "registered_3x4": null,
+      "source_core_aspect": 1.010041841004184
+    }
+  ],
+  "no_engine_launched": true,
+  "scope": "Offline dimensions, true alpha, original body aspect, title reading and contact sheet only; no gameplay or GPU/FPS certification."
+}

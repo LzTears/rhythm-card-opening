@@ -1,0 +1,143 @@
+{
+  "date": "2026-11-11",
+  "scope": "Current four common card fronts; source generation provenance retained for each current card.",
+  "rarity_counts": [
+    4,
+    0,
+    0,
+    0,
+    0
+  ],
+  "cards": [
+    {
+      "card_id": "C09-0",
+      "name": "拢包器",
+      "concept": "主攻击后拉近周围存活包",
+      "grade": 0,
+      "art_variant": "C09-0",
+      "path": "cards/C09-0.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        496,
+        497
+      ],
+      "core_bbox": [
+        17,
+        16,
+        495,
+        496
+      ],
+      "visible_aspect": 0.9958333333333333,
+      "sha256": "1f23a242c8928146029d0abb4844d83bfc3ab25371cf3c25c394b57671f57f58",
+      "source": "source/card-fronts/C09-0-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-5b1e60e0-b6d3-4e9d-9c7e-436323d43c2d.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Common rarity SILVER WHITE rim.  Leave about 3 percent even transparent padding all around full circle. Happy coral red octopus with round head and curved tentacles. Four cyan inward arrows around it and curved suction streams toward center, pull surviving objects together.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter",
+      "source_sha256": "d2f9270fc9d779b78fea49c1879dc0851444c0adef33b08c15153937a91ec586"
+    },
+    {
+      "card_id": "C01-0",
+      "name": "扩圈器",
+      "concept": "直接扩展攻击几何",
+      "grade": 0,
+      "art_variant": "C01-0",
+      "path": "cards/C01-0.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        496,
+        497
+      ],
+      "core_bbox": [
+        17,
+        16,
+        495,
+        496
+      ],
+      "visible_aspect": 0.9958333333333333,
+      "sha256": "58f5a25ea269489cb91432ffb513b744086dccfbd65aae8fd3648e315a980d60",
+      "source": "source/card-fronts/C01-0-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1b01f-eed4-71a2-ba75-80f3044ee410\\exec-2a1ebdbe-8ca2-43d5-94e6-8e1ebd7bf6d9.png",
+      "prompt": "Create a production-ready original ROUND game card FRONT icon, reillustrating reference 1's DOLPHIN identity into the fine 16-bit arcade enamel aesthetic of reference 2. Reference1 is identity/composition only; discard its cream paper and soft pastel illustration. Reference2 is style/material only, do NOT copy its cyclone back face or golden rarity rim. This is COMMON white/silver rarity card C01-0 'rippling circle', effect increases attack radius: a bold recognizable cyan dolphin jumping over stepped concentric water ripples, with a dark petrol-blue enamel interior, bright but controlled cyan light accents, fine crisp pixel clusters, limited stepped shading, charcoal ink outlines, white/silver metal circular rim and four small cyan socket jewels. No gold/red/purple frame. Subject must read at 64x64 thumbnail. True flat straight-on top-down perfect circular token, centered with even 3% transparent safety margins. Precise pixel art, original arcade collectable, not cute pastel/paper, not painterly, not realistic 3D, not western comic. No words, digits, UI, square border, checkerboard, background shadow or external glow. Transparent background outside the circle. All detail inside circle; true round proportions, no tilted/oval perspective. One single standalone sprite asset.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter",
+      "source_sha256": "49fd5feaf403a19fee192ca00adf4754cd39fa0d40dfa19f1d15f26785c8cfaf"
+    },
+    {
+      "card_id": "C04-0",
+      "name": "多重锁定",
+      "concept": "同次出手打出两支扇形攻击",
+      "grade": 0,
+      "art_variant": "C04-0",
+      "path": "cards/C04-0.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        496,
+        497
+      ],
+      "core_bbox": [
+        17,
+        16,
+        495,
+        496
+      ],
+      "visible_aspect": 0.9958333333333333,
+      "sha256": "8a21edebd098d4ec2bb1d7e4f41279bd4dfe47ff24174dc628c48061f9602b53",
+      "source": "source/card-fronts/C04-0-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-be464267-60db-4eb0-bb85-206b6a0a22a3.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Common rarity SILVER WHITE rim.  Leave about 3 percent even transparent padding all around full circle. Subject: happy orange five-armed starfish with light yellow spot clusters and black eyes, centered. Mechanic two simultaneous fan attacks: two clear cyan fans sweep outward symmetrically behind starfish. Orange saturated stepped pixel shading.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter",
+      "source_sha256": "90aaa0623168f76ef0e906ce2b237ca4513445712f902b559e61448eef6fa03a"
+    },
+    {
+      "card_id": "C12-0",
+      "name": "桌面余震",
+      "concept": "出手后留下延迟圆波",
+      "grade": 0,
+      "art_variant": "C12-0",
+      "path": "cards/C12-0.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        496,
+        497
+      ],
+      "core_bbox": [
+        17,
+        16,
+        495,
+        496
+      ],
+      "visible_aspect": 0.9958333333333333,
+      "sha256": "9897bdc790084189448609212a02ca3e22ffb9d3b389e5be1f3b8226a77f7264",
+      "source": "source/card-fronts/C12-0-original.png",
+      "generated_path": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1ca50-76f0-7bd0-a452-ea61efdc184d\\exec-ea33baea-527e-49aa-a97e-bb929e99edb3.png",
+      "prompt": "Generate ONE new circular game token front, no text. Style reference 1 exact master: fine 16bit arcade pixel clusters, crisp charcoal outlines and limited stepped light, dark teal navy enamel field, geometric concentric metallic rim with four cyan diamond insets. Second reference identity only; COMPLETELY REDRAW character. True front-on circle on transparent outside, no glow outside, no paper cream/pastel, no lettering/numbers/UI, no square card. Common rarity SILVER WHITE rim.  Leave about 3 percent even transparent padding all around full circle. Friendly green sea turtle swimming right, olive hexagon patterned shell. Two staggered cyan water rings below and delayed echo wave behind, aftermath circular wave.",
+      "provenance": "Original independent built-in image_gen redraw; old identity only; common fine16-bit CRT art direction; aspect-preserving normalization",
+      "normalization": "alpha>=128 subject bbox +2 source px, contain482 nearest centered512, no style filter",
+      "source_sha256": "8f01d7de0d655b5f77e3161c0284a78729f82928dcd9b39d90b52c4866f96cb3"
+    }
+  ],
+  "current_card_count": 4,
+  "current_mapping_source": "res://scripts/attack_spec.gd:ACTIVE_CARD_IDS"
+}

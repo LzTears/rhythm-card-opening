@@ -1,0 +1,78 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "C12-bottom.png",
+  "grid": [
+    2,
+    1
+  ],
+  "canvas": {
+    "w": 512,
+    "h": 512
+  },
+  "baseline_y": 486.0,
+  "target_height": 460.0,
+  "scale": "cell",
+  "fit": "contain",
+  "factor": null,
+  "factor_from": null,
+  "alpha_cleanup": "C12-alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "3",
+      "file": "C12-3.png",
+      "factor": 1.0502283105022832,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 440,
+          "h": 438
+        },
+        "canvas": {
+          "w": 462,
+          "h": 460
+        }
+      },
+      "box": {
+        "x": 25,
+        "y": 26,
+        "w": 462,
+        "h": 460
+      },
+      "anchor": [
+        256.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "4",
+      "file": "C12-4.png",
+      "factor": 1.0502283105022832,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 440,
+          "h": 438
+        },
+        "canvas": {
+          "w": 462,
+          "h": 460
+        }
+      },
+      "box": {
+        "x": 25,
+        "y": 26,
+        "w": 462,
+        "h": 460
+      },
+      "anchor": [
+        256.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

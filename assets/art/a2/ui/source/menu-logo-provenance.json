@@ -1,0 +1,38 @@
+{
+  "asset": "menu-logo.png",
+  "source": "source/menu-logo-generated.png",
+  "prompt": "source/menu-logo-prompt.txt",
+  "created_local_date": "2026-11-09",
+  "generator": "OpenAI built-in image_gen",
+  "mode": "image generation using project menu background as palette/style reference",
+  "reference": "menu-background.png",
+  "text": "圆卡旋风",
+  "width": 2172,
+  "height": 724,
+  "mode_rgba": "RGBA",
+  "alpha_range": [
+    0,
+    255
+  ],
+  "alpha_nonzero_bbox": [
+    0,
+    21,
+    2152,
+    724
+  ],
+  "alpha_ge_8_bbox": [
+    113,
+    121,
+    2082,
+    630
+  ],
+  "sha256": "34dd96ddc61c689225e2cba0c495220b5ae749f96118fc178b1e824380887c81",
+  "processing": "No image processing. Original generated RGBA copied byte-for-byte; native alpha preserved.",
+  "qa": "Viewed generated source with view_image: exact four simplified Chinese characters 圆卡旋风, all complete; transparent background, dark lake-teal outline, cream-gold lettering, amber shadow and small swirl round-card accent. Sparse alpha 1–7 pixels exist outside the visible title; retained unchanged.",
+  "provenance": {
+    "type": "AI-generated original game asset",
+    "external_stock_assets": false,
+    "reference_origin": "Existing project A2 menu background supplied as style reference",
+    "license_note": "Generated through OpenAI built-in image_gen; no separate third-party stock asset or font file supplied. This provenance note does not assert exclusive rights."
+  }
+}

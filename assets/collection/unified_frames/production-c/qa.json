@@ -1,0 +1,35 @@
+{
+  "native_size": [
+    1086,
+    1448
+  ],
+  "output_size": [
+    768,
+    1024
+  ],
+  "mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "sha256": "4a8d60ee0ed6acdee61cb29ec1b4e88ec4836db32fe3f910ad310da398ed0781",
+  "regions": {
+    "window_core": [
+      0,
+      2
+    ],
+    "paper_core": [
+      252,
+      254
+    ],
+    "top_plaque": [
+      252,
+      254
+    ],
+    "theme_plaque": [
+      252,
+      254
+    ]
+  },
+  "processing": "Only mechanical LANCZOS resize to768x1024. No painted masks, design edits or compositing."
+}

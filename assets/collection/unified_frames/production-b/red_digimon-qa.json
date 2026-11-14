@@ -1,0 +1,33 @@
+{
+  "id": "red_digimon",
+  "native_size": [
+    1086,
+    1448
+  ],
+  "size": [
+    768,
+    1024
+  ],
+  "sha256": "821696d8e79004eb5be9bc94248105eb01de22886fd67b141bcc56225144175b",
+  "window": {
+    "min": 0,
+    "max": 2,
+    "alpha_zero_fraction": 0.9005250426081698
+  },
+  "bottom_paper": {
+    "min": 252,
+    "max": 254,
+    "alpha_zero_fraction": 0.0
+  },
+  "top_paper": {
+    "min": 252,
+    "max": 253,
+    "alpha_zero_fraction": 0.0
+  },
+  "corners": [
+    0,
+    0,
+    0,
+    0
+  ]
+}

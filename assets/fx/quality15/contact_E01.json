@@ -1,0 +1,42 @@
+{
+  "key": "contact_E01",
+  "source_id": "impacts/hit-spark",
+  "source_file": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\impacts\\hit-spark.js",
+  "source_sha256": "b0f2d0e5337ab2fff3a6a8995e6404fed72512bdcd1bc92838a60bf879bc732a",
+  "size": [
+    136,
+    80
+  ],
+  "floor_pivot": [
+    44,
+    64
+  ],
+  "pivot": [
+    44,
+    44
+  ],
+  "columns": 7,
+  "rows": 3,
+  "frames": 16,
+  "fps": 30,
+  "source_duration": 0.5,
+  "sample_end": 0.5,
+  "duration": 0.5333333333333333,
+  "body_radius_px": 37,
+  "options": {
+    "palette": [
+      "#2a1608",
+      "#6b3c10",
+      "#b8701a",
+      "#f0b42e",
+      "#ffe27a",
+      "#fff6cf",
+      "#ffffff"
+    ]
+  },
+  "reason": "Complete library everyday hit spark, no paper-press. Shared small contact/break/fragment visual at distinct scope/priority.",
+  "color": "contact_E01-color.png",
+  "light": "contact_E01-light.png",
+  "color_sha256": "c08cce0413378787818266839ca7f21ee2c99cfbab8611d8583a12713671c674",
+  "light_sha256": "2570a81c2c7d56799385a37b6c1e25491a1e6cce6fde14a139e2627cb4081849"
+}

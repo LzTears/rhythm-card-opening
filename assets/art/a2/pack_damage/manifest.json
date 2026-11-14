@@ -1,0 +1,127 @@
+{
+  "version": "a2-damage-1",
+  "generator": "built-in image_gen",
+  "prompt": "source/prompt.txt",
+  "style_reference": "A2 pack-0.png",
+  "canvas_registration": "All stages256x384, same fieldcrop and destination body8,32..248,352. Do NOT bbox-crop these overlays independently. Sample same full UV as base, multiply overlay alpha by basealpha in shader.",
+  "extraction": "sprite-gen native clear_haze floor200 edge0; static equal-cell crops+nearest registration only, no painted marks. Overlay coordinate registration resizes field, BASE packs never stretched.",
+  "assets": [
+    {
+      "stage": 1,
+      "file": "damage-1.png",
+      "size": [
+        256,
+        384
+      ],
+      "alpha_bbox": [
+        14,
+        36,
+        229,
+        347
+      ],
+      "registered_body_box": [
+        8,
+        32,
+        248,
+        352
+      ],
+      "source_cell_crop": [
+        32,
+        160,
+        480,
+        856
+      ],
+      "central_clear_rect": [
+        72,
+        112,
+        184,
+        272
+      ],
+      "central_alpha_max": 0,
+      "sha256": "74f8476c27cc2c54805df55df4716db10144f1722d3879b69bd7b64970b9d195"
+    },
+    {
+      "stage": 2,
+      "file": "damage-2.png",
+      "size": [
+        256,
+        384
+      ],
+      "alpha_bbox": [
+        19,
+        36,
+        236,
+        347
+      ],
+      "registered_body_box": [
+        8,
+        32,
+        248,
+        352
+      ],
+      "source_cell_crop": [
+        544,
+        160,
+        992,
+        856
+      ],
+      "central_clear_rect": [
+        72,
+        112,
+        184,
+        272
+      ],
+      "central_alpha_max": 0,
+      "sha256": "c16bfdebf3d33dd2f43c1787b61390263b12e3e94fa6d1d4b40d1fc55a42974b"
+    },
+    {
+      "stage": 3,
+      "file": "damage-3.png",
+      "size": [
+        256,
+        384
+      ],
+      "alpha_bbox": [
+        25,
+        36,
+        245,
+        347
+      ],
+      "registered_body_box": [
+        8,
+        32,
+        248,
+        352
+      ],
+      "source_cell_crop": [
+        1056,
+        160,
+        1504,
+        856
+      ],
+      "central_clear_rect": [
+        72,
+        112,
+        184,
+        272
+      ],
+      "central_alpha_max": 0,
+      "sha256": "e3249602f1b35746b8ccdf83adc2dd426299e904ccf7eb134b8dca2000b93a9d"
+    }
+  ],
+  "qa": "Actual generated overlay and base-composite preview viewed. Center alpha0 assert; marks at top/bottom seals and side edges; stage intensity differs. At runtime basealpha clipping mandatory; source has faint outline at seals, no centerfill.",
+  "source_png_files": [
+    {
+      "file": "source/alpha-cleaned.png",
+      "sha256": "5f11d0b14f0de0d53d5b77322fddd2e5d19af518a8b25397d9f9ce766b7d387b"
+    },
+    {
+      "file": "source/generated-atlas.png",
+      "sha256": "dc8bd299230b185d6f2a84d78e92f84c5f05a23df1bc819e70a551f60926ad94"
+    },
+    {
+      "file": "source/registered-preview.png",
+      "sha256": "f00994ea3b1969243a0a41a29ee59d20403d5f479a07f9c96c85035a406db0ab"
+    }
+  ]
+}

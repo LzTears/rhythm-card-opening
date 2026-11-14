@@ -1,0 +1,192 @@
+[
+  {
+    "grade": 0,
+    "source": "sources\\frame-grade-0.png",
+    "native_size": [
+      1086,
+      1448
+    ],
+    "size": [
+      768,
+      1024
+    ],
+    "source_grid_x": [
+      0,
+      59,
+      1026,
+      1086
+    ],
+    "source_grid_y": [
+      0,
+      170,
+      1001,
+      1448
+    ],
+    "destination_grid_x": [
+      0,
+      36,
+      732,
+      768
+    ],
+    "destination_grid_y": [
+      0,
+      86,
+      760,
+      1024
+    ],
+    "method": "deterministic nine-patch geometry normalization of generated frame; native alpha retained",
+    "window_center_alpha": 0
+  },
+  {
+    "grade": 1,
+    "source": "sources\\frame-grade-1.png",
+    "native_size": [
+      1086,
+      1448
+    ],
+    "size": [
+      768,
+      1024
+    ],
+    "source_grid_x": [
+      0,
+      64,
+      1022,
+      1086
+    ],
+    "source_grid_y": [
+      0,
+      141,
+      978,
+      1448
+    ],
+    "destination_grid_x": [
+      0,
+      36,
+      732,
+      768
+    ],
+    "destination_grid_y": [
+      0,
+      86,
+      760,
+      1024
+    ],
+    "method": "deterministic nine-patch geometry normalization of generated frame; native alpha retained",
+    "window_center_alpha": 0
+  },
+  {
+    "grade": 2,
+    "source": "sources\\frame-grade-2.png",
+    "native_size": [
+      1086,
+      1448
+    ],
+    "size": [
+      768,
+      1024
+    ],
+    "source_grid_x": [
+      0,
+      84,
+      1002,
+      1086
+    ],
+    "source_grid_y": [
+      0,
+      130,
+      1046,
+      1448
+    ],
+    "destination_grid_x": [
+      0,
+      36,
+      732,
+      768
+    ],
+    "destination_grid_y": [
+      0,
+      86,
+      760,
+      1024
+    ],
+    "method": "deterministic nine-patch geometry normalization of generated frame; native alpha retained",
+    "window_center_alpha": 0
+  },
+  {
+    "grade": 3,
+    "source": "sources\\frame-grade-3.png",
+    "native_size": [
+      1086,
+      1448
+    ],
+    "size": [
+      768,
+      1024
+    ],
+    "source_grid_x": [
+      0,
+      96,
+      989,
+      1086
+    ],
+    "source_grid_y": [
+      0,
+      176,
+      959,
+      1448
+    ],
+    "destination_grid_x": [
+      0,
+      36,
+      732,
+      768
+    ],
+    "destination_grid_y": [
+      0,
+      86,
+      760,
+      1024
+    ],
+    "method": "deterministic nine-patch geometry normalization of generated frame; native alpha retained",
+    "window_center_alpha": 0
+  },
+  {
+    "grade": 4,
+    "source": "sources\\frame-grade-4.png",
+    "native_size": [
+      1086,
+      1448
+    ],
+    "size": [
+      768,
+      1024
+    ],
+    "source_grid_x": [
+      0,
+      72,
+      1014,
+      1086
+    ],
+    "source_grid_y": [
+      0,
+      195,
+      989,
+      1448
+    ],
+    "destination_grid_x": [
+      0,
+      36,
+      732,
+      768
+    ],
+    "destination_grid_y": [
+      0,
+      86,
+      760,
+      1024
+    ],
+    "method": "deterministic nine-patch geometry normalization of generated frame; native alpha retained",
+    "window_center_alpha": 0
+  }
+]

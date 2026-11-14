@@ -1,0 +1,32 @@
+[
+  {
+    "file": "elegant-penguin.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "70adf86a9cc55a8cfbfa7c8d838b70d5c2844a0d1ee8e7bcfe014fd3120562a9",
+    "mode": "RGB",
+    "qa": "Viewed generated output, no readable text/frame/watermark, main silhouette complete; concept approval pending."
+  },
+  {
+    "file": "maodie.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "2ed7433343d927b07955c694e36a6112c17553bc6c07232d4a51c250f8ad3749",
+    "mode": "RGB",
+    "qa": "Viewed generated output, no readable text/frame/watermark, main silhouette complete; concept approval pending."
+  },
+  {
+    "file": "naiwa.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "91575c4ff152c53a73df9481811f1f4dbbaf5ee6e5be31a945738e3130429543",
+    "mode": "RGB",
+    "qa": "Viewed generated output, no readable text/frame/watermark, main silhouette complete; concept approval pending."
+  }
+]

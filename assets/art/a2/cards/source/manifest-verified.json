@@ -1,0 +1,108 @@
+{
+  "style": "A2",
+  "generation": "Built-in image_gen; four current family atlases plus shared back",
+  "extraction": "sprite-gen slice-sheet, true native alpha, alpha-floor64 edge0, target-height460 contain; no painting or recolor",
+  "card_count": 4,
+  "unique_card_sha256_count": 4,
+  "items": [
+    {
+      "file": "C01-0.png",
+      "family": "C01",
+      "animal": "海豚",
+      "ability": "扩散涟圈",
+      "grade": 0,
+      "rarity": "普通",
+      "sha256": "a47bec66baba9dfbdcb4bc0eaea2bce08c31bf316e99df87fcd5e29da6f4377d",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        31,
+        26,
+        483,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C04-0.png",
+      "family": "C04",
+      "animal": "海星",
+      "ability": "多重",
+      "grade": 0,
+      "rarity": "普通",
+      "sha256": "a56d6693a0e0c7976bbb48029a4dd686fc868dcdc34de2e300cba14d5f5a2ad8",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        28,
+        26,
+        485,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C09-0.png",
+      "family": "C09",
+      "animal": "章鱼",
+      "ability": "牵引",
+      "grade": 0,
+      "rarity": "普通",
+      "sha256": "97008f2e4814db9750076577c76978de748da55f9b2f3a025f8d2818a54b8945",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        30,
+        26,
+        483,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C12-0.png",
+      "family": "C12",
+      "animal": "海龟",
+      "ability": "余波",
+      "grade": 0,
+      "rarity": "普通",
+      "sha256": "e9f2937ac65eea74affafe8cde5565fd04430b77622b580de5b6216f66841c2b",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        24,
+        26,
+        489,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "card_back.png",
+      "sha256": "a61c450c4a497aaf867d9b126453de19fc7e9ea192a13008e7db91931aa02f44",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        25,
+        26,
+        488,
+        486
+      ]
+    }
+  ]
+}

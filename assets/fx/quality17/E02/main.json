@@ -1,0 +1,36 @@
+{
+  "key": "main_E02",
+  "role_hint": "main",
+  "element": "E02",
+  "source_id": "explosions/plasma-explosion",
+  "source_file": "C:\\Users\\Administrator\\.codex\\vendor_imports\\pixelfx-main\\src\\fx\\explosions\\plasma-explosion.js",
+  "source_sha256": "28856fa225a4259423721458785ab5305785ae283da6d94f78cc6b2eae3dd771",
+  "derived_file": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\fx\\quality17\\E02\\source\\main-topdown.mjs",
+  "derived_sha256": "fea47021ba5e1fe4802cf57557c328b92af13130c0660c369c94688119793c13",
+  "size": [
+    224,
+    200
+  ],
+  "floor_pivot": [
+    112,
+    100
+  ],
+  "pivot": [
+    112,
+    100
+  ],
+  "columns": 7,
+  "rows": 8,
+  "frames": 52,
+  "fps": 30,
+  "source_duration": 1.7,
+  "sample_end": 1.7,
+  "duration": 1.7333333333333334,
+  "body_radius_px": 35,
+  "options": {},
+  "reason": "Complete original blue-violet plasma body, radial branching arcs and original light. Only secondary flake drift becomes planar.",
+  "color": "main-color.png",
+  "light": "main-light.png",
+  "color_sha256": "9f6e390ce482ada202a29c350870784c3e2081c23808da2e014287cf87b7b66f",
+  "light_sha256": "ac29e267be944b486de00d00356274b9debab0acccaf9b3c3eeb09b28d07b2b7"
+}

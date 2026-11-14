@@ -1,0 +1,1325 @@
+[
+  {
+    "id": "GAL-001",
+    "name": "月球",
+    "grade": 0,
+    "theme": "galaxy",
+    "description": "银白月面静静收下夜空寄来的信",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-001.png"
+  },
+  {
+    "id": "GAL-002",
+    "name": "水星",
+    "grade": 0,
+    "theme": "galaxy",
+    "description": "灰色小世界在晨光边缘悄然独行",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-002.png"
+  },
+  {
+    "id": "GAL-003",
+    "name": "金星",
+    "grade": 0,
+    "theme": "galaxy",
+    "description": "奶金云海把遥远晨星轻轻包裹",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-003.png"
+  },
+  {
+    "id": "GAL-004",
+    "name": "火星",
+    "grade": 0,
+    "theme": "galaxy",
+    "description": "赤色沙原向群星铺开寂静长路",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-004.png"
+  },
+  {
+    "id": "GAL-005",
+    "name": "谷神星",
+    "grade": 0,
+    "theme": "galaxy",
+    "description": "灰白小岛在无声星海独自远航",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-005.png"
+  },
+  {
+    "id": "GAL-006",
+    "name": "冥王星",
+    "grade": 0,
+    "theme": "galaxy",
+    "description": "冰冷远方藏着一枚浅色的心愿",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-006.png"
+  },
+  {
+    "id": "GAL-007",
+    "name": "火卫一",
+    "grade": 0,
+    "theme": "galaxy",
+    "description": "不规则的小石舟穿过暗红夜色",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-007.png"
+  },
+  {
+    "id": "GAL-008",
+    "name": "火卫二",
+    "grade": 0,
+    "theme": "galaxy",
+    "description": "小小岩岛把微光留在旅途身后",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-008.png"
+  },
+  {
+    "id": "GAL-009",
+    "name": "木卫一",
+    "grade": 0,
+    "theme": "galaxy",
+    "description": "金黄大地把炽热心事藏进裂隙",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-009.png"
+  },
+  {
+    "id": "GAL-010",
+    "name": "木卫四",
+    "grade": 0,
+    "theme": "galaxy",
+    "description": "古老斑点如星光落在深色纸上",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-010.png"
+  },
+  {
+    "id": "GAL-011",
+    "name": "冥卫一",
+    "grade": 0,
+    "theme": "galaxy",
+    "description": "灰色旅伴守着深空尽头的静谧",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-011.png"
+  },
+  {
+    "id": "GAL-012",
+    "name": "海卫一",
+    "grade": 0,
+    "theme": "galaxy",
+    "description": "淡粉冰原在蓝色远方安静回望",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-012.png"
+  },
+  {
+    "id": "GAL-013",
+    "name": "小熊座",
+    "grade": 0,
+    "theme": "galaxy",
+    "description": "小熊循着细碎星光寻找夜的方向",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-013.png"
+  },
+  {
+    "id": "GAL-014",
+    "name": "仙后座",
+    "grade": 0,
+    "theme": "galaxy",
+    "description": "五点星光为深紫夜幕折出王冠",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-014.png"
+  },
+  {
+    "id": "GAL-015",
+    "name": "天琴座",
+    "grade": 0,
+    "theme": "galaxy",
+    "description": "无声琴弦把夏夜轻轻拨成微光",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-015.png"
+  },
+  {
+    "id": "GAL-016",
+    "name": "天鹅座",
+    "grade": 0,
+    "theme": "galaxy",
+    "description": "星光展开双翼飞过寂静的长夜",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-016.png"
+  },
+  {
+    "id": "GAL-017",
+    "name": "地球",
+    "grade": 1,
+    "theme": "galaxy",
+    "description": "蔚蓝家园将白云折成温柔的拥抱",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-017.png"
+  },
+  {
+    "id": "GAL-018",
+    "name": "木星",
+    "grade": 1,
+    "theme": "galaxy",
+    "description": "层层云带卷起巨人未完的梦境",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-018.png"
+  },
+  {
+    "id": "GAL-019",
+    "name": "土星",
+    "grade": 1,
+    "theme": "galaxy",
+    "description": "金色圆环托住一颗安静的心愿",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-019.png"
+  },
+  {
+    "id": "GAL-020",
+    "name": "天王星",
+    "grade": 1,
+    "theme": "galaxy",
+    "description": "青蓝世界把清冷光芒藏在边缘",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-020.png"
+  },
+  {
+    "id": "GAL-021",
+    "name": "海王星",
+    "grade": 1,
+    "theme": "galaxy",
+    "description": "深蓝云海在遥远夜色缓缓翻涌",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-021.png"
+  },
+  {
+    "id": "GAL-022",
+    "name": "木卫二",
+    "grade": 1,
+    "theme": "galaxy",
+    "description": "冰纹纵横如写给星海的细短信",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-022.png"
+  },
+  {
+    "id": "GAL-023",
+    "name": "木卫三",
+    "grade": 1,
+    "theme": "galaxy",
+    "description": "明暗交织的月面收藏漫长旅途",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-023.png"
+  },
+  {
+    "id": "GAL-024",
+    "name": "土卫六",
+    "grade": 1,
+    "theme": "galaxy",
+    "description": "橙色薄雾为远方披上柔软外衣",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-024.png"
+  },
+  {
+    "id": "GAL-025",
+    "name": "太阳",
+    "grade": 1,
+    "theme": "galaxy",
+    "description": "金色光芒把漫长黑夜轻轻推开",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-025.png"
+  },
+  {
+    "id": "GAL-026",
+    "name": "大熊座",
+    "grade": 1,
+    "theme": "galaxy",
+    "description": "巨熊背着星光缓缓走过夜的原野",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-026.png"
+  },
+  {
+    "id": "GAL-027",
+    "name": "天蝎座",
+    "grade": 1,
+    "theme": "galaxy",
+    "description": "弯曲星链在夏夜扬起明亮尾梢",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-027.png"
+  },
+  {
+    "id": "GAL-028",
+    "name": "狮子座",
+    "grade": 1,
+    "theme": "galaxy",
+    "description": "星光狮王在静夜守住一片辽阔",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-028.png"
+  },
+  {
+    "id": "GAL-029",
+    "name": "金牛座",
+    "grade": 1,
+    "theme": "galaxy",
+    "description": "星点凝成双角穿过深紫色夜幕",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-029.png"
+  },
+  {
+    "id": "GAL-030",
+    "name": "猎户座",
+    "grade": 2,
+    "theme": "galaxy",
+    "description": "三颗腰带星为夜空系上远行约定",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-030.png"
+  },
+  {
+    "id": "GAL-031",
+    "name": "仙女座星系",
+    "grade": 2,
+    "theme": "galaxy",
+    "description": "遥远星岛将柔亮旋臂缓缓展开",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-031.png"
+  },
+  {
+    "id": "GAL-032",
+    "name": "三角座星系",
+    "grade": 2,
+    "theme": "galaxy",
+    "description": "松散旋臂像纸花向无边夜色盛放",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-032.png"
+  },
+  {
+    "id": "GAL-033",
+    "name": "涡状星系",
+    "grade": 2,
+    "theme": "galaxy",
+    "description": "旋转星河在暗夜画出相拥的弧线",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-033.png"
+  },
+  {
+    "id": "GAL-034",
+    "name": "草帽星系",
+    "grade": 2,
+    "theme": "galaxy",
+    "description": "薄薄星盘为幽暗深空戴上一顶帽",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-034.png"
+  },
+  {
+    "id": "GAL-035",
+    "name": "昴星团",
+    "grade": 2,
+    "theme": "galaxy",
+    "description": "蓝色星群像散落绒布的晶亮珠子",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-035.png"
+  },
+  {
+    "id": "GAL-036",
+    "name": "猎户座星云",
+    "grade": 2,
+    "theme": "galaxy",
+    "description": "粉紫云幕托起一座发光的花园",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-036.png"
+  },
+  {
+    "id": "GAL-037",
+    "name": "礁湖星云",
+    "grade": 2,
+    "theme": "galaxy",
+    "description": "玫色云海在星光之间留下静湾",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-037.png"
+  },
+  {
+    "id": "GAL-038",
+    "name": "环状星云",
+    "grade": 2,
+    "theme": "galaxy",
+    "description": "彩色光环如一枚寄往深空的戒指",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-038.png"
+  },
+  {
+    "id": "GAL-039",
+    "name": "蟹状星云",
+    "grade": 2,
+    "theme": "galaxy",
+    "description": "细密光丝将古老回声织成星之茧",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-039.png"
+  },
+  {
+    "id": "GAL-040",
+    "name": "银河",
+    "grade": 3,
+    "theme": "galaxy",
+    "description": "亿万星光汇成我们仰望的漫长归途",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-040.png"
+  },
+  {
+    "id": "GAL-041",
+    "name": "武仙座球状星团",
+    "grade": 3,
+    "theme": "galaxy",
+    "description": "万千光点在深空聚成灿烂的花球",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-041.png"
+  },
+  {
+    "id": "GAL-042",
+    "name": "哑铃星云",
+    "grade": 3,
+    "theme": "galaxy",
+    "description": "双瓣光云把告别折成盛开的花朵",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-042.png"
+  },
+  {
+    "id": "GAL-043",
+    "name": "三裂星云",
+    "grade": 3,
+    "theme": "galaxy",
+    "description": "暗色枝脉把绚丽云海分成三瓣",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-043.png"
+  },
+  {
+    "id": "GAL-044",
+    "name": "黑眼星系",
+    "grade": 3,
+    "theme": "galaxy",
+    "description": "深色尘带为明亮星心添一抹眼影",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-044.png"
+  },
+  {
+    "id": "GAL-045",
+    "name": "雪茄星系",
+    "grade": 3,
+    "theme": "galaxy",
+    "description": "细长星岛向幽暗远方扬起红色帆",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-045.png"
+  },
+  {
+    "id": "GAL-046",
+    "name": "黑洞",
+    "grade": 4,
+    "theme": "galaxy",
+    "description": "炽亮光环围住一片无声的深黑之境",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-046.png"
+  },
+  {
+    "id": "GAL-047",
+    "name": "超新星",
+    "grade": 4,
+    "theme": "galaxy",
+    "description": "终章的光芒把寂静夜幕骤然点亮",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-047.png"
+  },
+  {
+    "id": "GAL-048",
+    "name": "脉冲星",
+    "grade": 4,
+    "theme": "galaxy",
+    "description": "双束光芒在无边暗夜写下星的节拍",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/GAL-048.png"
+  },
+  {
+    "id": "GAL-049",
+    "name": "创生之柱",
+    "grade": 4,
+    "theme": "galaxy",
+    "description": "巨大云柱将尚未醒来的星光轻轻托起",
+    "hidden": true,
+    "art_path": "res://assets/collection/cards/GAL-049.png"
+  },
+  {
+    "id": "DIG-001",
+    "name": "滚球兽",
+    "grade": 0,
+    "theme": "digimon",
+    "description": "粉色小团轻轻一跃，把好心情送到眼前。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-001.png"
+  },
+  {
+    "id": "DIG-002",
+    "name": "独角兽",
+    "grade": 0,
+    "theme": "digimon",
+    "description": "毛茸茸的小角探出，今天也想四处冒险。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-002.png"
+  },
+  {
+    "id": "DIG-003",
+    "name": "比高兽",
+    "grade": 0,
+    "theme": "digimon",
+    "description": "头顶小花迎着微风，悄悄点亮这一刻。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-003.png"
+  },
+  {
+    "id": "DIG-004",
+    "name": "年糕兽",
+    "grade": 0,
+    "theme": "digimon",
+    "description": "软软身体晃了两下，连云朵也想靠近。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-004.png"
+  },
+  {
+    "id": "DIG-005",
+    "name": "种子兽",
+    "grade": 0,
+    "theme": "digimon",
+    "description": "头顶嫩叶轻轻摇摆，把春天藏进掌心。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-005.png"
+  },
+  {
+    "id": "DIG-006",
+    "name": "布加兽",
+    "grade": 0,
+    "theme": "digimon",
+    "description": "水边的小小身影，正把浪花当作玩伴。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-006.png"
+  },
+  {
+    "id": "DIG-007",
+    "name": "迪哥兽",
+    "grade": 0,
+    "theme": "digimon",
+    "description": "小小脚步追着阳光，一路留下柔软笑意。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-007.png"
+  },
+  {
+    "id": "DIG-008",
+    "name": "喵喵兽",
+    "grade": 0,
+    "theme": "digimon",
+    "description": "尾巴轻轻画个圆，好奇的目光还没停下。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-008.png"
+  },
+  {
+    "id": "DIG-009",
+    "name": "豆丁兽",
+    "grade": 0,
+    "theme": "digimon",
+    "description": "蓝色小手举得高高，像在邀请新的旅伴。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-009.png"
+  },
+  {
+    "id": "DIG-010",
+    "name": "蓑虫兽",
+    "grade": 0,
+    "theme": "digimon",
+    "description": "小小蓑衣随风轻晃，安静等一场好天气。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-010.png"
+  },
+  {
+    "id": "DIG-011",
+    "name": "基基兽",
+    "grade": 0,
+    "theme": "digimon",
+    "description": "红色小团抬起脑袋，眼里装满明亮期待。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-011.png"
+  },
+  {
+    "id": "DIG-012",
+    "name": "软糖兽",
+    "grade": 0,
+    "theme": "digimon",
+    "description": "长长耳朵随风舒展，午后也变得软绵绵。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-012.png"
+  },
+  {
+    "id": "DIG-013",
+    "name": "巧克力兽",
+    "grade": 0,
+    "theme": "digimon",
+    "description": "褐色小脸探出叶间，把温柔留给路过的人。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-013.png"
+  },
+  {
+    "id": "DIG-014",
+    "name": "多利兽",
+    "grade": 0,
+    "theme": "digimon",
+    "description": "紫色小兽迎风站稳，个子虽小目光很亮。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-014.png"
+  },
+  {
+    "id": "DIG-015",
+    "name": "汪喵兽",
+    "grade": 0,
+    "theme": "digimon",
+    "description": "蓝色条纹轻轻一晃，好奇心就跑到了前面。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-015.png"
+  },
+  {
+    "id": "DIG-016",
+    "name": "丘比兽",
+    "grade": 0,
+    "theme": "digimon",
+    "description": "白色小翅掠过云边，像一封刚送来的问候。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-016.png"
+  },
+  {
+    "id": "DIG-017",
+    "name": "亚古兽",
+    "grade": 1,
+    "theme": "digimon",
+    "description": "橙色伙伴伸出小爪，把勇气交到你的手里。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-017.png"
+  },
+  {
+    "id": "DIG-018",
+    "name": "加布兽",
+    "grade": 1,
+    "theme": "digimon",
+    "description": "条纹皮毛迎风扬起，安静目光陪你走远。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-018.png"
+  },
+  {
+    "id": "DIG-019",
+    "name": "比丘兽",
+    "grade": 1,
+    "theme": "digimon",
+    "description": "粉色羽翼轻轻展开，把晴空变成下一站。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-019.png"
+  },
+  {
+    "id": "DIG-020",
+    "name": "甲虫兽",
+    "grade": 1,
+    "theme": "digimon",
+    "description": "红色甲壳映着树影，小小翅膀准备起飞。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-020.png"
+  },
+  {
+    "id": "DIG-021",
+    "name": "巴鲁兽",
+    "grade": 1,
+    "theme": "digimon",
+    "description": "头顶花朵朝光绽放，把整片绿意带在身旁。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-021.png"
+  },
+  {
+    "id": "DIG-022",
+    "name": "哥玛兽",
+    "grade": 1,
+    "theme": "digimon",
+    "description": "白色小兽跃过浅浪，把海风变成开场白。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-022.png"
+  },
+  {
+    "id": "DIG-023",
+    "name": "巴达兽",
+    "grade": 1,
+    "theme": "digimon",
+    "description": "耳翼扑扇得很认真，小小身影也想追上风。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-023.png"
+  },
+  {
+    "id": "DIG-024",
+    "name": "迪路兽",
+    "grade": 1,
+    "theme": "digimon",
+    "description": "白色身影轻巧落地，猫眼里藏着从容笑意。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-024.png"
+  },
+  {
+    "id": "DIG-025",
+    "name": "V仔兽",
+    "grade": 1,
+    "theme": "digimon",
+    "description": "蓝色伙伴迈开脚步，把期待写进灿烂笑脸。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-025.png"
+  },
+  {
+    "id": "DIG-026",
+    "name": "虫虫兽",
+    "grade": 1,
+    "theme": "digimon",
+    "description": "绿色小虫抬头望你，细细触角也在认真回应。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-026.png"
+  },
+  {
+    "id": "DIG-027",
+    "name": "基尔兽",
+    "grade": 1,
+    "theme": "digimon",
+    "description": "红色小龙迎着光跑来，脚步里都是新鲜欢喜。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-027.png"
+  },
+  {
+    "id": "DIG-028",
+    "name": "大耳兽",
+    "grade": 1,
+    "theme": "digimon",
+    "description": "长耳轻轻搭在风里，悠闲也能成为好风景。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-028.png"
+  },
+  {
+    "id": "DIG-029",
+    "name": "妖狐兽",
+    "grade": 1,
+    "theme": "digimon",
+    "description": "金色身影立在树梢，目光比夜风更加清澈。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-029.png"
+  },
+  {
+    "id": "DIG-030",
+    "name": "暴龙兽",
+    "grade": 2,
+    "theme": "digimon",
+    "description": "巨角划开炽热天光，橙色身影踏出坚定一步。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-030.png"
+  },
+  {
+    "id": "DIG-031",
+    "name": "加鲁鲁兽",
+    "grade": 2,
+    "theme": "digimon",
+    "description": "蓝白条纹掠过山脊，奔跑的风也追不上它。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-031.png"
+  },
+  {
+    "id": "DIG-032",
+    "name": "巴多拉兽",
+    "grade": 2,
+    "theme": "digimon",
+    "description": "火色羽翼铺满天空，一次振翅照亮远方山谷。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-032.png"
+  },
+  {
+    "id": "DIG-033",
+    "name": "比多兽",
+    "grade": 2,
+    "theme": "digimon",
+    "description": "巨大独角指向前方，蓝色甲壳映出雷光。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-033.png"
+  },
+  {
+    "id": "DIG-034",
+    "name": "仙人掌兽",
+    "grade": 2,
+    "theme": "digimon",
+    "description": "红色拳套轻轻一碰，连沙地都燃起热情。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-034.png"
+  },
+  {
+    "id": "DIG-035",
+    "name": "海狮兽",
+    "grade": 2,
+    "theme": "digimon",
+    "description": "白色巨影踏着浪来，额前独角映着海上晨光。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-035.png"
+  },
+  {
+    "id": "DIG-036",
+    "name": "天使兽",
+    "grade": 2,
+    "theme": "digimon",
+    "description": "六翼在风中缓缓展开，把希望留在光的中央。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-036.png"
+  },
+  {
+    "id": "DIG-037",
+    "name": "天女兽",
+    "grade": 2,
+    "theme": "digimon",
+    "description": "八翼托起一束晨光，温柔目光越过漫长夜色。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-037.png"
+  },
+  {
+    "id": "DIG-038",
+    "name": "机械暴龙兽（疫苗种）",
+    "grade": 2,
+    "theme": "digimon",
+    "description": "钢铁左臂迎着火光，橙色巨影跨过滚滚烟尘。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-038.png"
+  },
+  {
+    "id": "DIG-039",
+    "name": "九尾狐兽",
+    "grade": 2,
+    "theme": "digimon",
+    "description": "九条金尾在夜色铺开，蓝焰映亮静静的眼眸。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-039.png"
+  },
+  {
+    "id": "DIG-040",
+    "name": "战斗暴龙兽",
+    "grade": 3,
+    "theme": "digimon",
+    "description": "金色战甲迎向烈光，双爪握住此刻的勇气。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-040.png"
+  },
+  {
+    "id": "DIG-041",
+    "name": "钢铁加鲁鲁兽",
+    "grade": 3,
+    "theme": "digimon",
+    "description": "银蓝身影掠过冰原，冷色光芒照出清晰前路。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-041.png"
+  },
+  {
+    "id": "DIG-042",
+    "name": "究极天使兽",
+    "grade": 3,
+    "theme": "digimon",
+    "description": "银色铠甲映着云海，十翼展开一片明亮天空。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-042.png"
+  },
+  {
+    "id": "DIG-043",
+    "name": "圣龙兽",
+    "grade": 3,
+    "theme": "digimon",
+    "description": "粉色长影游过云间，展开羽翼拥抱无边晴空。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-043.png"
+  },
+  {
+    "id": "DIG-044",
+    "name": "红莲骑士兽",
+    "grade": 3,
+    "theme": "digimon",
+    "description": "红色披风卷起晨风，银甲与长枪一同迎光。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-044.png"
+  },
+  {
+    "id": "DIG-045",
+    "name": "别西卜兽",
+    "grade": 3,
+    "theme": "digimon",
+    "description": "黑色皮衣掠过霓虹，冷峻身影走出深夜街角。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-045.png"
+  },
+  {
+    "id": "DIG-046",
+    "name": "奥米加兽",
+    "grade": 4,
+    "theme": "digimon",
+    "description": "白色披风划过天际，双臂承接交汇的光芒。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-046.png"
+  },
+  {
+    "id": "DIG-047",
+    "name": "阿尔法兽",
+    "grade": 4,
+    "theme": "digimon",
+    "description": "黑色铠甲立在光中，金色边缘勾出沉静轮廓。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-047.png"
+  },
+  {
+    "id": "DIG-048",
+    "name": "帝皇龙甲兽·圣骑士形态",
+    "grade": 4,
+    "theme": "digimon",
+    "description": "银白羽翼映满晨曦，长剑为这片晴空落下光痕。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/DIG-048.png"
+  },
+  {
+    "id": "DIG-049",
+    "name": "奥米加兽X抗体",
+    "grade": 4,
+    "theme": "digimon",
+    "description": "锐利白甲展开新轮廓，披风尽头仍有光在延伸。",
+    "hidden": true,
+    "art_path": "res://assets/collection/cards/DIG-049.png"
+  },
+  {
+    "id": "MEM-001",
+    "name": "圆头耄耋",
+    "grade": 0,
+    "theme": "meme",
+    "description": "圆头一贴近镜头，群聊立刻安静。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-001.png"
+  },
+  {
+    "id": "MEM-002",
+    "name": "耄耋·偷吃被抓",
+    "grade": 0,
+    "theme": "meme",
+    "description": "饭可以偷偷吃，气势必须摆出来。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-002.png"
+  },
+  {
+    "id": "MEM-003",
+    "name": "熊猫头·偷笑",
+    "grade": 0,
+    "theme": "meme",
+    "description": "有些笑声，捂住嘴也藏不住。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-003.png"
+  },
+  {
+    "id": "MEM-004",
+    "name": "熊猫头·凝视",
+    "grade": 0,
+    "theme": "meme",
+    "description": "我就看着你，什么也不用说。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-004.png"
+  },
+  {
+    "id": "MEM-005",
+    "name": "流汗黄豆",
+    "grade": 0,
+    "theme": "meme",
+    "description": "额头那滴汗，已经替我回了话。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-005.png"
+  },
+  {
+    "id": "MEM-006",
+    "name": "黄豆·裂开",
+    "grade": 0,
+    "theme": "meme",
+    "description": "笑容还在脸上，脸已经先裂开。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-006.png"
+  },
+  {
+    "id": "MEM-007",
+    "name": "Doge·斜眼",
+    "grade": 0,
+    "theme": "meme",
+    "description": "头可以不动，眼神已经讲完了。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-007.png"
+  },
+  {
+    "id": "MEM-008",
+    "name": "Cheems·瘫坐",
+    "grade": 0,
+    "theme": "meme",
+    "description": "一句还没开口，肩膀已经认输。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-008.png"
+  },
+  {
+    "id": "MEM-009",
+    "name": "Happy猫",
+    "grade": 0,
+    "theme": "meme",
+    "description": "好消息还没讲完，脚已经跳起来。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-009.png"
+  },
+  {
+    "id": "MEM-010",
+    "name": "Pop猫",
+    "grade": 0,
+    "theme": "meme",
+    "description": "嘴一张一合，气氛自动有了节拍。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-010.png"
+  },
+  {
+    "id": "MEM-011",
+    "name": "Huh猫",
+    "grade": 0,
+    "theme": "meme",
+    "description": "耳朵听见了，脑子还在加载。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-011.png"
+  },
+  {
+    "id": "MEM-012",
+    "name": "香蕉猫",
+    "grade": 0,
+    "theme": "meme",
+    "description": "香蕉皮还站着，委屈先流出来。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-012.png"
+  },
+  {
+    "id": "MEM-013",
+    "name": "苹果猫",
+    "grade": 0,
+    "theme": "meme",
+    "description": "圆滚滚地路过，也能走出喜感。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-013.png"
+  },
+  {
+    "id": "MEM-014",
+    "name": "点头猫",
+    "grade": 0,
+    "theme": "meme",
+    "description": "节拍一响，脖子就替我上班。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-014.png"
+  },
+  {
+    "id": "MEM-015",
+    "name": "奶龙·捧腹大笑",
+    "grade": 0,
+    "theme": "meme",
+    "description": "肚子还没停颤，笑声已经绕了三圈。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-015.png"
+  },
+  {
+    "id": "MEM-016",
+    "name": "奶龙·探头",
+    "grade": 0,
+    "theme": "meme",
+    "description": "事情还没看清，脑袋已经先挤过来。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-016.png"
+  },
+  {
+    "id": "MEM-017",
+    "name": "耄耋·飞机耳警告",
+    "grade": 1,
+    "theme": "meme",
+    "description": "耳朵一往后收，空气就开始紧张。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-017.png"
+  },
+  {
+    "id": "MEM-018",
+    "name": "熊猫头·拍桌",
+    "grade": 1,
+    "theme": "meme",
+    "description": "桌面遭了殃，道理还没说清。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-018.png"
+  },
+  {
+    "id": "MEM-019",
+    "name": "黄豆·出来转圈",
+    "grade": 1,
+    "theme": "meme",
+    "description": "转了一整圈，心情还是那个心情。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-019.png"
+  },
+  {
+    "id": "MEM-020",
+    "name": "肌肉Doge",
+    "grade": 1,
+    "theme": "meme",
+    "description": "口气可以很大，肩膀必须更大。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-020.png"
+  },
+  {
+    "id": "MEM-021",
+    "name": "Bonk·敲头警告",
+    "grade": 1,
+    "theme": "meme",
+    "description": "棒子还没落下，脑门已经开始发懵。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-021.png"
+  },
+  {
+    "id": "MEM-022",
+    "name": "刀盾狗",
+    "grade": 1,
+    "theme": "meme",
+    "description": "装备已经拿稳，表情仍然很怂。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-022.png"
+  },
+  {
+    "id": "MEM-023",
+    "name": "肥嘟嘟",
+    "grade": 1,
+    "theme": "meme",
+    "description": "气势刚刚摆出来，圆肚子先软了一下。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-023.png"
+  },
+  {
+    "id": "MEM-024",
+    "name": "OIIA旋转猫",
+    "grade": 1,
+    "theme": "meme",
+    "description": "猫还是那只猫，方向已经不重要。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-024.png"
+  },
+  {
+    "id": "MEM-025",
+    "name": "Bongo敲鼓猫",
+    "grade": 1,
+    "theme": "meme",
+    "description": "爪子轮流落下，快乐不需要解释。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-025.png"
+  },
+  {
+    "id": "MEM-026",
+    "name": "流泪猫猫头",
+    "grade": 1,
+    "theme": "meme",
+    "description": "没有发生大事，只是眼睛先下雨。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-026.png"
+  },
+  {
+    "id": "MEM-027",
+    "name": "高雅·通勤摇摆",
+    "grade": 1,
+    "theme": "meme",
+    "description": "车可以很挤，步子仍然要讲究。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-027.png"
+  },
+  {
+    "id": "MEM-028",
+    "name": "吗喽·打工",
+    "grade": 1,
+    "theme": "meme",
+    "description": "班味落在肩上，眼神先去放假。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-028.png"
+  },
+  {
+    "id": "MEM-029",
+    "name": "卡皮巴拉·顶橘泡汤",
+    "grade": 1,
+    "theme": "meme",
+    "description": "橘子可以摇晃，我的情绪保持不动。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-029.png"
+  },
+  {
+    "id": "MEM-030",
+    "name": "奶蛙",
+    "grade": 2,
+    "theme": "meme",
+    "description": "嘴上还在微笑，身体已经开始乱拐。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-030.png"
+  },
+  {
+    "id": "MEM-031",
+    "name": "奶蛙·雨中狂笑",
+    "grade": 2,
+    "theme": "meme",
+    "description": "雨越下越大，笑声越像一种回答。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-031.png"
+  },
+  {
+    "id": "MEM-032",
+    "name": "高雅·上班视察",
+    "grade": 2,
+    "theme": "meme",
+    "description": "工位可以混乱，巡视必须体面。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-032.png"
+  },
+  {
+    "id": "MEM-033",
+    "name": "熊猫头·金馆长狂笑",
+    "grade": 2,
+    "theme": "meme",
+    "description": "笑到五官挤在一起，理由已经不重要。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-033.png"
+  },
+  {
+    "id": "MEM-034",
+    "name": "无事发生狗",
+    "grade": 2,
+    "theme": "meme",
+    "description": "房间忙着失控，杯子仍然端得很稳。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-034.png"
+  },
+  {
+    "id": "MEM-035",
+    "name": "土拨鼠·尖叫",
+    "grade": 2,
+    "theme": "meme",
+    "description": "胸口攒的那口气，终于找到出口。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-035.png"
+  },
+  {
+    "id": "MEM-036",
+    "name": "惊恐仓鼠",
+    "grade": 2,
+    "theme": "meme",
+    "description": "身体还没后退，灵魂已经先举手。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-036.png"
+  },
+  {
+    "id": "MEM-037",
+    "name": "土拨鼠·劝架",
+    "grade": 2,
+    "theme": "meme",
+    "description": "两边都想说理，中间只想下班。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-037.png"
+  },
+  {
+    "id": "MEM-038",
+    "name": "咚咚木棍人",
+    "grade": 2,
+    "theme": "meme",
+    "description": "敲门声还没停，木头已经自己走来。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-038.png"
+  },
+  {
+    "id": "MEM-039",
+    "name": "穿鞋鲨鱼",
+    "grade": 2,
+    "theme": "meme",
+    "description": "海水还在脚边，鞋已经准备出门。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-039.png"
+  },
+  {
+    "id": "MEM-040",
+    "name": "奶蛙·惊鸿一瞥",
+    "grade": 3,
+    "theme": "meme",
+    "description": "回头只有一瞬，眼神足够反复播放。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-040.png"
+  },
+  {
+    "id": "MEM-041",
+    "name": "高雅·举杯致意",
+    "grade": 3,
+    "theme": "meme",
+    "description": "杯子只抬一点，排场必须摆满。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-041.png"
+  },
+  {
+    "id": "MEM-042",
+    "name": "鳄鱼轰炸机",
+    "grade": 3,
+    "theme": "meme",
+    "description": "翅膀明明很认真，脑袋却完全不对。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-042.png"
+  },
+  {
+    "id": "MEM-043",
+    "name": "咖啡芭蕾",
+    "grade": 3,
+    "theme": "meme",
+    "description": "咖啡还没凉，脚尖已经开始旋转。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-043.png"
+  },
+  {
+    "id": "MEM-044",
+    "name": "仙人掌大象",
+    "grade": 3,
+    "theme": "meme",
+    "description": "长鼻子走在前面，仙人掌慢慢跟上。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-044.png"
+  },
+  {
+    "id": "MEM-045",
+    "name": "森林大脚猴",
+    "grade": 3,
+    "theme": "meme",
+    "description": "林子这么安静，脚步偏要很夸张。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-045.png"
+  },
+  {
+    "id": "MEM-046",
+    "name": "高雅人士",
+    "grade": 4,
+    "theme": "meme",
+    "description": "身体可以打滑，茶杯必须保持高雅。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-046.png"
+  },
+  {
+    "id": "MEM-047",
+    "name": "耄耋·三哈一普",
+    "grade": 4,
+    "theme": "meme",
+    "description": "三口气还没哈完，前爪已经抢先出手。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-047.png"
+  },
+  {
+    "id": "MEM-048",
+    "name": "奶蛙·最后的晚餐",
+    "grade": 4,
+    "theme": "meme",
+    "description": "一桌看似很平静，绿眼睛各有心事。",
+    "hidden": false,
+    "art_path": "res://assets/collection/cards/MEM-048.png"
+  },
+  {
+    "id": "MEM-049",
+    "name": "滑稽·会心一笑",
+    "grade": 4,
+    "theme": "meme",
+    "description": "所有话都没说，那一笑已经够了。",
+    "hidden": true,
+    "art_path": "res://assets/collection/cards/MEM-049.png"
+  }
+]

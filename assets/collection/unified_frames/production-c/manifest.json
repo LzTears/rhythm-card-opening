@@ -1,0 +1,11 @@
+{
+  "generator": "built-in image_gen.imagegen",
+  "calls": 1,
+  "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1d0ed-1514-7fe3-871e-8220c5c6dfcc\\exec-44bfdb87-aa93-4d16-9409-8fae5a7b8cd1.png",
+  "reference": "assets/collection/red-reference-alignment/frame_galaxy.png",
+  "native": "red_meme_native.png",
+  "final": "../red_meme.png",
+  "prompt_file": "prompt.txt",
+  "qa_file": "qa.json",
+  "processing": "Mechanical resize only, no design repair."
+}

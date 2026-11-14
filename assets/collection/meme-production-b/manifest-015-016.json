@@ -1,0 +1,18 @@
+[
+  {
+    "id": "MEM-015",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 1786732,
+    "sha256": "9BFAFEDAD9F0641E0210DE25471AEB0D2118542A4E58FAB3DE4D136508E6A862",
+    "source_exact": true
+  },
+  {
+    "id": "MEM-016",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 1539488,
+    "sha256": "E517CB231E9D475024A5CF5FBBF66FCE244441DF710186557EBC79966B1F9DA2",
+    "source_exact": true
+  }
+]

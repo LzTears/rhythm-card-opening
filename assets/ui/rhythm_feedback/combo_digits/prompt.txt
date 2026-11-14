@@ -1,0 +1,6 @@
+Use case: logo-brand
+Asset type: transparent game bitmap glyph atlas, NOT a wordmark.
+Primary request: exactly eleven completely SEPARATE and ISOLATED cut-paper comic typography glyph stickers in a spacious 4-column by 3-row grid. Row 1: "×" "0" "1" "2". Row 2: "3" "4" "5" "6". Row 3: "7" "8" "9" and one empty cell. Each glyph centered in its own imaginary cell, filling only 60% of cell width and height. Huge empty transparent gutters, at least one third glyph width, between EVERY glyph on every side. Keep full outline clear of neighboring cells. No grid lines.
+Style reference: chunky angular game comic numerals with thick almost-black purple outline, thick warm ivory outer sticker border, pale warm cream face with coral lower paper facet, crisp flat cut-paper graphic, friendly dynamic slight skew. Exactly eleven symbols, all same cap height. 0 has one open counter; 6 and 9 clearly distinguished; 8 has two open counters; × is a diagonal multiplication sign.
+Scene/backdrop: genuine transparent RGBA, including all counters and all gutters. No noise, no flecks, no loose paper fragments, no background decoration, no stray pixels, no shadow, no labels.
+Constraints: symbols MUST NOT TOUCH. No combined backplate or joined sticker. Each one must be independently crop-able from the transparent grid. Exactly ×,0,1,2,3,4,5,6,7,8,9 once each.

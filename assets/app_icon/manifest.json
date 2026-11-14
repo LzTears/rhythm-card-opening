@@ -1,0 +1,71 @@
+{
+  "asset": "节拍开卡应用图标",
+  "generation": {
+    "method": "OpenAI imagegen",
+    "created_on": "2026-11-14",
+    "description": "AI生成的新图：紫金旋涡与红金卡牌，透明背景，无文字。",
+    "third_party_ip_added": false,
+    "brand_references": [
+      {
+        "path": "assets/art/rhythm_v2/game-logo.png",
+        "sha256": "f81e6ec8422d05b36bb6f0537954a89f83a144c27ba9f294b57d7d8666d91065"
+      },
+      {
+        "path": "assets/collection/backs/back_4.png",
+        "sha256": "8bae594b94d99cc3e0f33219a63c6491f1368013ebbfd53791fb2844258a5207"
+      }
+    ]
+  },
+  "source": {
+    "path": "source/icon-master.png",
+    "bytes": 2812601,
+    "sha256": "2c23d5ac309119f86db16a5a61917a7a8df69830ca069bfa4c6aaad2a09c0f71",
+    "origin_path": "C:/Users/Administrator/.codex/generated_images/01a1d7b5-28ef-73f1-abce-2529c1bc63ad/exec-fe120cce-6660-49dd-9c59-942ab880d6ca.png",
+    "original_bytes_preserved": true,
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA"
+  },
+  "conversion": {
+    "method": "Deterministic format conversion only; no drawing or AI regeneration",
+    "resize": "Pillow Image.Resampling.LANCZOS; each frame resized directly from the same source master",
+    "alpha": "RGBA preserved; PNG corners verified fully transparent"
+  },
+  "outputs": {
+    "png": {
+      "path": "icon.png",
+      "bytes": 119235,
+      "sha256": "0482004fe3ced60f59ba026d3e29827398c595995ac042946b5c4318b87ce8e9",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    "ico": {
+      "path": "icon.ico",
+      "bytes": 178499,
+      "sha256": "3c22ecc413a56829f1afb5774044b59cc51516f6365ddbfff924e9ba8be6ac0f",
+      "sizes": [
+        16,
+        24,
+        32,
+        48,
+        64,
+        128,
+        256
+      ],
+      "bit_depth": 32,
+      "frame_encoding": "PNG RGBA",
+      "frames_verified_against_master_resizes": true
+    }
+  },
+  "preview": {
+    "path": "source/icon-size-preview.png",
+    "bytes": 161938,
+    "sha256": "6fca40a8ef78bec572b2c573cf2a1645bcd4525a31fd8f96f73ccfb1c37154cb"
+  },
+  "godot": {
+    "source_directory_ignored": true,
+    "texture_import": "Default lossless; importer execution and verification owned by parent task",
+    "engine_started_by_asset_task": false
+  }
+}

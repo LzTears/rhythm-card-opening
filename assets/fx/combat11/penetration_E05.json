@@ -1,0 +1,314 @@
+{
+  "frames": [
+    {
+      "filename": "penetration_E05 0",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    },
+    {
+      "filename": "penetration_E05 1",
+      "frame": {
+        "x": 224,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    },
+    {
+      "filename": "penetration_E05 2",
+      "frame": {
+        "x": 448,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    },
+    {
+      "filename": "penetration_E05 3",
+      "frame": {
+        "x": 672,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    },
+    {
+      "filename": "penetration_E05 4",
+      "frame": {
+        "x": 0,
+        "y": 88,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    },
+    {
+      "filename": "penetration_E05 5",
+      "frame": {
+        "x": 224,
+        "y": 88,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    },
+    {
+      "filename": "penetration_E05 6",
+      "frame": {
+        "x": 448,
+        "y": 88,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    },
+    {
+      "filename": "penetration_E05 7",
+      "frame": {
+        "x": 672,
+        "y": 88,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    },
+    {
+      "filename": "penetration_E05 8",
+      "frame": {
+        "x": 0,
+        "y": 176,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    },
+    {
+      "filename": "penetration_E05 9",
+      "frame": {
+        "x": 224,
+        "y": 176,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    },
+    {
+      "filename": "penetration_E05 10",
+      "frame": {
+        "x": 448,
+        "y": 176,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    },
+    {
+      "filename": "penetration_E05 11",
+      "frame": {
+        "x": 672,
+        "y": 176,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    },
+    {
+      "filename": "penetration_E05 12",
+      "frame": {
+        "x": 0,
+        "y": 264,
+        "w": 224,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 224,
+        "h": 88
+      },
+      "duration": 33
+    }
+  ],
+  "meta": {
+    "app": "https://github.com/patch-gg/pixelfx",
+    "image": "penetration_E05.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 896,
+      "h": 352
+    },
+    "pixelfx": {
+      "id": "ice/frost-breath",
+      "fps": 30,
+      "loop": false,
+      "frames": 13,
+      "frameSize": [
+        224,
+        88
+      ],
+      "pivot": [
+        12,
+        44
+      ],
+      "columns": 4
+    }
+  }
+}

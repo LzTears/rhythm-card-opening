@@ -1,0 +1,162 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "C12-sheet.png",
+  "grid": [
+    5,
+    1
+  ],
+  "canvas": {
+    "w": 512,
+    "h": 512
+  },
+  "baseline_y": 492.0,
+  "target_height": 472.0,
+  "scale": "cell",
+  "fit": "contain",
+  "factor": null,
+  "factor_from": null,
+  "alpha_cleanup": "alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "C12-0",
+      "file": "C12-0.png",
+      "factor": 1.102803738317757,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 422,
+          "h": 428
+        },
+        "canvas": {
+          "w": 465,
+          "h": 472
+        }
+      },
+      "box": {
+        "x": 24,
+        "y": 20,
+        "w": 465,
+        "h": 472
+      },
+      "anchor": [
+        256.5,
+        492.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "C12-1",
+      "file": "C12-1.png",
+      "factor": 1.102803738317757,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 422,
+          "h": 428
+        },
+        "canvas": {
+          "w": 465,
+          "h": 472
+        }
+      },
+      "box": {
+        "x": 24,
+        "y": 20,
+        "w": 465,
+        "h": 472
+      },
+      "anchor": [
+        256.5,
+        492.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "C12-2",
+      "file": "C12-2.png",
+      "factor": 1.102803738317757,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 424,
+          "h": 428
+        },
+        "canvas": {
+          "w": 468,
+          "h": 472
+        }
+      },
+      "box": {
+        "x": 23,
+        "y": 20,
+        "w": 468,
+        "h": 472
+      },
+      "anchor": [
+        257.0,
+        492.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "C12-3",
+      "file": "C12-3.png",
+      "factor": 1.102803738317757,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 423,
+          "h": 428
+        },
+        "canvas": {
+          "w": 466,
+          "h": 472
+        }
+      },
+      "box": {
+        "x": 23,
+        "y": 20,
+        "w": 466,
+        "h": 472
+      },
+      "anchor": [
+        256.0,
+        492.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "C12-4",
+      "file": "C12-4.png",
+      "factor": 1.102803738317757,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 426,
+          "h": 428
+        },
+        "canvas": {
+          "w": 470,
+          "h": 472
+        }
+      },
+      "box": {
+        "x": 22,
+        "y": 20,
+        "w": 470,
+        "h": 472
+      },
+      "anchor": [
+        257.0,
+        492.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "element": "E02",
+  "scope": "Software pixel/light compositing over actual A2. Scale/registering diagnostic only; not Godot/GL/FPS evidence.",
+  "placements": [
+    {
+      "role": "main",
+      "frame": 1,
+      "age": 0.03333333333333333,
+      "pixel_scale_x": 1.1428571428571428,
+      "pixel_scale_y": 1.1428571428571428,
+      "source_pivot": [
+        112,
+        100
+      ],
+      "main_guide_radius_du": 90,
+      "guide_radius_px": 40,
+      "pack_size_du": [
+        60,
+        80
+      ],
+      "software_only": true
+    },
+    {
+      "role": "main",
+      "frame": 8,
+      "age": 0.26666666666666666,
+      "pixel_scale_x": 1.1428571428571428,
+      "pixel_scale_y": 1.1428571428571428,
+      "source_pivot": [
+        112,
+        100
+      ],
+      "main_guide_radius_du": 90,
+      "guide_radius_px": 40,
+      "pack_size_du": [
+        60,
+        80
+      ],
+      "software_only": true
+    },
+    {
+      "role": "wave",
+      "frame": 3,
+      "age": 0.1,
+      "pixel_scale_x": 2.9289855072463764,
+      "pixel_scale_y": 2.9289855072463764,
+      "source_pivot": [
+        112,
+        100
+      ],
+      "main_guide_radius_du": 90,
+      "guide_radius_px": 40,
+      "wave_radius_du": 606.3,
+      "pack_size_du": [
+        60,
+        80
+      ],
+      "software_only": true
+    },
+    {
+      "role": "wave",
+      "frame": 8,
+      "age": 0.26666666666666666,
+      "pixel_scale_x": 2.9289855072463764,
+      "pixel_scale_y": 2.9289855072463764,
+      "source_pivot": [
+        112,
+        100
+      ],
+      "main_guide_radius_du": 90,
+      "guide_radius_px": 40,
+      "wave_radius_du": 606.3,
+      "pack_size_du": [
+        60,
+        80
+      ],
+      "software_only": true
+    },
+    {
+      "role": "path",
+      "frame": 2,
+      "age": 0.06666666666666667,
+      "pixel_scale_x": 2.02020202020202,
+      "pixel_scale_y": 0.5333333333333333,
+      "source_pivot": [
+        10,
+        56
+      ],
+      "main_guide_radius_du": 90,
+      "guide_radius_px": 40,
+      "path_length_du": 300,
+      "pack_size_du": [
+        60,
+        80
+      ],
+      "software_only": true
+    },
+    {
+      "role": "path",
+      "frame": 5,
+      "age": 0.16666666666666666,
+      "pixel_scale_x": 2.02020202020202,
+      "pixel_scale_y": 0.5333333333333333,
+      "source_pivot": [
+        10,
+        56
+      ],
+      "main_guide_radius_du": 90,
+      "guide_radius_px": 40,
+      "path_length_du": 300,
+      "pack_size_du": [
+        60,
+        80
+      ],
+      "software_only": true
+    },
+    {
+      "role": "contact",
+      "frame": 2,
+      "age": 0.06666666666666667,
+      "pixel_scale_x": 0.31111111111111106,
+      "pixel_scale_y": 0.31111111111111106,
+      "source_pivot": [
+        76,
+        56
+      ],
+      "main_guide_radius_du": 90,
+      "guide_radius_px": 40,
+      "pack_size_du": [
+        60,
+        80
+      ],
+      "software_only": true
+    },
+    {
+      "role": "contact",
+      "frame": 5,
+      "age": 0.16666666666666666,
+      "pixel_scale_x": 0.31111111111111106,
+      "pixel_scale_y": 0.31111111111111106,
+      "source_pivot": [
+        76,
+        56
+      ],
+      "main_guide_radius_du": 90,
+      "guide_radius_px": 40,
+      "pack_size_du": [
+        60,
+        80
+      ],
+      "software_only": true
+    }
+  ]
+}

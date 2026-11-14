@@ -1,0 +1,51 @@
+Ark Pixel Font / 方舟像素字体
+Author: TakWolf
+Official project: https://github.com/TakWolf/ark-pixel-font
+Official release: https://github.com/TakWolf/ark-pixel-font/releases/tag/2026.10.25
+Downloaded 2026-11-09 from the official GitHub release.
+
+Original asset: ark-pixel-font-12px-proportional-otf-v2026.10.25.zip
+Archive SHA-256: 1a5c194397b7b30685c2126df1c0f0183c14367befd2e6291c9b3184bc187fc7
+Retained original font: ark-pixel-12px-proportional-zh_hans.otf
+Font SHA-256: fc2d5e8a6891db9d5aa53ab414ad429aca155bb1d843e7da4bbcb71fe0961ae9
+
+Font license: SIL Open Font License 1.1, included verbatim in LICENSE-OFL.txt.
+The upstream MIT license applies to build programs, not this font binary.
+No font glyphs or font metadata have been modified.
+
+Game usage: 12px design, proportional Latin and Simplified Chinese glyphs;
+UI sizes round to multiples of 12, at least 24px. Antialiasing, subpixel
+positioning and hinting are disabled. Sampling is nearest neighbour.
+
+Fallback for the 3 UI characters absent from Ark (势, 瞬, 旋):
+Fusion Pixel Font, by TakWolf, official project:
+https://github.com/TakWolf/fusion-pixel-font
+Official release: https://github.com/TakWolf/fusion-pixel-font/releases/tag/2026.10.25
+Original asset: fusion-pixel-font-12px-proportional-otf-v2026.10.25.zip
+Archive SHA-256: e77c009a993cf220eb6d5d94ca69ff3325f72ac063a0e4bd8aae32028c5acb93
+Retained original font: fusion-pixel-12px-proportional-zh_hans.otf
+Font SHA-256: 2972782f05d7dd5f8414bc0215f69c181561172286b1f9823b5c279d9e5e6674
+License: SIL OFL 1.1, included verbatim in LICENSE-FUSION-OFL.txt.
+All 3 upstream license files included in the official Fusion release are
+also preserved in licenses/ (Ark Pixel, Cubic 11 and Galmuri).
+Fusion is the upstream-recommended temporary completion font for Ark;
+it uses Ark's 12px design and metrics. The original fallback binary and
+its metadata are unmodified. Only missing glyphs use the fallback.
+
+Current runtime (2026-11-09): Noto Sans CJK SC Medium, original unmodified font.
+Official source: https://github.com/notofonts/noto-cjk/blob/main/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Medium.otf
+Download: https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Medium.otf
+SHA256: ca094f6b0001fb048ca39ddd797a0cdb0179e1e55c6561e111c49c3e6a61d7b7
+License: SIL OFL 1.1, verbatim LICENSE-NOTO-OFL.txt from upstream Sans/LICENSE.
+All product UI and combat text use this clear CJK font, MSDF size64/range8.
+The pixel fonts above are retained as historical assets and missing-glyph fallback;
+the old 12px quantization and no-AA settings are superseded for primary text.
+
+2026-11-11 pixel workshop migration (supersedes the previous all-Noto UI policy):
+User requested pixel typography to match the selected workshop art references.
+Short UI headings, buttons, tabs, HUD numbers and card names use the existing
+12px pixel font family with nearest filtering, no antialiasing or subpixel
+positioning, and 24/36/48px size tiers. Long descriptions, settings explanations,
+errors and tooltips retain Noto/MSDF for readability. Font binaries and licenses
+are unchanged. Actual runtime sample and two-resolution verification are under
+verification/workshop_migration; nominal font sizes alone are not pixel-grid QA.

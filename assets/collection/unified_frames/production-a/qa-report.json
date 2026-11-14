@@ -1,0 +1,68 @@
+[
+  {
+    "file": "assets\\collection\\red-reference-alignment\\frame_galaxy.png",
+    "size": [
+      768,
+      1024
+    ],
+    "mode": "RGBA",
+    "alpha_center": 0,
+    "alpha_window_interior_max": 2,
+    "alpha_top_plaque": 253,
+    "alpha_theme_plaque": 253,
+    "alpha_lower_paper": 253,
+    "window_centerrow_x_range_alpha_le2": [
+      29,
+      738
+    ],
+    "window_centercol_y_range_alpha_le2": [
+      86,
+      705
+    ],
+    "sha256": "f1b121d8cf28034a80569bf80c4c561a877f4dad42cd8e2f629248d1c7b24f3c"
+  },
+  {
+    "file": "assets\\collection\\unified_frames\\grade_0.png",
+    "size": [
+      768,
+      1024
+    ],
+    "mode": "RGBA",
+    "alpha_center": 0,
+    "alpha_window_interior_max": 1,
+    "alpha_top_plaque": 253,
+    "alpha_theme_plaque": 253,
+    "alpha_lower_paper": 253,
+    "window_centerrow_x_range_alpha_le2": [
+      31,
+      737
+    ],
+    "window_centercol_y_range_alpha_le2": [
+      89,
+      706
+    ],
+    "sha256": "21ce23269b90faa640ff3a09ea6aafab156c5f111b47417b2a8224c9b307cfea"
+  },
+  {
+    "file": "assets\\collection\\unified_frames\\grade_1.png",
+    "size": [
+      768,
+      1024
+    ],
+    "mode": "RGBA",
+    "alpha_center": 0,
+    "alpha_window_interior_max": 1,
+    "alpha_top_plaque": 253,
+    "alpha_theme_plaque": 253,
+    "alpha_lower_paper": 253,
+    "window_centerrow_x_range_alpha_le2": [
+      32,
+      739
+    ],
+    "window_centercol_y_range_alpha_le2": [
+      89,
+      705
+    ],
+    "sha256": "139945545486356662397c5a0cf9a0495a6263804cb57cec6644138f41315008"
+  }
+]

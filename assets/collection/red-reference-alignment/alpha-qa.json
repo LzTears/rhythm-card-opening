@@ -1,0 +1,82 @@
+{
+  "galaxy": {
+    "native_size": [
+      1086,
+      1448
+    ],
+    "final_size": [
+      768,
+      1024
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "window_interior": {
+      "min": 0,
+      "max": 2,
+      "zero_fraction": 0.9701440431029743,
+      "opaque_fraction": 0.0
+    },
+    "bottom_paper_interior": {
+      "min": 251,
+      "max": 254,
+      "zero_fraction": 0.0,
+      "opaque_fraction": 0.0
+    },
+    "top_paper_interior": {
+      "min": 252,
+      "max": 254,
+      "zero_fraction": 0.0,
+      "opaque_fraction": 0.0
+    },
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "final_sha256": "f1b121d8cf28034a80569bf80c4c561a877f4dad42cd8e2f629248d1c7b24f3c",
+    "native_sha256": "946ca88a436f7ac2a1d24b0520c9c5be21158cd23a20e0e29e625cd92f66ea30"
+  },
+  "digimon": {
+    "native_size": [
+      1086,
+      1448
+    ],
+    "final_size": [
+      768,
+      1024
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "window_interior": {
+      "min": 0,
+      "max": 1,
+      "zero_fraction": 0.9885397767881686,
+      "opaque_fraction": 0.0
+    },
+    "bottom_paper_interior": {
+      "min": 252,
+      "max": 254,
+      "zero_fraction": 0.0,
+      "opaque_fraction": 0.0
+    },
+    "top_paper_interior": {
+      "min": 252,
+      "max": 253,
+      "zero_fraction": 0.0,
+      "opaque_fraction": 0.0
+    },
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "final_sha256": "e68de2e12e0dd461fda626926668d21a05f4b5b9a340ca5186896c6832970eeb",
+    "native_sha256": "ba197a069cc0d355bb7398a67dce5e0631b0f76fee13d624dd81ebb82d4984d8"
+  }
+}

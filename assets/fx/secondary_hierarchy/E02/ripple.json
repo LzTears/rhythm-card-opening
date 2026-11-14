@@ -1,0 +1,30 @@
+{
+  "key": "ripple_E02",
+  "role_hint": "ripple",
+  "element": "E02",
+  "source_id": "secondary_hierarchy/ripple_E02",
+  "source_file": "source/secondary-rings.mjs",
+  "source_sha256": "ec1820662a65cf6b26178f94cc565ccd1f779b38f61a0587d24b94b48a251c8e",
+  "size": [
+    128,
+    128
+  ],
+  "pivot": [
+    64,
+    64
+  ],
+  "columns": 5,
+  "rows": 3,
+  "frames": 11,
+  "fps": 30,
+  "source_duration": 0.3333333333333333,
+  "sample_end": 0.3333333333333333,
+  "duration": 0.36666666666666664,
+  "body_radius_px": 56,
+  "color": "ripple-color.png",
+  "light": "ripple-light.png",
+  "color_sha256": "ed4aaff1aad602f2be8d0176e70198290047ecdfb1bbeddf036bfc36a320ff54",
+  "light_sha256": "1c655837b24b80cc02fb211560867bfedfd3ef2e848f15dc43f28fc59e10c53d",
+  "immediate_contact_seconds": 0,
+  "contraction_seconds": 0
+}

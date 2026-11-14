@@ -1,0 +1,366 @@
+{
+  "version": "pixelfx09-a2",
+  "license": "MIT",
+  "engine_filter": "nearest",
+  "fps": 30,
+  "effects": {
+    "heavy": {
+      "path": "res://assets/fx/pixelfx09/heavy.png",
+      "metadata": "heavy.json",
+      "source_id": "impacts/crit-hit",
+      "frame_size": [
+        216,
+        136
+      ],
+      "frame_width": 216,
+      "frame_height": 136,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot_px": [
+        84,
+        80
+      ],
+      "pivot": [
+        84,
+        80
+      ],
+      "duration": 0.43333333333333335,
+      "last_sample_time": 0.4,
+      "display_width": 220,
+      "visible_bounds": [
+        32,
+        21,
+        168,
+        93
+      ],
+      "hero_frame": 0,
+      "source_time": [
+        0,
+        0.9
+      ],
+      "options": {
+        "palette": [
+          "#38190c",
+          "#713514",
+          "#ac571c",
+          "#dc8a25",
+          "#efb635",
+          "#ffcf53",
+          "#ffe6a0",
+          "#fff7db"
+        ],
+        "light": 0.22,
+        "seed": 17
+      },
+      "source_sha256": "c6af9303f0e463051696796a5886236d91182594e1d4fadee2067b9cf82ba857"
+    },
+    "lightning": {
+      "path": "res://assets/fx/pixelfx09/lightning.png",
+      "metadata": "lightning.json",
+      "source_id": "lightning/zap-hit",
+      "frame_size": [
+        144,
+        112
+      ],
+      "frame_width": 144,
+      "frame_height": 112,
+      "cols": 4,
+      "frame_count": 13,
+      "fps": 30,
+      "pivot_px": [
+        76,
+        56
+      ],
+      "pivot": [
+        76,
+        56
+      ],
+      "duration": 0.43333333333333335,
+      "last_sample_time": 0.4,
+      "display_width": 190,
+      "visible_bounds": [
+        6,
+        30,
+        97,
+        57
+      ],
+      "hero_frame": 1,
+      "source_time": [
+        0,
+        0.9
+      ],
+      "options": {
+        "palette": [
+          "#102a46",
+          "#17496d",
+          "#187394",
+          "#299bb5",
+          "#4dbfd2",
+          "#8bdfeb",
+          "#c5f4f7",
+          "#f0ffff"
+        ],
+        "light": 0.22,
+        "seed": 17
+      },
+      "source_sha256": "ad93c93f57babccc82ac1a20c7027b1f950e417b5e5a6969b35445ed23fff83a"
+    },
+    "frost": {
+      "path": "res://assets/fx/pixelfx09/frost.png",
+      "metadata": "frost.json",
+      "source_id": "ice/snowflake-burst",
+      "frame_size": [
+        140,
+        120
+      ],
+      "frame_width": 140,
+      "frame_height": 120,
+      "cols": 4,
+      "frame_count": 18,
+      "fps": 30,
+      "pivot_px": [
+        70,
+        58
+      ],
+      "pivot": [
+        70,
+        58
+      ],
+      "duration": 0.6,
+      "last_sample_time": 0.5666666666666667,
+      "display_width": 180,
+      "visible_bounds": [
+        27,
+        15,
+        86,
+        91
+      ],
+      "hero_frame": 2,
+      "source_time": [
+        0.12,
+        3.2
+      ],
+      "options": {
+        "palette": [
+          "#102a46",
+          "#17496d",
+          "#187394",
+          "#299bb5",
+          "#4dbfd2",
+          "#8bdfeb",
+          "#c5f4f7",
+          "#f0ffff"
+        ],
+        "light": 0.22,
+        "seed": 17
+      },
+      "source_sha256": "7a7820355463f86b0d77e9a60fa52006fb75e994de4d8b0d647c542ce653216c"
+    },
+    "echo": {
+      "path": "res://assets/fx/pixelfx09/echo.png",
+      "metadata": "echo.json",
+      "source_id": "pickups/collect-burst",
+      "frame_size": [
+        112,
+        108
+      ],
+      "frame_width": 112,
+      "frame_height": 108,
+      "cols": 4,
+      "frame_count": 15,
+      "fps": 30,
+      "pivot_px": [
+        56,
+        64
+      ],
+      "pivot": [
+        56,
+        64
+      ],
+      "duration": 0.5,
+      "last_sample_time": 0.4666666666666667,
+      "display_width": 130,
+      "visible_bounds": [
+        17,
+        18,
+        75,
+        77
+      ],
+      "hero_frame": 1,
+      "source_time": [
+        0,
+        1.35
+      ],
+      "options": {
+        "palette": [
+          "#28154b",
+          "#4e2873",
+          "#7243a4",
+          "#9d64cb",
+          "#bb8ae5",
+          "#d8b0f6",
+          "#ecd6ff",
+          "#fff1ff"
+        ],
+        "light": 0.22,
+        "seed": 17
+      },
+      "source_sha256": "14e767332f999978b6234165dde880f7dd21e77eec11f8bb094ae58d9a4d667b"
+    },
+    "aftershock": {
+      "path": "res://assets/fx/pixelfx09/aftershock.png",
+      "metadata": "aftershock.json",
+      "source_id": "water/ripples",
+      "frame_size": [
+        136,
+        52
+      ],
+      "frame_width": 136,
+      "frame_height": 52,
+      "cols": 4,
+      "frame_count": 18,
+      "fps": 30,
+      "pivot_px": [
+        68,
+        30
+      ],
+      "pivot": [
+        68,
+        30
+      ],
+      "duration": 0.6,
+      "last_sample_time": 0.5666666666666667,
+      "display_width": 190,
+      "visible_bounds": [
+        10,
+        15,
+        116,
+        31
+      ],
+      "hero_frame": 5,
+      "source_time": [
+        0,
+        1.9
+      ],
+      "options": {
+        "palette": [
+          "#102a46",
+          "#17496d",
+          "#187394",
+          "#299bb5",
+          "#4dbfd2",
+          "#8bdfeb",
+          "#c5f4f7",
+          "#f0ffff"
+        ],
+        "light": 0.22,
+        "seed": 17
+      },
+      "source_sha256": "2a4fbf4544d03947b185cd7888b78f15fd89b67fe3f6aa98426e1f577a97a9ed"
+    },
+    "harvest_coin": {
+      "path": "res://assets/fx/pixelfx09/harvest_coin.png",
+      "metadata": "harvest_coin.json",
+      "source_id": "pickups/coin-spin",
+      "frame_size": [
+        56,
+        56
+      ],
+      "frame_width": 56,
+      "frame_height": 56,
+      "cols": 4,
+      "frame_count": 19,
+      "fps": 30,
+      "pivot_px": [
+        28,
+        26
+      ],
+      "pivot": [
+        28,
+        26
+      ],
+      "duration": 0.6333333333333333,
+      "last_sample_time": 0.6,
+      "display_width": 38,
+      "visible_bounds": [
+        19,
+        20,
+        23,
+        31
+      ],
+      "hero_frame": 9,
+      "source_time": [
+        0,
+        1.5
+      ],
+      "options": {
+        "palette": [
+          "#38190c",
+          "#713514",
+          "#ac571c",
+          "#dc8a25",
+          "#efb635",
+          "#ffcf53",
+          "#ffe6a0",
+          "#fff7db"
+        ],
+        "light": 0.22,
+        "seed": 17
+      },
+      "source_sha256": "37a7426ff7ddf3ccc770b47d5044e2550a24e247fe0ff6890cc315343e4abcd9"
+    },
+    "harvest_card": {
+      "path": "res://assets/fx/pixelfx09/harvest_card.png",
+      "metadata": "harvest_card.json",
+      "source_id": "pickups/collect-burst",
+      "frame_size": [
+        112,
+        108
+      ],
+      "frame_width": 112,
+      "frame_height": 108,
+      "cols": 4,
+      "frame_count": 16,
+      "fps": 30,
+      "pivot_px": [
+        56,
+        64
+      ],
+      "pivot": [
+        56,
+        64
+      ],
+      "duration": 0.5333333333333333,
+      "last_sample_time": 0.5,
+      "display_width": 72,
+      "visible_bounds": [
+        16,
+        17,
+        77,
+        78
+      ],
+      "hero_frame": 1,
+      "source_time": [
+        0,
+        1.35
+      ],
+      "options": {
+        "palette": [
+          "#38190c",
+          "#713514",
+          "#ac571c",
+          "#dc8a25",
+          "#efb635",
+          "#ffcf53",
+          "#ffe6a0",
+          "#fff7db"
+        ],
+        "light": 0.22,
+        "seed": 17
+      },
+      "source_sha256": "14e767332f999978b6234165dde880f7dd21e77eec11f8bb094ae58d9a4d667b"
+    }
+  },
+  "source_root": "C:\\Users\\Administrator\\Desktop\\代号1\\圆卡旋风\\assets\\fx\\pixelfx09\\source\\vendor_snapshot"
+}

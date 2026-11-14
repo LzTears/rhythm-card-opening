@@ -1,0 +1,51 @@
+{
+  "key": "contact_E05",
+  "source_id": "impacts/hit-spark#actor-free",
+  "source_file": "source/upstream/impacts-hit-spark.js.txt",
+  "source_sha256": "b0f2d0e5337ab2fff3a6a8995e6404fed72512bdcd1bc92838a60bf879bc732a",
+  "adaptation": "Complete stock impact, bright frame0 cross/diamond, chips and light; element palette. Original .5 second source duration.",
+  "size": [
+    136,
+    80
+  ],
+  "floor_pivot": [
+    44,
+    64
+  ],
+  "pivot": [
+    44,
+    44
+  ],
+  "columns": 7,
+  "rows": 3,
+  "frames": 16,
+  "fps": 30,
+  "source_duration": 0.5,
+  "sample_end": 0.5,
+  "duration": 0.5333333333333333,
+  "body_radius_px": 37,
+  "options": {
+    "palette": [
+      "#102343",
+      "#174571",
+      "#236ea1",
+      "#369dcc",
+      "#58cbea",
+      "#9de9f5",
+      "#dcfbff",
+      "#ffffff"
+    ]
+  },
+  "color": "contact-color.png",
+  "light": "contact-light.png",
+  "color_sha256": "1966bfa3cc39ac5066d849782e7a246815e25b8bb88b5bec209154dc706d3910",
+  "light_sha256": "6f87904c145665e3e8b587a4abc0c4e4dca0b455babc15ae140fae007243fc0d",
+  "terminal_pixels": {
+    "color": 0,
+    "light": 0
+  },
+  "outer_edge_pixels_all_frames": {
+    "color": 0,
+    "light": 0
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "frames": [
+    {
+      "filename": "pulse_E02 0",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    },
+    {
+      "filename": "pulse_E02 1",
+      "frame": {
+        "x": 192,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    },
+    {
+      "filename": "pulse_E02 2",
+      "frame": {
+        "x": 384,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    },
+    {
+      "filename": "pulse_E02 3",
+      "frame": {
+        "x": 576,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    },
+    {
+      "filename": "pulse_E02 4",
+      "frame": {
+        "x": 0,
+        "y": 144,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    },
+    {
+      "filename": "pulse_E02 5",
+      "frame": {
+        "x": 192,
+        "y": 144,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    },
+    {
+      "filename": "pulse_E02 6",
+      "frame": {
+        "x": 384,
+        "y": 144,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    },
+    {
+      "filename": "pulse_E02 7",
+      "frame": {
+        "x": 576,
+        "y": 144,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    },
+    {
+      "filename": "pulse_E02 8",
+      "frame": {
+        "x": 0,
+        "y": 288,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    },
+    {
+      "filename": "pulse_E02 9",
+      "frame": {
+        "x": 192,
+        "y": 288,
+        "w": 192,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 144
+      },
+      "duration": 33
+    }
+  ],
+  "meta": {
+    "app": "https://github.com/patch-gg/pixelfx",
+    "image": "pulse_E02.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 768,
+      "h": 432
+    },
+    "pixelfx": {
+      "id": "lightning/zap-hit",
+      "fps": 30,
+      "loop": false,
+      "frames": 10,
+      "frameSize": [
+        192,
+        144
+      ],
+      "pivot": [
+        96,
+        72
+      ],
+      "columns": 4
+    }
+  }
+}

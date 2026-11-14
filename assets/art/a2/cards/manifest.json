@@ -1,0 +1,1447 @@
+{
+  "style": "A2",
+  "generation": "Built-in image_gen; original twelve family atlases plus ten separately generated C13/C14 RGBA sprites",
+  "extraction": "sprite-gen slice-sheet, true native alpha, alpha-floor64 edge0, target-height460 contain; no painting or recolor",
+  "card_count": 70,
+  "unique_card_sha256_count": 70,
+  "items": [
+    {
+      "file": "C01-0.png",
+      "family": "C01",
+      "animal": "海豚",
+      "ability": "扩散涟圈",
+      "grade": 0,
+      "rarity": "普通",
+      "sha256": "a47bec66baba9dfbdcb4bc0eaea2bce08c31bf316e99df87fcd5e29da6f4377d",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        31,
+        26,
+        483,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C01-1.png",
+      "family": "C01",
+      "animal": "海豚",
+      "ability": "扩散涟圈",
+      "grade": 1,
+      "rarity": "稀有",
+      "sha256": "8df828007873992b68841003e166e33ceaab7088750e9ee327e4648b2d842bcd",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        30,
+        26,
+        483,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C01-2.png",
+      "family": "C01",
+      "animal": "海豚",
+      "ability": "扩散涟圈",
+      "grade": 2,
+      "rarity": "史诗",
+      "sha256": "72fde93f40f7afd62ca486ced2f1ad48adcb990c77422ddb703259976e052992",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        31,
+        26,
+        483,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C01-3.png",
+      "family": "C01",
+      "animal": "海豚",
+      "ability": "扩散涟圈",
+      "grade": 3,
+      "rarity": "传说",
+      "sha256": "d3e7e7543d9d34fb9bb5266ca36341317cbd05de7e1d5624d9dcdd742d134b3e",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        30,
+        26,
+        483,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C01-4.png",
+      "family": "C01",
+      "animal": "海豚",
+      "ability": "扩散涟圈",
+      "grade": 4,
+      "rarity": "远古",
+      "sha256": "8197588f0fdc23ae45ddd1cf2722cc84c35b3e499fdecdc50a808f5c496e4491",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        30,
+        26,
+        484,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C02-0.png",
+      "family": "C02",
+      "animal": "蜜蜂",
+      "ability": "连锁",
+      "grade": 0,
+      "rarity": "普通",
+      "sha256": "bbb6061ac2def1d1ad71fdb1f1b068b80b1a3f0adb7b1b76a28fa8b1d6945324",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        29,
+        26,
+        484,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C02-1.png",
+      "family": "C02",
+      "animal": "蜜蜂",
+      "ability": "连锁",
+      "grade": 1,
+      "rarity": "稀有",
+      "sha256": "9abb513a53b1ac0bd92aa408e72e28cf7f41f5397388082cc5311152761a1cac",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        31,
+        26,
+        483,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C02-2.png",
+      "family": "C02",
+      "animal": "蜜蜂",
+      "ability": "连锁",
+      "grade": 2,
+      "rarity": "史诗",
+      "sha256": "ad67eb8656891b1861a82a59fb87a9a1e1f038e1b0eda21db1b97c56af45e3d4",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        28,
+        26,
+        485,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C02-3.png",
+      "family": "C02",
+      "animal": "蜜蜂",
+      "ability": "连锁",
+      "grade": 3,
+      "rarity": "传说",
+      "sha256": "146b57a2876a071a03f1221fbe9a04d1ca88ff536f0e737881259141ba704b07",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        32,
+        26,
+        481,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C02-4.png",
+      "family": "C02",
+      "animal": "蜜蜂",
+      "ability": "连锁",
+      "grade": 4,
+      "rarity": "远古",
+      "sha256": "26a533488bfb0b85e562b3fdd26d004079a1518ca8776f2a939c209b4c0bc6a0",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        29,
+        26,
+        484,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C03-0.png",
+      "family": "C03",
+      "animal": "蝙蝠",
+      "ability": "回响",
+      "grade": 0,
+      "rarity": "普通",
+      "sha256": "c46005ee269b0045bb79bd7185510570290a762dc14f688549698d14e5ce0c29",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        27,
+        26,
+        487,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C03-1.png",
+      "family": "C03",
+      "animal": "蝙蝠",
+      "ability": "回响",
+      "grade": 1,
+      "rarity": "稀有",
+      "sha256": "4785b43e6a065ae31bd0a297d25e725d3c7a37c7e0d4337c6890e9ccb782fe07",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        27,
+        26,
+        487,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C03-2.png",
+      "family": "C03",
+      "animal": "蝙蝠",
+      "ability": "回响",
+      "grade": 2,
+      "rarity": "史诗",
+      "sha256": "e3e387c94797403ba8d8fd238399dbf21556a131518b397e73d8441d27fd0723",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        27,
+        26,
+        486,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C03-3.png",
+      "family": "C03",
+      "animal": "蝙蝠",
+      "ability": "回响",
+      "grade": 3,
+      "rarity": "传说",
+      "sha256": "0b5435263232d8d4448c58ede821c97ef45ea1719c17e70dfd43291fe7c6d538",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        30,
+        26,
+        484,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C03-4.png",
+      "family": "C03",
+      "animal": "蝙蝠",
+      "ability": "回响",
+      "grade": 4,
+      "rarity": "远古",
+      "sha256": "dd0f62393f5648684b733417e2634f5d1f3e85709a5052d77a7cfe8d6d63ee73",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        27,
+        26,
+        486,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C04-0.png",
+      "family": "C04",
+      "animal": "海星",
+      "ability": "多重",
+      "grade": 0,
+      "rarity": "普通",
+      "sha256": "a56d6693a0e0c7976bbb48029a4dd686fc868dcdc34de2e300cba14d5f5a2ad8",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        28,
+        26,
+        485,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C04-1.png",
+      "family": "C04",
+      "animal": "海星",
+      "ability": "多重",
+      "grade": 1,
+      "rarity": "稀有",
+      "sha256": "9556186a02ce8f080154a399f01d9767fc8b6018e9de16593649d27ab0f90139",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        27,
+        26,
+        486,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C04-2.png",
+      "family": "C04",
+      "animal": "海星",
+      "ability": "多重",
+      "grade": 2,
+      "rarity": "史诗",
+      "sha256": "9b92efc7835d05ae5ae9965a5be1a4d062016fbb601eaa5409f400143b177bdd",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        28,
+        26,
+        486,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C04-3.png",
+      "family": "C04",
+      "animal": "海星",
+      "ability": "多重",
+      "grade": 3,
+      "rarity": "传说",
+      "sha256": "16f16b98fb499c49afb155f624cfa0d82e0ea2d53a550678951b8e2e28b1ea1e",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        29,
+        26,
+        484,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C04-4.png",
+      "family": "C04",
+      "animal": "海星",
+      "ability": "多重",
+      "grade": 4,
+      "rarity": "远古",
+      "sha256": "c542bfcea849d12fbf437631f23cd34100675436038301606997f5fa6e65ec8d",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        29,
+        26,
+        485,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C05-0.png",
+      "family": "C05",
+      "animal": "鹰",
+      "ability": "穿透",
+      "grade": 0,
+      "rarity": "普通",
+      "sha256": "edea0a38f0bc238ebe6ea3eedad0fdfe77590ce115c92498b59458d88f418d13",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        28,
+        26,
+        485,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C05-1.png",
+      "family": "C05",
+      "animal": "鹰",
+      "ability": "穿透",
+      "grade": 1,
+      "rarity": "稀有",
+      "sha256": "7b8c427edf5762fbba0fe74fe76b960c5fb2043c824fca68739ae7202fbd6aa8",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        27,
+        26,
+        487,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C05-2.png",
+      "family": "C05",
+      "animal": "鹰",
+      "ability": "穿透",
+      "grade": 2,
+      "rarity": "史诗",
+      "sha256": "335b22db46a6141f5f64021995293cd40b9b692ede36c5001bfb2483dbe4dbaa",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        27,
+        26,
+        487,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C05-3.png",
+      "family": "C05",
+      "animal": "鹰",
+      "ability": "穿透",
+      "grade": 3,
+      "rarity": "传说",
+      "sha256": "eb985135d6b1b5a8d2791cdd3efc90c97fa03b26b3e958ab8c95ef3dd14c0b9f",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        29,
+        26,
+        485,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C05-4.png",
+      "family": "C05",
+      "animal": "鹰",
+      "ability": "穿透",
+      "grade": 4,
+      "rarity": "远古",
+      "sha256": "44af71c88c083ea502f327aca8be389f82d1ab3867a7b7f969e591c57b3ba159",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        27,
+        26,
+        486,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C06-0.png",
+      "family": "C06",
+      "animal": "猫头鹰",
+      "ability": "聚焦",
+      "grade": 0,
+      "rarity": "普通",
+      "sha256": "9b68bcad3464ea6f31fc166a0efd7e967063b2bf5e2efb62a32aa5c267d2d86a",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        27,
+        26,
+        486,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C06-1.png",
+      "family": "C06",
+      "animal": "猫头鹰",
+      "ability": "聚焦",
+      "grade": 1,
+      "rarity": "稀有",
+      "sha256": "22d7c48f38a06bc757c2f0ce336cff79a79184084667dc8f98fbd80f0afe55c9",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        27,
+        26,
+        487,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C06-2.png",
+      "family": "C06",
+      "animal": "猫头鹰",
+      "ability": "聚焦",
+      "grade": 2,
+      "rarity": "史诗",
+      "sha256": "027cf64d652a2db7508e1a74d4ca7fee4e8ae024cb57945b918bf75285d01f4f",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        26,
+        26,
+        487,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C06-3.png",
+      "family": "C06",
+      "animal": "猫头鹰",
+      "ability": "聚焦",
+      "grade": 3,
+      "rarity": "传说",
+      "sha256": "4e870247fe570fe8818c16be05b1ea3f7aca070de32d64f191a2eb50f09ba3cc",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        28,
+        26,
+        486,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C06-4.png",
+      "family": "C06",
+      "animal": "猫头鹰",
+      "ability": "聚焦",
+      "grade": 4,
+      "rarity": "远古",
+      "sha256": "b7c754330ead39a8c49669e529fe6b865b0864aa38e5636bbae23ee24ab68c0c",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        27,
+        26,
+        487,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C07-0.png",
+      "family": "C07",
+      "animal": "熊",
+      "ability": "蓄能",
+      "grade": 0,
+      "rarity": "普通",
+      "sha256": "2845185950ad727839716f25a7c8835edf583a25b8017370826a2aebacfeb63a",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        28,
+        26,
+        486,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C07-1.png",
+      "family": "C07",
+      "animal": "熊",
+      "ability": "蓄能",
+      "grade": 1,
+      "rarity": "稀有",
+      "sha256": "bbfa45490afaf571f19756c5906cf1fe1713ba4860110c8c3ef78c1af6d1f2a9",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        29,
+        26,
+        485,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C07-2.png",
+      "family": "C07",
+      "animal": "熊",
+      "ability": "蓄能",
+      "grade": 2,
+      "rarity": "史诗",
+      "sha256": "51a740ed5363fce8826768c9e00fb5b43e2253250707f91b6e06fbb423919ab4",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        28,
+        26,
+        485,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C07-3.png",
+      "family": "C07",
+      "animal": "熊",
+      "ability": "蓄能",
+      "grade": 3,
+      "rarity": "传说",
+      "sha256": "f6f412bd34c3d9ba34e3998fa299191cb30da59c9f99ce5ac4a7fac200617241",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        28,
+        26,
+        486,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C07-4.png",
+      "family": "C07",
+      "animal": "熊",
+      "ability": "蓄能",
+      "grade": 4,
+      "rarity": "远古",
+      "sha256": "b5ce11f8d1406fe15d142141927c07f1ae8b579f3c7824341d78a4c3279951ba",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        28,
+        26,
+        485,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C08-0.png",
+      "family": "C08",
+      "animal": "豹",
+      "ability": "急速",
+      "grade": 0,
+      "rarity": "普通",
+      "sha256": "297b2a92595ff3d0b1684fd019d0da3233f17f3fa1e5dc23a11da6952fa9e5a6",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        32,
+        26,
+        481,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C08-1.png",
+      "family": "C08",
+      "animal": "豹",
+      "ability": "急速",
+      "grade": 1,
+      "rarity": "稀有",
+      "sha256": "6ce48402a205a7587a4ad6d04fe6e372c6c6e7673e52e43fc5b9e4605461d225",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        33,
+        26,
+        480,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C08-2.png",
+      "family": "C08",
+      "animal": "豹",
+      "ability": "急速",
+      "grade": 2,
+      "rarity": "史诗",
+      "sha256": "25117d9fcf3517eaa8f8edc071d6c97643b309b69e6d60f690dbac66028a408a",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        31,
+        26,
+        481,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C08-3.png",
+      "family": "C08",
+      "animal": "豹",
+      "ability": "急速",
+      "grade": 3,
+      "rarity": "传说",
+      "sha256": "9a7178c6d073315aa14154b850112d85de016d0eff6b5b91e5a0fc84ab99f97f",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        33,
+        26,
+        480,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C08-4.png",
+      "family": "C08",
+      "animal": "豹",
+      "ability": "急速",
+      "grade": 4,
+      "rarity": "远古",
+      "sha256": "4ea5456aab79b477e83fc8eb02941fd1527e3d0fcefcfb471f53a9edceccf753",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        31,
+        26,
+        482,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C09-0.png",
+      "family": "C09",
+      "animal": "章鱼",
+      "ability": "牵引",
+      "grade": 0,
+      "rarity": "普通",
+      "sha256": "97008f2e4814db9750076577c76978de748da55f9b2f3a025f8d2818a54b8945",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        30,
+        26,
+        483,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C09-1.png",
+      "family": "C09",
+      "animal": "章鱼",
+      "ability": "牵引",
+      "grade": 1,
+      "rarity": "稀有",
+      "sha256": "f894439078da4250ed6c9d899aed2d0fa4fd7ba2cbc169da9425edd28be457d8",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        25,
+        26,
+        487,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C09-2.png",
+      "family": "C09",
+      "animal": "章鱼",
+      "ability": "牵引",
+      "grade": 2,
+      "rarity": "史诗",
+      "sha256": "68ed3fa2e863a2bd71efc71bfde07f52b98ec4a132e7fb449e0294ea53514fa7",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        28,
+        26,
+        485,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C09-3.png",
+      "family": "C09",
+      "animal": "章鱼",
+      "ability": "牵引",
+      "grade": 3,
+      "rarity": "传说",
+      "sha256": "f18f1d5d74bce63de478417e628d9eb483fe575ee458ac97d94f91fb34de625b",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        30,
+        26,
+        482,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C09-4.png",
+      "family": "C09",
+      "animal": "章鱼",
+      "ability": "牵引",
+      "grade": 4,
+      "rarity": "远古",
+      "sha256": "174abb4e7bb61e1d41b6f680392e96b1e1f517065e8e3caa0d9baed66f521348",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        30,
+        26,
+        482,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C10-0.png",
+      "family": "C10",
+      "animal": "犀牛",
+      "ability": "震荡",
+      "grade": 0,
+      "rarity": "普通",
+      "sha256": "0e7d6768b6c2d3bc4faab12a531db5e6df8c7bc4962892145b57afb18711d94f",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        27,
+        26,
+        486,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C10-1.png",
+      "family": "C10",
+      "animal": "犀牛",
+      "ability": "震荡",
+      "grade": 1,
+      "rarity": "稀有",
+      "sha256": "82298eaff1360744acdab50f6910e26887645cc50ec766244a08da14ea75bf29",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        26,
+        26,
+        487,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C10-2.png",
+      "family": "C10",
+      "animal": "犀牛",
+      "ability": "震荡",
+      "grade": 2,
+      "rarity": "史诗",
+      "sha256": "f546a4fae15187989220e3e36295f8bc9613d8eb262f147d0a6c615e24ebfb02",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        26,
+        26,
+        487,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C10-3.png",
+      "family": "C10",
+      "animal": "犀牛",
+      "ability": "震荡",
+      "grade": 3,
+      "rarity": "传说",
+      "sha256": "a86f73dcbfb5a07c3733b31c22bbd32a216b450121a73202fb774e3bb96e40be",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        29,
+        26,
+        485,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C10-4.png",
+      "family": "C10",
+      "animal": "犀牛",
+      "ability": "震荡",
+      "grade": 4,
+      "rarity": "远古",
+      "sha256": "b865ce6f83d6c429b0508f55efef515268e36326e0ae50b7bd11ed67f2a81bab",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        27,
+        26,
+        486,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C11-0.png",
+      "family": "C11",
+      "animal": "狼",
+      "ability": "标记",
+      "grade": 0,
+      "rarity": "普通",
+      "sha256": "c170097482fdd1d797bab619e01bf27c8e7c14aebf68d3652a7fd6d7ddfba6b7",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        28,
+        26,
+        485,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C11-1.png",
+      "family": "C11",
+      "animal": "狼",
+      "ability": "标记",
+      "grade": 1,
+      "rarity": "稀有",
+      "sha256": "0a0f9df800efb129ec22c717f8166768d2865f595d3369b93880bf0d647acfd8",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        28,
+        26,
+        486,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C11-2.png",
+      "family": "C11",
+      "animal": "狼",
+      "ability": "标记",
+      "grade": 2,
+      "rarity": "史诗",
+      "sha256": "90e1b903c799eab1d24eba95f20b97cb448c6bccf2f9d61599d17afe1ec94315",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        28,
+        26,
+        485,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C11-3.png",
+      "family": "C11",
+      "animal": "狼",
+      "ability": "标记",
+      "grade": 3,
+      "rarity": "传说",
+      "sha256": "ffa9af9d53bc7a544e5127cfdf960c2d7f20aa2a649b2f49c5ba4f0eaa17b0ec",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        27,
+        26,
+        486,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C11-4.png",
+      "family": "C11",
+      "animal": "狼",
+      "ability": "标记",
+      "grade": 4,
+      "rarity": "远古",
+      "sha256": "a8733dfe0d079320765e9cebfae4c46853cb12508f153f8904334a2bac1bc3c6",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        27,
+        26,
+        486,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C12-0.png",
+      "family": "C12",
+      "animal": "海龟",
+      "ability": "余波",
+      "grade": 0,
+      "rarity": "普通",
+      "sha256": "e9f2937ac65eea74affafe8cde5565fd04430b77622b580de5b6216f66841c2b",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        24,
+        26,
+        489,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C12-1.png",
+      "family": "C12",
+      "animal": "海龟",
+      "ability": "余波",
+      "grade": 1,
+      "rarity": "稀有",
+      "sha256": "850b3ca6c76f2459a1f8f945a2ba5abb99c1a5635138b4cf5b895c481910df95",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        24,
+        26,
+        489,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C12-2.png",
+      "family": "C12",
+      "animal": "海龟",
+      "ability": "余波",
+      "grade": 2,
+      "rarity": "史诗",
+      "sha256": "f008f85710447b188684c4da164a74a3a5d46016a9661a99ae9bf14a7c80a98e",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        21,
+        26,
+        493,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C12-3.png",
+      "family": "C12",
+      "animal": "海龟",
+      "ability": "余波",
+      "grade": 3,
+      "rarity": "传说",
+      "sha256": "c36f64614dc641007d0997831437d2b81c6a3802ec36280f7b1ba499b97f0bca",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        25,
+        26,
+        487,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "C12-4.png",
+      "family": "C12",
+      "animal": "海龟",
+      "ability": "余波",
+      "grade": 4,
+      "rarity": "远古",
+      "sha256": "4fb0cd73edf9dbc994ae276d45a58fea548243526c20827f9540dffe1443638d",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        25,
+        26,
+        487,
+        486
+      ],
+      "border_alpha_max": 0
+    },
+    {
+      "file": "card_back.png",
+      "sha256": "a61c450c4a497aaf867d9b126453de19fc7e9ea192a13008e7db91931aa02f44",
+      "mode": "RGBA",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        25,
+        26,
+        488,
+        486
+      ]
+    },
+    {
+      "file": "C13-0.png",
+      "family": "C13",
+      "animal": "浣熊",
+      "ability": "寻卡",
+      "grade": 0,
+      "rarity": "普通",
+      "sha256": "c5312907a89d69a7003110eb36bd7e6328ac3a7bd79d4451614b696f335464ff",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "corner_alpha": 0,
+      "source": "source/cards09-generation.json"
+    },
+    {
+      "file": "C13-1.png",
+      "family": "C13",
+      "animal": "浣熊",
+      "ability": "寻卡",
+      "grade": 1,
+      "rarity": "稀有",
+      "sha256": "86fe7dfd945d54345b28aaeb9f916c377a5343aedf5258f98a0e81097c7985e1",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "corner_alpha": 0,
+      "source": "source/cards09-generation.json"
+    },
+    {
+      "file": "C13-2.png",
+      "family": "C13",
+      "animal": "浣熊",
+      "ability": "寻卡",
+      "grade": 2,
+      "rarity": "史诗",
+      "sha256": "2cbf98192b152e10d18a627c27855aac2cefc7b683f28f31a24c45ba5f40e9f4",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "corner_alpha": 0,
+      "source": "source/cards09-generation.json"
+    },
+    {
+      "file": "C13-3.png",
+      "family": "C13",
+      "animal": "浣熊",
+      "ability": "寻卡",
+      "grade": 3,
+      "rarity": "传说",
+      "sha256": "91944c1f5e4afe79175930292fe3ac310b5a3cd1110dac1d6286d846919af439",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "corner_alpha": 0,
+      "source": "source/cards09-generation.json"
+    },
+    {
+      "file": "C13-4.png",
+      "family": "C13",
+      "animal": "浣熊",
+      "ability": "寻卡",
+      "grade": 4,
+      "rarity": "远古",
+      "sha256": "a4bc0fff3f4f936c1d317e9c20e66723884c2955a5771cd6d68eb1058ecf5c31",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "corner_alpha": 0,
+      "source": "source/cards09-generation.json"
+    },
+    {
+      "file": "C14-0.png",
+      "family": "C14",
+      "animal": "喜鹊",
+      "ability": "招财",
+      "grade": 0,
+      "rarity": "普通",
+      "sha256": "96862038ae489699c5ef21d958255cbdb23ab4c66b4cbb0a7527bfcb0928a27b",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "corner_alpha": 0,
+      "source": "source/cards09-generation.json"
+    },
+    {
+      "file": "C14-1.png",
+      "family": "C14",
+      "animal": "喜鹊",
+      "ability": "招财",
+      "grade": 1,
+      "rarity": "稀有",
+      "sha256": "2341fc0d5503383e90db3036c405cb4e618ea39ca9309660e05956dd0f1c6cda",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "corner_alpha": 0,
+      "source": "source/cards09-generation.json"
+    },
+    {
+      "file": "C14-2.png",
+      "family": "C14",
+      "animal": "喜鹊",
+      "ability": "招财",
+      "grade": 2,
+      "rarity": "史诗",
+      "sha256": "80a9a754954421ad925bd427493b21277642c791e2dc9cc5cfbbc7c6ae7a02dd",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "corner_alpha": 0,
+      "source": "source/cards09-generation.json"
+    },
+    {
+      "file": "C14-3.png",
+      "family": "C14",
+      "animal": "喜鹊",
+      "ability": "招财",
+      "grade": 3,
+      "rarity": "传说",
+      "sha256": "e6bbb9d4c61758c7757a02286b1ccfc92bb730a5af6e235f759df92ec41d46ee",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "corner_alpha": 0,
+      "source": "source/cards09-generation.json"
+    },
+    {
+      "file": "C14-4.png",
+      "family": "C14",
+      "animal": "喜鹊",
+      "ability": "招财",
+      "grade": 4,
+      "rarity": "远古",
+      "sha256": "a9fff2fdc0be119069579a3cf766139bc8cf103275cfcfa771ab063e1e95e128",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "corner_alpha": 0,
+      "source": "source/cards09-generation.json"
+    }
+  ],
+  "catalogue": "independent-70-v1",
+  "independent_card_refs": "independent-catalog-art.json",
+  "source_metadata_note": "items describe original illustration palettes (plus neutral card_back), not independent card rarity; real grade/counts/foil mapping in independent_card_refs"
+}

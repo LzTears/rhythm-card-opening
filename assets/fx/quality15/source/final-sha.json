@@ -1,0 +1,22 @@
+[
+  {
+    "path": "scripts/world_quality_catalog.gd",
+    "sha256": "e09854407073b3a9951f4350b2eb62ecdeb53b79844f6bba3b95d4264a185537"
+  },
+  {
+    "path": "assets/fx/quality15/manifest.json",
+    "sha256": "53f27f6e9b588ce87d8c9a23cf40a77a8a851297e8d423d8a0c9615d816a5c00"
+  },
+  {
+    "path": "assets/fx/quality15/source/export.mjs",
+    "sha256": "46884f354b8acc771e7fd097ac1c85337aa0b89d1c1749df69efaafa31c46e6e"
+  },
+  {
+    "path": "assets/fx/quality15/source/catalog-verification.json",
+    "sha256": "cede4083db9ca8861ae5a5d606e71fd9a4b8d6faf846acccbd91fa843dd4031d"
+  },
+  {
+    "path": "assets/fx/quality15/source/source-integrity.json",
+    "sha256": "019e8e7286f42446449b7660df71e2b2773753c3405a38fad301a02413ace18d"
+  }
+]

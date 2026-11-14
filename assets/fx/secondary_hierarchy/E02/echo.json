@@ -1,0 +1,30 @@
+{
+  "key": "echo_E02",
+  "role_hint": "echo",
+  "element": "E02",
+  "source_id": "secondary_hierarchy/echo_E02",
+  "source_file": "source/secondary-rings.mjs",
+  "source_sha256": "ec1820662a65cf6b26178f94cc565ccd1f779b38f61a0587d24b94b48a251c8e",
+  "size": [
+    128,
+    128
+  ],
+  "pivot": [
+    64,
+    64
+  ],
+  "columns": 5,
+  "rows": 4,
+  "frames": 19,
+  "fps": 30,
+  "source_duration": 0.6,
+  "sample_end": 0.6,
+  "duration": 0.6333333333333333,
+  "body_radius_px": 56,
+  "color": "echo-color.png",
+  "light": "echo-light.png",
+  "color_sha256": "9bf04262dd1046d6346d3d4be566f6cb2bd3a2a61c356a8fbf805c3d1de7af50",
+  "light_sha256": "66c60af311bed417502e6ae7a37972b4a91bda7028fda3239e3bcfa4949a761e",
+  "immediate_contact_seconds": 0.06666666666666667,
+  "contraction_seconds": 0.13333333333333333
+}

@@ -1,0 +1,162 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "packs-final-sheet.png",
+  "grid": [
+    5,
+    1
+  ],
+  "canvas": {
+    "w": 300,
+    "h": 400
+  },
+  "baseline_y": 392.0,
+  "target_height": 384.0,
+  "scale": "cell",
+  "fit": "contain",
+  "factor": null,
+  "factor_from": null,
+  "alpha_cleanup": "alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "pack-0",
+      "file": "pack-0.png",
+      "factor": 1.2113564668769716,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 243,
+          "h": 317
+        },
+        "canvas": {
+          "w": 294,
+          "h": 384
+        }
+      },
+      "box": {
+        "x": 3,
+        "y": 8,
+        "w": 294,
+        "h": 384
+      },
+      "anchor": [
+        150.0,
+        392.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "pack-1",
+      "file": "pack-1.png",
+      "factor": 1.2113564668769716,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 242,
+          "h": 317
+        },
+        "canvas": {
+          "w": 293,
+          "h": 384
+        }
+      },
+      "box": {
+        "x": 4,
+        "y": 8,
+        "w": 293,
+        "h": 384
+      },
+      "anchor": [
+        150.5,
+        392.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "pack-2",
+      "file": "pack-2.png",
+      "factor": 1.2113564668769716,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 241,
+          "h": 317
+        },
+        "canvas": {
+          "w": 292,
+          "h": 384
+        }
+      },
+      "box": {
+        "x": 5,
+        "y": 8,
+        "w": 292,
+        "h": 384
+      },
+      "anchor": [
+        151.0,
+        392.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "pack-3",
+      "file": "pack-3.png",
+      "factor": 1.2113564668769716,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 244,
+          "h": 317
+        },
+        "canvas": {
+          "w": 296,
+          "h": 384
+        }
+      },
+      "box": {
+        "x": 3,
+        "y": 8,
+        "w": 296,
+        "h": 384
+      },
+      "anchor": [
+        151.0,
+        392.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "pack-4",
+      "file": "pack-4.png",
+      "factor": 1.2113564668769716,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 243,
+          "h": 317
+        },
+        "canvas": {
+          "w": 294,
+          "h": 384
+        }
+      },
+      "box": {
+        "x": 3,
+        "y": 8,
+        "w": 294,
+        "h": 384
+      },
+      "anchor": [
+        150.0,
+        392.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}
