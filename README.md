@@ -42,13 +42,27 @@ GitHub 下载文件名为 `1.0.zip`，下载页显示名为“节拍开卡1.0.zi
 
 ## 游戏截图
 
-| 收藏卡册 | 天赋成长 |
-| --- | --- |
-| ![收藏卡册：按主题查看收集进度](docs/screenshots/collection.png) | ![天赋树：五条独立成长路线](docs/screenshots/talents.png) |
-| 外观搭配 | 局末揭卡 |
-| ![皮肤页：节拍、卡包和战斗主题可独立搭配](docs/screenshots/skins.png) | ![结算页：分批揭晓本局卡片](docs/screenshots/settlement.png) |
+### 收藏卡册
 
-截图来自当前PC构建的实机界面，使用独立测试进度；下载包不附带预解锁存档。
+![收藏卡册：星系卡面与红阶收藏](docs/screenshots/collection.png)
+
+### 局末揭卡
+
+![结算翻面完成：星系、数码宝贝与非主流主题卡面](docs/screenshots/settlement.png)
+
+### 红卡效果
+
+| 大卡检视 · 立体倾斜与镭射光泽 | 红卡揭晓 · 独立展示 |
+| --- | --- |
+| ![黑洞红卡：立体倾斜与彩色镭射质感](docs/screenshots/red-card.png) | ![结算红卡揭晓：黑洞卡面与放射光效](docs/screenshots/red-reveal.png) |
+
+### 天赋与外观
+
+| 天赋成长 | 外观搭配 |
+| --- | --- |
+| ![天赋树：五条独立成长路线](docs/screenshots/talents.png) | ![皮肤页：节拍、卡包和战斗主题可独立搭配](docs/screenshots/skins.png) |
+
+截图来自1.0 PC构建的实机界面。卡册与揭卡画面使用隔离展示数据，含全收藏及指定揭卡样例；下载包不附带预解锁存档。
 
 ## 操作速查
 
